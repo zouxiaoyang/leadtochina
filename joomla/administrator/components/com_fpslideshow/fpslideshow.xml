@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+  <name>FPSlideShow</name>
+  <!-- The following elements are optional and free of formatting conttraints -->
+  <creationDate>27/02/2008</creationDate>
+  <author>JoomlaWorks</author>
+  <authorEmail>info@joomlaworks.gr</authorEmail>
+  <authorUrl>http://www.joomlaworks.gr</authorUrl>
+  <copyright>Copyright (c) 2006 - 2008 JoomlaWorks - This code cannot be redistributed without permission from www.joomlaworks.gr</copyright>
+  <!--  The version string is recorded in the components table -->
+  <version>1.7.1</version>
+  <!-- The description is optional and defaults to the name -->
+  <description>Frontpage SlideShow</description>
+  <!-- Custom Install Script to execute -->
+  <installfile>install.fpslideshow.php</installfile>
+  <!-- Custom Uninstall Script to execute -->
+  <uninstallfile>uninstall.fpslideshow.php</uninstallfile>
+  <!-- Site Main File Copy Section -->
+  <files>
+    <filename>fpslideshow.class.php</filename>
+    <filename>fpslideshow.php</filename>
+    <filename>fpslideshow.html.php</filename>
+    <filename>router.php</filename>
+    <filename>helpers/toolbars.php</filename>
+    <filename>images/index.html</filename>
+  </files>
+  <install>
+    <queries>
+      <query>DROP TABLE IF EXISTS `#__fpslideshow_slides`</query>
+      <query>CREATE TABLE `#__fpslideshow_slides` (
+        `id` int(11) unsigned NOT NULL auto_increment,
+        `name` varchar(225) NOT NULL default '',
+        `path` varchar(225) NOT NULL default '',
+        `path_type` varchar(110) NOT NULL default '',
+        `state` tinyint(3) NOT NULL default '0',
+        `publish_up` datetime NOT NULL default '0000-00-00 00:00:00',
+        `publish_down` datetime NOT NULL default '0000-00-00 00:00:00',
+        `menu` int(11) NOT NULL default '0',
+        `menu2` int(11) NOT NULL default '0',
+        `target` tinyint(3) NOT NULL default '0',
+        `clink` varchar(225) default NULL,
+        `ctext` text NOT NULL default '',
+        `plaintext` text NOT NULL default '',
+        `registers` tinyint(3) NOT NULL default '0',
+        `showtitle` tinyint(3) NOT NULL default '0',
+        `showseccat` tinyint(3) NOT NULL default '0',
+        `showcustomtext` tinyint(3) NOT NULL default '0',
+        `showplaintext` tinyint(3) NOT NULL default '0',
+        `showreadmore` tinyint(3) NOT NULL default '0',
+        `ordering` int(11) NOT NULL default '0',
+        PRIMARY KEY  (`id`)
+        ) TYPE=MyISAM</query>
+    </queries>
+  </install>
+  <uninstall>
+    <queries>
+      <query>DROP TABLE IF EXISTS `#__fpslideshow_slides`</query>
+    </queries>
+  </uninstall>
+  <!-- Site Main Language File Copy Section -->
+  <languages>
+    <language tag="en-GB">en-GB.com_fpslideshow.ini</language>
+  </languages>
+  <administration>
+    <!-- Administration Menu Section -->
+    <menu>Frontpage SlideShow</menu>
+    <!-- Administration Main File Copy Section -->
+    <!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+    <files folder="admin">
+      <filename>admin.fpslideshow.php</filename>
+      <filename>admin.fpslideshow.html.php</filename>
+      <filename>configuration.php</filename>
+      <filename>class.upload.php</filename>
+      <filename>tables/slide.php</filename>
+      <filename>ajax.js</filename>
+      <filename>style/fpss.css</filename>
+      <filename>style/mootools.js</filename>
+      <filename>style/slimbox.js</filename>
+      <filename>images/bullet_go.png</filename>
+      <filename>images/closelabel.gif</filename>
+      <filename>images/disk.png</filename>
+      <filename>images/index.html</filename>
+      <filename>images/loading.gif</filename>
+      <filename>images/logo.png</filename>
+      <filename>images/nav-active.png</filename>
+      <filename>images/nav.png</filename>
+      <filename>images/nextlabel.gif</filename>
+      <filename>images/picture.png</filename>
+      <filename>images/prevlabel.gif</filename>
+      <filename>images/publish_g.png</filename>
+      <filename>images/publish_r.png</filename>
+      <filename>images/publish_x.png</filename>
+      <filename>images/publish_y.png</filename>
+      <filename>images/tab_bg.png</filename>
+    </files>
+    <!-- Administration Language File Copy Section -->
+    <languages folder="admin">
+      <language tag="en-GB">en-GB.com_fpslideshow.ini</language>
+    </languages>
+  </administration>
+</install>

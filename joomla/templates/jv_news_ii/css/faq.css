@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0px; padding:0px;}
+li{ list-style:none;}
+.clear{ clear:both; line-height:0px; height:0px; width:0px; font-size:0px;}
+a{ text-decoration:none;}
+
+#faq{ width:963px; height:auto; background:#fff; overflow:hidden; margin:0px auto; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px;}
+#faqheader{ width:100%; height:106px; float:left; background:url(/images/faq/header.jpg) left center no-repeat;}
+#faqlogo{ width:290px; height:30px; padding:24px 0px 0px 22px; float:left;}
+
+.faq-menu{ width:664px; height:32px; float:right; background:url(/images/faq/menu.jpg) repeat-x; margin-top:20px;}
+.faq-menu ul {padding:0; margin:0;}
+.faq-menu ul li {float:left; position:relative; height:32px; line-height:32px; background:url(/images/faq/menulibg.jpg) right center no-repeat; padding-right:2px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+.faq-menu ul li.lastmenu{ background:none;}
+.faq-menu ul li a,.faq-menu ul li a:visited {display:block; text-align:center; text-decoration:none; padding:0px 7px; color:#000; line-height:32px;}
+.faq-menu ul li.lastmenu a{ padding:0px 7px;}
+.faq-menu ul li a:hover,.faq-menu ul li a.dqmenu{ background:url(/images/faq/menuabg.jpg) repeat-x; color:#000; display:block;}
+.faq-menu ul li ul {display: none; background:none; z-index:6000;}
+.faq-menu ul li:hover a {background:url(/images/faq/menuabg.jpg) repeat-x; color:#000; display:block;}
+.faq-menu ul li:hover ul {display:block; position:absolute; top:32px; left:0; width:158px; background:#fbe5cd; padding:5px 9px 12px 9px; overflow:hidden; border:1px solid #d5bb9c;}
+.faq-menu ul li:hover ul.hotelmenu{left:-30px;}
+.faq-menu ul li:hover ul.guidemenu{left:-87px;}
+.faq-menu ul li:hover ul.special-menu{display:block; position:absolute; top:32px; left:-349px; width:935px; background:#fbe5cd; padding:10px 0px 6px 18px; overflow:hidden; border:1px solid #d5ba9d; height:300px;}
+.faq-menu ul li:hover ul.special-menu ul{width:100%; height:auto; float:left; margin:0px; padding:4px 0px; border-bottom:1px dashed #b0afad; border-top:1px dashed #b0afad; margin-bottom:5px; border-left:none; border-right:none; position:static;}
+.faq-menu ul li:hover ul.special-menu ul li{width:17%; white-space:nowrap; float:left; list-style:none; color:#4c4c4c; margin:0px 5px 1px 0px; padding:2px 5px 1px 3px;height:18px; line-height:18px; border-bottom:none;}
+.faq-menu ul li:hover ul li{ width:155px; height:28px; border-bottom:1px dashed #d0b495; padding-left:3px; margin:0px; background:none; padding-right:0px;}
+.faq-menu ul li:hover ul.special-menu li.list1{ width:400px; height:auto; border-bottom:none; padding:0px; margin:0px; background:none; margin-right:22px; -webkit-text-size-adjust:none;}
+.faq-menu ul li:hover ul.special-menu li.list1 a{ background:none; color:#000; text-decoration:underline;}
+.faq-menu ul li:hover ul.special-menu li.list1 a:hover{ text-decoration:none;}
+.faq-menu ul li:hover ul.special-menu li.list1 a.advanced{ background:none; color:#000; font-size:10px; width:110px; color:#9a1818; float:left;}
+.faq-menu ul li:hover ul.special-menu li.list1 a.tailor01{ background:none; color:#000; font-size:10px; width:148px; color:#9a1818; float:left;}
+.faq-menu ul li:hover ul.special-menu li.list2{ width:507px; height:auto; border-bottom:none; padding:0px; margin:0px; background:none;}
+.faq-menu ul li:hover ul.special-menu li.list2 ul{ width:191px; height:285px; float:left; border-left:1px solid #e1ceb8; padding:0px 28px; display:block; margin:0px; top:0px; border-top:none; border-bottom:none; border-right:none;}
+.faq-menu ul li:hover ul.special-menu li.list2 ul.ultwo{ width:215px; height:285px; float:left; border-left:1px solid #e1ceb8; padding:0px 0px 0px 28px; display:block; margin:0px; top:0px; left:248px; border-top:none; border-bottom:none; border-right:none;}
+.faq-menu ul li:hover ul.special-menu li.list2 ul li.titleul{ width:100%; height:auto; float:left; border-bottom:1px dashed #d0a16e; color:#a72d24; font-size:14px; padding-left:0px; padding-right:0px; margin:0px; line-height:28px; background:none;}
+.faq-menu ul li:hover ul.special-menu li.list2 ul li{ width:203px; height:auto; float:left; border-bottom:1px dashed #c5bcb3; margin:0px; padding-right:0px; padding-left:12px;background:url(/images/newhomepage/linew.jpg) left center no-repeat;}
+.faq-menu ul li:hover ul.special-menu li.list2 ul li a { color:#3f3f3f; text-align:left; margin:0px; padding:0px; line-height:30px; display:block; height:30px; background:none; width:203px; font-size:11px;}
+.faq-menu ul li:hover ul.special-menu li.list2 ul li a.hot{ color:#3f3f3f; text-align:left; margin:0px; padding:0px; line-height:28px; display:block; height:28px; background:url(/images/newhomepage/hot.gif) right top no-repeat; width:203px;}
+.faq-menu ul li:hover ul li a { color:#3f3f3f; text-align:left; margin:0px; padding:0px; line-height:28px; display:block; height:28px; padding-left:10px; background:url(/images/newindex/menua1.jpg) left center no-repeat; width:145px; font-size:11px;}
+.faq-menu ul li:hover ul li a:hover {color:#000; background:url(/images/newindex/menua1.jpg) left center no-repeat; text-decoration:underline;}
+.faq-menu ul li.classhover1:hover a{ background:url(/images/newindex/menuabg.jpg) repeat-x; color:#000; display:block;}
+.faq-menu ul li.classhover1:hover{ background:none;}
+
+#faqcontent{ width:100%; height:auto; float:left;}
+#faqleft{ width:219px; height:auto; float:left; background:url(/images/faq/leftbototm.png) #ffaa08 left bottom no-repeat; padding-bottom:250px;}
+.leftlist{ min-height:569px; background:url(/images/faq/left.jpg) #ffaa08 left top no-repeat; width:219px; float:left;}
+.leftlist1{ min-height:567px; background:url(/images/faq/left1.jpg) #ffaa08 left top no-repeat; width:219px; float:left; padding-top:140px;}
+.listcont{ width:201px; height:auto; margin:0px auto;}
+.listcont h2{ width:190px; height:auto; float:left; background:url(/images/faq/hbg.jpg) repeat-y; padding-left:11px; height:22px; line-height:22px; color:#fff; font-size:14px; font-weight:normal;}
+.listcont ul{ width:193px; height:auto; float:left; background:url(/images/faq/ulbg.jpg) #ffde9b repeat-x; border:1px solid #e9dfcf; padding:5px 3px 15px 3px; overflow:hidden;}
+.listcont ul li.big{ width:185px; height:auto; float:left; display:block; background:url(/images/faq/big.png) 0px 11px no-repeat; border-bottom:1px solid #e5cc9d; padding:3px 0px 5px 8px;color:#272727; font-weight:bold; line-height:15px; }
+.listcont ul li.big a{ padding:3px 0px; display:block; color:#272727; font-weight:bold; line-height:15px;}
+.listcont ul li.big a:hover{ color:#FF0000; text-decoration:underline;}
+.listcont ul li ol{ width:185px; height:auto; float:left; display:block; padding-left:8px;}
+.listcont ul li ol li{background:url(/images/faq/olli.png) 0px 8px no-repeat; width:178px; padding-left:7px; padding-bottom:3px; border-bottom:1px dashed #ccbfa7;}
+.listcont ul li ol li a{ color:#b6581f; font-size:11px; -webkit-text-size-adjust:none; display:block; padding:3px 0px; line-height:14px;}
+.listcont ul li ol li a:hover{ color:#000;}
+
+#faqright{ width:740px; height:auto; float:right;}
+.menu-bread{ width:100%; height:auto; float:left; color:#4c4c4c; }
+.menu-bread h2{ width:726px; height:40px; line-height:40px; color:#000; font-size:22px; font-weight:normal; padding-left:14px; background:#dfdfdf; display:block; float:left; border-top:5px solid #efeded;}
+.menu-bread a{ color:#4c4c4c; text-decoration:underline; padding-left:14px; line-height:24px;}
+.menu-bread a:hover{ color:#000; text-decoration:none;}
+.faqright-cont{ width:711px; height:auto; float:left; padding-left:14px;}
+.faqbanner{ width:711px; height:109px; float:left; margin:15px 0px;}
+.question{ width:100%; height:auto; float:left; margin-bottom:18px;}
+.question h2,.domestic h2{ height:24px; width:701px; line-height:24px; color:#fff; padding-left:10px; font-size:14px; font-weight:normal; float:left; display:block; background:url(/images/faq/h2bg.jpg) repeat-y;}
+.question h2 strong{ font-weight:normal; float:left;}
+.question h2 a{ color:#222222; float:right; font-size:10px; -webkit-text-size-adjust:none; padding-right:7px;}
+.question h2 a:hover{ color:#ff0000; text-decoration:underline;}
+.question ul{ width:700px; height:auto; float:left; border:1px solid #c8c8c8; padding:5px 0px 10px 9px;}
+.question ul li{ width:223px; height:auto; float:left; padding-left:10px; background:url(/images/faq/libg.jpg) left center no-repeat;}
+.question ul li.accommodation{ width:217px; padding-left:16px; background:url(/images/faq/accommodation.jpg) left center no-repeat;}
+.question ul li.dining{ width:216px; padding-left:17px; background:url(/images/faq/dining.jpg) left center no-repeat;}
+.question ul li.shopping{ width:215px; padding-left:18px; background:url(/images/faq/shopping.jpg) left center no-repeat;}
+.question ul li.tibet{ width:206px; padding-left:27px; background:url(/images/faq/tibet.jpg) left center no-repeat;}
+.question ul li.silk{ width:209px; padding-left:24px; background:url(/images/faq/silk.jpg) left center no-repeat;}
+.question ul li a{ color:#4c4c4c; line-height:14px; padding:2px 0px;}
+.question ul li a:hover{ color:#000; text-decoration:underline;}
+.question ul.inquiry li{ width:140px;}
+.question ul.yangtze li{ width:auto; padding-right:30px;}
+.domestic{ width:100%; height:auto; float:left;}
+.faq-list{ width:100%; height:auto; float:left; padding-top:5px;}
+.faqname{ width:100%; height:auto; float:left; margin-top:8px; padding-bottom:5px; border-bottom:1px dashed #cdcdcc;}
+.faqname span{width:683px; height:auto; float:left; background:url(/images/faq/libg2.jpg) left center no-repeat; padding-left:28px; display:block;}
+.faqname a{ background:url(/images/faq/abg.jpg) right center no-repeat; color:#5b5857; padding-right:14px;}
+.faqname a:hover,.faqname a.dq{ color:#ff3000; background:url(/images/faq/ahover.jpg) right center no-repeat;}
+.faqdesc{ width:693px; height:auto; float:left; background:#f9f9f9; overflow:hidden; border:1px solid #e1e1e1; padding:10px 8px; font-size:11px; line-height:18px;}
+

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="template">
+	<name>jv_news_ii</name>
+	<creationDate>7/15/2010</creationDate>
+	<author>OnlineChinaTours.com</author>
+	<copyright>OnlineChinaTours Inc.</copyright>
+	<authorEmail>demo@onlinechinatours.com</authorEmail>
+	<authorUrl>www.leadtochina.com</authorUrl>
+	<version>1.5.0</version>
+	<description><![CDATA[<h1>JV News II - The cool template for News </h1><span>Thank you very much for using our services.<br />Please visit <a href="http://forums.onlinechinatours.com">OnlineChinaTours community</a> for any further support.</span>]]></description>
+	<files>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>params.ini</filename>
+		<filename>jv_tools.php</filename>
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>favicon.ico</filename>
+		<filename>component.php</filename>
+
+		<folder>jv_menus</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+		<folder>html</folder>
+		<folder>css</folder>	
+	</files>
+	<positions>
+		<position>hornav</position>
+		<position>breadcrumb</position>
+		<position>pagedes</position>
+		<position>banner</position>
+		<position>left</position>
+		<position>left_col1</position>
+		<position>left_col2</position>
+		<position>left_bottom</position>
+		<position>right</position>
+		<position>right_col1</position>
+		<position>right_col2</position>
+		<position>right_bottom</position>
+		<position>top</position>
+		<position>login</position>
+		<position>inset</position>
+		<position>search</position>
+		<position>highlight</position>
+		<position>slideshow</position>
+		<position>jv_news</position>
+		<position>top_menu</position>
+		<position>content_left</position>
+		<position>content_right</position>
+		<position>maintop</position>
+		<position>col1</position>
+		<position>col2</position>
+		<position>col3</position>
+		<position>col4</position>
+		<position>col5</position>
+		<position>col6</position>
+		<position>lefttop</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>user6</position>
+		<position>user7</position>
+		<position>user8</position>
+		<position>user9</position>
+		<position>user10</position>
+		<position>user11</position>
+		<position>user12</position>
+		<position>user13</position>
+		<position>user14</position>
+		<position>user15</position>
+		<position>user16</position>
+		<position>user17</position>
+		<position>footer</position>
+		<position>syndicate</position>
+		<position>debug</position>
+	</positions>
+
+	<params>
+		<param name="jv_function" type="radio" default="1" label="Function Show" description="Function Show">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param name="jv_fonttool" type="radio" default="1" label="Font Size Tool" description="Font Size Tool">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param name="jv_colortool" type="radio" default="1" label="Color Tool" description="Color Tool">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param name="jv_font" type="list" default="3" label="Font size" description="Select Font size for your site">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+		</param>
+		<param name="jv_color" type="list" default="red" label="Color Variation" description="Color variation to use">
+			<option value="red">Red</option>
+			<option value="purple">Purple</option>
+			<option value="black">Black</option>
+		</param>
+		<param name="jv_menustyle" type="list" default="submoo" label="Menu Module" description="MENU'S TYPE">
+		  <option value="none">Disable</option>
+		  <option value="submoo">Moo Sub Menu</option>
+		  <option value="moo">MooMenu</option>
+		  <option value="split">Split Menu</option>		  
+		  <option value="css">CSS Menu</option>
+		</param>
+		<param name="spacer@" type="spacer" />
+		<param name="gzip" type="radio" default="0" label="Gzip Compression" description="Do you want to enable gzip compression for Javascript and Css (Some host dont have gzip module enabled, If see that your site is not loading css and js please disable this parameter.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+
+</install>

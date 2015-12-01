@@ -1,0 +1,228 @@
+div.menusys_split {
+}
+
+#menusys_split {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#menusys_split ul {
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+#menusys_split li {
+	margin: 0; 
+	padding: 0 2px 0 0;
+	float: left;
+	display: block;
+	background: none;
+	cursor: pointer;
+	background: url(../../images/bg-mainmenu-seperator.jpg) repeat-y right;
+}
+
+/* Menu styling begin */
+#menusys_split li a {
+	padding:0 15px;
+	display: block;
+	line-height: 35px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #A50000;
+}
+#menusys_split li a span {
+	color: #FFF;
+	font-size: 110%;
+	font-weight: bold;
+	display: block;
+}
+
+#menusys_split li a:hover, 
+#menusys_split li a:active, 
+#menusys_split li a:focus {
+   background:url(../../images/bg-mainmenu-hover.jpg) repeat-x top;
+}
+#menusys_split li a:hover span, 
+#menusys_split li a:active span, 
+#menusys_split li a:focus span {
+	color: #3B5468;
+}
+
+#menusys_split li a.active span {
+	color: #3B5468;
+}
+
+#menusys_split li:hover a, 
+#menusys_split li.hover a, 
+#menusys_split li.havechildhover a, 
+#menusys_split li.havechild-activehover a {
+   background:url(../../images/bg-mainmenu-hover.jpg) repeat-x top;
+}
+
+#menusys_split li:hover a span,
+#menusys_split li:active a span,
+#menusys_split li:focus a span,
+#menusys_split li.hover a span, 
+#menusys_split li.havechildhover a span, 
+#menusys_split li.havechild-activehover a span {
+	color: #FFF;
+}
+#menusys_split li a.active,
+#menusys_split li a.active:hover,
+#menusys_split li a.active:active,
+#menusys_split li a.active:focus {
+	color: #C30204;
+	text-shadow: 0 1px 0 #FFF;
+	background:url(../../images/bg-mainmenu-active.jpg) repeat-x top;
+}
+
+#menusys_split li a.active span,
+#menusys_split li a.active:hover span,
+#menusys_split li a.active:active span,
+#menusys_split li a.active:focus span {
+	color: #C30204;
+	display:block;
+}
+
+#jv-submenu div.menusys_split {
+	clear: both;
+	display: block;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+}
+#menusub_split {
+	margin: 0;
+	padding: 0;
+	float: left;
+	height: 30px;
+	display: block;
+}
+#menusub_split li {
+	margin: 0 5px 0 0; 
+	padding: 0;
+	float: left;
+	display: block;
+	background: none;
+	cursor: pointer;
+}
+#menusub_split li a {
+	padding: 5px 0;
+	display: block;
+	color: #961C1C;
+	text-decoration: none;
+	line-height: 20px;
+}
+#menusub_split li a span {
+	padding: 0 10px;
+	line-height: 20px;
+	display: block;
+	border: none;
+	color: #961C1C;
+}
+#menusub_split li a.active span,
+#menusub_split li a:hover span,
+#menusub_split li a:active span,
+#menusub_split li a:focus span,
+#menusub_split li:hover a span,
+#menusub_split li.hover a span {  
+	color: #FFF;
+	background: #afafaf;
+}
+#menusub_split li ul {
+	width: 16.9em;
+	position: absolute;
+	z-index: 99;
+	left: -999em; 
+	height: auto;
+	margin: 0;
+}
+#menusub_split li ul ul {
+	margin: -28px 0 0 16.9em;
+}
+#menusub_split li li {
+	padding: 0;
+	line-height: 24px;
+	margin: 0;
+	width: 16.9em;
+}
+#menusub_split ul a {
+}
+#menusub_split li:hover ul ul, #menusub_split li:hover ul ul ul,
+#menusub_split li.hover ul ul, #menusub_split li.havechildhover ul ul, #menusub_split li.havechild-activehover ul ul, #menusub_split li.activehover ul ul,
+#menusub_split li.hover ul ul ul, #menusub_split li.havechildhover ul ul ul, #menusub_split li.havechild-activehover ul ul ul, #menusub_split li.activehover ul ul ul {
+	left: -999em;
+}
+#menusub_split li:hover ul, #menusub_split li li:hover ul, #menusub_split li li li:hover ul,
+#menusub_split li.hover ul, #menusub_split li.havechildhover ul, #menusub_split li.havechild-activehover ul, #menusub_split li.activehover ul,
+#menusub_split li li.hover ul, #menusub_split li li.havesubchildhover ul, #menusub_split li li.havesubchild-activehover ul, #menusub_split li li.activehover ul,
+#menusub_split li li li.hover ul, #menusub_split li li li.havesubchildhover ul, #menusub_split li li li.havesubchild-activehover ul, #menusub_split li li li.activehover ul {
+	left: auto;
+}
+#menusub_split li:hover a.active span,
+#menusub_split li a:hover span,
+#menusub_split li a:active span,
+#menusub_split li a:focus span,
+#menusub_split li a.active:hover span,
+#menusub_split li a.active:active span,
+#menusub_split li a.active:focus span,
+#menusub_split li:hover a span,
+#menusub_split li.hover a span,
+#menusub_split li.havechildhover a span,
+#menusub_split li.havechild-activehover a span {
+}
+#menusub_split li ul ul li {
+}
+#menusub_split li ul li {
+	border-bottom: 1px solid #777;
+}
+#menusub_split li ul li.hasChild {
+}
+#menusub_split li ul a {
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+	height: auto;
+	background: #525252;
+	border: none !important;
+}
+#menusub_split li ul a:hover,
+#menusub_split li ul a:active,
+#menusub_split li ul a:focus {
+	background: #525252 url(../../images/bg-submenu.jpg) repeat-x top;
+}
+#menusub_split li ul a span {
+	padding: 0 0 0 20px;
+	line-height: 28px;
+	font-weight: normal;
+	background: none !important;
+	text-transform: none;
+	color: #FFF !important;
+}
+#menusub_split li.havesubchild,
+#menusub_split li.havesubchild-active {
+}
+#menusub_split li ul a:hover,
+#menusub_split li ul a:active,
+#menusub_split li ul a:focus,
+#menusub_split ul li:hover,
+#menusub_split ul li.hover,
+#menusub_split ul li.havesubchildhover,
+#menusub_split ul li.havesubchild-activehover,
+#menusub_split ul ul li:hover,
+#menusub_split ul ul li.hover,
+#menusub_split ul ul li.havesubchildhover,
+#menusub_split ul ul li.havesubchild-activehover {
+}
+#menusub_split li ul a.active span,
+#menusub_split li ul a:hover span,
+#menusub_split li ul a:active span,
+#menusub_split li ul a:focus span {
+}
+#menusub_split ul li a.active {
+}
+#menusub_split ul li a.active:hover,
+#menusub_split ul li a.active:active,
+#menusub_split ul li a.active:focus {
+}

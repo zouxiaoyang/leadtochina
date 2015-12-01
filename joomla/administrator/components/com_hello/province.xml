@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.0.0">
+	<name>Polls</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.5.0</version>
+	<description>This component manages polls</description>
+
+<files folder="com_hello">
+
+<filename>controller.php</filename>
+
+<filename>hello.php</filename>
+
+<filename>index.html</filename>
+
+<filename>views/index.html</filename>
+
+<filename>views/hello/index.html</filename>
+
+<filename>views/hello/view.html.php</filename>
+
+<filename>views/hello/tmpl/default.php</filename>
+
+<filename>views/hello/tmpl/index.html</filename>
+
+</files>
+
+</install>

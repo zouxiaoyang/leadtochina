@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+  <name>Blog_Calendar</name>
+  <creationDate>Abril 2009</creationDate>
+  <author>Juan Padial</author>
+  <authorEmail>shikledir@gmail.com</authorEmail>
+  <authorUrl>http://www.shikle.com</authorUrl>
+  <copyright>Juan Padial</copyright>
+  <license>GNU/GPL</license>
+  <version>1.05</version>
+  <description><![CDATA[<p>
+  With blog calendar comopnent you can create a listing by descending date using a blog layout. 
+  For some guides visit <a href='http://www.shikle.com/'>Blog Calendar page</a>
+				</p>]]>
+  </description>
+    <languages folder="languages">
+    <language tag="en-GB">en-GB/en-GB.com_blog_calendar.ini</language>
+    <language tag="es-ES">es-ES/es-ES.com_blog_calendar.ini</language>
+  </languages>
+  <files>
+		<filename>index.html</filename>
+		<filename>blog_calendar.php</filename>
+		<filename>controller.php</filename>
+		<filename>helpers/icon.php</filename>
+		<filename>views/index.html</filename>
+		<filename>views/blogcalendar/index.html</filename>
+		<filename>views/blogcalendar/view.html.php</filename>
+		<filename>views/blogcalendar/tmpl/index.html</filename>
+		<filename>views/blogcalendar/tmpl/default.php</filename>
+		<filename>views/blogcalendar/tmpl/default.xml</filename>
+		<filename>models/blogcalendar.php</filename>
+            <filename>models/index.html</filename>
+  </files>
+    <administration>
+    <menu>Blog Calendar</menu>
+      <submenu>
+			<menu task="edit_css">Edit CSS</menu>
+		</submenu>
+	<files folder="admin">
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>blog_calendar.php</filename>
+                <filename>calendar.gif</filename>
+                <filename>bg.gif</filename>
+                <filename>blogcalendar.gif</filename>
+	</files>
+  </administration>
+</install>

@@ -1,0 +1,4 @@
+form.php----------------------->\administrator\components\com_hotel\views\hotel\tmpl下面
+hotel.php-------------------->\administrator\components\com_hotel\tables下面
+default.php-----------------》\components\com_showhotel\views\default\tmpl下面
+helper.php---------------->\modules\mod_getHotTour下面

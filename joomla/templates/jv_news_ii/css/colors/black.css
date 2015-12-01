@@ -1,0 +1,125 @@
+
+
+
+
+#jv-mainmenu {
+	background-color: #fff;
+	background-image: url(../../images/black/topnav_bkgnd.jpg);
+	background-repeat: repeat-x;
+
+}
+
+a,
+a:link,
+a:visited,
+ul.news_more li a,
+ul.cat_morelink li a {
+
+}
+
+
+
+div.news_bar a.item {
+
+}
+
+div.news_bar a.item {
+
+}
+div.news_bar a.selected {
+
+}
+
+ul li,
+ul.news_more li a,
+ul.cat_morelink li a,
+#jv-col2 div.latestnewsitems h4 {
+
+}
+
+#menusys_moo li,
+#menusys_css li,
+#menusys_split li,
+#menusys_submoo li {
+	background-repeat: no-repeat;
+}
+
+#menusys_submoo li a {
+	text-shadow: 0 1px 0 #000;
+}
+
+#menusys_moo li a:hover,
+#menusys_moo li a:active,
+#menusys_moo li a:focus,
+#menusys_moo li:hover a,
+#menusys_moo li.hover a,
+#menusys_moo li.havechildhover a,
+#menusys_moo li.havechild-activehover a,
+
+#menusys_css li:hover a,
+#menusys_css li.hover a,
+#menusys_css li.havechildhover a,
+#menusys_css li.havechild-activehover a,
+
+#menusys_split li:hover a, 
+#menusys_split li.hover a, 
+#menusys_split li.havechildhover a, 
+#menusys_split li.havechild-activehover a,
+
+#menusys_submoo li:hover a,
+#menusys_submoo li.hover a,
+#menusys_submoo li a:hover,
+#menusys_submoo li a:active,
+#menusys_submoo li a:focus {
+	background: url(../../../../images/newindex/menuabg.jpg) repeat-x; color:#000;
+	line-height:48px; height:48px; display:block;
+}
+
+#menusys_moo li a.active span,
+#menusys_moo li a.active:hover span,
+#menusys_moo li a.active:active span, 
+#menusys_moo li a.active:focus span,
+
+#menusys_css li a.active span,
+#menusys_css li a.active:hover span,
+#menusys_css li a.active:active span,
+#menusys_css li a.active:focus span,
+
+#menusub_split li a span,
+#menusys_split li a.active span,
+
+#menusub_submoo li a span,
+#menusys_submoo li a.active span,
+#menusys_submoo li a.active:hover span,
+#menusys_submoo li a.active:active span,
+#menusys_submoo li a.active:focus span {
+	color: #000;
+}
+
+#menusys_moo li ul{
+	position:absolute; top:48px; left:0; width:158px; background:#fbe5cd; padding:5px 9px 12px 9px; overflow:hidden; border:1px solid #d5bb9c; height:auto; margin:0px;
+}
+#menusys_css li ul {
+}
+#menusys_moo li ul li{ border-bottom:1px dashed #d0b495; width:158px;}
+#menusys_css li ul li {
+}
+
+.jv_tab_news2_wrap .jv_tabs_panel_news2 {
+		margin-top:10px;
+}
+
+.jv_tab_news2_wrap ul.tabs_title li.active a {
+	background: url(/images/tit_bj02_03.jpg) repeat-x center;
+}
+
+.jv_tab_news2_wrap ul.tabs_title li.active a span {
+	background: url(/images/tit_bj02_03.jpg) no-repeat center;
+}
+
+h2.contentheading,
+.contentheading,
+h1.componentheading,
+.componentheading {
+	color: #000;
+}
