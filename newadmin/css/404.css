@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0px; padding:0px;}
+li{ list-style:none;}
+.clear{ clear:both; font-size:0px; line-height:0px; width:0px; height:0px;}
+a{ text-decoration:none;}
+#404{ background:#fff; margin-top:15px; padding-top:15px; padding-bottom:15px;}
+.contentnew{ width:944px; height:auto; padding:8px 9px 10px 8px; font-size:12px; font-family:Arial, Helvetica, sans-serif;}
+#error{ width:944px; height:auto; margin:0px auto;  background:#eee; overflow:hidden; padding:12px 9px 20px 8px;}
+.left{ width:270px; height:auto; float:left; background:url(/images/404/left.jpg) top center no-repeat; padding-top:288px; overflow:hidden;}
+.tour{ width:270px; height:136px; float:left;}
+.tour a{ width:270px; height:136px; display:block;}
+.right{ width:629px; height:auto; float:right; border:1px solid #ccc; background:#fff; overflow:hidden; padding:8px 16px;}
+.sorry{ width:100%; height:auto; float:left; color:#676767; font-size:14px; line-height:24px;}
+.sorry p span{ font-size:22px; font-weight:bold;}
+.sorry ul{ width:100%; height:auto; float:left; border-bottom:1px dashed #b2b2b2; padding:10px 0px;}
+.sorry ul li{ width:100%; height:auto; float:left; display:block; color:#cc6633; margin-bottom:4px;}
+.sorry ul li a{ color:#cc6633; text-decoration:underline;}
+.sorry ul li a:hover{ color:#000; text-decoration:none;}
+#a1{ width:614px; height:28px; float:left; background:#af8c66; padding-left:15px; line-height:28px; overflow:hidden; margin-top:20px; font-size:14px; font-weight:bold; color:#fff;}
+.fast{ width:619px; height:auto; float:left; padding:5px 5px 60px 5px;}
+.fast table tr td{ padding:6px 5px;}
+.fast table tr td input,.fast table tr td textarea{ border:1px solid #d0d0d0;}
+.fast table tr td input{ width:154px; height:22px;}
+.fast table tr td textarea{ width:617px; height:130px;}

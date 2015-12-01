@@ -1,0 +1,109 @@
+*{ margin:0px; padding:0px;}
+li{ list-style:none;}
+img{ border:none;}
+.clear{ width:0px; height:0px; line-height:0px; font-size:0px; clear:both;}
+a{ text-decoration:none;}
+/* Beijing Xian Guilin Full Itinerary */
+.adoptionIti_cont{ width:920px; margin:0 auto;padding:0px;font-size:14px; font-family:"Times New Roman", Times, serif }
+.adoptionIti_menu-tours a {background: url(/templates/jv_news_ii/images/arrow.png) no-repeat scroll right center;color: #2487d2;padding-right: 15px;text-decoration:none;}
+.adoptionIti_menu-tours {background: none repeat scroll 0 0 #ddd; color: #444444;float: left; height: 26px;line-height: 26px;padding-left: 10px;width: 910px;margin-bottom:10px;}
+.adoptionIti_banner{height:250px;}
+.adoptionIti_bannerl{ float:left;width:460px;}
+.adoptionIti_txt1{ font-family:"Times New Roman", Times, serif; font-size:26px; color:#8C4600; margin:10px 0px 0px 60px; line-height:130%}
+.adoptionIti_txt2{ font-family:"Times New Roman", Times, serif; font-size:15px; color:#000; margin:5px 15px 0px 15px; line-height:130%}
+.adoptionIti_bannerr{ float:left;width:450px; background:url(/images/adoptionItinerary/banner_1.jpg) no-repeat;height:230px;margin:10px 10px 10px 0px;}
+.adoptionIti_bannerr_1{ float:left;width:450px; background:url(/images/adoptionItinerary/banner_2.jpg) no-repeat;height:230px;margin:10px 10px 10px 0px;}
+
+.adoptionIti_cont1{ margin-top:10px; width:920px; overflow:hidden}
+.menu-table{ width:920px; height:32px; border-bottom:5px solid #8c4600; float:left; background:#fff;}
+.menu-table ul{ width:100%; height:auto; float:left;}
+.menu-table ul li{ width:auto; float:left; display:inline-block; margin-right:1px; background:#999999; line-height:32px; font-size:16px; color:#ffffff; padding:0px 20px;}
+.menu-table ul li a{ color:#ffffff;font-size:15px; font-family:Verdana, Geneva, sans-serif;}
+.menu-table ul li.dq,.menu-table ul li:hover{ background:#8c4600;font-size:15px;font-family:Verdana, Geneva, sans-serif;}
+.menu-table ul li.dq a{ font-weight:bold;font-family:Verdana, Geneva, sans-serif;}
+.menu-table ul li.tesu{ background:none; padding:2px 0px 0px 0px; float:right; width:120px; height:30px;}
+.adoptionIti_cont1_map{ width:auto; margin-top:15px;}
+.adoptionIti_cont1_map1{ width:918px; border:1px #ccc solid; background:url(/images/adoptionItinerary/full_bg1.jpg) repeat-x; height:33px}
+.adoptionIti_cont1_map1 p{ padding-left: 15px; font-size:16px; font-weight:bold; line-height:33px}
+.adoptionIti_cont1_map2{ width:920px;background:url(/images/adoptionItinerary/group1_map.jpg) repeat-x; height:400px}
+.adoptionIti_cont1_map3{ width:920px;background:url(/images/adoptionItinerary/group2_map.jpg) repeat-x; height:400px}
+
+.adoptionIti_cont1_daya{ padding-top:10px;}
+.adoptionIti_cont1_daya_txt{ width:390px; float:left; color:#555; line-height:170%;padding-top:5px}
+.adoptionIti_cont1_daya_img{ background:url(/images/adoptionItinerary/full_hotel.jpg) no-repeat; width:518px; height:167px; float:right;}
+.adoptionIti_cont1_daya_txt1{width:605px; float:left;}
+.adoptionIti_cont1_daya_txt2{width:615px; float:left;}
+.adoptionIti_cont1_daya_img1{ background:url(/images/adoptionItinerary/full_img1.jpg) no-repeat; width:312px; height:540px; float:right;}
+.adoptionIti_cont1_txt{color:#555; line-height:150%;}
+.adoptionIti_cont1_txta{color:#555; line-height:170%;}
+.adoptionIti_cont1_txt1{font-family:"Times New Roman", Times, serif; font-size:14px; font-weight:bold; color:#8c4600;}
+.adoptionIti_cont1_daya_img2{ background:url(/images/adoptionItinerary/full_img2.jpg) no-repeat; width:312px; height:393px; float:right;}
+.adoptionIti_cont1_daya_img3{ background:url(/images/adoptionItinerary/full_img3.jpg) no-repeat; width:312px; height:524px; float:right;}
+.adoptionIti_cont1_daya_img4{ background:url(/images/adoptionItinerary/full_img4.jpg) no-repeat; width:302px; height:647px; float:right;}
+.adoptionIti_cont1_daya_img5{ background:url(/images/adoptionItinerary/full_img5.jpg) no-repeat; width:302px; height:334px; float:right;}
+.adoptionIti_cont1_daya_img6{ background:url(/images/adoptionItinerary/full_img6.jpg) no-repeat; width:302px; height:569px; float:right;}
+.adoptionIti_cont1_daya_img7{ background:url(/images/adoptionItinerary/full_img7.jpg) no-repeat; width:302px; height:524px; float:right;}
+.adoptionIti_cont1_daya_img8{ background:url(/images/adoptionItinerary/full_img8.jpg) no-repeat; width:302px; height:284px; float:right;}
+.adoptionIti_cont1_daya_img9{ background:url(/images/adoptionItinerary/full_img9.jpg) no-repeat; width:920px; height:203px;}
+/* Beijing Xian Chengdu Full Itinerary */
+.adoptionIti_cont1_map3{ width:920px;background:url(/images/adoptionItinerary/group2_map.jpg) repeat-x; height:400px}
+.adoptionIti2_cont1_daya_img1{ background:url(/images/adoptionItinerary/full2_img1.jpg) no-repeat; width:312px; height:540px; float:right;}
+.adoptionIti2_cont1_daya_img{ background:url(/images/adoptionItinerary/full2_hotel.jpg) no-repeat; width:518px; height:167px; float:right;}
+.adoptionIti2_cont1_daya_img2{ background:url(/images/adoptionItinerary/full2_img2.jpg) no-repeat; width:312px; height:393px; float:right;}
+.adoptionIti2_cont1_daya_img3{ background:url(/images/adoptionItinerary/full2_img3.jpg) no-repeat; width:312px; height:373px; float:right;}
+.adoptionIti2_cont1_daya_img4{ background:url(/images/adoptionItinerary/full2_img4.jpg) no-repeat; width:302px; height:647px; float:right;}
+.adoptionIti2_cont1_daya_img5{ background:url(/images/adoptionItinerary/full2_img5.jpg) no-repeat; width:302px; height:334px; float:right;}
+.adoptionIti2_cont1_daya_img6{ background:url(/images/adoptionItinerary/full2_img6.jpg) no-repeat; width:302px; height:197px; float:right;}
+.adoptionIti2_cont1_daya_img7{ background:url(/images/adoptionItinerary/full2_img7.jpg) no-repeat; width:302px; height:354px; float:right;}
+/* Beijing Xian Guilin Date Prices */
+.DatePri_cont1{width:920px; padding-top:10px;}
+.DatePri_cont1 p{ font-size:16px; font-weight:bold; color:#000; border-bottom:1px #ccc solid; padding-bottom:3px}
+.DatePri_cont1 ul{padding-top:5px}
+.DatePri_cont1 li{ list-style-type:disc; padding-left:5px; line-height:180%;list-style-position: inside; color:#333}
+.DatePri_txt1 a{color:#333; text-decoration:underline;}
+.DatePri_cont2{ background:url(/images/adoptionItinerary/price_note.png) no-repeat;width:900px; height:123px;margin:15px 0px 10px 10px}
+.DatePri_cont2 p{padding:40px 30px 0px 30px; line-height:180%}
+/* Beijing XianGuilin Know Before You Go */
+.Know_cont1_tit{ background:url(/images/adoptionItinerary/know_borbg1.jpg) no-repeat;width:920px; height:30px;padding-top:6px}
+.Know_cont1_tit1{ border-bottom:4px #8c4600 solid;font-size:16px; font-weight:bold; color:#000; padding-bottom:3px; font-family:"Times New Roman", Times, serif;}
+.Know_cont1_img1{background:url(/images/adoptionItinerary/know_img1.jpg) no-repeat; width:310px; height:264px; float:right;}
+.Know_cont1_txt a{ color:#333; text-decoration:underline}
+.Know_cont1_txt1{font-family:"Times New Roman", Times, serif; font-size:14px; font-weight:bold; color:#8c4600;}
+.Know_cont1_img2{background:url(/images/adoptionItinerary/know_img2.jpg) no-repeat; width:310px; height:790px; float:right;}
+.Know_cont1_img3{background:url(/images/adoptionItinerary/know_img3.jpg) no-repeat; width:310px; height:520px; float:right;}
+.Know_cont1_txt2{color:#8c4600;}
+.Know_cont1_txt3{color:#555; line-height:170%;}
+.Know_cont1_img4{background:url(/images/adoptionItinerary/know_img4.jpg) no-repeat; width:310px; height:589px; float:right;}
+.Know_cont1_img5{background:url(/images/adoptionItinerary/know_img5.jpg) no-repeat; width:310px; height:206px; float:right;}
+/* Beijing XianGuilin Special activities */
+.Activ_cont1_tit{ width:920px; background:#E9D9C9; height:35px}
+.Activ_cont1_tit p{ padding-left: 10px; font-size:16px; font-weight:bold; font-family:"Times New Roman", Times, serif;line-height:35px; color:#000;}
+.Activ_cont1_img1{background:url(/images/adoptionItinerary/special_img1.jpg) no-repeat; width:310px; height:665px; float:right;}
+.Activ_cont1_mid_txt{ width:605px; float:left; padding-top:5px}
+.Activ_cont1_mid p{padding-top:4px}
+.Activ_cont1_txt1{font-family:"Times New Roman", Times, serif; font-size:13px; font-weight:bold; color:#8c4600;}
+.Activ_cont1_img2{background:url(/images/adoptionItinerary/special_img2.jpg) no-repeat; width:310px; height:430px; float:right;}
+.Activ_cont1_img3{background:url(/images/adoptionItinerary/special_img3.jpg) no-repeat; width:310px; height:415px; float:right;}
+.Activ_cont1_img4{background:url(/images/adoptionItinerary/special_img4.jpg) no-repeat; width:310px; height:655px; float:right;}
+.Activ_cont1_img5{background:url(/images/adoptionItinerary/special_img8.jpg) no-repeat; width:310px; height:902px; float:right;}
+.Activ_cont1_img6{background:url(/images/adoptionItinerary/special_img6.jpg) no-repeat; width:310px; height:625px; float:right;}
+.Activ_cont1_img7{background:url(/images/adoptionItinerary/special_img7.jpg) no-repeat; width:310px; height:660px; float:right;}
+.Activ_cont1_img8{background:url(/images/adoptionItinerary/special_img9.jpg) no-repeat; width:310px; height:720px; float:right;}
+.Activ_cont1_img9{background:url(/images/adoptionItinerary/special_img5.jpg) no-repeat; width:310px; height:435px; float:right;}
+/* Beijing XianGuilin Reviews */
+.Reviews_txt{ color:#333;padding:10px 0px; line-height:180%}
+.Reviews_img1{ background:url(/images/adoptionItinerary/reviews_1.jpg) no-repeat; width:920px; height:502px;margin-top:10px}
+.Reviews_img2{ background:url(/images/adoptionItinerary/reviews_2.jpg) no-repeat; width:920px; height:502px;margin-top:10px}
+.Reviews_img3{ background:url(/images/adoptionItinerary/reviews_3.jpg) no-repeat; width:920px; height:442px;margin:10px 0px 20px 0px}
+.Reviews_img3_a{padding-top:220px;}
+.Reviews_latest{ width:900px; height:auto;padding:10px; overflow:hidden; margin-bottom:20px}
+.Reviews_latest .title{ width:910px; height:23px;background:url(/images/adoptionItinerary/reviews_late_tit.jpg) no-repeat; padding-right:10px;}
+.Reviews_latest .title a{ color:#666666; text-decoration:underline; line-height:22px; float:right}
+.Reviews_latest .title a:hover{ color:#000;}
+.Reviews_latestlist{ width:280px; height:auto; float:left; margin-right:28px;}
+.Reviews_latestlist ul{ width:250px; height:auto; float:left; border:1px solid #ccc; background:#f5f5f5; padding:5px 14px 8px 14px; margin-top:25px;}
+.Reviews_latestlist ul li{ width:100%; height:auto; float:left; display:block; padding:3px 0px; color:#525252; line-height:18px;}
+.Reviews_latestlist ul li img{ width:250px; height:auto;}
+.Reviews_latestlist ul li a{ display:block; font-size:13px; color:#000000; font-weight:bold; text-decoration:underline; font-family:Verdana, Geneva, sans-serif}
+.Reviews_latestlist ul li a:hover{ color:#8c4600;}
+.Reviews_latestlist ul li span{ color:#000;}

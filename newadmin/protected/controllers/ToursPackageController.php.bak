@@ -1,0 +1,262 @@
+<?php
+
+class ToursPackageController extends Controller
+{
+    private $orderModel = '';
+  	/**
+  	 * 
+  	 * 行程详情
+  	 */
+  	public function actionView()
+  	{
+        $this->order();
+        $id = $_GET['id'];
+        $packageInfo = ToursPackage::model()->findByPk($id);
+        if(empty($packageInfo)){
+          throw new CHttpException(404, 'Page not found');
+        }
+        $category = Categories::model()->findByPk($packageInfo->category_parentid);
+        $packageDesc = ToursDes::model()->findAllByAttributes(array('packageid'=>$id), array('order'=>'id asc'));    
+        $packagePic = ToursUploadpic::model()->findAllByAttributes(array('packageid'=>$id), array('order'=>'id asc'));
+
+        $recommendPackagePic = ToursUploadpic::model()->findAll(array(
+         'condition' => "packageid='$id' and recommend=1", 
+         'order' => 'pic_sort asc',
+        ));
+
+        $toursPackage = $this->loadModel($id);
+        $this->newQuestion($toursPackage);
+        $question = new Question;
+        $question->attributes=$_POST['Question'];
+
+        //The same route tours list
+        $route = mysql_real_escape_string($toursPackage->route);
+        $route_list = Yii::app()->db->createCommand("select id,name,days,price,price_serialize,price_low,route,filedir,pic_big,pic,tour_intro from jos_cos_tours_package where route='{$route}' and id!='{$id}' LIMIT 4")->queryAll();
+        
+
+        //Testimonisal图片调用
+        $testimonial_list = Yii::app()->db->createCommand("select id,name,nationnality,created,pic_name from jos_cos_testimonisal where type=1 and packageid='$id' order by id desc limit 2")->queryAll();
+
+        $share_reviews = Yii::app()->db->createCommand("select id,tour_id,name,description,index_pic,nationality,dateline from {{reviews}} where tour_id='$id' order by id desc limit 5")->queryAll();
+
+        if($packageInfo->package_type==2){
+          if($packageInfo->seo_title){
+            $this->setPageTitle($packageInfo->seo_title);
+          }else{
+            $this->setPageTitle($packageInfo->name);
+          }   
+        }else{
+          if($packageInfo->seo_title){
+            $this->setPageTitle($packageInfo->seo_title);
+          }else{
+            $this->setPageTitle($packageInfo->name);
+            //$key_arr=explode(",",$packageInfo->seo_key);
+            //$this->setPageTitle(ucwords($key_arr[1])." | ".$pagetitle);
+          }   
+
+          $pre_days='';
+          if($packageInfo->days=="1"){
+            $pre_days = '1 Day ';
+          }elseif($packageInfo->days=="0"){
+            $pre_days = 'Half Day ';
+          }else{
+            $pre_days = $packageInfo->days.' Days ';
+          }
+          //$pagetitle1=$packageInfo->name;
+        }   
+        Yii::app()->clientScript->registerMetaTag("keywords",$packageInfo->seo_key);
+        Yii::app()->clientScript->registerMetaTag('description',$packageInfo->seo_description);
+
+        $view = 'newView';
+        if($_GET['test']==1){
+            $view= 'newView_Dev';
+        }
+        $this->render($view,array(
+          'packageInfo' => $packageInfo,
+          'packageDesc' => $packageDesc,
+          'packagePic'  => $packagePic,
+          'recommendPackagePic' => $recommendPackagePic,
+          'model' => $this->orderModel,
+          'dataProvider' => Question::pageCommentsByQuestionId($question_type=2,$id),
+          'questionModel' => $question,
+          'route_list' => $route_list,
+          'testimonial' => $testimonial_list,
+          'category' => $category,
+          'share_reviews' => $share_reviews,
+        ));
+  	}
+
+
+
+
+  	/**
+  	 * Returns the data model based on the primary key given in the GET variable.
+  	 * If the data model is not found, an HTTP exception will be raised.
+  	 * @param integer the ID of the model to be loaded
+  	 */
+  	public function loadModel($id)
+  	{
+    		$model=ToursPackage::model()->findByPk($id);
+    		if($model===null)
+    			throw new CHttpException(404,'The requested page does not exist.');
+    		return $model;
+  	}
+
+  	/**
+  	 * Performs the AJAX validation.
+  	 * @param CModel the model to be validated
+  	 */
+  	protected function performAjaxValidation($model)
+  	{
+    		if(isset($_POST['ajax']) && $_POST['ajax']==='tours-package-form')
+    		{
+    			echo CActiveForm::validate($model);
+    			Yii::app()->end();
+    		}
+  	}
+
+
+    protected function newQuestion($model)
+    {
+        $question = new Question;
+        if(isset($_POST['Question'])){
+          if(strpos($_SERVER['REMOTE_ADDR'], "104.194.28")){
+            die("error");
+          }
+          //过滤日文垃圾问答
+          if(!preg_match('/^[A-Za-z0-9\/\-\_\.\s]+$/',$_POST['Question']['username'])){
+             die("error"); 
+          }
+          $question->attributes=$_POST['Question'];
+          
+          if(strpos($_POST['Question']['content'], "http") !== false){
+            echo 'invaid conent';
+            exit;
+          }
+          $valid=$question->validate();
+          if($valid){
+            $model->addQuestion($question);
+            echo CJSON::encode(array(
+              'status'=>'success'
+            ));
+            Yii::app()->end();
+          }else{
+            $error = CActiveForm::validate($question);
+            if($error!='[]')  echo $error;
+            Yii::app()->end();
+          }
+        }
+    }
+
+    private function order()
+    {
+        $this->orderModel = $model =new Order;
+
+        if(isset($_POST['Order']))
+        {
+          if($_POST['Order']['full_name']) {
+            $_POST['Order']['full_name'] = $_POST['Order']['gender'].$_POST['Order']['full_name'];
+          }
+          $_POST['Order']['url_referer'] = Yii::app()->request->urlReferrer;
+          $_POST['Order']['submit_source'] = $_SERVER['HTTP_HOST'];
+          $_POST['Order']['dateline'] = time();
+
+          if($_POST['entry_date']){
+            $_POST['Order']['entry_date'] = $_POST['entry_date'];
+          }
+
+          $other_message='';
+          if($_POST['Order']['total_price']){
+            $other_message .= "<b>Num of Rooms:</b>".$_POST['Order']['total_price']."</br>";
+          }
+          if($_POST['Order']['final_price']){
+            $other_message .= "<b>HOtel Class:</b>".$_POST['Order']['final_price']."</br>";
+          }
+          if($_POST['hotel']){
+            $other_message .= "<b>Hotel Choice:</b>".$_POST['hotel']."</br>";
+          }
+          if($_POST['dietetic']){
+            $other_message .= "<b>Dietetic Requirement:</b>".$_POST['dietetic']."</br>";
+          }
+          if($_POST['language']){
+            $other_message .= "<b>Guide Language:</b>".$_POST['language']."</br>";
+          }
+
+          if($_POST['Order']['other_message']){
+            $other_message .= "<b>OTHER MESSAGE :</b>".$_POST['Order']['other_message']."</br>";
+          }
+          $_POST['Order']['other_travelinfo'] = $other_message;
+          $_POST['Order']['user_ip'] = SiteUtils::getClientIp();
+          
+          $model->attributes = $_POST['Order'];
+
+          if($_POST['ajax']){
+            $valid=$model->validate();
+            if($valid){
+              echo CJSON::encode(array(
+                'status'=>'success'
+              ));
+              if($model->save()){
+                $insertId = $model->getPrimaryKey();
+                $order_str = 'LTC'.date("ymd").$insertId;
+                Order::model()->updateBypK($insertId, array('orderNO'=>$order_str));
+              }
+              Yii::app()->end();
+            }else{
+              echo CActiveForm::validate($model);
+              Yii::app()->end();
+            }
+          }else{
+            if($model->save()){
+              $insertId = $model->getPrimaryKey();
+              $order_str = 'LTC'.date("ymd").$insertId;
+              Order::model()->updateBypK($insertId, array('orderNO'=>$order_str));
+              header("location:/succeed.html");
+            }else{
+              $model->attributes = $_POST['Order'];
+            }
+          }
+        }
+    }
+
+	public function actionPopOrder(){
+        $id = (int) $_GET['id'];
+        $tour = ToursPackage::model()->findByPk($id);
+        if(empty($tour)){
+            throw new CHttpException(404, 'Page not found');
+        }
+        $category = Categories::model()->findByPk($tour->category_parentid);
+        $order = Order::model()->newOrder();
+		 $this->renderPartial('popOrder',array(
+                 'model' => $order,
+                 'tour' => $tour,
+                 'category' => $category
+            )
+         );
+	}
+
+
+  public function actionPrice(){
+    $id = (int) $_GET['id'];
+    $tour = ToursPackage::model()->find(array(
+      'select' => 'id,price_serialize_1,price_serialize',
+      'condition' => 'id=:ID',
+      'params' => array(':ID'=>$id)
+    ));
+    $this->renderPartial("price",array('tour'=>$tour));
+  }
+
+  public function actionAjaxAddMessage(){
+     $email = mysql_real_escape_string($_POST['email']);
+     $message = mysql_real_escape_string($_POST['message']);
+     $username = mysql_real_escape_string($_POST['username']);
+     $ip = SiteUtils::getClientIp();;
+     $referer_url=Yii::app()->request->urlReferrer;
+     $dateline = time();
+     
+     $sql = "insert into joomla.jos_cos_message(email,message,username,ip,dateline,referer_url) values('$email','$message','$username','$ip','$dateline','$referer_url')";
+     Yii::app()->db->createCommand($sql)->query();
+     echo 0;exit;
+  }
+  
+}

@@ -1,0 +1,434 @@
+@charset "utf-8";
+/* CSS Document */
+body{ width:100%; height:auto; margin:0px; padding:0px;  background:url(/images/newindex/bg.jpg) repeat-x;}
+*{ margin:0px; padding:0px;}
+li{ list-style:none;}
+img{ border:none;}
+.clear{ width:0px; height:0px; line-height:0px; font-size:0px; clear:both;}
+a{ text-decoration:none;}
+#menu-tours {background:#D6D6D6; color:#444444; float:left; height:26px; line-height:26px; margin-bottom:10px; padding-left:10px; width:910px;}
+#menu-tours a{background: url(/templates/jv_news_ii//images/arrow.png) no-repeat right center; color:#2487D2; padding-right:15px;}
+#menu-tours a:hover{ color:#000000; text-decoration:underline;}
+
+
+.index{ width:920px; height:auto; margin:0px auto;}
+#index{ width:920px; height:auto; padding:0px 10px 0px 10px;}
+#banner{ width:100%; height:auto; float:left;}
+#left{ width:737px; height:auto; float:left; margin-top:15px;}
+.text{ width:697px; height:auto; float:left; background:#dddddd; padding:10px 20px 5px 20px;}
+.textnew{ width:697px; height:auto; float:left; background:#dddddd; padding:10px 20px; color:#525252; line-height:18px;}
+.textnew a{ color:#8c4600; text-decoration:underline;}
+.textnew a:hover{ color:#ff0000; text-decoration:none;}
+.textnew h2{ color:#8c4600; font-size:16px; line-height:24px; display:block;}
+
+
+.textleft{ width:420px; height:auto; float:left; color:#525252; line-height:18px;}
+.textleft a{ color:#8c4600; text-decoration:underline;}
+.textleft a:hover{ color:#ff0000; text-decoration:none;}
+.textleft h2{ color:#8c4600; font-size:16px; line-height:24px; display:block;}
+.textleft span{ display:block; color:#000000; margin-top:10px; cursor:pointer;}
+.callbutton{ width:254px; height:auto; float:right;}
+.toplist{ width:100%; height:auto; float:left; margin-top:20px;}
+.listone{ width:228px; height:258px; float:left; background:#fff; border:1px solid #cccccc; margin-right:10px; padding:0px 9px 12px 0px;}
+.listone ul{ width:100%; height:auto; float:left;}
+.listone ul li{ width:100%; display:block; float:left;}
+.listone ul li ol{ width:219px; height:auto; float:left; padding-left:9px; margin-top:6px;}
+.listone ul li ol li{ color:#666666; font-size:11px; line-height:18px;}
+.listone ul li a{ font-size:13px; color:#666666; display:block; font-weight:bold;}
+.listone ul li a:hover{ color:#ff0000; text-decoration:underline;}
+.listone ul li ol li.price{ font-size:12px; color:#999999; margin-top:6px;}
+.listone ul li ol li strong{ color:#b20000; font-size:15px;}
+
+.tourlist{ width:735px; height:auto; float:left; margin-top:20px; border:1px solid #dedede; padding:0px 0px 13px 0px;}
+.tourlist1{ width:711px; height:auto; float:left; margin-top:20px; border:1px solid #dedede; padding:5px 12px 12px 12px; background:#fff;}
+.tourlist1 h2{ display:block; font-size:18px; color:#8c4600; line-height:26px;}
+.tourlist1 p{ padding-bottom:8px; color:#333; line-height:18px;}
+.tourlist1 img{ width:220px; height:150px;}
+.tourlist h2{ width:723px; height:30px; display:block; float:left; padding-left:12px; color:#ffffff; font-size:18px; line-height:30px; background:#8c4600; font-weight:normal;}
+.tourlist h2 span{ font-size:13px; font-weight:normal;}
+.listpic{ width:220px; height:auto; float:left; margin:18px 18px 0px 0px; padding-left:12px;}
+
+.listul{ width:711px; height:auto; float:left; padding:4px 12px;}
+.listul ul{ width:100%; height:auto; float:left; margin-top:4px; font-size:11px;}
+.listul ul li{ width:701px; height:auto; float:left; background:url(/images/citytours/abg.jpg) 0px 14px no-repeat; border-bottom:1px dashed #8c8989; padding:6px 0px 6px 10px;}
+.listul ul li a{ width:100%; height:auto; float:left; display:block; background:none; color:#454545; text-decoration:underline; line-height:20px; padding-left:0px; max-width:none; font-size:12px;}
+.listul ul li a:hover{ color:#b20000; background:none;}
+.listul ul li span{ display:block; float:left; width:100%; color:#454545; max-width:none;}
+.listul ul li span strong{ color:#222222; font-weight:normal;}
+.listcontent p{ line-height:18px; color:#333;}
+.listcontent p a{color:#0000ee; text-decoration:underline;}
+.listcontent p a:hover{text-decoration:none; color:#000;}
+
+
+.listcontent{ width:470px; height:auto; float:left; margin-top:18px;}
+.listcontent ul{ width:100%; height:auto; float:left;}
+.listcontent ul li{ color:#333; line-height:18px; width:100%; height:auto; display:block; float:left;}
+.listcontent ul li a,.tourlist1 p a{ color:#0000ee; text-decoration:underline;}
+.listcontent ul li a:hover,.tourlist1 p a:hover{ text-decoration:none; color:#000;}
+.listcontent ul li ol{ width:100%; height:auto; float:left; border-top:1px dashed #bbbbbb; margin-top:12px; padding-top:15px; font-size:11px;}
+.listcontent ul li ol li a{ max-width:330px; height:auto; float:left; display:inline-block; background:url(/images/citytours/abg.jpg) 0px 10px no-repeat; color:#454545; text-decoration:underline; padding-left:10px; line-height:20px;}
+.listcontent ul li ol li a:hover{ color:#b20000; background:url(/images/citytours/adqbg.jpg) 0px 10px no-repeat;}
+.listcontent ul li ol li span{ display:inline-block; float:right; max-width:130px; color:#454545;}
+.listcontent ul li ol li span strong{ color:#b20000; font-size:12px;}
+
+
+.tourlist1new{ width:735px; height:auto; float:left; margin-top:20px; border:1px solid #dedede; padding:13px 0px;}
+.tourlist1new h2{ width:723px; height:30px; display:block; float:left; padding-left:12px; color:#ffffff; font-size:18px; line-height:30px; background:#8c4600; font-weight:normal;}
+.listpic1new{ width:220px; height:auto; float:left; margin:18px 18px 0px 0px; padding-left:12px;}
+.listulnew{ width:711px; height:auto; float:left; padding:4px 12px;}
+.listulnew ul{ width:100%; height:auto; float:left; margin-top:4px; font-size:11px;}
+.listulnew ul li{ width:701px; height:auto; float:left; background:url(/images/citytours/abg.jpg) 0px 14px no-repeat; border-bottom:1px dashed #8c8989; padding:6px 0px 6px 10px;}
+.listulnew ul li.name{ width:100%; height:auto; float:left; display:block; padding:12px 0px 0px 0px; background:none; font-weight:bold; border-bottom:none;}
+.listulnew ul li a{ width:100%; height:auto; float:left; display:block; background:none; color:#454545; text-decoration:underline; line-height:20px; padding-left:0px; max-width:none; font-size:12px;}
+.listulnew ul li a:hover{ color:#b20000; background:none;} 
+.listulnew ul li span{ display:block; float:left; width:100%; color:#454545; max-width:none;}
+.listulnew ul li span strong{ color:#222222; font-weight:normal;}
+.listcontent1new{ width:470px; height:auto; float:left; margin-top:18px;}
+.listcontent1new p{ line-height:18px; color:#333;}
+.listcontent1new p a{color:#0000ee; text-decoration:underline;}
+.listcontent1new p a:hover{text-decoration:none; color:#000;}
+
+
+.questions{ width:100%; height:auto; float:left; margin-top:20px;}
+.ques-menu{ width:100%; height:42px; float:left; background:#e6e6e6;}
+.ques-menu ul{ width:100%; height:auto; float:left;}
+.ques-menu ul li{ width:190px; line-height:42px; float:left; font-size:15px; display:block; color:#212121; text-align:center; font-weight:bold; cursor:pointer; margin-right:3px;}
+.ques-menu ul li.dq,.ques-menu ul li:hover{ background:#fff; color:#8c4600;}
+.trip-questuon,.common-questuon{ width:700px; height:auto; float:left; background:#fff; padding:15px 15px 15px 20px; color:#333333; line-height:18px;}
+.common-questuon{padding:5px 15px 15px 20px;}
+.tripleft{ width:420px; height:auto; float:left;}
+.answer{ width:100%; height:auto; float:left;}
+.answer ul{ width:100%; height:auto; float:left; margin-top:10px;}
+.answer ul.ff{ width:420px; height:auto; float:left; margin-top:10px;}
+.common-questuon .answer ul.ff li{ width:367px; height:auto; float:left; display:block; background:url(/images/citytours/hi.jpg) left top no-repeat; padding:0px 0px 5px 54px;}
+.answer ul li{ width:366px; height:auto; float:left; display:block; background:url(/images/citytours/hi.jpg) left top no-repeat; padding:0px 0px 5px 54px; color:#8c4600;}
+.answer ul li.advisor,.answer ul.ff li.advisor{background:url(/images/citytours/advisor.jpg) left top no-repeat; color:#333;}
+/*  .answer ul li span{ color:#8c4600;}  */
+.common-questuon .answer ul li{ width:646px;}
+.pager{ color:#1C1A1B; float:left; height:auto; margin-top:20px; padding-bottom:20px; text-align:center; width:100%;}
+.pager ul{ width:100%; height:auto; float:left; text-align:center; padding:0px; border:none;}
+.pager ul li{ height:22px; display:inline; margin:0px 4px; float:none; background:none; padding:0px;}
+.pager ul a:link,.pager ul a:visited{ border:solid 1px #d18f2f; color:#0e509e;  padding:0px 6px; text-decoration:none; background:#fff; color:#d18f2f; display:inline-block; line-height:22px;}
+.pager ul .page a{font-weight:normal;}
+.pager ul a:hover{background:#d18f2f; color:#fff;}
+.pager ul .selected a{ background:#d18f2f; color:#fff;}
+.pager ul .hidden a{border:solid 1px #DEDEDE; color:#888888;}
+.pager ul .first,.pager ul .last{display:none;}
+
+
+
+.tripright{ width:270px; height:auto; float:right; background:#dddddd; padding:7px 0px 10px 0px; margin-top:8px;}
+.tripright h2{ width:100%; height:34px; background:#095ab7; color:#fff; font-size:16px; font-weight:normal; line-height:34px; text-align:center; display:block; float:left;}
+.tripright table{ width:250px; height:auto; margin:4px auto;}
+.tripright table tr td{ padding:5px 0px; color:#515151;}
+.tripright table tr td input{ border:1px solid #b5b5b5; width:168px; float:right;}
+.tripright table tr td span{ float:left;}
+.tripright table tr td textarea{ width:248px; height:90px; border:1px solid #b5b5b5;}
+
+
+
+
+
+#right{ width:157px; height:auto; float:right; margin-top:15px; background:url(/images/citytours/rbg.jpg) #d2d3d5 left bottom repeat-x; padding:3px 3px 15px 3px;}
+#right h2{ width:100%; height:48px; float:left; display:block; margin-top:10px;}
+.rcontent{ width:153px; height:auto; float:left; background:url(/images/chinatours/rbg.jpg) repeat-y; padding:0px 2px 4px 2px;}
+.rcontent ul{ width:137px; height:auto; float:left; padding:10px 8px 5px 8px;}
+.rcontent ul li{ width:100%; height:auto; float:left; display:block; color:#666666;}
+.rcontent ul li strong{ font-size:13px; display:block;}
+.rcontent ul li select{ border:1px solid #bbbbbb; background:#fff; color:#666; margin:3px 0px; width:135px; height:22px; line-height:22px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+.rcontent table{ width:144px; height:auto; margin-left:9px;}
+.rcontent table tr td{ padding:2px 0px; color:#333333; font-size:11px;}
+.rcontent table tr td strong{ font-size:13px;}
+.rcontent table tr td span{ text-decoration:underline; cursor:pointer; display:block;}
+.rcontent table tr td ol{ width:144px; height:auto;}
+.rcontent table tr td ol li{ width:72px; height:auto; float:left; display:block; white-space:nowrap;}
+.advanced{ width:100%; height:20px; float:left;}
+.recommend{ width:157px; height:auto; float:left; margin-top:10px;}
+.recommend ul{ width:100%; height:auto; float:left;}
+.recommend ul li{ width:148px; height:auto; float:left; display:block; margin:3px 0px; padding-left:9px;}
+.recommend ul li span{ width:18px; height:18px; text-align:center; color:#ffffff; font-size:11px; font-weight:bold; line-height:18px; float:left; display:block; background:url(/images/chinatours/rspan.png) left center no-repeat;}
+.recommend ul li a{ width:120px; height:auto; float:right; color:#333333; display:block; padding-top:3px; font-size:11px;}
+.recommend ul li a:hover{ color:#b20000;}
+.more-indexcont h2 span#close-index{cursor: pointer; float: right; padding: 5px 10px 4px 0;}
+.more-indexcont { position:absolute; background:#FBE5CD; height: auto; left: 380px; padding: 7px; top:340px; width: 565px; z-index: 9999;}
+.list-city{ width:543px; height:auto; float:left; border:1px solid #d7d7d7; padding:5px 10px 10px 10px; background:#f5e8d2; border-top:none;}
+.more-indexcont h2{ display:block; border-bottom:1px solid #ccc; line-height:30px; font-size:14px; width:560px; margin:0px; padding:0px; height:32px; background:#d38400; font-weight:normal; color:#fff; padding-left:5px;}
+.more-indexcont h2 b{ float:left;}
+.more-indexcont h2 span#close-none{ float:right; padding:5px 10px 4px 0px; cursor:pointer;}
+.list-city h3{ width:100%; height:auto; float:left; line-height:25px; color:#b67600; font-size:13px; font-weight:normal; margin:0px; padding:0px;}
+.list-city ul{ width:100%; height:auto; float:left; margin:0px; padding:4px 0px; border-bottom:1px dashed #b0afad; /* border-top:1px dashed #b0afad; */ margin-bottom:5px;}
+.list-city ul label{ cursor:pointer;}
+.list-city ul li{ width:17%; white-space:nowrap; float:left; list-style:none; color:#666666; margin:0px 5px 2px 0px; padding:3px 5px 3px 3px; height:18px; line-height:18px; font-size:12px;}
+
+.guide{ width:143px; height:auto; float:left; padding:5px 7px; background:#eeeeee;}
+#right .guide h2{color:#8c4600; font-size:13px; font-weight:bold; height:24px; line-height:24px; margin-top:0px;}
+.guide ul{ width:100%; height:auto; float:left;}
+.guide ul li.title{ color:#8c4600; font-size:13px; font-weight:bold;}
+.guide ul li a{ color:#444; line-height:24px;}
+.guide ul.ulnewback li a{ white-space:nowrap;}
+.guide ul li a:hover{ color:#ff0000; text-decoration:underline;}
+.flight{ width:100%; height:auto; float:left; margin-top:15px;}
+.citylist{ width:100%; height:auto; float:left; margin-top:10px;}
+.citylist ul{ width:153px; height:auto; float:left; padding:0px 2px;}
+.citylist ul li{ width:100%; height:100px; display:block; float:left; margin-top:10px;}
+.citylist h2{ height:30px; margin-top:0px;}
+.guide1{ width:100%; height:auto; float:left; background:#eeeeee; margin-top:15px;}
+.guide1 ul{ width:143px; padding:5px 7px; height:auto; float:left;}
+.guide1 ul li.title{ color:#8c4600; font-size:13px; font-weight:bold;}
+.guide1 ul li a{ color:#444; line-height:24px;}
+.guide1 ul.ulnewback li a{ white-space:nowrap;}
+.guide1 ul li a:hover{ color:#ff0000; text-decoration:underline;}
+
+
+
+#left1{ background:#FFFFFF;  border:1px solid #CBCBCB; float:left; height:auto; padding:10px 14px 30px 8px; width:655px; margin-top:10px;}
+.hidden{ overflow:hidden;}
+#a2{ width:100%; height:34px; float:left; line-height:34px; overflow:hidden; border-bottom:2px solid #b9b2ac;}
+#a2 span{ width:166px; height:34px; float:left; text-align:center; line-height:34px; color:#000; font-size:14px; margin-right:3px; cursor:pointer; color:#1d1d1d; background:url(/images/diy.gif) 0px 0px no-repeat; line-height:34px;}
+#c05{ width:100%; height:auto; float:left; padding-top:14px;}
+.list05{ width:100%; height:auto; float:left; margin-bottom:25px; z-index:100;}
+.list05 h2{ width:648px; height:26px; line-height:26px; font-weight:normal; color:#4e4e49; font-size:13px; display:block; background:#f0e9e5; padding-left:7px; margin-bottom:4px;}
+.list05 ul{ width:668px; height:auto; float:left; padding-left:7px;}
+.list05 ul li{ width:24%; float:left; padding:2px 2px; margin-right:2px; color:#1b1919; margin-bottom:2px;}
+.list ul.short li{ width:19%; float:left; padding:2px 2px; margin-right:2px; color:#1b1919; margin-bottom:2px;}
+.list05 ul li.tesu{ font-weight:bold;}
+.thoughts-cont01{ width:655px; padding:5px 0px; float:left; margin-top:5px;}
+.simpleinfoBox01{ border:1px solid #cdcdcd; color: #989898; font-size: 11px;  height: 126px; line-height: 16px; padding: 5px; width: 325px;}
+.table-diy{ width:648px; height:auto; float:left; padding:5px 0px 5px 7px; color:#1b1919; -webkit-text-size-adjust:none;}
+.table-diy input,.table-diy select{ width:175px; height:19px; border:1px solid #aaa;}
+.table-diy tr td{ padding:5px;}
+.table-diy tr td.align{ text-align:right;}
+.table-diy tr td span{ font-size:10px; color:#6b6b6b; line-height:10px}
+.area{ width:100%; height:auto; float:left; margin-top:5px; padding-bottom:20px; border-bottom:1px dashed #b2b2b2;}
+#submit{ width:200px; height:auto; float:right; margin-top:15px; text-align:right; color:#2c2c2c; line-height:28px;}
+#submit input{ width:72px; height:24px; border:none;}
+#submit a{ width:57px; height:27px; background:url(/images/diy.gif) -341px 0px no-repeat; display:block; text-align:center; float:right; margin-left:12px; color:#000; margin-top:5px;}
+.bookingDetail01{ position: relative; width:100%; height:auto;}
+.tipsBox01{ border: 1px solid #D1D1D1; color: #b06646; font-size: 12px; padding: 5px;  position: absolute; right:5px; top: 0px; width: 270px;}
+.roundCorner{ border-radius: 4px 4px 4px 4px;}
+.arrowLeft01 {background:url(/images/newhomepage/left-arrow.png) no-repeat; height: 11px; left: -11px; position: absolute; top: 20px; width: 11px;}
+.tipsBox01 ol{ margin:0px; padding-left: 15px;}
+.tipsBox01 ol li{ margin:0px; padding:0px; line-height:21px; color:#585858;}
+
+#right1{ float:right; height:auto; width:228px; margin-top:10px;}
+.right-cont{ width:100%; height:auto; float:left; margin-bottom:20px;}
+.right-tit,.right-cont h2{ width:213px; height:32px; float:left; background:url(/images/diy.gif) -402px 0px no-repeat; line-height:32px; padding-left:15px; color:#000; font-size:16px; font-weight:bold;}
+.right-list{ width:212px; background:#e6e5e4; border:1px solid #d1d1d1; border-top:none; padding:7px; float:left;}
+.chat{ width:212px; height:60px; float:left;}
+.contact ul{ width:100%; height:auto; float:left; padding-top:6px; -webkit-text-size-adjust:none;}
+.contact ul li{background:url(/images/diy.gif) 0px -132px no-repeat; padding-left:30px; width:182px; font-size:12px; color:#000; font-weight:bold; margin-bottom:7px; float:left; }
+.contact ul li.msn{background:url(/images/diy.gif) -736px -38px no-repeat;}
+.contact ul li.tel{background:url(/images/diy.gif) -736px -95px no-repeat;}
+.contact ul li a,.contact ul li span{ display:block; color:#7c3700; text-decoration:underline; font-size:10px; line-height:18px; cursor:pointer;}
+.contact ul li a:hover,.contact ul li span:hover{ color:#000; text-decoration:none;}
+.chat{ width:212px; height:60px; float:left;}
+.right-cont ul.ulnewback{ width:198px; background:#e6e5e4; border:1px solid #d1d1d1; border-top:none; padding:7px 14px; float:left;}
+.right-cont ul.ulnewback li{ width:100%; height:auto; float:left; display:block; padding:5px 0px;}
+.right-cont ul.ulnewback li a{ display:blockl; color:#454444;}
+.right-cont ul.ulnewback li a:hover{ color:#ff0000; text-decoration:underline;}
+
+.confirm {
+    float: left;
+    height: auto;
+    padding: 3px 0 8px;
+    width: 100%;
+}
+.confirm textarea {
+    border: 1px solid #CDCDCD;
+    float: left;
+    height: 78px;
+    width: 450px;
+	font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#666666;
+}
+
+.confirm span {
+    float: right;
+    width: 74px;
+}
+.confirm span a {
+    display: block;
+}
+
+/*  2013-8-8 */
+.tab-menu{ width:100%; height:31px; float:left; background:url(/images/chinatours/menu.jpg) left bottom repeat-x; padding-bottom:5px;}
+.tab-menu ul{ width:100%; height:31px; float:left;}
+.tab-menu ul li{ width:auto; margin-right:10px; cursor:pointer; display:inline; float:left;}
+.tab-menu ul li strong{ background:url(/images/chinatours/li.jpg) left center repeat-x; line-height:31px; padding:0px 15px; color:#fff; font-size:15px; float:left; display:inline-block; font-weight:normal;}
+.tab-menu ul li span{ display:none;}
+.tab-menu ul li:hover strong,.tab-menu ul li.dq strong{ background:url(/images/chinatours/lidq.jpg) left center repeat-x;}
+.tab-menu ul li:hover span,.tab-menu ul li.dq span{ width:10px; height:31px; background:url(/images/chinatours/span.png) left center no-repeat; display:block; float:left;}
+#c01,#c02{ width:100%; height:auto; float:left;}
+#c01 .listone{ height:275px;}
+.deals{ width:100%; height:auto; float:left; margin-top:20px;}
+.deals ul{ width:196px; height:auto; float:left; border:1px solid #dbdbdb; padding:15px 20px; background:#fdfcf8; margin-right:10px; margin-bottom:15px;}
+.deals ul li.pic{ width:192px; height:132px; border:2px solid #dbdbdb; padding:0px; margin-bottom:5px;}
+.deals ul li{ width:100%; height:auto; float:left; padding:3px 0px; color:#45392c;}
+.deals ul li.name a{ font-size:14px; color:#453a2c; max-width:130px; float:left; display:block; font-weight:bold;}
+.deals ul li.name a:hover{ color:#ff0000; text-decoration:underline;}
+.deals ul li.name span{ float:right; margin-top:3px; display:block;}
+.star3{ background:url(/images/yangtze/star1.png) repeat-x; width:39px; display:block; height:11px;}
+.star4{ background:url(/images/yangtze/star1.png) repeat-x; width:52px; display:block; height:11px;}
+.star5{ background:url(/images/yangtze/star1.png) repeat-x; width:65px; display:block; height:11px;}
+.deals ul li.route{ color:#453a2c; font-size:10px;}
+.deals ul li.route strong{ width:45px; float:left; display:block;}
+.deals ul li.route span{ float:right; max-width:150px; text-align:left; display:block; padding-bottom:3px; white-space:nowrap;}
+.deals ul li.price{ font-size:14px; font-weight:bold; margin-bottom:5px;}
+.deals ul li.price strong{ font-size:16px; color:#8c0000;}
+.listcontent ul li ol.tesu{ padding-top:10px;}
+.listcontent ul li ol.tesu li{ width:460px; height:auto; float:left; background:url(/images/citytours/abg.jpg) 0px 13px no-repeat; border-bottom:1px dashed #8c8989; padding:3px 0px 3px 10px;}
+.listcontent ul li ol.tesu li a{ width:100%; height:auto; float:left; display:block; background:none; color:#454545; text-decoration:underline; line-height:20px; padding-left:0px; max-width:none; font-size:12px;}
+.listcontent ul li ol.tesu li a:hover{ color:#b20000; background:none;}
+.listcontent ul li ol.tesu li span{ display:block; float:left; width:100%; color:#454545; max-width:none;}
+.listcontent ul li ol.tesu li span strong{ color:#222222; font-weight:normal;}
+.ques-trip{ width:484px; height:auto; float:left;}
+.questionscont1{ width:456px; height:auto; float:left; margin-top:1px; border:2px solid #bdbdbd; padding:8px 12px;}
+.questionscont1 table{ width:100%; height:auto;}
+.questionscont1 table tr td{ padding:8px 0px; color:#3b3838;}
+.questionscont1 table tr td input{ border:1px solid #bcbcbc; line-height:22px; height:22px; width:152px;}
+.questionscont1 table tr td textarea{ width:450px; height:162px; border:1px solid #bcbcbc; padding:2px;}
+.tripcontent{ width:100%; height:auto; float:right; margin-top:20px;}
+.questionsnew{ width:100%; height:auto; float:left; margin-top:20px;}
+.questionsnew h2{ width:100%; height:38px; display:block; float:left;}
+.questionscont{ width:709px; height:auto; float:left; margin-top:1px; border:2px solid #bdbdbd; padding:8px 12px;}
+.questionscont table{ width:100%; height:auto;}
+.questionscont table tr td{ padding:8px 0px; color:#3b3838;}
+.questionscont table tr td input{ border:1px solid #bcbcbc; line-height:22px; height:22px; width:185px;}
+.questionscont table tr td textarea{ width:703px; height:130px; border:1px solid #bcbcbc; padding:2px;}
+.chinadiy{ width:100%; height:auto; float:left; margin-top:20px;}
+.lastnew{ width:100%; height:auto; float:left; border-top:1px solid #bbbbbb; padding-top:20px; margin-top:20px;}
+.lastnew1{ float:right; width:660px;}
+.lastnew1 ul{ width:200px; height:auto; float:left; border-right:1px solid #9b9b9b; margin-right:22px;}
+.lastnew1 ul li.title1{ background:none; width:100%; height:auto; font-size:18px; color:#545454; font-weight:bold; line-height:24px; padding:0px;}
+.lastnew1 ul li{ width:170px; height:auto; float:left; display:block; background:url(/images/chinatours/lastbg.jpg) left top no-repeat; color:#6f6f6f; margin:10px 0px; padding:3px 0px 3px 30px;}
+.tripadvisor{ width:240px; height:auto; float:left;}
+.citylist1{ width:100%; height:auto; float:left; margin-top:20px; background:#dddddd;}
+.citylist1 ul{ width:153px; height:auto; float:left; padding:0px 2px;}
+.citylist1 ul li{ width:100%; height:100px; display:block; float:left; margin-bottom:10px;}
+.citylist1 h2{ height:23px; margin-top:0px;}
+.rightlist{ width:100%; height:auto; float:left; margin-top:20px; background:#dddddd;}
+.rightlist h2{ height:23px; margin-top:0px;}
+.rightlist ul{ width:137px; height:auto; float:left; padding:0px 10px 15px 10px;}
+.rightlist ul li{ width:100%; height:auto; float:left; display:block; border-bottom:1px dashed #8c8989; line-height:24px;}
+.rightlist ul li.title2{ border:none; font-weight:bold; color:#8c4600; line-height:18px; padding-top:5px;}
+.rightlist ul li a{ font-size:11px; color:#333333;}
+.rightlist ul li a:hover{ color:#000; text-decoration:underline;}
+
+.cooperation{ width:100%; height:auto; float:left; margin-top:20px;}
+
+/*  2013-9-27 add style  */
+.tourlistnew{ width:735px; height:auto; float:left; margin-top:15px; border:1px solid #dedede; padding:0px 0px 13px 0px;}
+.tourlistnew h2{ width:723px; height:30px; display:block; float:left; padding-left:12px; color:#ffffff; font-size:18px; line-height:30px; background:#8c4600; font-weight:normal;}
+.tourlistnew h2 span{ font-size:13px; font-weight:normal;}
+.listtext{ width:100%; height:auto; float:left; color:#454545; line-height:18px; padding-bottom:8px;}
+.listtext a{ color:#0000ff;}
+.listtext a:hover{ text-decoration:underline;}
+.newlist{ width:711px; height:auto; float:left; padding:6px 12px 0px 12px;}
+.tourlistnew ul{ width:100%; height:auto; float:left; padding:4px 0px; border-bottom:1px dashed #c0bfbf;}
+.tourlistnew ul li{ display:block; float:left; width:610px; height:auto; background:url(/images/citytours/abg.jpg) 0px 8px no-repeat; padding-left:10px;}
+.tourlistnew ul li.pic{ border:1px solid #dedede; padding:1px; background:#fff; width:74px; height:47px; margin-right:12px;}
+.tourlistnew ul li.pic img{ width:74px; height:47px;}
+.tourlistnew ul li a{ width:100%; height:auto; float:left; display:block; background:none; color:#454545; text-decoration:underline; line-height:16px; padding-bottom:3px;}
+.tourlistnew ul li a.hot{ background:url(/images/citytours/hot.gif) 220px 0px no-repeat;}
+.tourlistnew ul li a.hot:hover{color:#b20000; background:url(/images/citytours/hot.gif) 220px 0px no-repeat; text-decoration:underline;}
+.tourlistnew ul li a:hover{ color:#b20000; background:none; text-decoration:underline;}
+.tourlistnew ul li span{ display:block; float:left; width:100%; color:#454545; font-size:11px;}
+.tourlistnew ul li span strong{ color:#222222; font-weight:normal;}
+.righttable{ width:735px; height:auto; float:left; border:1px solid #d5d5d5; background:#f1efef;}
+.righttable table{ width:100%; height:auto; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+.righttable table tr td{ border:1px solid #fff; border-right:none; border-bottom:none; background:#cfcece; padding:8px 4px; text-align:center; color:#000; font-size:11px; line-height:16px;}
+.righttable table tr td span{ width:720px; height:auto; margin:0px auto; display:block; background:url(/images/beijing_shanghai/sym4.jpg) right bottom no-repeat; text-align:left; line-height:18px; font-size:12px; padding-bottom:8px;}
+.righttable table tr td span p{ padding-bottom:5px;}
+.righttable table tr td span a{ text-decoration:underline; color:#a91111; font-size:13px;}
+.righttable table tr.h2 td{ background:#8c4600; font-size:14px; color:#fff; font-weight:bold; line-height:28px; padding:0px;}
+.righttable table tr.toptr td{ background:#fcf3e9; font-weight:bold; color:#333333; font-size:12px; padding:8px;}
+.righttable table tr.grey td{ background:#fff;}
+.righttable table tr.h2:hover td{ background:#8c4600; color:#fff;}
+.righttable table tr td.bigname{ color:#333333; font-size:12px;}
+.righttable table tr td.notice{ text-align:left; font-size:12px; color:#333333; line-height:18px; padding:10px 10px 20px 10px;}
+.righttable table tr td.notice p{ padding-bottom:8px;}
+.righttable table tr:hover td.notice,.righttable table tr:hover td.bigname{ background:none;}
+.righttable table tr td.notice strong{ color:#000000; font-size:14px;}
+.righttable table tr td.notice b,.righttable table tr td.notice a{ color:#640909; font-weight:normal;}
+.titlename{ background:#8c4600; font-size:14px; color:#fff; font-weight:bold; line-height:28px; width:100%; text-align:center;}
+.seat{ width:721px; height:auto; float:left; background:#fff; padding:7px 7px 10px 7px; color:#797877; line-height:18px;}
+.seat h2{ width:100%; height:auto; line-height:24px; color:#8c4600; font-size:15px; margin-top:10px;}
+.seat p{ padding-bottom:4px;}
+.seat p a{ color:#333333; text-decoration:underline;}
+.seat img{ margin:4px 0px;}
+.seatul,.seatul1{ width:100%; height:auto; float:left;}
+.seatul h2{ font-size:12px;  color:#333333;  /*color:#9a9898;*/ line-height:18px; margin-top:4px; font-weight:normal;}
+.seatul ul,.seatul1 ul{ width:100%; height:auto; float:left;}
+.seatul ul li{ width:675px;  height:auto; float:left; background:url(/images/beijing_shanghai/libg.jpg) 0px 8px no-repeat; padding-left:14px;}
+.seatul ul li span{ color:#b11111;}
+.seatul table{ border:1px solid #d4d4d4; margin:4px 0px;}
+.seatul table tr td b{ color:#b11111; font-weight:normal;}
+.seat em{ color:#2e2d2b;}
+.seatul1 ul li{ width:127px; height:auto; float:left; margin-right:12px; margin-top:12px;}
+.seatul1 ul li img{ width:127px; height:89px; margin:0px auto;}
+.seatul1 ul li span{ width:100%; height:auto; text-align:center; display:inline-block;}
+.righttable .seatul table tr td{ border:1px solid #fff; border-right:none; border-bottom:none; background:#f1efef; padding:4px; text-align:center; color:#666666; font-size:11px; line-height:16px;}
+.righttable .seatul table tr.toptr td{ background:#fcf3e9; font-weight:normal; color:#333333; font-size:12px; padding:6px 4px;}
+.righttable .seatul table tr.grey td{ background:#fff;}
+
+.recommendnew{ width:100%; height:auto; float:left; margin-top:20px;}
+.recolist{ width:708px; height:auto; float:left; background:#fff; border:1px solid #dfdfdf; padding:4px 13px 10px 14px;}
+.recolist ul{ width:100%; height:auto; float:left;}
+.recolist ul li{ width:339px;background:url(/images/citytours/recoli.jpg) left center no-repeat; padding:3px 0px 3px 15px; border-bottom:1px dashed #adacac; display:block; float:left; line-height:18px;}
+.recolist ul li a{ color:#333333;}
+.recolist ul li a:hover{ text-decoration:underline;}
+
+
+
+.pctimgbg{ background:url(/css/com_pgcategory/img/bg.png) #FFFFFF left center no-repeat; float:left; height:132px; margin-top:18px; width:160px;}
+.pct{ width:160px; height:auto; float:left; padding-left:12px; margin-right:18px;}
+.listcontentnew p{ line-height:18px; color:#333;}
+.listcontentnew p a{color:#0000ee; text-decoration:underline;}
+.listcontentnew p a:hover{text-decoration:none; color:#000;}
+.listcontentnew{ width:530px; height:auto; float:left; margin-top:15px;}
+.listcontentnew ul{ width:100%; height:auto; float:left;}
+.listcontentnew ul li{ color:#333; line-height:18px; width:100%; height:auto; display:block; float:left;}
+.listcontentnew ul li a,.tourlist1 p a{ color:#0000ee; text-decoration:underline;}
+.listcontentnew ul li a:hover{ text-decoration:none; color:#000;}
+.listcontentnew ul li ol{ width:100%; height:auto; float:left; border-top:1px dashed #bbbbbb; margin-top:12px; padding-top:15px; font-size:11px;}
+.listcontentnew ul li ol li a{ max-width:390px; height:auto; float:left; display:inline-block; background:url(/images/citytours/abg.jpg) 0px 10px no-repeat; color:#454545; text-decoration:underline; padding-left:10px; line-height:20px;}
+.listcontentnew ul li ol li a:hover{ color:#b20000; background:url(/images/citytours/adqbg.jpg) 0px 10px no-repeat;}
+.listcontentnew ul li ol li span{ display:inline-block; float:right; max-width:130px; color:#454545;}
+.listcontentnew ul li ol li span strong{ color:#b20000; font-size:12px;}
+
+
+.recommendadd{ width:100%; height:auto; float:left;}
+.recommendadd ul{ width:100%; height:auto; float:left; padding:15px 0px; border-bottom:1px dashed #b7b1b0;}
+.recommendadd ul li{ background:none; padding-left:0px; color:#333333; float:left; display:block;}
+.recommendadd ul li.pic{width:169px; height:114px; padding:2px; border:1px solid #ccc; float:left; display:block;}
+.recommendadd ul li.pic a{width:169px; height:114px; display:block; float:left;}
+.recommendadd ul li.pic img{width:169px; height:114px;}
+.recommendadd ul li.ollist{width:520px; height:auto; float:right; display:block;}
+.recommendadd ul li ol{ width:100%; height:auto; float:left;}
+.recommendadd ul li ol li{ width:100%; height:auto; float:left; display:block; line-height:18px;}
+.recommendadd ul li ol li a{ font-weight:bold; color:#333333; line-height:20px; text-decoration:underline; display:block;}
+.recommendadd ul li ol li a:hover{ color:#000;}
+.recommendadd ul li ol li span{ color:#000; display:inline; font-size:12px; width:auto; float:none;}
+.recommendadd ul li ol li.button{ margin-top:2px;}
+.recommendadd ul li ol li.button a img{ display:inline-block;}
+
+.listtext .seatul{ width:100%; height:auto; float:left;}
+.listtext .seatul h2{ font-size:12px;  color:#000;  /*color:#9a9898;*/ line-height:24px; margin-top:4px; font-weight:normal; background:none; height:24px; padding:0px;}
+.listtext .seatul ul{ width:100%; height:auto; float:left;}
+.listtext .seatul ul li{ width:675px;  height:auto; float:left; background:url(/images/beijing_shanghai/libg.jpg) 0px 8px no-repeat; padding-left:14px;}
+.listtext .seatul ul li span{ color:#b11111;}
+.listtext .seatul table{ border:1px solid #d4d4d4; margin:4px 0px; width:100%; height:auto;}
+.listtext .seatul table tr td b{ color:#b11111; font-weight:normal;}
+
+.listtext .seatul table tr td{ border:1px solid #fff; border-right:none; border-bottom:none; background:#f1efef; padding:4px; text-align:center; color:#666666; font-size:11px; line-height:16px;}
+.listtext .seatul table tr.toptr td{ background:#fcf3e9; font-weight:normal; color:#333333; font-size:12px; padding:6px 4px;}
+.listtext .seatul table tr.grey td{ background:#fff;}
+.online-step{width:100%; height:auto; float:left; margin-top:20px;}
+#right .online-step h2{ height:30px; margin-top:0px; width:100%; float:left; display:block; margin-top:0px;}
+.online-step ul{ width:100%; height:auto; float:left;}
+.online-step ul li{ width:100%; height:auto; display:block; float:left; padding:10px 0px 5px 0px;}
+.tripadvisor1{ width:100%; height:auto; float:left; margin-top:20px;}
+
+
+.tab_menu{ width:535px; height:auto; float:left; border-bottom:1px solid #f5b54a; padding-left:8px; margin-top:10px;}
+.tab_menu span{ width:68px; height:27px; line-height:27px; text-align:center; display:block; float:left; font-weight:bold; font-size:13px; color:#582800; border:1px solid #f5b54a; border-bottom:none; margin-right:20px; cursor:pointer;} 
+.tab_menu span.dq,.tab_menu span:hover{ background:#f5b54a;}

@@ -1,0 +1,396 @@
+<?php
+
+class ReviewsController extends Controller
+{
+	
+    public $layout='//layouts/reviews';
+
+    public function actions() {
+        return array(
+       'captcha'=> array(  
+          'class'=>'CaptchaAction',
+        ));
+    }
+
+	/**
+	 * Lists all models.
+	 */
+	public function actionIndex()
+	{
+        $page = isset($_GET['page']) ? (int)$_GET['page'] : 0;
+        $perPage = 6;
+        $limit = "limit {$page},{$perPage}";
+
+        $condition[] = 'a.type=1';
+        if($_GET['cityid']){
+          $condition[] = 'a.city_id='.(int)$_GET['cityid'];
+        }
+        if($_GET['day']){
+          switch($_GET['day']){
+            case '1':
+               $condition[] = "a.day=1";
+            break;
+            case '2':
+              $condition[] = "a.day>=2 and a.day<=4";
+            break;
+            case '3':
+              $condition[] = "a.day>=5 and a.day<=8";
+            break;
+            case '4':
+              $condition[] = "a.day>=9 and a.day<=12";
+            break;
+            case '5':
+              $condition[] = "a.day>12";
+            break;
+            default:
+            break;
+          }
+        }
+        if($_GET['nationality']){
+          $nationality = mysql_real_escape_string($_GET['nationality']);
+          $condition[] = "a.nationnality='$nationality'";
+        }
+
+        $where = 'where ' . implode(' and ', $condition);
+
+        //echo $where;
+        $sql = "select a.*,b.name package_name,b.package_type from jos_cos_testimonisal a
+                left join jos_cos_tours_package b 
+                on a.packageid=b.id $where  order by a.id desc {$limit}  ";
+        $data =  Yii::app()->db->createCommand($sql)->queryAll();
+        $sql = "select count(*) as c from jos_cos_testimonisal as a $where";
+        $items_count = Yii::app()->db->createCommand($sql)->queryRow();
+        $items_count = $items_count['c'];
+        $pages = new CPagination($items_count);
+        $pages->setPageSize($perPage);
+
+
+        $sql = "select * from jos_cos_testimonisal";
+        $testimonial_all = Yii::app()->db->createCommand($sql)->queryAll();
+        //取按城市分组
+        $city_testimonial=array();
+        foreach ($testimonial_all as $k=>$v){
+          $city_testimonial[$v['city_id']][]=$v;
+        }
+
+      $sql = "select nationnality from jos_cos_testimonisal group by nationnality";
+      $nationnality_arr = Yii::app()->db->createCommand($sql)->queryAll();
+
+      $view = 'index';
+      if($_GET['test']){
+        $view = 'index_Dev';
+      }
+      $this->setPageHeader();
+      $city_list = Yii::app()->params['city_list'];
+
+  		$this->render($view,array(
+        'data'=>$data,
+        'item_count'=>$items_count,
+        'page_size'=>$perPage,
+        'pages'=>$pages,
+        'city_testimonial' => $city_testimonial,
+        'nationnality_arr' => $nationnality_arr,
+        'city_list' => $city_list,
+  		));
+	}
+
+	public function actionList()
+	{
+        $cityid = (int)$_GET['cityid'];
+        if(!$cityid) throw new CHttpException(404,'The requested page does not exist.');
+
+        $page = isset($_GET['page']) ? (int)$_GET['page'] : 0;
+        $perPage = 6;
+        $limit = "limit {$page},{$perPage}";
+
+        $sql = "select a.*,b.name package_name,b.package_type from jos_cos_testimonisal a
+                left join jos_cos_tours_package b 
+                on a.packageid=b.id where a.type=1  and a.city_id='$cityid' order by a.id desc {$limit}  ";
+        $data =  Yii::app()->db->createCommand($sql)->queryAll();
+        $sql = "select count(*) as c from jos_cos_testimonisal where type=1 and city_id='$cityid'";
+        $items_count = Yii::app()->db->createCommand($sql)->queryRow();
+        $items_count = $items_count['c'];
+        $pages = new CPagination($items_count);
+        $pages->setPageSize($perPage);
+
+
+
+        $sql = "select * from jos_cos_testimonisal";
+        $testimonial_all = Yii::app()->db->createCommand($sql)->queryAll();
+        //取按城市分组
+        $city_testimonial=array();
+        foreach ($testimonial_all as $k=>$v){
+          $city_testimonial[$v['city_id']][]=$v;
+        }
+
+
+      $arr = explode('-', $_GET['title']);
+      foreach($arr as $v){
+        $title_arr[] = ucfirst($v);
+      }
+      $this->setPageTitle(implode(' ', $title_arr));
+  		$this->render('list',array(
+        'data'=>$data,
+        'item_count'=>$items_count,
+        'page_size'=>$perPage,
+        'pages'=>$pages,
+        'city_testimonial' => $city_testimonial,
+        'city_list' => Yii::app()->params['city_list'],
+  		));
+	}
+
+	public function actionGuestReviews()
+	{
+      $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+      $perPage = 6;
+      $page = ($page-1)*$perPage;
+      $limit = "limit {$page},{$perPage}";
+
+      $where = 'where published=1';
+      if($_GET['city']){
+        $where .= " and cityid=".(int)$_GET['city'];
+      }
+      if($_GET['nationality']){
+        $nationality = mysql_real_escape_string($_GET['nationality']);
+        $where .= " and nationality='$nationality' ";
+      }
+      if($_GET['name']) {
+        $name = mysql_real_escape_string(trim($_GET['name']));
+        $where .= " and name like '%$name%'"; 
+      }
+
+      if($_GET['type']){
+        $reviews_type = (int)$_GET['type'];
+        $where .= " and review_type='$reviews_type'"; 
+      }
+
+      $sql = "select * from {{reviews}} $where order by dateline desc {$limit}  ";
+      $data =  Yii::app()->db->createCommand($sql)->queryAll();
+      $sql = "select count(*) as c from {{reviews}} $where";
+      $items_count = Yii::app()->db->createCommand($sql)->queryRow();
+      $items_count = $items_count['c'];
+      $pages = new CPagination($items_count);
+      $pages->setPageSize($perPage);
+
+      $sql1 = "select count(*) c from {{reviews}} where published=1";
+      $all_count = Yii::app()->db->createCommand($sql1)->queryRow();
+
+      $sql1 = "select count(*) c from {{reviews}} where published=1 and review_type=1";
+      $positive_count = Yii::app()->db->createCommand($sql1)->queryRow();
+
+      $sql2 = "select count(*) c from {{reviews}} where published=1 and review_type=2";
+      $common_count = Yii::app()->db->createCommand($sql2)->queryRow();
+
+      $sql3 = "select count(*) c from {{reviews}} where published=1 and review_type=3";
+      $negative_count = Yii::app()->db->createCommand($sql3)->queryRow();      
+
+      $sql = "select nationality from t_reviews group by nationality";
+      $nationality_arr = Yii::app()->db->createCommand($sql)->queryAll();
+
+      $this->setPageHeader();
+      $view = 'guestReviews';
+      if($_GET['test']){
+          $view = 'guestReviews_Dev';
+      }
+  		$this->render($view,array(
+        'data'=>$data,
+        'item_count'=>$items_count,
+        'page_size'=>$perPage,
+        'pages'=>$pages,
+        'all_count' => $all_count['c'],
+        'positive_count' => $positive_count['c'],
+        'common_count' => $common_count['c'],
+        'negative_count' => $negative_count['c'],
+        'city_list' => Yii::app()->params['city_list'],
+        'nationality_arr' => $nationality_arr,
+  		));
+	}
+
+  public function actionGuestReviewsDetail(){
+    $review_detail = Reviews::model()->findByPk($_GET['id']);
+    if(empty($review_detail)){
+      throw new CHttpException(404, 'Page not found');
+    }
+    if($review_detail->tour_id){
+       $tour = ToursPackage::model()->findByPk($review_detail->tour_id,array(
+        'select'=>'id, name,route, package_code,package_tour_type',
+      ));
+    }
+
+    $sql = "select count(*) as c from {{reviews_comment}} where tid='$review_detail->id'";
+    $comments_count = Yii::app()->db->createCommand($sql)->queryRow();
+
+    $sql = "select * from {{reviews_pic}} where published=1 and tid='$review_detail->id'";
+    $pics = Yii::app()->db->createCommand($sql)->queryAll();
+    $sql = "select * from {{reviews_comment}} where published=1 and tid='$review_detail->id'";
+    $comments = Yii::app()->db->createCommand($sql)->queryAll();
+
+    $this->render('GuestReviewsDetail', array(
+      'review_detail'=>$review_detail,
+      'tour' => $tour,
+      'comments_num'=>$comments_count['c'],
+      'pics' => $pics,
+      'comments' => $comments,
+    ));
+  }
+
+  public function actionShare()
+	{
+        $model = new Reviews();
+
+        
+        if(isset($_POST['Reviews']))
+        {
+          if($_POST['Reviews']['name']) {
+            $_POST['Reviews']['name'] = $_POST['Reviews']['gender'].$_POST['Reviews']['name'];
+          }
+          //$_POST['Reviews']['dateline'] = time();
+          //$_POST['Reviews']['year'] = date("Y");
+          //$model->dateline = time();
+          //$model->year = date("Y");
+
+          $model->attributes = $_POST['Reviews'];
+          if($model->save()){
+            $insertid = $model->id;
+            if($_FILES){
+              foreach((array)$_FILES['files']['error'] as $k=>$error){
+                 if($error == UPLOAD_ERR_OK){
+                    $type = $_FILES['files']['type'][$k];
+                    if(in_array($type, array('image/jpeg','image/jpg','image/png','image/gif'))){
+                       $filename = $_FILES["files"]["name"][$k];
+                       $tmp_name = $_FILES["files"]["tmp_name"][$k];
+                       $file_info = pathinfo($filename);
+                       $name = uniqid().'.'.$file_info['extension'];
+                       move_uploaded_file($tmp_name, Reviews::UPLOAD_PATH.$name);
+                       $reviewsPic = new ReviewsPic;
+                       $reviewsPic->pic = $name;
+                       $reviewsPic->tid = $insertid;
+                       $reviewsPic->save();
+                     }
+                 }
+              }
+            }
+            Yii::app()->user->setFlash('share_success',"Your article has been submitted, please wait for the administrator's review. Thank for your sharing!");
+            $this->redirect(array('reviews/guestReviews'));
+          }else{
+            $model->attributes = $_POST['Reviews'];
+          }
+        }
+
+      $this->setPageHeader();
+      $view = 'share';
+      if($_GET['test']){
+        $view = 'share_Dev';
+      }
+  		$this->render($view,array(
+            'model' => $model,
+  		));
+	}
+
+  function actionAddComment(){
+    $id = $_POST['id'];
+    $reviews = Reviews::model()->findByPk($id);
+    if(!$reviews) throw new CHttpException(404,'The requested page does not exist.');
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $content = $_POST['comment'];
+    if(empty($name) || empty($email) || empty($content)){
+      echo 'Please enter all item.';
+      exit;
+    }
+    $userip = SiteUtils::getClientIp();
+    $dateline = time();
+
+    $comment = new ReviewsComment;
+    $comment->tid = $id;
+    $comment->name = $name;
+    $comment->email = $email;
+    $comment->comment = trim(strip_tags($content));
+    $comment->userip = $userip;
+    $comment->dateline = $dateline;
+    $comment->save();
+    echo 0;
+    Yii::app()->end();
+  }
+
+  function actionVote($id){
+    $sql = "select id from {{reviews}} where id='$id'";
+    $reviews = Yii::app()->db->createCommand($sql)->queryAll();
+    if(empty($reviews)) throw new CHttpException(404,'The requested page does not exist.');
+    $type = (int)$_GET['type'];
+    if($type == 1){
+      $sql = "update {{reviews}} set vote1=vote1+1 where id='$id'";
+    }else{
+      $sql = "update {{reviews}} set vote2=vote2+1 where id='$id'";
+    }
+    Yii::app()->db->createCommand($sql)->query();
+    Yii::app()->end();
+  }
+
+  protected function setPageHeader()
+  {
+    $this->setPageTitle("China Tour Reviews, Customer Comments & Testimonials on lead to china tour service");
+    Yii::app()->clientScript->registerMetaTag('keywords','China tour reviews, LeadtoChina tour reviews, Hefei Full View tour review');
+    Yii::app()->clientScript->registerMetaTag('description','Here is the latest China tour reviews, comments and testimonials of lead to China tour clients who took China tour services from leadtochina.com
+');
+  }
+
+  function actionFeedbackStep1(){
+    $score = $_GET['score'];
+    $category = $_GET['category'];
+    $description = $_GET['description'];
+    $userip = SiteUtils::getClientIp();
+    $dateline = time();
+    $session_id = $_COOKIE['PHPSESSID'];
+
+    $feedback = new Feedback();
+    $feedback->score = $score;
+    $feedback->category = $category;
+    $feedback->description = $description;
+    $feedback->ip = $userip;
+    $feedback->dateline = $dateline;
+    $feedback->session_id = $session_id;
+    $feedback->save();
+    echo 0;
+    Yii::app()->end();
+  }
+
+  function actionFeedbackStep2(){
+    $session_id = $_COOKIE['PHPSESSID'];
+    $email = $_GET['email'];
+    $sql = "update {{feedback}} set email='$email' where session_id='$session_id'";
+    Yii::app()->db->createCommand($sql)->query();
+    echo 0;
+    Yii::app()->end();
+  }
+
+
+  function actionQuestionFeedback(){
+    if($_POST){
+       $feedback_question = new FeedbackQuestion();
+       foreach((array)$_POST['question'] as $k=>$v){
+          $str .= "<strong>question{$k}:</strong> ".implode(" , ", $v)."<br />";
+
+       }
+       if($_POST['suggestions']){
+          $str .= "<strong>suggestions:</strong> ". $_POST['suggestions'];
+       }
+      $feedback_question->answer_list = $str;
+      $feedback_question->created = date("Y-m-d H:i:s");
+      $feedback_question->save();
+      header("location:/succeed.html");
+    }
+    
+
+    $this->renderPartial('questionFeedback',array(
+    
+    ));
+     /*
+     var_dump($_POST);
+     exit;
+     header("location:/succeed.html");
+     */
+  }
+  
+}

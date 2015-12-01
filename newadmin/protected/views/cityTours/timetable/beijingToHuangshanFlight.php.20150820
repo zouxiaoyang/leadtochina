@@ -1,0 +1,219 @@
+<?php
+   Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl.'/css/citytours.css'); 
+   $this->setPageTitle($cityIntro->seo_title);
+   Yii::app()->clientScript->registerMetaTag('keywords', $cityIntro->seo_key);
+   Yii::app()->clientScript->registerMetaTag('description', $cityIntro->seo_description);
+ ?>
+<style type="text/css">
+ .errorMessage{display:none}
+#content{ background:#EEEEEE; font-family:Verdana,Arial,Helvetica,sans-serif; font-size:12px; height:auto; margin:0 auto 15px; overflow:hidden; padding:9px 21px 12px 18px; width:920px;}
+.more-indexcont{ top:1540px;}
+</style>
+<!--  index start  -->
+<div class="index">
+    <div id="menu-tours"><strong>You are here:</strong> <a href="/">Home</a> <a href="<?php echo Yii::app()->createUrl('cityTours/index');?>">City Tours</a> <a href="<?php echo Yii::app()->createUrl('cityTours/list', array('title'=>'huangshan-tours'));?>">Huangshan</a> How to Get to Huangshan From Beijing</div>
+  <div id="banner"><img src="/images/citytours/banner_huangshan.jpg" alt="" ></div>
+    <div class="clear"></div>
+    <!--  left start  -->
+    <div id="left">
+           <div class="titlename">How to Get to Huangshan From Beijing</div>
+      <div class="righttable">
+         <div class="seat">
+         <p>Travel to Huangshan from Beijing? Now you can get to Huangshan City from Beijing by train, flight and bus. It takes you only about 2 hours by flight while it takes you about 20 hours by train. On the other hand, train is much cheaper than airplane, costing you only about 512RMB for a soft sleeper. In general, there is no discount for flight tickets of this air route.</p>
+         <p>Meanwhile, there is a long distance bus departing Huangshan Bus Station at 12:00 every even day for Beijing, and it takes about 17 hours on the way. <br /> 
+         <a href="<?php echo Yii::app()->createUrl('cityTours/list', array('title'=>'huangshan-tours'));?>#3">Check Beijing Huangshan Tours Here</a></p>
+         <h2>By Flight</h2>
+          <div class="clear"></div>
+          <div class="seatul">
+            <table cellspacing="0" cellpadding="0">
+             <tbody>
+               <tr class="toptr">
+                <td>Route</td>
+                <td>Airfare</td>
+                <td>Flight</td>
+                <td>A/C</td>
+                <td>Dep.</td>
+                <td>Arr.</td>
+                <td>Days</td>
+                <td>R</td>
+             </tr>
+             <tr>
+                <td rowspan="2">Beijing-Huangshan</td>
+                <td rowspan="2">1090 RMB</td>
+                <td>MU5170</td>
+                <td>A320</td>
+                <td>10:30</td>
+                <td>14:10</td>
+                <td>1234567</td>
+                <td>From T2 of Beijing<br>Airport via Hefei</td>
+             </tr>
+             <tr>
+                <td>CA1551</td>
+                <td>B733</td>
+                <td>18:35</td>
+                <td>20:30</td>
+                <td>1234567</td>
+                <td>From T3 of Beijing Airport</td></tr>
+                <tr>
+<td rowspan="2">Huangshan-Beijing</td>
+<td rowspan="2">1090 RMB</td>
+<td>MU5171</td>
+<td>320</td>
+<td>15:20</td>
+<td>19:00</td>
+<td>1234567</td>
+<td>To T2 of Beijing<br>Airport via Hefei</td></tr>
+<tr>
+<td>CA1552</td>
+<td>738</td>
+<td>21:30</td>
+<td>23:45</td>
+<td>1234567</td>
+<td>To T3 of Beijing Airport</td></tr>
+           </tbody>
+        </table>
+         </div>
+         <h2>By Train</h2>
+         <div class="seatul">
+            <h2>Beijing--Huangshan Train Timetable</h2>
+            <table cellspacing="0" cellpadding="0">
+             <tbody>
+               <tr class="toptr">
+                  <td>Train No.</td>
+                  <td>Destination</td>
+                  <td colspan="7">Name of Station and Arrival Time</td>
+               </tr>
+               <tr>
+                  <td rowspan="2">K45</td>
+                  <td rowspan="2">Beijing-Fuzhou</td>
+                  <td>Beijing</td>
+                  <td>W. Tianjin</td>
+                  <td>Jinan</td>
+                  <td>Xuzhou</td>
+                  <td>Nanjing</td>
+                  <td>Huangshan</td>
+                  <td>Fuzhou</td>
+               </tr>
+               <tr>
+                  <td>11:15</td>
+                  <td>12:55</td>
+                  <td>17:19</td>
+                  <td>21:08</td>
+                  <td>01:05</td>
+                  <td>07:35</td>
+                  <td>21:50</td>
+               </tr>
+           </tbody>
+        </table>
+        <div class="clear"></div>
+        <h2>Huangshan--Beijing Train Timetable</h2>
+            <table cellspacing="0" cellpadding="0">
+             <tbody>
+               <tr class="toptr">
+                  <td>Train No.</td>
+                  <td>Destination</td>
+                  <td colspan="7">Name of Station and Arrival Time</td>
+               </tr>
+               <tr>
+                  <td rowspan="2">K46</td>
+                  <td rowspan="2">Fuzhou-Beijing</td>
+                  <td>Fuzhou</td>
+                  <td>Huangshan</td>
+                  <td>Nanjing</td>
+                  <td>Xuzhou</td>
+                  <td>Jinan</td>
+                  <td>W. Tianjin</td>
+                  <td>Beijing</td>
+               </tr>
+               <tr>
+                  <td>18:23</td>
+                  <td>09:18</td>
+                  <td>14:54</td>
+                  <td>19:09</td>
+                  <td>22:58</td>
+                  <td>03:03</td>
+                  <td>05:07</td>
+               </tr>
+           </tbody>
+        </table>
+         </div>
+         <div class="clear"></div>
+         <p>Hard sleeper from Beijing to Huangshan costs RMB331.5 (lower berth) while soft sleeper costs RMB509.5 (lower berth).
+If you would like book tickets from us, please click <a href="http://messenger.providesupport.com/messenger/travelthing.html">Live Chat</a> to get accurate price<br />
+         <a href="<?php echo Yii::app()->createUrl('cityTours/list', array('title'=>'huangshan-tours'));?>#3">Check Huangshan Tours from Beijing Here</a></p>
+         
+    </div>
+      </div>
+    </div>
+    <!--  left end  -->
+    
+    <!--  right start  -->
+    <div id="right">
+     <?php echo $this->renderPartial('timetable/_huangshan_left', array('cityInfo'=>$cityInfo));?>
+   </div>
+    <!--  right end  -->
+</div>
+<!--  index end  -->
+
+<?php echo $this->renderPartial("//common/pop_more_cities");?>
+
+<script>
+var _cityTours = {
+		questionTab:function(num, obj){
+			  $(obj).parents("ul").find("li").removeClass("dq");
+			  $(obj).addClass("dq");
+			  if(num == 1){
+				  $("#questionTab1").hide();
+				  $("#questionTab2").show();
+			  }else{
+				  $("#questionTab1").show();
+				  $("#questionTab2").hide();
+			  }
+		},
+		submitMessage:function(obj){
+			  var message = $(obj).parents("table").find("textarea[name='message']").val();
+			  var username = $(obj).parents("table").find("input[name='username']").val();
+			  var email = $(obj).parents("table").find("input[name='email']").val();
+			  if($.trim(message) == ''){ 
+				  $(obj).parents("table").find(".qmessage_error").show();
+				  return false;
+			  }else{
+				  $(obj).parents("table").find(".qmessage_error").hide();
+			  }
+			  if($.trim(username) == ''){
+				  $(obj).parents("table").find(".qusername_error").show();
+				  return false;
+			  }else{
+				  $(obj).parents("table").find(".qusername_error").hide();
+			  }
+
+			  if(!/(\S)+[@]{1}(\S)+[.]{1}(\w)+/.test(email)) {
+				  $(obj).parents("table").find(".qemail_error").show();return false;
+			  }else{
+				  $(obj).parents("table").find(".qemail_error").hide();
+			  }
+			  var YII_CSRF_TOKEN = "<?php echo Yii::app()->request->csrfToken;?>";
+			  $.post("<?php echo Yii::app()->createUrl("toursPackage/ajaxAddMessage");?>", {message:message, username:username, email:email,  YII_CSRF_TOKEN:YII_CSRF_TOKEN}, function(ret){
+				  alert("Submit Successful.");
+				  $(obj).parents("table").find("textarea[name='message']").val("");
+				  $(obj).parents("table").find("input").val("");
+			  })
+	    }
+}
+ </script>
+ <!-- Google Code for HOME -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 1001932638;
+  var google_conversion_label = "m02eCNre_AIQ3o7h3QM";
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+  <div style="display:inline;">
+  <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1001932638/?value=0&amp;label=m02eCNre_AIQ3o7h3QM&amp;guid=ON&amp;script=0"/>
+  </div>
+  </noscript>

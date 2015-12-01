@@ -1,0 +1,384 @@
+@charset "utf-8";
+/* CSS Document */
+body{ width:100%; height:100%; margin:0px; padding:0px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px;}
+img{ border:none;}
+*{ margin:0px; padding:0px;}
+li{ list-style:none;}
+.clear{ clear:both; width:0px; height:0px; font-size:0px; line-height:0px;}
+a{ text-decoration:none;}
+#top-button { bottom: 0; cursor: pointer; float: right; height: auto; position: fixed; right: 70px; width: 72px;}
+
+#contentnew{width:961px; height:auto; margin:0px auto 15px auto; background:#eeeeee; overflow:hidden; -webkit-text-size-adjust:none; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; padding-bottom:25px;}
+#banner1{ width:920px; height:auto; float:left; background:#eee; padding:20px 21px 20px 20px;}
+.question{ width:245px; height:auto; float:left; background:#fff; font-size:11px; color:#2f3744; overflow:hidden; margin-top:15px;}
+.title{ width:100%; height:76px; float:left;}
+.submit{ width:238px; height:auto; float:left; padding:4px 0px 10px 5px; border:1px solid #ccc; border-top:none;}
+.submit table{ width:100%; height:auto; float:left; display:block;}
+.submit table tr td{ padding:5px 3px;} 
+.submit table tr td input{ border:1px solid #ccc; width:140px; line-height:18px; height:20px;}
+.submit table tr td textarea{ border:1px solid #ccc; width:219px; height:98px; padding:2px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; line-height:18px;}
+.pptone{ width:660px; height:280px; float:left; overflow:hidden;}
+.text{ width:920px; background:#fff;padding:6px 0px; margin-top:10px;}
+.text span{ width:693px; background:url(/images/yangtze/bgnew.png) no-repeat; display:block; padding-left:211px; color:#333333; font-size:14px; line-height:24px; height:47px;}
+.text span p{ border-left:1px dashed #a3a3a3; padding-left:15px;}
+
+#middle{ width:921px; height:auto; float:left; padding:10px 20px 20px 20px;}
+#middle1{ width:921px; height:auto; float:left; padding:15px 20px 20px 20px; background:#eeeeee;}
+#left{ width:656px; height:auto; float:left;}
+.ships{ width:100%; height:auto; float:left;}
+.shipstitle{ width:100%; height:46px; float:left; margin-bottom:6px;}
+.shipstitle1{ width:100%; height:56px; float:left; margin-bottom:6px;}
+.ppttwo{ width:100%; height:auto; float:left; position:relative;}
+.big{ width:430px; height:auto; float:left;}
+.big1pic{ width:430px; height:190px; overflow:hidden; float:left;}
+.biglist{ width:426px; height:74px; float:left; border:1px solid #a4a4a4; padding:1px; margin-top:3px;}
+.biglist ul{ width:424px; height:66px; padding:4px 0px 4px 2px; background:#e4e4e4;}
+.biglist ul li{ width:103px; height:66px; float:left; margin-right:3px; cursor:pointer;}
+.biglist ul li img{ width:101px; height:64px; border:1px solid #c1c0be; display:block; filter:alpha(opacity=50); -moz-opacity:0.5; opacity: 0.5;  }
+.biglist ul li.dq img{filter:alpha(opacity=100); -moz-opacity:1; opacity:1;  }
+.small{ width:235px; height:auto; float:right; position:absolute; right:0px; top:0px;}
+.small ul{ width:100%; height:auto; float:right;}
+.small ul li{ width:100%; height:60px; float:left; text-align:right; margin-bottom:8px; background:url(/images/yangtze/ppt1small.jpg) right top no-repeat; display:block;}
+.small ul li span{ width:215px; float:right; cursor:pointer; display:block; height:70px;}
+.small ul li.ppt2{ background:url(/images/yangtze/ppt2small.jpg) right top no-repeat;}
+.small ul li.ppt3{ background:url(/images/yangtze/ppt3small.jpg) right top no-repeat;}
+.small ul li.ppt4{ background:url(/images/yangtze/ppt4small.jpg) right top no-repeat;}
+.small ul li.ppt1dq,.small ul li.ppt1:hover{ background:url(/images/yangtze/ppt1dq.png) no-repeat; margin-bottom:0px; height:75px; width:}
+.small ul li.ppt2dq,.small ul li.ppt2:hover{ background:url(/images/yangtze/ppt2dq.png) no-repeat; margin-bottom:0px; height:75px;}
+.small ul li.ppt3dq,.small ul li.ppt3:hover{ background:url(/images/yangtze/ppt3dq.png) no-repeat; margin-bottom:0px; height:75px;}
+.small ul li.ppt4dq,.small ul li.ppt4:hover{ background:url(/images/yangtze/ppt4dq.png) no-repeat; margin-bottom:0px; height:75px;}
+
+
+.tours{ width:100%; height:auto; float:left; margin-top:20px;}
+.tourslist1{ width:304px; height:268px; float:left; margin-right:16px; margin-bottom:15px; background:#fff; padding:5px 7px; border:1px solid #dbdbdb;}
+.tourslist1 ul{ width:100%; height:auto; float:left;}
+.tourslist1 ul li{ width:100%; height:auto; display:block; float:left; margin:4px 0px; color:#453b2d; font-size:11px; line-height:18px;}
+.tourslist1 ul li.pic{ border:3px solid #dbdbdb; width:298px; height:132px; position:relative; maring-top:0px;}
+.tourslist1 ul li.pic span{ width:153px; height:26px; display:block; float:left; position:absolute; left:5px; bottom:5px;}
+.tourslist1 ul li h2{ font-size:13px; color:#453b2d; display:block; white-space:nowrap;}
+.tourslist1 ul li.dest{ margin-bottom:8px;}
+.tourslist1 ul li.days{ width:152px; margin-top:0px;}
+.tourslist1 ul li.days a{ color:#2487d2; text-decoration:underline; font-weight:normal;}
+.tourslist1 ul li.days a:hover{ color:#000; text-decoration:none;}
+.tourslist1 ul li.days span{ font-weight:bold; color:#fd0000; display:block;}
+.tourslist1 ul li.seasons{ width:145px; height:auto; float:right; padding-left:5px; border-left:1px dashed #a3a3a3;}
+.tourslist1 ul li.seasons h3{ color:#453b2d; font-size:9px; font-weight:normal; display:block; margin-bottom:6px; line-height:12px;}
+.tourslist1 ul li.seasons img{ width:30px; height:30px; display:block; float:left; margin-right:5px;} 
+.treasures1,.treasures2,.treasures3,.treasures4{ width:837px; height:auto; background:#f8f7f7; border:1px solid #dbdbdb; padding:11px; border-top:none; overflow:hidden;}
+.trea-close{ width:28px; height:28px; position:absolute; right:-10px; cursor:pointer; top:-20px;}
+.trea-left{ width:367px; height:auto; float:left;}
+.trea-left h2{ line-height:30px; font-size:17px; color:#744311; text-align:center; display:block; width:100%; float:left; border-bottom:1px dashed #adacac; padding-bottom:5px;}
+.trea-left table{ width:100%; height:auto; float:left; font-size:11px; color:#5a5a5a; line-height:16px;}
+.trea-left table tr td{ padding:4px 0px;}
+.trea-left table tr td strong{ color:#191919; float:left;}
+.trea-left table tr td ul{ width:100%; height:auto; float:left; border-bottom:none; padding:6px 0px 0px 0px;}
+.trea-left table tr td ul li{ width:auto; height:auto; border:1px solid #a1a0a0; display:block; float:left; margin-right:6px; padding:3px 5px 6px 6px; background:url(/images/yangtze/libg.jpg) #fff bottom repeat-x; font-size:12px; color:#2c2c2c; font-style:italic; line-height:18px;}
+.trea-left table tr td ul li a{ width:103px; height:auto; display:block; color:#2c2c2c;}
+.trea-left table tr td ul li span{ color:#d10101; font-size:14px;}
+.trea-left table tr td ul li a img{ width:100%; height:17px; display:block; margin-top:3px;}
+.trea-right{ width:459px; height:349px; float:right;}
+
+#right{ width:245px; height:auto; float:right;}
+.calendar{ width:242px; height:auto; float:left; border-right:3px solid #dddddd;}
+.calcontent{ width:238px; height:auto; float:left; background:#fff; border:1px solid #c6c6c6; border-bottom:none; padding:1px;}
+.caltitle{ display:block; height:24px; float:left; width:85px; margin-bottom:6px; background:url(/images/yangtze/calendar2.jpg) left center no-repeat; padding:5px 133px 6px 20px;}
+.cal-tab1{ width:82px; height:20px; float:left; position:relative; background:url(/images/yangtze/cletab1.png) left center no-repeat; padding:1px 2px 3px 1px;}
+.cal-tab1 h2{ width:62px; line-height:18px; color:#663300; font-size:20px; font-weight:normal; text-align:center; display:block; float:left;}
+.cal-tab1 span{ width:20px; height:20px; display:block; float:right; cursor:pointer;}
+.cal-tab1 ul{ position:absolute; width:73px; height:auto; border:1px solid #9b7b42; border-top:none; padding:2px 5px 8px 5px; background:#fff; top:23px; left:0px; display:none;}
+.cal-tab1 ul li{ width:70px; height:auto; float:left; display:block; color:#663300; border-bottom:1px dashed #ccc; line-height:24px; text-align:left; font-size:14px; cursor:pointer; padding-left:3px;}
+.cal-tab1 ul li:hover{ background:#dddddd; color:#000;}
+.calcontent table{ width:100%; height:auto; float:left;}
+.calcontent table tr td{ border:1px solid #dddddd; border-top:none; border-left:none; padding:5px 4px; text-align:center; color:#2d3744;}
+.calcontent table tr td a{ color:#2d3744;}
+.calcontent table tr td a:hover{ text-decoration:underline; color:#ff0000;}
+.calcontent table tr td.tesu{ border-bottom:none;}
+.calcontent table tr td.dq a{ color:#660000;}
+.calcontent table tr td.past a{ color:#878787;}                    
+.calcontent table tr td.last{ border-right:none;}
+.calbottom{ width:100%; height:26px; float:left;}
+.searchnew{ width:243px; height:auto; float:left; padding:0px; margin-top:15px; background:#fff; border:1px #ccc solid}
+.searchnew ul.ulnew{ width:243px; height:35px; float:left; padding:0px 0px 0px 0px;}
+.searchnew ul.ulnew li{ font-size:12px; font-weight:bold; color:#fff; line-height:35px;float:left; padding-left:20px;}
+.searchnew ul.ulnew li.sd1dq{ background:url(/images/yangtze/sd1dqn.png) left center no-repeat; color:#8C4600; padding-left:43px; width:76px}
+.searchnew ul.ulnew li.sd1{background:url(/images/yangtze/sd1n.png) no-repeat scroll left center #dddddd; color:#000;padding-left: 43px; width:76px;border-right: 1px solid #cccccc;}
+.searchnew ul.ulnew li.sd2{ background:url(/images/yangtze/sd2n.png) no-repeat scroll left center #dddddd; color:#000;border-left: 1px solid #cccccc;padding-left: 43px;width: 80px;}
+.searchnew ul.ulnew li.sd1, .searchnew ul.ulnew li.sd2 {
+    border-bottom: 1px solid #cccccc;
+    height: 34px;
+}
+.searchnew ul.ulnew li.sd2dq{ background:url(/images/yangtze/sd2ndq.png) left center no-repeat; color:#8C4600; padding-left:43px; width:80px}
+table.search{ width:100%; height:auto; margin:5px auto 10px auto; font-size:11px; color:#303030;}
+table.search tr td{ padding:4px 1px;}
+table.search tr td input{ border:1px solid #b8b8b8; line-height:21px; padding:2px 3px; width:200px; background:url(/images/yangtze/calendar.jpg) #fff 185px no-repeat;}
+table.search tr td select{ border:1px solid #b8b8b8; font-size:12px; color:#999999; padding:2px 3px; width:209px; color:#999;}
+.Cruises{ width:207px;padding:5px 13px; float:left; background:#fff;}
+.Tours{ width:228px;border-top:none; padding:5px 0px 5px 10px; float:left; font-size:11px; background:#fff;}
+.Tours table{ width:228px; height:auto; float:left;}
+.Tours table tr td{ padding:2px 0px;}
+.Tours table tr td ul.ulnew1{width:228px; height:auto; float:left;}
+.Tours table tr td ul.ulnew1 li{ font-size:10px; color:#535353; line-height:16px; height:auto; float:left; padding:2px 0px; white-space:nowrap; width:71px;}
+#select-city{color: #000000; cursor: pointer; display: block; margin-bottom: 5px; text-decoration: underline;}
+.not_more{ width:100%; height:auto; float:left; margin:2px 0px;}
+.not_more span{ color:#000; text-decoration:underline; line-height:24px; padding-left:8px; display:block; cursor:pointer;}
+.not_morelist{ width:595px; height:auto; border:1px solid #acacac; padding:0px 10px 10px 10px; color:#444; float:left; position:absolute; z-index:8000; background:#e7e7e8; overflow:hidden; left:260px; top:730px;}
+.not_morelist h2{ font-size:18px; line-height:26px; border-bottom:1px solid #ccc; display:block; color:#000; width:100%; float:left; padding:0px; margin:5px 0px 4px 0px;}
+.not_morelist h2 strong{ float:left;}
+.not_morelist h2 span{ float:right; display:block; width:17px;  height:17px;}
+.not_morelist ul{ width:100%; height:auto; float:left; margin:0px; padding:0px;}
+.not_morelist ul li{ width:16%; line-height:24px; float:left; margin:0px; padding:0px; list-style:none; white-space:nowrap;}
+.search_new{ width:100%; height:auto; float:left; margin:5px 0px 15px 0px;}
+
+.spots{ width:100%; height:auto; float:left; margin-top:15px; background:#fff; border:1px #ccc solid; padding-bottom:5px;}
+.spots h2{display:block; padding:10px 0px 7px 0px;color:#8C4600; font-size:14px; text-align:center}
+.spots h2 a{color:#8C4600; font-size:14px; font-weight:bold}
+.spots table tr td{ padding:5px 0 5px 12px;}
+.faq{ width:100%; height:auto; float:left; margin-top:15px; background:#fff; border:1px #ccc solid; padding-bottom:5px;}
+.faq h2{display:block; padding:10px 0px 7px 0px;color:#8C4600; font-size:14px; text-align:center; border-bottom:1px #eee solid; width:90%; margin-left:10px}
+.faq h2 a{color:#8C4600; font-size:14px; font-weight:bold}
+.faq ul{ width:232px; height:auto; float:left; display:block;overflow:hidden; padding:5px 0px 5px 11px; border-top:none;}
+.faq ul li{ width:224px; height:auto; float:left; display:block; padding:4px 0px 4px 8px; background:url(/images/yangtze/linew.jpg) left center no-repeat;}
+.faq ul li a{ color:#453b2d; font-size:11px; display:block; line-height:20px;}
+.faq ul li a:hover{ color:#333; font-size:11px; text-decoration:underline}
+
+#banner2{ width:920px; height:auto; float:left; background:#fff; padding:20px 21px 0px 20px;}
+.text1{ width:880px; height:auto; float:left; background:#fff; color:#333333; padding-right:40px; line-height:24px;}
+.text1 img{ width:115px; height:60px; float:left; margin-right:14px; display:block;}
+.text1 p{ padding-top:6px;}
+.banner3{ width:100%; height:auto; float:left; margin-top:10px;}
+.wonderful{ width:100%; height:auto; float:left; margin-top:15px;}
+.wonderful ul{ width:100%; height:auto; float:left;}
+.wonderful ul li img{ width:88px; height:67px; float:left; display:block; margin-right:10px; background:#fff; border:1px solid #b1b3b2; padding:1px;}
+.wonderful ul li{ width:293px; height:auto; float:left; color:#333; font-size:11px; line-height:16px; margin-right:20px; margin-bottom:24px;}
+.wonderful ul li strong{ display:block; line-height:14px;}
+
+.deals{ width:100%; height:auto; float:left;}
+.deals ul{ width:196px; height:auto; float:left; border:1px solid #dbdbdb; padding:8px 8px 10px 8px; background:#fdfcf8; margin-right:4px; margin-bottom:15px;}
+.deals ul li.pic{ width:192px; height:132px; border:2px solid #dbdbdb; padding:0px; margin-bottom:5px;}
+.deals ul li{ width:100%; height:auto; float:left; padding:3px 0px; color:#45392c;}
+.deals ul li.name a{ font-size:14px; color:#453a2c; max-width:130px; float:left; display:block; font-weight:bold; text-decoration:underline;}
+.deals ul li.name a:hover{ color:#ff0000;}
+.deals ul li.name span{ float:right; margin-top:3px; display:block;}
+.star3{ background:url(/images/yangtze/star1.png) repeat-x; width:39px; display:block; height:11px;}
+.star4{ background:url(/images/yangtze/star1.png) repeat-x; width:52px; display:block; height:11px;}
+.star5{ background:url(/images/yangtze/star1.png) repeat-x; width:65px; display:block; height:11px;}
+.deals ul li.route{ color:#453a2c; font-size:10px;}
+.deals ul li.route strong{ width:45px; float:left; display:block;}
+.deals ul li.route span{ float:left; max-width:150px; text-align:left; display:block; padding-bottom:3px; white-space:nowrap;}
+.deals ul li.price{ font-size:14px; font-weight:bold; /* margin-bottom:5px; */}
+.deals ul li.price strong{ font-size:16px; color:#8c0000;}
+.ships1{ width:100%; height:auto; float:left;}
+.ships1list{ width:634px; height:auto; float:left; background:url(/images/yangtze/bottom.png) left bottom #ffffff no-repeat; margin-bottom:12px; border-left:1px solid #e0e0e0; border-right:1px solid #e0e0e0; padding:15px 10px 13px 10px;}
+.ships1list table{ width:100%; height:auto; float:left; display:inline-block;}
+.ships1list table tr td{ padding:6px 13px; color:#45392c; line-height:18px; background:#fcf6f0;}
+.ships1list table tr td h2{ color:#b20000; font-size:16px;}
+.ships1list table tr td.toptd{ background:#f9ebdd; color:#111111; font-size:13px; height:25px; line-height:25px; padding:0px 4px 0px 8px; border-bottom:15px solid #ffffff;}
+.ships1list table tr td a.name{ font-size:13px; font-weight:bold; color:#111111; display:block; margin-bottom:3px;}
+.ships1list table tr td a.name:hover{ color:#ff0000; text-decoration:underline;}
+.ships1list table tr td strong{}
+.ships1list table tr.backgno td{ background:none; }
+.contact{ width:243px; height:auto; float:left; border:1px solid #cccccc; padding:10px 0px 4px 0px; background:#ffffff; margin-top:18px;}
+.contact h2{ width:100%; height:auto; float:left; display:block;}
+.contact1{ width:225px; height:auto; float:left; padding:0px 9px; color:#2d3744;}
+.contact1 table tr td a{ color:#2d3744; font-size:11px; line-height:18px;}
+.contact1 table tr td a:hover{ text-decoration:underline; color:#000;}
+.contact1 table tr td{ padding:4px 3px;}
+.contact2{ width:225px; height:auto; float:left; padding:8px 9px 0px 9px;}
+.contact2 table{ width:100%; height:auto; float:left;}
+.contact2 table tr td{ padding:3px 0px; font-size:11px; color:#303030;}
+.contact2 table tr td h2{ border-bottom:1px solid #c4c4c4; font-size:12px; color:#303030; line-height:20px;}
+.contact2 table tr td a{ color:#c05c00; text-decoration:underline;}
+.contact2 table tr td a:hover{ color:#ff0000; text-decoration:none;}
+.why{ width:245px; height:auto; float:left; background:#fff; border:1px #ccc solid; padding-bottom:5px; overflow:hidden; margin-top:20px;}
+.why h2{ width:100%; height:auto; float:left; padding:10px 0px 7px 0px;color:#8C4600; font-size:14px; text-align:center; border-bottom:1px #eee solid; width:90%; margin-left:10px}
+.why ul{ width:219px; height:auto; float:left; color:#414141; font-size:11px; padding:8px 12px 10px 12px; }
+.why ul li{ background:url(/images/yangtze/why.png) left center no-repeat; width:198px; height:auto; float:left; display:block; padding:7px 0px 7px 21px;}
+
+.main1{ width:100%; height:auto; float:left;}
+.txt{ width:881px; height:auto; float:left; padding:0px 20px; line-height:16px; color:#2c3744;}
+.txt h2{ color:#8c4600; font-size:20px; line-height:28px;}
+.txt a{ color:#8c4600; text-decoration:underline;}
+.txt a:hover{ color:#000; text-decoration:none;}
+.clendar{ width:100%; height:auto; float:left; margin-top:32px;}
+.clendar-tab{ width:161px; height:37px; padding:2px 4px 5px 2px; background:url(/images/yangtze/cletab.png) left center no-repeat; float:left; margin-right:15px; position:relative;}
+/* .clendar-tab h2{ width:126px; line-height:37px; color:#b38120; font-size:34px; text-align:center; display:block; float:left;}  */
+.clendar-tab h2{ width:100%; line-height:37px; color:#b38120; font-size:34px; text-align:center; display:block; float:left;}
+.clendar-tab span{ width:35px; height:37px; display:block; float:right; cursor:pointer;}
+.clendar-tab ul{ position:absolute; width:139px; height:auto; border:1px solid #adacaa; border-top:none; padding:2px 13px 8px 13px; background:#fff; top:44px; left:0px; display:none;}
+.clendar-tab ul li{ width:135px; height:auto; float:left; display:block; color:#adacaa; border-bottom:1px dashed #9d9b99; line-height:24px; text-align:left; font-size:14px; cursor:pointer; padding-left:4px;}
+.clendar-tab ul li a{color:#adacaa; display:block; border:none; margin:0px; width:135px; height:auto; line-height:24px;}
+.clendar-tab ul li a:hover{ background:#676666; color:#fff;}
+.clendar table{ border-top:4px solid #714f32; width:100%;}
+.clendar table tr.top{ background:#fff5ec; overflow:hidden; border-bottom:1px dashed #d0bba6;}
+.clendar table tr.top img{ float:left; margin-right:10px;}
+.clendar table tr.top td{ padding:5px 0px 5px 4px; border-bottom:1px dashed #c8beb8; border-right:none;}
+.clendarnew{ width:100%; height:auto; float:left; margin-top:32px;}
+.clendarnew table{ border-top:4px solid #714f32; border-right:1px solid #c1bfbf; width:100%; border-collapse:collapse;color:#000;}
+.clendarnew table tr.top{ background:#fff5ec; overflow:hidden; border-bottom:1px dashed #d0bba6;}
+.clendarnew table tr.top img{ float:left; margin-right:25px;}
+.clendarnew table tr.top td{ padding:5px 0px 5px 4px; border-bottom:1px dashed #c8beb8; border-right:none;}
+.clendarnew table tr td{ text-align:center; padding:10px 5px; border:1px solid #c1bfbf; border-right:none; border-top:none; vertical-align:top;}
+.clendarnew table tr td span{ display:block; margin-top:8px;}
+.clendarnew table tr td span.daysnew{ font-size:14px;}
+.clendarnew table tr td a{ color:#000;}
+.clendarnew table tr td a:hover{ text-decoration:underline; color:#9a0000;}
+.clendarnew table tr td b{ color:#9a0000;}
+.calright{ width:730px; height:auto; float:left;}
+.calright a{ width:44px; height:23px; line-height:23px; text-align:center; border:1px solid #aaaaaa; display:block; background:url(/images/yangtze/abg.jpg) repeat-x; float:left; margin-right:14px; color:#1c222b; margin-top:8px;}
+.calright a.dq,.calright a:hover{ background:url(/images/yangtze/ahover.jpg) no-repeat; color:#fff; height:32px; line-height:23px; border:none; width:46px;}
+
+.calnewright{ width:775px; height:auto; float:left;}
+.calnewright a{ width:44px; height:23px; line-height:23px; text-align:center; border:1px solid #aaaaaa; display:block; background:url(/images/yangtze/abg.jpg) repeat-x; float:left; margin-right:18px; color:#1c222b; margin-top:8px;}
+.clendarnew table tr td .calnewright a.dq,.clendarnew table tr td .calnewright a:hover{ background:url(/images/yangtze/ahover.jpg) no-repeat; color:#fff; height:32px; line-height:23px; border:none; width:46px; text-decoration:none;}
+
+.clendar table tr td{ text-align:center; padding:10px; border-right:1px solid #e5e5e5;}
+.clendar table tr.bold td{ font-weight:bold; color:#111; font-size:13px; border-right:1px solid #fff; border-left:1px solid #e5e5e5;}
+.clendar table tr.bold td span{ font-weight:normal; color:#777777; display:block; font-size:11px;}
+.clendar table tr.list{ border:1px solid #e4e4e4; background:#ffffff; border-top:none;}
+.clendar table tr.list td{ padding:15px 7px;}
+.clendar table tr td.date{ border-right:none; padding:10px 0px;}
+.clendar table tr td.date span{ background:#8c4600; text-align:center; width:80px; height:auto; display:block; color:#fff; padding:30px 0px; font-size:18px; vertical-align:middle;}
+.clendar table tr td.date b{ display:block; font-weight:normal;}
+.clendar table tr td.price1 ul{ width:265px; height:auto;}
+.clendar table tr td.price1 ul li{ color:#111111; width:98%; height:auto; float:left; padding:3px 0px; font-size:12px; display:block;}
+.clendar table tr td.price1 ul li a{ color:#111111; width:125px; float:left; text-align:left; font-weight:bold;}
+.clendar table tr td.price1 ul li a:hover{ text-decoration:underline; color:#ff0000;}
+.clendar table tr td.price1 ul li span{ float:left; padding-right:5px; width:175px; display:block;}
+.clendar table tr td.price1 ul li span strong{ color:#ff0000; font-weight:normal; float:left;}
+.clendar table tr td.price1 ul li b{ float:left; padding-left:10px;}
+.clendar table tr td.price1 ul li b span.star3{ background:url(/images/yangtze/star1.png) repeat-x; width:39px; display:block; height:11px; padding:0px;}
+.clendar table tr td.price1 ul li b span.star4{ background:url(/images/yangtze/star1.png) repeat-x; width:52px; display:block; height:11px; padding:0px;}
+.clendar table tr td.price1 ul li b span.star5{ background:url(/images/yangtze/star1.png) repeat-x; width:65px; display:block; height:11px; padding:0px;}
+
+
+.textnew{ width:634px; height:auto; float:left; border:1px solid #dbdbdb; padding:6px 10px 10px 10px; background:#fff; color:#525252; line-height:18px; font-size:12px; margin-top:8px;}
+.textnew h2{ color:#8c4600; font-size:18px; display:block; line-height:24px;}
+.ships-tab{ width:654px; height:auto; float:left; margin-top:25px; border:1px solid #dbdbdb; border-top:none; background:#fff;}
+.shipsmenu{ width:100%; height:35px; float:left; background:#dbdbdb; line-height:35px;}
+.shipsmenu ul{ width:100%; height:auto; float:left;}
+.shipsmenu ul li{ display:inline-block; float:left; line-height:35px; color:#444444; font-size:14px; font-weight:bold; width:145px; text-align:center; cursor:pointer; border-right:1px solid #fff;}
+.shipsmenu ul li:hover,.shipsmenu ul li.dq{ border-top:4px solid #a36b33; line-height:31px; background:#fff;}
+
+#c01,#c02,#c03{ width:634px; height:auto; float:left; padding:10px;}
+.month{ width:100%; height:auto; float:left; border-bottom:1px solid #cccccc; padding-bottom:10px;}
+.month ul{ width:100%; height:auto; float:left;}
+.month ul li{ width:38px; height:auto; float:left; margin-right:14px; font-size:14px; color:#111111; text-align:center;}
+.month ul li a{color:#111111; display:block;}
+.month ul li a.dq{ background:url(/images/yangtze/monthli.jpg) no-repeat; font-weight:bold; color:#343434; height:29px;}
+.month ul li span{ display:inline-block; color:#717171; font-size:10px; line-height:12px;}
+
+.monthtable{ width:100%; height:auto; float:left; margin-top:15px;}
+.monthtable table{ width:100%; height:auto; margin-bottom:10px;}
+.monthtable table tr.top td{ background:url(/images/yangtze/topbg.jpg) repeat-x; text-align:center; height:36px; font-size:13px; color:#171515; padding:0px; line-height:36px;}
+.monthtable table tr td{background:#eee; padding:5px 2px 14px 2px; width:85px; height:70px;}
+.monthtable table tr td b{ display:block; font-size:12px; color:#171515;}
+.monthtable table tr td span{ display:block; font-size:9px; color:#444444; margin:5px 0px; line-height:12px;}
+.monthtable table tr td span.star3,.fleet ul li a span.star3{ background:url(/images/yangtze/star.png) repeat-x; width:33px; display:block; height:10px;}
+.monthtable table tr td span.star4,.fleet ul li a span.star4{ background:url(/images/yangtze/star.png) repeat-x; width:44px; display:block; height:10px;}
+.monthtable table tr td span.star5,.fleet ul li a span.star5{ background:url(/images/yangtze/star.png) repeat-x; width:55px; display:block; height:10px;}
+.monthtable table tr td span strong{ color:#b20000; font-size:11px; font-weight:normal;}
+.monthtable table tr td a{display:block; font-size:9px; color:#444444; margin:5px 0px; line-height:12px; text-decoration:underline;}
+.monthtable table tr td a:hover{ color:#ff0000; text-decoration:none;}
+.monthtable p strong{ color:#8c4600;}
+.monthtable p{ color:#525252; line-height:18px; font-size:12px;}
+
+.left-table1{ width:100%; height:auto; float:left; font-size:12px; margin-bottom:30px;}
+.left-table1 h2{ font-size:16px; color:#4c3e2c; width:479px; height:36px; line-height:36px; background:#f9f5dc; padding-left:10px; font-weight:normal;}
+.left-table1 h2 strong{ color:#b9610f;}
+.left-table1 table{ width:100%; height:auto; float:left; margin-top:6px; background:#f1f1f1;}
+.left-table1 table{ margin-top:0px; margin-bottom:20px;}
+.left-table1 table tr td{ padding:10px 8px; border-bottom:1px solid #fff; color:#4a4949; text-align:right; line-height:20px;}
+.left-table1 table tr td.number{ border-left:1px solid #fff; font-size:12px; text-align:left; padding-left:10px; line-height:22px;}
+.left-table1 table tr td.number span{ padding-right:20px;}
+.left-table1 p{ color:#4a4949; line-height:20px;}
+.right-pic{ width:129px; height:auto; float:left;}
+.right-pic ul{ width:129px; height:auto; margin:0px auto;}
+.right-pic ul li{ width:129px; height:auto; float:left; display:block; color:#4A4949; text-align:center; font-size:11px; color:#b9610f; font-weight:bold;}
+.right-pic ul li.pic{ height:50px; float:left; margin-bottom:3px; display:block; border:2px solid #b2b2b2; width:125px;} 
+
+.fleet{ width:100%; height:auto; float:left; border-bottom:1px dashed #696969;}
+.fleet ul{ width:100%; height:auto; float:left; padding:20px 0px;}
+.fleet ul.tesu{ background:#f3f1f1;}
+.fleet ul li.pic{ width:169px; height:auto; display:block; float:left; margin-right:15px;}
+.fleet ul li.name,.fleet ul li.desc{ width:448px; height:auto; float:left; color:#444444; line-height:18px; font-size:12px;}
+.fleet ul li.name a{ display:block; color:#333333; font-size:14px; font-weight:bold; width:100%; margin-bottom:4px;}
+.fleet ul li.name a b{ float:left; margin-right:8px; text-decoration:underline;}
+.fleet ul li.name a span{ float:left; margin-top:4px;}
+.fleet ul li.desc strong{ display:block;}
+.fleet ul li.desc strong span{ color:#af0a0a;}
+.shipstitle2{ width:215px; height:24px; float:left; margin-bottom:10px; line-height:24px; font-size:18px; color:#8C4600; font-weight:bold; background:url(/images/yangtze/top.png) no-repeat; padding:0px 414px 0px 27px; text-align:center; white-space:nowrap;}
+
+.choose{ width:247px; height:265px; float:left; background:#2b1906; padding-left:13px; padding-top:15px;}
+.choose h2{ width:100%; height:auto; float:left; display:block;}
+.choose ul{ width:100%; height:auto; float:left; padding-top:4px;}
+.choose ul li{ width:220px; height:auto; float:left; display:block; padding:9px 0px 9px 27px; background:url(/images/yangtze/chooseli.png) no-repeat 0px 12px; color:#fff; line-height:18px; font-size:13px;}
+
+.shipscontent{ width:636px; height:auto; float:left; background:#fff; padding:0px 10px 4px 10px;}
+.shipsnew{ width:100%; height:auto; float:left; margin-top:10px;}
+.shipsnew h2{ font-size:16px; color:#2b1906; line-height:24px; display:block; width:100%;}
+.shipsnew h2 a{ color:#2b1906;}
+.shipsnew h2 a:hover{ color:#8c4600; text-decoration:underline;}
+.shipsnew_txt1{padding:5px 0 10px 0;color:#333; line-height:140%;}
+.shipsnew ul{ width:100%; height:auto; float:left; border-bottom:1px dashed #777777; padding:4px 0px 12px 0px;}
+.shipsnew ul li.pic{ width:112px; height:91px; float:left; border:1px solid #cccccc; display:block;}
+.shipsnew ul li ol{ width:505px; height:auto; float:right}
+.shipsnew ul li ol li{background:url(/images/yangtze/oli1.jpg) no-repeat 0px 8px; width:493px; height:auto; float:left; display:block; padding:3px 0px 3px 12px;}
+.shipsnew ul li ol li a{ width:auto; display:inline-block; float:left; color:#2487D2; padding-right:10px;}
+.shipsnew ul li ol li a:hover{ text-decoration:underline;}
+.shipsnew ul li ol li strong{ font-weight:normal; color:#333; float:right; display:inline-block;}
+.shipsnew ul li ol li strong b{ color:#663300; font-size:14px; font-weight:normal;}
+.shipsnew ul li ol li span{ float:left; display:inline-block; padding-top:2px;}
+.calnew{ width:100%; height:auto; float:left; background:url(/images/yangtze/calnew.png) no-repeat top center; padding-top:45px; margin-top:15px;}
+.callist{ background:#fff; border:5px solid #ddd; width:215px; padding:3px 10px 8px 10px;}
+.callist table{ width:100%; height:auto;}
+.callist_2015{margin:10px 0 0 0; background:#BD9651; padding:2px 5px;}
+.callist_2015 span{ font-size:18px; font-weight:bold; color:#663300; text-shadow: 0 0 5px #fff;}
+.callist table tr td{ color:#bdb9b9; border:1px solid #cccccc; border-top:none; border-left:none; padding:0px; text-align:center; line-height:28px;}
+.callist table tr td a{ color:#666; font-weight:bold;}
+.callist table tr td a:hover{ text-decoration:underline;}
+.callist table tr td span{ font-size:10px; display:block;}
+.more{ width:100%; height:auto; float:left; text-align:right; line-height:30px;}
+.more a{ color:#000; font-size:14px; font-weight:bold;}
+.more a:hover{ text-decoration:underline; color:#000;}
+
+.banner{ width:921px; height:280px; float:left;}
+.bannertxt{ width:100%; height:auto; float:left; background:#fff; margin-top:20px;}
+.bannertxt h2{ background:#8a5626; width:100%; height:30px; line-height:30px; text-align:center; color:#fff; font-size:20px;}
+.bannertxt p{ padding:5px 8px 10px 8px; line-height:20px; color:#333333; font-size:13px;}
+.cruiselist{ width:100%; height:auto; float:left; margin-top:20px;}
+.cruiselist h2{ width:100%; height:30px; float:left; display:block;}
+.cruiselist ul{ width:215px; border:5px solid #d2d3d4; border-top:none; height:auto; float:left; background:#fbf9f4; padding:4px 10px 15px 10px;}
+.cruiselist ul li{ width:201px; height:auto; float:left; display:block; padding:6px 0px 6px 14px; border-bottom:1px dashed #b7b1b0; background:url(/images/yangtze/cruiselibg.jpg) no-repeat 0px 10px;}
+.cruiselist ul li a{ color:#453b2d; line-height:14px;}
+.cruiselist ul li a:hover{ color:#000;}
+
+.cruise{ width:640px; height:auto; float:left; padding:10px 10px 15px 10px; background:#fff; margin-top:20px; color:#333; line-height:20px;}
+.cruise h2{ width:595px; height:auto; float:left; display:block; background:url(/images/yangtze/cruiseh1.png) no-repeat left center; padding-left:45px; color:#8c4600; font-size:20px; line-height:28px; margin-bottom:4px;}
+.cruise p{ padding-bottom:5px;}
+.cruise p strong{ color:#000; display:block;}
+.yangtzelist{ width:100%; height:auto; float:left; margin-top:8px;}
+.cruise p span{ width:635px; height:auto; float:left; display:block; background:url(/images/yangtze/yangtzeli.jpg) no-repeat 0px 8px; padding-left:15px;}
+.yangtzelist ul{ width:100%; height:auto; float:left;}
+.yangtzelist ul li{ width:98px; height:86px; border:1px solid #cccccc; display:block; float:left; margin-right:8px;}
+.best{ width:100%; height:auto; float:left; margin-top:10px;}
+.besttitle{ width:603px; height:auto; float:left; background:url(/images/yangtze/best.png) no-repeat left center; color:#000; font-size:14px; padding:3px 0px 5px 37px; font-weight:bold; border-bottom:1px solid #cccccc; line-height:30px;}
+.best ul{ width:100%; height:auto; float:left; padding-top:10px;}
+.best ul li.pic{ width:169px; height:114px; padding:2px; border:1px solid #ccc; float:left;}
+.best ul li ol{ width:100%; height:auto; float:right;}
+.best ul li.ollist{ width:450px; height:auto; float:right; display:block;}
+.best ul li ol li{ width:435px; height:auto; float:left; display:block; border-bottom:1px dashed #b7b1b0; background:url(/images/yangtze/yangtzeli.jpg) no-repeat left center; padding:4px 0px 4px 15px;}
+.best ul li ol li a{ color:#333333;}
+.best ul li ol li a:hover{ color:#000; text-decoration:underline;}
+.recommend{ width:100%; height:auto; float:left; border-top:1px solid #cccccc; margin-top:10px;}
+.recommend ul{ width:100%; height:auto; float:left; padding:15px 0px; border-bottom:1px dashed #b7b1b0;}
+.recommend ul li.pic{width:169px; height:114px; padding:2px; border:1px solid #ccc; float:left; display:block;}
+.recommend ul li.ollist{width:450px; height:auto; float:right; display:block;}
+.recommend ul li ol{ width:100%; height:auto; float:left;}
+.recommend ul li ol li{ width:100%; height:auto; float:left; display:block; line-height:18px;}
+.recommend ul li ol li a{ font-weight:bold; color:#333333; line-height:24px; text-decoration:underline; display:block;}
+.recommend ul li ol li a:hover{ color:#000;}
+.recommend ul li ol li span{ color:#000;}
+.recommend ul li ol li.button{ text-align:right; margin-top:2px;}
+
+.tripadvisor{ width:100%; height:auto; float:left; margin-top:20px;}
+.shanghaibann{ width:100%; height:auto; float:left; margin-top:20px;}

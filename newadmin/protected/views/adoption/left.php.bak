@@ -1,0 +1,85 @@
+
+
+<!--  search start  -->
+<div id="search">
+   <div class="title"><img src="/images/adoption/search.jpg" alt="" /></div>
+   <div class="searchcont">
+      <table cellspacing="0" cellpadding="0" border="0">
+         <tbody>
+            <tr>
+               <td colspan="2"><select name="days" class="left_field" id="choose_days">
+                    <?php foreach(Yii::app()->params['days_list'] as $v):?>
+                      <option value="<?php echo $v;?>"><?php echo $v;?></option>
+                    <?php endforeach;?>
+                   </select>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2"><strong>Select Cities:</strong></td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <ul>
+                      <li><input type="checkbox" value="Beijing" name="city2[]" /> <span>Beijing</span></li>
+                      <li><input type="checkbox" value="Shanghai" name="city2[]" /> <span>Shanghai</span></li>
+                      <li><input type="checkbox" value="Guilin" name="city2[]" /> <span>Guilin</span></li>
+                      <li><input type="checkbox" value="Hong Kong" name="city2[]" /> <span>Hong Kong</span></li>
+                      <li><input type="checkbox" value="Xian" name="city2[]" /> <span>Xian</span></li>
+                      <li><input type="checkbox" value="Lhasa" name="city2[]" /> <span>Lhasa</span></li>
+                      <li><input type="checkbox" value="Kunming" name="city2[]" /> <span>Kunming</span></li>
+                      <li><input type="checkbox" value="Yangtze" name="city2[]" /> <span>Yangtze</span></li>
+                  </ul>
+               </td>
+               
+            </tr>
+            <tr>
+               <td colspan="2"><span id="more_index">Select more cities</span></td>
+            </tr>
+            <tr>
+               <td>
+                  <form action="<?php echo Yii::app()->createUrl("chinaTours/searchList");?>" method="get" name="toursearchpanelform" id="toursearchpanelform">
+                     <input type="hidden" name="city" id="menu_city" value="" />
+                     <input type="hidden" name="days" id="menu_days" value="" />
+                     <input type="hidden" name="price" id="menu_price" value="" />
+                     <input type="image" src="/images/adoption/searchbutton.jpg" />
+                   </form>
+                 </td>
+                 <td><a href="<?php echo Yii::app()->createUrl("chinaTours/advanceSearch");?>">Advanced Search</a></td>
+              </tr>
+         </tbody>
+      </table>
+   </div>
+</div>
+<!--  search end  -->
+
+<!--  guide start  -->
+  <?php $this->Widget('application.components.widgets.AdoptionLeftGuide'); ?>
+<!--  guide end  -->
+<!--  customize start  -->
+<div id="customize">
+   <a href="<?php echo Yii::app()->createUrl("adoption/customizeAdoption"); ?>" target="_blank"><img src="/images/adoption/customize.jpg" /></a>
+</div>
+<!--  customize end  -->
+
+<!--  types start  -->
+<div class="types">
+     <div class="title"><a href="/chinatour/"><img src="/images/adoption/types.jpg"></a></div>
+     <ul>
+        <li><a href="<?php echo Yii::app()->createUrl('chinaTours/top10Tours');?>" target="_blank">Top 10 China Tours</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl('chinaTours/classicTours');?>" target="_blank">Classic China tour</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl('chinaTours/yangtzeRiverTours');?>" target="_blank">Yangtze River Tours</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl('chinaTours/tibetTours');?>" target="_blank">Tibet Impression</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl('adoption');?>" target="_blank">China Adoption Travel</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl('chinaTours/trainTravel');?>" target="_blank">China Train Travel</a></li>
+     </ul>
+</div>
+<!--  types end  -->
+
+<!--  links start  -->
+<div class="links">
+   <a href="http://leadtochina.blogspot.com" target="_blank"><img src="/images/adoption/b1.jpg" alt="" /></a>
+   <a href="http://facebook.com/lead2china" target="_blank"><img src="/images/adoption/f1.jpg" alt="" /></a>
+   <a href="http://twitter.com/leadtochina" target="_blank"><img src="/images/adoption/t1.jpg" alt="" /></a>
+   <a style="margin-right:0px;" href="http://www.youtube.com/user/OnlineChinaTours1" target="_blank"><img src="/images/adoption/y1.jpg" alt="" /></a>
+</div>
+<!--  links end  -->

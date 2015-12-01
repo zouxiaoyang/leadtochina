@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+body{ width:100%; height:auto; margin:0px; padding:0px;  background:url(/images/newindex/bg.jpg) repeat-x;}
+*{ margin:0px; padding:0px;}
+li{ list-style:none;}
+img{ border:none;}
+.clear{ width:0px; height:0px; line-height:0px; font-size:0px; clear:both;}
+a{ text-decoration:none;}
+
+
+.order{ width:940px; height:auto; float:left; padding: 9px 10px 12px 11px; color:#525252; line-height:18px; font-size:12px;}
+.order_left{ width:696px; height:auto; float:left; border:1px solid #c7c7c7; background:#fff;}
+.order_text{ width:672px; height:auto; float:left; background:#fceddc; padding:5px 12px 10px 12px; line-height:26px; font-size:14px;}
+.order_text h2{ color:#8c4600; width:100%; display:block; line-height:34px; font-size:21px;}
+.order_info{ width:676px; height:auto; float:left; padding:10px;}
+.order_info h2{ color:#333; font-size:15px; width:650px; height:auto; float:left; background:url(/images/order/one.png) left center no-repeat; padding-left:26px; line-height:24px;}
+.order_info table{ width:664px; height:auto; float:left; margin:0px 0px 10px 0px;}
+.order_info table tr td{ padding:8px 0px 8px 30px;}
+.order_info table tr td select{border-color: #5E5E5E #B7B7B7 #B7B7B7 #5E5E5E; border-right: 1px solid #B7B7B7; border-style: solid; border-width: 1px; background:#ffffff; color:#848080; padding:4px 2px 4px 6px; margin-top:4px; border-radius: 4px;}
+.order_info table tr td input,.order_info table tr td textarea{ margin-top:4px; border-color: #5E5E5E #B7B7B7 #B7B7B7 #5E5E5E; border-right: 1px solid #B7B7B7; border-style: solid; border-width: 1px; color:#000; height:24px; border-radius: 4px;}
+.order_info table tr td strong{ color:#ff0000;}
+.order_info table tr td span{ color:#b3afaf; line-height:14px; font-size:11px; padding-top:3px;}
+
+
+.order_right{ width:214px; height:auto; float:right; border:4px solid #ccc; background:#fff;}
+.trip_overview{ background:#8c4600; padding:4px; width:206px; height:auto; float:left;}
+.trip_overview h2{ background:#fff; color:#8c4600; text-align:center; display:block; height:28px; line-height:28px; font-size:16px;}
+.trip_overview ul{ width:100%; height:auto; float:left;}
+.trip_overview ul li{ color:#fff; padding:6px 0px; display:block; float:left;}
+.trip_overview ul li.trip_title{ border-bottom:1px dashed #fff; font-weight:bold; font-size:13px;}
+.how_book,.why_choose{ width:100%; height:auto; float:left;}
+.how_book h2,.why_choose h2{ font-size:16px; color:#8c4600; line-height:34px; text-align:center; display:block; float:left; width:100%;}
+.why_choose img{border:1px solid #fff;}
+.whylist{ width:100%; height:auto; float:left;}
+.whylist ul{ width:204px; height:auto; float:left; padding:0px 5px 20px 5px;}
+.whylist ul li{background:url(/images/order/li.png) 0px 10px no-repeat; padding:5px 0px 5px 16px; display:block; float:left; border-bottom:1px dashed #cecece; width:188px;}
+#box{position:relative;width:214px;height:142px; float:left;}
+#box .list{position:relative;width:212px;height:140px;overflow:hidden;border:1px solid #fff;}
+#box .list li{position:absolute;top:0;left:0;width:212px;height:140px;opacity:0;filter:alpha(opacity=0); padding:0px;}
+#box .list li.current{opacity:1;filter:alpha(opacity=100);}
+#box .count{position:absolute;right:0;bottom:5px;}
+#box .count li{color:#fff;float:left;width:20px;height:20px;cursor:pointer;margin-right:5px;overflow:hidden;background:#F90;opacity:0.7;filter:alpha(opacity=70);border-radius:20px;}
+#box .count li.current{color:#fff;opacity:1;filter:alpha(opacity=100);font-weight:700;background:#f60;}
+#tmp{width:100px;height:100px;background:red;position:absolute;}
+.Wdate{background: url("/images/datePicker.gif") no-repeat scroll right center #FFFFFF;}

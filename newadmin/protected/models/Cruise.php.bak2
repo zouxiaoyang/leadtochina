@@ -1,0 +1,473 @@
+<?php
+
+/**
+ * This is the model class for table "{{cruise}}".
+ *
+ * The followings are the available columns in table '{{cruise}}':
+ * @property integer $id
+ */
+class Cruise extends CActiveRecord
+{
+  const UPLOAD_PATH = 'images/uploads/cruise/';
+
+  //上行城市
+  static $upCityArr = array(
+    1 => 'Yichang-Chongqing',
+    2 => 'Shanghai-Chongqing',
+  );
+
+  static $upCityArr2 = array(
+    1 => 'YC-CQ',
+    2 => 'SH-CQ',
+  );
+
+
+
+  //上行城市天数
+  static $upCityDays = array(
+    1 => '5 Days ',
+    2 => '9 Days '
+  );
+
+  //下行城市
+  static $downCityArr = array(
+    1 => 'Chongqing-Shanghai',
+    2 => 'Chongqing-Yichang',
+  );
+
+  static $downCityArr2 = array(
+    1 => 'CQ-SH',
+    2 => 'CQ-YC',
+  );
+  
+
+  //下行城市天数
+  static $downCityDays = array(
+    2 => '4 Days ',
+    1 => '7 Days ',
+  );
+
+  //类别
+  static $category = array(
+    3 => 'Victoria Cruises',
+    5 => 'Overseas Cruise',
+    1 => 'President Cruises',
+    2 => 'New Century',	
+    4 => 'Gold Cruises',
+    6 => 'Yangtze Explorer',
+    //7 => 'Other'
+  );
+  
+  //分类对应描述
+  static $categoryDescription = array(
+    1 => '
+        <p>As one of the most luxuriant cruisese on Yangtze River, the Wuhan Yangtze River Cruises Co. Ltd President company\'s dedication to high quality service and their state of the art equipment make President Series one of the best fleets on the Yangtze River. It is the largest and most competitive cruise company on the Yangtze River and their fleet of ships in the President series is some of the most luxuriant on the Yangtze River.  </p>
+        <p>With years of experience, the crew on each ship are fluent in English, Japanese, French, and Korean. They do their ways to make sure that each and every passenger has the experience of a lifetime. The President fleet is pround to have been the cruise line chosen by many government leaders of many different countries. The President fleet has been used by the Miss Hong Kong Pageant and the Miss Tourism World Pageant.</p>
+      ',
+    2 => '
+      <p>All of the Ships of New Century are built after 2003, offering a first class river cruising experience with the highest level of comfort and the most personalized service aboard its contemporary, well-reputed fleet of ships. </p>
+      <p>Since 2011, it ha become much more popular than the American Victoria Cruises. With the coming of Century Paragon, Century Legend in 2013, the Century Cruises is now leading in luxurious river cruising on the Yangtze River. The New Century cruises mark the evolution of luxurious Yangtze Cruises, setting a new standard of excellence.</p>
+      ',
+    3 => '<p>It used to be the most popular and leading Yangtze Cruise on Yangtze River since 1994. As the only American managed cruise company, they know what the western customers really want, and provide the outstanding onboard services.</p>
+            <p>Currently, Victoria Cruise operates solely on China\'s Yangtze River, and, like river cruises worldwide, these voyages are as much round-the-clock shore excursions and floating enrichment programs as posh cruises. The Victoria Sophia (Victoria Prince) is the only ship sailing between Chongqing and Shanghai on the Yangtze River.</p>
+        ',
+    4 => '<p>Had it;s first cruise Yangtze Gold 1 launched in May 2011, the Yangtze Gold Cruises, including seven 5 stars all-new cruise ships, is the newest fleet sailing along Yangtze River. It sets up the new standard of the luxury inland river cruises.</p>
+            <p>Built with the most advanced passenger features, Yangtze Gold Cruise has the unique facilities onboard, like pedestrain street, helipad, mini golf course, open-air surfing swimming pool, double-layer theater, children\'s playground etc., offering guests the unmatched comfort, the most personalized service and ultimate curise experience.</p>
+      ',
+    5 => '
+      <p>Changjiang Cruise Overseas Travel Company is one of the largest professional luxury cruise line on the inland Yangtze River, featuring some of luxurious ships. With the annual capacity of 120,000 passengers, it has two series, Yangtze Premier Cruise Series and Yangtze Classic Cruise Series.</p>
+      <p>In 2010, most of our cruises have been functioning improved and redecorated in large scale. From the aspect of cruise safty, soft and hardware equipment, Changjiang Cruise Overseas Travel Company has set up the leading standard in the deluxe cruise industry on the Yangtze river.</p>
+      ',
+    6 => '<p>Carrying just 124 passengers at most, Yangtze Explorer provides the finest and most personalized service, delivered by the highest ratio of staff to guests. Each cabin on board is exceptional in size and designed to create a more harmonious and luxury cruising experience, with a private balcony facing the gorges all the way. The 1 to 1 VIP services ensure that every level of comfort can be created for you.</p>
+            <p>As the Top super-5 star curise ship on the Yangtze river, Yangtze Explorer is also chosen by many financial and political magnates, such as Bill Gates, Warren Buffett, and Henry Kissinger.</p>
+      ',
+    7 => ''
+  );
+
+  //星级
+  static $grade = array(
+    //3 => '3 Star',
+    4 => '4 Star',
+    5 => '5 Star'
+  );
+
+  static $weekDays = array(
+    1 => 'Monday',
+    2 => 'Tuesday',
+    3 => 'Wednesday',
+    4 => 'Thursday',
+    5 => 'Friday',
+    6 => 'Saturday',
+    7 => 'Sunday'
+  );
+
+  static $recommend = array(
+    0 => '否',
+    1 => '是'
+  );
+
+  static $isHideArr = array(
+    0 => '显示',
+    1 => '隐藏',
+  );
+
+	/**
+	 * Returns the static model of the specified AR class.
+	 * @param string $className active record class name.
+	 * @return Cruise the static model class
+	 */
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
+	}
+
+	/**
+	 * @return string the associated database table name
+	 */
+	public function tableName()
+	{
+		return '{{cruise}}';
+	}
+
+	/**
+	 * @return array validation rules for model attributes.
+	 */
+	public function rules()
+	{
+		// NOTE: you should only define rules for those attributes that
+		// will receive user inputs.
+		return array(
+			array('cruise_name, category, up_week, down_week', 'required'),
+			array('total_passengers, crew, uphighprice, passenger_decks, published, uplowprice, downlowprice, downhighprice, upcity, downcity, category, recommend, month_recommend, index_recommend, up_week, down_week, is_hide', 'numerical', 'integerOnly'=>true),
+			array('cruise_name, ufile, seo_key', 'length', 'max'=>100),
+			array('url, cruise_grade', 'length', 'max'=>50),
+			array('year_built', 'length', 'max'=>4),
+			array('length, width', 'length', 'max'=>6),
+			array('filedir', 'length', 'max'=>150),
+			array('seo_title, seo_description,feature,recommend_by_editor', 'length', 'max'=>255),
+			array('equipment,highlights, introduction, uplink, down, feature, warm_note, tips,price_serialize,price_serialize_2 price_include, price_exclude', 'safe'),
+			// The following rule is used by search().
+			// Please remove those attributes that should not be searched.
+			array('id, cruise_name, url, year_built, total_passengers, crew, length, width, uphighprice, passenger_decks, cruise_grade, uplink, down, equipment, introduction, filedir, ufile, seo_title, seo_key, seo_description, published, uplowprice, downlowprice, downhighprice, upcity, downcity, is_hide, category', 'safe', 'on'=>'search'),
+		);
+	}
+
+	/**
+	 * @return array relational rules.
+	 */
+	public function relations()
+	{
+		// NOTE: you may need to adjust the relation name and the related
+		// class name for the relations automatically generated below.
+    $month = $_GET['sailling_date'] ? date('m', strtotime($_GET['sailling_date'])) : date('m');
+		return array(
+      'cruiseSailling' => array(self::HAS_MANY,'Cruiseact','cruiseid','condition'=>'month='.$month)
+		);
+	}
+
+	/**
+	 * @return array customized attribute labels (name=>label)
+	 */
+	public function attributeLabels()
+	{
+		return array(
+			'id' => 'ID',
+			'cruise_name' => '游轮名称',
+			'url' => 'Url',
+     	'category' => '分类',
+			'year_built' => '游轮生产日期',
+			'total_passengers' => '载客人数',
+			'crew' => '工作人员',
+			'length' => '游轮长度',
+			'width' => '游轮宽度',
+			'uphighprice' => '上行旺季价格',
+			'passenger_decks' => '游轮层数',
+			'cruise_grade' => '游轮等级',
+			'uplink' => '上行日期',
+			'down' => '下行日期',
+			'equipment' => '游轮设备',
+			'introduction' => '游轮简介',
+			'filedir' => 'Filedir',
+			'ufile' => '上传图片',
+			'seo_title' => 'Seo Title',
+			'seo_key' => 'Seo Key',
+			'seo_description' => 'Seo Description',
+			'published' => 'Published',
+			'uplowprice' => '上行淡季价格',
+			'downlowprice' => '下行旺季价格',
+			'downhighprice' => '下行淡季价格',
+			'upcity' => '上行城市',
+			'downcity' => '下行城市',
+			'recommend' => '推荐',
+	   	'index_recommend' => '游轮页面推荐',
+     	'feature' => '特色介绍',
+			'highlights' => '亮点介绍',
+			'recommend_by_editor' => 'Recommend by editor',
+      'month_recommend' => '本月推荐',
+      'up_week' => '星期',
+      'down_week' => '星期',
+			'price_serialize'=>'2013价格序列',
+			'price_serialize_2'=>'2014价格序列',
+			'price_include'=>'价格包含',
+			'price_exclude'=>'价格不包含',
+			'tips'=>'TIPS',
+			'warm_note'=>'Warm Note',
+      'is_hide' => '显示隐藏',
+		);
+	}
+
+	/**
+	 * Retrieves a list of models based on the current search/filter conditions.
+	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
+	 */
+	public function search()
+	{
+		// Warning: Please modify the following code to remove attributes that
+		// should not be searched.
+
+		$criteria=new CDbCriteria;
+
+		$criteria->compare('id',$this->id);
+		$criteria->compare('cruise_name',$this->cruise_name,true);
+		$criteria->compare('url',$this->url,true);
+		$criteria->compare('year_built',$this->year_built,true);
+		$criteria->compare('total_passengers',$this->total_passengers);
+		$criteria->compare('crew',$this->crew);
+		if($this->category) $criteria->compare('category',$this->category);
+		$criteria->compare('length',$this->length,true);
+		$criteria->compare('width',$this->width,true);
+		$criteria->compare('uphighprice',$this->uphighprice);
+		$criteria->compare('passenger_decks',$this->passenger_decks);
+		$criteria->compare('cruise_grade',$this->cruise_grade,true);
+		$criteria->compare('uplink',$this->uplink,true);
+		$criteria->compare('down',$this->down,true);
+		$criteria->compare('equipment',$this->equipment,true);
+		$criteria->compare('introduction',$this->introduction,true);
+		$criteria->compare('filedir',$this->filedir,true);
+		$criteria->compare('ufile',$this->ufile,true);
+		$criteria->compare('seo_title',$this->seo_title,true);
+		$criteria->compare('seo_key',$this->seo_key,true);
+		$criteria->compare('seo_description',$this->seo_description,true);
+		$criteria->compare('published',$this->published);
+		$criteria->compare('uplowprice',$this->uplowprice);
+		$criteria->compare('downlowprice',$this->downlowprice);
+		$criteria->compare('downhighprice',$this->downhighprice);
+		$criteria->compare('upcity',$this->upcity);
+		$criteria->compare('downcity',$this->downcity);
+		$criteria->compare('index_recommend',$this->index_recommend);
+		$criteria->compare('recommend_by_editor',$this->recommend_by_editor);
+    $criteria->compare('is_hide', $this->is_hide, true);
+    $criteria->order = 'is_hide asc, id ASC';
+		
+
+		return new CActiveDataProvider($this, array(
+			'criteria'=>$criteria,
+       'pagination'=>array(
+          'pageSize'=>20,
+      ),
+		));
+	}
+
+  public function getRecommendCategoryCruises($category = 1)
+  {
+    $c = new CDbCriteria();
+    $c->select = 'id, cruise_name,downlowprice, uplowprice, feature,cruise_grade, ufile, category, upcity, downcity';
+    $c->condition = "recommend=1 and category=$category";
+    $c->limit = 3;
+    $recommend_list = self::model()->findAll($c);
+    return $recommend_list;
+  }
+  
+  //游轮首页推荐
+  public function getIndexRecommendCruise(){
+  	$index_recommend=self::model()->findByAttributes(array('index_recommend'=>1));
+  	return $index_recommend;
+  }
+
+  public function getMonthRecommendCruises()
+  {
+    $ret = self::model()->findAllByAttributes(array('month_recommend'=>1));
+    return $ret;
+  }
+
+  //查询所有游轮
+  public function getCruises()
+  {
+      //$year = date("Y");
+      $year = 2015;
+  	  $list = self::model()->findAll(array(
+  	  	'alias' => 'a',
+        'select' => array('a.id, a.cruise_name, a.downlowprice, a.downhighprice,a.uplowprice,a.downlowprice,a.uphighprice,a.feature, a.cruise_grade, a.ufile, a.category, a.upcity, a.downcity, a.up_week, a.down_week'),
+  	  	'join' => 'LEFT JOIN {{cruiseact}} AS b ON a.id=b.cruiseid',
+        'condition' => "b.year='$year'",
+        'group' => 'a.id',
+      ));
+    /*
+       $list = self::model()->findAll(array(
+  	  	'alias' => 'a',
+        'select' => array('a.id, a.cruise_name, a.downlowprice, a.downhighprice,a.uplowprice,a.downlowprice,a.uphighprice,a.feature, a.cruise_grade, a.ufile, a.category, a.upcity, a.downcity, a.up_week, a.down_week'),
+  	  	//'join' => 'LEFT JOIN {{cruiseact}} AS b ON a.id=b.cruiseid',
+        //'condition' => "b.year='$year'",
+        'group' => 'a.id',
+      ));
+      */
+
+      return self::swapCategoryToArray($list);
+  }
+
+  protected function swapCategoryToArray($dataObj){
+    $ret = array();
+    foreach($dataObj as $v){
+      $ret[$v->category][] = $v;
+    }
+    return $ret;
+  }
+
+  public function getUrl()
+  {
+    return 
+    Yii::app()->createUrl('cruise/view',array('id'=>$this->id,'name'=>SiteUtils::stringURLSafe($this->cruise_name)));
+  }
+
+  /*
+   * @Params ID array()
+   */
+  public function findAllCruisesByIds($ids)
+  {
+
+     $ret = self::model()->findAllByPk($ids,array(
+        'select'=>'id, cruise_name, upcity, downcity, cruise_grade, uphighprice, uplowprice, downhighprice, downlowprice',
+      ));
+    return $ret;
+  }
+
+  //得到游轮的航期
+  public function getCruiseSailling()
+  {
+    foreach($this->cruiseSailling as $v){
+      $cruise_date .= "<span>".date('M.j', strtotime($v->cruise_date))."</span>";
+    }
+    return $cruise_date;
+  }
+
+  //搜索游轮
+  public function searchCruise()
+  {  	
+      //$condition[] = " year=2013";
+      $condition = array();      
+      if($_GET['sailling_date']) {
+        $date = date("Y-m-d",strtotime($_GET['sailling_date']));
+      	$condition[] = "b.cruise_date='$date'";
+      }else{
+      	$condition[] = "b.month=".date(m);
+      }
+      
+      if($_GET['cruise_star'])   $condition[] = "a.cruise_grade='{$_GET['cruise_star']}'";
+      $sailling_city = $_GET['sailling_city'];
+      if($sailling_city) {
+        if(strpos($sailling_city,'up')) $condition[] = "a.upcity=".(int)$sailling_city; 
+        elseif(strpos($sailling_city,'down'))  $condition[] = "a.downcity=".(int)$sailling_city;  
+      }
+      
+      if($_GET['ship_name']) {
+        $ship_name = mysql_real_escape_string($_GET['ship_name']);
+        $condition[] = "a.cruise_name='$ship_name'";
+      }
+
+      $criteria=new CDbCriteria(array(
+        'alias' => 'a',
+        'select' => array('a.id, a.cruise_name, a.cruise_grade, a.upcity, a.downcity, a.downlowprice, a.ufile,a.price_serialize'),
+        'join' => 'LEFT JOIN {{cruiseact}} AS b ON a.id=b.cruiseid',
+        'condition' => implode(' AND ', $condition),
+        'group'    => 'a.id',
+      ));
+      $dataProvider = new CActiveDataProvider('Cruise', array(
+             'pagination'=>array(
+             'pageSize'=>6,
+            ),
+            'criteria'=>$criteria,
+     ));
+      return $dataProvider;
+  }
+
+  public function getRoutes()
+  {
+    $route = array();
+    foreach(self::$upCityArr as $k=>$v){
+      $route[self::$upCityDays[$k] . $v] =  self::$upCityDays[$k]. $v;
+    }
+    foreach(self::$downCityArr as $k=>$v){
+      $route[self::$downCityDays[$k] . $v] =  self::$downCityDays[$k] . $v;
+    }
+    return $route;
+  }
+
+  public function getRecentMonthCruise(){
+      $list = self::model()->findAll(array(
+  	  	'alias' => 'a',
+        'select' => array('a.id, a.cruise_name, a.downlowprice, a.uplowprice, a.feature, a.cruise_grade, a.ufile, a.category, a.upcity, a.downcity, a.up_week, a.down_week,a.highlights'),
+  	  	'join' => 'LEFT JOIN {{cruiseact}} AS b ON a.id=b.cruiseid',
+        'condition' => "b.year='".date('Y')."' and b.month='".date('m')."'",
+        'group' => 'a.id',
+        'limit' => 5
+      ));
+      return $list;
+    
+  }
+
+  public function getPrice(){
+    $month = date('m');
+    if(in_array($month, array(4,5,6,7,8,9,10))){//取旺季下行价格
+      return $this->downhighprice;
+    }else{ //取淡季下行价格
+      return $this->downlowprice;
+    }
+  }
+
+  public function behaviors(){
+    return array(
+      'UploadBehavor' => array(
+        'class' => 'application.models.UploadBehavior',
+        'attribute' => 'ufile',
+        'uploadPath' => self::UPLOAD_PATH,
+      ),
+    );
+  }
+
+  public function addQuestion($question){
+    $question->question_type_id = $this->id;
+    return $question->save();
+  }
+  
+  //根据category id查询游轮
+  public function getCruisesByCategory($category)
+  {
+      //$year = date("Y");
+      $year =  2015;
+  	  $list = self::model()->findAll(array(
+  	  	'alias' => 'a',
+        'select' => array('a.id, a.cruise_name, a.downlowprice, a.downhighprice,a.uplowprice,a.downlowprice,a.uphighprice,a.feature, a.cruise_grade, a.ufile, a.category, a.upcity, a.downcity, a.up_week, a.down_week, a.highlights'),
+  	  	'join' => 'LEFT JOIN {{cruiseact}} AS b ON a.id=b.cruiseid',
+        'condition' => "b.year='$year' and category='$category'",
+        'group' => 'a.id',
+      ));
+
+      /*
+    $list = self::model()->findAll(array(
+            'select' => array('id, cruise_name, downlowprice, downhighprice,uplowprice, downlowprice, feature, cruise_grade, ufile, upcity, downcity, up_week, down_week,highlights'),
+            'condition' => "category='$category'",
+            ));
+    */
+    return $list;
+  }
+  
+  public static function getAllCruiseName(){
+    //$year = date("Y");
+    $year =  2015;
+    $sql = "select a.id,a.cruise_name from {{cruise}} a left join {{cruiseact}} b on a.id=b.cruiseid where b.year='$year' group by a.id";
+    $cruise_names = Yii::app()->db->createCommand($sql)->queryAll();
+    return $cruise_names;
+  }
+
+}
+

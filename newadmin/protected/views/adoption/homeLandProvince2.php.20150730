@@ -1,0 +1,157 @@
+<?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl.'/css/adoptionHome.css');?>
+
+<style type="text/css">
+<!--
+.errorMessage{display:none}
+#myFocus{ width:245px; height:169px; float:left; margin-top:15px;}
+#adoption-left{ width:220px;}
+#content{padding: 10px 21px 10px 20px; width: 920px;}
+.addthis_toolbox a{ color:#666;}
+-->
+</style>
+<!-- contentnew start  -->
+<div class="contentnew">
+  <!-- leftspace start  -->
+  <div class="leftspace"> 
+     <!-- content start  -->
+     <div id="content">
+        <div id="menu-tours"><strong>You are here:</strong> <a href="/">Home</a> <a href="<?php echo Yii::app()->createUrl('adoption/index');?>">China Adoption Tours</a> <?php echo $provinceDescription->name;?> Reunion</div>
+        <div id="banner"><img src="/images/adoption/banner_<?php echo strtolower($provinceDescription->name);?>.jpg"  alt="" /></div>
+        <!--  brief start  -->
+        <div class="brief">
+            <!--  briefleft start  -->
+            <div class="briefleft">
+                 <div class="textleft">
+                   <h2>Brief of <?php echo $provinceDescription->name;?></h2>
+                       <p><?php echo SiteUtils::mb_truncate_text(strip_tags($provinceDescription->description),550);?></p>
+                 </div>
+                 <div class="callbutton"><a href="<?php echo Yii::app()->createUrl('adoption/customizeAdoption');?>"><img src="/images/adoption/call.png"></a></div>
+            </div>
+            <!--  briefleft end  -->
+            
+            <!--  briefright start  -->
+            <div class="briefright">
+               <ul>
+                  <li class="title"><?php echo $provinceDescription->name;?> Guide</li>
+                   <?php if(count($provinceArticle)==5)array_pop($provinceArticle);?>
+                   <?php foreach ((array)$provinceArticle as $k=>$v):?>             
+                      <li><a href="<?php echo Yii::app()->createUrl('adoption/homeLandView',array('id'=>$v->id,'provinceid'=>$provinceid));?>"><?php echo $v->title;?></a></li>
+                   <?php endforeach;?>       
+               </ul>
+            </div>
+            <!--  briefright end  -->
+        </div>
+        <!--  brief end  -->
+        
+        <!--  package start  -->
+        <div class="package">
+            <!-- <div class="packagetitle"><?php echo $provinceDescription->name; ?> Reunion Tour Package</div>  -->
+            <?php if($packageProvince):?>
+
+            <?php $pic_dir = str_replace('uploads', 'images/uploads', $packageProvince->filedir);?>
+            <div class="packagepic"><img src="<?php echo ImageUtils::getThumbnail($pic_dir.$packageProvince->pic, '303x200');?>"></div>
+            <!--  packageright start  -->
+            <div class="packageright">
+              
+                 <a href="<?php echo $packageProvince->url();?>"><?php echo $packageProvince->name;?></a>
+                 <span><?php echo $packageProvince->route;?></span>
+                 <div class="clear"></div>
+                 <div class="recommend">
+                    <h2>Recommended Reason:</h2>
+                    <?php $recommand_reason=explode(',', $packageProvince['recommand_reason']); ?>
+                    <ul>
+                       <li title="<?php echo $recommand_reason[0];?>"><?php echo SiteUtils::mb_truncate_text($recommand_reason[0],80);?></li> 
+                           <li class="rtwo" title="<?php echo $recommand_reason[1];?>"><?php echo SiteUtils::mb_truncate_text($recommand_reason[1],80);?></li>
+                           <li class="rthree" title="<?php echo $recommand_reason[2];?>"><?php echo SiteUtils::mb_truncate_text($recommand_reason[2],80);?></li>
+                           <li class="rfour" title="<?php echo $recommand_reason[3];?>"><?php echo SiteUtils::mb_truncate_text($recommand_reason[3],80);?></li>
+                    </ul>
+                    <a style="float:left; width:195px; margin-right:25px;" href="<?php echo $packageProvince->url();?>"><img src="/images/adoption/itinerary.png"></a> <a style="float:left; width:138px;" href="<?php echo Yii::app()->createUrl("adoption/customizeAdoption"); ?>"><img src="/images/adoption/creat.png"></a>
+                 </div>
+            </div>
+            <?php endif;?>
+            <!--  packageright end  -->
+        </div>
+        <!--  package end  -->
+        
+        <!-- welfare start  -->
+            <div class="welfare">
+                <div class="walfare-title">China Orphanages Visit Request Infornation</div>
+                <div class="clear"></div>
+                <table cellspacing="0" cellpadding="0">
+                   <tbody>
+                      <tr class="welfaretop">
+                        <td width="91">Province</td>
+                        <td width="445">Orphanages we have arranged</td>
+                        <td width="228">Documents for approval of visit</td>
+                        <td width="154">Provincial fee for orphanage visit</td>
+                     </tr>
+                      <tr>
+                      <td><?php echo $provinceDescription->name; ?></td>
+                      <td><?php echo $orphanage->arranged_info; ?></td>
+                        <td>
+                          <?php echo $orphanage->approval_info;?>
+                        </td>
+                          <td><?php echo $orphanage->fee_info;?></td>
+                      </tr>
+                    </tbody>
+                 </table>
+
+            </div>
+        <!-- welfare end  -->  
+        
+        <!-- orp-address start  -->
+        <div class="orp-address">
+           <div class="walfare-title">Chinese Orphanage Addresses - <?php echo $provinceDescription->name;?> Province</div>
+           <div class="clear"></div>
+         <table cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+           <tr>
+            <td colspan="4" style="padding:10px;"><span>Note:</span> At the end of the address, please do not forget to add "Province, Postal Code, People's Republic of China", for example:BengBu Children's Welfare Institute 950 Chaoyang Road BangBu, Anhui 238000 People's Repulic of China</td>
+          </tr>
+           <tr class="tblheader">
+            <td width="332">Orphanage Name</td>
+            <td width="312">Address</td>
+            <td width="130">Postal <br />Code</td>
+            <td width="129">Telephone No.<br />(86)+</td>
+          </tr>
+          <?php foreach($orphanage_address as $v):?>
+          <tr>
+            <?php if($v->description):?>
+            <td><a href="<?php echo Yii::app()->createUrl('adoption/orphanageTravelGuide', array('id'=>$v->id));?>"><?php echo $v->orphanage_name;?></a></td>
+            <?php else:?>
+            <td><?php echo $v->orphanage_name;?></td>
+            <?php endif;?>
+            
+            <td><?php echo $v->address;?> </td>
+            <td><?php echo $v->postal_code;?></td>
+            <td width="17"><?php echo $v->tel;?></td>
+          </tr>
+          <?php endforeach;?>
+          
+		</tbody></table>
+        </div>
+        <!-- orp-address end  -->
+        
+        <!-- tips start  -->
+        <div class="tips">
+             <div class="tipstitle">Tips for a China Orphanage Visit</div>
+             <div class="tipstext">
+                <p><img style="float:right; margin-left:5px;" src="/images/adoption/tipspic1.jpg" alt="" /> When paying someone a visit in China, it is proper to take and gift for the children who remain at the orphanage.  You can always make a specific inquiry ahead of your trip during the planning stages, or in the few days prior to your arrival in order to allow for shopping in China to accommodate specific items that may be identified. The guide from LeadtoChina can help you to buy these things. If you're not made aware of any special items needed by the SWI, some good general guidelines include: a box of Almond Roca, or a basket of fruit, school supplies for school age kids, backpacks, books, or small candy treats.</p> 
+                <p>Depending on the size of the SWI and how often visitors return, a visit could can be a highly anticipated event by the staff, or a routine, minor inconvenience to the day-to-day running of the institution. You will want to discuss this aspect of reality with your child and prepare her or him for what it might be like, based on what you know.  It is good to talk to your child about what to expect and then what to do if things turn out differently than you expect. It is important to develop an attitude of flexibility and focus on enjoying the experience rather than to get set on things going a certain way, since things don't always go exactly as planned on any trip or daily life experience. A small gift is always appropriate for the effort expended by the director and or staff to accommodate the visiting family. </p>
+                <p>An important, but not always anticipated aspect for an SWI visit is to be aware that most of the orphanage children remaining often have a variety of special needs. It is best to have these discussions sometime before travel and relate this to a child with a physical or mental disability that your child may already know.  This can help put the special needs population at the orphanage into a useful context during any SWI visit.</p>
+                <img style="float:left; margin-right:5px; margin-top:5px;" src="/images/adoption/tipspic2.jpg" alt="" />
+                <span><p>If your family is interested or inclined to invite the orphanage director to lunch, it is proper to invite others in the meeting as well.  This would usually be one or two of the directors' assistants.  If you want to invite the caregiver or nanny(s), then you should extend that invitation through the director to show the proper respect that the position merits.  Your guide will handle this for you, but inviting the staff through the director follows proper etiquette for the situation. Some of the orphanages offer the free lunch while the others request about $100USD for the extra charge. You may ask our trip consultant before you travel.</p>
+                <p>Last of all, Chinese values modesty and gentleness, no matter your position. Chinese born individuals may go to great lengths to not "lose face" or have you "lose face".  Keeping this in mind can help guide you in a variety of situations you will encounter during your SWI visit and throughout your homeland trip. </p></span>
+             </div>
+        </div>
+        <!-- tips end  -->
+        
+        <!--  questions start  -->
+           <?php echo $this->renderPartial("_adoptionQuestion", array('commonQuestion'=>$commonQuestion, 'chinaTripQuestion'=>$chinaTripQuestion));?>
+          <!--  questions end  -->          
+     </div>
+     <!-- content end  -->
+  </div>
+  <!-- leftspace end  -->
+</div>
+<!-- contentnew end  -->

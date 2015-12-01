@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ margin:0px; padding:0px; font-size:12px; font-family: Arial,Tahoma,Helvetica,sans-serif; color:#7a7a7a; line-height:19px; }
+img{ padding:0px; margin:0px;}
+h2{ font-size:20px; color:#2b2b2b; padding:0px; margin:0px;}
+h3{ line-height:28px; color:#3c3c3b; font-size:14px;}
+*{ margin:0px; padding:0px;}
+.clear{ width:0px; height:0px; line-height:0px; font-size:0px; clear:both;}
+.link1 a:link{ color:#2b2b2b; text-decoration:underline;}
+.link1 a:visited{ color:#2b2b2b; text-decoration:underline;}
+.link1 a:hover{ color:#000; text-decoration:underline;}
+.link1 a:active{ color:#000; text-decoration:underline;}
+
+
+.link2 a:link{ color:#68602e; text-decoration:underline;}
+.link2 a:visited{ color:#68602e; text-decoration:underline;}
+.link2 a:hover{ color:#000; text-decoration:underline;}
+.link2 a:active{ color:#000; text-decoration:underline;}
+
+
+.link3 a:link{ color:#797979; text-decoration:underline;}
+.link3 a:visited{ color:#797979; text-decoration:underline;}
+.link3 a:hover{ color:#000; text-decoration:underline;}
+.link3 a:active{ color:#000; text-decoration:underline;}
+
+
+.link4 a:link{ color:#797979; text-decoration:none;}
+.link4 a:visited{ color:#797979; text-decoration:none;}
+.link4 a:hover{ color:#000; text-decoration:underline;}
+.link4 a:active{ color:#000; text-decoration:underline;}
+
+
+.link5 a:link{ color:#8f7c10; text-decoration:underline;}
+.link5 a:visited{ color:#8f7c10; text-decoration:underline;}
+.link5 a:hover{ color:#000; text-decoration:underline;}
+.link5 a:active{ color:#000; text-decoration:underline;}
+
+
+
+.col_1{ color:#000000;}
+.col_2{ color:#FF0000;}
+
+
+.logo_menu{ width:980px;  background:url(/images/newhomepage/main.jpg) no-repeat; margin:0 auto;}
+
+.banner{ width:980px; margin:0 auto;}
+
+
+.main{ width:931px; margin:0 auto; background:#eeeeee;  padding:15px 20px 0px 10px; overflow:hidden;}
+.main .left{ width:650px;float:left; background:#FFFFFF; border:1px #CCCCCC solid; padding:10px;}
+
+.main .left .left1{ width:100%; margin-bottom:10px; }
+.main .left .left1 h2{ margin:0px; padding:0px; font-size:24px;}
+
+.main .left .left2{ width:100%; float:left; margin-top:10px;}
+.main .left .left2 .title{ background:url(/images/citytours/citytours01_03.jpg) no-repeat; height:15px; line-height:15px; font-size:20px;}
+
+.Frame table{ border-collapse:collapse;}
+.Frame table td{ background:#FFFFFF; border:solid 1px #cbccc8; padding:3px;}
+
+
+
+#right{ width:211px; height:auto; float:right;}
+.right1{ width:100%; height:auto; float:left;}
+.right1 h2{ width:207px; height:35px; float:left; display:block; padding-left:4px; background:url(/images/beijingtour/bg.png) -220px 0px no-repeat; font-size:12px;}
+.right1 h2 span{ width:102px; height:auto; display:block; float:left; text-align:center; cursor:pointer; line-height:35px; color:#4b2c0d;}
+.right1 h2 span.dq,.right1 h2 span:hover{background:url(/images/beijingtour/bg.png) -220px -42px no-repeat; margin-top:9px; line-height:26px; color:#252525;}
+.search{ border:4px solid #c69d69; border-top:none; width:187px; padding:0px 8px 10px 8px; background:#fff; float:left; height:auto;}
+.search ul{ width:100%; height:auto; float:left; font-size:11px; color:#606060; padding:8px 0px; border-bottom:1px dashed #999;}
+.search ul li{ padding:4px 0px; width:100%; height:auto; float:left; display:block;}
+.search ul li ol{ width:100%; height:auto; float:left;}
+.search ul li ol li{ width:49%; white-space:nowrap;}
+.search ul li select{ border:1px solid #b8b8b8; width:179px; padding:2px 3px; color:#606060; font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+.search ul li select option{ display:block; padding:2px 0px;}
+.search ul li input{ margin:0px; width:12px; height:12px;}
+.search ul.three{ border:none; padding:0px 0px 5px 0px;}
+.search ul.three li a{ width:105px; height:auto; float:right; font-weight:bold; color:#b96100; text-decoration:underline; line-height:25px; display:block;}
+.search ul.three li a:hover{ color:#000; text-decoration:none;}
+.search ul.three li textarea{ border:1px solid #b8b8b8; width:179px; padding:2px 3px; height:45px;}
+.search a{ font-weight:bold; color:#b96100; text-decoration:underline; line-height:25px; padding-left:5px; font-size:11px;}
+.not_more{ width:100%; height:auto; float:left; margin:2px 0px;}
+.not_more span{ color:#000; text-decoration:underline; line-height:24px; padding-left:8px; display:block; cursor:pointer;}
+.not_morelist{ width:595px; height:auto; border:1px solid #acacac; padding:0px 10px 10px 10px; color:#444; float:left; position:absolute; z-index:8000; background:#e7e7e8; overflow:hidden; left:260px; top:180px;}
+.not_morelist h2{ font-size:18px; line-height:26px; border-bottom:1px solid #ccc; display:block; color:#000; width:100%; float:left; padding:0px; margin:5px 0px 4px 0px; background:none; height:26px;}
+.not_morelist h2 strong{ float:left;}
+.not_morelist h2 span{ float:right; display:block; width:17px;  height:17px;}
+.not_morelist h2 span:hover{ margin:0px; padding:0px;}
+.not_morelist ul{ width:100%; height:auto; float:left; margin:0px; padding:0px; border-bottom:none;}
+.not_morelist ul li{ width:16%; line-height:24px; float:left; margin:0px; padding:0px; list-style:none; white-space:nowrap;}
+.search_new{ width:100%; height:auto; float:left; margin:10px 0px 15px 0px;}
+.right2,.right3,.right4,.right5{ width:100%; height:auto; float:left; margin-top:20px;}
+.right3 h2{width:207px; height:26px; float:left; display:block; padding-left:4px; background:url(/images/beijingtour/bg.png) -220px 0px no-repeat; font-size:12px; padding-top:9px;}
+.right3 h2 span{ width:142px; height:26px; display:block; float:left; text-align:center; cursor:pointer; line-height:26px; color:#4b2c0d; background:url(/images/beijingtour/bg.png) -220px -69px no-repeat;}
+.right3 h2 a{ line-height:26px; padding-right:4px; color:#492e0e; font-size:11px; font-weight:normal; float:right; width:38px;}
+.right3 h2 a:hover{ color:#ff0000; text-decoration:underline;}
+.guide-list{ border:4px solid #c69d69; border-top:none; width:189px; padding:0px 7px 10px 7px; background:#fff; float:left; height:auto;}
+.guide-list ul{ width:100%; height:auto; float:left; padding:5px 0px;}
+.guide-list ul li{ width:160px; height:auto; float:left; display:block; padding:6px 0px 6px 29px; border-bottom:1px dashed #cccccc; background:url(/images/beijingtour/bg.png) 0px -132px no-repeat; line-height:18px;}
+.guide-list ul li.attractions{background:url(/images/beijingtour/bg.png) 0px -168px no-repeat;}
+.guide-list ul li.shopping{background:url(/images/beijingtour/bg.png) 0px -204px no-repeat;}
+.guide-list ul li.tours1{background:url(/images/beijingtour/bg.png) -220px -132px no-repeat;}
+.guide-list ul li.transport{background:url(/images/beijingtour/bg.png) -220px -170px no-repeat;}
+.guide-list ul li.hotel{background:url(/images/beijingtour/bg.png) -220px -204px no-repeat;}
+.guide-list ul li a{ color:#606060;}
+.guide-list ul li a:hover{ color:#000; text-decoration:underline;}
+.right4 ul{ width:100%; height:auto; float:left;}
+.right4 ul li{ width:38px; height:39px; display:block; float:left; margin-right:16px;}
+.right5{ width:203px; height:auto; float:left; margin-top:20px; border:1px solid #cbe5f5; background:#fff; padding:3px;}
+.right5 ul{ width:100%; height:auto; float:left; padding:2px 0px 10px 0px;}
+.right5 ul li{ width:187px; height:auto; float:left; display:block; border-bottom:1px dashed #cccccc; background:url(/images/beijingtour/bg.png) -458px -189px no-repeat; padding:6px 0px 6px 16px;}
+.right5 ul li a{color:#595959; font-size:11px;}
+.right5 ul li a:hover{ color:#000; text-decoration:underline;}
+
+.footer{ margin-top:15px; margin-bottom:30px; width:980px; margin:0 auto;}

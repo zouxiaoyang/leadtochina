@@ -1,0 +1,15 @@
+/*=========mF_classicHC --经典怀旧系列一--========*/
+.mF_classicHC_myFocus{ width:563px; height:304px; overflow:hidden; background:none;}
+.mF_classicHC .pic{ width:563px; height:304px;}
+.mF_classicHC .pic li{position:absolute;left:0;top:0;}
+.mF_classicHC .txt{ display:none;}
+.mF_classicHC .txt li{position:absolute;left:0;background:#dedede;overflow:hidden;height:26px;line-height:26px;}
+.mF_classicHC .txt li a{display:block;color:#333;text-align:center;font-size:12px;font-weight:bold;text-decoration:none;}/*文字样式*/
+.mF_classicHC .num,.mF_classicHC .num_bg{height:19px;position:absolute;z-index:3;right:220px;bottom:15px;color:#fff;}/*按钮样式*/
+.mF_classicHC .num_bg{width:100%;background:url(img/mF_classicHC/btn-bg.png) right bottom no-repeat;_height:16px;_background:0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/mF_classicHC/btn-bg.png', sizingMethod='scale'); bottom:0px; display:none;}/*为兼容IE6请把滤镜内的图片地址改为绝对地址*/
+.mF_classicHC .num_bg li{position:absolute;}
+.mF_classicHC .num li{float:left;width:10px;height:10px;/* padding-top:3px; */text-align:center;cursor:pointer; position:relative; background:#b0b0b0; margin-right:10px;border-radius:7px;border:1px solid #fff;}
+.mF_classicHC .num li a{color:#000; display:none;}
+.mF_classicHC .num li b{position:absolute;top:3px;left:0;width:1px;height:16px;overflow:hidden;background:#fff; display:none;}
+.mF_classicHC .num li.hover,.mF_classicHC .num li.current{/* background-image:url(img/mF_classicHC/btn-red.gif); */ background:#cc0000; border:1px solid #fff;}/*当前/悬停按钮样式*/
+.mF_classicHC .num li.current a,.mF_classicHC .num li.hover a{ color:#fff;}

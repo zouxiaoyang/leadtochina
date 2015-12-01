@@ -1,0 +1,251 @@
+<?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl.'/css/shanghai.css'); 
+
+?>
+<style type="text/css">
+<!--
+#content{ width:926px; height:auto; padding:10px 21px 10px 14px;}
+.trust{ margin-top:0px;}
+#list ul{ padding-bottom:0px;}
+-->
+</style>
+<!--  index1 start  -->
+<div id="index1">
+   <!--  menu-tours start  -->
+   <div id="menu-tours"><strong>You are here:</strong> <a href="/">Home</a> Shanghai Xian Tours</div>
+   <!--  menu-tours end  -->
+   <div id="banner"><img src="/images/beijing_shanghai/banner5.jpg" alt="" /></div> 
+</div>
+<!--  index1 end  -->
+
+<!--  index start  -->
+<div id="index">
+    <!--  left start  -->
+    <div id="left">
+        <!--  list start  -->
+        <div id="list">
+           <ul>
+               <li class="title" style="margin-top:0px;"><img src="/images/beijing_shanghai/title15.jpg" alt="" /></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiXianTours/search', array("title"=>'xian-tours-from-shanghai'));?>">Xian Tours from Shanghai</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiXianTours/search', array("title"=>'shanghai-tours-from-xian'));?>">Shanghai Tours from Xian</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiXianTours/search', array("title"=>'shanghai-xian-tours'));?>">Shanghai and Xian Tours</a></li>
+               <li class="title"><img src="/images/beijing_shanghai/title16.jpg" alt="" /></li>
+               <li><a href="/travel/city-xian-tours">Terra-cotta Warriors</a></li>
+               <li><a href="/travel/city-xian-tours#xian-private-tour">Xian Private Tours</a></li>
+               <li><a href="/travel/city-xian-tours#xian-group-tour">Xian Group Tours</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiXianTours/search', array("title"=>'xian-side-tours'));?>">Xian Side Tours</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('beijingXianTours/index');?>">Beijing Xian Tours</a></li>
+               <li class="title"><img src="/images/beijing_shanghai/title17.jpg" alt="" /></li>
+               <li><a href="/travel/city-shanghai-tours">Shanghai City Tours</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiXianTours/search', array("title"=>'shanghai-side-tours'));?>">Shanghai Side Tours</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiBeijingTours/index');?>">Beijing Shanghai Tours</a></li>
+               <li><a href="/travel/china-search?starting_city=shanghai#result">China Tours from Shanghai</a></li>
+               <!--
+               <li class="title"><img src="/images/beijing_shanghai/title18.jpg" alt="" /></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiXianTours/flightSchedule');?>">Flight Timetable & Ticket</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiXianTours/trainSchedule');?>">Train Timetable & Ticket</a></li>
+                -->
+            </ul>
+        </div>
+        <!--  list end  -->
+               
+        <!--  trust start  -->
+        <div class="trust">
+            <ul>
+                <li><a href="/member-pata"><img src="/images/beijing_shanghai/PATA.jpg" alt="" /></a></li>
+                <li>We are the member of PATA</li>
+            </ul>
+            <div class="trip-cont">
+                <div id="TA_selfserveprop169" class="TA_selfserveprop">
+                   <ul id="xpmCaCVwY" class="TA_links igNYd08qa">
+                      <li id="UJrtaqi" class="9LkKK4I1">21 reviews of <a target="_blank" href="http://www.tripadvisor.com/Attraction_Review-g297403-d3824010-Reviews-Lead_to_China_tours-Hefei_Anhui.html">Lead to China tours</a> in Hefei</li>
+                   </ul>
+                 </div>
+                 <script src="http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=169&amp;locationId=3824010&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true"></script>
+            </div>
+        </div>
+        <!--  trust end  -->
+        
+        <!--  quick start  -->
+          <?php $this->renderPartial('/message/_form2',array(
+            'model'=>$message,
+          )); ?>
+        <!--  quick end  -->
+    </div>
+    <!--  left end  -->
+    
+    <!--  right start  -->
+    <div id="right">
+         <!--  text start  -->
+         <div class="text">
+           <div class="textleft">
+              <h2>Shanghai Xian Tours</h2>
+              <p>While Shanghai is the commercial center of China, Xian is one of China's six major ancient capitals. The most famous attractions there is Terra-cotta Warriors. The flights between Shanghai and Xian are plentiful, which only take 2 hours, making it possible for you to take one day round trip from Shanghai to Xian. The fast trains between Shanghai and Xian are an overnight train which means you can save you one night accommodation for Shanghai-Xian train travel.</p>
+            </div>
+            <div class="callbutton"><a href="/travel/china-diy-tours"><img src="/images/beijing_shanghai/call.png"></a></div>
+        </div>
+        <!--  text end  -->
+        
+        <!--  toplist start  -->
+        <div class="toplist">
+            <h2><img src="/images/beijing_shanghai/toptitle2.jpg" alt="" ></h2>
+            <div class="listone">
+               <ul>
+                  <li><a href="/travel/china-1-day-shanghai-xian-tour-by-flight-731.html"><img src="/images/beijing_shanghai/top4.png" alt="" ></a></li>
+                  <li>
+                      <ol>
+                          <li><a href="/travel/china-1-day-shanghai-xian-tour-by-flight-731.html">1 Day Shanghai Xian Tour by Round Flight</a></li>
+                          <li>· Terra-cotta Warriors</li>
+                          <li>· Ancient City Wall</li>
+                          <li>· Private Guide  &amp; Vehicle</li>
+                          <li class="price">From <strong>$475</strong> P/P</li>
+                      </ol>
+                  </li>
+               </ul>
+           </div>
+           <div class="listone">
+               <ul>
+                  <li><a href="/travel/china-2-days-shanghai-xian-tour-733.html"><img src="/images/beijing_shanghai/top7.png" alt="" ></a></li>
+                  <li>
+                      <ol>
+                          <li><a href="/travel/china-2-days-shanghai-xian-tour-733.html">2 Days Shanghai Xian Tour by Round Flight</a></li>
+                          <li>· Terra-cotta Warriors</li>
+                          <li>· Ancient City Wall</li>
+                          <li>· Big Wild Goose Pagoda</li>
+                          <li>· Shaanxi Provincial Museum</li>
+                          <li class="price">From <strong>$590</strong> P/P</li>
+                      </ol>
+                  </li>
+               </ul>
+           </div>
+           <div class="listone" style="margin-right:0px;">
+               <ul>
+                  <li><a href="/travel/china-5-days-shanghai-and-xian-relax-tour-838.html"><img src="/images/beijing_shanghai/top8.png" alt="" ></a></li>
+                  <li>
+                      <ol>
+                          <li><a href="/travel/china-5-days-shanghai-and-xian-relax-tour-838.html">5 Days Shanghai and Xian Tour</a></li>
+                          <li>· the Bund &amp; Yu Garden</li>
+                          <li>· Jade Buddha Temple</li>
+                          <li>· Terracotta Warriors</li>
+                          <li>· Ancient City Wall</li>
+                          <li class="price">From <strong>$990</strong> P/P</li>
+                      </ol>
+                  </li>
+               </ul>
+           </div>
+        </div>
+        <!--  toplist end  -->
+        
+        <!--  tourlist start  -->
+        <div class="tourlist">
+           <h2>Xian Tours from Shanghai</h2>
+           <div class="listpic"><img src="/images/beijing_shanghai/pic11.jpg" alt="" ></div>
+           <div class="listcontent">
+              <ul>
+                 <li>Xian Tour Packages from Shanghai by flight or train. Best way to enjoy Xian sightseeing including Shaanxi Provincial History Museum, Xian Ancient City Wall, The Bell Tower, Forest of Stone Steles Museum, the Terra-cotta Warriors and Banpo Museum and many more.</li>
+                 <li>
+                    <ol>
+                       <li class="name">By Flight</li>
+                       <li><a href="/travel/china-1-day-shanghai-xian-tour-by-flight-731.html">1 Day Xian Terracotta Warriors Tours from Shanghai</a></li>
+                       <li><a href="/travel/china-2-days-shanghai-xian-tour-733.html">2 Days Shanghai Xian Shanghai Tour by Flight</a></li>
+                       <li><a href="/travel/china-3-day-shanghai-xian-tour-734.html">3 Days Shanghai Xian Shanghai Tour by Flight</a></li>
+                       <li><a href="/travel/china-4-days-shanghai-xian-tour-735.html">4 Days Shanghai Xian Shanghai Tour by Flight</a></li>
+                       <li><a href="/travel/china-5-day-shanghai-xian-tour-736.html">5 Days Shanghai Xian Shanghai Tour by Flight</a></li>
+                       <li><a href="/travel/china-6-days-shanghai-xian-tour-513.html">6 Days Shanghai Xian Shanghai Tour by Flight</a></li>
+                       <li class="name">By Train</li>
+                       <li><a href="/travel/china-1-day-shanghai-xian-tour-by-train-512.html">1 Day Shanghai Xian Shanghai Tour by Train</a></li>
+                       <li><a href="/travel/china-1-day-shanghai-xian-tour-by-train-and-flight-732.html">1 Day Shanghai Xian Shanghai Tour by Train and Flight</a></li>
+                    </ol>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <!--  tourlist end  -->
+        
+        <!--  tourlist start  -->
+        <div class="tourlist">
+           <h2>Shanghai Tours from Xian</h2>
+           <div class="listpic"><img src="/images/beijing_shanghai/pic12.jpg" alt="" ></div>
+           <div class="listcontent">
+              <ul>
+                 <li>Shanghai Tours from Xian by flight, Shanghai city &amp; side tours from Xian by train / flight are very convenient. You may customize Shanghai Suzhou Hangzhou Zhouzhuang tours from our help.</li>
+                 <li>
+                    <ol>
+                       <li><a href="/travel/china-2-days-xian-to-shanghai-and-zhujiajiao-watertown-tour-841.html">2 Days Xian Shanghai Zhujiajiao Xian Tours</a></li>
+                       <li><a href="/travel/china-3-days-xian-to-shanghai-train-travel-842.html">3 Days Xian Shanghai Xian Tours by Flight &amp; Train</a></li>
+                       <li><a href="/travel/china-5-days-xian-to-shanghai-suzhou-hangzhou-tour-843.html">5 Days Xian Shanghai Suzhou Hangzhou Xian Tours</a></li>
+                    </ol>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <!--  tourlist end  -->
+        
+        <!--  tourlist start  -->
+        <div class="tourlist">
+           <h2>Shanghai &amp; Xian Tours</h2>
+           <div class="listpic"><img src="/images/beijing_shanghai/pic13.jpg" alt="" ></div>
+           <div class="listcontent">
+              <ul>
+                 <li>While Shanghai is the commercial center of China, Xian is one of China's six major ancient capitals, where it had been the ancient capital for 6 successive dynasties for over 1000 years. Visiting Xi'an will add much value to your Shanghai China trip, giving you a clear and better picture of China as a whole.</li>
+                 <li>
+                    <ol>
+                       <li><a href="/travel/china-4-days-classic-xian-shanghai-tour-844.html">4 Days Classic Xian Shanghai Tour</a></li>
+                       <li><a href="/travel/china-5-days-shanghai-and-xian-relax-tour-838.html">5 Days Shanghai and Xian Relax Tour</a></li>
+                       <li><a href="/travel/china-6-days-shanghai-and-xian-tour-840.html">6 Days Shanghai and Xian Tour</a></li>
+                    </ol>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <!--  tourlist end  -->
+        
+        <!--  tourlist start  -->
+        <div class="tourlist">
+           <h2><strong>Xian City &amp; Side Tour</strong> <a href="/travel/city-xian-tours"><img src="/images/beijing_shanghai/more.png" alt="" ></a></h2>
+           <div class="listpic"><img src="/images/beijing_shanghai/pic14.jpg" alt="" ></div>
+           <div class="listcontent">
+              <ul>
+                 <li>Xian is the capital of Shaanxi Province and the biggest city in the northwest of China. It boasts a mild climate, fertile soil, beautiful scenery, abundant products, and numerous historical relics and sites. It was also the first stop on the Silk Road, linking up the oriental and western civilizations. We are offering you various Xian city and side tours with best service.</li>
+                 <li>
+                    <ol>
+                       <li><a href="/travel/china-1-day-xian-terra-cotta-warriors-tour-559.html">1 Day Xian Terra Cotta Warriors Tour</a></li>
+                       <li><a href="/travel/china-2-days-xian-standard-tour-570.html">2 Days Xian Classic Tour</a></li>
+                       <li><a href="/travel/china-3-days-xian-standard-tour-563.html">3 Days Xian Private Tour</a></li>
+                       <li><a href="/travel/china-4-days-xian-side-tour-to-mount-huashan-160.html">4 Days Xian Side Tour to Mount Huashan</a></li>
+                       <li><a href="/travel/china-5-days-xian-side-tour-to-luoyang-154.html">5 Days Xian Side Tour to Luoyang</a></li>
+                       <li><a href="/travel/china-4-days-beijing-and-2-days-xian-tours-by-air-327.html">6 Days Beijing and Xian Tours by Air</a></li>
+                    </ol>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <!--  tourlist end  -->
+        
+        <!--  tourlist start  -->
+        <div class="tourlist">
+           <h2><strong>Shanghai City &amp; Side Tours</strong> <a href="/travel/city-shanghai-tours"><img src="/images/beijing_shanghai/more.png" alt="" ></a></h2>
+           <div class="listpic"><img src="/images/beijing_shanghai/pic15.jpg" alt="" ></div>
+           <div class="listcontent">
+              <ul>
+                 <li>As one of the top tourist cities and most dynamic metropolis in China, Shanghai city tour and tours from Shanghai are very popular. It is convenient to travel from Shanghai to Beijing, Xian, Yangtze River, Guilin, Hangzhou, Suzhou...If you can not find one you like, you can also tailor-made Shanghai travel freely.</li>
+                 <li>
+                    <ol>
+                       <li><a href="/travel/china-3-days-shanghai-highlights-tour-148.html">3 Day Classic Shanghai Tour</a></li>
+                       <li><a href="/travel/china-4-days-shanghai-local-and-zhujiajiao-trip-156.html">4 Days Shanghai Local and Zhujiajiao Trip</a></li>
+                       <li><a href="/travel/china-5-days-shanghai-suzhou-zhouzhuang-tour-124.html">5 Days Shanghai, Suzhou, Zhouzhuang Tour</a> <img src="/images/beijing_shanghai/hot.jpg" alt="" ></li>
+                       <li><a href="/travel/china-1-day-scenic-hangzhou-tour-from-shanghai-583.html">1 Day Scenic Hangzhou Tour from Shanghai</a></li>
+                       <li><a href="/travel/china-5-days-shanghai-hangzhou-private-tour-155.html">5 Days Shanghai and Hangzhou Private Tour</a></li>
+                       <li><a href="/travel/china-3-day-shanghai-xian-tour-734.html">3 Days Xian Tour from Shanghai</a></li>
+                       <li><a href="/travel/china-7-days-shanghai--yangtze-cruise-tour-upstream-701.html">7 Days Shanghai &amp; Yangtze Upstream Tour</a></li>
+                    </ol>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <!--  tourlist end  -->
+    </div>
+    <!--  right end  -->
+</div>
+<!--  index end  -->
+<?php echo $this->renderPartial("//common/pop_more_cities");?>
+

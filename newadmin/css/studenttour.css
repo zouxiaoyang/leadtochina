@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px}
+.cru_fl{ float:left}
+.cru_mt10{margin-top:10px}
+#CDSWIDSSP .widSSPData {
+    padding: 7px 4px;
+    width: 178px;
+}
+.clear{ clear:both; height:0; overflow:hidden; padding:0; margin:0}
+li{ margin:0; padding:0; list-style:none;}
+ul{ margin:0; padding:0}
+/* student tour index start */
+.stu_content{ width:920px;padding:0px;font-size:12px; font-family:sans-serif, "Open Sans",Verdana; margin:0;}
+.stu_menu-tours a {
+    background: url(/templates/jv_news_ii/images/arrow.png) no-repeat scroll right center;
+    color: #2487d2;
+    padding-right: 15px;
+	text-decoration:none;
+}
+.stu_menu-tours {
+	background: none repeat scroll 0 0 #ddd;
+    color: #444444;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 10px;
+    width: 910px;
+	margin-bottom:10px;
+	
+}
+.stu_focus{position:relative;width:920px;height:350px;margin:0px auto 0 auto;}  
+.stu_focus img{width:920px;height:350px; border-radius:5px 5px 0 0;} 
+.stu_focus .btn{position:absolute;bottom:34px;left:510px;overflow:hidden;zoom:1;} 
+.stu_focus .btn a{position:relative;display:inline;width:13px;height:13px;border-radius:7px;margin:0 5px;color:#B0B0B0;font-size:12px;text-decoration:none;text-align:center;outline:0;float:left;background:#D9D9D9;}  
+.stu_focus .btn a:hover,.focus .btn a.current{cursor:pointer;background:#fc114a;}  
+.stu_focus .fPic{position:absolute;left:0px;top:0px;}  
+.stu_focus .D1fBt{overflow:hidden;zoom:1;height:16px;z-index:10;}  
+.stu_focus .fcon{position:relative;width:100%;float:left;display:none;}  
+.stu_focus .fcon img{display:block;}  
+.stu_focus .fbg{bottom:30px;right:420px;position:absolute;height:21px;text-align:center;z-index:200;}  
+.stu_focus .fbg div{margin:4px auto 0;overflow:hidden;zoom:1;height:14px}    
+.stu_focus .D1fBt a{position:relative;display:inline;width:12px;height:12px;border-radius:7px;margin:0 5px;color:#B0B0B0;font-size:12px;text-decoration:none;text-align:center;outline:0;float:left;background:#ccc; border:1px #fff solid}    
+.stu_focus .D1fBt .current,.focus .D1fBt a:hover{background:#CC0000;border:1px #fff solid}    
+.stu_focus .D1fBt img{display:none}    
+.stu_focus .D1fBt i{display:none;font-style:normal;}    
+.stu_menu{ width:920px; background:#000; height:30px;}
+.stu_menu ul li{ float:left; line-height:30px; padding:0 20px;}
+.stu_menu ul li a{ color:#bdbdbd; text-decoration:none; letter-spacing:1px; font-family:"Times New Roman", Times, serif; font-size:14px;}
+.stu_menu ul li a:hover{ color:#fff; text-decoration:none; }
+.stu_menu ul li.dq{ background:#fff; }
+.stu_menu ul li.dq a,a:hover{color:#000}
+.stu_midtxt{ width:880px; padding:20px; background:#fff; overflow:hidden;}
+.stu_midtxt_lef{width:480px; float:left}
+.stu_midtxt_lef1{ font-size:22px; color:#000; font-family:"Times New Roman", Times, serif}
+.stu_midtxt_lef2{ line-height:140%; padding-top:10px;}
+.stu_midtxt_rig{ width:380px; float:right}
+/*.recommendedPercent .percent{color:#599442;font-size:30px;font-weight:bold;}
+.recommendedPercent .thumbsup_lrg{vertical-align:baseline;}
+.sprite-thumbsup_lrg {background-image: url("http://www.tripadvisor.com/sprites/global_pack-v5a544e7c77faab1fde5249089dab28dd.png");background-position: left -2567px;background-repeat: no-repeat;height: 27px;width: 22px;}
+.popRanking{margin-bottom:0;color: #599442;}
+.slim_ranking{font-size: 16px;margin-bottom:5px;}
+.slim_ranking a, a:visited, a:active {color: #069;outline: medium none;text-decoration: none;}
+.sprite-coe_badge {background-image: url("http://www.tripadvisor.com/sprites/lodging_pack-ved1e914695fe6f4372ed5ae1562e3a8f.png");background-position: left -967px;background-repeat: no-repeat; height: 20px;width: 17px;}
+.coeBadgeDiv{ font-size:14px;}
+.rating {padding: 5px 0; margin-left: 2px;height: 100%;overflow: hidden;}
+.sprite-rating_no {background-image: url("http://www.tripadvisor.com/sprites/lodging_pack-ved1e914695fe6f4372ed5ae1562e3a8f.png");background-position: left -16px; background-repeat: no-repeat;display: block; float: left;height: 16px;line-height: 16px; margin-right: 4px;overflow: hidden;width: 80px;}
+.rating_no .no50 {width: 80px;}
+.rate img {position: absolute;vertical-align: text-top;}
+.sprite-rating_no_fill {background-image: url("http://www.tripadvisor.com/sprites/lodging_pack-ved1e914695fe6f4372ed5ae1562e3a8f.png"); background-position: left 0; background-repeat: no-repeat;display: block;height: 16px;}
+.rating .more span {margin: 1px 0 0 2px;}
+.rating .more{ font-size:14px;}
+.detail{ font-size:12px;}
+.detail a, a:visited, a:active {color: #069;outline: medium none;text-decoration: none;}*/
+.stu_midtxt_rig p{ width:112px; float:left; padding:0px 0 0 12px;}
+.stu_midpro{ width:895px; padding:0px 10px 20px 15px;background:#fff; overflow:hidden;}
+.stu_midpro1{ width:298px;overflow:hidden; float:left;}
+.stu_midpro1 ul{ clear:both; width:280px;box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5); margin:5px 11px 15px 5px;overflow:hidden; border:1px #CCC solid;}
+.stu_midpro1 li{ padding:5px 10px 0 10px;}
+.stu_midpro1 li img{ margin-top:5px;}
+.stu_midpro1_txt1{font-family:"Times New Roman", Times, serif; font-size:13px; color:#555;}
+.stu_colred{ color:#C00;}
+.stu_midpro1_txt2{ color:#8c4600;font-size:14px;}
+.stu_midpro1_txt3{ line-height:140%}
+.stu_midpro1_txt4{ text-align:center; margin:20px 0 15px 0;}
+.stu_midpro1_txt4 span{ background:#8C4600; padding:3px 10px;}
+.stu_midpro1_txt4 span a{ color:#fff; text-decoration:none;}
+.stu_midpro1_txt4 span a:hover{ color:#fff; text-decoration:underline}
+.stu_midcase{ width:880px; background:#fff; padding:10px 20px 25px 20px;}
+#tab {overflow:hidden;zoom:1;}
+#tab .tabTit li {position:relative;float:left;width:185px;height:32px;line-height:32px;margin-right:10px;background:#ccc;color:#000;text-align:center;cursor:pointer;font-family:"Times New Roman", Times, serif; font-size:14px;border-radius:5px 5px 0 0;}
+#tab .tabTit .downArr {display:none;width:0;height:0;line-height:0;zoom:1;border:10px solid #FFF;border-top-color:#000;margin:0 auto;}
+#tab .tabTit .current {background:#000;color:#FFF;cursor:auto; font-family:"Times New Roman", Times, serif; font-size:14px; font-weight:bold;border-radius:5px 5px 0 0;}
+#tab .current .downArr {display:block;}
+.indexmaindiv{height:auto; margin:0px auto;width:878px; border:1px #ccc solid; overflow:hidden; padding:5px 0 15px 0;}
+.indexmaindiv1{}
+.indexmaindiv1 div.stylesgoleft{float:left;width:21px;height:28px;background:url('/images/studenttour/arrowhead.png') no-repeat left top;margin:70px 5px 0px 5px;cursor:pointer;}
+.indexmaindiv1 div.stylesgoleft:hover{float:left;width:21px;height:28px;background:url('/images/studenttour/arrowhead.png') no-repeat left -28px;margin:70px 5px 0px 5px;cursor:pointer;}
+.indexmaindiv1 div.stylesgoright{float:left;width:21px;height:28px;background:url('/images/studenttour/arrowhead.png') no-repeat left -56px;margin:70px 5px 0px 10px;cursor:pointer;}
+.indexmaindiv1 div.stylesgoright:hover{float:left;width:21px;height:28px;background:url('/images/studenttour/arrowhead.png') no-repeat left -84px;margin:70px 5px 0px 10px;cursor:pointer;}
+/*滚动*/
+.maindiv1{float:left;width:810px;height:175px; overflow:hidden;position:relative;}
+.maindiv1 ul{position:absolute;left:0;top:0;}
+.maindiv1 ul li{float:left;width:260px; height:175px;margin-left:10px;}
+.playBtn {position:absolute;left:115px;top:65px;width:30px;height:30px;background:url(/images/studenttour/play.png) no-repeat;cursor:pointer;}
+.videoLi {overflow:hidden;zoom:1;}
+#videoLi li {float:left;width:260px;overflow:hidden;margin-left:10px;padding-top:10px;font-size:12px;position:relative }
+#videoLi img {position:relative;margin-bottom:5px;background:#FFF;display:block;width:260px;height:175px;position:relative}
+.videoTime {position:absolute;right:0px;bottom:10px;width:40px;height:20px;overflow:hidden;line-height:20px;background:url(/images/studenttour/p016.png) no-repeat;text-align:center;font-size:12px;color:#FFF;text-decoration:none; z-index:999}
+.stu_midmail{width:880px; padding:0px 20px 20px 20px;background:#fff; overflow:hidden; font-size:12px;}
+.fbList {background:url(/images/studenttour/p004.png) repeat-y 5px top;overflow:hidden;zoom:1;line-height:140%}
+.fbList .fbArr, .fbList .fbArr2, .fbList .fbDot, .fbList .more a {
+	background:url(/images/studenttour/p002.png) no-repeat;
+	overflow:hidden;
+}
+.fbList .fbR {
+	position:relative;
+	margin-bottom:15px;
+	background:none #FCF7EF;
+	text-align:left;
+	border:2px solid #E3E3E3;
+	border-radius:10px;
+	margin-left:30px;
+}
+.fbList .fbYear {
+	height:47px;
+	line-height:47px;
+	padding:0 15px;
+	background:none #fff;
+	border-radius:8px 8px 0 0;
+	color:#000;
+	font-size:20px;
+}
+.fbList .fbDot {
+	position:absolute;
+	width:10px;
+	height:10px;
+	background-position:0 -38px;
+}
+.fbList .fbArr {
+	position:absolute;
+	width:14px;
+	height:15px;
+}
+.fbList .fbR .fbArr {
+	left:-14px;
+	top:60px;
+	background-position:0 -101px;
+}
+.fbList .fbR .fbDot {
+	left:-30px;
+	top:65px;
+}
+.fbList .thisYear .fbYear {
+	background:none #FCF7EF;
+	border-radius:8px 8px 0 0;
+}
+.fbList .thisYear .fbYear a, .fbList .thisYear .fbYear a:hover {
+	color:#FFF;
+}
+.fbList .bd {
+	margin-bottom:10px;
+	padding:15px;
+}
+.fbList .bd p {
+	margin:0 0 10px;
+}
+.fbList .bd img {
+	display:block;
+	border:1px solid #CCC;
+	margin:5px 0px 5px 5px;
+	float:right;
+}
+.fbList .bd ul {
+	border-bottom:1px dashed #CCC;
+	margin-bottom:10px;
+	padding-bottom:10px;
+}
+.fbList .bd li {padding:2px 0 2px 5px;}
+.fbList .bd li img {
+	display:inline;
+	border:none;
+	margin:0;
+	vertical-align:middle;
+	float:none;
+}
+.stu_actpro{ width:895px; padding:0px 10px 20px 15px;background:#fff; overflow:hidden;}
+.stu_actpro1{ width:298px;overflow:hidden; float:left;}
+.stu_actpro1 ul{ clear:both; width:280px;margin:5px 11px 15px 5px;overflow:hidden; border:1px #CCC solid; padding:0 0 15px 0;border-radius:5px 5px 0 0;}
+.stu_actpro1 li{position:relative;}
+.stu_actpro1 li img{position:relative;border-radius:5px 5px 0 0;}
+.stu_actpro1_txt1{font-size:16px; color:#000; padding:5px 10px 0 10px;}
+.stu_actpro1_txt2{font-size:14px; color:#666;padding:5px 10px 0 10px;}
+.stu_actpro1_txt3{ color:#000; line-height:140%;padding:5px 10px 0 10px;}
+.glright {background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);border-radius: 5px 5px 0 0;color: #fff;font-size: 16px; margin: 0;padding: 3px 0 4px 5px;position: absolute;top: 0;left:0; width:280px; z-index: 10;}
+.stu_coop{ width:880px; padding:20px 20px 30px 20px; background:#fff;color:#000;line-height:140%; font-family:sans-serif, "Open Sans",Verdana; font-size:13px;}
+.coop_pt10{padding-top:20px}
+.coop_tit1{ font-size:22px; font-family:"Times New Roman", Times, serif; color:#115890;}
+.stu_coop1 p{ padding-top:10px;}
+.coop_txt1{ font-size:14px; color:#8C4600; font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif}
+.coop_form{ width:850px; padding:10px 10px 5px 20px; color:#000; overflow:hidden}
+.coop_tit2{ font-size:16px; color:#000; font-weight:bold;font-family:"Times New Roman", Times, serif; padding-top:10px;}
+.coop_tit3{ font-size:22px; font-family:"Times New Roman", Times, serif; color:#115890; position:absolute; background:#fff; left:20px; top:-10px; }
+.coop_form .req{ color:#C00}
+.coop_formpt{ padding-top:10px;}
+.coop_form1{ width:400px; float:left;}
+.coop_forml_label{ width:125px; float:left; padding-top:3px}
+.coop_forml_input{ width:260px; float:left}
+.coop_formr{ width:400px; float:right}
+.coop_forml_input input,.coop_forml_input select{ padding:3px 0px; color:#666; background:#fff; border-color: #D1D1D1 #999999 #999999 #D1D1D1; border-radius: 4px; border-style: solid; border-width: 1px;margin:0px 0 0 5px;  font-family:sans-serif, "Open Sans",Verdana}
+.coop_forml_input input:focus,.coop_forml_input select:focus,.coop_forml_texta textarea:focus{ box-shadow:0 4px 5px rgba(0, 0, 0, 0.075) inset, 0 0 8px #0074CC; border-color:#0074CC }
+.coop_forml_texta{ float:left; width:690px; margin-left:5px; font-family:sans-serif, "Open Sans",Verdana}
+.coop_forml_texta textarea{ padding:5px; color:#666; background:#fff; border-color: #D1D1D1 #999999 #999999 #D1D1D1; border-radius: 4px; border-style: solid; border-width: 1px;font-size:12px; width:680px;margin:0px; height:130px}
+.stu_coop2{ border:1px #666 solid;border-radius: 4px; margin-top:40px; padding:10px 0; position:relative}
+.coop_forml_sub{float:left; width:155px; margin-left:5px;}
+.stu_whyus{ width:880px; padding:20px 20px 30px 20px; background:#fff;color:#000;line-height:140%; font-family:sans-serif, "Open Sans",Verdana; font-size:13px;}
+.whyus_img{ background:url(/images/studenttour/stu_whyus.jpg) no-repeat; width:880px; height:458px;}
+.whyus_imgt{ padding-top:15px;}
+.whyus_imgt1{margin:10px 0 0 150px; float:left}
+.whyus_imgt1l{ float:left; }
+.whyus_imgt1r{ float:left; margin:20px 0 0 2px;}
+.whyus_imgt2{margin:10px 0 0 80px; float:left}
+.whyus_imgm{ padding-top:45px;}
+.whyus_imgm1{float:left}
+.whyus_imgm1r{ float:left; margin:0 0 0 2px;}
+.whyus_imgm2{ float:right}
+.whyus_imgt1r_tit{ font-family:"Times New Roman", Times, serif; font-size:20px; font-weight:bold; color:#115890;}
+.whyus_imgt1r_txt1{ font-size:14px; padding-top:5px;}
+.stu_whyus1{width:880px; padding-top:10px}
+.stu_whyus1le{ width:520px; float:left}
+.stu_whyus1le p{ padding-top:8px;}
+.stu_whyus1le a{ color:#115890;}
+.stu_whyus1ri img{border-radius: 4px;}
+.stu_whyus1_tit1{ font-size:18px; color:#115890;font-family:"Times New Roman", Times, serif; font-weight:bold; }
+.stu_whyus1_tit2{ font-size:13px; font-weight:bold;}
+.stu_whyus1ri{ width:320px; float:right;}
+#CDSWIDSSP{width:320px!important;}
+#CDSWIDSSP .widSSPData {width: 288px;border-radius: 4px; height:175px; padding:3px 15px 0 15px!important;}
+#CDSWIDSSP .widSSPData .widSSPBranding {border-bottom: 1px solid #cccccc;margin-bottom: 5px!important;}
+#CDSWIDSSP.widSSPnarrow .widSSPData .widSSPH11 {
+    padding-top:5px!important;
+}
+#CDSWIDSSP.widSSPnarrow .widSSPData .widSSPTrvlRtng .widSSPOverall {
+    margin-bottom: 5px!important;
+}
+#CDSWIDSSP.widSSPnarrow .widSSPData .widSSPOneReview .widSSPBullet li {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    line-height: normal;
+    margin: 0 0 0px!important;
+}
+
+
+
+/*  Jewish Heritage Tours of China  */
+.jew_txt1{ color:#555;}
+.jew_content{ width:880px; padding:0px 20px 20px 20px;background:#fff; overflow:hidden;}
+.jew_content1{ border:1px #ccc solid;border-radius: 4px; }
+.jew_content1_tit1{ background:#EBEBEB; width:858px; padding:8px 10px; position:relative;}
+.jew_content1_txt1{ font-size:20px; font-family:"Times New Roman", Times, serif; color:#000;}
+.jew_content1_btn{ background:url(/images/Jewish/jew_ico1.png) no-repeat; position:absolute; display:block; right:10px; top:10px; width:18px; height:18px; cursor:pointer}
+.jew_content1_btn1{ background:url(/images/Jewish/jew_ico2.png) no-repeat; position:absolute; display:block; right:10px; top:10px; width:18px; height:18px; cursor:pointer}
+.jew_content1_mid{ font-family:sans-serif, "Open Sans",Verdana; font-size:13px; color:#333; padding:5px 10px 15px 10px; line-height:140%}
+.jew_content1_mid p{ padding-top:10px;}
+.jew_content1_lef{ width:515px; float:left}
+.jew_content1_rig{ width:320px; float:right;}
+.jew_content1_rig img {border-radius: 4px;}
+.jew_content1_mid2{}

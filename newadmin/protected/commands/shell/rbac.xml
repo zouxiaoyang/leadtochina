@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <node name="srbac" hidden="0">
+  <role name="CruiseRole" description="游轮管理角色">
+    <task name="Cruise Management" description="游轮管理组">
+            <operation name="CruiseactAdmin" description="" />
+            <operation name="CruiseactCreate" description="" />
+            <operation name="CruiseactDelete" description="" />
+            <operation name="CruiseactIndex" description="" />
+            <operation name="CruiseactUpdate" description="" />
+            <operation name="CruiseactView" description="" />
+            <operation name="CruiseAdmin" description="" />
+            <operation name="CruiseCreate" description="" />
+            <operation name="CruisecycleAdmin" description="" />
+            <operation name="CruisecycleCreate" description="" />
+            <operation name="CruisecycleDelete" description="" />
+            <operation name="CruisecycleIndex" description="" />
+            <operation name="CruisecycleUpdate" description="" />
+            <operation name="CruisecycleView" description="" />
+            <operation name="CruiseDelete" description="" />
+            <operation name="CruiseIndex" description="" />
+            <operation name="CruisepicAdmin" description="" />
+            <operation name="CruisepicCreate" description="" />
+            <operation name="CruisepicDelete" description="" />
+            <operation name="CruisepicIndex" description="" />
+            <operation name="CruisepicUpdate" description="" />
+            <operation name="CruisepicView" description="" />
+            <operation name="CruiseroomAdmin" description="" />
+            <operation name="CruiseroomCreate" description="" />
+            <operation name="CruiseroomDelete" description="" />
+            <operation name="CruiseroomIndex" description="" />
+            <operation name="CruiseroomUpdate" description="" />
+            <operation name="CruiseroomView" description="" />
+            <operation name="CruisePortsAdmin" description="港口管理" />
+            <operation name="CruisePortsCreate" description="港口创建" />
+            <operation name="CruisePortsDelete" description="港口删除" />
+            <operation name="CruisePortsIndex" description="港口列表" />
+            <operation name="CruisePortsUpdate" description="港口修改" />
+            <operation name="CruisePortsView" description="港口查看" />
+            <operation name="CruiseUpdate" description="" />
+            <operation name="CruiseView" description="" />
+
+
+            <operation name="CruisePortsExcursionsAdmin" description="港口Excursions管理" />
+            <operation name="CruisePortsExcursionsCreate" description="港口Excursions创建" />
+            <operation name="CruisePortsExcursionsDelete" description="港口Excursions删除" />
+            <operation name="CruisePortsExcursionsIndex" description="港口Excursions列表" />
+            <operation name="CruisePortsExcursionsUpdate" description="港口Excursions修改" />
+            <operation name="CruisePortsExcursionsView" description="港口Excursions查看" />
+
+            <operation name="CruiseOnboardAdmin" description="Life onboard管理" />
+            <operation name="CruiseOnboardCreate" description="Life onboard创建" />
+            <operation name="CruiseOnboardDelete" description="Life onboard删除" />
+            <operation name="CruiseOnboardIndex" description="Life onboard列表" />
+            <operation name="CruiseOnboardUpdate" description="Life onboard修改" />
+            <operation name="CruiseOnboardView" description="Life onboard查看" />
+
+            <operation name="InternationalCruiseAdmin" description="国际游轮管理" />
+            <operation name="InternationalCruiseCreate" description="国际游轮创建" />
+            <operation name="InternationalCruiseDelete" description="国际游轮删除" />
+            <operation name="InternationalCruiseEditstatus" description="国际游轮状态" />
+            <operation name="InternationalCruiseIndex" description="国际油轮列表" />
+            <operation name="InternationalCruiseUpdate" description="国际油轮修改" />
+            <operation name="InternationalCruiseView" description="国际油轮查看" />
+
+            <operation name="InternationalCruiseChinaExcursionsAdmin" description="国际游轮Excursions管理" />
+            <operation name="InternationalCruiseChinaExcursionsCreate" description="国际游轮Excursions创建" />
+            <operation name="InternationalCruiseChinaExcursionsDelete" description="国际游轮Excursions删除" />
+            <operation name="InternationalCruiseChinaExcursionsIndex" description="国际油轮Excursions列表" />
+            <operation name="InternationalCruiseChinaExcursionsUpdate" description="国际油轮Excursions修改" />
+            <operation name="InternationalCruiseChinaExcursionsView" description="国际油轮Excursions查看" />
+			
+
+            <operation name="CruisePorstTypeAdmin" description="国际游轮港口管理" />
+            <operation name="CruisePorstTypeCreate" description="国际游轮港口创建" />
+            <operation name="CruisePorstTypeDelete" description="国际游轮港口删除" />
+            <operation name="CruisePorstTypeIndex" description="国际油轮港口列表" />
+            <operation name="CruisePorstTypeUpdate" description="国际油轮港口修改" />
+            <operation name="CruisePorstTypeView" description="国际油轮港口查看" />
+
+            <operation name="CruiseFaqAdmin" description="Cruise Faq管理" />
+            <operation name="CruiseFaqCreate" description="Cruise Faq创建" />
+            <operation name="CruiseFaqDelete" description="Cruise Faq删除" />
+            <operation name="CruiseFaqIndex" description="Cruise Faq列表" />
+            <operation name="CruiseFaqUpdate" description="Cruise Faq修改" />
+            <operation name="CruiseFaqView" description="Cruise Faq查看" />
+
+
+          </task>
+  </role>
+  <role name="faqRole" description="faq管理角色">
+    <task name="Faq Management" description="faq管理组">
+            <operation name="FaqCategoryAdmin" description="faq类别管理" />
+            <operation name="FaqCategoryCreate" description="faq类别创建" />
+            <operation name="FaqCategoryDelete" description="faq类别删除" />
+            <operation name="FaqCategoryIndex" description="faq类别列表" />
+            <operation name="FaqCategoryUpdate" description="faq类别修改" />
+            <operation name="FaqCategoryView" description="faq类别查看" />
+            <operation name="FaqContentAdmin" description="faq管理" />
+            <operation name="FaqContentCreate" description="faq创建" />
+            <operation name="FaqContentDelete" description="faq删除" />
+            <operation name="FaqContentIndex" description="faq列表" />
+            <operation name="FaqContentUpdate" description="faq修改" />
+            <operation name="FaqContentView" description="faq查看" />
+          </task>
+  </role>
+  <role name="sceneryRole" description="景点管理角色">
+    <task name="Scenery Management" description="景点管理组">
+            <operation name="SceneryAdmin" description="景点管理" />
+            <operation name="SceneryCreate" description="景点创建" />
+            <operation name="SceneryDelete" description="景点删除" />
+            <operation name="SceneryDistrict" description="景点区" />
+            <operation name="SceneryIndex" description="景点列表" />
+            <operation name="SceneryUpdate" description="景点修改" />
+            <operation name="SceneryView" description="景点查看" />
+            <operation name="ScenerySceneryPic" description="景点图片管理" />
+            <operation name="ScenerySceneryRecommand" description="景点推荐修改" />
+            <operation name="ScenerySceneryPicRecommand" description="景点图片推荐修改" />
+            <operation name="UeditorImgManager" description="景点中ueditor查看图片" />
+            <operation name="UeditorUploadPic" description="景点中ueditor上传图片" />
+
+            <operation name="CategoriesAdmin" description="分类管理" />
+            <operation name="CategoriesCreate" description="分类创建" />
+            <operation name="CategoriesDelete" description="分类删除" />
+            <operation name="CategoriesIndex" description="分类列表" />
+            <operation name="CategoriesUpdate" description="分类修改" />
+            <operation name="CategoriesView" description="分类查看" />
+            <operation name="CategoriesGetCategories" description="分类ajax检索" />
+
+            <operation name="ChinacultureAdmin" description="中国文化内容管理" />
+            <operation name="ChinacultureCreate" description="中国文化创建" />
+            <operation name="ChinacultureDelete" description="中国文化删除" />
+            <operation name="ChinacultureIndex" description="中国文化列表" />
+            <operation name="ChinacultureUpdate" description="中国文化修改" />
+            <operation name="Chinacultureview" description="中国文化查看" />
+
+
+			<operation name="ChinaSceneryAdmin" description="中国景点管理" />
+            <operation name="ChinaSceneryCreate" description="中国景点创建" />
+            <operation name="ChinaSceneryDelete" description="中国景点删除" />
+            <operation name="ChinaSceneryDistrict" description="中国景点区" />
+            <operation name="ChinaSceneryIndex" description="中国景点列表" />
+            <operation name="ChinaSceneryUpdate" description="中国景点修改" />
+            <operation name="ChinaSceneryView" description="中国景点查看" />
+            <operation name="ChinaSceneryGetCatTwo" description="中国景点查看" />
+
+            <operation name="CityGuideIndexInfoAdmin" description="CityGuide首页内容管理" />
+            <operation name="CityGuideIndexInfoCreate" description="CityGuide首页内容创建" />
+            <operation name="CityGuideIndexInfoDelete" description="CityGuide首页内容删除" />
+            <operation name="CityGuideIndexInfoIndex" description="CityGuide首页内容列表" />
+            <operation name="CityGuideIndexInfoUpdate" description="CityGuide首页内容修改" />
+            <operation name="CityGuideIndexInfoView" description="CityGuide首页内容修改" />
+
+          </task>
+  </role>
+  <role name="saleRole" description="销售管理角色">
+    <task name="TourInfo Manage" description="销售管理组">
+            <operation name="GuestsAdmin" description="" />
+            <operation name="GuestsCreate" description="" />
+            <operation name="GuestsDelete" description="" />
+            <operation name="GuestsIndex" description="" />
+            <operation name="GuestsUpdate" description="" />
+            <operation name="GuestsView" description="" />
+            <operation name="GuidesAdmin" description="" />
+            <operation name="GuidesCreate" description="" />
+            <operation name="GuidesDelete" description="" />
+            <operation name="GuidesIndex" description="" />
+            <operation name="GuidesUpdate" description="" />
+            <operation name="GuidesView" description="" />
+            <operation name="SceneryCity" description="" />
+            <operation name="ScenerySearch" description="" />
+            <operation name="TourHotelAdmin" description="" />
+            <operation name="TourHotelCreate" description="" />
+            <operation name="TourHotelDelete" description="" />
+            <operation name="TourHotelSearch" description="" />
+            <operation name="TourHotelUpdate" description="" />
+            <operation name="TourInfoAdmin" description="" />
+            <operation name="TourInfoCopy" description="" />
+            <operation name="TourInfoCopyTourInfo" description="" />
+            <operation name="TourInfoCreate" description="" />
+            <operation name="TourInfoDelete" description="" />
+            <operation name="TourInfoFinalAdmin" description="" />
+            <operation name="TourInfoFinalDelete" description="" />
+            <operation name="TourInfoFinalGenerate" description="" />
+            <operation name="TourInfoFinalGeneratePage" description="" />
+            <operation name="TourInfoFinalPage" description="" />
+            <operation name="TourInfoFinalUpdate" description="" />
+            <operation name="TourInfoFinalView" description="" />
+            <operation name="TourInfoPreview" description="" />
+            <operation name="TourInfoUpdate" description="" />
+            <operation name="TourItineraryAdmin" description="" />
+            <operation name="TourItineraryCreate" description="" />
+            <operation name="TourItineraryDelete" description="" />
+            <operation name="TourItineraryUpdate" description="" />
+            <operation name="TrafficAdmin" description="" />
+            <operation name="TrafficCreate" description="" />
+            <operation name="TrafficDelete" description="" />
+            <operation name="TrafficIndex" description="" />
+            <operation name="TrafficUpdate" description="" />
+            <operation name="TrafficView" description="" />
+          </task>
+  </role>
+  <role name="AdoptionRole" description="Adoption管理角色">
+    <task name="Adoption Management" description="收养团管理组">
+            <operation name="AdoptionContentAdmin" description="Adoption文章管理" />
+            <operation name="AdoptionContentCreate" description="Adoption文章创建" />
+            <operation name="AdoptionContentDelete" description="Adoption文章删除" />
+            <operation name="AdoptionContentUpdate" description="Adoption文章修改" />
+            <operation name="AdoptionContentView" description="Adoption文章查看" />
+            <operation name="ProvinceAdmin" description="省份管理" />
+            <operation name="ProvinceCreate" description="省份创建" />
+            <operation name="ProvinceDelete" description="省份删除" />
+            <operation name="ProvinceUpdate" description="省份修改" />
+            <operation name="ProvinceView" description="省份查看" />
+            <operation name="AdoptionPackageAdmin" description="Adoption行程管理" />
+            <operation name="AdoptionPackageCreate" description="Adoption行程创建" />
+            <operation name="AdoptionPackageDelete" description="Adoption行程删除" />
+            <operation name="AdoptionPackageUpdate" description="Adoption行程修改" />
+            <operation name="AdoptionPackageView" description="Adoption行程查看" />
+            <operation name="AdoptionServicesAdmin" description="Adoption服务管理" />
+            <operation name="AdoptionServicesCreate" description="Adoption服务创建" />
+            <operation name="AdoptionServicesDelete" description="Adoption服务删除" />
+            <operation name="AdoptionServicesUpdate" description="Adoption服务修改" />
+            <operation name="AdoptionServicesView" description="Adoption服务查看" />
+
+            <operation name="AdoptionCityAdmin" description="Adoption服务城市管理" />
+            <operation name="AdoptionCityCreate" description="Adoption服务城市创建" />
+            <operation name="AdoptionCityDelete" description="Adoption服务城市删除" />
+            <operation name="AdoptionCityUpdate" description="Adoption服务城市修改" />
+            <operation name="AdoptionCityView" description="Adoption服务城市查看" />
+
+            <operation name="AdoptionOrphanageAddressAdmin" description="OrphanageAddress管理" />
+            <operation name="AdoptionOrphanageAddressCreate" description="OrphanageAddress创建" />
+            <operation name="AdoptionOrphanageAddressDelete" description="OrphanageAddress删除" />
+            <operation name="AdoptionOrphanageAddressUpdate" description="OrphanageAddress修改" />
+            <operation name="AdoptionOrphanageAddressView" description="OrphanageAddress查看" />
+
+
+            <operation name="AdoptionOrphanageAddressPicAdmin" description="" />
+            <operation name="AdoptionOrphanageAddressPicCreate" description="" />
+            <operation name="AdoptionOrphanageAddressPicDelete" description="" />
+            <operation name="AdoptionOrphanageAddressPicUpdate" description="" />
+            <operation name="AdoptionOrphanageAddressPicView" description="" />
+            <operation name="AdoptionOrphanageAddressPicUpload" description="" />
+            <operation name="AdoptionOrphanageAddressPicDeleteImg" description="" />
+
+
+          </task>
+  </role>
+  <role name="MuslimRole" description="Mullim管理角色">
+    <task name="Muslim Management" description="穆斯林管理组">
+            <operation name="MuslimContentsAdmin" description="Muslim文章管理" />
+            <operation name="MuslimContentsCreate" description="Muslim文章创建" />
+            <operation name="MuslimContentsDelete" description="Muslim文章删除" />
+            <operation name="MuslimContentsUpdate" description="Muslim文章修改" />
+            <operation name="MuslimContentsView" description="Muslim文章查看" />
+            <operation name="MuslimPackagesAdmin" description="Muslim行程管理" />
+            <operation name="MuslimPackagesCreate" description="Muslim行程创建" />
+            <operation name="MuslimPackagesDelete" description="Muslim行程删除" />
+            <operation name="MuslimPackagesUpdate" description="Muslim行程修改" />
+            <operation name="MuslimPackagesView" description="Muslim行程查看" />
+            <operation name="MuslimPrayerAdmin" description="Muslim祈祷管理" />
+            <operation name="MuslimPrayerCreate" description="Muslim祈祷创建" />
+            <operation name="MuslimPrayerDelete" description="Muslim祈祷删除" />
+            <operation name="MuslimPrayerUpdate" description="Muslim祈祷修改" />
+            <operation name="MuslimPrayerView" description="Muslim祈祷查看" />
+            <operation name="PrayerTimeAdmin" description="祈祷时间管理" />
+            <operation name="PrayerTimeCreate" description="祈祷时间创建" />
+            <operation name="PrayerTimeDelete" description="祈祷时间删除" />
+            <operation name="PrayerTimeUpdate" description="祈祷时间修改" />
+            <operation name="PrayerTimeView" description="祈祷时间查看" />
+          </task>
+  </role>
+  <role name="HotelRole" description="Hotel管理角色">
+    <task name="Hotel Management" description="酒店管理组">
+            <operation name="JosCosHotelAdmin" description="酒店管理" />
+            <operation name="JosCosHotelCreate" description="酒店创建" />
+            <operation name="JosCosHotelDelete" description="酒店删除" />
+            <operation name="JosCosHotelUpdate" description="酒店修改" />
+            <operation name="JosCosHotelView" description="酒店查看" />
+            <operation name="JosCosCityAdmin" description="城市管理" />
+            <operation name="JosCosCityCreate" description="城市创建" />
+            <operation name="JosCosCityDelete" description="城市删除" />
+            <operation name="JosCosCityUpdate" description="城市修改" />
+            <operation name="JosCosCityView" description="城市查看" />
+            <operation name="JosCosHotelpicAdmin" description="酒店图片管理" />
+            <operation name="JosCosHotelpicCreate" description="酒店图片创建" />
+            <operation name="JosCosHotelpicDelete" description="酒店图片删除" />
+            <operation name="JosCosHotelpicUpdate" description="酒店图片修改" />
+            <operation name="JosCosHotelpicView" description="酒店图片查看" />
+            <operation name="JosCosHotelpicUpload" description="酒店批量上传图片" />
+            <operation name="JosCosHotelpicDeleteImg" description="酒店删除上传图片" />
+          </task>
+  </role>
+  <role name="RentalRole" description="Rental管理角色">
+    <task name="Rental Management" description="Rental管理组">
+            <operation name="CarRentalAdmin" description="Car Rental管理" />
+            <operation name="CarRentalCreate" description="Car Rental创建" />
+            <operation name="CarRentalDelete" description="Car Rental删除" />
+            <operation name="CarRentalUpdate" description="Car Rental修改" />
+            <operation name="CarRentalView" description="Car Rental查看" />
+            <operation name="GuideRentalAdmin" description="Guide Rental管理" />
+            <operation name="GuideRentalCreate" description="Guide Rental创建" />
+            <operation name="GuideRentalDelete" description="Guide Rental删除" />
+            <operation name="GuideRentalUpdate" description="Guide Rental修改" />
+            <operation name="GuideRentalView" description="Guide Rental查看" />
+    </task>
+  </role>
+  <role name="ContentRole" description="文章管理角色">
+    <task name="Contents Management" description="Contents管理组">
+            <operation name="ContentAdmin" description="Content管理" />
+            <operation name="ContentCreate" description="Content创建" />
+            <operation name="ContentDelete" description="Content删除" />
+            <operation name="ContentUpdate" description="Content修改" />
+            <operation name="ContentView" description="Content查看" />
+            <operation name="ContentCategory" description="Content列出分类" />
+    </task>
+  </role>
+  <role name="PackageRole" description="Package角色组">
+    <task name="Package Management" description="行程管理组">
+            <operation name="BeijingPackageAdmin" description="北京首页行程管理" />
+            <operation name="BeijingPackageCreate" description="北京首页行程创建" />
+            <operation name="BeijingPackageDelete" description="北京首页行程删除" />
+            <operation name="BeijingPackageUpdate" description="北京首页行程修改" />
+            <operation name="BeijingPackageView" description="北京首页行程查看" />
+          </task>
+  </role>
+
+  <role name="NewsLetterRole" description="NewsLetter角色组">
+          <task name="NewsLetter Management" description="NewsLetter管理组">
+            <operation name="NewsLetterAdmin" description="NewsLetter管理" />
+            <operation name="NewsLetterCreate" description="NewsLetter创建" />
+            <operation name="NewsLetterDelete" description="NewsLetter删除" />
+            <operation name="NewsLetterUpdate" description="NewsLetter修改" />
+            <operation name="NewsLetterView" description="NewsLetter查看" />
+            <operation name="NewsLetterIndex" description="NewsLetter列表" />
+
+            <operation name="ImgVideoAdmin" description="图片视频管理" />
+            <operation name="ImgVideoCreate" description="图片视频创建" />
+            <operation name="ImgVideoDelete" description="图片视频删除" />
+            <operation name="ImgVideoUpdate" description="图片视频修改" />
+            <operation name="ImgVideoView" description="图片视频查看" />
+            <operation name="ImgVideoCategory" description="图片视频列出分类" />
+
+            <operation name="ReviewsAdmin" description="reviews管理" />
+            <operation name="ReviewsCreate" description="reviews创建" />
+            <operation name="ReviewsDelete" description="reviews删除" />
+            <operation name="ReviewsUpdate" description="reviews修改" />
+            <operation name="ReviewsView" description="reviews查看" />
+            <operation name="ReviewsIndex" description="reviewsLetter列表" />
+            <operation name="ReviewsDelPic" description="reviews图片删除" />
+            <operation name="ReviewsUpload" description="reviews图片上传" />
+            <operation name="ReviewsCheckPic" description="reviews图片审核" />
+            <operation name="ReviewsDelComment" description="reviews评论删除" />
+            <operation name="ReviewsCheckComment" description="reviews评论审核" />
+
+
+            <operation name="ReviewsCommentAdmin" description="reviewsComment管理" />
+            <operation name="ReviewsCommentCreate" description="reviewsComment创建" />
+            <operation name="ReviewsCommentDelete" description="reviewsComment删除" />
+            <operation name="ReviewsCommentUpdate" description="reviewsComment修改" />
+            <operation name="ReviewsCommentView" description="reviewsComment查看" />
+            <operation name="ReviewsCommentIndex" description="reviewsComment列表" />
+
+
+            <operation name="IndexRecommendCityAdmin" description="index首页城市推荐管理" />
+            <operation name="IndexRecommendCityCreate" description="index首页城市推荐添加" />
+            <operation name="IndexRecommendCityDelete" description="index首页城市推荐删除" />
+            <operation name="IndexRecommendCityUpdate" description="index首页城市推荐修改" />
+            <operation name="IndexRecommendCityView" description="index首页城市推荐查看" />
+            <operation name="IndexRecommendCityIndex" description="index首页城市推荐列表" />
+
+
+            <operation name="FeedbackAdmin" description="feedback管理" />
+            <operation name="FeedbackCreate" description="feedback添加" />
+            <operation name="FeedbackDelete" description="feedback删除" />
+            <operation name="FeedbackUpdate" description="feedback修改" />
+            <operation name="FeedbackView" description="feedback查看" />
+            <operation name="FeedbackIndex" description="feedback列表" />
+
+            <operation name="FeedbackQuestionAdmin" description="feedback管理" />
+            <operation name="FeedbackQuestionCreate" description="feedback添加" />
+            <operation name="FeedbackQuestionDelete" description="feedback删除" />
+            <operation name="FeedbackQuestionUpdate" description="feedback修改" />
+            <operation name="FeedbackQuestionView" description="feedback查看" />
+            <operation name="FeedbackQuestionIndex" description="feedback列表" />
+
+            <operation name="CooperationPartnersAdmin" description="CooperationPartners管理" />
+            <operation name="CooperationPartnersCreate" description="CooperationPartners添加" />
+            <operation name="CooperationPartnersDelete" description="CooperationPartners删除" />
+            <operation name="CooperationPartnersUpdate" description="CooperationPartners修改" />
+            <operation name="CooperationPartnersView" description="CooperationPartners查看" />
+            <operation name="CooperationPartnersIndex" description="CooperationPartners列表" />
+
+            <operation name="PromotionContentAdmin" description="PromotionContent管理" />
+            <operation name="PromotionContentCreate" description="PromotionContent添加" />
+            <operation name="PromotionContentDelete" description="PromotionContent删除" />
+            <operation name="PromotionContentUpdate" description="PromotionContent修改" />
+            <operation name="PromotionContentView" description="PromotionContent查看" />
+            <operation name="PromotionContentIndex" description="PromotionContent列表" />
+
+            <operation name="PromotionMonthToursAdmin" description="PromotionMonthTours管理" />
+            <operation name="PromotionMonthToursCreate" description="PromotionMonthTours添加" />
+            <operation name="PromotionMonthToursDelete" description="PromotionMonthTours删除" />
+            <operation name="PromotionMonthToursUpdate" description="PromotionMonthTours修改" />
+            <operation name="PromotionMonthToursView" description="PromotionMonthTours查看" />
+            <operation name="PromotionMonthToursIndex" description="PromotionMonthTours列表" />
+
+
+            <operation name="CityQuestionAdmin" description="CityQuestion管理" />
+            <operation name="CityQuestionCreate" description="CityQuestion添加" />
+            <operation name="CityQuestionDelete" description="CityQuestion删除" />
+            <operation name="CityQuestionUpdate" description="CityQuestion修改" />
+            <operation name="CityQuestionView" description="CityQuestion查看" />
+            <operation name="CityQuestionIndex" description="CityQuestion列表" />
+
+            <operation name="OrphanageAdmin" description="Orphanage管理" />
+            <operation name="OrphanageCreate" description="Orphanage添加" />
+            <operation name="OrphanageDelete" description="Orphanage删除" />
+            <operation name="OrphanageUpdate" description="Orphanage修改" />
+            <operation name="OrphanageView" description="Orphanage查看" />
+            <operation name="OrphanageIndex" description="Orphanage列表" />
+
+            <operation name="ChinaTravelPhotosAdmin" description="ChinaTravelPhotos管理" />
+            <operation name="ChinaTravelPhotosCreate" description="ChinaTravelPhotos添加" />
+            <operation name="ChinaTravelPhotosDelete" description="ChinaTravelPhotos删除" />
+            <operation name="ChinaTravelPhotosUpdate" description="ChinaTravelPhotos修改" />
+            <operation name="ChinaTravelPhotosView" description="ChinaTravelPhotos查看" />
+            <operation name="ChinaTravelPhotosIndex" description="ChinaTravelPhotos列表" />
+
+            <operation name="AdoptionOrphanageAddressArticleAdmin" description="AdoptionOrphanageAddressArticle管理" />
+            <operation name="AdoptionOrphanageAddressArticleCreate" description="AdoptionOrphanageAddressArticle添加" />
+            <operation name="AdoptionOrphanageAddressArticleDelete" description="AdoptionOrphanageAddressArticle删除" />
+            <operation name="AdoptionOrphanageAddressArticleUpdate" description="AdoptionOrphanageAddressArticle修改" />
+            <operation name="AdoptionOrphanageAddressArticleView" description="AdoptionOrphanageAddressArticle查看" />
+            <operation name="AdoptionOrphanageAddressArticleIndex" description="AdoptionOrphanageAddressArticle列表" />
+
+
+            <operation name="EnglishAdmin" description="English管理" />
+            <operation name="EnglishCreate" description="English添加" />
+            <operation name="EnglishDelete" description="English删除" />
+            <operation name="EnglishUpdate" description="English修改" />
+            <operation name="EnglishView" description="English查看" />
+            <operation name="EnglishIndex" description="English列表" />
+
+
+
+          </task>
+  </role>
+ 
+  <role name="Authority" description="Authority">
+    <task name="User Management" description="用户管理组">
+            <operation name="UserAdmin" description="用户管理" />
+            <operation name="UserCreate" description="用户创建" />
+            <operation name="UserDelete" description="用户删除" />
+            <operation name="UserUpdate" description="用户修改" />
+            <operation name="UserView" description="用户查看" />
+          </task>
+  </role>
+  
+  </node>
+</root>

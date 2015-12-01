@@ -1,0 +1,331 @@
+<?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl.'/css/shanghai.css'); 
+$this->setPageTitle("Tours from Shanghai to Beijing Great Wall, Travel Beijing to Shanghai by Train/ Flight");
+Yii::app()->clientScript->registerMetaTag('keywords','tours shanghai to beijing, tours from shanghai to beijing, beijing shanghai package, travel beijing to shanghai, tours beijing shanghai');
+Yii::app()->clientScript->registerMetaTag('description','Leadtochina offers you 1-9 days Beijing tours from shanghai, Shanghai tours from Beijing, Beijing & Shanghai tours, and more China tours with/ from Shang Beijing. ');
+?>
+<style type="text/css">
+<!--
+#content{ width:926px; height:auto; padding:10px 21px 10px 14px;}
+-->
+</style>
+<!--  index1 start  -->
+<div id="index1">
+   <!--  menu-tours start  -->
+   <div id="menu-tours"><strong>You are here:</strong> <a href="/">Home</a> Beijing Shanghai Tours</div>
+   <!--  menu-tours end  -->
+   <div id="banner"><img src="/images/beijing_shanghai/banner.jpg" alt="" /></div> 
+</div>
+<!--  index1 end  -->
+
+<!--  index start  -->
+<div id="index">
+    <!--  left start  -->
+    <div id="left">
+        <!--  list start  -->
+        <div id="list">
+            <ul>
+               <li class="title" style="margin-top:0px;"><img src="/images/beijing_shanghai/title1.jpg" alt="" /></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiBeijingTours/search', array('title'=>'shanghai-to-beijing-tours'));?>">Shanghai to Beijing Tours</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiBeijingTours/search', array('title'=>'beijing-to-shanghai-tours'));?>">Beijing to Shanghai Tours</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiBeijingTours/search', array('title'=>'beijing-and-shanghai-tours'));?>">Beijing &amp; Shanghai Tours</a></li>
+               <li class="title"><img src="/images/beijing_shanghai/title2.jpg" alt="" /></li>
+               <li><a href="/travel/search-beijing-tours?tour_type=1_Private+Tours">Beijing Private Tour</a></li>
+               <li><a href="/travel/search-beijing-tours?tour_type=2_Join+Groups">Beijing Group Tour</a></li>
+               <li><a href="/travel/search-beijing-tours?des=1_Great+Wall+Tours">Great Wall Tour</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('beijingXianTours/index');?>">Beijing Xian Tour</a></li>
+               <li class="title"><img src="/images/beijing_shanghai/title3.jpg" alt="" /></li>
+               <li><a href="<?php echo Yii::app()->createUrl('cityTours/list', array('title'=>'shanghai-tours'));?>#shanghai-private-tour">Shanghai Private Tour</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('cityTours/list', array('title'=>'shanghai-tours'));?>#shanghai-bus-tour">Shanghai Group Tour</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('cityTours/list', array('title'=>'shanghai-tours'));?>#shanghai-side-trips">Shanghai Suzhou Hangzhou</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiXianTours/index');?>">Shanghai Xi'an Tour</a></li>
+               <li class="title"><img src="/images/beijing_shanghai/title4.jpg" alt="" /></li>
+               <li><a href="<?php echo Yii::app()->createUrl('cityTours/list', array('title'=>'beijing-tours'));?>#from-beijing">China Tours from Beijing</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('cityTours/list', array('title'=>'shanghai-tours'));?>#shanghai-china-tours">China Tours from Shanghai</a></li>
+               <li class="title"><img src="/images/beijing_shanghai/title5.jpg" alt="" /></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiBeijingTours/flightSchedule');?>">Flight Timetable & Ticket</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiBeijingTours/trainSchedule');?>">Train Timetable & Ticket</a></li>
+            </ul>
+        </div>
+        <!--  list end  -->
+        
+        <!--  search start  -->
+        <div id="search">
+             <h2><img src="/images/beijing_shanghai/searchh2.jpg" alt="" /></h2>
+             <div class="search-cont">
+             <ul>
+               <li><strong>Your Budget</strong> 
+                 <select id="choose_price" name="choose_price">
+                   <option value="0">Choose Price</option>
+                    <?php foreach(Yii::app()->params['price_list'] as $v):?>
+                    <option value="<?php echo $v;?>"><?php echo $v;?></option>
+                    <?php endforeach;?>                                     
+                  </select>
+              </li>
+           
+           <li><strong>Duration</strong>
+            <select id="choose_days" name="choose_days">
+            <?php foreach(Yii::app()->params['days_list'] as $v):?>
+              <option value="<?php echo $v;?>"><?php echo $v;?></option>
+            <?php endforeach;?>                                     
+            </select>
+           </li>
+        </ul>
+        <div class="clear"></div>
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+               <td><strong>Visiting</strong></td>
+            </tr>
+            <tr>
+               <td>
+                  <ol>
+                     <li><input type="checkbox" name="city2[]" value="Beijing"> Beijing</li>
+                     <li><input type="checkbox" name="city2[]" value="Xian"> Xian</li>
+                     <li><input type="checkbox" name="city2[]" value="Shanghai"> Shanghai</li>
+                     <li><input type="checkbox" name="city2[]" value="Guilin"> Guilin</li>
+                     <li><input type="checkbox" name="city2[]" value="Yangtze"> Yangtze</li>
+                     <li><input type="checkbox" name="city2[]" value="Tibet"> Tibet</li>
+                  </ol>
+               </td>
+            </tr>
+            <tr>
+               <td><span id="more_index">Select more cities</span></td>
+            </tr>
+            <tr>
+               <td style="padding:5px 0px 2px 8px;">
+                  <form name="toursearchpanelform" method="get" action="<?php echo Yii::app()->createUrl("chinaTours/searchList");?>">
+                      <input type="hidden" name="city" id="menu_city" value="" />
+                      <input type="hidden" name="days" id="menu_days" value="" />
+                      <input type="hidden" name="price" id="menu_price" value="" />
+                      <input type="image" src="/images/beijing_shanghai/search.jpg" />
+                      <a style="text-decoration:underline; color:#333; font-style:italic; float:right; padding-right:10px; line-height:24px;" href="/travel/advance-search">Advanced Search &raquo;</a>
+                  </form> 
+                  </td>
+            </tr>
+          </tbody>
+        </table>
+         </div>
+        </div>
+        <!--  search end  -->
+        <div class="sbottom"></div>
+        
+        <!--  trust start  -->
+        <div class="trust">
+            <ul>
+                <li><a href="/member-pata"><img src="/images/beijing_shanghai/PATA.jpg" alt="" /></a></li>
+                <li>We are the member of PATA</li>
+            </ul>
+            <div class="trip-cont">
+                <div id="TA_selfserveprop169" class="TA_selfserveprop">
+                   <ul id="xpmCaCVwY" class="TA_links igNYd08qa">
+                      <li id="UJrtaqi" class="9LkKK4I1">21 reviews of <a target="_blank" href="http://www.tripadvisor.com/Attraction_Review-g297403-d3824010-Reviews-Lead_to_China_tours-Hefei_Anhui.html">Lead to China tours</a> in Hefei</li>
+                   </ul>
+                 </div>
+                 <script src="http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=169&amp;locationId=3824010&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true"></script>
+            </div>
+        </div>
+        <!--  trust end  -->
+        
+        <!--  quick start  -->
+          <?php $this->renderPartial('/message/_form2',array(
+            'model'=>$message,
+          )); ?>
+        <!--  quick end  -->
+    </div>
+    <!--  left end  -->
+    
+    <!--  right start  -->
+    <div id="right">
+         <!--  text start  -->
+         <div class="text">
+           <div class="textleft">
+              <h2>Beijing Shanghai Tours</h2>
+              <p>Beijing and Shanghai are the top tourist cities. Beijing, China's capital city, is a vibrant mix of history and modernity. Much of China's most impressive historical heritage like the Great Wall and Forbidden City is highly recommended. Shanghai is the largest center of commerce and finance in mainland China. Top attractions are the Oriental Pearl TV Tower, Jinmao Tower, the Bund, Yuyuan Garden. We are offering you various Beijing tours from Shanghai, Shanghai tours from Beijing, Shanghai tours, Beijing tours, China tours with best price and reputed services.</p>
+            </div>
+            <div class="callbutton"><a href="/travel/china-diy-tours"><img src="/images/beijing_shanghai/call.png"></a></div>
+        </div>
+        <!--  text end  -->
+        
+        <!--  toplist start  -->
+        <div class="toplist">
+            <h2><img src="/images/beijing_shanghai/toptitle.jpg" alt="" ></h2>
+            <div class="listone">
+               <ul>
+                  <li><a href="/travel/china-2-days-beijing-private-tours-fly-from-shanghai-351.html"><img src="/images/beijing_shanghai/top1.png" alt="" ></a></li>
+                  <li>
+                      <ol>
+                          <li><a href="/travel/china-2-days-beijing-private-tours-fly-from-shanghai-351.html">2-days Shanghai to Beijing by Air</a></li>
+                          <li>· Mutianyu Great Wall</li>
+                          <li>· Forbidden City</li>
+                          <li>· Kung Fu Show</li>
+                          <li>· 4 star hotels</li>
+                          <li class="price">From <strong>$325</strong> P/P</li>
+                      </ol>
+                  </li>
+               </ul>
+           </div>
+           <div class="listone">
+               <ul>
+                  <li><a href="/travel/china-6-days-best-beijing-and-shanghai-tours-by-flight-323.html"><img src="/images/beijing_shanghai/top2.png" alt="" ></a></li>
+                  <li>
+                      <ol>
+                          <li><a href="/travel/china-6-days-best-beijing-and-shanghai-tours-by-flight-323.html">6-days Beijing &amp; Shanghai Tour</a></li>
+                          <li>· Great Wall</li>
+                          <li>· Temple of Heaven</li>
+                          <li>· The Bund</li>
+                          <li>· Yu Garden</li>
+                          <li class="price">From <strong>$899</strong> P/P</li>
+                      </ol>
+                  </li>
+               </ul>
+           </div>
+           <div class="listone" style="margin-right:0px;">
+               <ul>
+                  <li><a href="/travel/china-3-days-beijing-to-shanghai-round-trip-by-high-speed-train-411.html"><img src="/images/beijing_shanghai/top3.png" alt="" ></a></li>
+                  <li>
+                      <ol>
+                          <li><a href="/travel/china-3-days-beijing-to-shanghai-round-trip-by-high-speed-train-411.html">3-days Beijing to Shanghai Tour</a></li>
+                          <li>· Yuyuan Garden</li>
+                          <li>· Jade Buddha Temple</li>
+                          <li>· Oriental Pearl Tower</li>
+                          <li>· Round Train Trip</li>
+                          <li class="price">From <strong>$770</strong> P/P</li>
+                      </ol>
+                  </li>
+               </ul>
+           </div>
+        </div>
+        <!--  toplist end  -->
+        
+        <!--  tourlist start  -->
+        <div class="tourlist">
+           <h2>Shanghai to Beijing</h2>
+           <div class="listpic"><img src="/images/beijing_shanghai/pic1.jpg" alt="" ></div>
+           <div class="listcontent">
+              <ul>
+                 <li>Having served as the capital of the country for  more than 800 years, Beijing is home to some of the finest remnants of  China's imperial past. You may take bullet train or flight from Shanghai to  Beijing and enjoy Beijing's most popular attractions including the Forbidden  City, the Great Wall, and the hutongs etc.</li>
+                 <li>
+                    <ol>
+                       <li><a href="/travel/china-1-day-shanghai-to-beijing-tour-by-flight-738.html">1 Day Beijing Great Wall Tours from Shanghai by Flight</a></li>
+                       <li><a href="/travel/china-2-days-beijing-private-tours-fly-from-shanghai-351.html">2 Days Beijing Private Tours from Shanghai by Flight</a> <img src="/images/beijing_shanghai/hot.jpg" alt="" ></li>
+                       <li><a href="/travel/china-3-days-beijing-tour-from-shanghai-round-trip-352.html">3 Days Beijing Tours from Shanghai by Round Flight Trip</a></li>
+                       <li><a href="/travel/china-4-days-beijing-classic-tours-fly-from-shanghai-321.html">4 Days Beijing Classic Tours from Shanghai by Flight</a> <img src="/images/beijing_shanghai/hot.jpg" alt="" ></li>
+                       <li><a href="/travel/china-5-days-beijing-group-tour-from-shanghai-573.html">5 Days Beijing Group Tours from Shanghai by Flight</a></li>
+                       <li><a href="/travel/china-1-day-beijing-tours-from-shanghai-by-overnight-train-511.html">1 Day Beijing Tours from Shanghai by Overnight Train (Round Trip)</a></li>
+                       <li><a href="/travel/china-2-days-beijing-tours-from-shanghai-by-bullet-train-737.html">2 Days Beijing Tours from Shanghai by Bullet Train</a></li>
+                    </ol>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <!--  tourlist end  -->
+        
+        <!--  tourlist start  -->
+        <div class="tourlist">
+           <h2>Beijing to Shanghai</h2>
+           <div class="listpic"><img src="/images/beijing_shanghai/pic2.jpg" alt="" ></div>
+           <div class="listcontent">
+              <ul>
+                 <li>Shanghai has a rich collection of buildings and structures of various architectural styles. The Bund, combines various style architecture, is the best prove. Yuyuan Garden, a traditional garden in the Jiangnan style. And Jade Buddha Temple and Oriental Pearl TV tower also attrcats many local and overseas tourists annually for sightseeing. You may take flight or bullet trains from Beijing to Shanghai daily.</li>
+                 <li>
+                    <ol>
+                       <li><a href="/travel/china-1-day-shanghai-tour-from-beijing-round-flight-trip-832.html">1 Day Shanghai Tour from Beijing (Round Flight)</a></li>
+                       <li><a href="/travel/china-3-days-beijing-to-shanghai-round-trip-by-high-speed-train-411.html">2 Days Shanghai Tours from Beijing by Bullet Train (Round Trip)</a></li>
+                       <li><a href="/travel/china-3-days-shanghai-cultural-tour-from-beijing-by-flight-830.html">3 Days Shanghai Cultural Tour from Beijing (Round Flight)</a></li>
+                       <li><a href="/travel/china-5-days-beijing-shanghai-suzhou-hangzhou-tour-831.html">5 Days Beijing Shanghai Suzhou Hangzhou Tour</a></li>
+                    </ol>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <!--  tourlist end  -->
+        
+        <!--  tourlist start  -->
+        <div class="tourlist">
+           <h2>Beijing &amp; Shanghai</h2>
+           <div class="listpic"><img src="/images/beijing_shanghai/pic3.jpg" alt="" ></div>
+           <div class="listcontent">
+              <ul>
+                 <li>Beijing &amp; Shanghai tours is an amazing tour package to visit china. The tours we offered are covering all top highlights in the two cities like Great Wall, Forbidden City, the Bund, Yuyuan Garden etc. Take train and flight are both fine. You may also customize a private tour from our help.</li>
+                 <li>
+                    <ol>
+                       <li><a href="/travel/china-4-days-beijing-and-1-day-shanghai-tours-by-air-322.html">4 Days Beijing and 1 Day Shanghai Tours by Flight</a></li>
+                       <li><a href="/travel/china-6-days-best-beijing-and-shanghai-tours-by-flight-323.html">6 Days Best Beijing and Shanghai Tours by Flight</a> <img src="/images/beijing_shanghai/hot.jpg" alt="" ></li>
+                       <li><a href="/travel/china-6-days-luxury-train-tour-of-beijing--shanghai-412.html">6 Days Beijing and Shanghai Tour by Luxury Train Trip</a></li>
+                    </ol>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <!--  tourlist end  -->
+        
+        <!--  tourlist start  -->
+        <div class="tourlist">
+           <h2>Tours in/from Beijing</h2>
+           <div class="listpic"><img src="/images/beijing_shanghai/pic4.jpg" alt="" ></div>
+           <div class="listcontent">
+              <ul>
+                 <li>Beijing, the capital city of China, is known for its amazing cultural and historical remains throughout the world, such as the significant Great Wall, mysterious Forbidden City, elegant Summer Palace, sacring Temple of Heaven. Here we are offering the city tours in Beijing and side trips from Beijing with best price.</li>
+                 <li>
+                    <ol>
+                       <li><a href="/travel/china-1-day-private-mutianyu-great-wall-tours-312.html">1 Day Mutianyu Great Wall Private Tours</a></li>
+                       <li><a href="/travel/china-1-day-badaling-great-wall--forbidden-city-bus-tour-575.html">1 Day Badaling Great Wall &amp; Forbidden City Coach Tour</a></li>
+                       <li><a href="/travel/china-2-days-explore-the-world-heritage-in-beijing-333.html">2 Days Explore the World Heritage in Beijing</a></li>
+                       <li><a href="/travel/china-visa-free-3-days-beijing-classical-private-tour-683.html">3 Days Beijing Visa-Free Tour</a></li>
+                       <li><a href="/travel/china-4-days-best-beijing-private-tours-103.html">4 Days Best Beijing Private Tours</a> <img src="/images/beijing_shanghai/hot.jpg" alt="" ></li>
+                       <li><a href="/travel/china-4-days-beijing-coach-tour-with-kungfu-show-332.html">4 Days Beijing Coach Tour with Kungfu Show</a></li>
+                       <li><a href="/travel/china-2-days-standard-xian-tours-from-beijing-by-flight-152.html">2 Days Standard Xian Tours from Beijing by Flight</a></li>
+                       <li><a href="/travel/china-8-days-china-golden-standard-tour-17.html">8 Days Beijing Xian Shanghai Tour</a></li>
+                       <li><a href="/travel/china-10-days-standard-china-essence-tour-22.html">10 Days Beijing Xian Guilin Yangshuo Shanghai Tour</a></li>
+                    </ol>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <!--  tourlist end  -->
+        
+        <!--  tourlist start  -->
+        <div class="tourlist">
+           <h2>Tours in/from Shanghai</h2>
+           <div class="listpic"><img src="/images/beijing_shanghai/pic5.jpg" alt="" ></div>
+           <div class="listcontent">
+              <ul>
+                 <li>As one of the top tourist cities and most dynamic metropolis in China, Shanghai city tour and tours from Shanghai are very popular. It is convenient to travel from Shanghai to Beijing, Xian, Yangtze River, Guilin, Hangzhou, Suzhou...If you can not find one you like, you can also tailor-made Shanghai travel freely.</li>
+                 <li>
+                    <ol>
+                       <li><a href="/travel/china-3-days-shanghai-highlights-tour-148.html">3 Day Classic Shanghai Tour</a></li>
+                       <li><a href="/travel/china-4-days-shanghai-local-and-zhujiajiao-trip-156.html">4 Days Shanghai Local and Zhujiajiao Trip</a></li>
+                       <li><a href="/travel/china-5-days-shanghai-suzhou-zhouzhuang-tour-124.html">5 Days Shanghai, Suzhou, Zhouzhuang Tour</a> <img src="/images/beijing_shanghai/hot.jpg" alt="" ></li>
+                       <li><a href="/travel/china-1-day-scenic-hangzhou-tour-from-shanghai-583.html">1 Day Scenic Hangzhou Tour from Shanghai</a></li>
+                       <li><a href="/travel/china-5-days-shanghai-hangzhou-private-tour-155.html">5 Days Shanghai and Hangzhou Private Tour</a></li>
+                       <li><a href="/travel/china-3-day-shanghai-xian-tour-734.html">3 Days Xian Tour from Shanghai</a></li>
+                       <li><a href="/travel/china-7-days-shanghai--yangtze-cruise-tour-upstream-701.html">7 Days Shanghai &amp; Yangtze Upstream Tour</a></li>
+                    </ol>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <!--  tourlist end  -->
+    </div>
+    <!--  right end  -->
+</div>
+<!--  index end  -->
+<?php echo $this->renderPartial("//common/pop_more_cities");?>
+
+<!-- Google Code for Beijing Shanghai -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1001932638;
+var google_conversion_label = "U8pRCNLqggcQ3o7h3QM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1001932638/?value=0&amp;label=U8pRCNLqggcQ3o7h3QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>

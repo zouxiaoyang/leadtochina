@@ -1,0 +1,263 @@
+<?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl.'/css/shanghai.css'); 
+
+?>
+<style type="text/css">
+<!--
+#content{ width:926px; height:auto; padding:10px 21px 10px 14px;}
+.trust{ margin-top:0px;}
+#list ul{ padding-bottom:0px;}
+-->
+</style>
+<!--  index1 start  -->
+<div id="index1">
+   <!--  menu-tours start  -->
+   <div id="menu-tours"><strong>You are here:</strong> <a href="/">Home</a> Beijing Xian Tours</div>
+   <!--  menu-tours end  -->
+   <div id="banner"><img src="/images/beijing_shanghai/banner2.jpg" alt="" /></div> 
+</div>
+<!--  index1 end  -->
+
+<!--  index start  -->
+<div id="index">
+    <!--  left start  -->
+    <div id="left">
+        <!--  list start  -->
+        <div id="list">
+           <ul>
+               <li class="title" style="margin-top:0px;"><img src="/images/beijing_shanghai/title9.jpg" alt="" /></li>
+               <li><a href="<?php echo Yii::app()->createUrl('beijingXianTours/search', array('title'=>SiteUtils::stringURLSafe('Beijing to Xian Tour by Flight')));?>">Xian Tour from Beijing by Air</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('beijingXianTours/search', array('title'=>SiteUtils::stringURLSafe('Beijing to Xian Tour by Train')));?>" style="white-space: nowrap;">Xian Tour from Beijing by Train</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('beijingXianTours/search', array('title'=>SiteUtils::stringURLSafe('Beijing and Xian Tours')));?>">Beijing and Xian Tours</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('beijingXianTours/search', array('title'=>SiteUtils::stringURLSafe('Beijing Xian Extended Tour')));?>">Beijing Xian Extended Tour</a></li>
+               <li class="title"><img src="/images/beijing_shanghai/title10.jpg" alt="" /></li>
+               <li><a href="/travel/city-xian-tours#xian-private-tour">Xian Private Tour</a></li>
+               <li><a href="/travel/city-xian-tours#xian-group-tour">Xian Group Tour</a></li>
+               <li><a href="/travel/city-xian-tours#xian-side-tours">Xian Side Tours</a></li>
+               <li><a href="/travel/city-xian-tours#shanghai-xian-tour">Shanghai Xian Tour</a></li>
+               <li class="title"><img src="/images/beijing_shanghai/title11.jpg" alt="" /></li>
+               <li><a href="/travel/search-beijing-tours?tour_type=1_Private+Tours">Beijing Private Tour</a></li>
+               <li><a href="/travel/search-beijing-tours?tour_type=2_Join+Groups">Beijing Coach Tour</a></li>
+               <li><a href="/travel/search-beijing-tours?des=1_Great+Wall+Tours">Great Wall Tours</a></li>
+               <li><a href="/travel/search-beijing-tours?theme=113_72+Hours+Visa+Free+Tour">72 Hours Visa Free Tour</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('shanghaiBeijingTours/index');?>">Beijing Shanghai Tour</a></li>
+               <li><a href="/travel/search-beijing-tours?des=12_Beijing+Xian+Shanghai+Tours">Beijing Xian Shanghai</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl('cityTours/list', array('title'=>'beijing-tours'));?>#from-beijing">China Tours from Beijing</a></li>
+               <li class="title"><img src="/images/beijing_shanghai/title12.jpg" alt="" /></li>
+               <li><a href="<?php echo Yii::app()->createUrl("beijingXianTours/flightSchedule");?>">Flight Timetable &amp; Ticket</a></li>
+               <li><a href="<?php echo Yii::app()->createUrl("beijingXianTours/trainSchedule");?>">Train Timetable &amp; Ticket</a></li>
+               <li class="title"><img src="/images/beijing_shanghai/title13.jpg" alt="" /></li>
+               <li><a href="/travel/china-xian-facts-guide-42">Xian Facts</a></li>
+               <li><a href="/travel/china-xian-attractions">Xian Attractions</a></li>
+               <li><a href="/travel/xian-hotels-180">Xian Hotel</a></li>
+               <li><a href="/xian/map.html">Xian Maps</a></li>
+               <li><a href="/travel/china-xian-climate-guide-266">Xian Climate</a></li>
+               <li><a href="/travel/china-xian-transportations-guide-264">Transportations</a></li>
+               <li><a href="/travel/china-xian-travel-tips-guide-265">Xian Travel Tips</a></li>
+               <li><a href="/travel/china-xian-food-restaurants-guide-41">Food &amp; Restaurants</a></li>
+               <li><a href="/travel/china-xian-nightlife-guide-43">Xian Nightlife</a></li>
+            </ul>
+        </div>
+        <!--  list end  -->
+               
+        <!--  trust start  -->
+        <div class="trust">
+            <ul>
+                <li><a href="/member-pata"><img src="/images/beijing_shanghai/PATA.jpg" alt="" /></a></li>
+                <li>We are the member of PATA</li>
+            </ul>
+            <div class="trip-cont">
+                <div id="TA_selfserveprop169" class="TA_selfserveprop">
+                   <ul id="xpmCaCVwY" class="TA_links igNYd08qa">
+                      <li id="UJrtaqi" class="9LkKK4I1">21 reviews of <a target="_blank" href="http://www.tripadvisor.com/Attraction_Review-g297403-d3824010-Reviews-Lead_to_China_tours-Hefei_Anhui.html">Lead to China tours</a> in Hefei</li>
+                   </ul>
+                 </div>
+                 <script src="http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=169&amp;locationId=3824010&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true"></script>
+            </div>
+        </div>
+        <!--  trust end  -->
+        
+        <!--  quick start  -->
+          <?php $this->renderPartial('/message/_form2',array(
+            'model'=>$message,
+          )); ?>
+        <!--  quick end  -->
+    </div>
+    <!--  left end  -->
+    
+    <!--  right start  -->
+    <div id="right">
+         <!--  text start  -->
+         <div class="text">
+           <div class="textleft">
+              <h2>Beijing Xian Tours</h2>
+              <p>Are you thinking of making a side trip from Beijing to Xian? It is often said that no visit to China is complete without a journey to Xian. Going between Beijing and Xian, there are 10 daily high-speed trains and 10 overnight fast trains, plus over 20 daily flights operating between Beijing and Xian. The one and half hours’ flight makes it possible for you to take one day round trip from Beijing to Xian (Terra-cotta Army) and back to Beijing. Here we offer you Beijing to Xian tours by train/ flight, Xian day tours, Beijing tours, and other China Tours with unbeatable price.</p>
+            </div>
+            <div class="callbutton"><a href="/travel/china-diy-tours"><img src="/images/beijing_shanghai/call.png"></a></div>
+        </div>
+        <!--  text end  -->
+        
+        <!--  toplist start  -->
+        <div class="toplist">
+            <h2><img src="/images/beijing_shanghai/toptitle1.jpg" alt="" ></h2>
+            <div class="listone">
+               <ul>
+                  <li><a href="/travel/china-1-day-terracotta-warriors-tours-from-beijing-by-air-562.html"><img src="/images/beijing_shanghai/top4.png" alt="" ></a></li>
+                  <li>
+                      <ol>
+                          <li><a href="/travel/china-1-day-terracotta-warriors-tours-from-beijing-by-air-562.html">1-Day Terracotta Warriors Tours from Beijing</a></li>
+                          <li>· Round Flights</li>
+                          <li>· Terra-cotta Warriors</li>
+                          <li>· Ancient City Wall</li>
+                          <li>· Private Guide &amp; Vehicle</li>
+                          <li class="price">From <strong>$420</strong> P/P</li>
+                      </ol>
+                  </li>
+               </ul>
+           </div>
+           <div class="listone">
+               <ul>
+                  <li><a href="/travel/china-2-days-beijing-xian-round-trip-tour-by-high-speed-train-710.html"><img src="/images/beijing_shanghai/top5.png" alt="" ></a></li>
+                  <li>
+                      <ol>
+                          <li><a href="/travel/china-2-days-beijing-xian-round-trip-tour-by-high-speed-train-710.html">2 Days Beijing Xian Round Trip by High-speed Train</a></li>
+                          <li>· Terra-cotta Warriors</li>
+                          <li>· City Wall Cycling</li>
+                          <li>· Shaanxi History Museum</li>
+                          <li>· Big Wild Goose Pagoda</li>
+                          <li class="price">From <strong>$335</strong> P/P</li>
+                      </ol>
+                  </li>
+               </ul>
+           </div>
+           <div class="listone" style="margin-right:0px;">
+               <ul>
+                  <li><a href="/travel/china-4-days-beijing-and-2-days-xian-tours-by-air-327.html"><img src="/images/beijing_shanghai/top6.png" alt="" ></a></li>
+                  <li>
+                      <ol>
+                          <li><a href="/travel/china-4-days-beijing-and-2-days-xian-tours-by-air-327.html">4 Days Beijing and 2 Days Xian Tours by Air</a></li>
+                          <li>· Badaling Great Wall</li>
+                          <li>· Forbidden City</li>
+                          <li>· Terra-cotta Warrior</li>
+                          <li>· Ancient City Wall</li>
+                          <li class="price">From <strong>$720</strong> P/P</li>
+                      </ol>
+                  </li>
+               </ul>
+           </div>
+        </div>
+        <!--  toplist end  -->
+        
+        <!--  tourlist start  -->
+        <div class="tourlist">
+           <h2>XIAN TOURS FROM BEIJING</h2>
+           <div class="listpic"><img src="/images/beijing_shanghai/pic7.jpg" alt="" ></div>
+           <div class="listcontent">
+              <ul>
+                 <li>Xian Tour Packages from Beijing by train or flight. Best way to enjoy Xian sightseeing including Shaanxi Provincial History Museum, Xian Ancient City Wall, The Bell Tower, Forest of Stone Steles Museum, the Terra-cotta Warriors and Banpo Museum and many more.</li>
+                 <li>
+                    <ol>
+                       <li class="name">By Flight</li>
+                       <li><a href="/travel/china-1-day-terracotta-warriors-tours-from-beijing-by-air-562.html">1-Day Terracotta Warriors Tours from Beijing</a></li>
+                       <li><a href="/travel/china-2-days-standard-xian-tours-from-beijing-by-flight-152.html">2 Days Beijing Xian Beijing Tour by Flight</a> <img src="/images/beijing_shanghai/hot.jpg" alt="" ></li>
+                       <li><a href="/travel/china-3-days-standard-xian-tour-from-beijing-by-flight-571.html">3 Days Beijing Xian Beijing Tour by Flight</a></li>
+                       <li><a href="/travel/china-4-days-luxury-xian-tours-fly-from-beijing-325.html">4 Days Beijing Xian Beijing Tour by Flight</a></li>
+                       <li><a href="/travel/china-5-days-beijing-to-xian-tours-round-flight-326.html">5 Days Beijing Xian Beijing Tour by Flight</a></li>
+                       <li class="name">By Train</li>
+                       <li><a href="/travel/china-1-day-xian-tours-by-overnight-fast-train-trip-410.html">1 Day Beijing Xi'an Beijing by Overnight Fast Train Trip</a></li>
+                       <li><a href="/travel/china-2-days-beijing-xian-round-trip-by-high-speed-train-710.html">2 Days Beijing Xi’an Beijing by High-speed Train</a> <img src="/images/beijing_shanghai/hot.jpg" alt="" ></li>
+                       <li><a href="/travel/china-2-day-xian-tour-from-beijing-by-fast-train-555.html">2 Days Beijing Xi’an Beijing by Fast Train</a></li>
+                       <li><a href="/travel/china-3-days-beijing-xian-round-trip-tour-by-high-speed-train-711.html">3 Days Beijing Xi’an Beijing by High-speed Train</a></li>
+                       <li class="name">By Flight &amp; Train</li>
+                       <li><a href="/travel/china-2-days-beijing-to-xian-tours--fast-trainflight--409.html">2 Days Beijing Xian Beijing Tours by Fast Train and Flight</a></li>
+                    </ol>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <!--  tourlist end  -->
+        
+        <!--  tourlist start  -->
+        <div class="tourlist">
+           <h2>BEIJING AND XIAN TOURS</h2>
+           <div class="listpic"><img src="/images/beijing_shanghai/pic8.jpg" alt="" ></div>
+           <div class="listcontent">
+              <ul>
+                 <li>Beijing Xian tour packages to visit Tiananmen Square, Forbidden City, Temple of Heaven, Terracotta Warriors and Horses Museum, City Wall and Big Wild Goose Pagoda etc with a la cart meals and luxurious hotels.</li>
+                 <li>
+                    <ol>
+                       <li><a href="/travel/china-3-days-beijing-and-xian-tours-by-air-324.html">3 Days Beijing and Xian Tours by Air</a></li>
+                       <li><a href="/travel/china-4-days-beijing-and-2-days-xian-tours-by-air-327.html">4 Days Beijing and 2 Days Xian Tours by Air</a> <img src="/images/beijing_shanghai/hot.jpg" alt="" ></li>
+                    </ol>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <!--  tourlist end  -->
+        
+        <!--  tourlist start  -->
+        <div class="tourlist">
+           <h2>BEIJING XIAN EXTENDED TOUR</h2>
+           <div class="listpic"><img src="/images/beijing_shanghai/pic9.jpg" alt="" ></div>
+           <div class="listcontent">
+              <ul>
+                 <li>Between Beijing and Xian also lie some UNESCO World Cultural Heritage crowned destinations like Datong (Yungang Grottoes), Pingyao (Ancient City), and Luoyang (Longmen Grottoes and Shaolin Temple) and Yan'an (Hukou Waterfalls) which could be fit into your Beijing Xian tour package if you have extra time traveling time between Beijing and Xian.</li>
+                 <li>
+                    <ol>
+                       <li><a href="/travel/china-4-day-beijing-luoyang-xian-tour-833.html">4 Day Beijing Luoyang Xian Tour</a></li>
+                       <li><a href="/travel/china-5-day-beijing-datong-xian-tour-835.html">5 Day Beijing Datong Xian Tour</a></li>
+                       <li><a href="/travel/china-6-days-beijing-datong-pingyao-xian-private-tour-372.html">6 Days Beijing Datong Pingyao Xian Tour</a> <img src="/images/beijing_shanghai/hot.jpg" alt="" ></li>
+                       <li><a href="/travel/china-7-days-beijing-datong-xian-luoyang-tour-836.html">7 Days Beijing Datong Xian Luoyang Tour</a></li>
+                       <li><a href="/travel/china-8-days-beijing-datong-pingyao-xian-luoyang-tour-837.html">8 Days Beijing Datong Pingyao Xian Luoyang Tour</a></li>
+                       <li><a href="/travel/china-8-days-china-golden-standard-tour-17.html">8 Days Beijing Xian Shanghai Standard Tour</a> <img src="/images/beijing_shanghai/hot.jpg" alt="" ></li>
+                       <li><a href="/travel/china-10-days-standard-china-essence-tour-22.html">10 Days Beijing Xian Guilin Shanghai Tour</a></li>
+                    </ol>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <!--  tourlist end  -->
+        
+        <!--  tourlist start  -->
+        <div class="tourlist">
+           <h2>XIAN CITY &amp; SIDE TRIPS</h2>
+           <div class="listpic"><img src="/images/beijing_shanghai/pic10.jpg" alt="" ></div>
+           <div class="listcontent">
+              <ul>
+                 <li>Xian is the capital of Shaanxi Province and the biggest city in the northwest of China. It boasts a mild climate, fertile soil, beautiful scenery, abundant products, and numerous historical relics and sites. It was also the first stop on the Silk Road, linking up the oriental and western civilizations. We are offering you various Xian city and side tours with best service.</li>
+                 <li>
+                    <ol>
+                       <li><a href="/travel/china-1-day-xian-terra-cotta-warriors-tour-559.html">1 Day Xian Terra Cotta Warriors Tour</a></li>
+                       <li><a href="/travel/china-2-days-xian-standard-tour-570.html">2 Days Xian Classic Tour</a></li>
+                       <li><a href="/travel/china-3-days-xian-standard-tour-563.html">3 Days Xian Private Tour</a></li>
+                       <li><a href="/travel/china-4-days-xian-side-tour-to-mount-huashan-160.html">4 Days Xian Side Tour to Mount Huashan</a></li>
+                       <li><a href="/travel/china-5-days-xian-side-tour-to-luoyang-154.html">5 Days Xian Side Tour to Luoyang</a></li>
+                       <li><a href="/travel/china-1-day-shanghai-xian-tour-by-flight-731.html">1 Day Shanghai Xian Tour by Flight</a></li>
+                    </ol>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <!--  tourlist end  -->
+    </div>
+    <!--  right end  -->
+</div>
+<!--  index end  -->
+<?php echo $this->renderPartial("//common/pop_more_cities");?>
+
+<!-- Google Code for Beijing Xian -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1001932638;
+var google_conversion_label = "J5LECJrvhgcQ3o7h3QM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1001932638/?value=0&amp;label=J5LECJrvhgcQ3o7h3QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>

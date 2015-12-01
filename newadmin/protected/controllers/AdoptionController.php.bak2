@@ -1,0 +1,795 @@
+<?php
+
+class AdoptionController extends Controller
+{
+  public $layout='//layouts/main';
+
+  public function actions() {
+    return array(
+       'captcha'=> array(  
+          'class'=>'CaptchaAction',
+    ));
+  }
+
+  public function actionIndex(){
+    
+    $data = FaqCategory::model()->getAllCategories();
+    $chinaTripQuestion = CityQuestion::pageQuestionByType(1, "adoption");
+    $commonQuestion = CityQuestion::pageQuestionByType(2, "adoption");
+     
+    /*
+    $chinaGuideArticle=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=6',
+        'limit' => 6,
+        'order' => 'dateline desc'
+    ));
+    */
+    $latestStories = AdoptionOrphanageAddressArticle::model()->findAll(array(
+      'condition' => 'recommend=1',
+      'limit' => 6,
+      'order'=> 'date desc'
+    ));
+
+    $chinaAdoptionGuide=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=7',
+        'limit' => 7,
+        'order' => 'id desc'
+    ));
+    $chinaAdoptionCulture=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=8',
+    ));
+    $chinaAdoptionCatid9=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=9',
+        'order' => 'id desc'
+    ));
+
+   // if($_GET['test']){
+      $this->layout = "adoption";
+      $this->render('indexNew2', array(
+         'message' => Message::newMessage(),
+         'latestStories' => $latestStories,
+      ));
+      exit;
+    //}
+
+    $this->render('indexNew',array(
+        'data'=>$data,
+        'chinaTripQuestion' => $chinaTripQuestion,
+        'commonQuestion' => $commonQuestion,
+        'chinaGuideArticle' => $chinaGuideArticle,
+        'chinaAdoptionGuide' => $chinaAdoptionGuide,
+        'chinaAdoptionCulture' => $chinaAdoptionCulture,
+        'chinaAdoptionCatid9' => $chinaAdoptionCatid9,
+        'message' => Message::newMessage()
+    ));
+  }
+
+
+ //orphanage-visit
+  public function actionchinaorphangetrips(){
+  	$this->layout = "adoption";
+    $this->render("chinaorphangetrips", array(
+        'message' => Message::newMessage()
+    ));
+  }
+
+
+
+
+  /**
+   * Lists all models.
+   */
+  public function actionCustomizeAdoption()
+  {
+    
+    $data = FaqCategory::model()->getAllCategories();
+    /*
+    if($_GET['test']){
+      $this->layout = "adoption";
+      $view = 'customize2';
+    }else{
+      $view = 'customize';
+    }
+    */
+    $this->layout = "adoption";
+    $view = 'customize2';
+		$this->render($view,array(
+		    'data'=>$data,
+		));
+  }
+
+  public function actionChinaGuide()
+  {
+    $this->setPageHeader();
+    //China guide index article
+    $chinaGuideArticle=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=4',
+    ));
+
+
+    $this->render('chinaGuide',
+        array(
+            'chinaGuideArticle'=>$chinaGuideArticle,
+        )
+    );
+  }
+
+  public function actionChinaGuideView($id)
+  {
+    $this->setPageHeader();
+    //China guide detail view
+    $chinaGuideDetail=AdoptionContent::model()->findByPk($id);
+    $this->render('chinaGuideView',
+        array(
+            'chinaGuideDetail'=>$chinaGuideDetail,
+        )
+    );
+  }
+
+  public function actionTipsTravel()
+  {
+    $this->setPageHeader();
+    //Tips For Tour With Kids
+    $tipsTravelArticle=AdoptionContent::model()->find(array(
+        'condition'=>'cat_id=5',
+    ));
+    $this->render('tipsTravel',
+        array(
+            'tipsTravelArticle'=>$tipsTravelArticle,
+        )
+    );
+  }
+
+/*
+  public function actionPreAdoption()
+  {
+    $this->setPageHeader();
+    $city_id=1;//default Beijing
+    if($_GET['city_id']){
+      $city_id=$_GET['city_id'];
+    }
+    //Pre-adoption travel index article
+    $preAdoptionArticle=AdoptionContent::model()->find(array(
+        'condition'=>'cat_id=1',
+    ));
+     
+    //All service cities list
+    $serviceCities=AdoptionCity::model()->findAll();
+     
+    //Services of city_id
+    $servicesList=AdoptionServices::model()->findAll(array(
+        'condition'=>'city_id='.$city_id,
+    ));
+
+    $this->render('preAdoption',
+        array(
+            'preAdoptionArticle'=>$preAdoptionArticle,
+            'serviceCities'=>$serviceCities,
+            'servicesList'=>$servicesList,
+            'cityid'=>$city_id,
+            'model'=>$model,
+        )
+    );
+  }
+*/
+  
+  public function actionHomeLand()
+  {
+    $this->setPageHeader();
+    //homeland index article
+    $homeLandArticle=AdoptionContent::model()->find(array(
+        'condition'=>'cat_id=2',
+    ));
+    $this->render('homeLand',
+        array(
+            'homeLandArticle'=>$homeLandArticle,
+        )
+    );
+  }
+
+  public function actionHomeLandProvince($id)
+  {
+    $arr = array(
+      'heritage tours china',
+      'china heritage tours',
+      'china adoption tours',
+      'china adoption travel',
+      'china heritage tour',
+      'china homeland tours',
+      'chinese heritage tour',
+      'heritage tours to china',
+      'chinese heritage tours',
+      'china adoption heritage tour',
+      'heritage tour china',
+      'china adoption tour',
+      'homeland tours china adoption',
+      'china homeland tours heritage',
+      'adoptees return trip to china',
+      'adoption homeland tours china',
+      'adoption tours china',
+      'china adoption homeland tours'
+    );
+     
+    //The description of each province
+    $provinceDescription=Province::model()->findByPk($id);
+     
+    //The articles of each province
+    $provinceArticle=AdoptionContent::getHomeLandArticle($id);
+
+    //Recommended tour of this province
+    $packageProvince=AdoptionPackage::getRecommendpackage($id);
+     
+    $orphanage = Orphanage::model()->findByAttributes(array("provinceid"=>$id));
+
+    $chinaTripQuestion = CityQuestion::pageQuestionByType(1, "adoption");
+    $commonQuestion = CityQuestion::pageQuestionByType(2, "adoption");
+
+    $orphange_adress = AdoptionOrphanageAddress::model()->findAllByAttributes(array("provinceid"=>$id));
+  
+
+    $province_seo_title_obj = AdoptionProvinceSeotitle::model()->findByAttributes(array("provinceid"=>$id));
+    if(empty($province_seo_title_obj)){
+      $title = $arr[array_rand($arr, 1)];
+      $province_seo_title_modle = new AdoptionProvinceSeotitle();
+      $province_seo_title_modle->title = $title;
+      $province_seo_title_modle->provinceid = $id;
+      $province_seo_title_modle->save();
+      
+    }else{
+      $title = ucwords($province_seo_title_obj->title);
+    }
+    $this->setPageTitle($title . " " . $provinceDescription->name);
+    Yii::app()->clientScript->registerMetaTag('keywords','');
+    Yii::app()->clientScript->registerMetaTag('description', $title .' Free to customize private China adoption travel now.');
+
+    $layout = "homeLandProvince2";
+    $this->render($layout,
+        array(
+            'provinceDescription'=>$provinceDescription,
+            'provinceArticle'=>$provinceArticle,
+            'packageProvince'=>$packageProvince,
+            'commonQuestion' => $commonQuestion,
+            'chinaTripQuestion' => $chinaTripQuestion,
+            'orphanage_address' => $orphange_adress,
+            'provinceid'=>$id,
+            'orphanage'=>$orphanage
+        )
+    );
+  }
+
+  public function actionHomeLandView(){
+    $id=$_GET['id'];
+    $provinceId=$_GET['provinceid'];
+    $this->setPageHeader();
+     
+    $provinceDescription=Province::model()->findByPk($provinceId);
+    
+
+    //Detail article
+    $homeLandView=AdoptionContent::model()->findByPk($id);
+     
+    //The articles of each province
+    $provinceArticle=AdoptionContent::getHomeLandArticle($provinceId);
+     
+    //Recommended tour of this province
+    $packageProvince=AdoptionPackage::getRecommendpackage($provinceId);
+
+    $chinaTripQuestion = CityQuestion::pageQuestionByType(1, "adoption");
+    $commonQuestion = CityQuestion::pageQuestionByType(2, "adoption");
+
+    $layout = 'homeLandView2';
+    $this->render($layout,
+        array(
+            'homeLandView'=>$homeLandView,
+            'provinceArticle'=>$provinceArticle,
+            'packageProvince'=>$packageProvince,
+            'commonQuestion' => $commonQuestion,
+            'chinaTripQuestion' => $chinaTripQuestion,
+            'provinceDescription' => $provinceDescription,
+            'provinceid'=>$provinceId,
+        )
+    );
+  }
+
+  public function actionThemeTours()
+  {
+    $this->setPageHeader();
+    //theme tour index articles
+    $themeTourArticle=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=3',
+    ));
+    $themePackage=AdoptionPackage::getThemePackage();
+    $this->render('themeTours',
+        array(
+            'themeTourArticle'=>$themeTourArticle,
+            'themePackage'=>$themePackage,
+        )
+    );
+  }
+
+  public function actionSaveOrder(){
+    $model=new Order;
+    if($_POST['fullName']) {
+      $_POST['full_name'] = htmlspecialchars($_POST['gender'].$_POST['fullName']);
+    }
+    $_POST['url_referer'] = Yii::app()->request->urlReferrer;
+    $destination = implode(',', (array)$_POST['destination']);
+    $_POST['destination'] = htmlspecialchars($destination);
+    $_POST['submit_source'] = $_SERVER['HTTP_HOST'];
+    $_POST['dateline'] = time();
+
+    $other_message='';
+    if($destination){
+      $other_message.="<b>CHOOSE DESTINATIONS :</b>".$destination."<br />";
+    }
+    if($_POST['services']){
+      $services=implode(',',(array)$_POST['services']);
+      $other_message.="<b>CHOOSE SERVICES :</b>".htmlspecialchars($services)."</br>";
+    }
+    if($_POST['hotelClass']){
+      $other_message.="<b>HOTEL CLASS :</b>".$_POST['hotelClass']." ".implode(',', (array)$_POST['smoking'])."<br />";
+    }
+    if($_POST['roomClass']){
+      $other_message.="<b>ROOM CLASS :</b>".implode(',', (array)$_POST['roomClass'])."<br />";
+    }
+
+    if($_POST['birthplace']){
+      $other_message.="<b>Birthplace :</b>".implode(',', (array)$_POST['birthplace'])."<br />";
+    }
+    if($_POST['activities']){
+      $other_message.="<b>Activities :</b>".implode(',', (array)$_POST['activities'])."<br />";
+    }
+    if($_POST['otherMessage']){
+      $other_message.="<b>OTHER MESSAGE :</b>".htmlspecialchars($_POST['otherMessage'])."<br />";
+    }
+    if($_POST['city']){
+      $cities = implode(',', $_POST['city']);
+      $other_message.="<b>Tourism Cities :</b>".htmlspecialchars($cities)."<br />";
+    }
+    if($_POST['other_city']){
+      $other_message.="<b>Other City :</b>".htmlspecialchars($_POST['other_city'])."<br />";
+    }
+    if($_POST['activities_for_families']){
+      $activities_for_families = implode(',', $_POST['activities_for_families']);
+      $other_message.="<b>Activities for Families :</b>".htmlspecialchars($activities_for_families)."<br />";
+    }
+
+    if($_POST['other_activities']){
+      $other_message.="<b>Other Activities:</b>" . htmlspecialchars($_POST['other_activities']) ."<br />";
+    }
+
+    if($_POST['Duration']){
+      $other_message.="<b>Duration :</b>".htmlspecialchars($_POST['Duration'])."<br />";
+    }
+    if($_POST['starting_date']){
+      $other_message.="<b>Starting Date :</b>".htmlspecialchars($_POST['starting_date'])."<br />";
+    }
+
+    if($_POST['ending_date']){
+      $other_message.="<b>Ending Date :</b>".htmlspecialchars($_POST['ending_date'])."<br />";
+    }
+
+    if($_POST['star']){
+      $other_message.="<b>Hotel Class Star :</b>".htmlspecialchars($_POST['star'])."<br />";
+    }
+
+    if($_POST['tour_space']){
+      $other_message.="<b>Tour Space :</b>".htmlspecialchars($_POST['tour_space'])."<br />";
+    }
+
+    if($_POST['tour_for']){
+      $other_message.="<b>Tour For :</b>".htmlspecialchars($_POST['tour_for'])."<br />";
+    }
+
+    if($_POST['guide_language']){
+      $guide_language = implode(',', $_POST['guide_language']);
+      $other_message.="<b>Guide Language :</b>".htmlspecialchars($guide_language)."<br />";
+    }
+
+    if($_POST['in_you_team']){
+      $other_message.="<b>In you team :</b>".htmlspecialchars($_POST['in_you_team'])."<br />";
+    }
+
+    $_POST['user_ip'] = SiteUtils::getClientIp();
+    $_POST['ordertype']=12;// 收养团下单方式
+    $_POST['other_message'] = $other_message;
+    $_POST['other_travelinfo'] = $other_message;
+
+    $model->attributes = $_POST;
+    if($model->save()){
+      $insertId = $model->getPrimaryKey();
+      var_dump($insertId);
+      $order_str = 'ADOPTION'.date("ymd").$insertId;
+      Order::model()->updateBypK($insertId, array('orderNO'=>$order_str));
+      header("location:/succeed.html");
+    }
+    exit;
+  }
+
+  //rate
+  public function actionRate(){
+    $articleId=$_GET['articleId'];
+    $rateValue=$_GET['rateValue'];
+    //Set cookies for this article
+    $cookie_name="article_".$articleId;
+    setcookie($cookie_name,1,time()+3600*12);
+    if($_COOKIE[$cookie_name]){
+      echo "cookieDeny";
+      exit;
+    }
+    $articleResult=AdoptionContent::model()->findByPk($articleId);
+    $newRateTime=$articleResult->rate_time+1;
+    $newRateValue=$articleResult->rate_value+$rateValue;
+    AdoptionContent::model()->updateByPk($articleId, array('rate_time'=>$newRateTime,'rate_value'=>$newRateValue));
+    echo $newRateTime."-".$newRateValue;
+    exit;
+  }
+
+  public function actionAdoptionList($id){
+
+    $this->layout = "adoption";
+    $article = AdoptionContent::model()->findByPk($id);
+    $chinaAdoptionGuide=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=7',
+        'limit' => 7,
+        'order' => 'id desc'
+    ));
+
+    $contents = AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id in(6,7,8)',
+    ));
+    foreach($contents as $v){
+      $adoptionListArticles[$v->cat_id][] = $v;
+    }
+
+    $this->render("adoptionList", array(
+        "adoptionListArticles" => $adoptionListArticles,
+        "chinaAdoptionGuide" => $chinaAdoptionGuide,
+        "article" => $article,
+    ));
+  }
+
+  //orphanage-visit
+  public function actionOrphanageVisit(){
+    $this->layout = "adoption";
+    $chinaAdoptionGuide=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=7',
+        'limit' => 7,
+        'order' => 'id desc'
+    ));
+    $chinaAdoptionCulture=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=8',
+    ));
+    $chinaAdoptionCatid9=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=9',
+        'order' => 'id desc'
+    ));
+
+    $chinaTravelPhotos = ChinaTravelPhotos::model()->findAll(array(
+        'order' => 'id desc'
+    ));
+
+    //$article = AdoptionOrphanageAddressArticle::model()->findByPk(177);
+	$article = AdoptionContent::model()->findByPk(177);
+
+    $this->render("orphanageVisit", array(
+       'message' => Message::newMessage(),
+      'chinaAdoptionGuide' => $chinaAdoptionGuide,
+      'chinaAdoptionCulture' => $chinaAdoptionCulture,
+      'chinaAdoptionCatid9' => $chinaAdoptionCatid9,
+      'chinaTravelPhotos' => $chinaTravelPhotos,
+      'article' => $article,
+    ));
+  }
+
+
+
+
+  //story index
+  public function actionStoryIndex(){
+    $this->layout = "adoption";
+    
+
+      $model = new Reviews();
+      if(isset($_POST['Reviews']))
+      {
+        if($_POST['Reviews']['name']) {
+          $_POST['Reviews']['name'] = $_POST['Reviews']['gender'].$_POST['Reviews']['name'];
+        }
+        //$_POST['Reviews']['dateline'] = time();
+        //$_POST['Reviews']['year'] = date("Y");
+        //$model->dateline = time();
+        //$model->year = date("Y");
+
+        $model->attributes = $_POST['Reviews'];
+        if($model->save()){
+          $insertid = $model->id;
+          if($_FILES){
+            foreach((array)$_FILES['files']['error'] as $k=>$error){
+               if($error == UPLOAD_ERR_OK){
+                  $type = $_FILES['files']['type'][$k];
+                  if(in_array($type, array('image/jpeg','image/jpg','image/png','image/gif'))){
+                     $filename = $_FILES["files"]["name"][$k];
+                     $tmp_name = $_FILES["files"]["tmp_name"][$k];
+                     $file_info = pathinfo($filename);
+                     $name = uniqid().'.'.$file_info['extension'];
+                     move_uploaded_file($tmp_name, Reviews::UPLOAD_PATH.$name);
+                     $reviewsPic = new ReviewsPic;
+                     $reviewsPic->pic = $name;
+                     $reviewsPic->tid = $insertid;
+                     $reviewsPic->save();
+                   }
+               }
+            }
+          }
+          Yii::app()->user->setFlash('share_success',"Your article has been submitted, please wait for the administrator's review. Thank for your sharing!");
+          $this->redirect(array('reviews/guestReviews'));
+        }else{
+          $model->attributes = $_POST['Reviews'];
+        }
+      }
+
+      /*
+      $chinaGuideArticle=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=6',
+        'order' => 'dateline desc'
+      ));
+      */
+    /*
+      $latestStories = AdoptionOrphanageAddressArticle::model()->findAll(array(
+        'limit' => 20,
+        'order'=> 'date desc'
+      ));
+      */
+
+      $criteria=new CDbCriteria(array(
+        'select' => "*",
+        'order' => "date desc",
+      ));
+      $latestStories = new CActiveDataProvider('AdoptionOrphanageAddressArticle', array(
+        'pagination'=>array(
+          'pageSize'=>10,
+        ),
+        'criteria'=>$criteria,
+      ));
+      
+
+
+
+      $chinaAdoptionGuide=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=7',
+        'limit' => 7,
+        'order' => 'id desc'
+      ));
+
+      $chinaTravelPhotos = ChinaTravelPhotos::model()->findAll(array(
+        'order' => 'id desc'
+      ));
+      $this->render("storyIndex", array(
+        'chinaGuideArticle'=>$latestStories,
+        'chinaAdoptionGuide' => $chinaAdoptionGuide,
+        'model' => $model,
+        'chinaTravelPhotos' => $chinaTravelPhotos,
+      ));
+  }
+
+  public function actionPrivateTours(){
+    $this->layout = "adoption";
+    $this->render("privateTours");
+  }
+
+  public function actionOrphanageArticle($id){
+
+    $this->layout = "adoption";
+    $article = AdoptionOrphanageAddressArticle::model()->findByPk($id);
+    $chinaAdoptionGuide=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=7',
+        'limit' => 7,
+        'order' => 'id desc'
+    ));
+
+
+    $this->render("orphanageArticle", array(
+        "chinaAdoptionGuide" => $chinaAdoptionGuide,
+        "article" => $article,
+    ));
+  }
+
+  //Orphanage Address detail
+  public function actionOrphanageTravelGuide(){
+    $this->layout = "adoption";
+
+    $id = (int)$_GET['id'];
+    $orphanage_address_info = AdoptionOrphanageAddress::model()->findByPk($id);
+    if(empty($orphanage_address_info)) {
+      throw new CHttpException(404,'The requested page does not exist.');
+    }
+    $cityinfo = JosCosCity::model()->findByPk($orphanage_address_info->cityid);
+
+    /*
+     $chinaGuideArticle=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=6',
+        'limit' => 4,
+        'order' => 'dateline desc'
+    ));
+    */
+    $orphanageArticles = AdoptionOrphanageAddressArticle::model()->findAllByAttributes(array('aid'=>$id));
+
+
+
+    $chinaAdoptionGuide=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=7',
+        'limit' => 7,
+        'order' => 'id desc'
+    ));
+    $chinaAdoptionCulture=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=8',
+    ));
+    $chinaAdoptionCatid9=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=9',
+        'order' => 'id desc'
+    ));
+
+    $adoptionOrphanageAddressPic = AdoptionOrphanageAddressPic::model()->findAllByAttributes(array('oid'=>$id));
+
+		$this->setPageTitle($cityinfo->name.' Orphanage Trip Guide, '.$cityinfo->name.' SWI Visit');
+		Yii::app()->clientScript->registerMetaTag('keywords','');
+		Yii::app()->clientScript->registerMetaTag('description','We are offering '.$cityinfo->name.' orphanage trip guide, private & small group tours to '.$cityinfo->name.' SWI.');
+
+    $this->render("orphanageTravelGuide", array(
+      'orphanage_address_info' => $orphanage_address_info,
+      'cityinfo' => $cityinfo,
+      'message' => Message::newMessage(),
+
+      //'chinaGuideArticle' => $chinaGuideArticle,
+      'orphanageArticles' => $orphanageArticles,
+      'chinaAdoptionGuide' => $chinaAdoptionGuide,
+      'chinaAdoptionCulture' => $chinaAdoptionCulture,
+      'chinaAdoptionCatid9' => $chinaAdoptionCatid9,
+      'adoptionOrphanageAddressPic' => $adoptionOrphanageAddressPic,
+      
+    ));
+  }
+
+  public function actionOrphanageTours(){
+    $this->layout = "adoption";
+    $id = (int)$_GET['id'];
+    $orphanage_address_info = AdoptionOrphanageAddress::model()->findByPk($id);
+    if(empty($orphanage_address_info)) {
+      throw new CHttpException(404,'The requested page does not exist.');
+    }
+    $packageProvince=AdoptionPackage::getRecommendpackage($orphanage_address_info->provinceid);
+
+    $this->render("orphanageTours", array(
+      'packageProvince' => $packageProvince,
+    ));
+  }
+
+  public function actionOrphanageList(){
+    $this->layout = "adoption";
+    $provinceids = array(21,1,13,18,27,17,6,5,22,4,7,8,33,20,35,23,34,25,11,30,24,2,12,10,3,16,14,19);
+    $provinces_obj = Province::model()->findAll(array(
+      'select' => 'id,name',
+    ));
+    foreach($provinces_obj as $v){
+      $province_arr[$v->id] = $v->name;
+    }
+
+    $orphanage_list = AdoptionOrphanageAddress::model()->findAll(array(
+        'condition'=>"provinceid in(".implode(',', $provinceids).")",
+        'order' => 'province_name asc'
+    ));
+    $this->render("orphangeList", array(
+      'provinceids' => $provinceids,
+      'province_arr' => $province_arr,
+      'orphanage_list' => $orphanage_list
+    ));
+  }
+
+  //定制的几个adoption静态页面
+  public function actionSpecAdoption(){
+    
+    $id = $_GET['id'] ? $_GET['id'] : 1;
+    
+    if($id == 1){
+      $this->redirect(array("adoption/beijingXianGuilinItinerary"));
+    }elseif($id == 2){
+      $this->redirect(array("adoption/beijingXianChengduItinerary"));
+    }
+    
+    $view = "static/adoptionTour".$id;
+    $this->render($view);
+  }
+
+
+  public function actionGetCity($provinceid){
+    $db = Yii::app()->db;
+    $list= Yii::app()->db->createCommand('select id,name from jos_cos_city where provinceid=:provinceid')->bindValue('provinceid',$provinceid)->queryAll();
+    echo CJSON::encode($list);
+    Yii::app()->end();
+  }
+
+  public function actionSearchOrphanageAddress(){
+    $q = mysql_real_escape_string($_GET["q"]);
+    $provinceid = (int) $_GET['provinceid'];
+    $cityid = (int) $_GET['cityid'];
+
+    
+
+    $where = '';
+    if($provinceid) $condition[] = " provinceid='$provinceid'";
+    if($cityid)   $condition[] = " cityid='$cityid'";
+    if($q) $condition[] = " orphanage_name like '%$q%'";
+    if($condition) $where = "where " . implode(" and ", $condition);
+    
+    $list = Yii::app()->db->createCommand("select id,orphanage_name from t_adoption_orphanage_address $where")->queryAll();
+    if($_GET['format']){
+      echo CJSON::encode($list);
+    }else{
+      foreach($list as $v){
+        echo $v['orphanage_name']."|".$v['id']."\n";
+      }
+    }
+    Yii::app()->end();
+  }
+
+  public function actionWhatMakesUsUnique(){
+    $this->layout = 'adoption';
+    $this->render('whatMakesUsUnique');
+  }
+
+  protected function setPageHeader()
+  {
+    $this->setPageTitle("China Adoption travel, China Homeland Tour");
+    // Yii::app()->clientScript->registerMetaTag('keywords','');
+    Yii::app()->clientScript->registerMetaTag('description','China Adoption travel including Pre-adoption Travel, China Homeland Tours, and guide  for how to adopt children from China. Car rental, English guide, and reunion visiting  to all China destinations.
+        ');
+
+  }
+
+  //beijing xian guilin
+  public function actionBeijingXianGuilinItinerary(){
+    $this->render('static/beijingXianGuilinItinerary');
+  }
+
+
+  public function actionBeijingXianGuilinReviews(){
+    $this->render('static/beijingXianGuilinReviews');
+  }
+
+  public function actionBeijingXianGuilinDatePrice(){
+    $this->render('static/beijingXianGuilinDatePrice');
+  }
+
+  public function actionBeijingXianGuilinKnowBeforeYouGo(){
+    $this->render('static/beijingXianGuilinKnowBeforeYouGo');
+  }
+
+  public function actionBeijingXianGuilinActivites(){
+    $this->render('static/beijingXianGuilinActivites');
+  }
+
+
+  //beijing xian chengdu
+  public function actionBeijingXianChengduItinerary(){
+    $this->render('static/beijingXianChengduItinerary');
+  }
+
+
+  public function actionBeijingXianChengduReviews(){
+    $this->render('static/beijingXianChengduReviews');
+  }
+
+  public function actionBeijingXianChengduDatePrice(){
+    $this->render('static/beijingXianChengduDatePrice');
+  }
+
+  public function actionBeijingXianChengduKnowBeforeYouGo(){
+    $this->render('static/beijingXianChengduKnowBeforeYouGo');
+  }
+
+  public function actionBeijingXianChengduActivites(){
+    $this->render('static/beijingXianChengduActivites');
+  }
+
+}

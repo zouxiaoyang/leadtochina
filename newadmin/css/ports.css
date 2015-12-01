@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+body{ width:100%; height:100%; margin:0px; padding:0px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px;}
+img{ border:none;}
+*{ margin:0px; padding:0px;}
+li{ list-style:none;}
+.clear{ clear:both; width:0px; height:0px; font-size:0px; line-height:0px;}
+a{ text-decoration:none;}
+
+#left-muslim{ width:245px; height:auto; float:left;}
+.list{ width:100%; height:auto; float:left;}
+.list h2{ width:227px; height:30px; line-height:30px; padding-left:18px; background:url(/images/hotel/bg.png) 0px -111px no-repeat; color:#492e0e; font-size:15px;}
+.list ul{ background:#fff; width:225px; height:auto; float:left; border:1px solid #d9d9d9; border-bottom:none; border-top:none; padding:4px 9px 6px 9px;}
+.list ul li{ width:100%; height:auto; float:left; display:block;}
+.list ul li a{ color:#4c4c4c; border-bottom:1px dashed #cccccc; line-height:26px; display:block; width:100%;}
+.list ul li a:hover{ color:#000; text-decoration:underline;}
+.list-bottom{ width:100%; height:10px; float:left; margin-bottom:20px;}
+.tour{ width:100%; height:auto; float:left; margin-bottom:20px;}
+.list1{ width:100%; height:auto; float:left;}
+.list1 h2{ width:100%; height:30px; background:url(/images/ports/title.jpg) left center no-repeat; display:block; line-height:30px; color:#424242; font-size:15px; text-align:center; float:left;}
+.list1 ul{background:#fff; width:224px; height:auto; float:left; border:1px solid #d9d9d9; border-bottom:none; border-top:none; padding:15px 10px 15px 9px;}
+.list1 ul li{ width:100%; height:auto; float:left; display:block;}
+.list1 ul li{ background: url(/images/ports/bg.png) 0px 0px no-repeat; color:#424242; display:block; float:left; font-weight:bold; height:28px; line-height:28px; text-align:center; width: 100%;}
+.list1 ul li.down{ background:url(/images/ports/down.png) no-repeat center center; height:23px; line-height:17px; padding:6px 0;}
+
+
+#right-muslim{ width:662px; height:auto; float:right; border:1px solid #c6c6c6; background:#fff; padding:8px 8px 20px 8px; color:#595959;}
+.photo{ width:129px; height:82px; float:left; background: url(/images/ports/bg.png) 0px -31px no-repeat; padding:11px 525px 10px 8px; margin-bottom:18px;}
+.photo a{ width:127px; height:80px; float:left; display:block; border:1px solid #cec7c7;}
+.ports{ width:100%; height:auto; float:left; margin-bottom:25px;}
+.ports table{ width:100%; height:auto; float:left; display:block; background:#f3ffff; -webkit-text-size-adjust:none; border-right:1px solid #b9d8f3;}
+/*  .ports table tr.top{ background:url(/images/ports/th.jpg) repeat-x; height:31px; line-height:31px;}  */
+.ports table tr.top{ background:#a6c8e9; height:31px; line-height:31px;}
+.ports table tr.top td{ padding:0px 10px; font-weight:bold; color:#424242; font-size:12px; text-align:center;}
+.ports table tr td{ padding:3px 5px; color:#716f6f; font-size:11px; border:1px solid #b9d8f3; border-right:none; border-top:none;}
+.ports table tr td.city{ background:#d9ebeb; text-align:center; font-weight:bold; color:#565656;}
+.ports table tr td.city a{ color:#565656;}
+.ports table tr td.city a:hover{ color:#ff0000;}
+.ports table tr td a.read{ display:block; color:#bb6600; text-decoration:underline;}
+.ports table tr td a.read:hover{ color:#000; text-decoration:none;}
+.ports table tr td ul{ width:240px; height:auto; float:left;}
+.ports table tr td ul li{line-height:18px;height:auto; padding-right:8px; float:left; display:block; width:232px; white-space:nowrap;}
+.ports table tr td ul li a{ color:#716f6f; text-decoration:underline;}
+.ports table tr td ul li a:hover{ text-decoration:none; color:#000;}
+.ports table tr td span{ width:100%; height:auto; display:block;}
+.ports table tr td span a{ background: url(/images/ports/bg.png) -240px -2px no-repeat; display:block; padding:3px 0px 3px 21px; color:#716f6f; text-decoration:underline; white-space:nowrap;}
+.ports table tr td span a:hover{ color:#000; text-decoration:none;}
+.port-list{ width:660px; height:auto; float:left; margin-bottom:20px; border:1px solid #d4d4d4;}
+.port-list h2{ font-size:14px; color:#505050; line-height:30px; background: url(/images/ports/h2.jpg) repeat-x; width:100%; height:30px; float:left;}
+.port-list h2 b{ float:left;}
+.port-list h2 a{ float:right; font-size:12px; font-weight:normal; padding-right:15px; text-decoration:underline; color:#505050;}
+.port-list h2 span{ width:30px; height:30px; line-height:30px; background: url(/images/ports/span.jpg) repeat-x; display:block; float:left; margin-right:10px; color:#492e0e; font-weight:bold; font-size:15px; text-align:center;}
+.port-list ul{ padding:12px 4px 12px 10px; width:646px; height:auto; float:left;}
+.port-list ul li.pic{ width:211px; height:155px; float:left; display:block;}
+.port-list ul li.pic a{ border:5px solid #e1e1e1; width:201px; height:145px; float:left; display:block;}
+.port-list ul li.pic a:hover{ border:5px solid #7a7575;}
+.port-list ul li.pic a img{ width:201px; height:145px;}
+.port-list ul li ol{ width:610px; height:auto; float:left; margin:10px 0px;}
+.port-list ul li ol li{ line-height:17px; color:#716f6f; background: url(/images/ports/bg.png) -656px -145px no-repeat; width:610px; height:auto; float:left; display:block; padding:3px 0px 3px 12px;}
+.port-list ul li.desc{ background:none; padding:0px 0px 5px 0px; width:424px; float:right;}
+.port-list ul li ol li a{ color:#535353; text-decoration:underline; float:left; line-height:14px; padding:1px 0px;}
+.port-list ul li ol li a:hover{ text-decoration:none; color:#000;}
+.port-list ul li ol li span{ float:right; max-width:122px; color:#bb6600;}
+.title02{ width:647px; height:36px; line-height:36px; padding-left:15px; background:url(/images/ports/bg.png) 0px -177px no-repeat; float:left; font-size:16px; color:#492e0e; font-weight:bold;}
+.booking{ width:632px; height:auto; float:left; border:1px solid #dfdfdf; padding:10px 14px; background:#fff6eb; overflow:hidden; line-height:18px;}
+.booking table{ width:485px; height:auto; margin:10px 0px;}
+.booking table tr td.align{ text-align:right;}
+.booking table tr td{ padding:3px 5px; color:#575757;}
+.booking table tr td select,.booking table tr td input,.booking table tr td textarea{ border:1px solid #b2b2b2; width:312px; padding:3px 0px; color:#575757;}
+.booking table tr td select{ width:314px; padding:2px 0px;}
+.booking table tr td input{ padding:3px 3px; width:306px;}
+.booking table tr td input.small{ width:235px;}
+.booking table tr td textarea{ height:65px; color:#575757;}
+.booking table tr td a{ width:77px; height:27px; background:url(/images/button.png) left center no-repeat; display:block; margin-right:12px; float:left; color:#3b3a39; text-align:center; font-weight:bold; line-height:27px;}
+.booking table tr td a:hover{ color:#ff0000;}
+.booking table span{ color:#ff0000;} 
+.Wdate{ background: url(/images/ports/datePicker.png) no-repeat right center #FFFFFF; border: 1px solid #999999;}
+.text{ width:100%; height:auto; float:left; line-height:22px; color:#717171; border-bottom:3px solid #e5e5e5; padding-bottom:5px;}
+.text h2{ font-size:20px; line-height:24px; color:#505050; text-align:center; display:block; float:left; border-bottom:1px dashed #cacaca; width:100%; padding:3px 0px 10px 0px;}
+.text p{ padding:10px 0px;}
+.text p strong{ display:block; color:#464646;}
+.text p img{ float:right; margin-left:10px; border:4px solid #e5e5e5;}
+
+#question{ width:100%; height:auto; float:left; margin-top:20px;}
+#a05{ width:100%; height:36px; float:left;}
+#a05 ul{ width:100%; height:auto; float:left;}
+#a05 ul li{float:left; display:block; height:36px; margin-right:6px; width:auto;}
+#a05 ul li.sd10 a,#a05 ul li.sd10hover a:hover{ width:77px; height:36px; padding-left:37px; line-height:36px; color:#424242; background:url(/images/ports/bg.png) 0px -138px no-repeat; display:block; float:left; font-size:14px;} 
+#a05 ul li.sd10hover a{ width:77px; height:36px; padding-left:37px; line-height:36px; color:#424242; background:url(/images/ports/bg.png) -118px -138px no-repeat; display:block; float:left; font-size:14px;}
+#a05 ul li.sd11 a{ width:74px; height:36px; padding-left:37px; line-height:36px; color:#424242; background:url(/images/ports/bg.png) -353px -138px no-repeat; display:block; float:left; font-size:14px;}
+#a05 ul li.sd11hover a,#a05 ul li.sd11 a:hover{ width:74px; height:36px; padding-left:37px; line-height:36px; color:#424242; background:url(/images/ports/bg.png) -238px -138px no-repeat; display:block; float:left; font-size:14px;}
+#c10,#c11{width:640px; height:auto; float:left; border:1px solid #c8c8c8; padding:10px; color:#696969;}
+#c10 .tabnote2{ color:#3e3d3d; border-bottom:none; padding-bottom:0px; margin-bottom:20px; line-height:20px;}
+#c10 .tabnote2 .title2{ font-style:normal; color:#6e6e6e;}
+#c10 .tabnote2 strong{ color:#4a7bb8;}
+#c10 .tabnote2 a,#c10 .tabnote3 a{ text-decoration:underline; color:#4a7bb8; font-weight:bold;}
+#c10 .tabnote2 a:hover{ color:#000; text-decoration:none;}
+#c10 .tabnote2 .ask{ background:#f3f3f3; border:1px solid #d9d9d9; color:#6e6e6e; margin-top:15px;}
+.tabnote3 { width:580px; float:left; margin-bottom: 30px; margin-top:30px; padding-left:35px;}
+#reviews ul{ width:630px; height:auto; float:left; margin:0px; padding:8px 5px;}
+#reviews ul li{ width:100%; height:auto; float:left; list-style:none;}
+#reviews ul li img{ width:250px; height:170px; margin-right:5px; float:left; border:2px solid #ccc; padding:2px;}
+#reviews ul li span{ float:right; width:310px; height:160px; color:#535353; line-height:24px; overflow:hidden;}
+#reviews ul li span.virtual{float:right;height:40px;line-height:40px;font-size:12px;text-decoration:underline; color:#c56e3f; font-weight:bold;}
+

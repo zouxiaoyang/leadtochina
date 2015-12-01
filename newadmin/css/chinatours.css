@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0px; padding:0px; font-size:12px; background:#f3efe6; color:#444444; line-height:19px; background:url(/images/newhomepage/Mbody_bg.jpg) repeat-x left top;}
+*{ margin:0px; padding:0px;}
+img{ border:none;}
+a{ text-decoration:none;}
+.link_contact  a:link{ color: #4e4e4e; text-decoration: none; text-decoration: underline;}
+.link_contact  a:visited{ text-decoration: underline; color: #4e4e4e;}
+.link_contact  a:hover{ text-decoration: underline; color: #000;}
+.link_contact  a:active{ text-decoration: underline; color: #000; }
+.link1 a:link{ color:#2b2b2b; text-decoration:underline;}
+.link1 a:visited{ color:#2b2b2b; text-decoration:underline;}
+.link1 a:hover{ color:#000; text-decoration:underline;}
+.link1 a:active{ color:#000; text-decoration:underline;}
+.link2 a:link{ color:#68602e; text-decoration:underline;}
+.link2 a:visited{ color:#68602e; text-decoration:underline;}
+.link2 a:hover{ color:#000; text-decoration:underline;}
+.link2 a:active{ color:#000; text-decoration:underline;}
+.link3 a:link{ color:#797979; text-decoration:underline;}
+.link3 a:visited{ color:#797979; text-decoration:underline;}
+.link3 a:hover{ color:#000; text-decoration:underline;}
+.link3 a:active{ color:#000; text-decoration:underline;}
+.link4 a:link{ color:#797979; text-decoration:none;}
+.link4 a:visited{ color:#797979; text-decoration:none;}
+.link4 a:hover{ color:#000; text-decoration:underline;}
+.link4 a:active{ color:#000; text-decoration:underline;}
+.link5 a:link{ color:#68602e; text-decoration:none;}
+.link5 a:visited{ color:#68602e; text-decoration:none;}
+.link5 a:hover{ color:#e0c319; text-decoration:underline;}
+.link5 a:active{ color:#e0c319; text-decoration:underline;}
+.link6 a:link{ color:#2b2b2b; text-decoration:none;}
+.link6 a:visited{ color:#2b2b2b; text-decoration:none;}
+.link6 a:hover{ color:#000000; text-decoration:underline;}
+.link6 a:active{ color:#000000; text-decoration:underline;}
+.link7 a:link{ color:#fff; text-decoration:none;}
+.link7 a:visited{ color:#fff; text-decoration:none;}
+.link7 a:hover{ color:#c6c5c5; text-decoration:underline;}
+.link7 a:active{ color:#c6c5c5; text-decoration:underline;}
+.link8{ font-weight:bold; font-size:14px;}
+.link8 a:link{ color:#4c4c4c; text-decoration:underline;}
+.link8 a:visited{ color:#4c4c4c; text-decoration:underline;}
+.link8 a:hover{ color:#797979; text-decoration:none;}
+.link8 a:active{ color:#797979; text-decoration:none;}
+.col_1{ color:#000000;}
+.col_2{ color:#FF0000;}
+.main{ width:940px; background:#eeeeee; float:left;}
+.main .left{ width:648px; float:left; background:#fff; border:1px #ccc solid; padding:4px 2px 10px 8px; margin-right:10px;}
+.main .left .left1{ width:100%; margin-bottom:10px; float:left; height:auto;}
+.main .left .left1 span{ font-size:13px;}
+.main .left .left1 span a{ color:#2487D2; text-decoration:underline;}
+.main .left .left1 span a:hover{ text-decoration:none; color:#ff0000;}
+.main .left .left1 h2{font-size:24px; color:#0066FF; margin:8px 0px; display:block; width:100%;}
+.main .left .left2{ width:100%; float:left; margin:10px 0px 30px 0px; height:auto;}
+.main .left .left2 .title1{background:url(/images/citytours/citytours_03.jpg) no-repeat; height:42px; line-height:42px; font-size:16px; font-weight:bold; padding-left:10px; margin-bottom:20px;}
+.main .left .left2 .list{ width:100%; height:auto; float:left;}
+.main .left .left2 .list ul{ width:199px; height:auto; float:left; margin-right:20px; padding-bottom:30px;}
+.main .left .left2 .list ul li{ width:100%; height:auto; float:left; display:block; font-size:11px;}
+.main .left .left2 .list ul li.pic{ width:100%; background:url(/images/citytours/citytours02_07.jpg) no-repeat; height:142px; text-align:center;}
+.main .left .left2 .list ul li a{ display:block; color:#2487D2; font-size:12px; text-decoration:underline;}
+.main .left .left2 .list ul li a.button{ margin-top:5px; text-decoration:none;}
+.main .left .left2 .list ul li a:hover{ text-decoration:none; color:#ff0000;}
+.letter{ width:100%; height:auto; float:left; overflow:hidden;}
+.letter h2{ font-size:14px; color:#2B2B2B; display:block; float:left; width:100%; margin-bottom:4px;}
+.letter h2 a{color: #2487D2; text-decoration:underline;}
+.letter h2 a:hover,.letter ul li a:hover{ text-decoration:none; color:#ff0000;}
+.letter ul{ width:100%; height:auto; float:left;}
+.letter ul li{ color:#444; font-size:11px; width:105px; float:left; line-height:24px; display:block; margin-right:15px;}
+.letter ul li.long{ width:125px;}
+.letter ul li.big{ width:1000%; padding-right:0px; margin-right:0px;}
+.letter ul li.big strong{ font-size:13px; width:100%; float:left;}
+.letter ul li.hot{ background:url(/images/citytours/gif-0493.gif) right center no-repeat; padding-right:20px; width:125px;}
+.letter ul li.hot1{ background:url(/images/citytours/gif-0493.gif) right center no-repeat; padding-right:20px; width:90px;}
+.letter ul li a{color: #2487D2; text-decoration:underline;}
+.main .right{ width:270px; float:left; font-size:11px;}
+.main .right .note1{ width:270px; margin-bottom:19px;}
+.main .right .note1 .title1{ background:url(/images/newhomepage/right_title_03.jpg) no-repeat; height:39px; font-size:15px; font-weight:bold; color:#f1f1f1; padding-left:16px; line-height:39px;}
+.main .right .note1 .not{ background:url(/images/newhomepage/right2_10.jpg) repeat-y; padding-top:10px;}
+.main .right .note1 .not select{ border:1px #CCCCCC solid;}
+.main .right .note1 .not input{ border:1px #CCCCCC solid;}
+.main .right .note1 .not textarea{ border:1px #CCCCCC solid; font-size:12px;}
+.main .right .note2{ width:270px; margin-bottom:19px;}
+.main .right .note1 .title1{ background:url(/images/newhomepage/right_title_03.jpg) no-repeat; height:39px; font-size:15px; font-weight:bold; color:#f1f1f1; padding-left:16px; line-height:39px;}
+.main .right .note1 .not{ background:url(/images/newhomepage/right2_10.jpg) repeat-y; padding-top:10px;}
+.main .right .note1 .not select{ border:1px #CCCCCC solid;}
+.main .right .note1 .not input{ border:1px #CCCCCC solid;}
+.main .right .note1 .not textarea{ border:1px #CCCCCC solid; font-size:12px;}
+.main .right .note2{ width:270px; margin-bottom:23px;}
+.main .right .note2 .note2_title{ background:url(/images/tourism/left_title_03.jpg) no-repeat; height:39px; font-size:18px; color:#FFFFFF; padding-left:16px; line-height:39px;}
+.main .right .note2 .note2_not{ background:url(/images/tourism/left_note.jpg) repeat-y; overflow:hidden; padding:10px; }
+.main .right .note2 .note2_not span{ display:block; margin-bottom:6px;}
+.main .right .note2 .note2_not .note2_td{ padding-right:3px;}
+/*search*/
+.search{ width:270px; margin-bottom:19px; float:left;}
+#TabTab03Con1{width:248px; padding:10px; background:url(/images/newhomepage/city-search.jpg) #f8f8f8 right bottom no-repeat; border-right:1px solid #e2e2e2; border-left:1px solid #e2e2e2; color:#5c5c5d; font-family:Verdana, Arial, Helvetica, sans-serif; }
+#TabTab03Con1 select{ border:1px solid #91919d; background:#e7e7e8; font-size:13px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+#TabTab03Con1 strong{ color:#000;}
+#TabTab03Con1 ul{ width:100%; height:auto; float:left; margin:0px; padding:0px; padding-bottom:6px;}
+#TabTab03Con1 ul li{ width:auto; height:auto; float:left; margin:0px; padding:0px; padding-right:8px; white-space:nowrap; border-bottom:none;}
+#select-city{ color:#000; text-decoration:underline; cursor:pointer; display:block; margin-bottom:5px;}
+#TabTab03Con2{width:248px; padding:10px; background:url(/images/newhomepage/city-search.jpg) #f8f8f8 right bottom no-repeat; border-right:1px solid #e2e2e2; border-left:1px solid #e2e2e2; font-family:Calibri,Arial, Helvetica, sans-serif; font-size:14px; color:#5c5c5d;}
+.not_more{ width:100%; height:auto; float:left; margin:2px 0px;}
+.not_more span{ color:#000; text-decoration:underline; line-height:24px; padding-left:8px; display:block; cursor:pointer;}
+.not_morelist{ width:595px; height:auto; border:1px solid #acacac; padding:0px 10px 10px 10px; color:#444; float:left; position:absolute; z-index:8000; background:#e7e7e8; overflow:hidden; left:260px; top:260px;}
+.not_morelist h2{ font-size:18px; line-height:26px; border-bottom:1px solid #ccc; display:block; color:#000; width:100%; float:left; padding:0px; margin:5px 0px 4px 0px;}
+.not_morelist h2 span{ float:right;}
+#TabTab03Con1 tr td.link3 ul{ width:100%; height:auto; float:left; margin:0px; padding:0px;}
+#TabTab03Con1 tr td.link3 ul li{ width:16%; line-height:24px; float:left; margin:0px; padding:0px; list-style:none;}
+#TabTab03Con1 ul li label{ padding-left:4px;}
+.select{ width:100%; height:auto; float:left; margin-top:10px; margin-bottom:8px;}
+.search_new{ width:100%; height:auto; float:left; margin:5px 0px 15px 0px;}
+/*search*/
+.main .right .note2{ width:270px; margin-bottom:19px; float:left;}
+.main .right .note3{ width:270px; margin-bottom:19px; float:left;}
+.main .right .note3 .title1{ background:url(/images/newhomepage/right_title_03.jpg) no-repeat; height:39px; font-size:15px; font-weight:bold; color:#fff; padding-left:16px; line-height:39px; width:254px;}
+.main .right .note3 .not{ background:url(/images/newhomepage/right2_10.jpg) repeat-y; padding:20px 10px 10px 0px; width:260px;}
+.main .right .note3 .not ul{ padding:0px; margin:0px; margin-top:10px;}
+.main .right .note3 .not ul li{ list-style-type:none; line-height:26px;}
+.main .right .note3 .bor{ border-bottom:1px #CCCCCC dashed;}
+.main .right .note3 .pad{ margin-bottom:5px;}
+.main .right .note4{ width:270px; margin-bottom:15px; float:left;}
+.main .right .note4 .title1{ background:url(/images/newhomepage/right_title_03.jpg) no-repeat; height:39px; font-size:15px; font-weight:bold; color:#f1f1f1; padding-left:16px; line-height:39px;}
+.main .right .note4 .not{ background:url(/images/newhomepage/right2_10.jpg) repeat-y; height:265px; overflow:hidden; padding:10px; padding-top:0px;}
+.main .right .note4 .not ul{ padding:0px; margin:0px; margin-top:10px;}
+.main .right .note4 .not ul li{ list-style-type:none; line-height:26px;}
+.main .right .note5{ width:270px; margin-bottom:8px; margin-top:5px; float:left;}
+.main .right .note5 .title1{ background:url(/images/newhomepage/right_title_03.jpg) no-repeat; height:39px; font-size:15px; font-weight:bold; color:#f1f1f1; padding-left:16px; line-height:39px;}
+.main .right .note5 .not{ background:url(/images/newhomepage/right2_10.jpg) repeat-y; padding:10px;}
+.main .right .note5 .not ul{ padding:0px; margin:0px; margin-top:10px;}
+.main .right .note5 .not ul li{ list-style-type:none; line-height:26px;}
+.main .right .note5 .not table{ margin-top:10px;}
+.footer{ margin-top:15px; margin-bottom:30px; width:980px; margin:0 auto;}
+.index_banner {margin:0px; padding:0px; color:#FFFFFF; text-decoration:none; font-size:18px;}
+.index_banner a:link{margin:0px; padding:0px; color:#FFFFFF; text-decoration:none; font-size:18px;}
+.index_banner a:visited{margin:0px; padding:0px; color:#FFFFFF; text-decoration:none; font-size:18px;}
+ul.newul{ width:100%; height:auto; float:left; margin:0px; padding:5px 0px;}
+ul.newul li{ width:33%; height:auto; float:left; padding:3px 0px; font-size:11px;}
+ul.newul li a{ color:#2487D2; text-decoration:underline;}
+ul.newul li a:hover{ color:#000; text-decoration:none;}
+.city-content{ width:100%; height:auto; float:left; color:#777575; font-size:11px; padding:6px 0px 15px 0px;}
+.city-content h2{ font-size:22px; line-height:34px; width:100%; height:auto; display:block; color:#444444;}
+.Tourlist{ width:99%; height:auto; float:left; margin-top:10px; border-top: 1px solid #666666; padding:20px 0px 10px 0px;}
+.Tourimgbg { background: url(/images/bg.png) #fff no-repeat; float: left; height: 132px; margin-top: 10px; width: 160px;}
+.position{text-align: right; position: relative; left:-3px; top:-3px;height: 131px; width: 159px; overflow: hidden; background: url(/uploads/category/thumb/thumb_cat201101319c025.jpg) #fff no-repeat center center;}
+.TourDetail{ width:70%; height:auto; float:right;}
+.TourDetail h2{ font-size:20px; color:#444444; line-height:30px; display:block; width:100%; float:left;}
+.TourDetail ul{ width:100%; height:auto; float:left; margin:4px 0px 20px 0px;}
+.TourDetail ul li{ border-bottom:1px dashed #CCCCCC; background:url(/images/li2.gif) left center no-repeat; height:auto; float:left; padding:4px 0px 4px 18px; width:92%; display:block; font-size:11px;}
+.TourDetail ul li a{ line-height:14px; padding:3px 0px; max-width:260px; color:#2487D2; float:left;}
+.TourDetail ul li span{ float:right; max-width:170px;background: url(/images/money_coin.png) no-repeat 0px 2px; padding-left:25px; color:#FF9900; font-weight:bold;}
+.TourDesc{ width:100%; height:auto; float:left; color: #666666; font-size: 11px; line-height: 20px; padding-bottom:5px;}
+.listcity{ width:270px; height:auto; float:left;}
+.listcity h2{ width:252px; height:39px; line-height:39px; padding-left:18px; background:url(/images/newhomepage/right_title_03.jpg) left center no-repeat; color:#333; font-size:15px;}
+.listcity h2 span{ font-weight:normal; color:#fff;}
+.listcity ul{ background:#F8F8F8; width:248px; height:auto; float:left; border:1px solid #d9d9d9; border-top:none; border-bottom:none; padding:6px 10px 10px 10px;}
+.listcity ul li{ width:220px; height:auto; float:left; display:block; border-bottom:1px dashed #cccccc; background:url(/images/fact.png) left center no-repeat; padding:5px 0px 5px 28px;}
+.listcity ul li a{ color:#4c4c4c; line-height:24px; padding:2px 0px;}
+.listcity ul li a:hover{ color:#fff; background:#ff9900;}
+.listcity ul li.Attraction{ background:url(/images/Attraction.png) left center no-repeat;}
+.listcity ul li.shopping{ background:url(/images/shopping.png) left center no-repeat;}
+.listcity ul li.Nightlife{ background:url(/images/nightlife.png) left center no-repeat;}
+.listcity ul li.tour{ background:url(/images/tour.png) left center no-repeat;}
+.listcity ul li.food{ background:url(/images/food.png) left center no-repeat;}
+.listcity ul li.tip{ background:url(/images/tip.png) left center no-repeat;}
+.listcity ul li.Climate{ background:url(/images/Climate.png) no-repeat left center;}
+.listcity ul li.Transportation{ background:url(/images/Transportation.png) left center no-repeat;}
+.listcity ul li.hotel1{ background:url(/images/hotel.png) no-repeat left center;}
+.theme-tours{ float: left; margin-bottom: 19px;  width: 270px;}
+.theme-list{background: url(/images/tourism/left_note.jpg) repeat-y; overflow: hidden; padding: 10px; width:250px; float:left;}
+.theme-list ul{ width:100%; height:auto; float:left; margin:0px; padding:0px;}
+.theme-list ul li{ width:240px; height:auto; float:left; display:block; background:url(/images/newhomepage/themebg.jpg) left center no-repeat; border-bottom:1px dashed #ccc; line-height:18px; padding:4px 0px 4px 10px;}
+.theme-list ul li a{ color:#676565; text-decoration:none;}
+.theme-list ul li a span{ color:#63340f;}
+.theme-list ul li a:hover{ color:#000;}
+.package_main h1{ font-size:18px; color:#000; line-height:26px; border-bottom:1px dashed #a2a0a0; padding:6px 0px 6px 30px; margin:0px 0px 10px 0px; background: url(/images/tourism/h1.png) left center no-repeat; height:26px;}
+.package_main{ width:641px; float:left; font-size:11px;}
+.package_main strong{ color:#000000;}
+.package_main .number{ position:absolute; background:url(/images/tourism/best_01_03.jpg) no-repeat; z-index:100; width:53px; height:41px; font-size:16px; font-weight:bold; color:#000000; padding:5px 0px 0px 5px;}
+.package_main .note1{ width:626px; margin:0 auto; border:2px #fcebcd solid; margin-top:0px; margin-bottom:30px; padding:0px 5px 10px 6px; overflow:hidden;}
+.package_main .note1 h2{ color:#000; font-size:16px; padding:0px; margin:0px;}
+.package_main .note1 h2  a:link { color: #000; text-decoration: underline;}
+.package_main .note1 h2  a:visited { text-decoration: underline; color: #000}
+.package_main .note1 h2  a:hover { text-decoration: underline; color: #666;}
+.package_main .note1 h2  a:active { text-decoration: underline; color: #666; }
+.package_main .note1 .tit_01{ margin-left:53px; margin-bottom:12px; margin-top:12px;}
+.package_main .note1 .tit_01 h2{ margin:0px; padding:0px; font-size:16px; color:#000;}
+.package_main .note1 .tit_01 h2 span{ font-size:13px; color:#7c7c7c;}
+.package_main .note1 .img_note{ width:623px; height:270px; background:url(/images/tourism/best_02_06.jpg) no-repeat;}
+.package_main .note1 .img_note table{ margin:0px; padding:0px;}
+.package_main .note1 .img_note span{ display:block; margin:0px; padding:0px;}
+.package_main .note1 .img_note h3{ font-size:15px; color:#FFFFFF; padding:0px; margin:0px;}
+.package_main .note1 .img_note .list{background:url(/images/tourism/best_04_29.jpg) no-repeat; width:239px; height:29px;  margin-top:10px; margin-bottom:10px; margin-top:10px; padding-left:2px; }
+.package_main .note1 .img_note .list1{ background:url(/images/tourism/best_04_29.jpg) no-repeat; width:239px; height:29px; margin-top:10px; margin-bottom:10px; padding-left:2px;}
+
+.city-title{background:url(/images/newhomepage/hottour.jpg) no-repeat; height:39px; font-size:15px; font-weight:bold; color:#fff; padding-left:72px; line-height:39px; width:198px;}
+.list5{background:url(/images/newhomepage/right2_10.jpg) repeat-y; padding:0px 9px; width:252px; overflow:hidden;}
+.list5 ul{ width:100%; height:auto; float:left; margin:10px 0px 6px 0px; padding:0px;}
+.list5 ul li{ width:100%; height:auto; float:left; display:block; border-bottom:1px #CCCCCC dashed;}
+.list5 ul li a{ color:#513f3f; text-decoration:underline;}
+.list5 ul li a:hover{ text-decoration:none; color:#ff0000;}
+.list5 ul li.pic{ width:244px; height:85px; padding:3px; border:1px solid #e3e3e3;}
+.list5 ul li.pic a{ display:block;}
+.list5 ul li.pic a img{ width:244px; height:85px;}

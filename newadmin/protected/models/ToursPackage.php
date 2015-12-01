@@ -1,0 +1,597 @@
+<?php
+
+/**
+ * This is the model class for table "jos_cos_tours_package".
+ *
+ * The followings are the available columns in table 'jos_cos_tours_package':
+ * @property integer $id
+ * @property integer $package_type
+ * @property integer $category_parentid
+ * @property integer $categorieid_str
+ * @property integer $chinatours_cat_id
+ * @property string $package_code
+ * @property string $categorie_name_str
+ * @property string $name
+ * @property string $package_grade
+ * @property string $route
+ * @property string $package_tour_type
+ * @property string $tour_intro
+ * @property string $targets
+ * @property string $route_Intro
+ * @property string $departs
+ * @property integer $price
+ * @property integer $price1
+ * @property integer $price_low
+ * @property integer $price_num
+ * @property string $price_serialize
+ * @property string $price_serialize_1
+ * @property integer $price_yuan
+ * @property integer $days
+ * @property string $note
+ * @property string $ufile
+ * @property string $pic
+ * @property string $pic_beijing_top
+ * @property string $pic_big
+ * @property string $pic_big_alt
+ * @property string $filedir
+ * @property string $price_include
+ * @property string $price_exclude
+ * @property string $tips
+ * @property string $seo_title
+ * @property string $seo_key
+ * @property string $seo_description
+ * @property string $attractions
+ * @property string $promotion
+ * @property string $recommand_reason
+ * @property integer $published
+ * @property integer $update_route
+ * @property integer $hot
+ * @property integer $hot_tour
+ * @property integer $reviews
+ * @property integer $is_half_day
+ * @property integer $tour_type
+ * @property integer $beijing_tour_type
+ * @property string $vehicle_type
+ * @property string $destination_addr
+ * @property string $one_category
+ * @property string $two_category
+ * @property string $by_group
+ * @property string $tour_tagids
+ * @property string $tour_subtag_ids
+ * @property integer $sort
+ * @property string $theme
+ * @property string $highlight
+ * @property integer $season
+ * @property integer $fnum
+ * @property integer $views
+ * @property integer $top
+ * @property integer $recommend
+ * @property integer $city_recommend
+ * @property integer $index_recommend
+ * @property integer $index_recommend_order
+ */
+class ToursPackage extends CActiveRecord
+{
+
+  static $from_city = array(
+    'shanghai' => 'Shanghai',
+    'beijing' => 'Beijing',
+    'hongkong' => 'Hong Kong',
+
+  );
+  /**
+   * Returns the static model of the specified AR class.
+   * @param string $className active record class name.
+   * @return ToursPackage the static model class
+   */
+  public static function model($className=__CLASS__)
+  {
+    return parent::model($className);
+  }
+
+  /**
+   * @return string the associated database table name
+   */
+  public function tableName()
+  {
+    return 'jos_cos_tours_package';
+  }
+
+  /**
+   * @return array validation rules for model attributes.
+   */
+  public function rules()
+  {
+    // NOTE: you should only define rules for those attributes that
+    // will receive user inputs.
+    return array(
+      array('categorieid_str, package_code, categorie_name_str, name, package_grade, price_num, filedir, price_include', 'required'),
+      array('package_type, category_parentid, categorieid_str, chinatours_cat_id, price, price1, price_low, price_num, price_yuan, days, published, update_route, hot, hot_tour, reviews, is_half_day, tour_type, beijing_tour_type, sort, season, fnum, views, top, recommend, city_recommend, index_recommend, index_recommend_order', 'numerical', 'integerOnly'=>true),
+      array('package_code, package_grade', 'length', 'max'=>30),
+      array('categorie_name_str, route, package_tour_type, tour_intro, targets, departs, ufile, pic_big_alt, seo_title, seo_key, seo_description, attractions, promotion, vehicle_type, destination_addr, one_category, two_category, by_group, tour_tagids, tour_subtag_ids', 'length', 'max'=>255),
+      array('name, filedir, theme, highlight', 'length', 'max'=>100),
+      array('pic, pic_beijing_top, pic_big', 'length', 'max'=>50),
+      array('route_Intro, price_serialize, price_serialize_1, note, price_exclude, tips, recommand_reason', 'safe'),
+      // The following rule is used by search().
+      // Please remove those attributes that should not be searched.
+      array('id, package_type, category_parentid, categorieid_str, chinatours_cat_id, package_code, categorie_name_str, name, package_grade, route, package_tour_type, tour_intro, targets, route_Intro, departs, price, price1, price_low, price_num, price_serialize, price_serialize_1, price_yuan, days, note, ufile, pic, pic_beijing_top, pic_big, pic_big_alt, filedir, price_include, price_exclude, tips, seo_title, seo_key, seo_description, attractions, promotion, recommand_reason, published, update_route, hot, hot_tour, reviews, is_half_day, tour_type, beijing_tour_type, vehicle_type, destination_addr, one_category, two_category, by_group, tour_tagids, tour_subtag_ids, sort, theme, highlight, season, fnum, views, top, recommend, city_recommend, index_recommend, index_recommend_order', 'safe', 'on'=>'search'),
+    );
+  }
+
+  /**
+   * @return array relational rules.
+   */
+  public function relations()
+  {
+    // NOTE: you may need to adjust the relation name and the related
+    // class name for the relations automatically generated below.
+    return array(
+    	'category'=>array(self::BELONGS_TO,'Categories','categorieid_str'),
+    );
+  }
+
+  /**
+   * @return array customized attribute labels (name=>label)
+   */
+  public function attributeLabels()
+  {
+    return array(
+      'id' => 'ID',
+      'package_type' => 'Package Type',
+      'category_parentid' => 'Category Parentid',
+      'categorieid_str' => 'Categorieid Str',
+      'chinatours_cat_id' => 'Chinatours Cat',
+      'package_code' => 'Package Code',
+      'categorie_name_str' => 'Categorie Name Str',
+      'name' => 'Name',
+      'package_grade' => 'Package Grade',
+      'route' => 'Route',
+      'package_tour_type' => 'Package Tour Type',
+      'tour_intro' => 'Tour Intro',
+      'targets' => 'Targets',
+      'route_Intro' => 'Route Intro',
+      'departs' => 'Departs',
+      'price' => 'Price',
+      'price1' => 'Price1',
+      'price_low' => 'Price Low',
+      'price_num' => 'Price Num',
+      'price_serialize' => 'Price Serialize',
+      'price_serialize_1' => 'Price Serialize 1',
+      'price_yuan' => 'Price Yuan',
+      'days' => 'Days',
+      'note' => 'Note',
+      'ufile' => 'Ufile',
+      'pic' => 'Pic',
+      'pic_beijing_top' => 'Pic Beijing Top',
+      'pic_big' => 'Pic Big',
+      'pic_big_alt' => 'Pic Big Alt',
+      'filedir' => 'Filedir',
+      'price_include' => 'Price Include',
+      'price_exclude' => 'Price Exclude',
+      'tips' => 'Tips',
+      'seo_title' => 'Seo Title',
+      'seo_key' => 'Seo Key',
+      'seo_description' => 'Seo Description',
+      'attractions' => 'Attractions',
+      'promotion' => 'Promotion',
+      'recommand_reason' => 'Recommand Reason',
+      'published' => 'Published',
+      'update_route' => 'Update Route',
+      'hot' => 'Hot',
+      'hot_tour' => 'Hot Tour',
+      'reviews' => 'Reviews',
+      'is_half_day' => 'Is Half Day',
+      'tour_type' => 'Tour Type',
+      'beijing_tour_type' => 'Beijing Tour Type',
+      'vehicle_type' => 'Vehicle Type',
+      'destination_addr' => 'Destination Addr',
+      'one_category' => 'One Category',
+      'two_category' => 'Two Category',
+      'by_group' => 'By Group',
+      'tour_tagids' => 'Tour Tagids',
+      'tour_subtag_ids' => 'Tour Subtag Ids',
+      'sort' => 'Sort',
+      'theme' => 'Theme',
+      'highlight' => 'Highlight',
+      'season' => 'Season',
+      'fnum' => 'Fnum',
+      'views' => 'Views',
+      'top' => 'Top',
+      'recommend' => 'Recommend',
+      'city_recommend' => 'City Recommend',
+      'index_recommend' => 'Index Recommend',
+      'index_recommend_order' => 'Index Recommend Order',
+    );
+  }
+
+  /**
+   * Retrieves a list of models based on the current search/filter conditions.
+   * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
+   */
+  public function search()
+  {
+    // Warning: Please modify the following code to remove attributes that
+    // should not be searched.
+
+    $criteria=new CDbCriteria;
+
+    $criteria->compare('id',$this->id);
+    $criteria->compare('package_type',$this->package_type);
+    $criteria->compare('category_parentid',$this->category_parentid);
+    $criteria->compare('categorieid_str',$this->categorieid_str);
+    $criteria->compare('chinatours_cat_id',$this->chinatours_cat_id);
+    $criteria->compare('package_code',$this->package_code,true);
+    $criteria->compare('categorie_name_str',$this->categorie_name_str,true);
+    $criteria->compare('name',$this->name,true);
+    $criteria->compare('package_grade',$this->package_grade,true);
+    $criteria->compare('route',$this->route,true);
+    $criteria->compare('package_tour_type',$this->package_tour_type,true);
+    $criteria->compare('tour_intro',$this->tour_intro,true);
+    $criteria->compare('targets',$this->targets,true);
+    $criteria->compare('route_Intro',$this->route_Intro,true);
+    $criteria->compare('departs',$this->departs,true);
+    $criteria->compare('price',$this->price);
+    $criteria->compare('price1',$this->price1);
+    $criteria->compare('price_low',$this->price_low);
+    $criteria->compare('price_num',$this->price_num);
+    $criteria->compare('price_serialize',$this->price_serialize,true);
+    $criteria->compare('price_serialize_1',$this->price_serialize_1,true);
+    $criteria->compare('price_yuan',$this->price_yuan);
+    $criteria->compare('days',$this->days);
+    $criteria->compare('note',$this->note,true);
+    $criteria->compare('ufile',$this->ufile,true);
+    $criteria->compare('pic',$this->pic,true);
+    $criteria->compare('pic_beijing_top',$this->pic_beijing_top,true);
+    $criteria->compare('pic_big',$this->pic_big,true);
+    $criteria->compare('pic_big_alt',$this->pic_big_alt,true);
+    $criteria->compare('filedir',$this->filedir,true);
+    $criteria->compare('price_include',$this->price_include,true);
+    $criteria->compare('price_exclude',$this->price_exclude,true);
+    $criteria->compare('tips',$this->tips,true);
+    $criteria->compare('seo_title',$this->seo_title,true);
+    $criteria->compare('seo_key',$this->seo_key,true);
+    $criteria->compare('seo_description',$this->seo_description,true);
+    $criteria->compare('attractions',$this->attractions,true);
+    $criteria->compare('promotion',$this->promotion,true);
+    $criteria->compare('recommand_reason',$this->recommand_reason,true);
+    $criteria->compare('published',$this->published);
+    $criteria->compare('update_route',$this->update_route);
+    $criteria->compare('hot',$this->hot);
+    $criteria->compare('hot_tour',$this->hot_tour);
+    $criteria->compare('reviews',$this->reviews);
+    $criteria->compare('is_half_day',$this->is_half_day);
+    $criteria->compare('tour_type',$this->tour_type);
+    $criteria->compare('beijing_tour_type',$this->beijing_tour_type);
+    $criteria->compare('vehicle_type',$this->vehicle_type,true);
+    $criteria->compare('destination_addr',$this->destination_addr,true);
+    $criteria->compare('one_category',$this->one_category,true);
+    $criteria->compare('two_category',$this->two_category,true);
+    $criteria->compare('by_group',$this->by_group,true);
+    $criteria->compare('tour_tagids',$this->tour_tagids,true);
+    $criteria->compare('tour_subtag_ids',$this->tour_subtag_ids,true);
+    $criteria->compare('sort',$this->sort);
+    $criteria->compare('theme',$this->theme,true);
+    $criteria->compare('highlight',$this->highlight,true);
+    $criteria->compare('season',$this->season);
+    $criteria->compare('fnum',$this->fnum);
+    $criteria->compare('views',$this->views);
+    $criteria->compare('top',$this->top);
+    $criteria->compare('recommend',$this->recommend);
+    $criteria->compare('city_recommend',$this->city_recommend);
+    $criteria->compare('index_recommend',$this->index_recommend);
+    $criteria->compare('index_recommend_order',$this->index_recommend_order);
+
+    return new CActiveDataProvider($this, array(
+      'criteria'=>$criteria,
+    ));
+  }
+
+  public function url()
+  {
+    return Yii::app()->createUrl('toursPackage/view', array('id'=>$this->id, 'title'=>SiteUtils::stringURLSafe($this->name)));
+  }
+
+  public function getHightLights()
+  {
+    $themeSubtags = ToursPackageTag::getThemeSubTag();
+    $TourSubtagIds = explode(',', $this->tour_subtag_ids);
+    $tag_arr = array();
+    foreach($TourSubtagIds as $k=>$tag)
+      $tag_arr[] = $themeSubtags[$tag];
+
+    return implode(',', $tag_arr);
+  }
+
+  /*
+  public function searchTour($condition)
+  {
+    $order = 'sort desc,days asc';
+    if($_GET['order']){
+      $orderArr = explode('_', $_GET['order']);
+      if(in_array($orderArr[0], array('price','days','reviews')) && in_array($orderArr[1], array('asc','desc'))){
+        $order = $orderArr[0] . ' ' . $orderArr[1];
+      }
+    }
+
+    $criteria=new CDbCriteria(array(
+      'select' => array('id,package_type,categorieid_str,name,route,tour_intro,price_serialize,price,days,ufile,filedir,pic,tour_subtag_ids,attractions,categorie_name_str,reviews'),
+      'condition' => implode(' AND ', $condition),
+      'order' => $order,
+    ));
+    $dataProvider = new CActiveDataProvider('ToursPackage', array(
+      'pagination'=>array(
+        'pageSize'=>10,
+      ),
+      'criteria'=>$criteria,
+    ));
+    return $dataProvider;
+  }
+  */
+
+  public function searchTours(){
+    if($_GET['city']){
+      $_GET['city'] = str_replace(',', '|', $_GET['city']);
+      $city_arr = explode('|', $_GET['city']);
+      $min_city_num = count($city_arr);
+      $max_city_num = $min_city_num + 1;
+      foreach($city_arr as $v){
+        $v = CHtml::encode($v);
+        if($v=="Dali"){    
+          $sql_condition[] =" (route like '%Dali%' AND route not like '%Dalian%' AND route not like '%Badaling%')";
+        }elseif($v=="Tibet(Lhasa)"){
+          $sql_condition[] =" (route like '%Lhasa%' or route like '%Tibet%') ";
+        }elseif($v=="Silk Road"){
+          $sql_condition[] =" (route like '%Turpan%' or route like '%Urumqi%') ";
+        }else{
+           $sql_condition[] = " route like '%$v%'";
+        }
+      }
+    }
+
+    
+    if($_GET['theme']){
+      $flag = true;
+      $theme = (int)  $_GET['theme'];
+      if($theme) $sql_condition[]=" find_in_set($theme,theme)";
+    }
+    
+    if($_GET['highlight']){
+      $flag = true;
+      $highlight_arr=explode('|', $_GET['highlight']);
+      foreach ($highlight_arr as $v){
+        $highlight = (int) $v;
+        if($v) $sql_condition[]=" find_in_set($highlight, highlight)";
+      }
+    }
+
+    $price = $_GET['price'];
+    if($price){
+      $flag = true;
+      switch($price){
+        case '$1-$899':
+          $sql_condition[]= " price<=899";
+        break;
+        case '$900-$1299':
+          $sql_condition[]= " price>899 and price<=1299";
+          break;
+        case '$1300-$1699':
+          $sql_condition[]= " price>=1300 and price<=1699";
+          break;
+        case '$1700-$1999':
+          $sql_condition[]= " price>=1700 and price<=1999";
+          break;
+        case 'Over $2000':
+          $sql_condition[]= " price>=2000";
+          break;
+        default:
+        break;
+      }
+    }
+
+    $days = $_GET['days'];
+    if($_GET['days']) {
+      $flag = true;
+      switch($days){
+        case 'Half Day':
+          $sql_condition[] = " is_half_day=1";
+          break;
+        case '1 Day':
+          $sql_condition[] = " days=1";
+          break;
+        case '2 Days':
+          $sql_condition[] = " days=2";
+          break;
+        case '3 Days':
+          $sql_condition[] = " days=3";
+        break;
+        case '4 Days':
+          $sql_condition[] = " days=4";
+        break;
+        case '5 Days':
+          $sql_condition[] = "days=5";
+          break;
+        case '6-7 Days':
+          $sql_condition[] = "days>=6 and days<=7";
+          break;
+        case '8-10 Days':
+          $sql_condition[] = "days>=8 and days<=10";
+          break;
+        case '11-15 Days':
+          $sql_condition[] = "days>=11 and days<=15";
+          break;
+        case 'Over 15 Days':
+          $sql_condition[] = "days>=16";
+          break;
+        default:
+        break;
+      }
+    }
+
+    $starting_city = CHtml::encode($_GET['starting_city']);
+    if($starting_city){
+      $flag = true;
+      $sql_condition[] = " start_city='$starting_city'";
+    }
+
+    $ending_city = CHtml::encode($_GET['ending_city']);
+    if($ending_city){
+      $flag = true;
+      $sql_condition[] = " end_city='$ending_city'";
+    }
+
+    //排序
+    $order = $_GET['order'];
+    switch($order){
+      case 'price_asc':
+      $order = ' price asc';
+      break;
+      case 'price_desc':
+      $order = ' price desc';
+      break;
+      case 'days_asc':
+      $order = ' days asc';
+      break;
+      case 'days_desc':
+      $order = ' days desc';
+      break;
+      default:
+        $order = 'city_num asc,days asc';
+      break;
+    }
+
+    //如果选了城市，同时又选择了其它条件则不加城市数目限制
+    if(!$flag && $min_city_num){
+      $sql_condition[] = "(city_num='$min_city_num' or city_num='$max_city_num')";
+    }
+    
+    //没选择任何条件，则按sort排序，即优先展示top 10
+    if(empty($sql_condition)){
+      $order = 'sort desc,days asc';
+    }
+    
+    //没选择任何主题时，以下这些主题排除在外
+    if(!$_GET['theme']){
+        $default_expect_theme_tours = "20,11,14,4,22,16,17,13,10,12,25";
+        $sql_condition[] = "theme not in($default_expect_theme_tours)";
+    }
+    
+
+    Yii::app()->user->setState('advance_search_condition', $sql_condition);
+
+    $criteria=new CDbCriteria(array(
+      'select' => array('id,package_type,categorieid_str,name,route,attractions,tour_intro,price_serialize,price,days,is_half_day,ufile,filedir,pic,pic_big,tour_subtag_ids,attractions,categorie_name_str,reviews'),
+      'condition' => implode(' AND ', $sql_condition),
+      'order' => $order,
+    ));
+    $dataProvider = new CActiveDataProvider('ToursPackage', array(
+      'pagination'=>array(
+        'pageSize'=>16,
+      ),
+      'criteria'=>$criteria,
+    ));
+    return $dataProvider;
+  }
+
+  public function addQuestion($question)
+  {
+    $question->question_type_id = $this->id;
+    return $question->save();
+  }
+
+  public function getIndexRecommentTours(){
+  	$recommentTours=self::model()->findAll(array(
+    		'select'=>array('id,days,name,route,route_Intro,price_serialize,price,index_recommend'),
+    		'condition'=>'index_recommend in(1,2)',
+    		'order'=>'index_recommend_order desc',
+    	));
+    $returnTours=array();
+  	foreach($recommentTours as $v){
+      $returnTours[$v->index_recommend][] = $v;
+    }
+    return $returnTours;
+  }
+  
+  public function getTopBeijingTours($catId){
+  	$BeijingTours=self::getBeijingTours($catId);
+  	$topTours=array();
+  	foreach ($BeijingTours as $k=>$v){
+  		if($v->top>0){
+  			$topTours[$v->top]=$v;  			
+  		}
+  	}
+  	ksort($topTours);
+  	return array_reverse($topTours);
+  }
+  
+  public function getBeijingTours($catId='77'){
+  	return self::model()->findAll(array(
+  		'select'=>array('id,name,route,top,recommend,price_yuan,hot_tour,beijing_tour_type,price_serialize,pic_beijing_top,filedir,reviews,destination_addr,one_category'),
+  		'condition'=>'category_parentid='.$catId.' and (recommend=1 or top>0) ',
+  	));
+  }
+  
+  public function getAjaxLoadToursList($destination_id,$catid='77'){
+  	$base_sql="SELECT id,name,route,price_serialize,reviews,destination_addr,one_category,recommend FROM jos_cos_tours_package WHERE category_parentid='$catid'";
+  if($destination_id){
+     		if($destination_id==5||$destination_id==12){
+     			$limit = ' limit 4';
+     			$sql=" $base_sql AND FIND_IN_SET('$destination_id',destination_addr) AND recommend=1 ORDER BY days $limit";
+     		}else{
+     			$sql=" $base_sql AND FIND_IN_SET('$destination_id',destination_addr) ORDER BY days";
+     		}
+     	}else{
+     		$sql=" $base_sql AND (FIND_IN_SET('4',destination_addr) OR FIND_IN_SET('7',destination_addr) OR FIND_IN_SET('9',destination_addr) OR FIND_IN_SET('10',destination_addr) OR destination_addr=0) AND (route!='Beijing') AND days<11 ORDER BY days $limit";
+     	}
+     	return Yii::app()->db->createCommand($sql)->queryAll();
+  }
+
+
+  public function beijingRecommendTours()
+  {
+    $tour_type = (int)$_GET['tour_type'];
+    $des = (int)$_GET['des'];
+    if($tour_type && !$des){
+      $where = " where recommend=1 and tour_type=".(int)$tour_type;
+    }elseif($des){
+        $where = " where recommend=1 and find_in_set('$des', destination_addr)";
+    }
+    $ret = array();
+    if($where) $ret = Yii::app()->db->createCommand("select id,name,price,pic from jos_cos_tours_package $where limit 3")->queryAll();
+    return $ret;
+  }
+
+  public function getCityToursByCityname($cityname){
+    $ret = self::model()->findAll(array(
+        'select'=>array('id,days,name,route,route_Intro,price'),
+        'condition'=>"route like '%$cityname%' and package_type=2",
+        'order'=>'sort desc',
+        'limit' => 4
+    ));
+    return $ret;
+  }
+
+  public function getToursByIds($ids=array()){
+    if(empty($ids)) return array();
+
+    $ids = implode(',', $ids);
+     $ret = self::model()->findAll(array(
+        'select'=>array('id,days,name,route,route_Intro,price,attractions,filedir,pic_big,pic'),
+        'condition'=>" id in($ids)",
+        'order'=>'days asc',
+    ));
+    return $ret;
+    //return self::model()->findAllByPk($ids);
+  }
+
+  public function getThemeTours($theme){
+    $sql = "SELECT id, days,package_type,categorieid_str,name,route,route_Intro,price_serialize_1,price,tour_intro,note,attractions
+            FROM jos_cos_tours_package WHERE find_in_set($theme,theme) order by sort desc, price asc";
+    return Yii::app()->db->createCommand($sql)->queryAll();  
+  }
+
+  public function get72HoursVisaFreeTours(){
+     $sql = "SELECT id, days,package_type,category_parentid,categorieid_str,name,route,route_Intro,price_serialize_1,price,tour_intro,note,attractions
+            FROM jos_cos_tours_package WHERE find_in_set(113, tour_tagids) or categorieid_str in (216,741) order by sort desc, price asc";
+     return Yii::app()->db->createCommand($sql)->queryAll();  
+  }
+}

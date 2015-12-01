@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+body{ width:100%; height:100%; margin:0px; padding:0px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px;}
+img{ border:none;}
+*{ margin:0px; padding:0px;}
+li{ list-style:none;}
+.clear{ clear:both; width:0px; height:0px; font-size:0px; line-height:0px;}
+a{ text-decoration:none;}
+
+
+.leftspace{background:#EEEEEE; height: auto; margin: 0 auto 15px; overflow: hidden; padding: 9px 10px 12px 11px; width: 940px; font-size:12px;}
+#banner1 { float: left; height: 243px; margin-bottom: 12px; width: 940px;}
+
+
+#left-muslim{ width:245px; height:auto; float:left;}
+.list,.list2,.list3{ width:100%; height:auto; float:left;}
+.list h2,.list2 h2,.list3 h2{ width:227px; height:30px; line-height:30px; padding-left:18px; background:url(/images/hotel/bg.png) 0px -111px no-repeat; color:#492e0e; font-size:15px;}
+.list ul{ background:#fff; width:231px; height:auto; float:left; border:1px solid #d9d9d9; border-bottom:none; border-top:none; padding:0px 6px 6px 6px;}
+.list ul li.title{ width:100%; height:26px; line-height:26px; margin-top:10px; float:left;}
+.list ul li.title span{ width:224px; height:26px; line-height:26px; padding-left:7px; background:url(/images/muslim/bg.png) 0px 0px no-repeat; display:block;}
+.list ul li.title span.dq{ background:url(/images/muslim/bg.png) 0px -33px no-repeat;}
+.list ul li.title span a{ color:#492e0e; font-weight:bold;}
+.list ul li.title span a:hover{ color:#000000;}
+.list ul li.title span b{float:right;width:25px;height:100%;cursor:pointer;}
+.list ul li ol{ width:100%; height:auto; float:left;}
+.list ul li ol li{ width:100%; height:auto; float:left; margin-top:3px;}
+.list ul li ol li a{ color:#6d6c6c; background:url(/images/muslim/bg.png) 0px -60px no-repeat; border-bottom:1px dashed #dadada; width:215px; padding:3px 0px 3px 16px; display:block; line-height:18px;}
+.list ul li ol li a:hover,.list ul li ol li a.dq{ text-decoration:underline; color:#492e0e; background:url(/images/muslim/bg.png) #ededed 0px -60px no-repeat;}
+.list3 ul{ background:#fff; width:237px; height:auto; float:left; border:1px solid #d9d9d9; border-bottom:none; border-top:none; padding:10px 0px 0px 6px;}
+.list3 ul li{ width:111px; height:auto; float:left; padding:0px 6px 10px 0px; display:block;}
+.list3 ul li a{ width:100%; height:auto; float:left; display:block;}
+.list3 ul li a img{ width:103px; height:57px; display:block; border:1px solid #ccc; padding:3px;}
+.list3 ul li a span{ color:#4d4a4a; line-height:14px; display:block; text-align:center; padding:2px 0px; font-size:11px;}
+.list3 ul li a:hover span{ color:#ff0000;}
+.contact,.contact1{ background:#fff; width:228px; height:auto; float:left; border:1px solid #d9d9d9; border-top:none; border-bottom:none; padding:8px 7px 8px 8px; color:#000000; line-height:20px;}
+.list-bottom{ width:100%; height:10px; float:left; margin-bottom:20px;}
+.list-top{ width:100%; height:10px; float:left;}
+.contact table{ width:100%; height:auto; float:left;}
+.contact table tr td{ padding:4px 2px;}
+.contact table tr td strong{ display:block;}
+.contact table tr td a{ display:block; color:#383838; text-decoration:underline; font-size:11px;}
+.contact table tr td span{ font-size:11px; color:#383838;}
+.contact table tr td a:hover{ text-decoration:none; color:#ff0000;}
+.contact1 h3{ width:100%; height:auto; float:left; line-height:24px; color:#191717; font-size:13px; border-bottom:1px dashed #bab9b9;}
+.contact1 table{ width:100%; height:auto; float:left; padding-top:5px; color:#505050;}
+.contact1 table tr td{ padding:5px 2px;}
+.contact1 table tr td.tdright{ text-align:right;}
+.contact1 table tr td input,.contact1 table tr td textarea{ border:1px solid #c1c1c1; width:150px; padding:2px;}
+.contact1 table tr td textarea{ height:65px;}
+.contact1 table tr td a{ text-decoration:underline; color:#7e7e7e;}
+.contact1 table tr td a:hover{ color:#000; text-decoration:none;}
+
+#right-muslim{ width:649px; height:auto; float:right; border:1px solid #c6c6c6; background:#fff; padding:10px 14px 20px 15px; color:#595959;}
+.text{ width:100%; height:auto; float:left; color:#777474; line-height:18px;}
+.text img{ float:right; margin-left:5px;}
+.text a{ color:#3c3b3b; text-decoration:underline;}
+.text a:hover{ text-decoration:none; color:#000;}
+.text h2{ color:#353535; font-size:18px; display:block; line-height:24px;}
+.best{ width:100%; height:auto; float:left; margin-top:25px; background:url(/images/muslim/bg.png) -234px 0px no-repeat; padding-top:12px;}
+.best-bootom{ width:100%; height:13px; float:left; background:url(/images/muslim/bg.png) -234px -18px no-repeat;}
+.city{ width:647px; height:auto; float:left; background:#f9f9f9; border:1px solid #d2d2d2; border-top:none; border-bottom:none;}
+.city h2{ font-size:18px; text-align:center; color:#c15600; display:block; line-height:24px;}
+.city-menu{ width:100%; height:30px; float:left; background:url(/images/muslim/menu.jpg) repeat-x; margin:10px 0px;}
+.city-menu span{ padding:0px 16px; line-height:30px; font-weight:bold; color:#515151; float:left; border-right:1px solid #fff; height:30px; display:block; cursor:pointer;}
+.city-menu span.lastone{ padding:0px 22px; border-right:none;}
+.city-menu span.dq,.city-menu span:hover{ color:#fff; background:url(/images/muslim/menudq.jpg) repeat-x;}
+.city ul{ width:143px; height:auto; float:left; padding:0px 7px 0px 10px;}
+.city ul li.pic{ width:143px; height:109px; float:left;}
+.city ul li.pic a{ margin:0px;}
+.city ul li.pic a img{ width:143px; height:109px;}
+.city ul li{ width:143px; height:auto; float:left; color:#6d6d6d; font-size:11px;}
+.city ul li a{ text-decoration:underline; font-size:12px; display:block; line-height:14px; margin:5px 0px; color:#454544;}
+.city ul li a:hover{ text-decoration:none; color:#000;}
+.city ul li span{ font-weight:bold; color:#ec6627; font-size:14px;}
+.best1{ width:647px; height:auto; float:left;border-left:1px solid #d2d2d2;border-right:1px solid #d2d2d2;background:#f9f9f9;}
+.recommend{ width:339px; height:auto; float:left; border-right:1px solid #d2d2d2; padding:0px 10px 0px 9px;}
+.recommend h2{ font-size:14px; color:#b60a0a; display:block; float:left; line-height:24px;}
+.recommend ul{ width:100%; height:auto; float:left; color:#656060;}
+.recommend ul li{ width:100%; height:auto; float:left; display:block; padding:3px 0px; white-space:nowrap;}
+.recommend ul li.pic{height:110px;}
+.recommend ul li.pic img{ width:339px; height:110px;}
+.recommend ul li.name{ text-align:center;}
+.recommend ul li.name a{ display:block; text-align:center; text-decoration:underline; color:#454545; font-weight:bold; font-size:14px; line-height:20px;}
+.recommend ul li.name a:hover{ color:#ff0000; text-decoration:none;}
+.recommend ul li.from{ text-align:center;}
+.recommend ul li.from span{ color:#ff0000; font-weight:bold; font-size:14px;}
+.recommend ul li.from a{ width:100px; height:24px; display:inline-block; line-height:24px; text-align:center; color:#fff; font-weight:bold;background:url(/images/muslim/bg.png) 0px -119px no-repeat; margin-left:10px;}
+.reasons{ width:260px; height:auto; float:left; padding-left:16px;}
+.reasons h2{ color:#515050; font-size:18px; display:block; line-height:24px;}
+.reasons ul{ width:100%; height:auto; float:left; border-top:1px dashed #acacac; padding-top:10px; margin-top:8px;}
+.reasons ul li{ color:#6f6a6a; font-size:15px; background:url(/images/muslim/bg.png) -234px -38px no-repeat; width:230px; padding:10px 0px 10px 30px; display:block; float:left;}
+.listcity{ width:630px; height:auto; float:left; background:#f9f9f9; border:1px solid #d2d2d2; border-top:none; border-bottom:none; padding-left:17px; padding-bottom:5px;}
+.listcity ul{ width:188px; height:auto; float:left; margin-right:22px; white-space:nowrap;}
+.listcity ul li.title{ width:100%; height:28px; color:#302f2f; font-size:14px; font-weight:bold; background:url(/images/muslim/bg.png) -710px -42px no-repeat; display:block; text-align:center; line-height:28px; margin-bottom:12px; float:left;}
+.listcity ul li.title a{color:#302f2f;}
+.listcity ul li.title a:hover{ color:#ff0000; text-decoration:underline;}
+.listcity ul li.pic{ width:100%; height:71px; float:left; display:block; margin-bottom:3px;}
+.listcity ul li.pic img{ width:186px; height:71px;}
+.listcity ul li ol{ width:100%; height:auto; float:left;}
+.listcity ul li ol li{ border-bottom:1px dashed #ababab; background:url(/images/muslim/bg.png) -901px -4px no-repeat; padding:5px 0px 5px 10px; width:178px; display:block; float:left;}
+.listcity ul li ol li a{ color:#5f5f5f;}
+.listcity ul li ol li.more a{ color:#0a0a0a; text-decoration:underline;}
+.listcity ul li ol li a:hover{ color:#ff0000;}
+.category{ width:100%; height:auto; float:left;}
+.category ul{ width:100%; height:auto; float:left; border-bottom:1px dashed #cccccc; padding:20px 0px 15px 0px;}
+.category ul li.pic{ width:173px; border:3px solid #e6e6e6; height:157px; float:left;}
+.category ul li.pic img{ width:173px; height:157px;}
+.category ul li.name{ width:460px; height:auto; float:right; color:#777474; line-height:18px;}
+.category ul li.name a{ display:block; color:#363636; font-weight:bold; font-size:15px;}
+.category ul li ol{ width:460px; height:auto; float:right;}
+.category ul li ol li{ background:url(/images/muslim/bg.png) -910px -45px no-repeat; padding:4px 0px 4px 10px; width:450px; display:block; float:left;}
+.category ul li ol li a{ max-width:328px; height:auto; float:left; text-decoration:underline; color:#464545;}
+.category ul li ol li a:hover{ text-decoration:none; color:#000;}
+.category ul li ol li span{ max-width:120px; float:right;}
+.category ul li ol li span strong{ font-size:14px; color:#ff0000;}
+.hotnew{ width:100%; height:auto; float:left; margin-top:15px;}
+.hotnew h2{ font-size:15px; color:#353535; line-height:24px; display:block; float:left; width:100%;}
+.hotnew ul{ width:295px; height:auto; float:left; padding:5px 8px 5px 9px; border:1px solid #cccccc; background:#f8f8f8; margin:8px 10px 15px 0px;}
+.hotnew ul.rightul{ float:right; margin:8px 0px 15px 0px;}
+.hotnew ul li{ width:100%; height:auto; float:left; display:block; padding-bottom:3px; line-height:18px; color:#777474;}
+.hotnew ul li.title{ text-align:center; font-weight:bold; font-size:14px; color:#000000; line-height:24px;}
+.hotnew ul li.title a{ color:#000000;}
+.hotnew ul li.title a:hover{ color:#ff0000; text-decoration:underline;}
+.hotnew ul li.title span{ color:#767676; font-size:13px;}
+.hotnew ul li img{ width:295px; height:181px;}
+.hotnew ul li.desc a{ background:url(/images/muslim/bg.png) -122px -119px no-repeat; width:86px; height:23px; display:block; float:right; line-height:23px; text-align:center; color:#fff; font-weight:bold; margin:3px 0px;} 
+.hotnew ul li.desc a:hover{ color:#000;}
+.single{ width:634px; height:auto; float:left; border:1px solid #abd8f4; background:url(/images/muslim/single.jpg) #e8f2f8 left bottom repeat-x; padding:8px 0px 13px 13px; margin-top:10px;}
+.single h2{ display:block; width:100%; height:auto; float:left; text-align:center; color:#000; font-size:14px; line-height:24px; margin-bottom:3px;}
+.single ul{ width:100%;  height:auto; float:left;}
+.single ul li{ width:292px; background:url(/images/muslim/bg.png) -910px -45px no-repeat; padding:4px 13px 4px 12px; display:block; float:left;}
+.single ul li a{ color:#000000; text-decoration:underline;}
+.single ul li a:hover{ color:#ff0000; text-decoration:none;}
+.single ul li a span{ color:#656565;}
+.compareleft{ width:100%; height:auto; float:left;}
+.compareleft ul{ width:100%; height:auto; float:left; padding:20px 0px 10px 0px; border-bottom:1px dashed #d4caca;}
+.compareleft ul li{ float:left;}
+.compareleft ul li.pic3{ width:142px; height:119px; border:3px solid #d9d9d9; margin-right:12px;}
+.compareleft ul li.pic3 img{ width:142px; height:119px;}
+.compareleft ul li.pic-right{ width:338px; height:auto; float:left;}
+.compareleft ul li ol{ width:100%; height:auto; float:left;}
+.compareleft ul li.pic-review{ width:130px; height:auto; float:right; padding-top:25px; color:#474747; display:block; padding-right:10px;}
+.compareleft ul li.pic-right ol li.cont-tour{ width:334px; height:auto; float:left; background:url(/images/newhomepage/cont-toura.jpg) left center no-repeat; padding-left:11px; margin-bottom:5px;white-space:nowrap;}
+.compareleft ul li.pic-right ol li.cont-tour a{ width:auto; max-width:355px; height:auto; float:left; display:block; color:#000; font-size:12px; font-weight:bold; text-decoration:underline;} 
+.compareleft ul li.pic-right ol li.cont-tour a:hover{ color:#dc520f; text-decoration:none;}
+.compareleft ul li.pic-right ol li.destin{ width:334px; height:auto; float:left; padding-left:11px; color:#484848; line-height:20px;}
+.compareleft ul li.pic-right ol li.destin b{color:#000; font-weight:normal;}
+.compareleft ul li.pic-right ol li.destin span{ color:#ee652a;}
+.compareleft ul li.pic-review ol{ width:100%; height:auto; float:left;}
+.compareleft ul li.pic-review ol li{ width:100%; height:auto; float:right; text-align:right; display:block; padding-bottom:10px;}
+.compareleft ul li.pic-review ol li span{ color:#dc520f;}
+.compareleft ul li.pic-review ol li b{ font-size:15px; color:#ee652a;}
+.compareleft ul li.pic-review ol li a{ color:#ee652a; background:url(/images/muslim/bg.png) 0px -157px no-repeat; width:126px; height:26px; line-height:26px;}
+.pager{ width:100%; height:auto; float:left; margin:10px 0px;}
+ul.yiiPager { color: #3B5468; overflow: hidden; padding-top: 10px; text-align: center; height:30px; width:649px;}
+ul.yiiPager li{ display: inline; height:30px;}
+ul.yiiPager li a { color: #000000; display: inline-block; background:url(/images/hotel/paging.jpg) repeat-x; border-left: 1px solid #DADADA; border-right: 1px solid #DADADA; padding: 4px 10px; line-height:22px; font-weight:bold;}
+ul.yiiPager li.first a,ul.yiiPager li.previous a{ color:#8a8a8a;}
+ul.yiiPager li a:hover,ul.yiiPager li.selected a{ background:url(/images/hotel/paging-hover.jpg) repeat-x; border-left: 1px solid #5C5C5C; border-right: 1px solid #5C5C5C; color: #FFFFFF;}
+
+
+.text1{ width:100%; height:auto; float:left; color:#777474; line-height:18px;}
+.text1 img{ margin:5px 0px; display:block;}
+.text1 h2{ color:#353535; font-size:18px; display:block; line-height:24px;}
+.text1 h2.align{ text-align:center;}
+.text1 h3{ color:#353535; font-size:18px; display:block; line-height:24px; border-bottom:1px dashed #b2b2b2; padding-bottom:15px; margin-bottom:8px; text-align:center;}
+.text1 strong{ color:#4e4c4c; display:block;}
+.text1 p{ margin-bottom:15px;}
+.guide-list,.food,.shopping{ width:100%; height:auto; float:left; border-top:1px dashed #b2b2b2; padding:10px 0px; margin-top:10px;}
+.guide-list ul{ width:100%; height:auto; float:left;}
+.guide-list ul li{background:url(/images/muslim/bg.png) -910px -45px no-repeat; width:637px; height:auto; padding:4px 0px 4px 12px; float:left; display:block;}
+.guide-list ul li a{ color:#373737; text-decoration:underline;}
+.guide-list ul li a:hover,.guide-list ul li a.dq{color:#eb6527;}
+.food h2,.shopping h2{ font-size:18px; text-align:center; display:block; color:#373737; line-height:28px; margin-bottom:5px;}
+.food ul{ width:26%; height:auto; float:left; padding-left:45px;}
+.food ul li{ font-weight:bold; color:#373737; display:block; width:100%; padding:3px 0px;}
+.food ul li a{ font-weight:normal; color:#505050; text-decoration:underline;}
+.food ul li a:hover,.food ul li a.dq,.food ul li a:visited{ color:#eb6527;}
+.mosque,.market{ width:100%; height:auto; float:left;}
+.mosque ul.tesu,.market ul.tesu{ width:197px; height:auto; float:left; margin-right:19px; margin-bottom:20px;}
+.mosque ul.tesu li.pic,.market ul.tesu li.pic{ width:191px; height:131px; border:3px solid #e5e5e5; float:left;}
+.mosque ul.tesu li.pic a,.market ul.tesu li.pic a{ padding:0px;width:191px; height:131px;}
+.mosque ul.tesu li.pic img,.market ul.tesu li.pic img{ width:191px; height:131px;}
+.mosque ul.tesu li{ width:100%; height:auto; float:left; display:block; color:#777777; line-height:18px;}
+.mosque ul.tesu li a{ font-weight:bold; color:#eb6725; display:block; line-height:14px; padding:3px 0px; height:30px;}
+.market ul.tesu li a{ font-weight:bold; color:#373737; display:block; line-height:14px; padding:3px 0px; text-decoration:underline; text-align:center;}
+.mosque ul.tesu li a:hover{ color:#000; text-decoration:underline;}
+.market ul.tesu li a:hover{ color:#ff0000; text-decoration:none;}
+.shopping ul{ width:197px; height:auto; float:left; margin-right:19px; margin-bottom:18px;}
+.shopping ul li.pic{ width:197px; height:137px; float:left;}
+.shopping ul li.pic a{ padding:0px; width:197px; height:137px;}
+.shopping ul li.pic img{ width:197px; height:137px;}
+.shopping ul li{ float:left;}
+.shopping ul li a{ display:block; width:100%; line-height:14px; font-weight:bold; color:#5d5d5d; font-size:13px; text-align:center; padding:3px 0px; height:30px;}
+.shopping ul li a:hover{ text-decoration:underline; color:#000;}
+
+.restaurant{ width:100%; height:auto; float:left;}
+.restaurant .items ul{ width:314px; height:auto; float:left; padding:10px 10px 10px 0px;}
+.restaurant .items ul li.pic{ width:140px; height:100px; margin-right:5px; float:left;}
+.restaurant .items ul li.pic a{ width:132px; height:92px; float:left; display:block; border:1px solid #cccccc; padding:3px;}
+.restaurant .items ul li.pic a img{ width:132px; height:92px; margin:0px;}
+.restaurant .items ul li{ width:168px; height:auto; float:left; color:#5e5e5e;}
+.restaurant .items ul li a{ display:block; font-weight:bold; color:#4c4c4c; line-height:14px; padding-bottom:4px; height:28px;}
+.restaurant .items ul li a:hover{ color:#ff0000; text-decoration:underline;}
+.restaurant .items ul li a.detail{ width:59px; height:20px; background:url(/images/muslim/bg.png) -228px -119px no-repeat; color:#fff; text-align:center; margin-top:10px; font-weight:normal;}
+
+.list-food{ width:100%; height:auto; float:left;}
+.list-food ul{ width:100%; height:auto; float:left;}
+.list-food ul li{ width:31%; height:auto; float:left; padding:3px 5px 3px 0px;}
+
+ul.y{ width:100%; height:auto; float:left; margin-bottom: 10px; overflow: hidden;}
+ul.y li{ width:auto; float:left; height:auto;}
+ul.y li a{ color:#3e3d3d; display:block; float:left; margin-right: 11px; padding: 0 10px; background:#CCCCCC;}
+ul.y li a.dq,ul.y li a:hover{ background:#c86718; color:#fff;}
+#printAreainfo{ width:100%; height:auto; float:left;}
+#printAreainfo table{border:1px solid #DFE5CE; border-collapse:collapse; width:100%;}
+#printAreainfo table tr{ height:28px; line-height:28px; text-align:center;}
+#printAreainfo table thead th {background:#454545; color: #FFFFFF; font-weight: normal;}
+#printAreainfo table tbody th{font-size: 14px;}
+#printAreainfo table tbody td{border:1px solid #DFE5CE;}

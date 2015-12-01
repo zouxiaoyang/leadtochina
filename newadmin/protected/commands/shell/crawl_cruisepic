@@ -1,0 +1,40 @@
+--cruiseid:29--id:1--url:http://www.yangtzediscovery.com/cruise-ships-pictures-htmls/pic-ztyh1.htm
+http://www.yangtzediscovery.com/cruise-ships-pictures/ztyhimg1-1.jpg
+insert into t_cruisepic(cruiseid,pic_alt,pic_dir,pic_path,state) values('29','Lobby','','29/5313dde09785d.jpg',3);
+update t_crawl_cruisepic set flag=1 where id='1'
+--cruiseid:29--id:2--url:http://www.yangtzediscovery.com/cruise-ships-pictures-htmls/pic-ztyh2.htm
+http://www.yangtzediscovery.com/cruise-ships-pictures/ztyhimg2-1.jpg
+insert into t_cruisepic(cruiseid,pic_alt,pic_dir,pic_path,state) values('29','Restaurant','','29/5313dde63322c.jpg',3);
+update t_crawl_cruisepic set flag=1 where id='2'
+--cruiseid:29--id:3--url:http://www.yangtzediscovery.com/cruise-ships-pictures-htmls/pic-ztyh3.htm
+http://www.yangtzediscovery.com/cruise-ships-pictures/ztyhimg3-1.jpg
+insert into t_cruisepic(cruiseid,pic_alt,pic_dir,pic_path,state) values('29','Tea House','','29/5313dde9da574.jpg',3);
+update t_crawl_cruisepic set flag=1 where id='3'
+--cruiseid:29--id:4--url:http://www.yangtzediscovery.com/cruise-ships-pictures-htmls/pic-ztyh4.htm
+http://www.yangtzediscovery.com/cruise-ships-pictures/ztyhimg4-1.jpg
+insert into t_cruisepic(cruiseid,pic_alt,pic_dir,pic_path,state) values('29','Clinic','','29/5313ddeca8448.jpg',3);
+update t_crawl_cruisepic set flag=1 where id='4'
+--cruiseid:29--id:5--url:http://www.yangtzediscovery.com/cruise-ships-pictures-htmls/pic-ztyh7.htm
+http://www.yangtzediscovery.com/cruise-ships-pictures/ztyhimg7-1.jpg
+insert into t_cruisepic(cruiseid,pic_alt,pic_dir,pic_path,state) values('29','Shop','','29/5313ddeea4d3e.jpg',3);
+update t_crawl_cruisepic set flag=1 where id='5'
+--cruiseid:29--id:6--url:http://www.yangtzediscovery.com/cruise-ships-pictures-htmls/pic-ztyh8.htm
+http://www.yangtzediscovery.com/cruise-ships-pictures/ztyhimg8-1.jpg
+insert into t_cruisepic(cruiseid,pic_alt,pic_dir,pic_path,state) values('29','STD','','29/5313ddf0e0dde.jpg',3);
+update t_crawl_cruisepic set flag=1 where id='6'
+--cruiseid:29--id:7--url:http://www.yangtzediscovery.com/cruise-ships-pictures-htmls/pic-ztyh9.htm
+http://www.yangtzediscovery.com/cruise-ships-pictures/ztyhimg9-1.jpg
+insert into t_cruisepic(cruiseid,pic_alt,pic_dir,pic_path,state) values('29','STD','','29/5313ddf2effb2.jpg',3);
+update t_crawl_cruisepic set flag=1 where id='7'
+--cruiseid:29--id:8--url:http://www.yangtzediscovery.com/cruise-ships-pictures-htmls/pic-ztyh5.htm
+http://www.yangtzediscovery.com/cruise-ships-pictures/ztyhimg5-1.jpg
+insert into t_cruisepic(cruiseid,pic_alt,pic_dir,pic_path,state) values('29','Bar','','29/5313ddf4ea198.jpg',3);
+update t_crawl_cruisepic set flag=1 where id='8'
+--cruiseid:29--id:9--url:http://www.yangtzediscovery.com/cruise-ships-pictures-htmls/pic-ztyh10.htm
+http://www.yangtzediscovery.com/cruise-ships-pictures/ztyhimg10-1.jpg
+insert into t_cruisepic(cruiseid,pic_alt,pic_dir,pic_path,state) values('29','Deluxe Suite','','29/5313ddf6c0d3b.jpg',3);
+update t_crawl_cruisepic set flag=1 where id='9'
+--cruiseid:29--id:10--url:http://www.yangtzediscovery.com/cruise-ships-pictures-htmls/pic-ztyh11.htm
+http://www.yangtzediscovery.com/cruise-ships-pictures/ztyhimg11-1.jpg
+insert into t_cruisepic(cruiseid,pic_alt,pic_dir,pic_path,state) values('29','Deluxe STD','','29/5313ddf8be1da.jpg',3);
+update t_crawl_cruisepic set flag=1 where id='10'

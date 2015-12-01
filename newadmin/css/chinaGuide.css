@@ -1,0 +1,397 @@
+@charset "utf-8";
+/* CSS Document */
+body{ width:100%; height:100%; margin:0px; padding:0px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px;}
+img{ border:none;}
+*{ margin:0px; padding:0px;}
+li{ list-style:none;}
+.clear{ clear:both; width:0px; height:0px; font-size:0px; line-height:0px;}
+a{ text-decoration:none;}
+#top-button { bottom: 0; cursor: pointer; float: right; height: 88px; position: fixed; right: 50px; width: 47px;}
+
+#menu-guide{ width:951px; height:auto; float:left; height:22px; background:#d6d6d6; line-height:22px; margin-top:5px; margin-bottom:12px; padding-left:10px; color:#444444;}
+#menu-guide a{background: url(/templates/jv_news_ii/images/arrow.png) no-repeat right center; color: #2487D2; padding-right: 15px;}
+#menu-guide a:hover{ color:#000;}
+#guide{width:951px; height:auto; margin:0px auto 15px auto; padding:0px 5px; overflow:hidden; -webkit-text-size-adjust:none; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#5e5e5e;}
+#guide-left{ width:648px; height:auto; float:left; border:1px solid #cccccc; background:#ffffff; overflow:hidden; padding:10px 10px 20px 10px;}
+#banner1{ width:100%; height:284px; float:left; padding-bottom:8px;}
+.text{ width:100%; height:auto; float:left; line-height:21px;}
+.text a{ color:#2487D2;}
+.text h1{ color:#0b0b0b; font-size:18px; line-height:26px; display:block; width:100%;}
+img.image-right {
+    float: right;
+    margin: 0.5em 0 0.5em 1em;
+}
+img.image-border {
+    border: 1px solid #E5E5E5;
+    padding: 3px;
+}
+img.image-left {
+    float: left;
+    margin: 0.5em 1em 0.5em 0;
+}
+.text1{ width:100%; height:auto; float:left; margin-top:6px;}
+.text p{ padding-bottom:8px;}
+.text h2{ color:#0b0b0b; font-size:18px; line-height:26px; width:100%; display:block;}
+.text h2 a{color:#0b0b0b;}
+.text h2 a:hover{ color:#ff0000;}
+.text input{ border:1px solid #f3cfa2; color:#5e5e5e; padding:0px 5px; font-size:11px; height:18px; line-height:18px; width:180px; vertical-align:middle;         }
+/*   .text span{ width:24px; height:20px; cursor:pointer; display:inline-block; vertical-align:middle;}  */
+.city-guide{ width:100%;  height:auto; float:left;}
+.city-left{ width:503px; height:auto; float:left;}
+.city-left ul{ width:100%; height:auto; float:left;}
+.city-left ul li{ background:url(/images/chinaGuide/li.png) #e7e6e6 left top repeat-x; border:1px solid #d5d6d8; padding:4px; width:144px; height:; float:left; margin:15px 13px 0px 0px;}
+.city-left ul li img{ width:144px; height:111px; float:left; display:block;}
+.city-left ul li a{ width:100%; height:auto; float:left; display:block; text-align:center; line-height:22px; color:#343434; font-weight:bold; text-decoration:underline;}
+.city-left ul li a:hover{ text-decoration:none; color:#c15600;}
+.other-city{ width:125px; height:auto; float:right; border:1px solid #d5d6d8; padding:5px 9px 7px 9px; margin-top:15px;}
+.other-city h2{ width:100%; height:auto; float:left; display:block; line-height:22px; border-bottom:1px dashed #cccccc; color:#c15600; font-size:12px;}
+.other-city ul{ width:100%; height:auto; float:left;}
+.other-city ul li{ border-bottom:1px dashed #cccccc; width:112px; height:auto; float:left; display:block; background:url(/images/chinaGuide/bg.png) no-repeat 0px 0px; padding:5px 0px 4px 13px;}
+.other-city ul li a{ color:#565656;}
+.other-city ul li a:hover,.other-city ul li.more a:hover{ text-decoration:underline; color:#ff0000;}
+.other-city ul li.more{ background:none;}
+.other-city ul li.more a{ color:#c15600;}
+.culture,.travel,.lastcon{ width:100%; height:auto; float:left; margin-top:25px;}
+.culture-top{ width:100%; height:16px; float:left; background:url(/images/chinaGuide/bg.png) no-repeat 0px -28px;}
+.culture-cont{ width:602px; height:auto; float:left; border:1px solid #d5d6d8; border-top:none; border-bottom:none; background:url(/images/chinaGuide/culture.png) #e7e6e6 left top repeat-x; padding:5px 21px 0px 23px;}
+.culture-left{ width:185px; height:auto; float:left;}
+.culture-left h2{ font-size:18px; color:#c15600; line-height:20px; width:100%; height:auto; float:left; display:block;}
+.culture-left h2 a{color:#c15600;}
+.culture-left h2 a:hover{ color:#ff0000; text-decoration:underline;}
+.culture-left ul{ width:100%; height:auto; float:left;}
+.culture-left ul li{background:url(/images/chinaGuide/bg.png) no-repeat -186px 0px; padding:5px 0px 4px 18px; width:167px; display:block; float:left;}
+.culture-left ul li a{ font-weight:bold; color:#565656; font-size:13px; text-decoration:underline;}
+.culture-left ul li a:hover{ text-decoration:none; color:#ff0000;}
+.culture-right{ width:409px; height:242px; float:right;}
+.culture-right img{ width:409px; height:242px;}
+.culture-bottom{ width:100%; height:14px; float:left; background:url(/images/chinaGuide/bg.png) no-repeat 0px -46px;}
+.tips,.tools{ width:300px; height:auto; float:left; border:3px solid #d7d7d7;}
+.tools{ width:314px; float:right;}
+.tips h2{ width:200px; height:38px; background:url(/images/chinaGuide/bg.png) no-repeat 0px -63px; padding:10px 0px 0px 100px; display:block; float:left; line-height:38px; color:#3f3f3f; font-size:18px;}
+.tools h2{ width:214px; height:38px; background:url(/images/chinaGuide/bg.png) no-repeat -333px -63px; padding:10px 0px 0px 100px; line-height:38px; color:#3f3f3f; font-size:18px;}
+.tools h2 a,.tips h2 a{color:#3f3f3f;}
+.tools h2 a:hover,.tips h2 a:hover{ color:#ff0000; text-decoration:underline;}
+.tips ul{ width:278px; height:auto; float:left; padding:5px 11px 15px 11px;}
+.tips ul li{ background:url(/images/chinaGuide/bg.png) no-repeat -545px 0px; padding:3px 0px 5px 14px; margin-top:3px; width:264px; height:auto; float:left; display:block; border-bottom:1px dashed #cccccc;}
+.tips ul li a{ color:#707070; font-size:13px; line-height:17px;}
+.tips ul li a:hover{ text-decoration:underline; color:#ff0000;}
+.tools ul{ width:292px; height:auto; float:left; padding:5px 11px 15px 11px;}
+.tools ul li{ background:url(/images/chinaGuide/bg.png) no-repeat -545px 0px; padding:3px 0px 5px 14px; margin-top:3px; width:278px; height:auto; float:left; display:block; border-bottom:1px dashed #cccccc;}
+.tools ul li a{ color:#707070; font-size:13px; line-height:17px;}
+.tools ul li a:hover{ text-decoration:underline; color:#ff0000;}
+.lastcon ul{ width:100%; height:auto; float:left;}
+.lastcon ul li{ width:201px; height:auto; float:left; margin-right:22px; display:block;}
+.lastcon ul li a{ width:201px; height:auto; float:left; display:block;}
+.lastcon ul li a img{ width:201px; height:80px; display:block; float:left;}
+.lastcon ul li a span{ background:url(/images/chinaGuide/last.png) repeat-x; line-height:27px; height:27px; color:#3a3a3a; font-weight:bold; text-align:center; display:block; width:100%; float:left; cursor:pointer;}
+.lastcon ul li a:hover span{ color:#ff0000; text-decoration:underline;}
+
+#guide-right{ width:270px; height:auto; float:right;}
+.right1,.right2,.right3,.right4,.right5,.right6{ width:100%; height:auto; float:left;}
+.right1 h2,.right3 h2,.right5 h2,.right6 h2{ width:255px; height:34px; line-height:34px; font-size:15px; color:#492e0e; padding-left:15px; background:url(/images/chinaGuide/bg.png) no-repeat 0px -112px; float:left; display:block;}
+.right1 h2 a{ color:#492e0e;}
+.right1 h2 a:hover{ color:#ff0000; text-decoration:underline;}
+.right1 ul{ width:238px; background:url(/images/chinaGuide/ul.png) #f8f8f8 right bottom no-repeat; height:auto; padding:3px 15px 15px 15px; float:left; border:1px solid #cacaca; border-bottom:none;}
+.right1 ul.ulnewback{ background:#f8f8f8;}
+.right1 ul li{ background:url(/images/chinaGuide/bg.png) no-repeat -582px -126px; padding:6px 0px 6px 15px; width:223px; height:auto; float:left; display:block; border-bottom:1px dashed #c5c5c5;}
+.right1 ul li.desc{ background:none; padding:2px 0px; width:100%; line-height:18px; border-bottom:none;}
+.right1 ul li a{ color:#686868;}
+.right1 ul li.more{ background:none;}
+.right1 ul li.more a{ color:#c15600;}
+.right1 ul li a:hover,.right1 ul li.more a:hover{ color:#ff0000; text-decoration:underline;}
+.right1 .search{width:238px; height:auto; padding:0px 15px 5px 15px; float:left; border:1px solid #cacaca; border-bottom:none; background:#f8f8f8; border-top:none;}
+.right1 .search input{ border:1px solid #c2c2c2; width:158px; float:left; line-height:22px; padding:3px 0px;}
+.right1 .search span{ width:67px; height:22px; float:right; display:block;}
+
+.right1 ul.two{ width:238px; background:#f8f8f8; height:auto; padding:3px 15px 0px 15px; float:left; border:1px solid #cacaca; border-bottom:none;}
+.right1 ul.two li{ background:none; padding:4px 9px 4px 0px; width:70px; height:auto; float:left; display:block; border-bottom:none;}
+.right1 ul.two li b{ width:100%; height:83px; text-align:center; float:left; display:block;}
+.right1 ul.two li b img{ height:83px;}
+.right1 ul.two li span{ color:#686868; text-align:center; float:left; display:block; width:100%; line-height:20px; cursor:pointer;}
+.right1 ul.two li a{ width:100%; height:auto; float:left;}
+.right1 ul.two li a:hover span{ color:#ff0000; text-decoration:underline;}
+
+
+.right1 ul.three{ width:238px; background:#f8f8f8; height:auto; padding:3px 15px 10px 15px; float:left; border:1px solid #cacaca; border-bottom:none;}
+.right1 ul.three li{ background:url(/images/chinaGuide/bg.png) no-repeat -582px -126px; padding:6px 4px 6px 15px; width:100px; height:auto; float:left; display:block; border-bottom:1px dashed #c5c5c5;}
+.right1 ul.three li.more{ width:223px; background:none;}
+.right1 ul.three li a{ width:100%; height:auto; float:left;}
+.right1 ul.three li a:hover span{ color:#ff0000; text-decoration:underline;}
+
+.rightbottom{ width:100%; height:9px; float:left; background:url(/images/chinaGuide/bg.png) no-repeat 0px -148px;}
+.right2{ background:url(/images/chinaGuide/bg.png) no-repeat 0px -158px; padding-top:8px; margin-top:25px;}
+.list{ width:253px; background:#f8f8f8; padding:0px 7px 0px 8px; border:1px solid #cacaca; border-bottom:none; border-top:none; overflow:hidden;}
+.list h2{ background:url(/images/chinaGuide/bg.png) no-repeat -274px -112px; line-height:29px; height:29px; text-align:center; font-size:14px; color:#492e0e; float:left; display:block; width:100%; margin-bottom:3px;}
+.list ul.top5{ width:241px; height:auto; float:left; padding:5px 6px;}
+.list ul.top5 li{ padding:5px 0px; border-bottom:1px dashed #959595; height:auto; float:left; display:block; width:100%;}
+.list ul.top5 li.pic{ width:237px; height:45px; padding:1px; background:#fff; border:1px solid #dbdbdb; position:relative;}
+.list ul.top5 li.pic a{ position:absolute; bottom:0px; left:1px; display:block; width:232px; background:url(/images/chinaGuide/span.png) repeat-x; height:18px; padding-left:5px; color:#212121; font-size:11px; line-height:18px;}
+.list ul.top5 li.pic img{ width:237px; height:45px;}
+.list ul.top5 li a{ color:#535353; font-size:11px; display:block;}
+.list ul.top5 li a span{ float:left; margin-right:8px; display:block; cursor:pointer; width:14px; height:15px; background:url(/images/chinaGuide/bg.png) no-repeat -624px -417px; color:#fff; font-size:8px; text-align:center; line-height:15px;}
+.list ul.top5 li a b{ font-weight:normal; max-width:215px; float:left; display:block; cursor:pointer;}
+.list ul.top5 li a:hover{ color:#ff0000; text-decoration:underline;}
+.list h3{ display:block; line-height:26px; border-bottom:2px solid #e1dfe0; margin-top:5px; font-size:15px; color:#2e2e2e; width:241px; height:auto; float:left; padding:5px 6px;}
+.list ul.things{ width:241px; height:auto; float:left; padding:5px 6px 0px 6px;}
+.list ul.things li{ width:31%; height:auto; float:left; display:block; padding:4px 5px 4px 0px; white-space:nowrap;}
+.list ul.things li a{ color:#535353; text-decoration:underline;}
+.list ul.things li a:hover{ color:#ff0000; text-decoration:none;}
+.list ul.things li.more{ margin-top:3px; width:213px; text-align:right;}
+.right3{ margin-top:25px;}
+.right3 a{width:253px; background:#f8f8f8; padding:7px 7px 0px 8px; border:1px solid #cacaca; border-bottom:none; overflow:hidden; display:block; height:144px; float:left;}
+.right3 a img{ width:253px; height:144px;}
+.right4{ margin-top:25px; height:136px;}
+.right5{ margin-top:25px;}
+.right5 span{ width:244px; background:#f8f8f8; height:auto; padding:3px 12px 15px 12px; float:left; border:1px solid #cacaca; border-bottom:none; display:block;}
+
+.city-menu{ width:100%; height:auto; float:left; margin-top:12px;}
+.city-menu ul{ width:100%; height:auto; float:left;}
+.city-menu ul li{ background:#eaeaea; border:1px solid #d5d6d8; padding:4px; margin-right:9px; float:left; cursor:pointer; width:89px;}
+.city-menu ul li img{ width:89px; height:73px; display:block; float:left;}
+.city-menu ul li span{ width:89px; height:auto; float:left; display:block; line-height:22px; text-align:center; text-decoration:none; color:#343434; font-weight:bold;}
+.city-menu ul li:hover,.city-menu ul li.dq{ background:#c50303; border:1px solid #c8995d; }
+.city-menu ul li:hover span,.city-menu ul li.dq span{ color:#fff;text-decoration:underline}
+.city1{ width:100%; height:auto; float:left; margin-top:25px;}
+.city1-left{ width:229px;  height:auto; float:left; height:213px;}
+.city1-left a{ border:3px solid #cccccc; height:207px; width:223px; float:left; display:block;}
+.city1-left a:hover{ border:3px solid #eec495;}
+.city1-right{ width:400px; height:auto; float:right;}
+.city1-right h2{ font-size:15px; color:#c15600; line-height:22px; display:block; width:100%;}
+.city1-right span{ width:100%; height:auto; float:left; line-height:18px; color:#5e5e5e; display:block; padding-top:3px;}
+.city1-right span a{ display:block; color:#c15600; text-decoration:underline;}
+.city1-right span a:hover{ text-decoration:none; color:#ff0000;}
+.city1-right ul{ width:100%; height:auto; float:left; padding-top:5px;}
+.city1-right ul li{ background:url(/images/chinaGuide/bg.png) no-repeat -586px -153px; padding:3px 10px 3px 13px; width:177px; float:left; display:block;}
+.city1-right ul li a{ color:#5e5e5e;}
+.city1-right ul li a:hover{ text-decoration:underline; color:#ff0000;}
+.destinations{ width:639px; height:auto; float:left; margin-top:25px;}
+.destinations h2,.city-maps h2{ width:627px; height:38px; line-height:38px; padding-left:12px; background:url(/images/chinaGuide/bg.png) no-repeat 0px -182px; font-size:18px; color:#492e0e;}
+.leftters{ width:100%; height:auto; float:left; margin-top:6px;}
+.leftters ul{ width:24%; height:auto; float:left; padding-right:5px;}
+.leftters ul li{ width:100%; height:auto; float:left; padding:5px 0px;}
+.leftters ul li.big span{ background:#f1d0aa; color:#313131; font-size:14px; line-height:20px; width:22px; display:block; text-align:center;}
+.leftters ul li.hot{background: url(/images/newhomepage/hot.gif) no-repeat 95px center;}
+.leftters ul li.hot a{ font-weight:bold; color:#16649e;}
+.leftters ul li a{ color:#2487d2; text-decoration:underline;}
+.leftters ul li a:hover{ text-decoration:none; color:#000;}
+.leftters ul.two li.big{ padding:5px 0px;}
+.leftters ul.two li{ padding:3px 0px 4px 0px;}
+.leftters ul.three li.big{ padding:5px 0px;}
+.leftters ul.three li{ padding:4px 0px;}
+.city-maps{ width:100%; height:auto; float:left; margin-top:25px;}
+.china-tours{ width:639px; height:auto; float:left; margin-top:25px;}
+.china-tours a{ width:100%; height:120px; display:block;}
+
+
+.picture{ width:344px; height:197px; float:left; margin-top:8px;}
+.picture img{ width:344px; height:197px;}
+.locatiion{ width:285px; height:auto; float:right;}
+.locatiion h3{ width:100%; height:auto; float:left; display:block; color:#0b0b0b; font-size:14px; line-height:26px;}
+.attractions{ width:100%; height:auto; float:left; margin-top:20px;}
+.attractions h2{ font-size:18px; color:#0b0b0b; line-height:26px; width:100%; height:auto; display:block; float:left;}
+.attractions ul{ width:100%; height:auto; float:left;}
+.attractions ul li{ width:154px; height:auto; float:left; margin-right:8px; display:block; padding:10px 0px;}
+.attractions ul li a{ display:block; width:100%; height:auto; float:left; color:#5e5e5e; font-weight:bold;}
+.attractions ul li a:hover span{ text-decoration:none; color:#ff0000;}
+.attractions ul li img{ width:154px; height:97px; float:left; display:block;}
+.attractions ul li span{ width:100%; height:auto; float:left; text-decoration:underline; text-align:center; display:block; cursor:pointer; line-height:24px;}
+.mores{ width:63px; height:29px; float:right; padding-right:10px;}
+.trans-cont{ width:617px; height:auto; float:left; border:1px solid #d5d6d8; border-top:none; border-bottom:none; background:url(/images/chinaGuide/culture.png) #e7e6e6 left top repeat-x; padding:0px 11px 0px 18px;}
+.trans-cont h2{font-size:18px; color:#c15600; line-height:26px; width:100%; height:auto; float:left; display:block;}
+.trans-left{ width:223px; height:163px; float:left; margin-top:10px;}
+.trans-right{ width:380px;  height:auto; float:right; line-height:20px;}
+.maps-cont{ width:631px; height:auto; float:left; border:1px solid #d5d6d8; border-top:none; border-bottom:none; background:url(/images/chinaGuide/culture.png) #e7e6e6 left top repeat-x; padding:0px 0px 0px 15px;}
+.maps-cont h2{ font-size:18px; color:#c15600; line-height:26px; width:620px; height:auto; float:left; display:block; padding:0px 14px 0px 5px;}
+.maps-cont h2 strong{ float:left;}
+.maps-cont h2 a{ float:right; color:#c15600; text-decoration:underline; font-size:11px; font-weight:normal;}
+.maps-cont h2 a:hover{ text-decoration:none; color:#000;}
+.maps-cont ul{ width:100%; height:auto; float:left; padding-top:6px;}
+.maps-cont ul li{ width:196px; height:auto; float:left; padding:0px 5px;}
+.maps-cont ul li a{ display:block; float:left; width:196px; height:auto; color:#565656;}
+.maps-cont ul li a img{ width:196px; height:144px; float:left; display:block;}
+.maps-cont ul li a span{ text-decoration:underline; text-align:center; line-height:24px; display:block; width:100%;}
+.maps-cont ul li a:hover span{ text-decoration:none; color:#000;}
+.recommend{ width:100%; height:auto; float:left; margin-top:25px;}
+.recommend h2{ width:100%; height:auto; float:left; font-size:18px; color:#c15600; line-height:26px; display:block; margin-bottom:4px;}
+.recommend ul{ width:100%; height:auto; float:left;}
+.recommend ul li{ width:636px; height:auto; float:left; padding:5px 0px 5px 12px; border-bottom:1px dashed #999999; background:url(/images/chinaGuide/bg.png) no-repeat -634px -220px;}
+.recommend ul li a{ color:#5e5e5e;}
+.recommend ul li a:hover{ color:#000; text-decoration:underline;}
+
+.banner1{ width:100%; height:275px; float:left; padding-bottom:1px; border-bottom:1px solid #bababa; margin-bottom:10px;}
+.banner1 a{ float:left; padding-right:1px;}
+.culture1{ width:100%; height:auto; float:left;}
+.culture1 ul{ width:300px; height:auto; float:left; margin-top:15px; margin-right:14px;}
+.culture1 ul li{ width:100%; height:auto; float:left; display:block; color:#5e5e5e; line-height:18px; padding:3px 0px;}
+.culture1 ul li.title{ font-size:18px; color:#e46d10; line-height:20px;}
+.culture1 ul li.title a{ color:#e46d10;}
+.culture1 ul li.title a:hover{ color:#000; text-decoration:underline;}
+.culture1 ul li.desc a{ width:121px; height:auto; display:block; float:left; margin-right:8px;}
+.culture1 ul li.desc img{ width:121px; height:auto; display:block;}
+.culture1 ul li.desc span{ width:170px; height:auto; float:right; display:block;}
+.culture1 ul li.desc span a{ height:auto; width:160px; color:#5e5e5e; margin:0px; background:url(/images/chinaGuide/bg.png) no-repeat -634px -222px; padding-left:10px; display:block;}
+.culture1 ul li.desc span a:hover{ text-decoration:underline; color:#ff0000;}
+.history{ width:186px; height:86px; float:left; background:url(/images/chinaGuide/bg.png) no-repeat 0px -252px; padding:14px 13px 11px 449px; margin-top:25px;}
+.history a{ width:186px; height:86px; display:block;}
+.history a img{ width:186px; height:64px; float:left; display:block;}
+.history a span{ width:100%; height:22px; text-align:center; float:left; background:#e1e1e1; color:#000; cursor:pointer; line-height:22px; display:block;}
+.history a:hover span{ color:#ff0000;}
+.last1{ width:100%; height:auto; float:left; margin-top:25px;}
+.last-left{ width:276px; height:auto; float:left;}
+.last-left ul{ width:276px; height:auto; float:left; padding-bottom:25px;}
+.last-left ul li{ width:100%; height:auto; float:left; display:block; color:#5e5e5e; line-height:18px; padding:3px 0px;}
+.last-left ul li.title{ font-size:18px; color:#e46d10; line-height:20px;}
+.last-left ul li.title a{ color:#e46d10;}
+.last-left ul li.title a:hover{ color:#000; text-decoration:underline;}
+.last-left ul li.desc span a{ color: #5E5E5E;height: auto;margin: 0;width: 120px; background:url(/images/chinaGuide/bg.png) no-repeat -634px -222px; padding-left:10px;}
+.last-left ul li.desc span a:hover{ color: #FF0000;text-decoration:underline;}
+.last-left ul li.desc a{ width:110px; height:101px; display:block; float:left; margin-right:20px;}
+.last-left ul li.desc img{ width:110px; height:101px; display:block;}
+.last-left ul li span{ width:130px; height:auto; float:left; display:block;}
+.last-right{ width:344px; height:auto; float:right;}
+.last-right ul{ width:320px; height:108px; padding:5px 8px 12px 16px; background:url(/images/chinaGuide/bg.png) no-repeat 0px -371px; margin-bottom:25px; float:left;}
+.last-right ul li{ width:100%; height:auto; float:left; display:block; color:#5e5e5e; line-height:16px; font-size:11px;}
+.last-right ul li.title{ font-size:14px; color:#000; line-height:20px; font-weight:bold; padding-bottom:5px;}
+.last-right ul li.title a{ color:#000;}
+.last-right ul li.title a:hover{ color:#ff0000; text-decoration:underline;}
+.last-right ul li.desc a{ width:94px; height:83px; display:block; float:left; margin-right:8px;}
+.last-right ul li.desc img{ width:94px; height:83px; display:block;}
+.last-right ul li span{ width:215px; height:auto; float:right; display:block;}
+.right6{ margin-top:25px;}
+.right6 ul{ width:250px; background:#f8f8f8; height:auto; padding:0px 9px 4px 9px; float:left; border:1px solid #cacaca; border-bottom:none;}
+.right6 ul li{ width:100%; height:auto; float:left; display:block; padding:3px 0px;}
+.right6 ul li a{ width:100%; height:auto; float:left; display:block;}
+.right6 ul li span{ width:100%; height:auto; float:left; display:block; color:#343434; font-size:13px; font-weight:bold; text-align:center; line-height:30px; display:block; cursor:pointer;}
+.right6 ul li img{ width:250px; height:83px; float:left; display:block;}
+.right6 ul li a:hover span{ color:#ff0000; text-decoration:underline;}
+
+
+
+.arts{ width:100%; height:auto; float:left;}
+.arts ul{ width:100%; height:auto; float:left; margin:10px 0px 25px 0px;}
+.arts ul li.pic{ width:150px; height:199px; float:left; display:block; margin-right:10px;}
+.arts ul.two li.pic{ width:150px; height:199px; float:right; display:block;}
+.arts ul li ol{ width:475px; height:auto; float:left;}
+.arts ul.two li ol{ width:475px; height:auto; float:left;}
+.arts ul li ol li.title{ font-size:14px; color:#c35600; font-weight:bold; padding-top:0px; line-height:24px;}
+.arts ul li ol li{ width:100%; height:auto; float:left; color:#5e5e5e; line-height:22px; padding:2px 0px;}
+.arts ul li ol li a{background:url(/images/chinaGuide/bg.png) no-repeat -634px -220px; padding-left:12px; color:#5e5e5e; width:463px; display:block;}
+.arts ul li ol li a:hover{ color:#000; text-decoration:underline;}
+
+.festival{ width:100%; height:auto; float:left; margin-top:6px;}
+.fest-left{ width:419px; height:272px; float:left; margin-right:17px;}
+.fest-right{ width:100%; height:auto; float:left; margin-bottom:8px;}
+.fest-right ul{ width:100%; height:auto; float:left;}
+.fest-right ul li{ /* width:625px; */ width:29%; height:auto; float:left; display:block; cursor:pointer; padding:3px 0px 3px 23px; background:url(/images/chinaGuide/bg.png) no-repeat -626px -380px;}
+.fest-right ul li img{ width:201px; height:101px; display:block; float:left;}
+.fest-right ul li span{ color:#5e5e5e; line-height:14px; display:block; width:100%; float:left; padding-bottom:4px; height:auto;}
+
+.things{ width:100%; height:auto; float:left;}
+.list1{ width:200px; height:auto; float:left; margin-right:19px;}
+.list1 ul{ width:100%; height:auto; float:left; margin-bottom:15px;}
+.list1 ul li{ width:100%; height:auto; float:left; display:block; line-height:18px; color:#5d5d5d; padding:3px 0px;}
+.list1 ul li.pic img{ width:200px;}
+.list1 ul li.title a{ color:#c25500; font-weight:bold; line-height:16px;}
+.list1 ul li.desc a{ color:#c25500; text-decoration:underline;}
+.list1 ul li a:hover{ color:#000;}
+.things-more{ width:100%; height:auto; float:left; margin-top:20px; border-top:1px solid #ccc; padding:10px 0px; text-align:center;}
+.things-more a{ width:63px; height:29px; display:block; margin:0px auto;}
+.last2{ width:100%; height:90px; float:left; margin-top:10px;}
+.last2 a{ width:638px; height:90px; float:left; display:block;}
+
+#attraction{ width:100%; height:auto; float:left;}
+.tobanner{ width:940px; height:auto; float:left;}
+.tobanner-top{background:url(/images/newhomepage/tobanner-top.jpg) no-repeat  left center; float:left; height:35px; line-height:35px; padding-left:15px; padding-right:10px; width:915px;}
+.tobanner-top span{ background:url(/images/newhomepage/span.jpg) no-repeat right center; display:block; float:left; font-size:14px; font-weight:bold; height:auto; line-height:35px; padding-right:15px; width:auto; color:#2e2d2d;}
+.tobanner-cont{  background:url(/images/chinaGuide/tobanner.jpg) repeat-x #fff;  border: 1px solid #CBC1BA; float:left; height:auto; padding:4px 14px 15px; width:910px;}
+.tobanner-cont h2{ width:100%; height:auto; float:left; display:block; border-bottom:1px dashed #cccccc; line-height:26px; font-size:12px; font-weight:bold; color:#2f2f2f;}
+.tobanner-cont ul{ width:100%; height:auto; float:left; border-bottom:1px dashed #cccccc; display:block; padding:5px 0px;}
+.tobanner-cont ul.two{ padding:5px 0px;}
+.tobanner-cont ul li.letter{ width:35px; height:auto; float:left; display:block; color:#ff7800; font-weight:bold; padding:3px 0px;}
+.tobanner-cont ul.two li{width:auto; float:left; height:auto; margin-right:20px; padding:3px 0px; white-space:nowrap;}
+.tobanner-cont ul.two li a{color:#4e4e4e;}
+.tobanner-cont ul li ol{ width:870px; height:auto; float:right;}
+.tobanner-cont ul li ol li{ width:auto; float:left; height:auto; margin-right:15px; padding:3px 0px;}
+.tobanner-cont ul li ol li a{ color:#4e4e4e;}
+.tobanner-cont ul li ol li.hot a{ font-weight:bold;}
+.tobanner-cont ul li ol li a:hover,.tobanner-cont ul.two li a:hover{ color:#ff0000; text-decoration:underline;}
+.attract-search{ width:100%; height:auto; float:left; margin-top:8px; height:22px;}
+.attract-search input{ border:1px solid #bcbcbc; width:205px; height:20px; line-height:20px; float:left; margin-right:10px;}
+.attract-search span{ color:#ff7800; font-weight:bold; text-decoration:underline; line-height:22px; float:left; width:155px;}
+.attract-hot{ width:904px; height:auto; float:left; background:#fff; border:1px solid #c5c5c5; padding:4px 17px 20px 17px; margin-top:20px;}
+.attract-hot h2{ font-size:20px; color:#515151; width:100%; height:auto; float:left; display:block; line-height:28px; margin:4px 0px;}
+.banner2{ width:100%; height:372px; float:left; padding-bottom:5px;}
+.banner2 .one{ width:367px; height:372px; float:left;}
+.banner2 a{ float:left;}
+.banner2 .two{ width:208px; height:372px; float:left;}
+.banner2 .three{ width:164px; height:372px; float:left;}
+.banner2 .four{ width:165px; height:372px; float:left;}
+.best{ width:100%; height:auto; float:left;}
+.best ul{ width:437px; height:auto; float:left; margin:10px 15px 14px 0px;}
+.best ul li.pic{ width:128px; height:95px; float:left; display:block;}
+.best ul li.pic img{ width:128px; height:95px; display:block;}
+.best ul li.desc{ width:302px; height:auto; float:right; color:#7a7878; line-height:16px;}
+.best ul li.desc a{ display:block; color:#373737; font-weight:bold; line-height:14px; padding-bottom:3px;}
+.best ul li.desc a:hover{ color:#ff0000; text-decoration:underline;}
+.best ul li.desc a.detail{ color:#be3d3d; text-decoration:underline; display:inline; font-weight:normal;}
+.best ul li.desc a.detail:hover{ text-decoration:none; color:#000;}
+
+.last3{ width:906px; height:90px; float:left; margin-top:20px;}
+#map{background: url(/images/chinaGuide/map.gif) no-repeat left top; float: left; height: 447px; width: 552px;}
+#map h3{display: block; font-weight: normal; position: absolute; font-size:12px;}
+.mapl a{ background: url(/images/chinaGuide/maph1.gif) no-repeat left center; color: #000000; display: block; text-decoration: none; padding-left:20px;}
+.mapr a{ color: #000000; display: block; text-decoration: none; padding-right: 20px; background: url(/images/chinaGuide/maph1.gif) no-repeat right center;}
+.mapl a:hover{ background: url(/images/chinaGuide/maph2.gif) no-repeat left center; color: #FF0000; display: block; padding-left: 20px;}
+.mapr a:hover{ background: url(/images/chinaGuide/maph2.gif) no-repeat right center; color: #FF0000; display: block; padding-right: 20px;}
+
+.thingslist{ width:100%; height:auto; float:left;}
+.thingslist ul{ width:100%; height:auto; float:left;}
+.thingslist ul li{ width:50%; height:auto; float:left; padding:3px 0px;}
+.thingslist ul li a{ color:#2487D2; line-height:18px;}
+.thingslist ul li a:hover{ color:#000; text-decoration:underline;}
+
+.list-things{ width:646px; height:auto; float:left; border: 1px solid #aaa; margin-top:10px;}
+.list-title{ width:100%; height:auto; float:left; background:#D3D3D3; line-height:38px; height:38px;}
+.list-title span.number{ width:40px; height:auto; float:left; display:block; padding-left:5px; color:#000;}
+.list-title span.title{ width:601px; height:auto; float:left; display:block;}
+.list-title span.title a{ font-weight:bold; color:#2487D2;}
+.items ul{ width:100%; height:auto; float:left;}
+.items ul li{ padding:8px 5px; height:auto; float:left; display:block;}
+.items ul li span.number{ width:40px; height:auto; float:left; display:block; color:#444444;}
+.items ul li span.title{ width:596px; height:auto; float:left; display:block;}
+.items ul li span.title a{color:#2487D2;}
+.items ul li span.title a:hover{ color:#000; text-decoration:underline;}
+.pager{ width:100%; height:auto; float:left;}
+.pager ul#yw1{clear:both; color:#3B5468; margin: 10px auto; overflow: hidden; padding: 10px 0; text-align: center;}
+.pager ul#yw1 li { display:inline; height:30px; margin:10px 2px; padding: 0;}
+.pager ul#yw1 li a{background: url(/images/paging.jpg) repeat-x; border-left: 1px solid #DADADA; border-right: 1px solid #DADADA; display: inline-block; padding: 4px 6px; color: #8A8A8A; line-height:22px;}
+.pager ul#yw1 li a:hover,.pager ul#yw1 li.selected a{background: url(/images/paging-hover.jpg) repeat-x ; border-left: 1px solid #5C5C5C; border-right: 1px solid #5C5C5C; color: #FFFFFF;}
+
+
+#guidenew{width:920px; height:auto; overflow:hidden; -webkit-text-size-adjust:none; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#666666; padding: 9px 21px 12px 20px;}
+#menu-tours {background:#D6D6D6; color:#444444; float:left; height:26px; line-height:26px; margin-bottom:10px; padding-left:10px; width:910px;}
+#menu-tours a{background: url(/templates/jv_news_ii//images/arrow.png) no-repeat right center; color:#2487D2; padding-right:15px;}
+#menu-tours a:hover{ color:#000000; text-decoration:underline;}
+#guide-leftnew{ width:611px; height:auto; float:left; border:1px solid #cccccc; background:#ffffff; overflow:hidden; padding:10px 10px 20px 10px;}
+.textnew{ width:100%; height:auto; float:left; line-height:18px;}
+.textnew a{ color:#2487D2;}
+.textnew h2{ color:#0b0b0b; font-size:18px; line-height:26px; display:block; width:100%;}
+.listcity{ width:100%; height:auto; float:left;}
+.listcity ul{ width:100%; height:auto; float:left;}
+.listcity ul li{ width:auto; height:auto; float:left; background:url(/images/chinaGuide/libg.jpg) no-repeat left center; padding:4px 50px 4px 12px; display:inline-block;}
+.listcity ul li a{ color:#8c4600; font-size:14px;}
+.listcity ul li a:hover{ color:#000;}
+.attract-lilst{ width:100%; height:auto; float:left; margin:15px 0px;}
+.titlenew{ width:573px; height:32px; float:left; line-height:32px; color:#000; font-size:16px; padding-left:38px; background:url(/images/chinaGuide/title.jpg) no-repeat left center; font-weight:bold;}
+.pic-desc{ width:100%; height:auto; float:left; margin-top:10px;}
+.pic-desc ul{ width:100%; height:auto; float:left;}
+.pic-desc ul li{ width:430px; height:auto; float:right; display:block; line-height:18px;}
+.pic-desc ul li.att-pic{ width:159px; height:117px; float:left; border:1px solid #ccc; padding:4px;}
+.pic-desc ul li.att-pic img{ width:159px; height:117px;}
+.attract-list{ width:100%; height:auto; float:left; margin-top:3px;}
+.attract-list ul{width:100%; height:auto; float:left;}
+.attract-list ul li{ width:185px; height:auto; padding:3px 5px 3px 12px; float:left; display:block; background:url(/images/chinaGuide/libg1.jpg) no-repeat 0px 6px; line-height:14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.attract-list ul li a{ color:#2487D2;}
+.attract-list ul li a:hover{ color:#8c4600;}
+
+

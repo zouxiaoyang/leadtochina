@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+body{ width:100%; height:100%; margin:0px; padding:0px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px;}
+img{ border:none;}
+*{ margin:0px; padding:0px;}
+li{ list-style:none;}
+.clear{ clear:both; width:0px; height:0px; font-size:0px; line-height:0px;}
+a{ text-decoration:none;}
+#top-button {bottom: 0; cursor: pointer; float: right; height: 88px; position: fixed; right: 50px; width: 47px;}
+
+
+#adoption{ width:920px; height:auto; margin:0px auto; background:#eeeeee; padding:10px 21px 10px 20px; overflow:hidden; font-size:12px; color:#333333; font-family:Verdana, Arial, Helvetica, sans-serif;}
+#menu-tours {background:#D6D6D6; color:#444444; float:left; height:26px; line-height:26px; padding-left:10px; width:910px;}
+#menu-tours a{background: url(/templates/jv_news_ii//images/arrow.png) no-repeat right center; color:#2487D2; padding-right:15px;}
+#menu-tours a:hover{ color:#000000; text-decoration:underline;}
+#banner{ width:100%; height:auto; float:left; margin-top:15px;}
+.brief{ width:100%; height:auto; float:left; margin-top:20px;}
+.briefleft{ width:717px; height:auto; float:left; background:#dddddd; padding:8px 10px;}
+.textleft{ width:525px; height:auto; float:left; color:#525252; line-height:18px;}
+.textleft a{ color:#8c4600; text-decoration:underline;}
+.textleft a:hover{ color:#ff0000; text-decoration:none;}
+.textleft h2{ color:#8c4600; font-size:16px; line-height:24px; display:block;}
+.textleft span{ display:block; color:#000000; margin-top:10px; cursor:pointer;}
+.callbutton{ width:178px; height:auto; float:right;}
+.briefright{ width:143px; height:auto; float:right; background:#eeeeee; border:5px solid #d2d3d4; padding:8px 5px;}
+.briefright ul{ width:100%; height:auto; float:left;}
+.briefright ul li.title{ color:#8c4600; font-size:14px; font-weight:bold; padding:0px 0px 4px 0px;}
+.briefright ul li{ padding:8px 0px;}
+.briefright ul li a{ color:#444; line-height:14px;}
+.briefright ul li a:hover{ color:#ff0000; text-decoration:underline;}
+.package{ width:896px; height:auto; float:left; border:1px solid #d0d0d0; padding:10px 11px; margin-top:20px;}
+.packagetitle{ width:100%; height:auto; float:left; font-size:20px; color:#8c4600; line-height:28px; padding:5px 0px 8px 0px; font-weight:bold;}
+.packagepic{ width:303px; height:auto; float:left;}
+.packageright{ width:575px; height:auto; float:right;}
+.packageright a{ display:block; width:100%; height:auto; float:left; color:#151414; font-size:18px; font-weight:bold;}
+.packageright a:hover{ text-decoration:underline;}
+.packageright span{ width:551px; height:auto; float:left; display:block; line-height:16px; padding:4px 0px 4px 14px; background:url(/images/adoption/city.png) left center no-repeat; font-size:14px; color:#666666; font-weight:bold;}
+.recommend{ width:100%; height:auto; float:left; border-top:1px dashed #bababa; margin-top:10px; padding-top:5px;}
+.recommend h2{ font-size:18px; color:#5a5959; display:block; float:left; width:100%; line-height:24px;}
+.recommend ul{ width:555px; height:auto; float:right; padding:0px 0px 5px 0px;}
+.recommend ul li{ color:#666666; padding:3px 0px; list-style-type:decimal;}
+
+.welfare{ width:100%; height:auto; float:left; margin-top:20px;}
+.walfare-title{ width:100%; height:36px; font-size:18px; text-align:center; line-height:36px; background:#8c4600; color:#fff; float:left;}
+.welfare table{ background:url(/images/adoption/welfare.jpg) #eeeeee left bottom repeat-x; border-left:1px solid #cfcfcf; padding-bottom:3px; height:auto; overflow:hidden;}
+.welfare table tr.welfaretop{ background:#f8e8d6;}
+.welfare table tr td{ border-right:1px solid #cfcfcf; border-top:1px solid #cfcfcf; padding:15px 10px; color:#333333; line-height:20px; vertical-align:top;}
+.welfare table tr.welfaretop td{ color:#000; line-height:16px; text-align:center; font-weight:bold; vertical-align:middle;}
+
+.questions{ width:100%; height:auto; float:left; margin-top:20px;}
+.ques-menu{ width:100%; height:42px; float:left; background:#e6e6e6;}
+.ques-menu ul{ width:100%; height:auto; float:left;}
+.ques-menu ul li{ width:190px; line-height:42px; float:left; font-size:15px; display:block; color:#212121; text-align:center; font-weight:bold; cursor:pointer; margin-right:3px;}
+.ques-menu ul li.dq,.ques-menu ul li:hover{ background:#fff; color:#8c4600;}
+.trip-questuon,.common-questuon{ width:890px; min-height:320px; float:left; background:#fff; padding:15px 10px 15px 20px; color:#333333; line-height:18px; position:relative;}
+.common-questuon{padding:5px 10px 15px 20px;}
+.tripleft{ width:100%; height:auto; float:left;}
+.answer{ width:100%; height:auto; float:left;}
+.answer ul{ width:100%; height:auto; float:left; margin-top:10px;}
+.answer ul.ff{ width:600px; min-height:305px; float:left; margin-top:10px;}
+.answer ul.ff li{ width:546px; height:auto; float:left; display:block; background:url(/images/citytours/hi.jpg) left top no-repeat; padding:0px 0px 5px 54px;}
+.answer ul li{ width:836px; height:auto; float:left; display:block; background:url(/images/citytours/hi.jpg) left top no-repeat; padding:0px 0px 5px 54px; color:#8c4600;}
+.answer ul li.advisor,.answer ul.ff li.advisor{background:url(/images/citytours/advisor.jpg) left top no-repeat; color:#333;}
+/* .answer ul li span{ color:#8c4600;}  */
+.pager{ color:#1C1A1B; float:left; height:auto; margin-top:20px; padding-bottom:20px; text-align:center; width:100%;}
+.pager ul{ width:100%; height:auto; float:left; text-align:center; padding:0px; border:none;}
+.pager ul li{ height:22px; display:inline; margin:0px 4px; background:none; float:none; padding:0px;}
+.pager ul a:link,.pager ul a:visited{ border:solid 1px #d18f2f; color:#0e509e;  padding:0px 6px; text-decoration:none; background:#fff; color:#d18f2f; display:inline-block; line-height:22px;}
+.pager ul .page a{font-weight:normal;}
+.pager ul a:hover{background:#d18f2f; color:#fff;}
+.pager ul .selected a{ background:#d18f2f; color:#fff;}
+.pager ul .hidden a{border:solid 1px #DEDEDE; color:#888888;}
+.pager ul .first,.pager ul .last{display:none;}
+.tripright{ width:270px; height:290px; float:right; background:#dddddd; padding:7px 0px 10px 0px; position:absolute; top:15px; right:10px;}
+.tripright h2{ width:100%; height:34px; background:#095ab7; color:#fff; font-size:16px; font-weight:normal; line-height:34px; text-align:center; display:block; float:left;}
+.tripright table{ width:250px; height:auto; margin:4px auto;}
+.tripright table tr td{ padding:5px 0px; color:#515151;}
+.tripright table tr td input{ border:1px solid #b5b5b5; width:168px; float:right;}
+.tripright table tr td span{ float:left;}
+.tripright table tr td textarea{ width:248px; height:90px; border:1px solid #b5b5b5;}
+
+#HomeLand{ width:100%; height:auto; float:left; margin-top:15px;}
+.HomeLandLeft{ width:666px; height:auto; float:left; padding:15px 7px; border:1px solid #d2d3d4; background:#fff; color:#666; line-height:18px;}
+.HomeLandLeft h2{ width:100%; height:auto; float:left; display:block; color:#8c4600; line-height:30px; font-size:20px;}
+.HomeLandLeft table{ width:100%; height:auto; float:left; padding-top:3px;}
+.HomeLandLeft table tr td{ padding:3px 0px; color:#7e7e7e; font-size:11px;}
+.HomeLandLeft table tr td input.button {background: url(/images/adoption/rate.jpg) left center no-repeat; width:38px; border:none; cursor: pointer; height: 19px;}
+.HomeLandLeft p img{ border:1px solid #e5e5e5; padding:4px; float:left; margin-right:10px; margin-top:5px;} 
+#customize{ width:100%; height:auto; float:left; margin-top:20px;}
+.HomeLandRight{ width:220px; height:auto; float:right;}
+.HomeLandList{ width:194px; height:auto; float:left;  background:#eeeeee; border:5px solid #d2d3d4; padding:8px;}
+.HomeLandList ul{ width:100%; height:auto; float:left;}
+.HomeLandList ul li.title{ color:#8c4600; font-size:14px; font-weight:bold; border:none;}
+.HomeLandList ul li{ padding:3px 0px; border-bottom:1px dashed #cacaca;}
+.HomeLandList ul li a{ color:#444; line-height:24px;}
+.HomeLandList ul li a:hover{ color:#ff0000; text-decoration:underline;}
+
+.tips{ width:100%; height:auto; float:left; margin-top:20px;}
+.tipstitle{ width:907px; height:auto; float:left; background: url(/images/adoption/title1.jpg) left center no-repeat; padding-left:13px; color:#fff; font-size:18px; height: 35px; line-height: 32px;}
+.tipstext{ width:908px; height:auto; float:left; padding:10px 5px; border:1px solid #d0d0d0; border-top:none; color:#666; line-height:18px;}
+.tipstext p{ background: url(/images/adoption/tipsli.jpg) 0px 7px no-repeat; padding-left:10px; padding-bottom:8px;}
+.tipstext p img{ width:222px; height:167px; display:block;}
+.tipstext span{ width:675px; height:auto; float:right; display:block;}
+
+.orp-address{ width:100%; height:auto; float:left; margin-top:20px;}
+.orp-address table{ border-left:1px solid #d0d0d0;  width:100%; height:auto;}
+.orp-address table tr td{border-bottom:1px solid #d0d0d0; border-right:1px solid #d0d0d0; color:#666; line-height:18px; padding:3px 10px; vertical-align:top;}
+.orp-address table tr td a{color:#0088CC;}
+.orp-address table tr td a:hover{ color:#444; text-decoration:underline;}
+.orp-address table tr:hover,.orp-address table tr.tbl_odd:hover{ background:#ddd;}
+.orp-address table tr.tblheader td{ font-size:14px; color:#111111; background:#ddd; text-align:center; font-weight:bold;}
+.orp-address table tr.tbl_odd td{ background:#fff;}
+.orp-address table tr td span{ color:#111; font-size:14px;}

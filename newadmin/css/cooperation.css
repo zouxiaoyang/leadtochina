@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0px; padding:0px;}
+.clear{ width:0px; height:0px; line-height:0px; font-size:0px; clear:both;}
+.background {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #333;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.cooper-banner{ width:920px; height:auto; margin:0px auto;}
+.setting {
+	background: #FFF;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	color: #333;
+	height: auto;
+	padding:10px 12px 20px 12px;
+	width:894px;
+	margin:0px auto;
+}
+.list{ width:853px; height:auto; float:left; background:url(/images/cooperation/one.jpg) #eeeeee left top no-repeat; padding:5px 5px 10px 36px;}
+.list h2{ line-height:24px; color:#8c4600; font-size:18px; font-weight:normal;}
+.number{ width:100%; height:auto; float:left; padding-bottom:25px; border-bottom:1px dashed #444444;}
+.Become {
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #8c4600;
+	padding-left: 15px;
+	margin-top:25px;
+}
+.box {
+	background-color: #eeeeee;
+	padding-top: 20px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	height: auto;
+}
+.box table tr td{ padding:5px 0px;}
+.box table tr td input{ height:20px;}
+.d {
+	background-color: #FFF;
+	background-image: url(/images/cooperation/cooperation_r2.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 6px;
+}
+.field {
+	border: 1px solid #999;
+	width: 305px;
+}
+.field2 {
+	border: 1px solid #999;
+	width: 238px;
+}
+.field3 {
+	border: 1px solid #999;
+	width: 750px;
+}
+
+#menu-tours {background:#D6D6D6; color:#444444; height:26px; line-height:26px; padding-left:10px; width:910px; margin:0px auto 10px auto;}
+#menu-tours a{background: url(/templates/jv_news_ii//images/arrow.png) no-repeat right center; color:#2487D2; padding-right:15px;}
+#menu-tours a:hover{ color:#000000; text-decoration:underline;}
+.setting a{ color:#8c4600; text-decoration:underline; display:block;}
+.setting a:hover{ color:#ff0000; text-decoration:none;}
+.setting strong{ display:block;}
+.setting span{ color:#d36e0a;}
+.setting p{ padding-bottom:5px;}

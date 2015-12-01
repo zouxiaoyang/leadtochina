@@ -1,0 +1,230 @@
+<?php Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl.'/css/shanghai.css'); ?>
+<style type="text/css">
+<!--
+#content{ width:926px; height:auto; padding:10px 21px 10px 14px;}
+-->
+</style>
+<!--  index1 start  -->
+<div id="index1">
+   <!--  menu-tours start  -->
+   <div id="menu-tours"><strong>You are here:</strong> <a href="/">Home</a> Beijing Shanghai Tours</div>
+   <!--  menu-tours end  -->
+   <div id="banner"><img src="/images/beijing_shanghai/banner.jpg" alt="" /></div> 
+</div>
+<!--  index1 end  -->
+
+<!--  index start  -->
+<div id="index">
+    <!--  left start  -->
+    <div id="left">
+        <!--  list start  -->
+        <div id="list">
+            <ul>
+               <li class="title" style="margin-top:0px;"><img src="/images/beijing_shanghai/title1.jpg" alt="" /></li>
+               <li><a href="#">Shanghai to Beijing Tours</a></li>
+               <li><a href="#">Beijing to Shanghai Tours</a></li>
+               <li><a href="#">Beijing &amp; Shanghais</a></li>
+               <li class="title"><img src="/images/beijing_shanghai/title2.jpg" alt="" /></li>
+               <li><a href="#">Beijing Private Tour</a></li>
+               <li><a href="#">Beijing Group Tour</a></li>
+               <li><a href="#">Great Wall Tour</a></li>
+               <li><a href="#">Beijing Xian Tour</a></li>
+               <li class="title"><img src="/images/beijing_shanghai/title3.jpg" alt="" /></li>
+               <li><a href="#">Shanghai Private Tour</a></li>
+               <li><a href="#">Shanghai Group Tour</a></li>
+               <li><a href="#">Shanghai Suzhou Hangzhou</a></li>
+               <li><a href="#">Shanghai Xi'an Tour</a></li>
+               <li class="title"><img src="/images/beijing_shanghai/title4.jpg" alt="" /></li>
+               <li><a href="#">China Tours from Beijing</a></li>
+               <li><a href="#">China Tours from Shanghai</a></li>
+               <li class="title"><img src="/images/beijing_shanghai/title5.jpg" alt="" /></li>
+               <li><a href="#">Flight Timetable</a></li>
+               <li><a href="#">Train Timetable</a></li>
+            </ul>
+        </div>
+        <!--  list end  -->
+        
+        <!--  search start  -->
+        <div id="search">
+             <h2><img src="/images/beijing_shanghai/searchh2.jpg" alt="" /></h2>
+             <div class="search-cont">
+             <ul>
+               <li><strong>Your Budget</strong> 
+                 <select id="choose_price" name="choose_price">
+                   <option value="0">Choose Price</option>
+                    <?php foreach(Yii::app()->params['price_list'] as $v):?>
+                    <option value="<?php echo $v;?>"><?php echo $v;?></option>
+                    <?php endforeach;?>                                     
+                  </select>
+              </li>
+           
+           <li><strong>Duration</strong>
+            <select id="choose_days" name="choose_days">
+            <?php foreach(Yii::app()->params['days_list'] as $v):?>
+              <option value="<?php echo $v;?>"><?php echo $v;?></option>
+            <?php endforeach;?>                                     
+            </select>
+           </li>
+        </ul>
+        <div class="clear"></div>
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+               <td><strong>Visiting</strong></td>
+            </tr>
+            <tr>
+               <td>
+                  <ol>
+                     <li><input type="checkbox" name="city2[]" value="Beijing"> Beijing</li>
+                     <li><input type="checkbox" name="city2[]" value="Xian"> Xian</li>
+                     <li><input type="checkbox" name="city2[]" value="Shanghai"> Shanghai</li>
+                     <li><input type="checkbox" name="city2[]" value="Guilin"> Guilin</li>
+                     <li><input type="checkbox" name="city2[]" value="Yangtze"> Yangtze</li>
+                     <li><input type="checkbox" name="city2[]" value="Tibet"> Tibet</li>
+                  </ol>
+               </td>
+            </tr>
+            <tr>
+               <td><span id="more_index">Select more cities</span></td>
+            </tr>
+            <tr>
+               <td style="padding:5px 0px 2px 8px;">
+                  <form name="toursearchpanelform" method="get" action="<?php echo Yii::app()->createUrl("chinaTours/searchList");?>">
+                      <input type="hidden" name="city" id="menu_city" value="" />
+                      <input type="hidden" name="days" id="menu_days" value="" />
+                      <input type="hidden" name="price" id="menu_price" value="" />
+                      <input type="image" src="/images/beijing_shanghai/search.jpg" />
+                      <a style="text-decoration:underline; color:#333; font-style:italic; float:right; padding-right:10px; line-height:24px;" href="/travel/advance-search">Advanced Search &raquo;</a>
+                  </form> 
+                  </td>
+            </tr>
+          </tbody>
+        </table>
+         </div>
+        </div>
+        <!--  search end  -->
+        <div class="sbottom"></div>
+        
+        <!--  trust start  -->
+        <div class="trust">
+            <ul>
+                <li><a href="/member-pata"><img src="/images/beijing_shanghai/PATA.jpg" alt="" /></a></li>
+                <li>We are the member of PATA</li>
+            </ul>
+            <div class="trip-cont">
+                <div id="TA_selfserveprop169" class="TA_selfserveprop">
+                   <ul id="xpmCaCVwY" class="TA_links igNYd08qa">
+                      <li id="UJrtaqi" class="9LkKK4I1">21 reviews of <a target="_blank" href="http://www.tripadvisor.com/Attraction_Review-g297403-d3824010-Reviews-Lead_to_China_tours-Hefei_Anhui.html">Lead to China tours</a> in Hefei</li>
+                   </ul>
+                 </div>
+                 <script src="http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=169&amp;locationId=3824010&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true"></script>
+            </div>
+        </div>
+        <!--  trust end  -->
+        
+        <!--  quick start  -->
+        <div class="quick">
+            <h2><img src="/images/beijing_shanghai/quick.jpg" alt="" /></h2>
+            <div class="feedback">
+         <table cellspacing="0" cellpadding="0" border="0">
+           <tbody><tr>
+             <td colspan="2">Your Questions:</td>
+           </tr>
+           <tr>
+             <td colspan="2">
+					<textarea style="height:90px; color:#cccccc; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; padding-left:8px; width:217px;" id="Message_message" name="Message[message]">Pls leave your tour needs here. For example, group size, destinations, tour date, hotel class and so on.</textarea>													</td>
+           </tr>
+           <tr>
+             <td colspan="2">Your Name:</td>
+           </tr>
+           <tr>
+             <td colspan="2">
+            <input type="text" maxlength="70" id="Message_username" name="Message[username]">                         </td>
+           </tr>
+           <tr>
+             <td colspan="2">Your E-mail:</td>
+           </tr>
+           <tr>
+             <td colspan="2">
+              <input type="text" id="Message_email" name="Message[email]">                           </td>
+           </tr>
+           <tr>
+             <td colspan="2">
+              <input type="text" id="Message_verifyCode" name="Message[verifyCode]" style="border:1px solid #b8b8b8; background:#fff; padding-left:5px; margin-top:3px;margin-right:8px; float:left; width:70px; height:22px; line-height:22px;" size="10">              <img src="/travel/cityTours/captcha?v=522fd8d7c5ef4" id="yw0" style="cursor:pointer;float:left;" title="µã»÷»»Í¼" alt="µã»÷»»Í¼">                           </td>
+           </tr>
+           <tr>
+             <td style="font-size:11px; padding-right:5px;">We will reply you within 1 working day.</td>
+             <td><input type="image" style="width:81px; border:none;" alt="Submit" src="/images/beijing_shanghai/submit.jpg" name=""></td>
+           </tr>
+         </tbody></table>
+     </div>
+        </div>
+        <!--  quick end  -->
+    </div>
+    <!--  left end  -->
+    
+    <!--  right start  -->
+    <div id="right">
+         <!--  text start  -->
+         <div class="text">
+           <div class="textleft">
+              <h2>Beijing Shanghai Tours</h2>
+              <p>Beijing and Shanghai are the top tourist cities. Beijing, China's capital city, is a vibrant mix of history and modernity. Much of China's most impressive historical heritage like the Great Wall and Forbidden City is highly recommended. Shanghai is the largest center of commerce and finance in mainland China. Top attractions are the Oriental Pearl TV Tower, Jinmao Tower, the Bund, Yuyuan Garden. We are offering you various Beijing tours from Shanghai, Shanghai tours from Beijing, Shanghai tours, Beijing tours, China tours with best price and reputed services.</p>
+            </div>
+            <div class="callbutton"><a href="/travel/quick_customize_tours?city=Shanghai"><img src="/images/beijing_shanghai/call.png"></a></div>
+        </div>
+        <!--  text end  -->
+        
+        <!--  toplist start  -->
+        <div class="toplist">
+            <h2><img src="/images/beijing_shanghai/toptitle.jpg" alt="" ></h2>
+            <div class="listone">
+               <ul>
+                  <li><a href="/travel/china-2-days-beijing-private-tours-fly-from-shanghai-351.html"><img src="/images/beijing_shanghai/top1.png" alt="" ></a></li>
+                  <li>
+                      <ol>
+                          <li><a href="/travel/china-2-days-beijing-private-tours-fly-from-shanghai-351.html">2-days Shanghai to Beijing by Air</a></li>
+                          <li>¡¤ Mutianyu Great Wall</li>
+                          <li>¡¤ Forbidden City</li>
+                          <li>¡¤ Kung Fu Show</li>
+                          <li>¡¤ 4 star hotels</li>
+                          <li class="price">From <strong>$325</strong> P/P</li>
+                      </ol>
+                  </li>
+               </ul>
+           </div>
+           <div class="listone">
+               <ul>
+                  <li><a href="/travel/china-4-days-shanghai-local-and-zhujiajiao-trip-156.html"><img src="/images/beijing_shanghai/top2.png" alt="" ></a></li>
+                  <li>
+                      <ol>
+                          <li><a href="/travel/china-4-days-shanghai-local-and-zhujiajiao-trip-156.html">4-Day Shanghai Zhujiajiao Tour</a></li>
+                          <li>¡¤ Zhujiajiao Water Town</li>
+                          <li>¡¤ Museum to expore ancient arts</li>
+                          <li>¡¤ The Bund &amp; Oriental Pearl TV Tower</li>
+                          <li class="price">From <strong>$365</strong> P/P</li>
+                      </ol>
+                  </li>
+               </ul>
+           </div>
+           <div class="listone" style="margin-right:0px;">
+               <ul>
+                  <li><a href="/travel/china-5-days-shanghai-suzhou-zhouzhuang-tour-124.html"><img src="/images/beijing_shanghai/top3.png" alt="" ></a></li>
+                  <li>
+                      <ol>
+                          <li><a href="/travel/china-5-days-shanghai-suzhou-zhouzhuang-tour-124.html">5-Day Shanghai Suzhou Tour</a></li>
+                          <li>¡¤ The Bund, Yu Garden</li>
+                          <li>¡¤ Jade Buddha Temple, Nanjing Road</li>
+                          <li>¡¤ Humble Administrator¡¯s Garden</li>
+                          <li>¡¤ Cruise on Zhouzhuang Water Town</li>
+                          <li class="price">From <strong>$460</strong> P/P</li>
+                      </ol>
+                  </li>
+               </ul>
+           </div>
+        </div>
+        <!--  toplist end  -->
+    </div>
+    <!--  right end  -->
+</div>
+<!--  index end  -->

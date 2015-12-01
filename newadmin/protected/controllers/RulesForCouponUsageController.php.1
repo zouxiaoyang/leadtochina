@@ -1,0 +1,9 @@
+<?php
+class RulesForCouponUsageController extends Controller{
+	public function actionIndex(){
+		echo "1111";exit;
+      $this->render('index',array(
+      	'message' => Message::newMessage()
+      ));
+  }
+}

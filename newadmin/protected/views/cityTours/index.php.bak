@@ -1,0 +1,318 @@
+<?php   
+  Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl.'/css/chinanew.css'); 
+
+  $this->setPageTitle("China City Tours, China Holidays, Tour to Beijing, Shanghai, Guilin");
+  Yii::app()->clientScript->registerMetaTag('keywords',"tour of china, china holidays, visit china, china city tours, china tour operator");
+  Yii::app()->clientScript->registerMetaTag('description',"China Tour Operator offering China City Tours to Beijing, Shanghai, Guilin, Tibet and other hot destinations with great value. 24/7 Onli
+  ne Support.");
+  Yii::app()->clientScript->registerMetaTag('description',"China Tour Operator offering China City Tours to Beijing, Shanghai, Guilin, Tibet and other hot destinations with great value. 24/7 Online Support.");
+?>
+<style type="text/css">
+<!--
+.right_div{ height:auto; width:157px; float:right; background:#d2d3d5; padding:18px 3px 0px 3px; z-index:10;}
+.right_div_float{ position:fixed; top:0;  height:auto; width:157px; background:#d2d3d5; padding:18px 3px 50px 3px; z-index:10; float:right;}
+-->
+</style>
+<!--  index start  -->
+<div id="index">
+   <div id="menu-tours"><strong>You are here:</strong> <a href="/">Home</a> City Tours</div>
+   <!--  text start  -->
+   <div class="text">
+      <h2>China Single City Tours</h2>
+      <p>Have a short China holidays for city explore ? China tour operator collect various China city tours which including 1-6 days Tour packages to Beijing, Shanghai, Hong Kong, Guilin, Xian and other China hot destinations. You may travel in a private tour or join a coach tours to save money. Moreover, you may contact us and design your own travel to China.</p>
+   </div>
+   <!--  text end  -->
+   
+   <!--  citycontent start  -->
+   <div id="citycontent">
+   <!--  left start  -->
+   <div id="left">
+       <!--  top start  -->
+       <div id="top">
+           <ul style="width:185px; border-left:none;">
+              <li class="pic"><a href="/travel/china-visa-free-3-day-beijig-classical-private-tour-683.html"><img src="/images/chinatours/city1.png" alt="" /></a></li>
+              <li><a href="/travel/china-visa-free-3-day-beijig-classical-private-tour-683.html">Visa-Free 3 Day Beijig Classical Private Tour</a></li>
+           </ul>
+           <ul>
+              <li class="pic"><a href="/travel/china-3-days-shanghai-highlights-tour-148.html"><img src="/images/chinatours/city2.png" alt="" /></a></li>
+              <li><a href="/travel/china-3-days-shanghai-highlights-tour-148.html">3 Days Shanghai Highlights Tour</a></li>
+           </ul>
+           <ul>
+              <li class="pic"><a href="/travel/china-3-days-xian-standard-tour-563.html"><img src="/images/chinatours/city3.png" alt="" /></a></li>
+              <li><a href="/travel/china-3-days-xian-standard-tour-563.html">3 Days Xian Standard Tour</a></li>
+           </ul>
+           <ul style="border-right:none;">
+              <li class="pic"><a href="/travel/china-4-days-guilin-yangshuo-private-tour-112.html"><img src="/images/chinatours/city4.png" alt="" /></a></li>
+              <li><a href="/travel/china-4-days-guilin-yangshuo-private-tour-112.html">4 Days Guilin Yangshuo Private Tour</a></li>
+           </ul>
+       </div>
+       <!--  top end  -->
+       
+       <!--  browseour start  -->
+       <div class="browseour">
+           <div class="chinamenu">
+             <ul>
+               <li class="dq"><strong>Hot China City Tours</strong><span></span></li>
+             </ul>
+           </div>
+           <div class="trips-list">
+              <ul>
+                 <li class="pic"><a href="/travel/city-beijing-tours"><img src="/images/chinatours/trips1.jpg" alt="" /></a></li>
+                 <li><a href="/forbidden-city/">· Forbidden City</a>
+                     <a href="/summer-palace/">· Summer Palace</a>
+                     <a href="/travel/china-beijing-attractions/temple-of-heaven-49.html">· Temple of Heaven</a>
+                     <a href="/great-wall/beijing-great-wall.html">· Mutianyu Great Wall</a>
+                 </li>
+              </ul>
+              <ul>
+                 <li class="pic"><a href="/shanghai/tours/"><img src="/images/chinatours/trips2.jpg" alt="" /></a></li>
+                 <li><a href="/shanghai/attraction/the-bund.html">· The Bund</a>
+                     <a href="/shanghai/attraction/jade-buddha-temple.html">· Jade Buddha Temple</a>
+                     <a href="/shanghai/attraction/yuyuan-garden.html">· Yuyuan Garden</a>
+                     <a href="/shanghai/attraction/oriental-pearl-tv-tower.html">· Oriental Pearl TV Tower</a>
+                 </li>
+              </ul>
+              <ul>
+                 <li class="pic"><a href="/xian/tours/"><img src="/images/chinatours/trips3.jpg" alt="" /></a></li>
+                 <li><a href="/travel/china-xian-attractions/xian-city-wall-87.html">· City Wall</a>
+                     <a href="/travel/china-xian-attractions/bell-tower-94.html">· Bell Tower</a>
+                     <a href="/terra-cotta-warriors/">· Terracotta Warriors</a>
+                     <a href="/travel/china-xian-attractions/big-wild-goose-pagoda-88.html">· Big Wild Goose Pagoda</a>
+                 </li>
+              </ul>
+              <ul style="margin-right:0px;">
+                 <li class="pic"><a href="/guilin/tours/"><img src="/images/chinatours/trips4.jpg" alt="" /></a></li>
+                 <li><a href="/li-river/">· Li River</a>
+                     <a href="/travel/china-guilin-attractions/reed-flute-cave-74.html">· Reed Flute Cave</a>
+                     <a href="/travel/china-guilin-attractions/elephant-trunk-hill-70.html">· Elephant Trunk Hill</a>
+                     <a href="/travel/china-guilin-attractions/piled-silk-hill-73.html">· Folded Brocade Hill</a>
+                 </li>
+              </ul>
+              <ul>
+                 <li class="pic"><a href="/hangzhou/tours/"><img src="/images/chinatours/trips5.jpg" alt="" /></a></li>
+                 <li><a href="/hangzhou/attraction/ling-yin-temple.html">· Lingyin Temple</a>
+                     <a href="/west-lake/">· Cruise on West Lake</a>
+                     <a href="/hangzhou/attraction/six-harmonies-pagoda.html">· Six Harmonious Pagoda</a>
+                     <a href="/travel/china-hangzhou-attractions/mausoleum-of-general-yue-fei-618.html">· Loyal General Yue Fei</a>
+                 </li>
+              </ul>
+              <ul>
+                 <li class="pic"><a href="/hongkong/tours/"><img src="/images/chinatours/trips6.jpg" alt="" /></a></li>
+                 <li><a href="/travel/china-hongkong-attractions/victoria-peak-399.html">· Victoria Peak</a>
+                     <a href="/travel/china-hongkong-attractions/ocean-park-395.html">· Ocean Park</a>
+                     <a href="/travel/china-hongkong-attractions/wong-tai-sin-temple-397.html">· Wong Tai Sin Temple</a>
+                     <a href="/travel/china-hongkong-attractions/hong-kong-disneyland-402.html">· Hong Kong Disneyland</a>
+                 </li>
+              </ul>
+              <ul>
+                 <li class="pic"><a href="/lhasa/tours/"><img src="/images/chinatours/trips7.jpg" alt="" /></a></li>
+                 <li><a href="/potala-palace/">· Potala Palace</a>
+                     <a href="/travel/china-lhasa-attractions/barkhor-street-176.html">· Barkhor Street</a>
+                     <a href="/travel/china-lhasa-attractions/jokhang-temple-181.html">· Jokhang Temple</a>
+                     <a href="/travel/china-lhasa-attractions/barkhor-street-176.html">· Sera Monastery</a>
+                 </li>
+              </ul>
+              <ul style="margin-right:0px;">
+              <li class="pic"><a href="/huangshan/tours/"><img src="/images/chinatours/trips8.jpg" alt="" /></a></li>
+                 <li><a href="/huangshan/attraction/mount-huangshan.html">· Yellow Mountain</a>
+                     <a href="/travel/china-huangshan-attractions/tunxi-ancient-street-651.html">· Tunxi Ancient Street</a>
+                     <a href="/travel/china-huangshan-attractions/xidi-and-hongcun-ancient-villages-653.html">· Xidi Ancient Villages</a>
+                     <a href="/travel/china-huangshan-attractions/xidi-and-hongcun-ancient-villages-653.html">· Hongcun Ancient Villages</a>
+                 </li>
+              </ul>
+           </div>
+       </div>
+       <!--  browseour end  -->
+       
+       <!--  letter start  -->
+       <div class="letter">
+           <h2>Destination A-Z</h2>
+           <ul style="padding-left:0px; width:136px;">
+              <li class="big">B</li>
+              <li><a href="<?php echo Yii::app()->createUrl('cityTours/list', array('title'=>'beijing-tours'));?>"><strong>Beijing Tours</strong></a></li>
+              <li class="big">C</li>
+              <li><a href="/chengde/tours/">Chengde Tours</a>
+                  <a href="/changsha/tours/">Changsha Tours</a>
+                  <a href="/chengdu/tours/"><strong>Chengdu Tours</strong></a>
+                  <a href="/chongqing/tours/">Chongqing Tours</a>
+              </li>
+              <li class="big">D</li>
+              <li><a href="/dalian/tours/">Dalian Tours</a>
+                  <a href="/dali/tours/"><strong>Dali Tours</strong></a>
+                  <a href="/dunhuang/tours/">Dunhuang Tours</a>
+              </li>
+           </ul>
+           <ul>
+              <li class="big">G</li>
+              <li><a href="/guangzhou/tours/">Guangzhou Tours</a>
+                  <a href="/guilin/tours/"><strong>Guilin Tours</strong></a>
+              </li>
+              <li class="big">H</li>
+              <li><a href="/travel/city-hefei-tours">Hefei Tours</a>
+                  <a href="/hohhot/tours/">Hohhot Tours</a>
+                  <a href="/hangzhou/tours/">Hangzhou Tours</a>
+                  <a href="/huangshan/tours/"><strong>Huangshan Tours</strong></a>
+                  <a href="/harbin/tours/">Harbin Tours</a>
+                  <a href="/hongkong/tours/">Hong Kong Tours</a>
+                  <a href="/haikou/tours/">Haikou Tours</a>
+              </li>
+              <li class="big">J</li>
+              <li><a href="/jiuzhaigou/tours/">Jiuzhaigou Tours</a></li>
+           </ul>
+           <ul>
+              <li class="big">K</li>
+              <li><a href="/kunming/tours/">Kunming Tours</a>
+                  <a href="/kashgar/tours/">Kashgar Tours</a>
+              </li>
+              <li class="big">L</li>
+              <li><a href="/luoyang/tours/">Luoyang Tours</a>
+                  <a href="/lijiang/tours/">Lijiang Tours</a>
+                  <a href="/lhasa/tours/">Lhasa Tours</a>
+              </li>
+              <li class="big">M</li>
+              <li><a href="/macau/tours/">Macau Tours</a></li>
+              <li class="big">N</li>
+              <li><a href="/nanjing/tours/"><strong>Nanjing Tours</strong></a></li>
+           </ul>
+           <ul>
+              <li class="big">P</li>
+              <li><a href="/pingyao/tours/">Pingyao Tours</a></li>
+              <li class="big">Q</li>
+              <li><a href="/qingdao/tours/">Qingdao Tours</a></li>
+              <li class="big">S</li>
+              <li><a href="/shanghai/tours/"><strong>Shanghai Tours</strong></a>
+                  <a href="/suzhou/tours/">Suzhou Tours</a>
+                  <a href="/sanya/tours/">Sanya Tours</a></li>
+              <li class="big">T</li>
+              <li><a href="/tianjin/tours/"><strong>Tianjin Tours</strong></a></li>
+           </ul>
+           <ul style="border:none;">
+              <li class="big">W</li>
+              <li><a href="/wuhan/tours/">Wuhan Tours</a></li>
+              <li class="big">X</li>
+              <li><a href="/xian/tours/"><strong>Xian Tours</strong></a></li>
+              <li class="big">Z</li>
+              <li><a href="/zhangjiajie/tours/"><strong>Zhangjiajie Tours</strong></a>
+                  <a href="/zhengzhou/tours/">Zhengzhou Tours</a></li>
+           </ul>
+       </div>
+       <!--  letter end  -->
+   </div>
+   <!--  left end  -->
+   
+   <!--  right start  -->
+   <div id="right">
+     <div id="right_div" class="right_div">
+     <h2><img src="/images/chinatours/right.jpg" alt="" /></h2>
+     <div class="rcontent">
+        <ul>
+           <li><strong>Your Budget</strong> 
+            <select id="choose_price" name="choose_price">
+              <option value="0">Choose Price</option>
+            <?php foreach(Yii::app()->params['price_list'] as $v):?>
+              <option value="<?php echo $v;?>"><?php echo $v;?></option>
+            <?php endforeach;?>                                     
+            </select>
+           </li>
+           
+           <li><strong>Duration</strong>
+            <select id="choose_days" name="choose_days">
+            <?php foreach(Yii::app()->params['days_list'] as $v):?>
+              <option value="<?php echo $v;?>"><?php echo $v;?></option>
+            <?php endforeach;?>                                     
+            </select>
+           </li>
+        </ul>
+        <div class="clear"></div>
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+               <td><strong>Visiting</strong></td>
+            </tr>
+            <tr>
+               <td>
+                  <ol>
+                     <li><input type="checkbox" name="city2[]" value="Beijing">Beijing</li>
+                     <li><input type="checkbox" name="city2[]" value="Xian">Xian</li>
+                     <li><input type="checkbox" name="city2[]" value="Shanghai">Shanghai</li>
+                     <li><input type="checkbox" name="city2[]" value="Guilin">Guilin</li>
+                     <li><input type="checkbox" name="city2[]" value="Yangtze">Yangtze</li>
+                     <li><input type="checkbox" name="city2[]" value="Tibet">Tibet</li>
+                  </ol>
+               </td>
+            </tr>
+            <tr>
+               <td><span id="more_index">Select more cities</span></td>
+            </tr>
+            <tr>
+               <td style="padding:5px 0px 2px 0px;">
+                  <form name="toursearchpanelform" method="get" action="<?php echo Yii::app()->createUrl("chinaTours/searchList");?>">
+                      <input type="hidden" name="city" id="menu_city" value="" />
+                      <input type="hidden" name="days" id="menu_days" value="" />
+                      <input type="hidden" name="price" id="menu_price" value="" />
+                      <input type="image" src="/images/chinatours/search1.jpg" />
+                  </form>
+                  
+                    
+                </td>
+            </tr>
+            <tr>
+               <td><a style="text-decoration:underline; color:#333; font-style:italic;" href="/travel/advance-search">Advanced Search &raquo;</a></td>
+            </tr>
+          </tbody>
+        </table>
+     </div>
+     <div class="advanced"><img src="/images/chinatours/advanced.jpg" alt="" /></div>
+     <div class="recommend">
+         <ul>
+             <li><span>1</span> <a href="<?php echo Yii::app()->createUrl('chinaTours/top10Tours');?>">Top 10 China Tours</a></li>
+             <li><span>2</span> <a href="<?php echo Yii::app()->createUrl('chinaTours/classicTours');?>">Classic China Tours</a></li>
+             <li><span>3</span> <a href="<?php echo Yii::app()->createUrl('chinaTours/yangtzeRiverTours');?>">Yangtze River Tours</a></li>
+             <li><span>4</span> <a href="<?php echo Yii::app()->createUrl('chinaTours/familyTours');?>">China Family Tours</a></li>
+             <li><span>5</span> <a href="<?php echo Yii::app()->createUrl('chinaTours/tibetTours');?>">China Tibet Tours</a></li>
+             <li><span>6</span> <a href="<?php echo Yii::app()->createUrl('chinaTours/trainTravel');?>">China Train Travel</a></li>
+             <li><span>7</span> <a href="<?php echo Yii::app()->createUrl('chinaTours/72HourVisaFreeTours');?>">72-hour Visa-free Tours</a></li>
+             <li><span>8</span> <a href="<?php echo Yii::app()->createUrl('adoption');?>">China Adoption Travel</a></li>
+         </ul>
+     </div>
+    </div>
+   </div>
+   <!--  right end  -->
+   </div>
+   <!--  citycontent end  -->
+</div>
+<!--  index end  -->
+
+<?php echo $this->renderPartial("//common/pop_more_cities");?>
+  
+<script>
+var right_top = $("#right").offset().top;
+$(window).scroll(function(){
+  var top = 0;
+  top = $(window).scrollTop();
+  if(top > right_top){
+    $("#right_div").removeClass("right_div").addClass("right_div_float");
+  }else{
+    $("#right_div").removeClass("right_div_float").addClass("right_div");
+  }
+})
+
+</script>
+<!-- Google Code for CHINA CITY TOURS Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1001932638;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "kiLlCMrg_AIQ3o7h3QM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1001932638/?value=0&amp;label=kiLlCMrg_AIQ3o7h3QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>

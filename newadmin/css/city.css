@@ -1,0 +1,34 @@
+.cityTours{ width:310px;}
+.cityTours h2{ font-size:18px; padding-bottom:8px; border-bottom: 4px solid #D4DEF0; margin-bottom:0px;}
+.cityTours h2 a{ font-weight:normal; color:#333;}
+.cityTours ul li { background-image: url(img/bullet.png); background-position: 0 16px; background-repeat: no-repeat; border-bottom: 1px dotted #CCCCCC; font-size: 12px; list-style-image: none; list-style-type: none; padding-bottom: 6px; padding-left: 12px; padding-top: 6px;
+}
+.chinatravelguidecontent{ font-size:12px; padding-bottom:50px;}
+.mod_des{
+	padding:12px;
+	}
+.mod_des span{
+	color:#333;
+	font-size:16px;
+	font-weight:bold;
+	text-transform: uppercase;
+	}
+
+.mod_des ul li{
+	background-repeat: no-repeat;
+	border-bottom: 1px dotted #CCCCCC;
+	list-style-image: none;
+	list-style-type: none;
+	padding-bottom: 8px;
+	padding-top: 8px;
+}	
+.mod_des ul li a:hover{
+    color:#FFF;
+	background-color: #F90;
+	padding:3px 5px;
+	text-decoration:none;
+}	
+.mod_des ul{
+	padding-left: 6px;
+
+}	
