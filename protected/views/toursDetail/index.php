@@ -217,7 +217,7 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
             <section class="clearfix ">
             		<div class="top-block02">
             		<p class="center-button">
-        				<a href="/node/add/triprequest/1966959" class="large-button" >Help Me Creat My Trip</a><br>
+        				<a href="<?php echo Yii::app()->createUrl('order/index');?>" class="large-button" >Help Me Creat My Trip</a><br>
         				<span class="tour-sidebar-inquire-aftertext">Free travel guide & quotation within 24 hrs!</span>
     				</p>
                     </div>

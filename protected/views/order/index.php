@@ -3,7 +3,7 @@
 <h1 class="page-title08">Enquire Form</h1>
 <div class="row">
   <div class="col-md-9 col-sm-12 col-xs-12">
-    <form id="adminForm" onsubmit="return checksubmit();" name="adminForm" method="post" action="index.php?option=com_order" >
+    <form id="adminForm" onsubmit="return checksubmit();" name="adminForm" method="post" action="<?php echo Yii::app()->createUrl('order/save');?>" >
       <div class="content">
         <div class="contmod orderinfo">
           <h2 class="title2">Tour Information</h2>
@@ -12,16 +12,16 @@
               <tbody>
                 <tr>
                   <td>Tour Code</td>
-                  <td>CTA-PKG-01</td>
+                  <td><?php echo $ress['package_code'];?></td>
                 </tr>
                 
                 <tr>
                   <td>Route</td>
-                  <td>Beijing - Xian - Shanghai</td>
+                  <td><?php echo $ress['route'];?></td>
                 </tr>
                 <tr class="price">
                   <td>Price Per Person</td>
-                  <td><b>From $1213</b></td>
+                  <td><b>From $<?php echo $ress['price'];?></b></td>
                 </tr>
                 <tr>
                   <td>Remark</td>
@@ -36,12 +36,12 @@
                 </tr>
                 <tr>
                   <td>Approx Duration<span class="must">*</span></td>
-                  <td>8 <span  style="color:#999;float:right;">Day(s)</span></td>
+                  <td><?php echo $ress['days'];?> <span  style="color:#999;float:right;">Day(s)</span></td>
                 </tr>
                 <tr>
                   <td class="on">Hotel Class<span class="must">*</span></td>
                   <td><div class="inputmod">
-                      <select name="TourClass" id="TourClass">
+                      <select name="hotel" id="TourClass">
                         <option selected="selected" value="">-- Please Select --</option>
                         <option value="Tourist">Tourist</option>
                         <option value="Deluxe">Deluxe</option>
@@ -52,25 +52,25 @@
                 <tr>
                   <td class="on">Adults (>11)<span class="must">*</span></td>
                   <td><div class="inputmod">
-                      <input type="text" readonly="readonly" placeholder="0" value="0" name="Adults" id="Adults">
-                      <button class="glyphicon-plus" type="button"></button>
-                      <button class="glyphicon-minus" type="button"></button>
+                      <input type="text" readonly="readonly" placeholder="0" value="0" name="adults" id="Adults">
+                      <button class="glyphicon-plus" type="button" onclick="$('#Adults').val(parseInt($('#Adults').val())+1);"></button>
+                      <button class="glyphicon-minus" type="button" onclick="if(parseInt($('#Adults').val())>0){$('#Adults').val(parseInt($('#Adults').val())-1)}"></button>
                     </div></td>
                 </tr>
                 <tr>
                   <td class="on">Children (2-11)<span class="must">*</span></td>
                   <td><div class="inputmod">
-                      <input type="text" readonly="readonly" placeholder="0" value="0" name="Childrens" id="Childrens">
-                      <button class="glyphicon-plus" type="button"></button>
-                      <button class="glyphicon-minus" type="button"></button>
+                      <input type="text" readonly="readonly" placeholder="0" value="0" name="children" id="Childrens">
+                      <button class="glyphicon-plus" type="button" onclick="$('#Childrens').val(parseInt($('#Childrens').val())+1);"></button>
+                      <button class="glyphicon-minus" type="button" onclick="if(parseInt($('#Childrens').val())>0){$('#Childrens').val(parseInt($('#Childrens').val())-1)}"></button>
                     </div></td>
                 </tr>
                 <tr>
                   <td class="on">Infants (<2)<span class="must">*</span></td>
                   <td><div class="inputmod">
-                      <input type="text" readonly="readonly" placeholder="0" value="0" name="Seniors" id="Seniors">
-                      <button class="glyphicon-plus" type="button"></button>
-                      <button class="glyphicon-minus" type="button"></button>
+                      <input type="text" readonly="readonly" placeholder="0" value="0" name="infant" id="Seniors">
+                      <button class="glyphicon-plus" type="button" onclick="$('#Seniors').val(parseInt($('#Seniors').val())+1);"></button>
+                      <button class="glyphicon-minus" type="button" onclick="if(parseInt($('#Seniors').val())>0){$('#Seniors').val(parseInt($('#Seniors').val())-1)}"></button>
                     </div></td>
                 </tr>
                 
@@ -90,7 +90,7 @@
                 <tr>
                   <td class="on">Full Name<span class="must">*</span></td>
                   <td><div class="inputmod">
-                      <select class="Sex" name="Sex" id="Sex">
+                      <select class="Sex" name="Gender" id="Sex">
                         <option selected="selected" value="Mr">Mr.</option>
                         <option value="Ms">Ms.</option>
                       </select>
@@ -138,14 +138,31 @@
         </div>
         <div class="contmod otherinfo">
           <h2 class="title2">Additional Requests</h2>
-			<textarea  name="Other" id="Other" 
+			<textarea  name="other_mes" id="Other" 
 				onblur="if(this.value == ''){this.style.color = '#ACA899'; this.value = 'Tell us more about your requirements, e.g non-smoking room, vegetarian, Spanish-speaking guide, etc.'; }" 
 				onfocus="if(this.value.indexOf('Tell us more about your requirements')!=-1){this.value =''; this.style.color = '#000000'; }" 
 				style="color:#ACA899;">Tell us more about your requirements, e.g non-smoking room, vegetarian, Spanish-speaking guide, etc.
 			</textarea> 
         </div>
+
+		<input type="hidden" value="vote" name="task">
+		<input type="hidden" value="com_order" name="option">
+		<input type="hidden" value="14" name="ordertype">
+		<input type="hidden" value="1" name="new_com_order">
+		<input type="hidden" value="0" name="order_purpose">
+		<input id="referer_url" type="hidden" value="" name="referer_url">
+		<input type="hidden" value="" name="pcid">
+		<input type="hidden" value="" name="is_tuan_order">
+		<input type="hidden" value="<?php echo Yii::app()->session['package_id'];?>" name="packageid">
+		<input type="hidden" value="<?php echo $ress['name'];?>" name="package_name">
+		<input type="hidden" value="<?php echo $ress['categorieid_str'];?>" name="package_category">
+		<input type="hidden" value="<?php echo $ress['package_code'];?>" name="tour_code">
+		<input type="hidden" value="<?php echo $ress['route'];?>" name="destinations">
+		<input type="hidden" value="<?php echo $ress['days'];?>" name="duration">
+		<input type="hidden" value="1" name="92f8c79f2b18b6fdcd4a426f7547d3cd">
+
         <div class="link">
-          <input type="button" value="Get My Trip Planned" id="BookNowBtn" class="large-button" />
+          <input type="submit" value="Get My Trip Planned" id="BookNowBtn" class="large-button" />
           <p class="description">We will reply in 12 working hours!</p>
         </div>
       </div>
