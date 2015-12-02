@@ -1,5 +1,5 @@
 <style>
-ul.nav-tabs{
+ul.nav-tabs {
 	width: 140px;
 	margin-top: 20px;
 	border-radius: 0;
@@ -9,21 +9,32 @@ ul.nav-tabs{
 	box-shadow:0;
 }
 ul.nav-tabs li {
-	margin: 0; border:none;
-	
+	margin: 0;
+	border:none;
 }
 ul.nav-tabs li:first-child {
 	border-top: none;
 }
-ul.nav-tabs li a{ border:none; text-transform:capitalize; font-weight:normal;
+ul.nav-tabs li a {
+	border:none;
+	text-transform:capitalize;
+	font-weight:normal;
 	margin: 0;
 	padding: 8px 16px;
-	border-radius: 0; background:transparent;	color: #d56d21;
-}
-ul.nav-tabs li a:hover{ background: transparent; color: #d56d21;border-left: 1px solid #d56d21;}
-ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{ border:none;
+	border-radius: 0;
+	background:transparent;
 	color: #d56d21;
-		border-left: 1px solid #d56d21; background:transparent;
+}
+ul.nav-tabs li a:hover {
+	background: transparent;
+	color: #d56d21;
+	border-left: 1px solid #d56d21;
+}
+ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
+	border:none;
+	color: #d56d21;
+	border-left: 1px solid #d56d21;
+	background:transparent;
 }
 ul.nav-tabs li:first-child a {
 	border-radius:0;
@@ -35,7 +46,7 @@ ul.nav-tabs.affix {
 	top:55px; /* set the top position of pinned element */
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
- ul.nav-tabs{
+ ul.nav-tabs {
  width: 180px; /* set nav width on medium devices */
 }
 }
@@ -61,17 +72,16 @@ ul.nav-tabs.affix {
 			)); ?>
     </h5>
   </div>
-  
   <div class="row">
     <div class="col-sm-9">
-    	<h3 class="page-title03">China Family Tour with Kids</h3>
+      <h3 class="page-title03">China Family Tour with Kids</h3>
       <div id="section1">
         <p>Travelling is the perfect way to open up a child’s world to possibility and wonder. China is that rare place that looks to the future while embracing its past which means it is a perfect destination for a family vacation. </p>
         <p>Lead to China provides most popular China family tours which covering the major highlights of China, such as the Great Wall, Forbidden City and the Terracotta Warriors in Xi'an as well as to many of the out-of-the way places not in the regular tourist itinerary. Exploring China with kids is a great adventure. To offer you a stress-free holiday, we take care of all the details, transportation, accommodations, most meals and activities.</p>
       </div>
       <hr>
       <div id="section2">
-        <div class="row">
+        
           <h4 id="a" class="page-title04">Why do a family tour with Lead to China?</h4>
           <div class="col-md-2 family-why01"> <img  src="/images/family-ico01.jpg" alt=""  /></div>
           <div class="col-md-10">
@@ -91,7 +101,7 @@ ul.nav-tabs.affix {
             <p><strong>Hotels that keep kids in mind:</strong>The hotels on your family journey have been especially selected for their family-friendly amenities. Wherever possible, your accommodations offer swimming pools and free Internet access, and many feature in-room game systems or game rooms, where kids can hang out after the day's activities. </p>
             <p>&nbsp;</p>
           </div>
-        </div>
+      
       </div>
       <div id="section3">
         <div class="row">

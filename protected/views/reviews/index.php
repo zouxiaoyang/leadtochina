@@ -9,12 +9,11 @@
       <div class="reviews-page-block" >
       	<img src="/images/review-page-img01.jpg" />
         <div class="content01">
-        	<h3>Review of 8 Days China Golden Triangle
-Tour: Beijing-Xian-Shanghai</h3>
-			<p><span>TOUR TYPE:</span> Private Tour</p>
-			<p><span>CLIENT NAME:</span> Ms. Jeanne </p>
-            <p><span>NATIONALITY:</span> Canada</p>
-            <p><span>TOUR DATE:</span> Nov 13, 2015</p>
+        	<h3><?php echo $info['name'];?></h3>
+			<p><span>TOUR TYPE:</span> <?php echo $info['package_tour_type'];?></p>
+			<p><span>CLIENT NAME:</span> <?php echo $info['review_name'];?></p>
+            <p><span>NATIONALITY:</span> <?php echo $info['nationality'];?></p>
+            <p><span>TOUR DATE:</span> <?php echo date('M d,Y',strtotime($info['dateline']));?></p>
         </div>
         <div class="clear"></div>
       </div>
@@ -30,19 +29,18 @@ Tour: Beijing-Xian-Shanghai</h3>
                 <i>You overall comments on the trip and the travel company:</i>
                 <p>Great trip and it was enjoyed by all.</p>
                 <p>Congratulations! You have successfully created your Yii application.Congratulations! You have successfully 
-created your Yii application.Congratulations! You have successfully created your Yii application.Congratulations!
- You have successfully created your Yii application.Congratulations! You have successfully created your 
-Congratulations! You have successfully created your Yii application.</p>
-				<i>You overall comments on the trip and the travel company:</i>
-                <p>Congratulations! You have successfully created your Yii application.Congratulations! You have successfully 
-created your Yii application.Congratulations! You have successfully created your Yii application.Congratulations!
- You have successfully created your Yii application.Congratulations! You hav</p>
+					created your Yii application.Congratulations! You have successfully created your Yii application.Congratulations!
+					 You have successfully created your Yii application.Congratulations! You have successfully created your 
+					Congratulations! You have successfully created your Yii application.</p>
+									<i>You overall comments on the trip and the travel company:</i>
+									<p>Congratulations! You have successfully created your Yii application.Congratulations! You have successfully 
+					created your Yii application.Congratulations! You have successfully created your Yii application.Congratulations!
+					 You have successfully created your Yii application.Congratulations! You hav</p>
             </div>
             <div id="photos" class="tab-pane fade">
-            	<img src="/images/reviews-page-img01.jpg"  />
-                <img src="/images/reviews-page-img02.jpg"  />
-                <img src="/images/reviews-page-img03.jpg"  />
-                <img src="/images/reviews-page-img04.jpg"  />
+				<?php foreach($pics as $pic){ ?>
+					<img src="/images/view/<?php echo $pic['pic'];?>" />
+				<?php } ?>
             </div>
         </div>
       </div>

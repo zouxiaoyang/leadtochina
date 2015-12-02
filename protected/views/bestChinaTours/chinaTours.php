@@ -137,10 +137,10 @@ requirements. Remember! We’re the local experts and here to help you.</p>
         <p>China offers an abundance of breath-taking experiences. If you cannot find the itinerary suit you best, take a look at our different trip themes below. 
 You can take a short break in Beijing, Xian, and other single city tours. The transport between these major cities is very convenient, that means take a short 
 China trip by bullet train or flight will be a good choice. </p>
-		<div class="product-block03 f-left">    
+		<div class="product-block03 col-sm-4">    
         	  	
         		<span>City Tours</span> <div class="product-block03-text ">   
-               	<a href="#"><img src="/images/chinatours-img13.jpg" /></a>
+               <img src="/images/chinatours-img13.jpg" />
                 <p>
                 	<a href="#">Beijing</a>
                     <a href="#">Xi’an</a>
@@ -153,10 +153,10 @@ China trip by bullet train or flight will be a good choice. </p>
                     
             </div>
         </div>
-        <div class="product-block03 f-left">    
+        <div class="product-block03 col-sm-4">    
         	 
         		<span>City Tours</span> <div class="product-block03-text ">     	
-               	<a href="#"><img src="/images/chinatours-img14.jpg" /></a>
+               <img src="/images/chinatours-img14.jpg" />
                 <p>
                 	<a href="#">Beijing Shanghai</a>
                     <a href="#">Beijing Xian</a>
@@ -168,10 +168,10 @@ China trip by bullet train or flight will be a good choice. </p>
                     
             </div>
         </div>
-        <div class="product-block03 f-left">    
+        <div class="product-block03 col-sm-4">    
         	    	
         		<span>City Tours</span> <div class="product-block03-text "> 
-               	<a href="#"><img src="/images/chinatours-img15.jpg" /></a>
+               	<img src="/images/chinatours-img15.jpg" />
                 <p>
                 	<a href="#">Beijing</a>
                     <a href="#">Shanghai</a>
@@ -187,5 +187,12 @@ China trip by bullet train or flight will be a good choice. </p>
     </div>
 
 </div>
-
-<img class="img-responsive" src="/images/chinatour-banner02.jpg" />
+<div class="chinatour-bottom-banner">
+	<img class="img-responsive" src="/images/chinatour-banner02.jpg" />
+	<div class="text01">
+    	<label>Customize China Tour</label>
+    	<span>Get in touch with our specialists to start planning your next trip.</span>
+        <a href="#" class="more-link01">Start Now</a>
+        
+    </div>
+</div>

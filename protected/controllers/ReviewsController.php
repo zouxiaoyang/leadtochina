@@ -7,8 +7,8 @@ class ReviewsController extends Controller
 		$sql = "select `p`.`name`,`p`.`package_tour_type`,`r`.`name` as `review_name`,`r`.`nationality`,`r`.`dateline` from `jos_cos_tours_package` as `p`,`t_reviews` as `r` where `p`.`id`=`r`.`tour_id` and `r`.`tour_id`=".(int)$_GET['packageid']." and `r`.`id`=".(int)$_GET['tid']."";
 		$info = Yii::app()->db->createCommand($sql)->queryRow(); //获取头部提示信息;
 		// 根据review id 获取该reviews下面的所有图片信息;
-		$sql ="select `pic` from `t_reviews_pic` where `tid`=".(int)$_GET['tid']."";
-		$pics= Yii::app()->createCommand($sql)->queryAll();
+		$sql ="select `pic` from `t_reviews_pic` where `tid`=".(int)$_GET['tid']." and `type`=2";
+		$pics= Yii::app()->db->createCommand($sql)->queryAll();
 		$this->render('index',array(
 				'info'=>$info,
 				'pics'=>$pics

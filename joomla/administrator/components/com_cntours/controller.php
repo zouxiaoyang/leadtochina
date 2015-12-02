@@ -170,7 +170,6 @@ class CntoursController extends JController
 		}
 		*/
 		$post['categorieid_str'] =$post['childid']; 
-		
 		if($_FILES['ufile']['size']){
 			require_once(JPATH_INCLUDES.DS."Upload.php");
 			require_once(JPATH_INCLUDES.DS."ThumbImage.php");
