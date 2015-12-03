@@ -155,7 +155,7 @@ China trip by bullet train or flight will be a good choice. </p>
         </div>
         <div class="product-block03 col-sm-4">    
         	 
-        		<span>City Tours</span> <div class="product-block03-text ">     	
+        		<span> Short Trips</span> <div class="product-block03-text ">     	
                <img src="/images/chinatours-img14.jpg" />
                 <p>
                 	<a href="#">Beijing Shanghai</a>
@@ -170,7 +170,7 @@ China trip by bullet train or flight will be a good choice. </p>
         </div>
         <div class="product-block03 col-sm-4">    
         	    	
-        		<span>City Tours</span> <div class="product-block03-text "> 
+        		<span>China Tours from</span> <div class="product-block03-text "> 
                	<img src="/images/chinatours-img15.jpg" />
                 <p>
                 	<a href="#">Beijing</a>

@@ -128,9 +128,9 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
             <div class="tab-pane fade " id="trip-notes">
               	<section class="clearfix inner-tab-block01">
                 	<label class="inner-tab-title01">About the Itinerary</label>
-                	<div class="inner-tab-text01"> 1. It is flexible to change the duration, attractions, starting and ending cities according to your interests. Also the tour can be extended or shorten as your preference, just let your trip consultant know. <br />
-2. All of the tour packages exclude the international airfares. We suggest you can book it one your own. You can compare the price between OTAs (Expedia, Priceline, Sky scanner...) and the airlines. When you have a confirmed date, set alarm and compare it always.<br />
-3. As the China Visa, we cannot apply for you as we are an China inbound travel company. However, we can send you our invitation letter with our company's official seal to you after you booked the tour from us, which could assist you to get China Visa from China embassy easily. Usually, we suggest you to apply the visa about one month or one month and a half before your travel date.
+                	<div class="inner-tab-text01"> * It is flexible to change the duration, attractions, starting and ending cities according to your interests. Also the tour can be extended or shorten as your preference, just let your trip consultant know. <br />
+*  All of the tour packages exclude the international airfares. We suggest you can book it one your own. You can compare the price between OTAs (Expedia, Priceline, Sky scanner...) and the airlines. When you have a confirmed date, set alarm and compare it always.<br />
+*  As the China Visa, we cannot apply for you as we are an China inbound travel company. However, we can send you our invitation letter with our company's official seal to you after you booked the tour from us, which could assist you to get China Visa from China embassy easily. Usually, we suggest you to apply the visa about one month or one month and a half before your travel date.
 </div>
               	</section>
                 <section class="clearfix inner-tab-block01">
