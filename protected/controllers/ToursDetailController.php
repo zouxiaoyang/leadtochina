@@ -6,10 +6,11 @@ class ToursDetailController extends Controller
 	{
 		$package_id = (int)trim($_GET['id']);
 
-		// 将参数的id带到订单页面;
+		
+		Yii::app()->session['package_id'] = $package_id;// 将参数的id带到订单页面;
 
-		Yii::app()->session['package_id'] = $package_id;
-
+		Yii::app()->session['url_referer'] = Yii::app()->request->hostInfo.Yii::app()->request->getUrl(); // 当前页面的url;
+		
 		$ress = $this->getPackage($package_id);// 具体行程
 
 

@@ -1,10 +1,10 @@
 <img class="img-responsive" src="/images/chinatour-banner01.jpg" />
 <div class="container">
-	<p style="padding:15px 0;">With the area of 9.6 million square kilometers, 56 ethnic group and over 5000 years history, China present a different culture, 
+	<p class="lead02">With the area of 9.6 million square kilometers, 56 ethnic group and over 5000 years history, China present a different culture, 
 attractions and scenery to the world tourists. From the Great wall to Terra-Cotta Warriors and the Yangtze River, China will offer you 
 a unique and exciting opportunity in creating a lasting impression.</p>
-    <h2 class="page-title01">Top China Tours</h2>
-    <p>Over the last 8 years of carefully planning and operating tours to China, we are proud to present our most popular and best
+    <h2 class="page-title10">Top China Tours</h2>
+    <p class="lead02">Over the last 8 years of carefully planning and operating tours to China, we are proud to present our most popular and best
 China tours to you. These China tour packages are made according to our field trip and customer's feedback. So, feel free to 
 select and get inspired!</p>
     <div class="product-block01 ">
@@ -44,10 +44,10 @@ select and get inspired!</p>
        
     </div>
     <p class="clear"></p>
-    <h2 class="page-title01">Trip Themes</h2>
-    <p>We understand every traveler may have different interests for their upcoming China tours. Here is a collection of popular China tour
-categories that carefully designed by our specialists. <br />
-If you want to make some change from an existing itinerary, let us customize a private China tour for you to meet your
+    <h2 class="page-title10">Trip Themes</h2>
+    <p class="lead02">We understand every traveler may have different interests for their upcoming China tours. Here is a collection of popular China tour
+categories that <b>carefully designed by our specialists.</b> <br />
+If you want to make some change from an existing itinerary, let us <b>customize a private China tour</b> for you to meet your
 requirements. Remember! We’re the local experts and here to help you.</p>
 	<div class="row hidden-xs">
 		<div class="col-sm-4 content-collection product-block02">
@@ -132,11 +132,12 @@ requirements. Remember! We’re the local experts and here to help you.</p>
           <p>Silk Road was the main trade route which connected China with the west. Silk Road travel not only offers distinctive culture and natural spots but also give you a glimpse of the once prosperous civilization.</p>
       </div>      
     </div>
-    <div class="row">
-    	<h2 class="page-title01">More Trip Ideas for China Travel</h2>
-        <p>China offers an abundance of breath-taking experiences. If you cannot find the itinerary suit you best, take a look at our different trip themes below. 
+    	<h2 class="page-title12">More Trip Ideas for China Travel</h2>
+        <p class="lead02">China offers an abundance of breath-taking experiences. If you cannot find the itinerary suit you best, take a look at our different trip themes below. 
 You can take a short break in Beijing, Xian, and other single city tours. The transport between these major cities is very convenient, that means take a short 
 China trip by bullet train or flight will be a good choice. </p>
+    <div class="row">
+    
 		<div class="product-block03 col-sm-4">    
         	  	
         		<span>City Tours</span> <div class="product-block03-text ">   

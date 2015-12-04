@@ -30,7 +30,7 @@
                 <tr>
                   <td class="on"> Your Travel Date<span class="must">*</span></td>
                   <td>                
-                          <input id="d5221" class="Wdate hasDatepicker" type="text" autocomplete="off" name="entry_date"  placeholder=" " />
+                          <input id="entry_date" class="Wdate hasDatepicker" type="text" autocomplete="off" name="entry_date"  placeholder=" " />
                           
                        </td>
                 </tr>
@@ -199,4 +199,60 @@
 			   bFlag=false;
 			}
 	}
+function checksubmit(){
+
+	var reg = /^[^\@]+@.*\.[a-z]{2,6}$/i;
+
+	var status = false;
+
+
+	if(!$('#entry_date').val()){
+		status=true;
+		$('#entry_date').css('border','1px dotted #F00');
+	}else{
+		$('#entry_date').css('border','0 none');
+	}
+
+	if(!$('#TourClass').val()){
+		status=true;
+		$('#TourClass').css('border','1px dotted #F00');
+	}else{
+		$('#TourClass').css('border','0 none');
+	}
+
+	if(!$('#Adults').val()){
+		status=true;
+		$('#Adults').css('border','1px dotted #F00');
+	}else{
+		$('#Adults').css('border','0 none');
+	}
+	
+	if(!$('#FullName').val()){
+		status=true;
+		$('#FullName').css('border','1px dotted #F00');
+	}else{
+		$('#FullName').css('border','0 none');
+	}
+
+	if(!$('#Nation').val()){
+		status=true;
+		$('#Nation').css('border','1px dotted #F00');
+	}else{
+		$('#Nation').css('border','0 none');
+	}
+	
+	if(!reg.test($('#Email').val())){
+		status=true;
+		$('#Email').css('border','1px dotted #F00');
+	}else{
+		$('#Email').css('border','0 none');
+	}
+
+	if(status){
+		return false;
+	}else{
+	  return true;
+	}
+
+}
 </script>

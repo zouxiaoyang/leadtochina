@@ -76,7 +76,9 @@
               	<section class="clearfix inner-tab-block01">
                 	<label class="inner-tab-title01">IMPORTANT NOTES</label>
                 	<div class="inner-tab-text01">
-					<p><?php echo $ress['price_instruction'];?></p>  
+					<p><?php //echo $ress['price_instruction'];?> 1. The price is based on stay in China four star hotels. If you want to deduct, upgrade or downgrade the hotel, please indicate this while sending the inquiry.<br />
+2. You will enjoy more discounts if there is more people join the tour.<br />
+3. Prices may vary according to your travel time and are higher in the high season, e.g. Labor's Day (Apr 29-May 5, 2014), China National Day Holiday (Sep 29-Oct 8, 2014), and Chinese Spring Festival (Jan 28-Feb 7, 2014).</p>  
                 </div>
               	</section>
               	<section class="clearfix inner-tab-block01">
@@ -128,9 +130,9 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
             <div class="tab-pane fade " id="trip-notes">
               	<section class="clearfix inner-tab-block01">
                 	<label class="inner-tab-title01">About the Itinerary</label>
-                	<div class="inner-tab-text01"> * It is flexible to change the duration, attractions, starting and ending cities according to your interests. Also the tour can be extended or shorten as your preference, just let your trip consultant know. <br />
-*  All of the tour packages exclude the international airfares. We suggest you can book it one your own. You can compare the price between OTAs (Expedia, Priceline, Sky scanner...) and the airlines. When you have a confirmed date, set alarm and compare it always.<br />
-*  As the China Visa, we cannot apply for you as we are an China inbound travel company. However, we can send you our invitation letter with our company's official seal to you after you booked the tour from us, which could assist you to get China Visa from China embassy easily. Usually, we suggest you to apply the visa about one month or one month and a half before your travel date.
+                	<div class="inner-tab-text01"> It is flexible to change the duration, attractions, starting and ending cities according to your interests. Also the tour can be extended or shorten as your preference, just let your trip consultant know. <br />
+ All of the tour packages exclude the international airfares. We suggest you can book it one your own. You can compare the price between OTAs (Expedia, Priceline, Sky scanner...) and the airlines. When you have a confirmed date, set alarm and compare it always.<br />
+ As the China Visa, we cannot apply for you as we are an China inbound travel company. However, we can send you our invitation letter with our company's official seal to you after you booked the tour from us, which could assist you to get China Visa from China embassy easily. Usually, we suggest you to apply the visa about one month or one month and a half before your travel date.
 </div>
               	</section>
                 <section class="clearfix inner-tab-block01">
@@ -139,12 +141,12 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
               </section>
               <section class="clearfix inner-tab-block01">
                 <label class="inner-tab-title01">About the Hotel</label>
-                <div class="inner-tab-text01">* All the hotels can be replaced by your favorite ones or you can book your own hotels. And the hotel room we offered here usually is standard with twin beds. If you want to have king-size bed room or suite, please let your trip advisor know. Besides, all the accommodation are quoted on two persons sharing one room. The room supplement must be paid if you want to have a single room.<br />
+                <div class="inner-tab-text01">All the hotels can be replaced by your favorite ones or you can book your own hotels. And the hotel room we offered here usually is standard with twin beds. If you want to have king-size bed room or suite, please let your trip advisor know. Besides, all the accommodation are quoted on two persons sharing one room. The room supplement must be paid if you want to have a single room.<br />
 * Most hotels we offered in our tour package have WIFI in the lobby, and some of which have WIFI in hotel rooms. If you need the WIFI in your room, please make sure with your trip advisor.</div>
               </section>
                 <section class="clearfix inner-tab-block01">
                 <label class="inner-tab-title01">About Shopping</label>
-                <div class="inner-tab-text01"> * We have non-shopping private tour and tour with carefully selected shops. For tour with shops, the price will be lower, and you will enter one or two shops in every tourist city. The shops could be jade, silk, pearl, Chinese tea etc., all of which have strong China's character and is worthy to buy. Each shop will take you around 45 minutes. We promise there is no compulsory consumption at all. You get the situation in your hands.
+                <div class="inner-tab-text01">We have non-shopping private tour and tour with carefully selected shops. For tour with shops, the price will be lower, and you will enter one or two shops in every tourist city. The shops could be jade, silk, pearl, Chinese tea etc., all of which have strong China's character and is worthy to buy. Each shop will take you around 45 minutes. We promise there is no compulsory consumption at all. You get the situation in your hands.
 <br />
 * Department stores, supermarkets, boutiques, hotel and restaurants in most cities of China do accept the credit card with the sigh of MasterCard, VISA and JCB. However, it does generate commission charge. Please check the regulations with your bank manager.</div>
               </section>
