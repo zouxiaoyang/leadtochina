@@ -1082,7 +1082,13 @@ div.search-form
 .page-title09{ font-size:20px; margin-top:30px;}
 .page-title10{border-bottom: 1px solid #eee; margin: 30px 0 20px;padding-bottom: 9px; color:#d56d21; font-size:35px; font-weight:normal; }
 .page-title11{border-bottom: 1px solid #eee; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-size:35px; font-weight:normal; }
+.page-title12{border-bottom: 2px solid #d56d21; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-size:35px; font-weight:normal; }
 
+.lead02{
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 15px 0 20px;
+}
 
 
 
@@ -1093,7 +1099,7 @@ div.search-form
 .product-block01 .product-info-back .text01{ display:block;}
 .product-block01 .product-info-back .price01{ font-size:18px; font-weight:bold;}
 
-.product-block02{ float:left; height:420px;}
+.product-block02{ float:left; height:420px; margin:10px 0 0;}
 .product-block02 h2{ font-size:24px; font-weight:bold; color:#fff;}
 .product-block02 .content-collection-inner{ margin-bottom:15px;}
 
@@ -2080,3 +2086,5 @@ filter:progid:DXImageTransform.Microsoft.Alpha(enabled=false);
 .reviews-page-tab i{ color:#888; font-style:italic; display:block; padding:0 0 5px;}
 .reviews-page-tab p{ padding-bottom:10px; line-height:22px;}
 .reviews-page-tab #photos img{ margin:8px 25px 20px;}
+
+
