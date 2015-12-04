@@ -1057,19 +1057,16 @@ div.search-form
 .float-bootom-bar-2 .large-button:hover{ background-color:#fff;}
 
 
-
 .inner-banner{ position:relative; margin-bottom:10px;}
 .search-tabs{ position:absolute; top:35px; left:10%;width:300px;}
 .search-tabs .title{ color:#ed9300; font-size:16px; text-transform:uppercase;background:#f2f2f2; padding:10px; }
 .search-tabs .search-content{background:#f2f2f2;  padding:17px; }
 .search-tabs .search-content .form-group{margin-bottom: 10px; float:left;}
 .search-tabs .search-content label{float: left;padding-top: 7px;width: 95px; color:#666;}
-
 .search-tabs .search-content .form-select{font-size: 16px; height: 36px;   float: left;width: 170px;}
 
 .form-submit01{ clear:left;  background-color:#ed9300;border-color:#d56d21; border-radius:4px; font-size:14px; width:100%;color:#fff;}
 .form-submit01:hover{background:#fff; color:#333; border-color:#d56d21;}
-.main-container{}
 
 .page-title01{border-bottom: 1px solid #eee; margin: 40px 0 20px; padding-bottom: 9px; color:#d56d21; font-size:36px; text-align:center;}
 .page-title02{border-bottom: 2px solid #d56d21; margin: 40px 0 20px; padding-bottom: 9px; color:#d56d21; font-size:36px; text-align:center;}
@@ -1084,22 +1081,18 @@ div.search-form
 .page-title11{border-bottom: 1px solid #eee; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-size:35px; font-weight:normal; }
 .page-title12{border-bottom: 2px solid #d56d21; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-size:35px; font-weight:normal; }
 
-.lead02{
-    font-size: 17px;
-    line-height: 1.4;
-    margin: 15px 0 20px;
-}
+.lead02{ font-size: 17px;line-height: 1.4; margin: 15px 0 30px;}
 
 
-
-.product-block01{ color:#fff; position:relative; float:left;  margin: 30px 0;}
+ 
+.product-block01{ color:#fff; position:relative; float:left;  margin:0;}
 .content-collection-inner{position:relative; display:block;}
 .product-info-back{ background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%) repeat scroll 0 0;bottom: 0;padding: 0 15px 5px;position: absolute;width: 100%; font-size:13px;}
 .product-block01 .product-info-back label{ display:block; font-size:18px; margin:0;}
 .product-block01 .product-info-back .text01{ display:block;}
-.product-block01 .product-info-back .price01{ font-size:18px; font-weight:bold;}
+.product-block01 .product-info-back .price{ font-size:18px; font-weight:bold;}
 
-.product-block02{ float:left; height:420px; margin:10px 0 0;}
+.product-block02{ float:left; height:420px; margin:0;}
 .product-block02 h2{ font-size:24px; font-weight:bold; color:#fff;}
 .product-block02 .content-collection-inner{ margin-bottom:15px;}
 
