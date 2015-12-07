@@ -31,6 +31,7 @@ $this->menu=array(
 		'area_code',
 		'postal_code',
 		'tel',
+		'public_content',
 		'description',
 		'seo_title_adoption',
 		'seo_keyword_adoption',

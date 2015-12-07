@@ -50,6 +50,7 @@ class AdoptionOrphanageAddress extends CActiveRecord
 			array('seo_title_adoption,seo_keyword_adoption,seo_description_adoption', 'length', 'max'=>500),
 			array('population, features, area_code', 'length', 'max'=>100),
 			array('description', 'safe'),
+			array('public_content', 'safe'),
 
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -87,6 +88,7 @@ class AdoptionOrphanageAddress extends CActiveRecord
 			'seo_keyword' => 'Keyword标签',
 			'seo_description' => 'Description标签',
 			'description' => 'Overview',
+			'public_content' => 'Public Content',
 		);
 	}
 

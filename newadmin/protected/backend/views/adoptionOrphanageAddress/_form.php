@@ -85,6 +85,13 @@ $this->widget('ext.ueditor.Ueditor',
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'public_content'); ?>
+		<?php echo $form->textArea($model,'public_content',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'public_content'); ?>
+	</div>
+
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'description'); ?>
 		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'description'); ?>

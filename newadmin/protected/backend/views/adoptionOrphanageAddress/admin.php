@@ -70,7 +70,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
         'template'=>'{addPost}',
         'buttons'=>array(
                 'addPost'=>array(
-                       'label'    => '文章管理',
+                       'label'    => '游记管理',
                         'url'    => 'Yii::app()->createUrl("adoptionOrphanageAddressArticle/admin", array("aid" => $data->id))' // 可以传参
                     )
             )

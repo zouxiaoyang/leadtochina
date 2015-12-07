@@ -3,7 +3,7 @@
 /* @var $model AdoptionOrphanageAddressArticle */
 /* @var $form CActiveForm */
 ?>
-<?php Yii::app()->clientScript->registerScriptFile('/templates/jv_news_ii/js/My97DatePicker/WdatePicker.js');?>
+<?php Yii::app()->clientScript->registerScriptFile('/newadmin/js/My97DatePicker/WdatePicker.js');?>
 <?php
 $this->widget('ext.ueditor.Ueditor',
   array(
