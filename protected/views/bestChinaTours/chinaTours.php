@@ -7,7 +7,7 @@ a unique and exciting opportunity in creating a lasting impression.</p>
     <p class="lead02">Over the last 8 years of carefully planning and operating tours to China, we are proud to present our most popular and best
 China tours to you. These China tour packages are made according to our field trip and customer's feedback. So, feel free to 
 select and get inspired!</p>
-    <div class="product-block01 ">
+    <div class="product-block01 "> 
     	<a class="" href="/theme/expeditions">
     		<img src="/images/chinatours-img01.jpg" /> </a>
             <div class="content-collection-info  product-info-back">
@@ -19,7 +19,7 @@ select and get inspired!</p>
             </div>
        
     </div>
-    <div class="product-block01" style="margin:30px;">
+    <div class="product-block01" style="margin:0 30px;">
     	<a class="" href="/theme/expeditions">
     		<img src="/images/chinatours-img02.jpg" /> </a>
             <div class="content-collection-info  product-info-back">
