@@ -19,6 +19,9 @@ return array(
 		 'travel/success'  =>'order/success',
 		 //reviews
 		 'travel/review/<tid:\d+>/<packageid:\d+>.html'  =>'reviews/index',
+		// adoption
+		  'travel/adoption'  =>'adoption/index',
+
 			'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 			'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 			'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
