@@ -50,9 +50,9 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		//'muslim_cat_id',
 		array('name'=>'muslim_cat_id','value'=>'$data->muslim_cat_id==0?"/":MuslimPackages::$chinaMuslimTourCategory[$data->muslim_cat_id]'),
 		//'province_id',
-		array('name'=>'province_id','value'=>'Province::model()->findByPk($data->province_id)->name'),
+		array('name'=>'province_id','value'=>'Province::model()->findByPk($data->province_id)["name"]'),
 		//'city_id',
-		array('name'=>'city_id','value'=>JosCosCity::model()->findByPk($data->city_id)->name),
+		array('name'=>'city_id','value'=>'JosCosCity::model()->findByPk($data->city_id)["name"]'),
 		//'package_type',
 		array(
 			'header'=>'操作',

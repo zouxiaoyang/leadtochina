@@ -10,6 +10,7 @@ defined('YII_DEBUG') or define('YII_DEBUG',true);
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 
 if(isset($_POST['PHPSESSID'])) $_COOKIE['PHPSESSID'] = $_POST['PHPSESSID'];
-
+ini_set("display_errors","On");
+error_reporting(E_ALL);
 require_once($yii);
 Yii::createWebApplication($config)->run();

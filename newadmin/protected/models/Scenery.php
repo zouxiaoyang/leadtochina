@@ -133,7 +133,7 @@ class Scenery extends CActiveRecord
 		));
 	}
 
-	public function getProvinceList()
+	static function getProvinceList()
 	{
 		$db = Yii::app()->db;
 		$list = $db->createCommand('select id,name from jos_cos_province order by name asc')->queryAll();

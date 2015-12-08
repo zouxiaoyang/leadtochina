@@ -5,16 +5,16 @@
 
 <div class="view">
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>
+		<?php echo CHtml::link(CHtml::encode($data->title),array('update', 'id'=>$data->id),array('target'=>'_blank')); ?>
+	<br />
+<?php /* ?>
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('aid')); ?>:</b>
 	<?php echo CHtml::encode($data->aid); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>
-	<?php echo CHtml::encode($data->title); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b>
@@ -28,6 +28,7 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('date')); ?>:</b>
 	<?php echo CHtml::encode($data->date); ?>
 	<br />
+<?php */ ?>
 
 
 </div>

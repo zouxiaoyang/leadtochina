@@ -130,7 +130,7 @@ class TourHotel extends CActiveRecord
 		return $CityName['name'];
 	}
 
-	public function getDuration($tour_days)
+	static function getDuration($tour_days)
 	{
 		return $tour_days.' days';
 	}

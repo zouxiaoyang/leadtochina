@@ -41,13 +41,13 @@ class AdoptionOrphanageAddressArticle extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('aid, recommend', 'numerical', 'integerOnly'=>true),
+			array('aid, recommend,province_id', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>100),
 			array('pic', 'length', 'max'=>50),
 			array('content, date', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, aid, title, content, pic, date', 'safe', 'on'=>'search'),
+			array('id, aid,province_id,title, content, pic, date', 'safe', 'on'=>'search'),
 		);
 	}
 

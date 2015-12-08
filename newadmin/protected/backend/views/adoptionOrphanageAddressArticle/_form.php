@@ -15,8 +15,6 @@ $this->widget('ext.ueditor.Ueditor',
                 ',
   ));
 ?>
-
-
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -28,11 +26,11 @@ $this->widget('ext.ueditor.Ueditor',
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
+	
 	<div class="row">
 		<?php echo $form->labelEx($model,'aid'); ?>
 		<?php
-		 $model->aid = Yii::app()->user->getState('adoption_orphanage_address_id');
+		// $model->aid = Yii::app()->user->getState('adoption_orphanage_address_id');
 		 echo $form->textField($model,'aid', array("readonly"=>"readonly")); ?>
 		<?php echo $form->error($model,'aid'); ?>
 	</div>
@@ -63,6 +61,13 @@ $this->widget('ext.ueditor.Ueditor',
 		<img src="<?php echo ImageUtils::getThumbnail(AdoptionOrphanageAddressArticle::UPLOAD_PATH . $model->attributes['pic'], '200x100');?>"  />
 	</div>
 	<?php endif;?>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'province_id'); ?>
+		<?php echo $form->dropDownList($model, 'province_id', Province::getAllProvince())?>
+		<?php echo $form->error($model,'province_id'); ?>
+	</div>
+
 
 	<div class="row">
 	    <?php echo $form->labelEx($model,'date'); ?>

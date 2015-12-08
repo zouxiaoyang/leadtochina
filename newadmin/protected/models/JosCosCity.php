@@ -167,17 +167,17 @@ class JosCosCity extends CActiveRecord
 		return $ret;
 	}
 
-	public function getAllcities(){
+	static function getAllcities(){
 		$list=self::allCities();
 		return self::swapToArray($list);
 	}
-	private function allCities(){
+	static function allCities(){
 		$list=self::model()->findAll(array(
 			'select'=>array('id','name'),
 		));
 		return $list;
 	}
-	private function swapToArray($obj){
+	static function swapToArray($obj){
 		$ret=array();
 		$ret[0]="请选择城市";
 		foreach($obj as $k=>$v){

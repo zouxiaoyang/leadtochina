@@ -13,6 +13,7 @@ if(strpos($_SERVER['HTTP_HOST'],'leadtochina.com')){
 }
 $dbUser = 'root';
 $dbPasswd = 'root';
+$filter_ip = $_SERVER['REMOTE_ADDR'];
 return array(
 	'basePath' => $frontend,
  
@@ -41,7 +42,7 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'admin',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('192.168.1.110','::1'),
+			'ipFilters'=>array($filter_ip,'::1'),
 		),
 
 		'srbac'=>array(

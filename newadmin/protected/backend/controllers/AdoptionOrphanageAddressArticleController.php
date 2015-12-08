@@ -89,6 +89,7 @@ class AdoptionOrphanageAddressArticleController extends Controller
 	{
 		$model=$this->loadModel($id);
 
+
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -123,7 +124,9 @@ class AdoptionOrphanageAddressArticleController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('AdoptionOrphanageAddressArticle');
+		$dataProvider=new CActiveDataProvider('AdoptionOrphanageAddressArticle',array('sort'=>array(  
+            'defaultOrder'=>'date DESC',  
+        )));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -134,7 +137,7 @@ class AdoptionOrphanageAddressArticleController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		if($_GET['aid']) Yii::app()->user->setState('adoption_orphanage_address_id', $_GET['aid']);
+		if(isset($_GET['aid'])) Yii::app()->user->setState('adoption_orphanage_address_id', $_GET['aid']);
 		$aid = Yii::app()->user->getState('adoption_orphanage_address_id');
 
 		$model=new AdoptionOrphanageAddressArticle('search');

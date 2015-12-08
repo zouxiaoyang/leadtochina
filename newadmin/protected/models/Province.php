@@ -88,7 +88,7 @@ class Province extends CActiveRecord
 	}
 	
 	//得到所有省份id和名称
-	public function getAllProvince(){
+	static function getAllProvince(){
 		$list=self::allProvinces();
 		return self::swapToArray($list);
 	}
@@ -97,13 +97,13 @@ class Province extends CActiveRecord
 	    return 
 	    Yii::app()->createUrl('adoption/homeLandProvince',array('id'=>$this->id,'name'=>SiteUtils::stringURLSafe($this->name)));
 	  }
-	private function allProvinces(){
+	static function allProvinces(){
 		$list = self::model()->findAll(array(
 		'select'=>array('id,name'),
 		));	
 		return $list;
 	}
-	private function swapToArray($obj){
+	static function swapToArray($obj){
 		$ret=array();
 		$ret[0]='请选择省份';
 		foreach ($obj as $v){

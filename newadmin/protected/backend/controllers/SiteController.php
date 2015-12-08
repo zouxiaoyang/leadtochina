@@ -4,10 +4,9 @@ class SiteController extends Controller
 {
 	 public $defaultAction='login';
 
-	 public function beforeAction()
-	 {
-	 	return true;
-	 }
+	protected function beforeAction($action) {
+		return true;
+	}
 	 
 	/**
 	 * Declares class-based actions.

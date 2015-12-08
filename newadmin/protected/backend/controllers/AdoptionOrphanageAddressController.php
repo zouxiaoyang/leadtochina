@@ -8,6 +8,10 @@ class AdoptionOrphanageAddressController extends Controller
 	 */
 	public $layout='//layouts/column2';
 
+	public function beforeAction($action){
+		return true;
+	}
+
 	/**
 	 * @return array action filters
 	 */
@@ -26,6 +30,7 @@ class AdoptionOrphanageAddressController extends Controller
 	 */
 	public function accessRules()
 	{
+
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),

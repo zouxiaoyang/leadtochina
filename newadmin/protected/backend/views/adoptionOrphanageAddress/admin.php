@@ -75,6 +75,16 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
                     )
             )
     ),
+	array( // for packages;
+        'class'=>'CButtonColumn',
+        'template'=>'{addPost}',
+        'buttons'=>array(
+                'addPost'=>array(
+                       'label'    => '行程管理',
+                        'url'    => 'Yii::app()->createUrl("adoptionPackageContent/admin", array("aid" => $data->id))' // 可以传参
+                    )
+            )
+    ),
 		array(
 			'class'=>'CButtonColumn',
 		),
