@@ -3924,21 +3924,21 @@ background-color:transparent
 	position:relative;
 	float:left;
 	padding:6px 12px;
-	margin-left:8px;
+	margin-left:-1px;
 	line-height:1.42857143;
-	color:#333;
+	color:#337ab7;
 	text-decoration:none;
 	background-color:#fff;
 	border:1px solid #ddd
 }
 .pagination>li:first-child>a, .pagination>li:first-child>span{
 	margin-left:0;
-	/*border-top-left-radius:4px;
-	border-bottom-left-radius:4px*/
+	border-top-left-radius:4px;
+	border-bottom-left-radius:4px
 }
 .pagination>li:last-child>a, .pagination>li:last-child>span{
-	/*border-top-right-radius:4px;
-	border-bottom-right-radius:4px*/
+	border-top-right-radius:4px;
+	border-bottom-right-radius:4px
 }
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover{
 	color:#23527c;
@@ -3947,10 +3947,10 @@ background-color:transparent
 }
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
 	z-index:2;
-	color:#d56d21;
+	color:#fff;
 	cursor:default;
-	background-color:#fff;
-	border-color:#d56d21
+	background-color:#337ab7;
+	border-color:#337ab7
 }
 .pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover{
 	color:#777;
