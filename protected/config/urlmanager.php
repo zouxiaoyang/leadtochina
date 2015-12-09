@@ -21,6 +21,9 @@ return array(
 		 'travel/review/<tid:\d+>/<packageid:\d+>.html'  =>'reviews/index',
 		// adoption
 		  'travel/adoption'  =>'adoption/index',
+		  'travel/showMaps/<city_name:.*>/<id:\d+>'  =>'adoption/showMaps',
+		  '<city_name:.*>/<city_id:\d+>/map.html'  =>'adoption/cityMaps',
+		  '/travle/adoptionarticle'  =>'adoption/adoptionArticle',
 
 			'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 			'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',

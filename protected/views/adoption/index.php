@@ -2,8 +2,8 @@
   <div class="row">
     <div class="col-sm-12 col-md-9">
       <h1 class="page-title05"><?php echo $res['orphanage_name'];?></h1>
-      <span>Tour Route: <?php echo $res['address'].','.$res['city_name'].',China&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Postal Code:&nbsp;'.$res['postal_code'].'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telephone No:&nbsp;'.$res['tel'];?></span>
-      <div class="pro-detail-block"> <img src="/images/pro-detail.jpg" />
+      <a href="<?php echo Yii::app()->createUrl('adoption/showMaps',array('city_name'=>$res['city_name'],'id'=>$res['apt_id']));?>"><img src="/images/map-ico01.gif" /></a> &nbsp;<span>Address: <?php echo $res['address'].','.$res['city_name'].',China&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Postal Code:&nbsp;'.$res['postal_code'].'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telephone No:&nbsp;'.$res['tel'];?></span>
+      <div class="pro-detail-block"> <img src="/images/adoption-views-banner01.jpg" />
         <div class="pro-text01">
           <p><?php echo $res['public_content'];?></p>
         </div>
@@ -18,23 +18,29 @@
           <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade in active" id="itinerary">
               <section class="clearfix inner-tab-block01">
-                <label class="inner-tab-title01"><?php echo $res['or_name'];?></label>
+                <label class="inner-tab-title01">ITINERARY FYR</label>
                 <div class="inner-tab-text01"> 
 						  <p>
-							day 1: <?php echo $res['day1'];?>
+							Day 1: <?php echo $res['day1'];?>
 						  </p>
 						   <p>
-							day 2: <?php echo $res['day2'];?>
+							Day 2: <?php echo $res['day2'];?>
 						  </p>
 						   <p>
-							day 3: <?php echo $res['day3'];?>
+							Day 3: <?php echo $res['day3'];?>
 						  </p>
 						  <p>
-							day 4: <?php echo $res['day4'];?>
+							Day 4: <?php echo $res['day4'];?>
 						  </p>
-
+					</div>
               </section>
-            </div>
+			  <section class="clearfix inner-tab-block01">
+                <label class="inner-tab-title01">IMPORTANT NOTES</label>
+                <div class="inner-tab-text01"> 
+					<?php echo $res['description'];?>
+				</div>
+              </section>
+           </div>
             <div class="tab-pane fade" id="photos">
               	<section class="clearfix inner-tab-block01">
 					<div class="photo-block">
@@ -101,18 +107,46 @@
     </div>
     <div class="col-sm-3">
     	 <div class="pro-detail-block-right">
-         	<section class="clearfix">We understand that an orphanage visit is perhaps the most important part of homeland travel.
-					With years of experience working with children in orphanages all over China, Lead to China is uniquely qualified to offer a special homeland experience for you. 
-					You will:
-					<ul>
-						<li>Visit the orphanage, foster family and finding site</li>
-						<li>Learn about birth country culture</li>
-						<li>Get the first hand price from local agency</li>
-					</ul>
+         	<section class="clearfix">
+             <div class="top-block01">
+             	<p>With years of experience working with children in orphanages all over China, Lead to China is uniquely qualified to offer a special homeland experience for you. 
+					You will:</p>
+				<ul>
+					<li>Visit the orphanage, foster family and finding site</li>
+					<li>Learn about birth country culture</li>
+					<li>Get the first hand price from local agency</li>
+				</ul>
+            </div>
 			</section>
+             <section class="clearfix ">
+            		<div class="top-block02">
+            		<p class="center-button">
+        				<a href="<?php echo Yii::app()->createUrl('order/index');?>" class="large-button" >Help Me Creat My Trip</a><br>
+        				<span class="tour-sidebar-inquire-aftertext">Free travel guide & quotation within 24 hrs!</span>
+    				</p>
+                    </div>
+            </section>
             <section class="clearfix">
-              	<div class="view-block-pro-detail">
-                	<h3 class="title01">Reviews of this Travel Agency</h3>
+              	<!--<div class="view-block-pro-detail">-->
+                	<div class="adoption-right-block01">
+                	<h3 class="title01">Travel Stories of This Orphanage</h3>
+                    <div class="adoption-review-item" >
+                    	<div class="feature-image">
+           					<img alt="" src="/images/adoption01.jpg"  />
+                            <div class="header">
+                            	<span>2015 Private Visit to Guipin & Nanning SWI </span>
+                                <span>Date: Aug 08th, 2015</span>
+                            </div>
+						</div>
+                        <div class="body">
+                        	<p>Amanda is a university professor from Canada. She adopted her daughter Andaya from Guiping SWI in Guangxing province. Now Andaya is nine years old, Amanda asked us to arrange a heritage tour for her family (her daughter Amanda, her son Kian and her mother) from August 8th to 10th... </p>
+                            <a href="#" class="see-more02 f-right">See more >></a>
+                            <div class="clear"></div>
+                        </div>                   
+                    </div>
+                    
+                    
+                    
                     <div class="view-content">
 				<?php if(!empty($reviews)):?>
 					<?php foreach($reviews as $key=>$review){ ?>
