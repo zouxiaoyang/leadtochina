@@ -67,6 +67,9 @@ h1, h2, h3, h4{
 
 .tour-read-more01{border: 1px solid #fff;border-radius:3px; color:#fff; padding:3px 6px; font-size:12px;}
 .tour-read-more01:hover{ color:#fff; background:#ed9300; text-decoration:none;}
+.see-more02{border: 1px solid #d56d21; color:#d56d21; padding:3px 8px; font-size:13px;}
+.see-more02:hover{ color:#d56d21; background:#fff; text-decoration:none;}
+
 
 .f-right{ float:right;}
 .f-left{ float:left;}
@@ -1207,24 +1210,17 @@ p.center-button{margin-bottom: 0; text-align: center;}
     width: 800px;
 }
 
-.question-detail .direction{
-    height: 25px;
-    left: 52px;
-    position: absolute;
-    top: 13px;
-    width: 29px;
-}
 
 .question-detail .describe{
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; 
     float: right;
     height: auto;
     padding: 10px 13px;
-    width: 720px;
+    width: 720px; 
 }
 .question-detail .direction{
     height: 25px;
-    left: 52px;
+    left: 53px;
     position: absolute;
     top: 13px;
     width: 29px;
@@ -2081,3 +2077,46 @@ filter:progid:DXImageTransform.Microsoft.Alpha(enabled=false);
 .reviews-page-tab #photos img{ margin:8px 25px 20px;}
 
 
+.adoption-right-block01{  background: #f5f5f5 none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    margin: 30px 0 10px;
+   }
+.adoption-right-block01 .title01{font-weight: 300;margin:20px 10px;}
+.adoption-review-item{background: #f5f5f5;}
+.adoption-review-item .feature-image{position: relative;}
+.adoption-review-item .header{
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    position: absolute;
+    width: 100%; 
+}
+.adoption-review-item  .body{
+    padding: 15px 10px;
+}
+
+.search-travel-reviews{ margin:30px 0;}
+.search-travel-reviews label{ color:#797979;font-weight: normal;}
+.search-travel-reviews .form-text01{ width:200px;   border: 1px solid #c4c4c4; background:#fff; color:#797979;font-size: 12px;padding: 4px;   }
+.search-travel-reviews .form-submit02{background-color: #f5f5f5;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #797979;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: normal;
+    margin: 0 5px 0 0;
+    padding: 4px 9px;
+    text-transform: uppercase;}
+.form-select01{border: 1px solid #c4c4c4; background:#fff; color:#797979; width:200px; padding:2px;}
+.travel-reviews-list01{}
+.reviews-list01-block{border-top: 1px solid #ccc;font-size: 90%;margin-bottom: 10px;margin-top: 25px; padding-top: 20px;}
+.reviews-list01-block .group-left{ margin-right:20px; float:left;}
+.reviews-list01-block .group-right{ margin-right:20px; float:left; width:69%;}
+.reviews-list01-block .group-right h2{ font-size:22px; color:#d56d21; margin:3px 0 18px;}
+.reviews-list01-block .group-right p{ color:#797979; font-size:15px; line-height:24px;}
+.reviews-list01-block .group-right i{ color:#797979; font-style:italic; font-size:14px;}
+.reviews-pagenation{ text-align:center;}
