@@ -106,6 +106,8 @@ class AdoptionArticle extends CActiveRecord
 
 		$criteria->compare('province_id',$this->province_id);
 
+		var_dump($criteria);exit;
+
 		return new CActiveDataProvider('AdoptionArticle', array(
 			'criteria'=>$criteria,
 		));

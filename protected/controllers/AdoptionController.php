@@ -71,11 +71,111 @@ class AdoptionController extends Controller
 		));
 
 	}
-	// 游记;
+	// 游记列表;
 	public function actionAdoptionArticle(){
+
+		$province_id =isset($_GET['province_id'])?(int)$_GET['province_id']:0;
+		$title = isset($_GET['title'])?addslashes(trim($_GET['title'])):0;
+
+		$where=array();
+		if($province_id>0){ 
+			$where[]=" `province_id`={$province_id}";
+		}
+		if(!empty($title)){
+			$where[]=" `title` like '%{$title}%'";
+		}
+		$where = implode(' and',$where);
+		if(!empty($where)){// search
+			$sql ="select * from `t_adoption_orphanage_address_article` where {$where} order by `date` desc";
+		}else{ // normal
+			$sql ="select * from `t_adoption_orphanage_address_article` order by `date` desc";
+		}
+		$criteria=new CDbCriteria();
+		$result = Yii::app()->db->createCommand($sql)->query();
+		$cnt = $result->rowCount;
+		$pages=new CPagination($cnt);
+		$pages->pageSize=5; 
+		$pages->applyLimit($criteria);
+
+		$result=Yii::app()->db->createCommand($sql." LIMIT :offset,:limit"); 
+		$result->bindValue(':offset', $pages->currentPage*$pages->pageSize); 
+		$result->bindValue(':limit', $pages->pageSize); 
+		$posts=$result->query();
+
+		// get province;
+
+		$provinces = Province::getAllProvince();
+
+		$this->render('adoption_article',array(
+			 'posts'=>$posts,
+			 'pages'=>$pages,
+			 'provinces'=>$provinces,
+			  'cnt'=>$cnt,
+			));
+	}
+	// 游记详细;
+	public function actionAdoptionArticleDetail(){
+	
+		//var_dump($_GET['ar_id']);
+		$ar_id = (int)$_GET['ar_id'];
+		$sql="select * from `t_adoption_orphanage_address_article` where `id`={$ar_id}";
+		$res = Yii::app()->db->createCommand($sql)->queryRow();
+
+		$this->render('adoption_article_detail',array('res'=>$res));
+	}
+	// 游记详细;
+	public function actionAdoptionArticleByProvince(){
 	
 	
-		$this->render('adoption_article');
+		$this->render('adoption_article_by_province');
+	}
+   // adoption customer size;定制页面;
+	public function actionAdoptionDiy(){
+	
+	
+		$this->render('adoption_diy');
+	}
+// adoption search;
+	public function actionAdoptionSearch(){
+		
+		$province_id =(int)$_GET['province_id'];
+		$title = addslashes(trim($_GET['title']));
+		$where=array();
+		if($province_id>0){
+			$where[]=" `province_id`={$province_id}";
+		}
+		if(!empty($title)){
+			$where[]=" `title` like '%{$title}%'";
+		}
+		$where = implode(' and',$where);
+		if(!empty($where)){
+			$sql ="select * from `t_adoption_orphanage_address_article` where {$where} order by `date` desc";
+			
+			$criteria=new CDbCriteria();
+			$result = Yii::app()->db->createCommand($sql)->query();
+			$pages=new CPagination($result->rowCount);
+			$pages->pageSize=5; 
+			$pages->applyLimit($criteria);
+
+			$result=Yii::app()->db->createCommand($sql." LIMIT :offset,:limit"); 
+			$result->bindValue(':offset', $pages->currentPage*$pages->pageSize); 
+			$result->bindValue(':limit', $pages->pageSize); 
+			$posts=$result->query();
+		
+		}
+
+	     //	var_dump(json_encode($posts));
+
+		// get province;
+
+		$provinces = Province::getAllProvince();
+
+		$this->render('adoption_search',array(
+			 'posts'=>$posts,
+			 'pages'=>$pages,
+			 'provinces'=>$provinces
+			));
+
 	}
 	// -----------------------------------------------------------
 	// Uncomment the following methods and override them if needed
