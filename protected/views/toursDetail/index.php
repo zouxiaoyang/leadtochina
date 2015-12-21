@@ -71,7 +71,7 @@
                     </tr>
                   			</tbody>
                 		</table>
-                </div>
+                  </div>  
               	</section>
               	<section class="clearfix inner-tab-block01">
                 	<label class="inner-tab-title01">IMPORTANT NOTES</label>
