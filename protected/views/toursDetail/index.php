@@ -64,7 +64,7 @@
                       <td><?php echo $arr_price[1];?></td>
                       <td><?php echo $arr_price[2];?></td>
                     </tr>
-                     			<tr>
+                     <tr>
                       <td>Mar.1- Nov.30</td>
                      <td><?php echo $arr_price[6];?></td>
                       <td><?php echo $arr_price[7];?></td>
