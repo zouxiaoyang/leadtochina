@@ -31,6 +31,9 @@ $this->widget('ext.ueditor.Ueditor',
 		<?php echo $form->labelEx($model,'aid'); ?>
 		<?php
 		// $model->aid = Yii::app()->user->getState('adoption_orphanage_address_id');
+		if(isset($_GET['acid'])){
+			$model->aid = $_GET['acid'];
+		}
 		 echo $form->textField($model,'aid', array("readonly"=>"readonly")); ?>
 		<?php echo $form->error($model,'aid'); ?>
 	</div>

@@ -26,8 +26,13 @@ return array(
 			  '/travel/adoptionarticle'  =>'adoption/adoptionArticle',
 			  '/travel/adoptionarticle/detail/<ar_id:\d+>.html'  =>'adoption/adoptionArticleDetail',
 			  '/travel/adoptionbyprovince'  =>'adoption/adoptionArticleByProvince',
-			  '/travle/adoption/diy'  =>'adoption/adoptionDiy',
+			  '/travel/adoption/diy'  =>'adoption/adoptionDiy',
 			  '/travle/adoptionarticle/search'  =>'adoption/adoptionSearch',
+			  '/travel/adoptionhome/'  =>'adoption/adoptionHome',
+			  '/travel/adoption/saveorder'=>'adoption/saveOrder',
+			  '/travel/adoption/familyActivity'=>'adoption/familyActivity',
+
+
 			'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 			'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 			'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',

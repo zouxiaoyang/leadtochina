@@ -30,14 +30,35 @@
       <div id="mainmenu" >
         <?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'CHINA TOURS', 'url'=>array('/site/index')),
+				array('label'=>'CHINA TOURS', 'url'=>array('/travel/china-tours'),
+					'items'=>array(
+						array('label'=>'Top 10 China Tours', 'url'=>array('/travel/best-china-tours/')),
+						array('label'=>'Short Stays in China', 'url'=>array('/travel/family-tours')),
+						array('label'=>'Yangtze River Cruise', 'url'=>array('/travel/family-tours')),
+						array('label'=>'China Homeland Tours', 'url'=>array('/travel/adoption')),
+						array('label'=>'China Senior Tours', 'url'=>array('/travel/family-tours')),
+						array('label'=>'China Family Tours', 'url'=>array('/travel/family-tours')),
+						array('label'=>'China Educational Trips', 'url'=>array('/travel/family-tours')),
+						array('label'=>'China Train Travel', 'url'=>array('/travel/family-tours')),
+						array('label'=>'China Tours from', 'url'=>array('/travel/family-tours')),
+						array('label'=>'Customize China Tour', 'url'=>array('/travel/family-tours')),
+					)
+				),
 
 				array('label'=>' DESTINATIONS', 'url'=>array('/site/page', 'view'=>'about'),'items'=>array(
 					array('label'=>'DESTINATIONS1', 'url'=>array('/site/index')),
 					array('label'=>'DESTINATIONS2', 'url'=>array('/site/index')),
 				)),
 
-				array('label'=>'HERITAGE TOURS', 'url'=>array('/site/contact')),
+				array('label'=>'HERITAGE TOURS', 'url'=>array('/site/contact'),
+					'items'=>array(
+						array('label'=>'Provincial Reunion Tour', 'url'=>array('/travel/adoptionbyprovince')),
+						array('label'=>'China Orphanage List', 'url'=>array('/travel/family-tours')),
+						array('label'=>'Creat Your Return Trip', 'url'=>array('/travel/family-tours')),
+						array('label'=>'Families\' Travel Stories', 'url'=>array('/travel/family-tours')),
+						array('label'=>'Featured Activites', 'url'=>array('/travel/family-tours')),
+					)
+				),
 				array('label'=>' SHORE EXCURSIONS ', 'url'=>array('/site/contact')),
 				
 			),

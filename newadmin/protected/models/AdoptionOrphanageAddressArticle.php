@@ -69,7 +69,7 @@ class AdoptionOrphanageAddressArticle extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'aid' => '收养团地址id',
+			'aid' => '福利院id',
 			'title' => '标题',
 			'content' => '内容',
 			'pic' => '图片',

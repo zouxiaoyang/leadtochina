@@ -9,7 +9,7 @@ body
 }
 h1, h2, h3, h4{
     font-family: "Open Sans",Arial,Helvetica,sans-serif;
-    font-weight:300;
+    font-weight: 300;
     letter-spacing: normal;
     text-transform: none;
 }
@@ -67,9 +67,6 @@ h1, h2, h3, h4{
 
 .tour-read-more01{border: 1px solid #fff;border-radius:3px; color:#fff; padding:3px 6px; font-size:12px;}
 .tour-read-more01:hover{ color:#fff; background:#ed9300; text-decoration:none;}
-.see-more02{border: 1px solid #d56d21; color:#d56d21; padding:3px 8px; font-size:13px;}
-.see-more02:hover{ color:#d56d21; background:#fff; text-decoration:none;}
-
 
 .f-right{ float:right;}
 .f-left{ float:left;}
@@ -153,11 +150,11 @@ h1, h2, h3, h4{
 #mainmenu ul li{ display:block; float:left; position:relative;}
 #mainmenu ul li a{ display:block;background: url(/images/menu-bg01.png) right  19px no-repeat;color:#dedede;font-size:16px; text-transform:uppercase;text-decoration:none;padding:0px 20px; line-height:50px; letter-spacing:1px;}
 #mainmenu ul a:hover{background: url(/images/menu-bg01-hover.png) right 19px no-repeat;}
-#mainmenu ul li ul{ display:none; background:#898989; position:absolute; top:49px; left:0;width:200px; padding:0; z-index:80;}
+#mainmenu ul li ul{ display:none; background:#898989; position:absolute; top:49px; left:0;width:180px; padding:0; z-index:80;}
 #mainmenu ul li:hover ul{ display:block; }
 #mainmenu > li:hover ul{display:block;}  
 #mainmenu ul li ul li{float:none;}
-#mainmenu ul li ul li a{ color:#000; background:none; font-size:13px; padding:5px 0 5px 20px;line-height:20px; text-transform:capitalize;}
+#mainmenu ul li ul li a{ color:#000; background:none; font-size:13px; padding:0 0 0 20px;line-height:28px;}
 #mainmenu ul li ul li a:hover{ background:#333; color:#eee; }
 
 .inquire-block{float: right; margin:15px 20px 0 10px;}
@@ -1080,11 +1077,9 @@ div.search-form
 .page-title07{padding-bottom: 9px; color:#555; font-size:23px;}
 .page-title08{padding: 10px 0;  font-size:32px; color:#d56d21;}
 .page-title09{ font-size:20px; margin-top:30px;}
-.page-title10{border-bottom: 1px solid #eee; margin: 30px 0 20px;padding-bottom: 9px; color:#d56d21; font-size:35px; font-weight:300; }
-.page-title11{border-bottom: 1px solid #eee; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-size:35px; font-weight:300; }
-.page-title12{border-bottom: 2px solid #d56d21; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-size:35px; font-weight:300; }
-.page-title13{ margin: 60px 0 40px; font-size:36px; font-weight:300; text-align:center; }
-.page-title14{border-bottom: 1px solid #d7d7d7; padding: 40px 0 30px;font-size:36px; text-align:center;font-weight:300;}
+.page-title10{border-bottom: 1px solid #eee; margin: 30px 0 20px;padding-bottom: 9px; color:#d56d21; font-size:35px; font-weight:normal; }
+.page-title11{border-bottom: 1px solid #eee; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-size:35px; font-weight:normal; }
+.page-title12{border-bottom: 2px solid #d56d21; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-size:35px; font-weight:normal; }
 
 .lead02{ font-size: 17px;line-height: 1.4; margin: 15px 0 30px;}
 
@@ -1183,7 +1178,7 @@ p.center-button{margin-bottom: 0; text-align: center;}
 
 .nav-tabs li.last a{ background:#ed9300; color:#fff;}
 
-.pro-detail-block-right{ margin-top:100px;}
+.pro-detail-block-right{ margin-top:105px;}
 .pro-detail-block-right .top-block01{ background:#f5f5f5; border:1px solid #ccc; padding:20px 15px;}
 .pro-detail-block-right .top-block01 ul{ margin:0; padding:10px 0;}
 .pro-detail-block-right .top-block01 li{background: rgba(0, 0, 0, 0) url("/images/checkmark.png") no-repeat scroll 0 50%;
@@ -1198,8 +1193,6 @@ p.center-button{margin-bottom: 0; text-align: center;}
 .view-block-pro-detail .views-row .text02 a{ font-style:italic;color:#343434;}
 .view-block-pro-detail .views-row a:hover{ color:#00b7ea; text-decoration:none;}
 .view-block-pro-detail .views-row .star img{ border:none; padding:0;box-shadow:none;}
-.pro-detail-block-right .top-block01 span{ font-size:24px; text-align:center; display:block;}
-.pro-detail-block-right .top-block01 label{ font-weight:normal; margin:15px 0 0 15px;}
 
 
 .question-detail{}
@@ -1216,7 +1209,7 @@ p.center-button{margin-bottom: 0; text-align: center;}
 
 
 .question-detail .describe{
-    border: 1px solid #ddd; 
+    border: 1px solid #ddd;
     float: right;
     height: auto;
     padding: 10px 13px;
@@ -2081,163 +2074,3 @@ filter:progid:DXImageTransform.Microsoft.Alpha(enabled=false);
 .reviews-page-tab #photos img{ margin:8px 25px 20px;}
 
 
-.adoption-right-block01{  background: #f5f5f5 none repeat scroll 0 0;
-    border: 1px solid #ccc;
-    margin: 30px 0 10px;
-   }
-.adoption-right-block01 .title01{font-weight: 300;margin:20px 10px;}
-.adoption-review-item{background: #f5f5f5;}
-.adoption-review-item .feature-image{position: relative;}
-.adoption-review-item .header{
-    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
-    bottom: 0;
-    color: #fff;
-    font-size: 14px;
-    padding: 5px 10px;
-    position: absolute;
-    width: 100%; 
-}
-.adoption-review-item  .body{
-    padding: 15px 10px;
-}
-
-.search-travel-reviews{ margin:30px 0;}
-.search-travel-reviews label{ color:#797979;font-weight: normal;}
-.search-travel-reviews .form-text01{ width:200px;   border: 1px solid #c4c4c4; background:#fff; color:#797979;font-size: 12px;padding: 4px;   }
-.search-travel-reviews .form-submit02{background-color: #f5f5f5;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: #797979;
-    cursor: pointer;
-    font-size: 0.9em;
-    font-weight: normal;
-    margin: 0 5px 0 0;
-    padding: 4px 9px;
-    text-transform: uppercase;}
-.form-select01{border: 1px solid #c4c4c4; background:#fff; color:#797979; width:200px; padding:2px;}
-.travel-reviews-list01{}
-.reviews-list01-block{border-top: 1px solid #ccc;font-size: 90%;margin-bottom: 10px;margin-top: 25px; padding-top: 30px;}
-.reviews-list01-block .group-left{ margin-right:20px; float:left;}
-.reviews-list01-block .group-right{float:left; width:74%;}
-.reviews-list01-block .group-right h2{ font-size:22px; color:#d56d21; margin:0px 0 18px; font-weight:300;}
-.reviews-list01-block .group-right h2:hover{ color:#343434;}
-.reviews-list01-block .group-right h1{ font-size:36px; font-weight:300; margin:15px 0 18px;}
-.reviews-list01-block .group-right p{ color:#797979; font-size:15px; line-height:24px;}
-.reviews-list01-block .group-right i{ color:#797979; font-style:italic; font-size:14px;}
-.reviews-pagenation{ text-align:center;}
-.travel-bottom-block{ background:#f5f5f5; border-top:1px solid #ccc;}
-.travel-bottom-block .seo-section{ width:16%;}
-.reviews-list01-block02{ margin:0px 0 40px; border:none; padding:10px 0; border-bottom:1px dashed #ccc;}
-.reviews-list01-block02 img{  border: 5px solid #eee;}
-.reviews-list01-block02 .group-right{ width:68%;}
-.reviews-list01-block02 .group-right i{ font-size:20px;}
-.field-label{ color:#797979; font-size:18px; font-style:italic; margin-top:40px;}
-
-.adoption-province-about{ text-align:center;}
-.adoption-province-about li{ list-style:none; float:left; width:25%; margin-top:50px;}
-.adoption-province-about li span{ display:block; text-align:center; font-size:18px; padding:30px 0;}
-.adoption-province-collection{ background:#f9f9f9; padding:0px 0 50px; margin-top:40px;}
-.adoption-province-collection p{ text-align:center; padding:10px 0;}
-.adoption-province-collection li{ list-style:none; float:left; width:33%; padding-left:30px; margin:10px 0 0;}
-.adoption-province-collection a{  color: #7a7a7a;display: block;font-size: 14px;padding:5px 0 4px 26px;background:url("/images/ico-gou01.png") no-repeat left center;}
-.adoption-province-collection a:hover{ color:#337ab7; text-decoration:none;}
-.adoption-tips{ margin-bottom:80px;}
-.adoption-tips p{line-height: 22px;margin-bottom: 15px;}
-
-.adoption-review-right{ margin:30px 0 0;}
-
-.adoption-diy{ padding:0 100px ;}
-.adoption-diy-top{ padding:100px 0 50px; text-align:center; font-size:20px;}
-.adoptionOrder-block h3{ color:#d56d21; font-size:22px; text-transform: uppercase; margin:0; border-bottom:1px solid #ccc; padding:40px 0 10px 0; margin-bottom:20px;}
-
-.adoptionOrder-block .table-header{ font-size:16px; text-transform:uppercase; width:35%; float:left; padding:10px 0 10px 32px;}
-.adoptionOrder-block .table-header label{color:#343434; font-weight:300; margin:0;}
-.adoptionOrder-block .table-body{width:65%; float: left; padding:10px 0 10px; }
-.adoptionOrder-block .table-body input{ width:455px; border:1px solid #ccc; background:#fff; padding:3px;}
-.adoptionOrder-block input.form-checkbox{ vertical-align:top; padding: 0; width:auto; margin:5px 10px 0 0;}
-.adoptionOrder-block input.Personal_field{ width:370px;}
-.adoptionOrder-block textarea.form-text{ vertical-align:top; padding: 0; width:auto; margin:0px; height:60px; width:455px; background:#fff; border:1px solid #ccc;}
-.adoptionOrder-block .table-body span{ font-size:15px; padding:0 20px 0 0;}
-.adoptionOrder-block .list01{ list-style:none; margin:0; padding:0;}
-.adoptionOrder-block .list01 li{ padding:0 0 10px 0; float:left; width:50%;}
-
-.adoptionOrder-block .list02{ list-style:none; margin:0; padding:0;}
-.adoptionOrder-block .list02 li{ padding:0 0 10px 0; float:left;}
-
-.adoptionOrder-block .list03{ list-style:none; margin:0; padding:0;}
-.adoptionOrder-block .list03 i{ display:block; font-style:normal;}
-.adoptionOrder-block .list03 li{ padding:0; float:left; width:30%;}
-.adoptionOrder-block .form-select01{ width:80px;}
-.adoptionOrder-block .form-select02{background: #fff none repeat scroll 0 0;border: 1px solid #c4c4c4;color: #797979;padding: 2px;width:455px;}
-
-.adoptionOrder-block input.large-button{
-    background: url(/images/white-link-arrow.png) 8px center no-repeat  #ed9300;
-    border: 2px solid #ed9300;
-    border-radius: 10px;
-    clear: both;
-    color: #fff;
-    display: inline-block;
-    font-family: "Open Sans",Arial,Helvetica,sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    margin: 0 0 5px;
-    min-height: 20px;
-    padding: 6px 15px 6px 30px;
-    text-align: left;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    text-transform: capitalize; width:auto;}
-.adoptionOrder-block input.large-button:hover{ color:#343434; background: url(/images/yellow-link-arrow.png) 8px center no-repeat  #fff;}
-.must{color: #d56d21;}
-
-.adoption-article-detail img{ width:500px;}
-
-.adoption-search{ width:824px; height:58px;background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0; padding:8px 20px; position: absolute;top: 380px;left: 280px; border:1px solid #bbb;}
-.adoption-search input{ width:205px; height:40px; float:left; border:1px solid #4a4645; padding-left:10px; margin-right:10px;background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;}
-.adoption-search img{ cursor:pointer;}
-#orphanage_list{ width:280px; height:200px; position:absolute; left:490px; top:48px; border:1px solid #4a4645; padding:4px 0px; display:block; background:#fff; font-size:11px;overflow-x:hidden}
-ul#orphanage_list li{ padding:2px 5px; line-height:14px; display:block; float:left; margin:2px 0px; cursor:pointer; width:270px;}
-ul#orphanage_list li:hover{background:#ccc;}
-.adoption-search select{ width:205px; border:1px solid #4a4645;-moz-border-radius: 8px; -khtml-border-radius: 8px;-webkit-border-radius: 8px;border-radius:8px; height:40px; line-height:40px; float:left; margin-right:25px; padding:10px;background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0; }
-.adoption-search select option{ padding:3px 10px; font-size:11px; -webkit-text-size-adjust:none;}
-.adoption-search a{  display:block; float:left;}
-.adoption-search a.btn-search{ color:#ed9300; border:1px solid #ed9300; text-align:center; text-transform:uppercase; font-size:16px; height:30px; line-height:30px;   margin: 4px 0 0;padding: 0 20px;}
-.adoptionhome-about{background: #f5f5f5;padding: 5% 0 0;}
-.adoptionhome-about .about-how{list-style-type: none;margin-left: 72px; width:50%; float:left; }
-.adoptionhome-about .about-how1, .adoptionhome-about .about-how2, .adoptionhome-about .about-how3, .adoptionhome-about .about-how4{margin-bottom: 60px;}
-.adoptionhome-about .about-how1::before, .adoptionhome-about .about-how2::before, .adoptionhome-about .about-how3::before, .adoptionhome-about .about-how4::before{
-    background-image: url("/images/number-four.svg");background-repeat: no-repeat;background-size: 40px 164px;box-sizing: border-box;
-    content: "";display: block;height: 40px;margin-left: -75px; margin-top:5px; position: absolute; width: 42px;}
-.adoptionhome-about .about-how1::before{background-position: left -2px;}
-.adoptionhome-about .about-how2::before{background-position: left -42px;}
-.adoptionhome-about .about-how3::before{background-position: left -85px;}
-.adoptionhome-about .about-how4::before{background-position: left -125px;}
-.adoptionhome-about .about-how h3{font-weight: 500; margin: 0 0 20px; padding: 0;}
-
-.adoptionhome-about .about-img{ float: left;}
-.adoption-map-block{}
-.adoption-map-block .province-list01{ list-style:none;}
-.adoption-map-block .province-list01 li{ float:left;}
-.adoption-map-block .province-list01 li.li01{ margin-top:132px;}
-.adoption-map-block .province-list01 li.li01 a{ display:block; text-align:right; line-height:22px; padding-right:8px;}
-.adoption-map-block .province-list01 li.li02{}
-.adoption-map-block .province-list01 li.li03{ margin-top:107px;}
-.adoption-map-block .province-list01 li.li03 a{ display:block; text-align:left; line-height:22px; padding-left:8px;}
-
-
-.adoption-stories{ width:356px; position:relative; background:#f5f5f5;}
-.adoption-stories .bg-back{background: rgba(0, 0, 0, 0.6); position:absolute; top:186px; height:50px; color:#fff; width:100%; padding:5px 10px; }
-.adoption-stories .text-block{ padding:20px 10px;}
-.adoption-home-bottom{ background:#f5f5f5; border-bottom:1px solid #ccc; border-top:1px solid #ccc; margin-top:60px; padding:30px 0;}
-.adoption-home-bottom .block01{ width:60%;}
-.adoption-home-bottom .block01 .title01{ font-size:34px; border-bottom:1px solid #ddd; display:block; padding:0 0 10px;}
-.adoption-home-bottom .block01 input{ border:1px solid #bbb; margin:10px 0; background:#fff; color:#878787; padding:5px; width:260px; display:block;}
-.adoption-home-bottom .block01 textarea{ width:80%; height:150px; border:1px solid #bbb; background:#fff; margin-bottom:10px;}
-.adoption-home-bottom .block02{ width:35%; background:#fff; border:1px solid #ccc; font-size:24px; padding:15px 20px;font-weight: 300;}
-.adoption-home-bottom .block02 span{ display:block; text-align:right;}
-
-.familyActivity{ margin-bottom:100px;}
-.familyActivity .text01{ text-align:center; padding:60px 30px 40px; font-size:16px; color:#d56d21;}
-.activity-block{ position:relative;width:49%;}
-.activity-block .title01{background-color:rgba(0, 0, 0, 0.5); color:#fff; font-size:19px; display:block; padding:5px 20px; position:absolute; left:0; top:278px;}
-.activity-block p{ line-height:20px; padding:10px 5px;}

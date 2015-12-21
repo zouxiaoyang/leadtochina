@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
   array('label'=>'文章列表', 'url'=>array('index')),
-  array('label'=>'新建文章', 'url'=>array('create')),
+  array('label'=>'新建文章', 'url'=>array('create','acid'=>$_GET['aid'])),
 );
 
 Yii::app()->clientScript->registerScript('search', "

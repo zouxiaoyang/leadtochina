@@ -65,7 +65,7 @@ class OrderController extends Controller
 		$other_messages = $this->getOtherMessage($post);
 
 		$traffic   =  isset($post['flight'])?addslashes($post['flight']):'';// 交通;
-		$url_referer   =  Yii::app()->session['url_referer']; // 上个页面的url;
+		$url_referer   =  Yii::app()->request->urlReferrer; // 上个页面的url;
 		$package_name   =  isset($post['package_name'])?addslashes($post['package_name']):''; //套餐名称
 		$package_category   = (int)$post['package_category'];//套餐分类
 		$hotel   =  addslashes($post['hotel']); //旅馆;
