@@ -15,6 +15,7 @@
  */
 class AdoptionArticle extends CActiveRecord
 {
+	const UPLOAD_PATH = 'images/uploads/adoption/';
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @return AdoptionArticle the static model class

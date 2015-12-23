@@ -9131,3 +9131,897 @@ Stack trace:
 #14 {main}
 REQUEST_URI=/travel/best-china-tours/
 ---
+2015/12/22 14:50:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in /home/wwwroot/default/leadtochina/framework/web/CController.php:484
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(271): CController->missingAction('captcha')
+#1 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('captcha')
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/captch...')
+#3 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/adoption/captcha?v=5678f2a6486b2
+HTTP_REFERER=http://zouyiquan.test.cc/adoption/orphanageTravelGuide?id=56
+---
+2015/12/22 14:50:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in /home/wwwroot/default/leadtochina/framework/web/CController.php:484
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(271): CController->missingAction('captcha')
+#1 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('captcha')
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/captch...')
+#3 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/adoption/captcha?v=5678f2a6486b2
+HTTP_REFERER=http://zouyiquan.test.cc/adoption/orphanageTravelGuide?id=56
+---
+2015/12/22 14:50:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in /home/wwwroot/default/leadtochina/framework/web/CController.php:484
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(271): CController->missingAction('captcha')
+#1 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('captcha')
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/captch...')
+#3 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450767014773
+HTTP_REFERER=http://zouyiquan.test.cc/adoption/orphanageTravelGuide?id=56
+---
+2015/12/22 14:50:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in /home/wwwroot/default/leadtochina/framework/web/CController.php:484
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(271): CController->missingAction('captcha')
+#1 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('captcha')
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/captch...')
+#3 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450767014774
+HTTP_REFERER=http://zouyiquan.test.cc/adoption/orphanageTravelGuide?id=56
+---
+2015/12/22 14:50:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in /home/wwwroot/default/leadtochina/framework/web/CController.php:484
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(271): CController->missingAction('captcha')
+#1 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('captcha')
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/captch...')
+#3 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450767014775
+HTTP_REFERER=http://zouyiquan.test.cc/adoption/orphanageTravelGuide?id=56
+---
+2015/12/22 14:50:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in /home/wwwroot/default/leadtochina/framework/web/CController.php:484
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(271): CController->missingAction('captcha')
+#1 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('captcha')
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/captch...')
+#3 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450767014776
+HTTP_REFERER=http://zouyiquan.test.cc/adoption/orphanageTravelGuide?id=56
+---
+2015/12/22 14:50:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in /home/wwwroot/default/leadtochina/framework/web/CController.php:484
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(271): CController->missingAction('captcha')
+#1 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('captcha')
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/captch...')
+#3 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/adoption/captcha?v=5678f2a6486b2
+---
+2015/12/22 14:51:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in /home/wwwroot/default/leadtochina/framework/web/CController.php:484
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(271): CController->missingAction('captcha')
+#1 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('captcha')
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/captch...')
+#3 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450767014777
+HTTP_REFERER=http://zouyiquan.test.cc/adoption/orphanageTravelGuide?id=56
+---
+2015/12/22 14:58:11 [error] [php] Declaration of AdoptionController::actions() should be compatible with CController::actions() (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:4)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?id=56
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (4)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 14:58:26 [error] [php] Declaration of AdoptionController::actions() should be compatible with CController::actions() (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:4)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?id=56
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (4)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 14:58:49 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f4a954072
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 14:58:50 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f4a954072
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 14:58:56 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f4a954072
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:03:07 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f5aba3e17
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:03:07 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f5aba39da
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:03:08 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f5aba39da
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:03:08 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f5aba3e17
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:03:13 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450767788008
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:03:19 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450767788009
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:03:22 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450767788010
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:03:24 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450767788011
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:03:55 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f5da3056e
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:03:56 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f5da3056e
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:04:36 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f5da3056e
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:05:05 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f5da3056e
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:09:37 [error] [php] Object of class CCaptcha could not be converted to string (/home/wwwroot/default/leadtochina/protected/views/adoption/orphanageTravelGuide.php:181)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): AdoptionController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): AdoptionController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php(406): AdoptionController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionController->actionOrphanageTravelGuide()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?id=56
+in /home/wwwroot/default/leadtochina/protected/views/adoption/orphanageTravelGuide.php (181)
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (406)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:24 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f7608e4c5
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:24 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f7608b45e
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:26 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f7608b45e
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:26 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f7608e4c5
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:42 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f7608b45e
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:44 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450768224964
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:46 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450768224965
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:47 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450768224966
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:49 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450768224967
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:54 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450768224968
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:55 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450768224969
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:55 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450768224970
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:56 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450768224971
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:56 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450768224972
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:56 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450768224973
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:56 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450768224974
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:10:57 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?refresh=1&_=1450768224975
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:11:17 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f7952e477
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:11:18 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f7952e477
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:13:41 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f8254786c
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:13:42 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f8254786c
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/22 15:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/22 15:13:47 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f8254786c
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:14:01 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f8254786c
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:14:07 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f8254786c
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:14:07 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f8254786c
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:14:07 [error] [php] include(CaptchaAction.php): failed to open stream: No such file or directory (/home/wwwroot/default/leadtochina/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/YiiBase.php(198): import()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(441): createComponent()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(418): AdoptionController->createActionFromMap()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(260): AdoptionController->createAction()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/captcha?v=5678f8254786c
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:17:33 [error] [exception.CException] exception 'CException' with message 'Property "Message.referer_url" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(160): CComponent->__set('referer_url', 'http://zouyiqua...')
+#1 /home/wwwroot/default/leadtochina/protected/models/Message.php(168): CActiveRecord->__set('referer_url', 'http://zouyiqua...')
+#2 /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php(397): Message::newMessage()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionController->actionOrphanageTravelGuide()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('orphanageTravel...')
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/orphan...')
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/adoption/orphanageTravelGuide?id=9
+HTTP_REFERER=http://zouyiquan.test.cc/adoption/orphanageTravelGuide?id=9
+---
+2015/12/22 15:18:33 [error] [exception.CException] exception 'CException' with message 'Property "Message.referer_url" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(160): CComponent->__set('referer_url', 'http://')
+#1 /home/wwwroot/default/leadtochina/protected/models/Message.php(168): CActiveRecord->__set('referer_url', 'http://')
+#2 /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php(397): Message::newMessage()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionController->actionOrphanageTravelGuide()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('orphanageTravel...')
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/orphan...')
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/adoption/orphanageTravelGuide?id=9
+HTTP_REFERER=http://zouyiquan.test.cc/adoption/orphanageTravelGuide?id=9
+---
+2015/12/22 15:18:36 [error] [exception.CException] exception 'CException' with message 'Property "Message.referer_url" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(160): CComponent->__set('referer_url', 'http://')
+#1 /home/wwwroot/default/leadtochina/protected/models/Message.php(168): CActiveRecord->__set('referer_url', 'http://')
+#2 /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php(397): Message::newMessage()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionController->actionOrphanageTravelGuide()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('orphanageTravel...')
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/orphan...')
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/adoption/orphanageTravelGuide?id=9
+HTTP_REFERER=http://zouyiquan.test.cc/adoption/orphanageTravelGuide?id=9
+---
+2015/12/22 15:19:04 [error] [exception.CException] exception 'CException' with message 'Property "Message.referer_url" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(160): CComponent->__set('referer_url', 'http://')
+#1 /home/wwwroot/default/leadtochina/protected/models/Message.php(169): CActiveRecord->__set('referer_url', 'http://')
+#2 /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php(397): Message::newMessage()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionController->actionOrphanageTravelGuide()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('orphanageTravel...')
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/orphan...')
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/adoption/orphanageTravelGuide?id=9
+HTTP_REFERER=http://zouyiquan.test.cc/adoption/orphanageTravelGuide?id=9
+---
+2015/12/22 15:19:55 [error] [exception.CException] exception 'CException' with message 'Property "Message.referer_url" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(160): CComponent->__set('referer_url', 'http://zouyiqua...')
+#1 /home/wwwroot/default/leadtochina/protected/models/Message.php(169): CActiveRecord->__set('referer_url', 'http://zouyiqua...')
+#2 /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php(397): Message::newMessage()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionController->actionOrphanageTravelGuide()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('orphanageTravel...')
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/orphan...')
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/adoption/orphanageTravelGuide?id=9
+HTTP_REFERER=http://zouyiquan.test.cc/adoption/orphanageTravelGuide?id=9
+---
+2015/12/22 15:23:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "diy".' in /home/wwwroot/default/leadtochina/framework/web/CController.php:484
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(271): CController->missingAction('diy')
+#1 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('diy')
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/diy')
+#3 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/adoption/diy
+---
+2015/12/22 15:23:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/22 15:23:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/22 15:25:11 [error] [php] Undefined index: full_Name (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:303)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/adoption/saveorder
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (303)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:26:53 [error] [php] Undefined index: full_Name (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:303)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/adoption/saveorder
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (303)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:32:08 [error] [php] Undefined index: full_Name (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:303)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/adoption/saveorder
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (303)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:32:45 [error] [php] Undefined index: full_Name (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:303)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/adoption/saveorder
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (303)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 15:33:04 [error] [php] Undefined index: full_Name (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:303)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/adoption/saveorder
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (303)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 16:46:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/22 16:47:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/22 16:55:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/22 17:04:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "travle/adoptionbyprovince".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('travle/adoption...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/travle/adoptionbyprovince
+---
+2015/12/22 17:05:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/22 17:40:40 [error] [php] Undefined variable: message (/home/wwwroot/default/leadtochina/protected/views/adoption/adoption_home.php:193)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): AdoptionController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): AdoptionController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php(193): AdoptionController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionController->actionAdoptionHome()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/adoptionhome
+in /home/wwwroot/default/leadtochina/protected/views/adoption/adoption_home.php (193)
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (193)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 17:52:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@ss.com,`message`='derj n  j5 n4m oikrktt ',`ip`='192.168.0.105',`referer_url`='' at line 1. The SQL statement executed was: insert into `jos_cos_message` set `email`=ss@ss.com,`message`='derj n  j5 n4m oikrktt ',`ip`='192.168.0.105',`referer_url`='http://zouyiquan.test.cc/travel/adoptionhome',`dateline`='1450777971'.
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (201)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/22 17:52:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@ss.com,`message`='derj n  j5 n4m oikrktt ',`ip`='192.168.0.105',`referer_url`='' at line 1. The SQL statement executed was: insert into `jos_cos_message` set `email`=ss@ss.com,`message`='derj n  j5 n4m oikrktt ',`ip`='192.168.0.105',`referer_url`='http://zouyiquan.test.cc/travel/adoptionhome',`dateline`='1450777971'' in /home/wwwroot/default/leadtochina/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php(201): CDbCommand->execute()
+#1 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionController->actionAdoptionHome()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('adoptionHome')
+#6 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('adoption/adopti...')
+#7 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#9 {main}
+REQUEST_URI=/travel/adoptionhome
+HTTP_REFERER=http://zouyiquan.test.cc/travel/adoptionhome
+---
+2015/12/22 17:53:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "succeed.html".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('succeed.html')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/succeed.html
+HTTP_REFERER=http://zouyiquan.test.cc/travel/adoptionhome
+---
+2015/12/23 09:10:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/23 09:10:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

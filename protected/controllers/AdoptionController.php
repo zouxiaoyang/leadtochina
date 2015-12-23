@@ -2,6 +2,15 @@
 
 class AdoptionController extends Controller
 {
+
+	public function actions() {
+
+		return array(
+		   'captcha'=> array(  
+			  'class'=>'CCaptchaAction',
+		));
+	  }
+
 	public function actionIndex()
 	{
 		$id = isset($_GET['id'])?$_GET['id']:1;
@@ -180,8 +189,26 @@ class AdoptionController extends Controller
 
 	// adoption search;
 	public function actionAdoptionHome(){
+	$model = new Message;
+	if(isset($_POST['Message'])){
+	  $post = $_POST['Message'];
+      $ip=SiteUtils::getClientIp();
+      $referer_url=Yii::app()->request->urlReferrer;
+      $dateline = time();
+
+	  $sql="insert into `jos_cos_message` set `email`='".addslashes($post['email'])."',`message`='".addslashes($post['message'])."',`ip`='".$ip."',`referer_url`='".addslashes($referer_url)."',`dateline`='".$dateline."'";
+
+	 $bol = Yii::app()->db->createCommand($sql)->execute();
+
+      if($bol)
+      {
+        header("location:/succeed.html");
+        Yii::app()->end();
+      }
+	}
+
 		
-		$this->render('adoption_home');
+		$this->render('adoption_home',array('message' => $model));
 	}
 // 收养团定制订单;
 public function actionSaveOrder(){
@@ -309,6 +336,94 @@ public function actionSaveOrder(){
 	
 	$this->render('adoption_family_activity');
   }
+
+    public function actionGetCity($provinceid){
+    $db = Yii::app()->db;
+    $list= Yii::app()->db->createCommand('select id,name from jos_cos_city where provinceid=:provinceid')->bindValue('provinceid',$provinceid)->queryAll();
+    echo CJSON::encode($list);
+    Yii::app()->end();
+  }
+
+  public function actionSearchOrphanageAddress(){
+    $q = isset($_GET["q"])?mysql_real_escape_string($_GET["q"]):'';
+    $provinceid = (int) $_GET['provinceid'];
+    $cityid = (int) $_GET['cityid'];
+
+    
+
+    $where = '';
+    if($provinceid) $condition[] = " provinceid='$provinceid'";
+    if($cityid)   $condition[] = " cityid='$cityid'";
+    if($q) $condition[] = " orphanage_name like '%$q%'";
+    if($condition) $where = "where " . implode(" and ", $condition);
+    
+    $list = Yii::app()->db->createCommand("select id,orphanage_name from t_adoption_orphanage_address $where")->queryAll();
+    if($_GET['format']){
+      echo CJSON::encode($list);
+    }else{
+      foreach($list as $v){
+        echo $v['orphanage_name']."|".$v['id']."\n";
+      }
+    }
+    Yii::app()->end();
+  }
+
+ //Orphanage Address detail
+  public function actionOrphanageTravelGuide(){
+    // $this->layout = "adoption";
+
+    $id = (int)$_GET['id'];
+    $orphanage_address_info = AdoptionOrphanageAddress::model()->findByPk($id);
+    if(empty($orphanage_address_info)) {
+      throw new CHttpException(404,'The requested page does not exist.');
+    }
+    $cityinfo = JosCosCity::model()->findByPk($orphanage_address_info->cityid);
+
+    /*
+     $chinaGuideArticle=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=6',
+        'limit' => 4,
+        'order' => 'dateline desc'
+    ));
+    */
+    $orphanageArticles = AdoptionArticle::model()->findAllByAttributes(array('aid'=>$id));
+
+
+
+    $chinaAdoptionGuide=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=7',
+        'limit' => 7,
+        'order' => 'id desc'
+    ));
+    $chinaAdoptionCulture=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=8',
+    ));
+    $chinaAdoptionCatid9=AdoptionContent::model()->findAll(array(
+        'condition'=>'cat_id=9',
+        'order' => 'id desc'
+    ));
+
+    $adoptionOrphanageAddressPic = AdoptionOrphanageAddressPic::model()->findAllByAttributes(array('oid'=>$id));
+
+		$this->setPageTitle($cityinfo->name.' Orphanage Trip Guide, '.$cityinfo->name.' SWI Visit');
+		Yii::app()->clientScript->registerMetaTag('keywords','');
+		Yii::app()->clientScript->registerMetaTag('description','We are offering '.$cityinfo->name.' orphanage trip guide, private & small group tours to '.$cityinfo->name.' SWI.');
+
+    $this->render("orphanageTravelGuide", array(
+      'orphanage_address_info' => $orphanage_address_info,
+      'cityinfo' => $cityinfo,
+      'message' => Message::newMessage(),
+
+      //'chinaGuideArticle' => $chinaGuideArticle,
+      'orphanageArticles' => $orphanageArticles,
+      'chinaAdoptionGuide' => $chinaAdoptionGuide,
+      'chinaAdoptionCulture' => $chinaAdoptionCulture,
+      'chinaAdoptionCatid9' => $chinaAdoptionCatid9,
+      'adoptionOrphanageAddressPic' => $adoptionOrphanageAddressPic,
+      
+    ));
+  }
+
 
 	// -----------------------------------------------------------
 	// Uncomment the following methods and override them if needed

@@ -4,7 +4,11 @@ class FamilyToursController extends Controller
 {
 	public function actionIndex()
 	{
-		$this->render('index');
+		$sql="select * from `jos_cos_tours_package` where `category_parentid`=(select `id` from `jos_categories` where `alias`='china-family-tour') and id in (1083,1084,1085,1086)";
+
+		$ress = Yii::app()->db->createCommand($sql)->queryAll(); 
+
+		$this->render('index',array('ress'=>$ress));
 	}
 
 	// -----------------------------------------------------------

@@ -30,7 +30,7 @@ return array(
 			  '/travle/adoptionarticle/search'  =>'adoption/adoptionSearch',
 			  '/travel/adoptionhome/'  =>'adoption/adoptionHome',
 			  '/travel/adoption/saveorder'=>'adoption/saveOrder',
-			  '/travel/adoption/familyActivity'=>'adoption/familyActivity',
+			  '/travel/adoption/activity'=>'adoption/familyActivity',
 
 
 			'<controller:\w+>/<id:\d+>'=>'<controller>/view',

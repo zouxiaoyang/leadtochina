@@ -106,14 +106,20 @@ ul.nav-tabs.affix {
       <div id="section3">
         <div class="row">
           <h4 id="b" class="page-title04">Where can we take a family adventure?</h4>
+		<?php foreach($ress as $res):?>
+		<?php 
+			$href = Yii::app()->createUrl('toursDetail/index',array('name'=>str_replace(array(' ',' '),array('-','-'),strtolower($res['name'])),'id'=>$res['id']));
+		?>
           <div class="views-row views-row-1 views-row-odd views-row-first tour-preview">
-            <div class="field-content tour-photo"><a href="#"><img width="350" height="240"  src="/images/top10tours-img01.jpg" ></a></div>
-            <h2 class="field-content tour-title"><a href="#">name name</a></h2>
-            <div class="views-field views-field-title-2 tour-title-2"> <a href="#">name</a> </div>
+            <div class="field-content tour-photo"><a href="<?php echo $href;?>"><img width="350" height="240"  src="<?php echo '/'.$res['filedir'].$res['pic']?>" ></a></div>
+            <h2 class="field-content tour-title"><a href="<?php echo $href;?>"><?php echo $res['name'];?></a></h2>
+            <div class="views-field views-field-title-2 tour-title-2"> <a href="<?php echo $href;?>"><?php echo $res['name'];?></a> </div>
             <p class="field-content tour-meta"></p>
-            <div class="field-content tour-summary">The hotels on your family journey have been especially selected for their family-friendly amenities. Wherever possible, your accommodations offer swimming pools and free Internet access, and many feature in-room game systems or game rooms, where kids can hang out after the day's a<a class="views-more-link" href="#"> Read more...</a></div>
-            <p class="field-content tour-read-more"><a href="#">Read More</a></p>
+          	<div class="field-content tour-summary"><?php echo $res['recommand_reason'];?><a class="views-more-link" href="<?php echo $href;?>"> Read more...</a></div>
+            <p class="field-content tour-read-more"><a href="<?php echo $href;?>">Read More</a></p>
           </div>
+	<?php endforeach;?>
+
         </div>
       </div>
       <div id="section4">

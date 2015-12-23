@@ -5,7 +5,7 @@
       <p>Designing your ideal itinerary is a harmonious blend of your ideas and desires and our expertise. Though we offer very popular set tours, it is often the case that families need to travel at other times during the year or forshorter periods of time. Lead to China is now offering the ability to tailor a tcompletely personalized heritage tour to your family's travel wishes.
 		</p>
     </div>
-    <form id="adoptionOrder" method="post" name="adoptionOrder" action="<?php echo Yii::app()->createUrl('adoption/saveOrder');?>">
+    <form id="adoptionOrder" method="post" name="adoptionOrder" action="<?php echo Yii::app()->createUrl('adoption/saveOrder');?>" onsubmit="return checksubmit()">
       <div class="adoptionOrder-block">
         <h3>1.&nbsp;	Orphanage Visit</h3>
         <section class="clearfix">
@@ -14,7 +14,7 @@
             <span class="must">*</span>
           </div>
           <div class="table-body">
-            <input type="text" name="orphange_nanme" value="" />
+            <input type="text" name="orphange_nanme" id="orphange_nanme" value="" />
           </div>
         </section>
         <section class="clearfix">
@@ -160,7 +160,7 @@
             <span class="must">*</span>
           </div>
           <div class="table-body">
-            <input type="text" name="Duration" value="" placeholder="e.g. 10 days" />
+            <input type="text" id="travel_duration" name="Duration" value="" placeholder="e.g. 10 days" />
           </div>
         </section>
         <section class="clearfix">
@@ -320,7 +320,7 @@
         <section class="clearfix">
           <div class="table-header">
             <label>Backup Email</label>
-            <span class="must">*</span>
+            <!-- <span class="must">*</span> -->
           </div>
           <div class="table-body">
             <input type="text" name="other_email" value="" />
@@ -369,4 +369,56 @@
 	  changeMonth: true,
 	  numberOfMonths: 2,
 	});
+
+function checksubmit(){
+
+	var reg = /^[^\@]+@.*\.[a-z]{2,6}$/i;
+
+	var status = false;
+
+
+	if(!$('#orphange_nanme').val()){
+		status=true;
+		$('#orphange_nanme').css('border','1px dotted #F00');
+	}else{
+		$('#orphange_nanme').css('border','0 none');
+	}
+
+	if(!$('#Order_travel_date').val()){
+		status=true;
+		$('#Order_travel_date').css('border','1px dotted #F00');
+	}else{
+		$('#Order_travel_date').css('border','0 none');
+	}
+
+	if(!$('#travel_duration').val()){
+		status=true;
+		$('#travel_duration').css('border','1px dotted #F00');
+	}else{
+		$('#travel_duration').css('border','0 none');
+	}
+	
+	if(!$('#fullName').val()){
+		status=true;
+		$('#fullName').css('border','1px dotted #F00');
+	}else{
+		$('#fullName').css('border','0 none');
+	}
+
+	if(!reg.test($('#email').val())){
+		status=true;
+		$('#email').css('border','1px dotted #F00');
+	}else{
+		$('#email').css('border','0 none');
+	}
+
+	if(status){
+		return false;
+	}else{
+	  return true;
+	}
+
+}
+</script>
+
 </script>

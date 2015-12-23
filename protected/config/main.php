@@ -16,6 +16,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.helpers.*'
 	),
 
 	'modules'=>array(
@@ -68,6 +69,10 @@ return array(
 			'password' => 'root',
 			'charset' => 'utf8',
 		),
+
+		'cache'=>array(
+	      'class'=>'CFileCache'  
+	    ),
 		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors

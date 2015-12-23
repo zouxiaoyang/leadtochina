@@ -70,9 +70,9 @@
                       <td><?php echo $arr_price[7];?></td>
                     </tr>
                   			</tbody>
-                		</table>
+                	</table>
                   </div>  
-              	</section>
+              	</section> 
               	<section class="clearfix inner-tab-block01">
                 	<label class="inner-tab-title01">IMPORTANT NOTES</label>
                 	<div class="inner-tab-text01">
