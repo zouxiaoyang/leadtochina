@@ -2201,7 +2201,7 @@ ul#orphanage_list li:hover{background:#ccc;}
 .adoption-search select{ width:205px; border:1px solid #4a4645;-moz-border-radius: 8px; -khtml-border-radius: 8px;-webkit-border-radius: 8px;border-radius:8px; height:40px; line-height:40px; float:left; margin-right:25px; padding:10px;background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0; }
 .adoption-search select option{ padding:3px 10px; font-size:11px; -webkit-text-size-adjust:none;}
 .adoption-search a{  display:block; float:left;}
-.adoption-search a.btn-search{ color:#ed9300; border:1px solid #ed9300; text-align:center; text-transform:uppercase; font-size:16px; height:30px; line-height:30px;   margin: 4px 0 0;padding: 0 20px;}
+.adoption-search a.btn-search{ color:#ed9300; border:1px solid #ed9300; text-align:center; text-transform:uppercase; font-size:16px; height:30px; line-height:30px;   margin: 4px 0 0;padding: 0 19px;}
 .adoptionhome-about{background: #f5f5f5;padding: 5% 0 0;}
 .adoptionhome-about .about-how{list-style-type: none;margin-left: 72px; width:50%; float:left; }
 .adoptionhome-about .about-how1, .adoptionhome-about .about-how2, .adoptionhome-about .about-how3, .adoptionhome-about .about-how4{margin-bottom: 60px;}
@@ -2214,7 +2214,7 @@ ul#orphanage_list li:hover{background:#ccc;}
 .adoptionhome-about .about-how4::before{background-position: left -125px;}
 .adoptionhome-about .about-how h3{font-weight: 500; margin: 0 0 20px; padding: 0;}
 
-.adoptionhome-about .about-img{ float: left;}
+.adoptionhome-about .about-img{ float: left; width:40%;}
 .adoption-map-block{}
 .adoption-map-block .province-list01{ list-style:none;}
 .adoption-map-block .province-list01 li{ float:left;}
