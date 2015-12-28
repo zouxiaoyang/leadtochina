@@ -11,7 +11,7 @@ h1, h2, h3, h4{
     font-family: "Open Sans",Arial,Helvetica,sans-serif;
     font-weight:300;
     letter-spacing: normal;
-    text-transform: none; 
+    text-transform: none;
 }
 .web-clear{  clear: both; 
     content: ".";
@@ -1379,18 +1379,6 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 	font-size:16px;
 	line-height:1.3em;
 }
-.tour-preview .tour-title span{
-	display:block;
-	height:90%;
-	text-decoration:none;
-	position:absolute;
-	width:100%;
-	padding:10px 0 10px 25px;
-	left:0;
-	top:58px;
-	font-size:13px;
-	line-height:1.3em;
-}
 .tour-preview .tour-title a:hover {
 	color:#073488;
 	font-weight:normal;
@@ -1558,7 +1546,7 @@ left:5%;
 .tour-preview .tour-summary {
 	display:inline-block;
 	position:absolute;
-	top:105px;
+	top:90px;
 	left:26px;
 	height:122px;
 	width:87%;
@@ -2134,20 +2122,20 @@ filter:progid:DXImageTransform.Microsoft.Alpha(enabled=false);
 .reviews-list01-block .group-right{float:left; width:74%;}
 .reviews-list01-block .group-right h2{ font-size:22px; color:#d56d21; margin:0px 0 18px; font-weight:300;}
 .reviews-list01-block .group-right h2:hover{ color:#343434;}
-.reviews-list01-block .group-right h1{ font-size:30px; font-weight:300; margin:0; color:#343434; padding-bottom:10px;}
+.reviews-list01-block .group-right h1{ font-size:36px; font-weight:300; margin:15px 0 18px;}
 .reviews-list01-block .group-right p{ color:#797979; font-size:15px; line-height:24px;}
 .reviews-list01-block .group-right i{ color:#797979; font-style:italic; font-size:14px;}
 .reviews-pagenation{ text-align:center;}
 .travel-bottom-block{ background:#f5f5f5; border-top:1px solid #ccc;}
 .travel-bottom-block .seo-section{ width:16%;}
-.reviews-list01-block02{ margin:0px; border:none; padding:5px 0;}
+.reviews-list01-block02{ margin:0px 0 40px; border:none; padding:10px 0; border-bottom:1px dashed #ccc;}
 .reviews-list01-block02 img{  border: 5px solid #eee;}
-.reviews-list01-block02 .group-right{ width:100%;}
+.reviews-list01-block02 .group-right{ width:68%;}
 .reviews-list01-block02 .group-right i{ font-size:20px;}
 .field-label{ color:#797979; font-size:18px; font-style:italic; margin-top:40px;}
 
-.adoption-province-about{ text-align:left;}
-.adoption-province-about li{ list-style:none; float:left; width:25%; margin-top:50px; text-align:center;}
+.adoption-province-about{ text-align:center;}
+.adoption-province-about li{ list-style:none; float:left; width:25%; margin-top:50px;}
 .adoption-province-about li span{ display:block; text-align:center; font-size:18px; padding:30px 0;}
 .adoption-province-collection{ background:#f9f9f9; padding:0px 0 50px; margin-top:40px;}
 .adoption-province-collection p{ text-align:center; padding:10px 0;}
@@ -2157,10 +2145,10 @@ filter:progid:DXImageTransform.Microsoft.Alpha(enabled=false);
 .adoption-tips{ margin-bottom:80px;}
 .adoption-tips p{line-height: 22px;margin-bottom: 15px;}
 
-.adoption-review-right{ margin:10px 0 0;}
+.adoption-review-right{ margin:30px 0 0;}
 
 .adoption-diy{ padding:0 100px ;}
-.adoption-diy-top{text-align:center; }
+.adoption-diy-top{ padding:100px 0 50px; text-align:center; font-size:20px;}
 .adoptionOrder-block h3{ color:#d56d21; font-size:22px; text-transform: uppercase; margin:0; border-bottom:1px solid #ccc; padding:40px 0 10px 0; margin-bottom:20px;}
 
 .adoptionOrder-block .table-header{ font-size:16px; text-transform:uppercase; width:35%; float:left; padding:10px 0 10px 32px;}
@@ -2216,7 +2204,7 @@ ul#orphanage_list li:hover{background:#ccc;}
 .adoption-search a.btn-search{ color:#ed9300; border:1px solid #ed9300; text-align:center; text-transform:uppercase; font-size:16px; height:30px; line-height:30px;   margin: 4px 0 0;padding: 0 19px;}
 .adoptionhome-about{background: #f5f5f5;padding: 5% 0 0;}
 .adoptionhome-about .about-how{list-style-type: none;margin-left: 72px; width:50%; float:left; }
-.adoptionhome-about .about-how1, .adoptionhome-about .about-how2, .adoptionhome-about .about-how3, .adoptionhome-about .about-how4{margin-bottom: 30px;}
+.adoptionhome-about .about-how1, .adoptionhome-about .about-how2, .adoptionhome-about .about-how3, .adoptionhome-about .about-how4{margin-bottom: 60px;}
 .adoptionhome-about .about-how1::before, .adoptionhome-about .about-how2::before, .adoptionhome-about .about-how3::before, .adoptionhome-about .about-how4::before{
     background-image: url("/images/number-four.svg");background-repeat: no-repeat;background-size: 40px 164px;box-sizing: border-box;
     content: "";display: block;height: 40px;margin-left: -75px; margin-top:5px; position: absolute; width: 42px;}
@@ -2236,46 +2224,20 @@ ul#orphanage_list li:hover{background:#ccc;}
 .adoption-map-block .province-list01 li.li03{ margin-top:107px;}
 .adoption-map-block .province-list01 li.li03 a{ display:block; text-align:left; line-height:22px; padding-left:8px;}
 
-.errorMessage{ color:#f00;}
 
 .adoption-stories{ width:356px; position:relative; background:#f5f5f5;}
 .adoption-stories .bg-back{background: rgba(0, 0, 0, 0.6); position:absolute; top:186px; height:50px; color:#fff; width:100%; padding:5px 10px; }
-.adoption-stories2 .bg-back{background: rgba(0, 0, 0, 0.6); position:absolute; top:202px; height:35px; color:#fff; width:100%; padding:7px 10px; }
-.adoption-stories .text-block{ padding:20px 10px; min-height:220px;}
+.adoption-stories .text-block{ padding:20px 10px;}
 .adoption-home-bottom{ background:#f5f5f5; border-bottom:1px solid #ccc; border-top:1px solid #ccc; margin-top:60px; padding:30px 0;}
 .adoption-home-bottom .block01{ width:60%;}
-.adoption-home-bottom .block01 table td, table th{ padding:0}
 .adoption-home-bottom .block01 .title01{ font-size:34px; border-bottom:1px solid #ddd; display:block; padding:0 0 10px;}
-.adoption-home-bottom .block01 input{ border:1px solid #bbb; margin:5px 0; background:#fff; color:#878787; padding:5px; width:260px; display:block;}
+.adoption-home-bottom .block01 input{ border:1px solid #bbb; margin:10px 0; background:#fff; color:#878787; padding:5px; width:260px; display:block;}
 .adoption-home-bottom .block01 textarea{ width:80%; height:150px; border:1px solid #bbb; background:#fff; margin-bottom:10px;}
-.adoption-home-bottom .block02{ width:35%;  border:1px solid #ccc; font-size:24px; padding:25px 30px 15px;font-weight: 300;background: url(/images/ico-quotation01.png) 10px 10px no-repeat #fff;}
-.adoption-home-bottom .block02 span{ display:block; text-align:right;background: url(/images/ico-quotation02.png) right bottom no-repeat #fff; padding: 0 0 10px;}
+.adoption-home-bottom .block02{ width:35%; background:#fff; border:1px solid #ccc; font-size:24px; padding:15px 20px;font-weight: 300;}
+.adoption-home-bottom .block02 span{ display:block; text-align:right;}
 
 .familyActivity{ margin-bottom:100px;}
-.familyActivity .text01{ text-align:center; padding:0px 30px 40px;  }
+.familyActivity .text01{ text-align:center; padding:60px 30px 40px; font-size:16px; color:#d56d21;}
 .activity-block{ position:relative;width:49%;}
 .activity-block .title01{background-color:rgba(0, 0, 0, 0.5); color:#fff; font-size:19px; display:block; padding:5px 20px; position:absolute; left:0; top:278px;}
 .activity-block p{ line-height:20px; padding:10px 5px;}
-
-.orphanagelist{ margin:30px 0 0;}
-.orphanagelist ul{   float: left;
-    font-size: 15px;
-    margin: 0 1%;
-    padding: 0 0 20px;
-    width: 22%;}
-.orphanagelist li{ list-style:none;}
-.orphanagelist li a{
-    color: #337ab7;
-    display: block;
-    font-size: 14px;
-    padding: 5px 0 4px;
-}
-.orphanagelist li a:hover{ color:#00b7ea;}
-
-
-.adoptionIti_banner{height: 250px;}
-.adoptionIti_bannerl{float: left;width: 460px;}
-.adoptionIti_txt1 {color: #d56d21;font-size: 26px;line-height: 130%;margin: 10px 0 0 60px;}
-.adoptionIti_txt2 {color: #000;font-size: 15px;line-height: 130%; margin: 5px 15px 0;}
-
-
