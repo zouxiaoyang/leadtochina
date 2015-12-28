@@ -18,7 +18,7 @@
         </ul>
       </div>
       <input type="hidden" name="orphanage_address_id" id="orphanage_address_id" />
-      <img src="/images/adoptionNew/search.png" onclick="_adoption.search()" />
+      <a  href="#" onclick="_adoption.search()" class="btn-search" >search</a>
    </div>
 </div>
 <div class="web_clear"></div>
@@ -122,7 +122,9 @@ $(function(){
             var url = "<?php echo Yii::app()->createUrl('adoption/orphanageTravelGuide');?>";
             if(orphanage_id){
               location.href = url+"?id="+orphanage_id;
-            }
+            }else{
+				location.href = '/travel/adoption/noSearchResults';
+			}
           }
 
       }   

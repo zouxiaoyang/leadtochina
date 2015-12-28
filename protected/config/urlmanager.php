@@ -20,17 +20,21 @@ return array(
 			 //reviews
 			 'travel/review/<tid:\d+>/<packageid:\d+>.html'  =>'reviews/index',
 			// adoption
-			  'travel/adoption'  =>'adoption/index',
+			  'travel/adoption/<id:\d+>'  =>'adoption/index',
 			  'travel/showMaps/<city_name:.*>/<id:\d+>'  =>'adoption/showMaps',
 			  '<city_name:.*>/<city_id:\d+>/map.html'  =>'adoption/cityMaps',
 			  '/travel/adoptionarticle'  =>'adoption/adoptionArticle',
 			  '/travel/adoptionarticle/detail/<ar_id:\d+>.html'  =>'adoption/adoptionArticleDetail',
-			  '/travel/adoptionbyprovince'  =>'adoption/adoptionArticleByProvince',
+			  '/travel/adoptionbyprovince/<province_id:\d+>'  =>'adoption/adoptionArticleByProvince',
 			  '/travel/adoption/diy'  =>'adoption/adoptionDiy',
 			  '/travle/adoptionarticle/search'  =>'adoption/adoptionSearch',
 			  '/travel/adoptionhome/'  =>'adoption/adoptionHome',
 			  '/travel/adoption/saveorder'=>'adoption/saveOrder',
 			  '/travel/adoption/activity'=>'adoption/familyActivity',
+			  '/travel/adoption/travelGuide/<id:\d+>'=>'adoption/orphanageTravelGuide',
+			   '/travel/adoption/list'=>'adoption/adoptionList',
+			  '/travel/adoption/noSearchResults'=>'adoption/noSearchResults',
+			  '/travel/adoption/2016-group-tour'=>'adoption/adoptionGroupTour',
 
 
 			'<controller:\w+>/<id:\d+>'=>'<controller>/view',

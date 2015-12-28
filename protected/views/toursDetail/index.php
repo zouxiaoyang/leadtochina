@@ -1,5 +1,5 @@
-<!--<script type="text/javascript" src="http://maps.google.com/maps?file=api&v=2&hl=en&oe=utf-8&key=AIzaSyDWKEHpILWp1n7UZ5XUymY3rhiwKFGtzA8"></script>
-<script type="text/javascript" src='/js/map/map.js'></script>-->
+<script type="text/javascript" src="http://maps.google.com/maps?file=api&v=2&hl=en&oe=utf-8&key=AIzaSyDWKEHpILWp1n7UZ5XUymY3rhiwKFGtzA8"></script>
+<script type="text/javascript" src='/js/map/map.js'></script>
 <script type="text/javascript" src='/js/map/iframeResizer.min.js'></script>
 <!-- <script type="text/javascript" src='/js/map/map-1.js'></script> --> 
 <div class="container">
@@ -255,37 +255,78 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
     </div>
   </div>
 </div>
-
+<?php 
+	$arr_route = explode(',',$ress['route']);
+	$arr_la_ln=array();
+	
+	if(Yii::app()->cache->get('ss_'.$ress['id'])){
+	  $arr_la_ln = Yii::app()->cache->get('ss_'.$ress['id']);
+	}else{
+		foreach($arr_route as $city){
+			$ch = curl_init();
+			$city1 = str_replace(' ','',$city);
+			$city1 = trim(ucwords($city));
+			curl_setopt($ch, CURLOPT_URL, 'http://maps.google.com/maps/api/geocode/json?address='.$city1.'&sensor=false&language=en&bounds=false'); 
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+			$ss = curl_exec($ch);
+			$ss = json_decode($ss,true);
+			$ss = $ss['results'][0];
+			$lat = $ss['geometry']['location']['lat'];
+			$lng = $ss['geometry']['location']['lng'];
+			$arr_la_ln[$city]=array(
+				'lat'=>$lat,
+				'lng'=>$lng
+			);
+		}
+		// add to cache;
+		Yii::app()->cache->set('ss_'.$ress['id'],$arr_la_ln); 
+	}
+?>
 <script>
         doControls = function () {
             map.enableDoubleClickZoom();
             map.enableContinuousZoom();
             map.addControl(new GLargeMapControl());
         };
-
         doPre = function () {
 			// start;icon;
-            map.addOverlay(makeFullMapIcon(new GLatLng(39.91395,116.383667), 414, 1,588847));
-			bounds.extend(new GLatLng(39.91395,116.383667));
-				map.addOverlay(makeFullMapIcon(new GLatLng(34.263459,108.952103), 424, 4,588847)
-				);
-			bounds.extend(new GLatLng(34.263459,108.952103));
-				map.addOverlay(makeFullMapIcon(new GLatLng(31.217499,121.462097), 422, 5,588847)
-				);
-			bounds.extend(new GLatLng(31.217499,121.462097));infoMarkers[414] = makeInfoMapIcon(new GLatLng(39.91395,116.383667), 414, 1);mm.addMarker(infoMarkers[414], 0, 17);infoMarkers[417] = makeInfoMapIcon(new GLatLng(25.286921,110.286255), 417, 1);mm.addMarker(infoMarkers[417], 0, 17);infoMarkers[420] = makeInfoMapIcon(new GLatLng(29.645095,91.134338), 420, 1);mm.addMarker(infoMarkers[420], 0, 17);infoMarkers[422] = makeInfoMapIcon(new GLatLng(31.217499,121.462097), 422, 1);mm.addMarker(infoMarkers[422], 0, 17);infoMarkers[424] = makeInfoMapIcon(new GLatLng(34.263459,108.952103), 424, 1);mm.addMarker(infoMarkers[424], 0, 17);infoMarkers[427] = makeInfoMapIcon(new GLatLng(22.389444,114.167175), 427, 1);mm.addMarker(infoMarkers[427], 0, 17);infoMarkers[439] = makeInfoMapIcon(new GLatLng(24.777072,110.499115), 439, 1);mm.addMarker(infoMarkers[439], 0, 17);infoMarkers[749] = makeInfoMapIcon(new GLatLng(20.9,107.2), 749, 1);mm.addMarker(infoMarkers[749], 0, 17);infoMarkers[750] = makeInfoMapIcon(new GLatLng(21.022742,105.850096), 750, 1);mm.addMarker(infoMarkers[750], 0, 17);infoMarkers[753] = makeInfoMapIcon(new GLatLng(16.466667,107.6), 753, 1);mm.addMarker(infoMarkers[753], 0, 17);infoMarkers[775] = makeInfoMapIcon(new GLatLng(13.362222,103.859722), 775, 1);mm.addMarker(infoMarkers[775], 0, 17);infoMarkers[777] = makeInfoMapIcon(new GLatLng(21.166667,94.883333), 777, 1);mm.addMarker(infoMarkers[777], 0, 17);infoMarkers[779] = makeInfoMapIcon(new GLatLng(21.98,96.08), 779, 1);mm.addMarker(infoMarkers[779], 0, 17);infoMarkers[782] = makeInfoMapIcon(new GLatLng(19.883333,102.133333), 782, 1);mm.addMarker(infoMarkers[782], 0, 17);infoMarkers[790] = makeInfoMapIcon(new GLatLng(18.788889,98.983333), 790, 1);mm.addMarker(infoMarkers[790], 0, 17);infoMarkers[792] = makeInfoMapIcon(new GLatLng(9.5,100), 792, 1);mm.addMarker(infoMarkers[792], 0, 17);infoMarkers[822] = makeInfoMapIcon(new GLatLng(5.4,100.233333), 822, 1);mm.addMarker(infoMarkers[822], 0, 17);infoMarkers[1112] = makeInfoMapIcon(new GLatLng(-7.801389,110.364444), 1112, 1);mm.addMarker(infoMarkers[1112], 0, 17);infoMarkers[1718] = makeInfoMapIcon(new GLatLng(37.55,126.983333), 1718, 1);mm.addMarker(infoMarkers[1718], 0, 17);infoMarkers[1722] = makeInfoMapIcon(new GLatLng(25.05,121.33), 1722, 1);mm.addMarker(infoMarkers[1722], 0, 17);infoMarkers[5073] = makeInfoMapIcon(new GLatLng(16.890556,97.633333), 5073, 1);mm.addMarker(infoMarkers[5073], 0, 17);
-        };
+			<?php 
+				$arr_route = array_filter($arr_route);
+				$cnt = count($arr_route);
 
-        doPost = function () {
-          //  map.addOverlay(new GPolyline([new GLatLng(39.91395,116.383667), new GLatLng(39.91395,116.383667)], "#000000", 5, 1, null));
-			map.addOverlay(new GPolyline([new GLatLng(39.91395,116.383667), new GLatLng(34.263459,108.952103)], "#000000", 5, 1, null));
-			map.addOverlay(plane([new GLatLng(39.91395,116.383667), new GLatLng(34.263459,108.952103)], 379, 28871266));
-			// map.addOverlay(new GPolyline([new GLatLng(34.263459,108.952103), new GLatLng(34.263459,108.952103)], "#000000", 5, 1, null));
-			map.addOverlay(new GPolyline([new GLatLng(34.263459,108.952103), new GLatLng(31.217499,121.462097)], "#FF0000", 3, 0.70, null));
-			map.addOverlay(plane([new GLatLng(34.263459,108.952103), new GLatLng(31.217499,121.462097)], 379, 28871266));
-			// map.addOverlay(new GPolyline([new GLatLng(31.217499,121.462097), new GLatLng(31.217499,121.462097)], "#000000", 5, 1, null));
-        };
+				for($j=0;$j<($cnt-1);$j++){ 
+					$city_start = $arr_route[$j];	
+					$city_end = $arr_route[$j+1];	
+					
+				?>
+				<?php 
+					if($j==0){	
+				?>
+					map.addOverlay(makeFullMapIcon(new GLatLng(<?php echo $arr_la_ln[$city_start]['lat'];?>,<?php echo $arr_la_ln[$city_start]['lng'];?>), 414, 1,588847));
+					bounds.extend(new GLatLng(31.217499,121.462097));
+				<?php } ?>
+					bounds.extend(new GLatLng(<?php echo $arr_la_ln[$city_start]['lat'];?>,<?php echo $arr_la_ln[$city_start]['lng'];?>));
 
-        var progZoom = 0;
+					map.addOverlay(makeFullMapIcon(new GLatLng(<?php echo $arr_la_ln[$city_end]['lat'];?>,<?php echo $arr_la_ln[$city_end]['lng'];?>), 424, <?php echo $j+2;?>,588847));
+
+			<?php	}	?>
+			bounds.extend(new GLatLng(<?php echo $arr_la_ln[$city_end]['lat'];?>,<?php echo $arr_la_ln[$city_end]['lng'];?>));
+        };
+        doPost = function () {		
+		<?php 
+				$arr_route = array_filter($arr_route);
+				$cnt = count($arr_route);
+
+				for($i=0;$i<($cnt-1);$i++){ 
+					$city_start = $arr_route[$i];	
+					$city_end = $arr_route[$i+1];
+				?>
+					map.addOverlay(new GPolyline([new GLatLng(<?php echo $arr_la_ln[$city_start]['lat'];?>,<?php echo $arr_la_ln[$city_start]['lng'];?>), new GLatLng(<?php echo $arr_la_ln[$city_end]['lat'];?>,<?php echo $arr_la_ln[$city_end]['lng'];?>)],<?php if($i%2==0){ ?>'#000000'<?php } else{ ?>"#FF0000"<?php } ?>, 5, 1, null));
+
+					map.addOverlay(plane([new GLatLng(<?php echo $arr_la_ln[$city_start]['lat'];?>,<?php echo $arr_la_ln[$city_start]['lng'];?>), new GLatLng(<?php echo $arr_la_ln[$city_end]['lat'];?>,<?php echo $arr_la_ln[$city_end]['lng'];?>)], 379, 28871266));
+		<?php } ?>
+        };
+        var progZoom = 10;
         //var webPath = "http://www.kensingtontours.com/Content/assets/maps/";
 		 var webPath = "http://zouyiquan.test.cc/assets/maps/";
 		initializeMap();

@@ -19,6 +19,7 @@ class ImageUtils {
     if($v = Yii::app()->cache->get($k)){
       return $v;
     }
+
     if(!is_file($img)){
       return '';
     }

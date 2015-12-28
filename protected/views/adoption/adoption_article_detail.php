@@ -7,16 +7,16 @@
     	<div class="col-sm-12 col-md-9">
           <div class="pro-detail-block">
             <div class="reviews-list01-block reviews-list01-block02 clearfix">
-            <div class="group-left"> <img width="250px" height="170px" src="/newadmin/images/uploads/adoption/<?php echo $res['pic'];?>" /></div>
+           <?php /*?> <div class="group-left"> <img width="250px" height="170px" src="/newadmin/images/uploads/adoption/<?php echo $res['pic'];?>" /></div><?php */?>
             <div class="group-right">
                 <h1><?php echo $res['title'];?></h1>
                 <i>Travel Date:<?php echo date('M dS, Y',strtotime($res['date']));?></i>
             </div>
           </div>
             <div class="pro-detail-tab adoption-article-detail"> 
-              <ul id="myTab" class="nav nav-tabs">
+              <?php /*?><ul id="myTab" class="nav nav-tabs">
                 <li class="active"> <a href="#itinerary" data-toggle="tab">TRAVEL STORY</a> </li>
-              </ul>
+              </ul><?php */?>
               <div id="myTabContent" class="tab-content">
                 <div class="tab-pane fade in active" id="itinerary"><?php echo $res['content'];	?></div> 
               </div>

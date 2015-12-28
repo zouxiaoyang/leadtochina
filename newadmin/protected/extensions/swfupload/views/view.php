@@ -15,7 +15,7 @@
         file_queue_limit : 0,
         custom_settings : {
           progressTarget : "fsUploadProgress",
-          cancelButtonId : "btnCancel"
+         // cancelButtonId : "btnCancel"
         },
         debug: false,
 
@@ -57,7 +57,7 @@
       <div class="fieldset flash" id="fsUploadProgress">
       <span class="legend">Upload Queue</span>
       </div>
-      <!--<div id="divStatus">0 Files Uploaded</div>-->
+      <div id="divStatus">0 Files Uploaded</div>
       <div>
         <span id="spanButtonPlaceHolder"></span>
         <input type="button" value="Start Upload" onclick="swfu.startUpload();" style="margin-left: 2px; font-size: 8pt; height: 29px;" />

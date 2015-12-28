@@ -123,7 +123,7 @@
                   }
 
                  
-                    function showAddress(address) {
+                 function showAddress(address) {
                   var map = new GMap2(document.getElementById("map_canvas"));
                   var geocoder = new GClientGeocoder(); 
                     geocoder.getLatLng(

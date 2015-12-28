@@ -5507,3 +5507,571 @@ Stack trace:
 REQUEST_URI=/newadmin/admin.php?r=reviews/Upload
 in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/ReviewsController.php (95)
 in /home/wwwroot/default/leadtochina/newadmin/admin.php (15)
+2015/12/24 09:51:35 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/wwwroot/default/leadtochina/newadmin/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/wwwroot/default/leadtochina/framework/web/CAssetManager.php:128
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CAssetManager.php(113): CAssetManager->setBasePath('/home/wwwroot/d...')
+#1 /home/wwwroot/default/leadtochina/framework/web/CAssetManager.php(235): CAssetManager->getBasePath()
+#2 /home/wwwroot/default/leadtochina/framework/web/CClientScript.php(463): CAssetManager->publish('/home/wwwroot/d...')
+#3 /home/wwwroot/default/leadtochina/framework/web/CClientScript.php(500): CClientScript->getCoreScriptUrl()
+#4 /home/wwwroot/default/leadtochina/framework/web/CClientScript.php(316): CClientScript->getPackageBaseUrl('jquery')
+#5 /home/wwwroot/default/leadtochina/framework/web/CClientScript.php(209): CClientScript->renderCoreScripts()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/SiteController.php(110): CController->render('login', Array)
+#9 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#10 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('')
+#14 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#15 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CApplication->run()
+#17 {main}
+REQUEST_URI=/newadmin/admin.php
+---
+2015/12/27 11:15:28 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/27 14:14:23 [warning] [application] Failed to set unsafe attribute "id" of "AdoptionPackageContent".
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionPackageContentController.php (67)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 09:44:10 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 09:44:46 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 09:45:20 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 09:46:23 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 09:48:20 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 09:48:28 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 09:53:25 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 09:53:59 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 09:54:03 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 09:54:24 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 09:57:20 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 09:57:20 [error] [php] Undefined index: upload_url (/home/wwwroot/default/leadtochina/newadmin/protected/extensions/swfupload/views/view.php:9)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/widgets/CWidget.php(244): CFSwfUpload->renderFile()
+#1 /home/wwwroot/default/leadtochina/newadmin/protected/extensions/swfupload/CFSwfUpload.php(7): CFSwfUpload->render()
+#2 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(148): CFSwfUpload->init()
+#3 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(173): AdoptionOrphanageAddressPicController->createWidget()
+#4 /home/wwwroot/default/leadtochina/newadmin/protected/backend/views/adoptionOrphanageAddressPic/upload.php(40): AdoptionOrphanageAddressPicController->widget()
+#5 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require()
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): AdoptionOrphanageAddressPicController->renderInternal()
+#7 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): AdoptionOrphanageAddressPicController->renderFile()
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): AdoptionOrphanageAddressPicController->renderPartial()
+#9 /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php(183): AdoptionOrphanageAddressPicController->render()
+#10 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionOrphanageAddressPicController->actionUpload()
+#11 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#14 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=adoptionOrphanageAddressPic/upload&oid=1
+in /home/wwwroot/default/leadtochina/newadmin/protected/extensions/swfupload/views/view.php (9)
+in /home/wwwroot/default/leadtochina/newadmin/protected/extensions/swfupload/CFSwfUpload.php (7)
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/views/adoptionOrphanageAddressPic/upload.php (40)
+2015/12/28 09:59:10 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:00:34 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:00:34 [error] [php] Undefined index: post_params (/home/wwwroot/default/leadtochina/newadmin/protected/extensions/swfupload/views/view.php:10)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/widgets/CWidget.php(244): CFSwfUpload->renderFile()
+#1 /home/wwwroot/default/leadtochina/newadmin/protected/extensions/swfupload/CFSwfUpload.php(7): CFSwfUpload->render()
+#2 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(148): CFSwfUpload->init()
+#3 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(173): AdoptionOrphanageAddressPicController->createWidget()
+#4 /home/wwwroot/default/leadtochina/newadmin/protected/backend/views/adoptionOrphanageAddressPic/upload.php(42): AdoptionOrphanageAddressPicController->widget()
+#5 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require()
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): AdoptionOrphanageAddressPicController->renderInternal()
+#7 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): AdoptionOrphanageAddressPicController->renderFile()
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): AdoptionOrphanageAddressPicController->renderPartial()
+#9 /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php(183): AdoptionOrphanageAddressPicController->render()
+#10 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionOrphanageAddressPicController->actionUpload()
+#11 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#14 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=adoptionOrphanageAddressPic/upload&oid=1
+in /home/wwwroot/default/leadtochina/newadmin/protected/extensions/swfupload/views/view.php (10)
+in /home/wwwroot/default/leadtochina/newadmin/protected/extensions/swfupload/CFSwfUpload.php (7)
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/views/adoptionOrphanageAddressPic/upload.php (42)
+2015/12/28 10:00:44 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:08:56 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:08:56 [error] [php] Undefined index: alt_desc (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php:165)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=AdoptionOrphanageAddressPic/upload
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (165)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:09:32 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:09:52 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:14:02 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:14:19 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:16:28 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:16:35 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:17:11 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:17:11 [error] [php] Undefined index: alt_desc (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php:165)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=AdoptionOrphanageAddressPic/upload
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (165)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:17:14 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:17:28 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:19:16 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:19:23 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:20:11 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:20:26 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:20:57 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:21:05 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:21:05 [error] [php] Undefined index: alt_desc (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php:165)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=AdoptionOrphanageAddressPic/upload
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (165)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:21:23 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:21:31 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:21:55 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:25:14 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:25:17 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:25:25 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:25:25 [error] [php] Undefined index: alt_desc (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php:165)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=AdoptionOrphanageAddressPic/upload
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (165)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:25:33 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:25:33 [error] [php] Undefined index: alt_desc (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php:165)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=AdoptionOrphanageAddressPic/upload
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (165)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:26:55 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:27:07 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:28:05 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:28:12 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:28:12 [error] [php] Undefined index: alt_desc (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php:165)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=AdoptionOrphanageAddressPic/upload
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (165)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:28:24 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:28:24 [error] [php] Undefined index: alt_desc (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php:165)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=AdoptionOrphanageAddressPic/upload
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (165)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:28:40 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:28:40 [error] [php] Undefined index: alt_desc (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php:165)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=AdoptionOrphanageAddressPic/upload
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (165)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:30:52 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:31:16 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:31:22 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:31:41 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:33:17 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:33:21 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:33:30 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:34:05 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:34:17 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:34:42 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:34:42 [error] [php] Undefined variable: pics (/home/wwwroot/default/leadtochina/newadmin/protected/backend/views/adoptionOrphanageAddressPic/upload.php:49)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): AdoptionOrphanageAddressPicController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): AdoptionOrphanageAddressPicController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php(187): AdoptionOrphanageAddressPicController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionOrphanageAddressPicController->actionUpload()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=adoptionOrphanageAddressPic/upload&oid=1
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/views/adoptionOrphanageAddressPic/upload.php (49)
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (187)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:36:44 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:37:00 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:37:17 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:37:17 [error] [php] Invalid argument supplied for foreach() (/home/wwwroot/default/leadtochina/newadmin/protected/backend/views/adoptionOrphanageAddressPic/upload.php:49)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): AdoptionOrphanageAddressPicController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): AdoptionOrphanageAddressPicController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php(188): AdoptionOrphanageAddressPicController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionOrphanageAddressPicController->actionUpload()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=adoptionOrphanageAddressPic/upload&oid=1
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/views/adoptionOrphanageAddressPic/upload.php (49)
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (188)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:37:25 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:37:58 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:38:19 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:38:30 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:38:48 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:39:02 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:39:14 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:40:06 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:40:18 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:40:44 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:40:55 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:41:19 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:41:59 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:41:59 [error] [php] Undefined variable: baseUrl (/home/wwwroot/default/leadtochina/newadmin/protected/extensions/swfupload/CFSwfUpload.php:13)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require()
+#1 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): AdoptionOrphanageAddressPicController->renderInternal()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): AdoptionOrphanageAddressPicController->renderFile()
+#3 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): AdoptionOrphanageAddressPicController->renderPartial()
+#4 /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php(183): AdoptionOrphanageAddressPicController->render()
+#5 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionOrphanageAddressPicController->actionUpload()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#9 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#10 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=adoptionOrphanageAddressPic/upload&oid=1
+in /home/wwwroot/default/leadtochina/newadmin/protected/extensions/swfupload/CFSwfUpload.php (13)
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/views/adoptionOrphanageAddressPic/upload.php (44)
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (183)
+2015/12/28 10:42:35 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:42:58 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:43:17 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:43:35 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:43:45 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:44:41 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:44:41 [error] [php] Undefined index: alt_desc (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php:165)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=AdoptionOrphanageAddressPic/upload
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (165)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:45:56 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:45:56 [error] [php] Undefined index: alt_desc (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php:165)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=AdoptionOrphanageAddressPic/upload
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (165)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:47:21 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:47:21 [error] [php] Undefined index: alt_desc (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php:165)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=AdoptionOrphanageAddressPic/upload
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (165)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:49:17 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:49:40 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:49:43 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:49:57 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:50:35 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:50:35 [error] [php] Undefined index: alt_desc (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php:165)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=AdoptionOrphanageAddressPic/upload
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (165)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:51:42 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:51:55 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:52:04 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:52:04 [error] [php] Undefined index: alt_desc (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php:165)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=AdoptionOrphanageAddressPic/upload
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (165)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:52:42 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:53:01 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 10:58:49 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 11:24:13 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 11:24:36 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 11:29:45 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 11:37:59 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 11:38:00 [error] [php] Undefined index: PHPSESSID (/home/wwwroot/default/leadtochina/newadmin/protected/backend/views/adoptionOrphanageAddressPic/upload.php:39)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): AdoptionOrphanageAddressPicController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): AdoptionOrphanageAddressPicController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php(183): AdoptionOrphanageAddressPicController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionOrphanageAddressPicController->actionUpload()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionOrphanageAddressPicController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionOrphanageAddressPicController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionOrphanageAddressPicController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=adoptionOrphanageAddressPic/upload&oid=1
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/views/adoptionOrphanageAddressPic/upload.php (39)
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (183)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2015/12/28 11:38:03 [info] [application] ======================------------------------------
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/AdoptionOrphanageAddressPicController.php (140)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)

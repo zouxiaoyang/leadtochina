@@ -2,7 +2,8 @@
 <div class="container ">
   <div class="adoption-diy">
     <div class="adoption-diy-top">
-      <p>Designing your ideal itinerary is a harmonious blend of your ideas and desires and our expertise. Though we offer very popular set tours, it is often the case that families need to travel at other times during the year or forshorter periods of time. Lead to China is now offering the ability to tailor a tcompletely personalized heritage tour to your family's travel wishes.
+    <h2  class="page-title13">Creating Your Trip</h2>
+      <p>Designing your ideal itinerary is a harmonious blend of your ideas and desires and our expertise. Though we offer very popular set tours, it is often the case that families need to travel at other times during the year or for shorter periods of time. Lead to China is now offering the ability to tailor a completely personalized heritage tour to your family's travel wishes.
 		</p>
     </div>
     <form id="adoptionOrder" method="post" name="adoptionOrder" action="<?php echo Yii::app()->createUrl('adoption/saveOrder');?>" onsubmit="return checksubmit()">

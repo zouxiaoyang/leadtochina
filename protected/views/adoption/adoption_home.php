@@ -3,185 +3,122 @@
 <?php 
 	$this->renderPartial('_search');
 ?>
-  <h2 class="page-title13">How we select the best travel specialists</h2>
-  <p style="width:600px; text-align:center; margin:30px auto;">Our commitment is that each travel specialist in Zicasso's network 
-    is among the finest travel agents and tour operators – experts whom we
-    consider the top 10%, or perhaps even the top 1%, in the industry.</p>
+  <h2 class="page-title13">Why Lead to China</h2>
+  <p style="width:600px; text-align:center; margin:30px auto;">Based in China, LTC have managed to help hundreds of families with adopted children find their way back to China. We are experienced, professional, but most of all, we care. </p>
 </div>
 <div class="adoptionhome-about">
   <div class="container">
     <ul class="about-how">
       <li class="about-how1">
-        <h3>Get matched to top travel specialists</h3>
-        <a href="/node/add/triprequest">Tell us</a> about your ideal trip and the kind of experiences you'd like to include. We'll match you with 2-3 reputable, pre-qualified travel specialists who are the best fit for your trip. </li>
+        <h3>We know what you want</h3>
+        Planning a heritage tour for whole family can be a real challenge: so many details need to be considered. Lucky you don't have to. With the expertise of our sophisticated travel consultants, all we need is your idea, and we will take it from there.</li>
       <li class="about-how2">
-        <h3>Get your trip planned</h3>
-        Our travel specialist partners will arrange an initial phone consultation or exchange emails with you to better understand your specific interests and vacation preferences. They will compete for your business using their expertise and insights to craft unique itinerary and activity proposals. </li>
+        <h3>We know what we are doing</h3>
+        Locating in china really yield us many advantages. Huge government recourses guarantee the access to visit almost all the SWI in China. Having devoted in China homeland tour for near a decade is what makes us sound and reliable. We commit to make a suitable and memorable tour for every child and their families; you can <a href="#">join a group with other families</a> like you, or have an intimate journey with only your loved ones. </li>
       <li class="about-how3">
-        <h3>Book your custom trip</h3>
-        You select the travel specialist who impresses you the most. After your itinerary is refined to perfection, book it with the travel specialist, who will then confirm all services and coordinate all logistics &ndash; including 24X7 support throughout your trip. </li>
+        <h3>What we know is more</h3>
+        We know how important this tour means to you, so we think more and focus on every detail to make this tour unique no matter how small it looks like: the hotel you used to stay on your last visit, the orphanage visit, the very spot where your child was found...and various interesting activities we elaborately arranged for our children to experience the beauty, culture and history of china. We all have loved ones, that's why we care.  </li>
     </ul>
     <img src="/images/adoptionhome-banner02.jpg"  class="about-img" /> </div>
 </div>
 <div class="container">
-  <h2 class="page-title13">latest travel stories</h2>
+  <h2 class="page-title13">Latest Travel Stories</h2>
   <div class="row">
+  <?php foreach($ress as $res):?>
     <div class="col-sm-6 col-md-4">
       <div class="adoption-stories">
-        <div class="img-block"> <img  src="/images/adoption-pro-1.jpg"  />
-          <div class="bg-back"> <span> 2015 Private Visit to Guipin & Nanning SWI </span>
-            <label>Date: Aug 08th, 2015</label>
+        <div class="img-block"> <img  src="<?php echo ImageUtils::getThumbnail(AdoptionArticle::UPLOAD_PATH.$res['pic'], '356x236');?>"  />
+          <div class="bg-back"> <span> <?php echo $res['title'];?> </span>
+            <label>Date:&nbsp;<?php echo date('m dS, Y',strtotime($res['date']));?></label>
           </div>
         </div>
         <div class="text-block clearfix">
-          <p>Amanda is a university professor from Canada. 
-            She adopted her daughter Andaya from Guiping 
-            SWI in Guangxing province. Now Andaya is nine 
-            years old, Amanda asked us to arrange a 
-            heritage tour for her family (her daughter 
-            Amanda, her son Kian and her mother) from 
-            August 8th to 10th... </p>
-          <a href="#" class="see-more02 f-right">See more >></a> </div>
+          <p><?php echo substr(strip_tags($res['content']),0,255);?>...</p>
+          <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleDetail',array('ar_id'=>$res['id']));?>" class="see-more02 f-right">See more >></a></div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4">
-      <div class="adoption-stories">
-        <div class="img-block"> <img  src="/images/adoption-pro-2.jpg"  />
-          <div class="bg-back"> <span> 2015 Private Visit to Guipin & Nanning SWI </span>
-            <label>Date: Aug 08th, 2015</label>
-          </div>
-        </div>
-        <div class="text-block clearfix">
-          <p>Amanda is a university professor from Canada. 
-            She adopted her daughter Andaya from Guiping 
-            SWI in Guangxing province. Now Andaya is nine 
-            years old, Amanda asked us to arrange a 
-            heritage tour for her family (her daughter 
-            Amanda, her son Kian and her mother) from 
-            August 8th to 10th... </p>
-          <a href="#" class="see-more02 f-right">See more >></a> </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-      <div class="adoption-stories ">
-        <div class="img-block"> <img  src="/images/adoption-pro-3.jpg"  />
-          <div class="bg-back"> <span> 2015 Private Visit to Guipin & Nanning SWI </span>
-            <label>Date: Aug 08th, 2015</label>
-          </div>
-        </div>
-        <div class="text-block clearfix">
-          <p>Amanda is a university professor from Canada. 
-            She adopted her daughter Andaya from Guiping 
-            SWI in Guangxing province. Now Andaya is nine 
-            years old, Amanda asked us to arrange a 
-            heritage tour for her family (her daughter 
-            Amanda, her son Kian and her mother) from 
-            August 8th to 10th... </p>
-          <a href="#" class="see-more02 f-right">See more >></a> </div>
-      </div>
-    </div>
+<?php endforeach;?>
   </div>
-  <h2 class="page-title13"> Get started,<br />
-    meet with the first memory of your baby</h2>
+  <h2 class="page-title13" id="provin ce_map"> Get started:<br /> Recall the first memory with your child</h2>
 </div>
 <div class="adoption-map-block">
   <div class="container">
     <div class="row">
     	<ul class="province-list01">
         	<li class="li01">
-            	<a href="#">Xinjiang Reunion</a>
-                <a href="#">Inner Mongolia Reunion</a>
-                <a href="#">Gansu Reunion</a>
-                <a href="#">Ningxia Reunion</a>
-                <a href="#">Qinghai Reunion</a>
-                <a href="#">Shaanxi Reunion</a>
-                <a href="#">Xizang Reunion</a>
-                <a href="#">Sichuan Reunion</a>
-                <a href="#">Chongqing Reunion</a>
-                <a href="#">Hubei Reunion</a>
-                <a href="#">Hunan Reunion</a>
-                <a href="#">Guizhou Reunion</a>
-                <a href="#">Yunnan Reunion</a>
-                <a href="#">Guangxi Reunion</a>
+            	<a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>16))?>">Xinjiang Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>33))?>">Inner Mongolia Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>27))?>">Gansu Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>25))?>">Ningxia Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>11))?>">Qinghai Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>30))?>">Shaanxi Reunion</a>
+                <a href="#"> &nbsp;</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>10))?>">Sichuan Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>13))?>">Chongqing Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>7))?>">Hubei Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>8))?>">Hunan Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>9))?>">Guizhou Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>14))?>">Yunnan Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>6))?>">Guangxi Reunion</a>
             </li>
             <li class="li02"><img  src="/images/adoptionhome-map.jpg"  /></li>
             <li class="li03">
-            	<a href="#">Heilongjiang Reunion</a>
-                <a href="#">Jilin Reunion</a>
-                <a href="#">Liaoning Reunion</a>
-                <a href="#">Beijing Reunion</a>
-                <a href="#">Hebei Reunion</a>
-                <a href="#">Shanxi Reunion</a>
-                <a href="#">Shandong Reunion</a>
-                <a href="#">Henan Reunion</a>
-                <a href="#">Anhui Reunion</a>
-                <a href="#">Jiangsu Reunion</a>
-                <a href="#">Shanghai Reunion</a>
-                <a href="#"> Zhejiang Reunion</a>
-                <a href="#">Jiangxi Reunion</a>
-                <a href="#">Fujian Reunion</a>
-                <a href="#">Guangdong Reunion</a>
+            	<a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>22))?>">Heilongjiang Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>23))?>">Jilin Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>34))?>">Liaoning Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>1))?>">Beijing Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>5))?>">Hebei Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>12))?>">Shanxi Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>24))?>">Shandong Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>4))?>">Henan Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>21))?>">Anhui Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>20))?>">Jiangsu Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>2))?>">Shanghai Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>19))?>"> Zhejiang Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>35))?>">Jiangxi Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>18))?>">Fujian Reunion</a>
+                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>17))?>">Guangdong Reunion</a>
             </li>
         </ul>
-      
     </div>
   </div>
 </div>
-<h2 class="page-title13">more stories on this journey</h2>
+<h2 class="page-title13">Exciting Travel Activities</h2>
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-md-4">
-      <div class="adoption-stories">
+      <div class="adoption-stories adoption-stories2">
         <div class="img-block"> <img  src="/images/adoption-pro-1.jpg"  />
-          <div class="bg-back"> <span> 2015 Private Visit to Guipin & Nanning SWI </span>
-            <label>Date: Aug 08th, 2015</label>
+          <div class="bg-back"> <span> Watch a Kungfu Show</span>
           </div>
         </div>
         <div class="text-block clearfix">
-          <p>Amanda is a university professor from Canada. 
-            She adopted her daughter Andaya from Guiping 
-            SWI in Guangxing province. Now Andaya is nine 
-            years old, Amanda asked us to arrange a 
-            heritage tour for her family (her daughter 
-            Amanda, her son Kian and her mother) from 
-            August 8th to 10th... </p>
-          <a href="#" class="see-more02 f-right">See more >></a> </div>
+          <p>You can watch this performance in Red Theatre of Beijing. It costs about 70 mins, told a beautiful story about a young boy who dreams of becoming a Kung Fu master and attain enlightenment,. Well choreographed musical with stunt Kung Fu performance make the show world-famous. Your family will enjoy it. </p>
+          <a href="/travel/adoption/activity" class="see-more02 f-right">See more >></a> </div>
       </div>
     </div>
     <div class="col-sm-6 col-md-4">
-      <div class="adoption-stories">
+      <div class="adoption-stories adoption-stories2">
         <div class="img-block"> <img  src="/images/adoption-pro-2.jpg"  />
-          <div class="bg-back"> <span> 2015 Private Visit to Guipin & Nanning SWI </span>
-            <label>Date: Aug 08th, 2015</label>
+          <div class="bg-back"> <span>Makeup for the Sichuan Opera</span>
+            
           </div>
         </div>
         <div class="text-block clearfix">
-          <p>Amanda is a university professor from Canada. 
-            She adopted her daughter Andaya from Guiping 
-            SWI in Guangxing province. Now Andaya is nine 
-            years old, Amanda asked us to arrange a 
-            heritage tour for her family (her daughter 
-            Amanda, her son Kian and her mother) from 
-            August 8th to 10th... </p>
-          <a href="#" class="see-more02 f-right">See more >></a> </div>
+          <p>Sichuan Opera performances are always full of wit, humor, lively dialogues, and pronounced local flavors. To portray special characters, the opera incorporates a series of stunts, including the famous "face-changing." After watching the Sichuan Opera, you will have a chance to be maked up as the performer. It will be a fun way to experience the local culture.</p>
+          <a href="/travel/adoption/activity" class="see-more02 f-right">See more >></a> </div>
       </div>
     </div>
     <div class="col-sm-6 col-md-4">
-      <div class="adoption-stories">
+      <div class="adoption-stories adoption-stories2">
         <div class="img-block"> <img  src="/images/adoption-pro-3.jpg"  />
-          <div class="bg-back"> <span> 2015 Private Visit to Guipin & Nanning SWI </span>
-            <label>Date: Aug 08th, 2015</label>
+          <div class="bg-back"> <span> Visit the Giant Panda</span>
+           
           </div>
         </div>
         <div class="text-block clearfix">
-          <p>Amanda is a university professor from Canada. 
-            She adopted her daughter Andaya from Guiping 
-            SWI in Guangxing province. Now Andaya is nine 
-            years old, Amanda asked us to arrange a 
-            heritage tour for her family (her daughter 
-            Amanda, her son Kian and her mother) from 
-            August 8th to 10th... </p>
-          <a href="#" class="see-more02 f-right">See more >></a> </div>
+          <p>Visit the home of giant pandas at Panda Breeding and Research Center, in the outskirts of Chengdu. Visit the nursery to see the highly successful breeding program, among the bamboo groves and shady walkways, and to view the pandas at rest or play. There is a panda museum where you can learn some information about giant pandas...</p>
+          <a href="/travel/adoption/activity" class="see-more02 f-right">See more >></a> </div>
       </div>
     </div>
   </div>

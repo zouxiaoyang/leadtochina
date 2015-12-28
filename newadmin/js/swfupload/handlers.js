@@ -165,7 +165,8 @@ function uploadError(file, errorCode, message) {
 }
 
 function uploadComplete(file) {
-	if (this.getStats().files_queued === 0) {
+	// if (this.getStats().files_queued === 0) {
+	if(false){
 		document.getElementById(this.customSettings.cancelButtonId).disabled = true;
 	}
 }

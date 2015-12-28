@@ -1,61 +1,43 @@
-<img class="img-responsive" src="/images/huangshan-1.jpg" />
+<img class="img-responsive" src="/images/adoption/banner_<?php echo strtolower($res['name']);?>.jpg"  alt="" />
 <div class="container">
-    <h2 class="page-title13">About Anhui</h2>
+    <h2 class="page-title13">About&nbsp;<?php echo $res['name'];?></h2>
     <div class="adoption-province-about">
-        <p>Anhui is a province located in eastern China across the basins of the Yangtze River and the Huaihe River, with more than 64,61 million 
-        people live in 139600 square km area. Besides, Anhui province borders Jiangsu province to the east, Zhejiang province to the southeast, 
-        Jiangxi province to the south, Hubei province to the southwest, Henan province to the northwest, and Shandong province for a tiny section 
-        in the north.The name of An hui is the combination of two cities in south Anhui, Anqing city and Huizhou city (now Huangshan City), and th...</p>
+        <?php echo $res['description']; ?>
         <ul>
         	<li>
             	<img  src="/images/anhui-fact.gif" />
-            	<span>Anhui Facts</span>
+            	<span><?php echo $res['name'];?>&nbsp;Facts</span>
             </li>
             <li>
             	<img  src="/images/anhui-food.gif" />
-            	<span>Anhui Food</span>
+            	<span><?php echo $res['name'];?>&nbsp;Food</span>
             </li>
             <li>
             	<img  src="/images/anhui-climate.gif" />
-            	<span>Anhui Climate</span>
+            	<span><?php echo $res['name'];?>&nbsp;Climate</span>
             </li>
             <li>
             	<img  src="/images/anhui-transport.gif" />
-            	<span>Anhui Transportations</span>
+            	<span><?php echo $res['name'];?>&nbsp;Transportations</span>
             </li>
         </ul>
     </div>
 </div>
 <div class="adoption-province-collection">
 	<div class="container">
-    	<h2 class="page-title14">Collection of Anhui Orphanages</h2>
+    	<h2 class="page-title14">Collection of <?php echo $res['name'];?>&nbsp;Orphanages</h2>
     	<p>Based in China, Lead to China works closely with Chinese Government and Social Welfare Institutes throughout China. This section 
 contains detailed information like each orphanage address, photos, travel stories, visit arrangement, and travel tips. </p>
 		<ul>
-        	<li>
-            	<a href="#">AnQing Social Welfare Institute</a>
-                <a href="#">BengBu Children's Welfare Institute</a>
-                <a href="#">ChaoHu Children's Welfare Institute</a>
-                <a href="#">ChuZhou Children's Welfare Institute</a>
-                <a href="#">HeFei Children's Welfare Institute</a>
-                <a href="#">HeFei Children's Welfare Institute</a>            
-            </li>
-            <li>
-            	<a href="#">AnQing Social Welfare Institute</a>
-                <a href="#">BengBu Children's Welfare Institute</a>
-                <a href="#">ChaoHu Children's Welfare Institute</a>
-                <a href="#">ChuZhou Children's Welfare Institute</a>
-                <a href="#">HeFei Children's Welfare Institute</a>
-                <a href="#">HeFei Children's Welfare Institute</a>            
-            </li>
-            <li>
-            	<a href="#">AnQing Social Welfare Institute</a>
-                <a href="#">BengBu Children's Welfare Institute</a>
-                <a href="#">ChaoHu Children's Welfare Institute</a>
-                <a href="#">ChuZhou Children's Welfare Institute</a>
-                <a href="#">HeFei Children's Welfare Institute</a>
-                <a href="#">HeFei Children's Welfare Institute</a>            
-            </li>
+		<?php $ii=1;?>
+		<?php foreach($adoption_info as $v):?>
+				<?php if($ii==1 || ($ii-1)%6==0):?>
+					<li>
+				<?php endif;?>
+					<a href="<?php echo Yii::app()->createUrl('adoption/index',array('id'=>$v['id']));?>"><?php echo $v['orphanage_name'];?></a>          
+				<?php echo ($ii%6==0)?'</li>':'';?>
+			<?php $ii++;?>
+		<?php endforeach;?>
         </ul>
     </div>
 </div>
@@ -67,15 +49,25 @@ or join the group tour with other families, even let us to customize a trip for 
     <div class="col-sm-6 col-md-4">
     	<div class="views-row views-row-1 views-row-odd views-row-first tour-preview">
 				<div class="field-content tour-photo">
+					<?php $pic_dir = $packageProvince['filedir'];?>
                 	<a href="#">
-                		<img width="350" height="240" src="/images/adoption-Inspirations03.png" />
-                    </a>
+						<img src="<?php echo ImageUtils::getThumbnail($pic_dir.$packageProvince['pic'], '360x263');?>">
+					</a>
                 </div>
-				<h2 class="field-content tour-title"><a href="#">Private Tour: China Homeland Tours for Anhui Children</a></h2>
-				<div class="views-field views-field-title-2 tour-title-2"> <a href="/travel/8-days-standard-china-golden-triangle-tour-%28by-flight%29-17.html">8 Days Standard China Golden Triangle Tour (By Flight)</a> </div>
+				<h2 class="field-content tour-title"><a href="<?php echo Yii::app()->createUrl('toursDetail/index', array('id'=>$packageProvince['id'], 'name'=>SiteUtils::stringURLSafe($packageProvince['name'])));?>"><?php echo $packageProvince['name'];?></a><span><?php echo $packageProvince['route'];?></span></h2>
+				<div class="views-field views-field-title-2 tour-title-2"> <a href="<?php echo $packageProvince['url'];?>"><?php echo $packageProvince['name'];?></a> </div>
 				<p class="field-content tour-meta"></p>
-				<div class="field-content tour-summary">The Golden Travel Period of China. You are going to visit China's real highlights with the best travel time, most suitable climate. Are your Ready?<a href="#" class="views-more-link"> Read more...</a></div>
-				<p class="field-content tour-read-more"><a href="#">Read More</a></p> 
+				<div class="field-content tour-summary">
+					<span>Recommended Reason:</span>
+                    <?php $recommand_reason=explode(',', $packageProvince['recommand_reason']); ?>
+                    <ul>
+						<li title="<?php echo $recommand_reason[0];?>"><?php echo SiteUtils::mb_truncate_text($recommand_reason[0],80);?></li> 
+                           <li class="rtwo" title="<?php echo $recommand_reason[1];?>"><?php echo SiteUtils::mb_truncate_text($recommand_reason[1],80);?></li>
+                           <li class="rthree" title="<?php echo $recommand_reason[2];?>"><?php echo SiteUtils::mb_truncate_text($recommand_reason[2],80);?></li>
+                           <li class="rfour" title="<?php echo $recommand_reason[3];?>"><?php echo SiteUtils::mb_truncate_text($recommand_reason[3],80);?></li>
+                    </ul>
+					<a href="<?php echo Yii::app()->createUrl('toursDetail/index', array('id'=>$packageProvince['id'], 'name'=>SiteUtils::stringURLSafe($packageProvince['name'])));?>" class="views-more-link"> Read more...</a></div>
+				<p class="field-content tour-read-more"><a href="<?php echo Yii::app()->createUrl('toursDetail/index', array('id'=>$packageProvince['id'], 'name'=>SiteUtils::stringURLSafe($packageProvince['name'])));?>">Read More</a></p> 
         </div>
 	</div>
     <div class="col-sm-6 col-md-4">
@@ -85,11 +77,13 @@ or join the group tour with other families, even let us to customize a trip for 
                 		<img width="350" height="240" src="/images/adoption-Inspirations01.png" />
                     </a>
                 </div>
-				<h2 class="field-content tour-title"><a href="#">Private Tour: China Homeland Tours for Anhui Children</a></h2>
+				<h2 class="field-content tour-title"><a href="/travel/adoption/2016-group-tour">2016 Summer Break Tour</a></h2>
 				<div class="views-field views-field-title-2 tour-title-2"> <a href="/travel/8-days-standard-china-golden-triangle-tour-%28by-flight%29-17.html">Small Group to Join in: 2016 Summer Break Tours</a> </div>
 				<p class="field-content tour-meta"></p>
-				<div class="field-content tour-summary">The Golden Travel Period of China. You are going to visit China's real highlights with the best travel time, most suitable climate. Are your Ready?<a href="#" class="views-more-link"> Read more...</a></div>
-				<p class="field-content tour-read-more"><a href="#">Read More</a></p> 
+				<div class="field-content tour-summary">Beijing-Xi'an-Chengdu-Birth City<br />
+Departure: July 04th, 2016<br />
+$2000 for Adult, Kid Travel Free!<a href="/travel/adoption/2016-group-tour" class="views-more-link"> Read more...</a></div>
+				<p class="field-content tour-read-more"><a href="/travel/adoption/2016-group-tour">Read More</a></p> 
         </div>
 	</div>
     <div class="col-sm-6 col-md-4">
@@ -99,11 +93,11 @@ or join the group tour with other families, even let us to customize a trip for 
                 		<img width="350" height="240" src="/images/adoption-Inspirations02.png" />
                     </a>
                 </div>
-				<h2 class="field-content tour-title"><a href="#">Private Tour: China Homeland Tours for Anhui Children</a></h2>
+				<h2 class="field-content tour-title"><a href="/travel/adoption/diy">Customize Your Own Return Trip</a></h2>
 				<div class="views-field views-field-title-2 tour-title-2"> <a href="/travel/8-days-standard-china-golden-triangle-tour-%28by-flight%29-17.html">Customize Service: Just Need the Orphanage Visit?</a> </div>
 				<p class="field-content tour-meta"></p>
-				<div class="field-content tour-summary">The Golden Travel Period of China. You are going to visit China's real highlights with the best travel time, most suitable climate. Are your Ready?<a href="#" class="views-more-link"> Read more...</a></div>
-				<p class="field-content tour-read-more"><a href="#">Read More</a></p> 
+				<div class="field-content tour-summary">It is another option for those who want a more flexible time frame to work with as well as independence in where you want to go. We'd be happy to guide you regarding any of our programs. <a href="/travel/adoption/diy" class="views-more-link"> Read more...</a></div>
+				<p class="field-content tour-read-more"><a href="/travel/adoption/diy">Read More</a></p> 
         </div>
 	</div>
     <p class="clearfix" ></p>

@@ -73,6 +73,11 @@ return array(
 		'cache'=>array(
 	      'class'=>'CFileCache'  
 	    ),
+		'image'=>array(
+        'class'=>'application.extensions.image.CImageComponent',
+        // GD or ImageMagick
+        'driver'=>'GD',
+		),
 		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors

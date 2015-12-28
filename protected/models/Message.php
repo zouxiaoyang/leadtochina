@@ -170,7 +170,6 @@ class Message extends CActiveRecord
       $model->referer_url=Yii::app()->request->urlReferrer;
       $model->dateline = time();
 
-	  var_dump($model->save());exit;
       if($model->save())
       {
         header("location:/succeed.html");

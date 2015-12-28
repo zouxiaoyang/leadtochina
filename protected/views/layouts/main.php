@@ -50,13 +50,14 @@
 					array('label'=>'DESTINATIONS2', 'url'=>array('/site/index')),
 				)),
 
-				array('label'=>'HERITAGE TOURS', 'url'=>array('/site/contact'),
+				array('label'=>'HERITAGE TOURS', 'url'=>array('/travel/adoptionhome'),
 					'items'=>array(
-						array('label'=>'Provincial Reunion Tour', 'url'=>array('/travel/adoptionbyprovince')),
-						array('label'=>'China Orphanage List', 'url'=>array('/travel/family-tours')),
-						array('label'=>'Creat Your Return Trip', 'url'=>array('/travel/adoption/diy')),
+						array('label'=>'Provincial Reunion Tour', 'url'=>array('/travel/adoptionhome#provin ce_map')),
+						array('label'=>'2016 Group Tour', 'url'=>array('/travel/adoption/2016-group-tour')),
+						array('label'=>'China Orphanage List', 'url'=>array('/travel/adoption/list')),
 						array('label'=>'Families\' Travel Stories', 'url'=>array('/travel/adoptionarticle')),
 						array('label'=>'Featured Activites', 'url'=>array('/travel/adoption/activity')),
+						array('label'=>'Creat Your Return Trip', 'url'=>array('/travel/adoption/diy')),
 					)
 				),
 				array('label'=>' SHORE EXCURSIONS ', 'url'=>array('/site/contact')),
