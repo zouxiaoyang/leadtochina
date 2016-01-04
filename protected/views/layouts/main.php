@@ -13,9 +13,6 @@
 	<![endif]-->
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 <title><?php echo CHtml::encode($this->pageTitle); ?></title>
-<script>
-	!function(a,b){b.behaviors.zicassoAboutUsAnimation={attach:function(){function b(b){a(b.selector+"> div:gt(0)").hide(),setTimeout(function(){a(b.selector+"> div:first").fadeOut(1500).next().fadeIn(1500).end().appendTo(b.selector)},b.pauseTime)}function c(){setTimeout(function(){b(f),b(g),b(h),b(i),b(j),b(k),l++,l>0&&c()},5e3)}var d=2e3,e=250,f={selector:"#zicasso-about-slideshow-top-small",pauseTime:d},g={selector:"#zicasso-about-slideshow-middle-small",pauseTime:d+e},h={selector:"#zicasso-about-slideshow-bottom-small",pauseTime:d+2*e},i={selector:"#zicasso-about-slideshow-left-big",pauseTime:d+e},j={selector:"#zicasso-about-slideshow-left-bottom-big",pauseTime:d+2*e},k={selector:"#zicasso-about-slideshow-right-big",pauseTime:d};b(f),b(g),b(h),b(i),b(j),b(k);var l=1;c()}}}
-</script>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">
 <div id="page">
@@ -23,7 +20,7 @@
     <div id="header">
       <div id="logo">
         <?php //echo CHtml::encode(Yii::app()->name); ?>
-        <img src="/images/logo.png" /></div>
+        <a href="/"><img src="/images/logo.png" /></a></div>
     </div>
     <!-- header -->
     <div class="index-menu">
