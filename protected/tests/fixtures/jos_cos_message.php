@@ -1,0 +1,46 @@
+<?php
+
+return array(
+	/*
+	'sample1'=>array(
+		'email' => '',
+		'message' => '',
+		'username' => '',
+		'writeto' => '',
+		'addr' => '',
+		'phone' => '',
+		'country' => '',
+		'company' => '',
+		'city' => '',
+		'fax' => '',
+		'states' => '',
+		'postalcode' => '',
+		'message_type' => '',
+		'mes_type' => '',
+		'ip' => '',
+		'dateline' => '',
+		'messagetype' => '',
+		'referer_url' => '',
+	),
+	'sample2'=>array(
+		'email' => '',
+		'message' => '',
+		'username' => '',
+		'writeto' => '',
+		'addr' => '',
+		'phone' => '',
+		'country' => '',
+		'company' => '',
+		'city' => '',
+		'fax' => '',
+		'states' => '',
+		'postalcode' => '',
+		'message_type' => '',
+		'mes_type' => '',
+		'ip' => '',
+		'dateline' => '',
+		'messagetype' => '',
+		'referer_url' => '',
+	),
+	*/
+);

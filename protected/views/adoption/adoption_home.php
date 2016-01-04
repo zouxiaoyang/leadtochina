@@ -105,7 +105,7 @@
           </div>
         </div>
         <div class="text-block clearfix">
-          <p>Sichuan Opera performances are always full of wit, humor, lively dialogues, and pronounced local flavors. To portray special characters, the opera incorporates a series of stunts, including the famous "face-changing." After watching the Sichuan Opera, you will have a chance to be maked up as the performer. It will be a fun way to experience the local culture.</p>
+          <p>Sichuan Opera performances are always full of wit, humor, lively dialogues, and pronounced local flavors. To portray special characters, the opera incorporates a series of stunts, including the famous "face-changing." After watching the Sichuan Opera, you will have a chance to be maked up as the performer. It will be a fun way ...</p>
           <a href="/travel/adoption/activity" class="see-more02 f-right">See more >></a> </div>
       </div>
     </div>

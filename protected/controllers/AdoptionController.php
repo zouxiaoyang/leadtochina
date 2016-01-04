@@ -9,20 +9,28 @@ class AdoptionController extends Controller
 	  }
 	public function actionIndex()
 	{
-		$id = isset($_GET['id'])?$_GET['id']:1;
+		$id = isset($_GET['id'])?(int)$_GET['id']:1;
 		$res = $this->getAdoption($id);
-		$this->render('index',array('res'=>$res));
+		$pics = $this->getAdoptionPic($id);
+		$this->render('index',array('res'=>$res,'pics'=>$pics));
 	}
 	public function actionShowMaps(){ //  游记城市地图显示;
-		$id = isset($_GET['id'])?$_GET['id']:1;
+		$id = isset($_GET['id'])?(int)$_GET['id']:1;
 		$res = $this->getAdoption($id);
 		$this->render('adoption_map',array('res'=>$res));
 	}
 	protected function getAdoption($id){ //获取信息;
 		$id = $id!=1?$_GET['id']:1;
-		$sql ="select aoa.*,aoa.id as apt_id,apc.*,apc.name as or_name,c.name as city_name from `t_adoption_orphanage_address` as `aoa`,`jos_cos_city` as `c`,`t_adoption_package_content` as `apc` where `aoa`.`cityid`=`c`.`id` and `aoa`.`id`=`apc`.`pacakage_id` and `aoa`.`id`={$id}";
+		$sql ="select aoa.*,aoa.id as apt_id,aoa.description as des,apc.*,apc.name as or_name,c.name as city_name from `t_adoption_orphanage_address` as `aoa`,`jos_cos_city` as `c`,`t_adoption_package_content` as `apc` where `aoa`.`cityid`=`c`.`id` and `aoa`.`id`=`apc`.`pacakage_id` and `aoa`.`id`={$id}";
 		$res =Yii::app()->db->createCommand($sql)->queryRow();
 		// var_dump($res);exit;
+		return $res;
+	}
+	protected function getAdoptionPic($id){ //获取图片信息;
+		$id = $id!=1?(int)$_GET['id']:1;
+		$sql ="select `pic` from `t_adoption_orphanage_address_pic` where `oid`={$id}";
+		$res =Yii::app()->db->createCommand($sql)->queryAll();
+		// var_dump($res);
 		return $res;
 	}
 	public function actionCityMaps(){ // 游记城市地图调用;

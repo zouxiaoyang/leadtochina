@@ -8,8 +8,16 @@ $this->breadcrumbs=array(
 	'Contact',
 );
 ?>
-
-<h1>Contact Us</h1>
+<div class="container">
+<div class="crumbs">
+<h4><div class="breadcrumbs02">
+<a href="/">Home</a> » <a href="/site/contact">contact</a></div></h4>
+	</div>
+<h1 class="page-title15">Contact Us</h1>
+<p>Looking for help to plan your next trip? Please click this button to get started!</p><br />
+<a href="/travel/order" class="large-button">Let's Start Planning My Trip</a>
+<br /><br /><br />
+<p>Or do you have other questions or comments? Please feel free to contact us using the form below.</p>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -19,62 +27,53 @@ $this->breadcrumbs=array(
 
 <?php else: ?>
 
-<p>
-If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-</p>
-
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'contact-form',
 	'enableClientValidation'=>true,
 	'clientOptions'=>array(
-		'validateOnSubmit'=>true,
+	'validateOnSubmit'=>true,
 	),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
-	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textField($model,'name'); ?>
-		<?php echo $form->error($model,'name'); ?>
+	<div >
+		<?php echo $form->labelEx($model,'username'); ?>
+		<?php echo $form->textField($model,'username'); ?>
+		<?php echo $form->error($model,'username'); ?>
 	</div>
 
-	<div class="row">
+	<div >
 		<?php echo $form->labelEx($model,'email'); ?>
 		<?php echo $form->textField($model,'email'); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'subject'); ?>
-		<?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'subject'); ?>
+	<div >
+		<?php echo $form->labelEx($model,'message_type'); ?>
+		<?php echo $form->dropDownList($model,'message_type',array('Travel Enquiries'=>'Travel Enquiries','Website Feedbacks'=>'Website Feedbacks','Partnerships'=>'Partnerships','Other'=>'Other')); ?>
+		<?php echo $form->error($model,'message_type'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'body'); ?>
-		<?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'body'); ?>
+	<div >
+		<?php echo $form->labelEx($model,'message'); ?>
+		<?php echo $form->textArea($model,'message',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'message'); ?>
 	</div>
 
 	<?php if(CCaptcha::checkRequirements()): ?>
-	<div class="row">
+	<div>
 		<?php echo $form->labelEx($model,'verifyCode'); ?>
 		<div>
+        <?php echo $form->textField($model,'verifyCode'); ?>
 		<?php $this->widget('CCaptcha'); ?>
-		<?php echo $form->textField($model,'verifyCode'); ?>
+		
 		</div>
-		<div class="hint">Please enter the letters as they are shown in the image above.
-		<br/>Letters are not case-sensitive.</div>
 		<?php echo $form->error($model,'verifyCode'); ?>
 	</div>
 	<?php endif; ?>
 
-	<div class="row buttons">
+	<div class="buttons">
 		<?php echo CHtml::submitButton('Submit'); ?>
 	</div>
 
@@ -83,3 +82,5 @@ If you have business inquiries or other questions, please fill out the following
 </div><!-- form -->
 
 <?php endif; ?>
+
+</div>

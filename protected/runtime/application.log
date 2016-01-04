@@ -3371,3 +3371,2102 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2015/12/28 11:47:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 11:53:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 11:53:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 11:54:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 11:56:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 11:56:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 11:56:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/28 11:56:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 12:00:51 [error] [php] Undefined index: pic (/home/wwwroot/default/leadtochina/protected/views/adoption/index.php:50)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): AdoptionController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): AdoptionController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php(15): AdoptionController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): AdoptionController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/adoption/1
+in /home/wwwroot/default/leadtochina/protected/views/adoption/index.php (50)
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (15)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/28 12:01:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 12:01:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 12:02:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 12:03:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 12:04:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 12:05:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 12:05:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 12:08:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 13:21:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 13:22:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 13:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 13:25:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 13:26:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 13:49:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 13:53:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 13:58:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 13:59:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 13:59:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 14:01:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 14:04:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/28 14:18:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/28 14:18:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/28 14:28:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 14:29:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 14:30:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 14:32:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 14:33:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 14:52:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 15:16:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/28 15:16:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/28 15:18:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "travel".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('travel')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/travel/
+---
+2015/12/28 15:21:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 15:21:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 15:23:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 15:23:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 15:26:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "node/add/triprequest/1966959".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('node/add/tripre...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/node/add/triprequest/1966959
+HTTP_REFERER=http://zouyiquan.test.cc/travel/adoption/1
+---
+2015/12/28 15:26:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 15:26:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 15:28:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 16:06:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/28 16:06:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/28 16:09:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/28 16:09:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/28 17:29:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/28 17:34:53 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=144
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/28 17:36:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 17:37:33 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=145
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/28 17:38:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 17:40:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 17:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/28 17:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 17:42:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/28 17:42:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/28 17:42:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/29 09:20:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/29 09:24:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/29 09:24:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/29 10:11:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/29 10:11:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/29 11:57:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/29 11:57:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/29 13:43:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/29 13:43:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/29 13:48:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/29 13:48:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/29 13:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/29 13:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/29 14:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/29 14:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/29 15:59:41 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=2
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/29 17:07:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/29 17:07:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 09:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 09:31:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 09:31:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 09:59:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 10:02:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 10:02:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 10:24:37 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.name" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('name')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'name')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'name', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'name', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(42): CActiveForm->textField(Object(JosCosMessage), 'name')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://zouyiquan.test.cc/site/page?view=about
+---
+2015/12/30 10:25:12 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.name" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('name')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'name')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'name', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'name', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(42): CActiveForm->textField(Object(JosCosMessage), 'name')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://zouyiquan.test.cc/site/page?view=about
+---
+2015/12/30 10:25:13 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.name" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('name')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'name')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'name', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'name', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(42): CActiveForm->textField(Object(JosCosMessage), 'name')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://zouyiquan.test.cc/site/page?view=about
+---
+2015/12/30 10:25:14 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.name" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('name')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'name')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'name', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'name', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(42): CActiveForm->textField(Object(JosCosMessage), 'name')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://zouyiquan.test.cc/site/page?view=about
+---
+2015/12/30 10:25:15 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.name" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('name')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'name')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'name', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'name', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(42): CActiveForm->textField(Object(JosCosMessage), 'name')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://zouyiquan.test.cc/site/page?view=about
+---
+2015/12/30 10:25:22 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.name" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('name')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'name')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'name', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'name', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(42): CActiveForm->textField(Object(JosCosMessage), 'name')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:27:34 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.subject" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('subject')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('subject')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'subject')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'subject', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'subject', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(54): CActiveForm->textField(Object(JosCosMessage), 'subject', Array)
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:27:37 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.subject" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('subject')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('subject')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'subject')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'subject', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'subject', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(54): CActiveForm->textField(Object(JosCosMessage), 'subject', Array)
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:27:37 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.subject" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('subject')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('subject')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'subject')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'subject', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'subject', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(54): CActiveForm->textField(Object(JosCosMessage), 'subject', Array)
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:27:37 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.subject" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('subject')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('subject')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'subject')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'subject', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'subject', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(54): CActiveForm->textField(Object(JosCosMessage), 'subject', Array)
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:28:12 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.body" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('body')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('body')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1371): CHtml::resolveValue(Object(JosCosMessage), 'body')
+#3 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(703): CHtml::activeTextArea(Object(JosCosMessage), 'body', Array)
+#4 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(60): CActiveForm->textArea(Object(JosCosMessage), 'body', Array)
+#5 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#7 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#9 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#10 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#11 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#16 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#18 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:28:36 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.mes_user_content" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('mes_user_conten...')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('mes_user_conten...')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1371): CHtml::resolveValue(Object(JosCosMessage), 'mes_user_conten...')
+#3 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(703): CHtml::activeTextArea(Object(JosCosMessage), 'mes_user_conten...', Array)
+#4 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(60): CActiveForm->textArea(Object(JosCosMessage), 'mes_user_conten...', Array)
+#5 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#7 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#9 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#10 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#11 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#16 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#18 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:29:24 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:29:26 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:29:26 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:29:26 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:29:26 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:14 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:15 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:16 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:18 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:19 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:19 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:19 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:19 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:19 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:20 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:20 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:20 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:21 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:21 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:21 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:21 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:22 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 10:30:22 [error] [exception.CException] exception 'CException' with message 'Property "JosCosMessage.verifyCode" is not defined.' in /home/wwwroot/default/leadtochina/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/db/ar/CActiveRecord.php(144): CComponent->__get('verifyCode')
+#1 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('verifyCode')
+#2 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(JosCosMessage), 'verifyCode')
+#3 /home/wwwroot/default/leadtochina/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(JosCosMessage), 'verifyCode', Array)
+#4 /home/wwwroot/default/leadtochina/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(JosCosMessage), 'verifyCode', Array)
+#5 /home/wwwroot/default/leadtochina/protected/views/site/contact.php(69): CActiveForm->textField(Object(JosCosMessage), 'verifyCode')
+#6 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#7 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#8 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('contact', Array, true)
+#10 /home/wwwroot/default/leadtochina/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#11 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#12 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('contact')
+#16 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('site/contact')
+#17 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#19 {main}
+REQUEST_URI=/site/contact
+---
+2015/12/30 11:18:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "travel".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('travel')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/travel/
+---
+2015/12/30 11:19:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/30 11:19:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/30 11:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/30 11:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/30 11:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/30 11:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/30 11:21:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/30 11:21:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/30 11:21:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/30 11:21:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/30 11:22:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/30 11:22:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/30 11:24:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/30 11:24:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/30 11:27:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "node/add/triprequest/1966959".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('node/add/tripre...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/node/add/triprequest/1966959
+HTTP_REFERER=http://zouyiquan.test.cc/travel/adoption/2016-group-tour
+---
+2015/12/30 11:56:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 11:56:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 13:34:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 13:40:49 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=32
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/30 13:40:56 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=100
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/30 14:10:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 14:10:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 14:17:02 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=86
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/30 14:17:09 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=86
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/30 14:28:24 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=86
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/30 14:43:21 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=88
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/30 14:43:21 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=88
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/30 14:43:55 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=37
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/30 14:51:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 15:00:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 15:13:06 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=92
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/30 15:13:07 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=92
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/30 15:30:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 15:53:48 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=398
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/30 15:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 16:01:19 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=110
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/30 17:09:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 17:09:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 17:32:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/30 17:44:39 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=144
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/31 09:06:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/31 09:13:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/31 09:13:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/31 09:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/31 09:22:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/31 09:27:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "travel/adoptionlist".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('travel/adoption...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/travel/adoptionlist
+---
+2015/12/31 09:27:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "travel/list".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('travel/list')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/travel/list
+---
+2015/12/31 09:38:37 [error] [php] Undefined index: id (/home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php:325)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): AdoptionController->runAction()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): AdoptionController->runActionWithFilters()
+#2 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): AdoptionController->run()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/adoption/orphanageTravelGuide?aid=178
+in /home/wwwroot/default/leadtochina/protected/controllers/AdoptionController.php (325)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2015/12/31 09:43:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/31 09:43:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/31 10:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/31 10:17:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "travel/adoption/OrphanageTravelGuide/293".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('travel/adoption...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/travel/adoption/OrphanageTravelGuide/293
+HTTP_REFERER=http://zouyiquan.test.cc/travel/adoption/list
+---
+2015/12/31 11:43:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "travel/adoption/OrphanageTravelGuide/145".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('travel/adoption...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/travel/adoption/OrphanageTravelGuide/145
+HTTP_REFERER=http://zouyiquan.test.cc/travel/adoption/list
+---
+2015/12/31 14:33:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/31 14:33:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/12/31 17:33:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2015/12/31 17:33:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/31 17:33:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2015/12/31 17:33:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/04 09:33:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/04 09:33:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

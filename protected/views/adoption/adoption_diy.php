@@ -93,10 +93,8 @@
             <label>more destinattions?</label>
           </div>
           <div class="table-body">
-           
-            <textarea class="form-text" style="color:#ACA899;" onfocus="if(this.value.indexOf('Tell us more about your requirements')!=-1){this.value =''; this.style.color = '#000000'; }" onblur="if(this.value == ''){this.style.color = '#ACA899'; this.value = 'more destinattions?'; }" id="Other" name="other_city">more destinattions?
+            <textarea class="form-text" style="color:#ACA899;" onfocus="if(this.value.indexOf('more destinattions')!=-1){this.value =''; this.style.color = '#000000'; }" onblur="if(this.value == ''){this.style.color = '#ACA899'; this.value = 'more destinattions?'; }" id="Other" name="other_city">more destinattions?
 			</textarea>
-            
           </div>
         </section>
         <h3>3.&nbsp;	Featured activities for family tour</h3>
@@ -280,8 +278,7 @@
             <label>more idea on hotel</label>
           </div>
           <div class="table-body">
-           
-             <textarea class="form-text" style="color:#ACA899;" onfocus="if(this.value.indexOf('Tell us more about your requirements')!=-1){this.value =''; this.style.color = '#000000'; }" onblur="if(this.value == ''){this.style.color = '#ACA899'; this.value = 'Stay at the hotel you had been to? Need the connecting room?'; }" id="Other" name="other_hotel">Stay at the hotel you had been to? Need the connecting room?
+             <textarea class="form-text" style="color:#ACA899;" onfocus="if(this.value.indexOf('Stay at the hotel you had been to')!=-1){this.value =''; this.style.color = '#000000'; }" onblur="if(this.value == ''){this.style.color = '#ACA899'; this.value = 'Stay at the hotel you had been to? Need the connecting room?'; }" id="other_hotel" name="other_hotel">Stay at the hotel you had been to? Need the connecting room?
 			</textarea>
           </div>
         </section>
@@ -290,8 +287,7 @@
             <label>Meal Plan</label>
           </div>
           <div class="table-body">
-          
-             <textarea class="form-text" style="color:#ACA899;" onfocus="if(this.value.indexOf('Tell us more about your requirements')!=-1){this.value =''; this.style.color = '#000000'; }" onblur="if(this.value == ''){this.style.color = '#ACA899'; this.value = 'Tell us your special requirements on meals.'; }" id="Other" name="other_meals">Tell us your special requirements on meals.
+             <textarea class="form-text" style="color:#ACA899;" onfocus="if(this.value.indexOf('Tell us your special requirements')!=-1){this.value =''; this.style.color = '#000000'; }" onblur="if(this.value == ''){this.style.color = '#ACA899'; this.value = 'Tell us your special requirements on meals.'; }" id="Other_meals" name="other_meals">Tell us your special requirements on meals.
 			</textarea>
           </div>
         </section>
@@ -355,7 +351,6 @@
               <br /><br /><br /><br /><br /><br />
             </div>
            </div>
-           
         </section>
       </div>
     </form>
@@ -370,56 +365,44 @@
 	  changeMonth: true,
 	  numberOfMonths: 2,
 	});
-
 function checksubmit(){
-
 	var reg = /^[^\@]+@.*\.[a-z]{2,6}$/i;
-
 	var status = false;
-
-
 	if(!$('#orphange_nanme').val()){
 		status=true;
 		$('#orphange_nanme').css('border','1px dotted #F00');
 	}else{
 		$('#orphange_nanme').css('border','0 none');
 	}
-
 	if(!$('#Order_travel_date').val()){
 		status=true;
 		$('#Order_travel_date').css('border','1px dotted #F00');
 	}else{
 		$('#Order_travel_date').css('border','0 none');
 	}
-
 	if(!$('#travel_duration').val()){
 		status=true;
 		$('#travel_duration').css('border','1px dotted #F00');
 	}else{
 		$('#travel_duration').css('border','0 none');
 	}
-	
 	if(!$('#fullName').val()){
 		status=true;
 		$('#fullName').css('border','1px dotted #F00');
 	}else{
 		$('#fullName').css('border','0 none');
 	}
-
 	if(!reg.test($('#email').val())){
 		status=true;
 		$('#email').css('border','1px dotted #F00');
 	}else{
 		$('#email').css('border','0 none');
 	}
-
 	if(status){
 		return false;
 	}else{
 	  return true;
 	}
-
 }
 </script>
-
 </script>

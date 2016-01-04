@@ -11,7 +11,7 @@
           <ul id="myTab" class="nav nav-tabs">
             <li class="active"> <a href="#itinerary" data-toggle="tab">ORPHANAGE VISIT</a> </li>
             <li><a href="#photos" data-toggle="tab">photos</a></li>
-            <li><a href="#trip-notes" data-toggle="tab">trip notes</a></li>
+            <li><a href="#trip-notes" data-toggle="tab">Area Guide</a></li>
             <li><a href="#ask-answer" data-toggle="tab">RETURN TRIP GUIDE</a></li>
              <li class="last"><a href="#inquire" data-toggle="tab">inquire</a></li>
           </ul>
@@ -44,33 +44,24 @@
             <div class="tab-pane fade" id="photos">
               	<section class="clearfix inner-tab-block01">
 					<div class="photo-block">
-                	<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                    	<img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""  width="240" height="150" />
+					<?php 
+						foreach($pics as $pic):
+					?>
+                	<a class="example-image-link" href="<?php echo '/'.AdoptionOrphanageAddressPic::UPLOAD_PATH.$pic['pic'];?>" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                    	<img class="example-image" src="<?php echo ImageUtils::getThumbnail(AdoptionOrphanageAddressPic::UPLOAD_PATH.$pic['pic'], '240x150');?>" alt=""  width="240" height="150" />
                      </a>
-                     <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-                     	<img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" width="240" height="150" />
-                     </a>
-      				<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing.">
-                    	<img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" width="240" height="150" />
-                    </a>
-      				<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
-                    	<img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" width="240" height="150" />
-                    </a>
+					<?php endforeach;?>
     		</div>
      				<link rel="stylesheet" href="/css/lightbox.css" />
 			 		<script src="/js/lightbox.min.js"></script>
               	</section>
-
-
             </div>
             <div class="tab-pane fade " id="trip-notes">
               	<section class="clearfix inner-tab-block01">
                 	<label class="inner-tab-title01">About the Itinerary</label>
-                	<div class="inner-tab-text01"><?php echo $res['description'];?></div>
+                	<div class="inner-tab-text01"><?php echo $res['des'];?></div>
               	</section>
-                           
             </div>
-            
             <div class="tab-pane fade" id="ask-answer">
              <section class="clearfix inner-tab-block01">
               	<div class="question-detail">
@@ -121,7 +112,7 @@
              <section class="clearfix ">
             		<div class="top-block02">
             		<p class="center-button">
-        				<a href="<?php echo Yii::app()->createUrl('order/index');?>" class="large-button" >Help Me Creat My Trip</a><br>
+        				<a href="<?php echo Yii::app()->createUrl('adoption/adoptionDiy');?>" class="large-button" >Help Me Creat My Trip</a><br>
         				<span class="tour-sidebar-inquire-aftertext">Free travel guide & quotation within 24 hrs!</span>
     				</p>
                     </div>
@@ -143,11 +134,8 @@
                             <a href="#" class="see-more02 f-right">See more >></a>
                             <div class="clear"></div>
                         </div>                   
-                    </div>
-                    
-                    
-                    
-                    <div class="view-content">
+                    </div>   
+				<div class="view-content">
 				<?php if(!empty($reviews)):?>
 					<?php foreach($reviews as $key=>$review){ ?>
                     	<div class="views-row">
