@@ -107,20 +107,21 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
 
             <div class="tab-pane fade" id="photos">
               	<section class="clearfix inner-tab-block01">
-					<div class="photo-block">
-                	<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                    	<img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""  width="240" height="150" />
-                     </a>
-                     <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-                     	<img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" width="240" height="150" />
-                     </a>
-      				<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing.">
-                    	<img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" width="240" height="150" />
-                    </a>
-      				<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
-                    	<img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" width="240" height="150" />
-                    </a>
-    		</div>
+				<div class="photo-block">
+					<?php 
+						//foreach($ress as $res):
+						$pics = explode(',',$ress['lightbox']);
+						$pics = array_filter($pics);
+						for($i=0;$i<count($pics);$i++):
+						list($city_name,$jingdian) = explode('_',$pics[$i]);
+						list($dian,$bs) = explode('-',$jingdian);
+					//	echo '/uploads/lightbox/'.$city_name.'/'. $city_name.'_'.$dian.'-S'.($i+1).'.jpg';exit;
+					?>
+						<a class="example-image-link" href="/uploads/lightbox/<?php echo $city_name;?>/<?php echo $pics[$i];?>.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+							<img class="example-image" src="<?php echo '/uploads/lightbox/'.$city_name.'/'. $city_name.'_'.$dian.'-S'.($i+1).'.jpg';?>" alt=""  width="240" height="150" />
+						 </a>
+			<?php endfor;?>
+			</div>
      				<link rel="stylesheet" href="/css/lightbox.css" />
 			 		<script src="/js/lightbox.min.js"></script>
               	</section>

@@ -12,7 +12,8 @@ class AdoptionController extends Controller
 		$id = isset($_GET['id'])?(int)$_GET['id']:1;
 		$res = $this->getAdoption($id);
 		$pics = $this->getAdoptionPic($id);
-		$this->render('index',array('res'=>$res,'pics'=>$pics));
+		$article = $this->actionAdoptionArticleByAid($id);
+		$this->render('index',array('res'=>$res,'pics'=>$pics,'article'=>$article));
 	}
 	public function actionShowMaps(){ //  游记城市地图显示;
 		$id = isset($_GET['id'])?(int)$_GET['id']:1;
@@ -125,6 +126,14 @@ class AdoptionController extends Controller
 			'packageProvince'=>$packageProvince[0],
 			'provinceid'=>$provinceId,
 		));
+	}
+	// 具体福利院游记;
+	protected function actionAdoptionArticleByAid($aid){
+	
+		$sql ="select * from `t_adoption_orphanage_address_article` where `aid`={$aid}";
+		$res = Yii::app()->db->createCommand($sql)->queryAll();
+
+		return $res;
 	}
    // adoption customer size;定制页面;
 	public function actionAdoptionDiy(){

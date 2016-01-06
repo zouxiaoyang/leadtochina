@@ -687,7 +687,7 @@ div.search-form
     line-height: 1.2em;
 }
 .home-para1 .home-para-img{
-    display: inline-block;
+    display: inline-block; width:100%;
 }
 
 .home-para1 .text01 a::before {
@@ -841,7 +841,7 @@ div.search-form
     line-height: 1.2em;
 }
 .home-para2 .home-para-img{
-    display: inline-block;
+    display: inline-block; width:100%;
 }
 
 .home-para1 .text02 a::before {
@@ -927,7 +927,7 @@ div.search-form
     line-height: 1.2em;
 } 
 .home-para3 .home-para-img{
-    display: inline-block;
+    display: inline-block; width:100%;
 }
 
 .home-para3 .text01 a::before {
@@ -1175,10 +1175,10 @@ p.center-button{margin-bottom: 0; text-align: center;}
 .pro-detail-tab{ margin:30px 0 30px;}
 .tab-content{ border:1px solid #ccc; padding:20px;}
 .pro-text01{ margin:15px 0;}
-.inner-tab-block01{ margin:10px 0 0;}
+.inner-tab-block01{ margin:15px 0 0;}
 .inner-tab-title01{padding-right: 50px; float:left;  color: #797979; text-transform: uppercase;  min-width: 150px;width: 25%; font-size:14px; font-weight:normal;}
 .inner-tab-text01{ font-size:14px; float:left;color: #343434; width:75%;}
-.inner-tab-text01 p{ margin:0 0 8px;}
+.inner-tab-text01 p{ margin:0 0 5px;}
 .inner-tab-text01 b{ margin-bottom:8px;    display: block;}
 .inner-tab-text01 i{ font-style:italic; display:block;}
 .price-table01{ border:1px solid #ccc; margin-bottom:20px;}
@@ -2209,7 +2209,7 @@ filter:progid:DXImageTransform.Microsoft.Alpha(enabled=false);
 
 .adoption-article-detail img{ width:500px;}
 
-.adoption-search{ width:824px; height:58px;background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0; padding:8px 20px; position: absolute;top: 380px;left: 280px; border:1px solid #bbb;}
+.adoption-search{ width:824px; height:58px;background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0; padding:8px 20px; position: absolute;  top: -73px;left:15%; border:1px solid #bbb;}
 .adoption-search input{ width:205px; height:40px; float:left; border:1px solid #4a4645; padding-left:10px; margin-right:10px;background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;}
 .adoption-search img{ cursor:pointer;}
 #orphanage_list{ width:280px; height:200px; position:absolute; left:490px; top:48px; border:1px solid #4a4645; padding:4px 0px; display:block; background:#fff; font-size:11px;overflow-x:hidden}
@@ -2262,10 +2262,12 @@ ul#orphanage_list li:hover{background:#ccc;}
 .activity-block .title01{background-color:rgba(0, 0, 0, 0.5); color:#fff; font-size:19px; display:block; padding:5px 20px; position:absolute; left:0; top:278px;}
 .activity-block p{ line-height:20px; padding:10px 5px;}
 
-.orphanagelist{ margin:30px 0 0;}
+.orphanagelist{ margin:10px 0 0;}
 .orphanagelist ul{float: left;font-size: 15px;margin: 0 1%;padding: 0 0 20px;width:30%;}
 .orphanagelist li{ list-style:none;}
+.orphanagelist ul li.title3 {font-size: 17px;padding-top: 10px;}
 .orphanagelist li a{color: #337ab7;display: block;font-size: 14px;padding: 5px 0 4px;}
+
 .orphanagelist li a:hover{ color:#00b7ea;}
 
 

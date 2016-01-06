@@ -255,4 +255,28 @@ protected function getOtherMessage($post){ // 获取other message;
 		);
 	}
 	*/
+	public function actionOrder(){  // order.
+		$model=new Order;
+
+		// uncomment the following code to enable ajax-based validation
+		/*
+		if(isset($_POST['ajax']) && $_POST['ajax']==='order-form')
+		{
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
+		*/
+
+		if(isset($_POST['Order']))
+		{
+			$model->attributes=$_POST['Order'];
+			if($model->validate())
+			{
+				// form inputs are valid, do something here
+				return;
+			}
+		}
+		$this->render('customerize_order_form',array('model'=>$model));
+	}
+
 }

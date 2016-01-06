@@ -32,7 +32,7 @@
 						array('label'=>'Top 10 China Tours', 'url'=>array('/travel/best-china-tours/')),
 						array('label'=>'Short Stays in China', 'url'=>array('/travel/family-tours')),
 						array('label'=>'Yangtze River Cruise', 'url'=>array('/travel/family-tours')),
-						array('label'=>'China Homeland Tours', 'url'=>array('/travel/adoption')),
+						array('label'=>'China Homeland Tours', 'url'=>array('/travel/adoptionhome')),
 						array('label'=>'China Senior Tours', 'url'=>array('/travel/family-tours')),
 						array('label'=>'China Family Tours', 'url'=>array('/travel/family-tours')),
 						array('label'=>'China Educational Trips', 'url'=>array('/travel/family-tours')),

@@ -1,5 +1,5 @@
-<img class="img-responsive" src="/images/adoptionhome-banner01.jpg" style="position:relative" />
-<div class="container">
+<img class="img-responsive" src="/images/adoptionhome-banner01.jpg" />
+<div class="container" style="position:relative" >
 <?php 
 	$this->renderPartial('_search');
 ?>

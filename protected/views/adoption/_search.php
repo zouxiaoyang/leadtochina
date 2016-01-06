@@ -119,9 +119,9 @@ $(function(){
           },
           search:function(){
             var orphanage_id = $("#orphanage_address_id").val();
-            var url = "<?php echo Yii::app()->createUrl('adoption/orphanageTravelGuide');?>";
+            var url = "<?php echo Yii::app()->createUrl('travel/adoption');?>";
             if(orphanage_id){
-              location.href = url+"?id="+orphanage_id;
+              location.href = url+"/"+orphanage_id;
             }else{
 				location.href = '/travel/adoption/noSearchResults';
 			}
