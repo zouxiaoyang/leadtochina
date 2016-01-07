@@ -199,18 +199,16 @@ $cparams = JComponentHelper::getParams ('com_media');
 				
 			</td>
 		</tr>
-		
+<!--
 		<tr>
 			<td class="key" id="packname">
 				<label  for="polloption">
 					套餐等级
 				</label>
 			</td>
-			<td id="dis_name">
-		
-				
-			</td>
-		</tr>
+			<td id="dis_name"></td>
+		</tr> -->
+
 		<tr>
 			<td class="key">
 				<label for="polloption">
@@ -309,7 +307,17 @@ $cparams = JComponentHelper::getParams ('com_media');
 			<input type="checkbox" name="hot" <?php if($this->options[0]->hot==1):?>checked="checked"<?php endif;?> value="1">
 			原价：<input type="text" name="price_yuan" value="<?php if($this->options[0]->price_yuan) echo $this->options[0]->price_yuan;?>" />
 			</td>
-		</tr>	
+		</tr>
+		<tr>
+		  <td class="key">
+				<label>
+			图片编号
+				</label>
+			</td>
+			<td>
+			<input type="text" name="lightbox" id="lightbox" value="<?php echo $this->options[0]->lightbox;?>" size="69">
+			</td>
+		</tr>
 <!--
    <tr>
     <td class="key">

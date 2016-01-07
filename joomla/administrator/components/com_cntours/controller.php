@@ -117,16 +117,17 @@ class CntoursController extends JController
 			$post['categorieid_str']=$post['childid'];
 		}
 		*/
-			$post['tips'] = JRequest::getVar( 'tips','', 'post', 'string', JREQUEST_ALLOWRAW);
+		  $post['tips'] = JRequest::getVar( 'tips','', 'post', 'string', JREQUEST_ALLOWRAW);
 			if($post['tips']=="<p><br mce_bogus=\"1\"></p>"||$post['tips']=="<p><br></p>"){
 				$post['tips']='';
 			}
 		  $post['route_Intro'] = JRequest::getVar( 'route_Intro', '', 'post', 'string', JREQUEST_ALLOWRAW );
 		  $post['tour_intro'] = JRequest::getVar( 'tour_intro', '', 'post', 'string', JREQUEST_ALLOWRAW );
 		  $post['note'] = JRequest::getVar( 'note', '', 'post', 'string', JREQUEST_ALLOWRAW );
+		 // $post['lightbox'] = JRequest::getVar('lightbox', '', 'post', 'string', JREQUEST_ALLOWRAW );
 		  $post['vehicle_type'] = implode(',', $post['vehicle_type']);	
-      $post['highlight'] = implode(',', $post['highlight']);
-      $post['theme'] = implode(',', $post['theme']);
+		  $post['highlight'] = implode(',', $post['highlight']);
+		  $post['theme'] = implode(',', $post['theme']);
 
 		$cate_arr=array();
 		$cate_arr=$post['categorieid_str'];
