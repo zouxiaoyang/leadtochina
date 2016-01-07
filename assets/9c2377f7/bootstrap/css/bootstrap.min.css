@@ -1033,7 +1033,7 @@ a{
 	text-decoration:none
 }
 a:focus, a:hover{
-	color:#343434;
+	color:#00b7ea;
 	text-decoration:none
 }
 a:focus{
@@ -1045,7 +1045,7 @@ figure{
 	margin:0
 }
 img{
-	vertical-align:middle
+	vertical-align:middle; margin:0 auto;
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
 	display:block;
