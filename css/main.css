@@ -13,6 +13,12 @@ h1, h2, h3, h4{
     letter-spacing: normal;
     text-transform: none; 
 }
+body, p, form, ul, li {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+a:hover{ color:#00b7ea;}
 .web-clear{  clear: both; 
     content: ".";
     display: block;
@@ -2379,3 +2385,12 @@ div.buttons input{ background: #f5f5f5;border: 1px solid #ccc;border-radius: 5px
 div.buttons input:hover{background: #898989; color:#fff;border: 1px solid #ccc;}
 
 #contact-form{ margin:0 0 60px;}
+.destinations-text01{ padding:40px 0 0; line-height:24px;}
+.city-block01{ text-align:center;}
+.city-content01{ position:relative; width:534px; text-transform:uppercase; margin-top:30px;}
+.city-content01 label{ color:#fff; font-size:30px; padding:5px 10px; background-color: rgba(0,0,0,0.4); position:absolute; left:38%; top:34%; font-weight:300; }
+.city-content01 span{ background:#eee; color:#666; display:block; padding:8px; border-bottom:2px solid #d4cec4;}
+.destination-city{ padding:0 20px;}
+.destination-link{ background:#f5f5f5; padding:30px; border:1px solid #ccc; margin:40px 0 0;}
+.destination-link a{ display:block; color:#555;background: rgba(0, 0, 0, 0) url("/images/bottom-ico02.png") no-repeat left center; padding:5px 25px;}
+.destination-link li{ float:left; width:20%;}

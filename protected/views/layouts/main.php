@@ -42,7 +42,7 @@
 					)
 				),
 
-				array('label'=>' DESTINATIONS', 'url'=>array('/site/page', 'view'=>'about'),'items'=>array(
+				array('label'=>' DESTINATIONS', 'url'=>array('/travel/destinations/'),'items'=>array(
 					array('label'=>'DESTINATIONS1', 'url'=>array('/site/index')),
 					array('label'=>'DESTINATIONS2', 'url'=>array('/site/index')),
 				)),

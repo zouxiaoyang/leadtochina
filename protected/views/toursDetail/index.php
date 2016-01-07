@@ -1,4 +1,4 @@
-<script type="text/javascript" src="http://maps.google.com/maps?file=api&v=2&hl=en&oe=utf-8&key=AIzaSyDWKEHpILWp1n7UZ5XUymY3rhiwKFGtzA8"></script>
+<!-- <script type="text/javascript" src="http://maps.google.com/maps?file=api&v=2&hl=en&oe=utf-8&key=AIzaSyDWKEHpILWp1n7UZ5XUymY3rhiwKFGtzA8"></script> -->
 <script type="text/javascript" src='/js/map/map.js'></script>
 <script type="text/javascript" src='/js/map/iframeResizer.min.js'></script>
 <!-- <script type="text/javascript" src='/js/map/map-1.js'></script> --> 
@@ -110,23 +110,23 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
 				<div class="photo-block">
 					<?php 
 						//foreach($ress as $res):
+						$ress['lightbox'] = str_replace('，',',',$ress['lightbox']);
 						$pics = explode(',',$ress['lightbox']);
 						$pics = array_filter($pics);
-						for($i=0;$i<count($pics);$i++):
-						list($city_name,$jingdian) = explode('_',$pics[$i]);
-						list($dian,$bs) = explode('-',$jingdian);
-					//	echo '/uploads/lightbox/'.$city_name.'/'. $city_name.'_'.$dian.'-S'.($i+1).'.jpg';exit;
-					?>
-						<a class="example-image-link" href="/uploads/lightbox/<?php echo $city_name;?>/<?php echo $pics[$i];?>.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-							<img class="example-image" src="<?php echo '/uploads/lightbox/'.$city_name.'/'. $city_name.'_'.$dian.'-S'.($i+1).'.jpg';?>" alt=""  width="240" height="150" />
-						 </a>
-			<?php endfor;?>
+					//	var_dump($pics[1]);exit;
+						foreach($pics as $pic):
+							list($city_name,$jingdian) = explode('_',trim($pic));
+							list($dian,$bs) = explode('-',$jingdian);
+							$alt = isset($ligboxalt[$city_name.'_'.$dian])?$ligboxalt[$city_name.'_'.$dian]:'';
+						?>
+						<a class="example-image-link" href="/uploads/lightbox/<?php echo $city_name;?>/<?php echo $pic;?>.jpg" data-lightbox="example-set" data-title="<?php echo $alt;?>">
+								<img class="example-image" src="<?php echo '/uploads/lightbox/'.$city_name.'/'. $city_name.'_'.$dian.'-'.str_replace('B','S',$bs).'.jpg';?>" alt="<?php echo $alt;?>" title="<?php echo $alt;?>" width="240" height="150" />
+							 </a>
+					<?php endforeach;?>
 			</div>
      				<link rel="stylesheet" href="/css/lightbox.css" />
 			 		<script src="/js/lightbox.min.js"></script>
               	</section>
-
-
             </div>
             <div class="tab-pane fade " id="trip-notes">
               	<section class="clearfix inner-tab-block01">

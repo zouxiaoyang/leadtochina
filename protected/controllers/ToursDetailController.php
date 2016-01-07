@@ -17,7 +17,9 @@ class ToursDetailController extends Controller
 
 		$reviews = $this->getReviews($package_id);
 
-		$this->render('index',array('ress'	=>$ress,'router'=>$router,'reviews'=>$reviews));
+		$ligboxalt = $this->getLightboxImageAlt();
+
+		$this->render('index',array('ress'	=>$ress,'router'=>$router,'reviews'=>$reviews,'ligboxalt'=>$ligboxalt));
 	}
 
 	public function getPackage($package_id){
@@ -61,9 +63,23 @@ class ToursDetailController extends Controller
 				return false;
 			
 		}
+	}
+
+	protected function getLightboxImageAlt(){
 		
-		
-		
+		if(Yii::app()->cache->get('ligboxalt')){
+			return Yii::app()->cache->get('ligboxalt');
+		}else{
+			$sql="select `code`,`name` from `jos_cos_tours_package_lightbox`";
+			$ress = Yii::app()->db->createCommand($sql)->queryAll();
+			$alt[] = array();
+			foreach($ress as $res){
+				$alt[$res['code']] = $res['name'];
+			}
+			Yii::app()->cache->set('ligboxalt',$alt);
+
+			return $alt;
+		}
 	}
 
 	// -----------------------------------------------------------

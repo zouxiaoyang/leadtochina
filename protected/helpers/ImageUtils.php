@@ -15,6 +15,7 @@ class ImageUtils {
    */
   public static function getThumbnail($img, $boundary, $fill = 0)
   {
+
     $k = $img.$boundary;
     if($v = Yii::app()->cache->get($k)){
       return $v;

@@ -35,7 +35,9 @@ return array(
 			   '/travel/adoption/list'=>'adoption/adoptionList',
 			  '/travel/adoption/noSearchResults'=>'adoption/noSearchResults',
 			  '/travel/adoption/2016-group-tour'=>'adoption/adoptionGroupTour',
-
+			  //destinations;
+			  '/travel/destinations/'=>'destions/index',
+			  '/travel/city-tours/'=>'destions/cityToursCommon',
 
 			'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 			'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',

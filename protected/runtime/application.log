@@ -6593,3 +6593,1627 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2016/01/06 10:35:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/06 10:35:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/06 11:15:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 11:15:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 11:17:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 11:17:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 11:17:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 11:18:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "travel/string(34)".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('travel/string(3...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/travel/string(34)
+HTTP_REFERER=http://zouyiquan.test.cc/travel/9-days-cheap-china-essence-tour-1086.html
+---
+2016/01/06 11:18:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 11:18:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "travel/string(34)".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('travel/string(3...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/travel/string(34)
+HTTP_REFERER=http://zouyiquan.test.cc/travel/9-days-cheap-china-essence-tour-1086.html
+---
+2016/01/06 11:18:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 11:19:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 11:19:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 11:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 11:20:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 11:21:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 11:21:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 11:21:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 11:21:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 11:21:54 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/wwwroot/default/leadtochina/protected/extensions/image/Image.php:79
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/protected/extensions/image/CImageComponent.php(41): Image->__construct('/uploads/lightb...', Array)
+#1 /home/wwwroot/default/leadtochina/protected/helpers/ImageUtils.php(40): CImageComponent->load('/uploads/lightb...')
+#2 /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php(122): ImageUtils::getThumbnail('/uploads/lightb...', '240x150')
+#3 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(127): require('/home/wwwroot/d...')
+#4 /home/wwwroot/default/leadtochina/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/wwwroot/d...', Array, true)
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): CBaseController->renderFile('/home/wwwroot/d...', Array, true)
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#7 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(20): CController->render('index', Array)
+#8 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#9 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): CController->run('index')
+#13 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('toursDetail/ind...')
+#14 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1086.html
+---
+2016/01/06 11:23:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 11:23:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 11:23:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 11:23:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 11:25:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/06 13:49:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/06 13:49:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/06 14:14:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/06 14:15:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "thumb/thumb_".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('thumb/thumb_')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/thumb/thumb_
+HTTP_REFERER=http://zouyiquan.test.cc/joomla/administrator/index.php?option=com_cntours&c=upload&view=uploadpic&task=upload&cid[]=1086
+---
+2016/01/06 14:26:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 14:26:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 14:28:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 14:28:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 14:29:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/06 14:29:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/06 14:31:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 14:31:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 14:32:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 14:32:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 14:40:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 14:40:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 14:41:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 14:41:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 14:43:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 14:43:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 14:46:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 14:46:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 15:01:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 15:01:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 15:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 15:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 15:03:00 [error] [php] Undefined index: XA_BWG (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:121)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/12-days-best-of-china-tours-29.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (121)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 15:05:29 [error] [php] Undefined index: XA_BWG (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:121)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/12-days-best-of-china-tours-29.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (121)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 15:05:37 [error] [php] Undefined index: XA_BWG (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:121)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/12-days-luxury-china-essence-tour-29.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (121)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 15:05:55 [error] [php] Undefined index: XA_BWG (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:121)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/12-days-luxury-china-essence-tour-29.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (121)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 15:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 15:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 15:07:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 15:07:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 15:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 15:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 15:14:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 15:14:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 15:26:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 15:26:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 16:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 16:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 16:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 16:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:01:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:01:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:03:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:03:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:04:00 [error] [php] Undefined index: route (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:261)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/12-days-luxury-china-essence-tour-1806.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (261)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:04:05 [error] [php] Undefined index: route (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:261)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/12-days-luxury-china-essence-tour-1806.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (261)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:04:17 [error] [php] Undefined index: route (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:261)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/12-days-luxury-china-essence-tour-1806.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (261)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:04:28 [error] [php] Undefined index: route (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:261)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/12-days-luxury-china-essence-tour-1806.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (261)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:04:46 [error] [php] Undefined index: route (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:261)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/12-days-luxury-china-essence-tour-1806.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (261)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:09:12 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:117)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/12-days-luxury-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (117)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:09:27 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:117)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/12-days-luxury-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (117)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:10:12 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:117)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/12-days-luxury-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (117)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:10:32 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:117)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/12-days-luxury-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (117)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:14:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:14:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:15:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:15:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:15:44 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:117)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/12-days-luxury-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (117)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:16:54 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:117)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (117)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:16:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/06 17:16:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/06 17:18:48 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:117)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (117)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:19:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:19:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:19:42 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:20:25 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:20:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:21:13 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:21:41 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:21:44 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:22:06 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:22:07 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:22:07 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:22:07 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:22:07 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:22:16 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:23:46 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:25:11 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:25:12 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:25:13 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:25:13 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:25:13 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:25:13 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:26:53 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:26:54 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:26:54 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:26:54 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:26:54 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:27:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:27:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:27:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:27:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:29:09 [error] [php] Undefined offset: 1 (/home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php:118)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): ToursDetailController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): ToursDetailController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php(22): ToursDetailController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): ToursDetailController->actionIndex()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): ToursDetailController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): ToursDetailController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): ToursDetailController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=/travel/9-days-cheap-china-essence-tour-1079.html
+in /home/wwwroot/default/leadtochina/protected/views/toursDetail/index.php (118)
+in /home/wwwroot/default/leadtochina/protected/controllers/ToursDetailController.php (22)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/06 17:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:29:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:29:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:32:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:32:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:32:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:32:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:32:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:32:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:35:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:35:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:40:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:40:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:42:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:42:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 17:43:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/06 17:43:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/06 19:06:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/07 09:22:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/07 09:22:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/07 09:46:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/07 09:46:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/07 10:37:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/07 10:56:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/07 10:56:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/07 10:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/map/iframeResizer.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/map/iframeRe...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/map/iframeResizer.map
+---
+2016/01/07 10:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/lightbox.min.map".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('js/lightbox.min...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/lightbox.min.map
+---
+2016/01/07 13:17:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/07 13:17:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/07 15:16:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/07 15:16:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
