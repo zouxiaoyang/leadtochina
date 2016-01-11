@@ -8217,3 +8217,339 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2016/01/07 17:02:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "travel/common".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('travel/common')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/travel/common
+---
+2016/01/08 09:26:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/08 09:26:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/08 09:28:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/08 09:28:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/08 11:27:05 [error] [php] Undefined variable: ress (/home/wwwroot/default/leadtochina/protected/views/destions/common.php:16)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): DestionsController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): DestionsController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/DestionsController.php(12): DestionsController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): DestionsController->actionCityToursCommon()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): DestionsController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): DestionsController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): DestionsController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=//travel/city-tours
+in /home/wwwroot/default/leadtochina/protected/views/destions/common.php (16)
+in /home/wwwroot/default/leadtochina/protected/controllers/DestionsController.php (12)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/08 11:27:06 [error] [php] Undefined variable: ress (/home/wwwroot/default/leadtochina/protected/views/destions/common.php:16)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): DestionsController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): DestionsController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/DestionsController.php(12): DestionsController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): DestionsController->actionCityToursCommon()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): DestionsController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): DestionsController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): DestionsController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=//travel/city-tours
+in /home/wwwroot/default/leadtochina/protected/views/destions/common.php (16)
+in /home/wwwroot/default/leadtochina/protected/controllers/DestionsController.php (12)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/08 11:27:08 [error] [php] Undefined variable: ress (/home/wwwroot/default/leadtochina/protected/views/destions/common.php:16)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): DestionsController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): DestionsController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/DestionsController.php(12): DestionsController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): DestionsController->actionCityToursCommon()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): DestionsController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): DestionsController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): DestionsController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=//travel/city-tours
+in /home/wwwroot/default/leadtochina/protected/views/destions/common.php (16)
+in /home/wwwroot/default/leadtochina/protected/controllers/DestionsController.php (12)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/08 11:28:52 [error] [php] Undefined variable: ress (/home/wwwroot/default/leadtochina/protected/views/destions/common.php:16)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(870): DestionsController->renderFile()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(783): DestionsController->renderPartial()
+#2 /home/wwwroot/default/leadtochina/protected/controllers/DestionsController.php(12): DestionsController->render()
+#3 /home/wwwroot/default/leadtochina/framework/web/actions/CInlineAction.php(50): DestionsController->actionCityToursCommon()
+#4 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): DestionsController->runAction()
+#6 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): DestionsController->runActionWithFilters()
+#7 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): DestionsController->run()
+#8 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/wwwroot/default/leadtochina/index.php(14): CWebApplication->run()
+REQUEST_URI=//travel/city-tours
+in /home/wwwroot/default/leadtochina/protected/views/destions/common.php (16)
+in /home/wwwroot/default/leadtochina/protected/controllers/DestionsController.php (12)
+in /home/wwwroot/default/leadtochina/index.php (14)
+2016/01/08 12:56:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/08 12:56:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/08 14:41:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/08 15:32:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/citytour-ico01".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('images/citytour...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/citytour-ico01
+HTTP_REFERER=http://zouyiquan.test.cc/css/main.css
+---
+2016/01/08 15:32:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/citytour-ico01".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('images/citytour...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/citytour-ico01
+HTTP_REFERER=http://zouyiquan.test.cc/css/main.css
+---
+2016/01/08 15:32:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/citytour-ico01".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('images/citytour...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/citytour-ico01
+HTTP_REFERER=http://zouyiquan.test.cc/css/main.css
+---
+2016/01/08 15:32:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/citytour-ico01".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('images/citytour...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/citytour-ico01
+HTTP_REFERER=http://zouyiquan.test.cc/css/main.css
+---
+2016/01/08 15:32:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/citytour-ico01".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('images/citytour...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/citytour-ico01
+---
+2016/01/08 15:32:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/citytour-ico01".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('images/citytour...')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/citytour-ico01
+---
+2016/01/08 18:15:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/08 18:15:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/09 13:23:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/09 13:23:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/09 13:26:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/09 13:26:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/09 14:28:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/09 14:28:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/11 09:20:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/11 09:20:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/11 09:26:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/11 09:26:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/11 09:35:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/11 09:35:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/11 09:48:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/11 10:00:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/11 10:05:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/11 10:25:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/01/11 10:25:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/wwwroot/default/leadtochina/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
