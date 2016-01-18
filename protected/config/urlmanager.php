@@ -37,8 +37,11 @@ return array(
 			  '/travel/adoption/2016-group-tour'=>'adoption/adoptionGroupTour',
 			  //destinations;
 			  '/travel/destinations/'=>'destions/index',
-			  '/travel/city-tours/'=>'destions/cityToursCommon',
-
+			  '/travel/city-<city_name:.*>-tours/'=>'destions/cityToursCommon',
+			// port
+				'/travel/port/'=>'port/index',
+				
+			// original;
 			'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 			'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 			'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',

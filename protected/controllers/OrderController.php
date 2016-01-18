@@ -17,7 +17,7 @@ class OrderController extends Controller
 
 	public function actionSuccess(){ // 提交成功的页面;
 		// 提交成功，删除session;
-	//	unset(Yii::app()->session['package_id']); 
+		unset(Yii::app()->session['package_id']); 
 	//	unset(Yii::app()->session['url_referer']);
 
 		$this->render('success');

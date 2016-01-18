@@ -1,4 +1,4 @@
-<!-- <script type="text/javascript" src="http://maps.google.com/maps?file=api&v=2&hl=en&oe=utf-8&key=AIzaSyDWKEHpILWp1n7UZ5XUymY3rhiwKFGtzA8"></script> -->
+<script type="text/javascript" src="http://maps.google.com/maps?file=api&v=2&hl=en&oe=utf-8&key=AIzaSyDWKEHpILWp1n7UZ5XUymY3rhiwKFGtzA8"></script>
 <script type="text/javascript" src='/js/map/map.js'></script>
 <script type="text/javascript" src='/js/map/iframeResizer.min.js'></script>
 <!-- <script type="text/javascript" src='/js/map/map-1.js'></script> --> 
@@ -7,7 +7,7 @@
     <div class="col-sm-12 col-md-9">
       <h1 class="page-title05"><?php echo $ress['name'];?></h1>
       <span>Tour Route: <?php echo $ress['route'];?> Tour</span>
-      <div class="pro-detail-block"> <img src="/images/pro-detail.jpg" />
+      <div class="pro-detail-block"> <img src="<?php echo '/'.$ress['filedir'].$ress['ufile'];?>" />
         <div class="pro-text01">
           <p><?php echo $ress['recommand_reason'];?></p>
         </div>
@@ -15,7 +15,9 @@
           <ul id="myTab" class="nav nav-tabs">
             <li class="active"> <a href="#itinerary" data-toggle="tab">itinerary</a> </li>
             <li><a href="#price" data-toggle="tab">price</a></li>
-            <li><a href="#map" data-toggle="tab">map</a>
+            <?php if($ress['package_type']!=2):?>
+				<li><a href="#map" data-toggle="tab">map</a>
+			<?php endif; ?>
             <li><a href="#photos" data-toggle="tab">photos</a></li>
             <li><a href="#trip-notes" data-toggle="tab">trip notes</a></li>
             <li><a href="#ask-answer" data-toggle="tab">ask & answer</a></li>
@@ -102,8 +104,9 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
                     </div>
                	</section>        
             </div>
-
-            <div class ="tab-pane fade" id="map" style="width:100%;min-height:450px;display:block;"></div>
+			<?php if($ress['package_type']!=2):?>
+				<div class ="tab-pane fade" id="map" style="width:100%;min-height:450px;display:block;"></div>
+			<?php endif;?>
 
             <div class="tab-pane fade" id="photos">
               	<section class="clearfix inner-tab-block01">
@@ -242,7 +245,7 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
 							<?php endif;?>	
                              <span class="text01"><a href="#">Luxury Italy Vacation Review: Southern Italy, Sicily, Amalfi Coast</a></span>
                              <span class="text02">
-                             	<a href="<?php echo Yii::app()->createUrl('reviews/index',array('tid'=>$key,'packageid'=>$ress['id']));?>"> "<?php echo (strlen(strip_tags($review['des']))>=150)?substr(strip_tags($review['des']),150).'...':strip_tags($review['des']);?></a>
+                             	<a href="<?php echo Yii::app()->createUrl('reviews/index',array('tid'=>$key,'packageid'=>$ress['id']));?>"> "<?php echo (strlen(strip_tags($review['des']))>=150)?substr(strip_tags($review['des']),0,150).'...':strip_tags($review['des']);?></a>
                                  <a class="views-more-link" href="<?php echo Yii::app()->createUrl('reviews/index',array('tid'=>$key,'packageid'=>$ress['id']));?>"><?php echo (strlen(strip_tags($review['des']))>=150)?'read more':''; ?></a>
                              </span>
                              <span class="star clearfix"><img src="/images/5star.png" /> by <?php echo $review['name'];?>. </span>
@@ -257,7 +260,8 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
   </div>
 </div>
 <?php 
-	$arr_route = explode(',',$ress['route']);
+if($ress['package_type']!=2 && !empty($ress['map_city'])){
+	$arr_route = explode(',',$ress['map_city']);
 	$arr_la_ln=array();
 	
 	if(Yii::app()->cache->get('ss_'.$ress['id'])){
@@ -282,7 +286,9 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
 		// add to cache;
 		Yii::app()->cache->set('ss_'.$ress['id'],$arr_la_ln); 
 	}
+}
 ?>
+<?php if($ress['package_type']!=2 && !empty($ress['map_city'])){ ?>
 <script>
         doControls = function () {
             map.enableDoubleClickZoom();
@@ -294,6 +300,7 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
 			<?php 
 				$arr_route = array_filter($arr_route);
 				$cnt = count($arr_route);
+				if($cnt>1){
 
 				for($j=0;$j<($cnt-1);$j++){ 
 					$city_start = $arr_route[$j];	
@@ -311,20 +318,22 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
 					map.addOverlay(makeFullMapIcon(new GLatLng(<?php echo $arr_la_ln[$city_end]['lat'];?>,<?php echo $arr_la_ln[$city_end]['lng'];?>), 424, <?php echo $j+2;?>,588847));
 
 			<?php	}	?>
-			bounds.extend(new GLatLng(<?php echo $arr_la_ln[$city_end]['lat'];?>,<?php echo $arr_la_ln[$city_end]['lng'];?>));
+				bounds.extend(new GLatLng(<?php echo $arr_la_ln[$city_end]['lat'];?>,<?php echo $arr_la_ln[$city_end]['lng'];?>));
+			<?php } ?>
         };
         doPost = function () {		
 		<?php 
 				$arr_route = array_filter($arr_route);
 				$cnt = count($arr_route);
-
+				if($cnt>1){
 				for($i=0;$i<($cnt-1);$i++){ 
 					$city_start = $arr_route[$i];	
 					$city_end = $arr_route[$i+1];
 				?>
-					map.addOverlay(new GPolyline([new GLatLng(<?php echo $arr_la_ln[$city_start]['lat'];?>,<?php echo $arr_la_ln[$city_start]['lng'];?>), new GLatLng(<?php echo $arr_la_ln[$city_end]['lat'];?>,<?php echo $arr_la_ln[$city_end]['lng'];?>)],<?php if($i%2==0){ ?>'#000000'<?php } else{ ?>"#FF0000"<?php } ?>, 5, 1, null));
+					map.addOverlay(new GPolyline([new GLatLng(<?php echo $arr_la_ln[$city_start]['lat'];?>,<?php echo $arr_la_ln[$city_start]['lng'];?>), new GLatLng(<?php echo $arr_la_ln[$city_end]['lat'];?>,<?php echo $arr_la_ln[$city_end]['lng'];?>)],'#000000', 5, 1, null));
 
 					map.addOverlay(plane([new GLatLng(<?php echo $arr_la_ln[$city_start]['lat'];?>,<?php echo $arr_la_ln[$city_start]['lng'];?>), new GLatLng(<?php echo $arr_la_ln[$city_end]['lat'];?>,<?php echo $arr_la_ln[$city_end]['lng'];?>)], 379, 28871266));
+				<?php } ?>
 		<?php } ?>
         };
         var progZoom = 10;
@@ -333,6 +342,7 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
 		initializeMap();
         loaded();
     </script>
+<?php } ?>
 <script>
 	$(function(){
 		$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
