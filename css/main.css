@@ -21,9 +21,9 @@ body, p, form, ul, li {
 a:hover{ color:#00b7ea; cursor: pointer;}
 
 .web-clear{  clear: both; 
-    content: ".";
+    content: "."; 
     display: block;
-    height: 0;
+    height: 0; 
     visibility: hidden;}
 #page
 {   
@@ -2395,11 +2395,11 @@ div.buttons input:hover{background: #898989; color:#fff;border: 1px solid #ccc;}
 .city-content01 span{ background:#eee; color:#666; display:block; padding:8px; border-bottom:2px solid #d4cec4;}
 .destination-city{ padding:0 20px;}
 .destination-link{ background:#f5f5f5; padding:30px; border:1px solid #ccc; margin:40px 0 0;}
-.destination-link a{ display:block; color:#555;background: rgba(0, 0, 0, 0) url("/images/bottom-ico02.png") no-repeat left center; padding:5px 25px;}
+.destination-link a{ display:block; color:#555;background: rgba(0, 0, 0, 0) url("/images/bottom-ico02.png") no-repeat left center; padding:5px 25px; text-transform:capitalize;}
 .destination-link li{ float:left; width:20%;}
 
 .citytour-tab{ margin:40px 0 0;}
-.citytour-tab .nav-tabs > li > a{border-radius: 5px; margin-right:5px;}
+.citytour-tab .nav-tabs > li > a{border-radius: 5px; margin:5px 5px 0 0;}
 .citytour-tab .nav-tabs > li.active > a, .citytour-tab .nav-tabs > li.active > a:focus,.citytour-tab  .nav-tabs > li.active > a:hover{ background:#ed9300; color:#fff; border:1px solid #ccc;}
 .citytour-tab .tab-content{ border:none; padding:0;}
 .city-tripnote{ margin-bottom:100px;}
@@ -2411,3 +2411,8 @@ div.buttons input:hover{background: #898989; color:#fff;border: 1px solid #ccc;}
 .city-article li img{ float:left;}
 .city-article li p{ float:left;   padding: 10px 0 5px 5px;width: 60%;}
 .city-article .title01{ font-size:19px;}
+
+.port-block01{ width:326px; margin:15px 0;  }
+.port-block01 span{  font-size:26px; display:block; padding:5px 0; font-weight:300;}
+.port-block02{ margin:10px 0;}
+.port-block02 span{ font-size:26px; display:block; padding:5px 0; font-weight:300;}

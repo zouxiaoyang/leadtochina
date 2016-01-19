@@ -27,7 +27,7 @@
   <?php foreach($ress as $res):?>
     <div class="col-sm-6 col-md-4">
       <div class="adoption-stories">
-        <div class="img-block"> <img  src="<?php echo ImageUtils::getThumbnail(AdoptionArticle::UPLOAD_PATH.$res['pic'], '356x236');?>"  />
+        <div class="img-block"> <img width="356" height="236" src="<?php echo ImageUtils::getThumbnail(AdoptionArticle::UPLOAD_PATH.$res['pic'], '356x236');?>"  />
           <div class="bg-back"> <span> <?php echo $res['title'];?> </span>
             <label>Date:&nbsp;<?php echo date('m dS, Y',strtotime($res['date']));?></label>
           </div>

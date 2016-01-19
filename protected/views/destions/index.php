@@ -97,7 +97,7 @@
         <a href="#">Huangshan Tours</a>
         </li>
         <li>
-        <a href="#">Hong Kong</a>
+        <a href="#">Hong Kong tours</a>
         <a href="#">Hefei Tours</a>
         <a href="#">Jiuzhaigou Tours</a>
         <a href="#">Kunming Tours</a>

@@ -1,4 +1,4 @@
-<img class="img-responsive" src="/images/citytour-banner01.jpg"  />
+<img class="img-responsive" src="/images/destinationBanner/destination-<?php echo strtolower(trim($_GET['city_name']));?>-banner.jpg"  />
 <div class="container" >
 	<h2 class="page-title16"><?php echo $parent_name;?></h2>
 	<p><?php echo strip_tags($description);?></p>

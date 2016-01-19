@@ -53,7 +53,9 @@ class UeditorController extends Controller
        * }
        */
       
-      $fileName =  Yii::app()->getRequest()->getHostInfo().'/travel/'.$fileName;
+      // $fileName = $fileName;
+	  $fileName = '/'.$fileName;
+
       echo "{'url':'" . $fileName . "','title':'" . $title . "','original':'" . $oriName . "','state':'" . $state . "'}";
 
       Yii::app()->end();

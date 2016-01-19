@@ -57,7 +57,7 @@
 						array('label'=>'Creat Your Return Trip', 'url'=>array('/travel/adoption/diy')),
 					)
 				),
-				array('label'=>' SHORE EXCURSIONS ', 'url'=>array('/site/contact')),
+				array('label'=>' SHORE EXCURSIONS ', 'url'=>array('/travel/port')),
 				
 			),
 		)); ?>
