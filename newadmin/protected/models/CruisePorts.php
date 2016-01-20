@@ -28,7 +28,7 @@ class CruisePorts extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{cruisePorts}}';
+		return '{{cruiseports}}';
 	}
 
 	/**
@@ -131,7 +131,7 @@ class CruisePorts extends CActiveRecord
 	}
 
 
-	public function getAllCityName(){
+	public static function getAllCityName(){
 		 $cruiseports = self::model()->findAll(array(
      		'select' => 'id,cityName',
      ));

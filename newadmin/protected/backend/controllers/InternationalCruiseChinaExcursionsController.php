@@ -133,7 +133,7 @@ class InternationalCruiseChinaExcursionsController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		if($_GET['cid']) Yii::app()->user->setState('InternationalCruiseChinaExcursionsCid', $_GET['cid']);
+		if(isset($_GET['cid'])) Yii::app()->user->setState('InternationalCruiseChinaExcursionsCid', $_GET['cid']);
 		$cid = Yii::app()->user->getState('InternationalCruiseChinaExcursionsCid');
 
 		$model=new InternationalCruiseChinaExcursions('search');

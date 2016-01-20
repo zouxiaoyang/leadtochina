@@ -159,7 +159,7 @@ class Cruise extends CActiveRecord
 	{
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
-    $month = $_GET['sailling_date'] ? date('m', strtotime($_GET['sailling_date'])) : date('m');
+    $month = isset($_GET['sailling_date']) ? date('m', strtotime($_GET['sailling_date'])) : date('m');
 		return array(
       'cruiseSailling' => array(self::HAS_MANY,'Cruiseact','cruiseid','condition'=>'month='.$month)
 		);

@@ -24,7 +24,7 @@ $('.search-form form').submit(function(){
 	return false;
 });
 ");
-$pager->pageSize=3;
+// $pager->pageSize=3;
 ?>
 
 <h1>管理 International Cruises</h1>
