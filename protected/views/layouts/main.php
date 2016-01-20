@@ -11,7 +11,14 @@
 <!--[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
 	<![endif]-->
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
+	<?php   
+		Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl.'/css/main.css');
+		Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl.'/css/bootstrap.min.css');
+		Yii::app()->clientScript->registerCoreScript('jquery');
+		Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/bootstrap/bootstrap.min.js');
+	?>
+
+
 <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">

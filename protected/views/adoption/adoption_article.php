@@ -153,4 +153,15 @@ if($('#edit-skeys').val()=='' && $('#edit-location').val()=='0'){
 $('#edit-location').val('<?php echo $province_id;?>');
 $('#edit-skeys').val('<?php echo $title;?>');
 
+/*
+$(document).on('click','#pagerid .page a',function(){
+        $.ajax({
+            url:$(this).attr('href'),
+            success:function(html){
+                $('#pagerid').html(html);
+            }
+        });
+        return false;//阻止a标签
+});
+*/
 </script>  

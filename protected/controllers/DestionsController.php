@@ -26,13 +26,25 @@ class DestionsController extends Controller
 				// 获取分的套餐;
 				$sql = "SELECT * FROM `jos_cos_tours_package` WHERE `categorieid_str` in ".$str_package_category_id."";
 				$package_info =  Yii::app()->db->createCommand($sql)->queryAll();
-				// ec ho
+				//获取问答:
+				$criteria=new CDbCriteria();
+					//$criteria->condition=('product_id=1 and status=1');//查询的条件
+					//$criteria->order='comment_date DESC';//排序
+					$dataProvider=new CActiveDataProvider('FrequentlyAskContent',array( //ProductComment 商品评论模型
+						'pagination'=>array(
+						'pageSize'=>5, //每页显示多少条数据
+						),
+						'criteria'=>$criteria,
+					));
+					//$this->render('default',array('dataProvider'=>$dataProvider));
+				// echo
 				$this->render('common',array(
 					'parent_name'=>	$parent_name,
 					'parent_id'	=>$parent_id,
 					'description'=>$description,
 					'child_info'=>$child_info,
-					'package_info'=>$package_info
+					'package_info'=>$package_info,
+					'dataProvider'=>$dataProvider
 				));
 			}else{
 				$this->errorPage();

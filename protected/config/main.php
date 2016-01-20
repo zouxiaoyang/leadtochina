@@ -10,7 +10,8 @@ return array(
 	'name'=>'My Web Application',
 
 	// preloading 'log' component
-	'preload'=>array('log','bootstrap'),
+	// 'preload'=>array('log','bootstrap'),
+	'preload'=>array('log'),
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -39,11 +40,12 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+		/*
 		'bootstrap'=>array(//添加一个新的bootstrap容器
 
             'class'=>'ext.bootstrap.components.Booster', //执行Bootstrap.php文件
 
-        ),
+        ),*/
 		'urlManager'=>require(dirname(__FILE__).'/urlmanager.php'),
 		// uncomment the following to enable URLs in path-format
 		/*

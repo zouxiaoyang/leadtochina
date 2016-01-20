@@ -36,29 +36,30 @@
 			<?php endforeach;?>
 		</div>
 	</div>
-	<div  class="row">
+	<div class="row">
 		<div class="city-tripnote col-sm-9">
 			<span class="title01 ">Trip Notes</span>
 			<div class="clearfix"></div>
 			<div class="city-tripnote-content clearfix">
-				<label>1.  What is the best way to get to Xian from Huangshan?</label>
-				<p> Trip Advisor (Sep.12, 2012) replied:
-				Of course, the best and fast way is to take the flight.You
-				have to take flight or bus to Hefei at first,then take flight
-				to Xian.There is justone fligt from Tunxi Airport to Hefei. It
-				starts at 16:40, arrive at Xian at 18:30.</p>
-							<label>2.  What is the best way to get to Xian from Huangshan?</label>
-							<p>Trip Advisor (Sep.12, 2012) replied:
-				Of course, the best and fast way is to take the flight.You
-				have to take flight or bus to Hefei at first,then take flight
-				to Xian.There is justone fligt from Tunxi Airport to Hefei. It
-				starts at 16:40, arrive at Xian at 18:30.</p>
-							<label>3.  What is the best way to get to Xian from Huangshan?</label>
-							<p>Trip Advisor (Sep.12, 2012) replied:
-				Of course, the best and fast way is to take the flight.You
-				have to take flight or bus to Hefei at first,then take flight
-				to Xian.There is justone fligt from Tunxi Airport to Hefei. It
-				starts at 16:40, arrive at Xian at 18:30.</p>
+			<?php
+				$this->widget('zii.widgets.CListView', array(
+					'dataProvider'=>$dataProvider,
+					'itemView'=>'_ask',//对应的评论信息的模板
+					'ajaxUpdate'=> true,//AJAX翻页  false为不是ajax翻页
+					'pager' => array(//pager 的配置信息。默认为<code>array('class'=>'CLinkPager')</code>.也可以自己配置
+						'header'=>'',//去除分页前的GO TO ....
+						//'nextPageLabel' => 'Next',
+						//'prevPageLabel' => 'Pre'
+						'firstPageLabel'=>'First',
+						'htmlOptions'=>array(
+							'class'=>'pagination',
+							'id'=>'pagerid',
+						),
+						'selectedPageCssClass'=>'active',
+						'lastPageLabel'=>'Last',
+					),
+				));
+			?>
 			</div>
 		</div>
 		<div class="city-article col-sm-3">
