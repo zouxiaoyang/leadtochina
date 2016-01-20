@@ -1,7 +1,5 @@
 <?php defined('_JEXEC') or die('Restricted access'); ?>
-
 <?php JHTML::_('behavior.tooltip');$db	=& JFactory::getDBO(); ?>
-
 <?php
 	JToolBarHelper::title(  JText::_( '中国旅游' ) );
 	JToolBarHelper::publishList();
@@ -10,9 +8,7 @@
 	JToolBarHelper::editListX();
 	JToolBarHelper::addNewX();
 	JToolBarHelper::editListX('copy_info','复制', false);
-	
 ?>
-
 <script src="/js/jquery-1.4.js"></script>
 <script language="javascript" type="text/javascript">
    var jq = jQuery.noConflict();
@@ -33,16 +29,11 @@
    if (!request)
      alert("Error initializing XMLHttpRequest!");
    function SetHot(url) {
-
-     
-
      var url = url;
-	 
      request.open("GET", url, true);
      request.onreadystatechange = updatePage;
      request.send(null);
    }
-
    function updatePage() {
      if (request.readyState == 4) {
        if (request.status == 200) {
@@ -54,12 +45,7 @@
          alert("status is " + request.status);
      }
    }
-
 </script>
-
-
-
-
 <form action="index.php?option=com_cntours" method="post" name="adminForm">
 <table>
 	<tr>
@@ -90,7 +76,6 @@
 		<td nowrap="nowrap" align="right">
 			<?php echo $this->lists['state']; ?>
 		</td>		
-		
 	</tr>
 </table>
 <div id="tablecell">
@@ -125,7 +110,6 @@
 				testimonial
 			</th>		
 			<th width="2%" nowrap="nowrap">
-		
 			</th>
 		</tr>
 	</thead>
@@ -143,39 +127,26 @@
 	for ($i=0, $n=count( $this->items ); $i < $n; $i++)
 	{
 		$row = &$this->items[$i];
-
 		$category_id=$row->categorieid_str;
 		$strpos=strpos($category_id,',');
-
-
-
 		if($strpos===false){
-			
 			$db->setQuery( "SELECT parent_id FROM jos_categories WHERE id={$category_id}");
-
 			$c_row=$db->loadAssoc();
 //假如是China Small Groups类型的话。换另一个模板显示
 			if($c_row['parent_id']==68 OR $category_id==68){
-			
 				$is_small="editsmprice";
 			}else{
-			
 				$is_small="editprice";
 			}
-			
 		}		
-
-
 		$link1     = JRoute::_( 'index.php?option=com_cntours&view=cntours&task=edit&cid[]='. $row->id );
 		$checked 	= JHTML::_('grid.checkedout',   $row, $i );
 		$des=$row->description;
 		if(strlen($des)>40){
 			$des=htmlspecialchars(mb_strimwidth($des,0,39,'..',"utf-8"));
 		}else{
-			
 			$des=htmlspecialchars($des);
 		}
-
 		//$published 	= JHTML::_('grid.published', $row, $i );
 	?>
 		<tr class="<?php echo "row$k"; ?>">
@@ -190,7 +161,6 @@
 				echo  $row->name;
 			} else {
 				?>
-				
 				<a href="<?php echo $link1  ?>">
 					<?php echo $row->name; ?></a>
 				<?php
@@ -208,13 +178,9 @@
 			</td>
 			<td align="center">
 				<a href="<?php if($row->category_parentid==68){
-				
 				echo "index.php?option=com_cntours&c=price&view=price&task=editsmprice&cid[]=". $row->id;
-					
 			}else{
-			
 				echo "index.php?option=com_cntours&c=price&view=price&task=editprice&cid[]=". $row->id;
-			
 			}
 				?>">编辑价格</a>				
 			</td>
@@ -233,7 +199,6 @@
 			?>
 				<a href="<?php echo "index.php?option=com_testimonisals&packageid=". $row->id."&chinatours=1";?>">Testimonisals管理(<?php echo $total;?>)</a>				
 			</td>
-			
 			<td align="center">
 				<?php echo $row->id; ?>
 			</td>
@@ -245,7 +210,6 @@
 	</tbody>
 	</table>
 </div>
-
 	<input type="hidden" name="option" value="com_cntours" />
 	<input type="hidden" name="task" value="" />
 	<input type="hidden" name="boxchecked" value="0" />
@@ -255,9 +219,7 @@
 </form>
 <script>
 	function ajax_views_change(id,obj){
-	
 		jq.post("index.php?option=com_cntours",{task:'update_views',id:id, views:jq(obj).val()},function(){
-			
 		});
 	}
 </script>

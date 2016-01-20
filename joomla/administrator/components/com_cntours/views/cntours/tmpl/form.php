@@ -12,6 +12,7 @@
 	JToolBarHelper::title(  JText::_( '编辑中国旅游' ).': <small><small>[ ' . $text.' ]</small></small>' );
 	//JToolBarHelper::Preview('index.php?option=com_cntours&controller=cntours&cid[]='.$cid[0]);
 	JToolBarHelper::save();
+	//JToolBarHelper::addNew();
 	//JToolBarHelper::apply();
 	if ($edit) {
 		// for existing items the button is renamed `close`
@@ -309,6 +310,16 @@ $cparams = JComponentHelper::getParams ('com_media');
 			</td>
 		</tr>
 		<tr>
+		<td class="key">
+				<label>
+			地图城市
+				</label>
+			</td>
+			<td>
+			<input type="text" name="map_city" id="map_city" value="<?php echo ($this->options[0]->map_city)?$this->options[0]->map_city:$this->options[0]->route;?>" size="69">
+			</td>
+		</tr>
+
 		  <td class="key">
 				<label>
 			图片编号
@@ -318,6 +329,7 @@ $cparams = JComponentHelper::getParams ('com_media');
 			<input type="text" name="lightbox" id="lightbox" value="<?php echo $this->options[0]->lightbox;?>" size="69">
 			</td>
 		</tr>
+		<tr>
 <!--
    <tr>
     <td class="key">
@@ -483,7 +495,7 @@ $cparams = JComponentHelper::getParams ('com_media');
              <label for="polloption">列表页面的图片</label>
            </td>
            <td>
-            <input type="file" name="pic" id="pic" size=50><span>图片大小：140x117</span>
+            <input type="file" name="pic" id="pic" size=50><span>图片大小：350 x 240</span>
                <div>
                     <?php if($this->options[0]->pic):?>
                       <img src="/<?php echo $this->options[0]->filedir;?><?php echo $this->options[0]->pic;?>" width="140" height="117"/>

@@ -67,6 +67,7 @@ class TableCntours extends JTable
 	var $price_yuan="";
   var $hot = 0;
   var $lightbox = "";
+  var $map_city="";
   var $index_recommend = 0;
   var $index_recommend_order=0;
   var $start_city = "";
