@@ -2463,3 +2463,16 @@ div.buttons input:hover{background: #898989; color:#fff;border: 1px solid #ccc;}
 }
 .cont_cal_block{ margin:10px 0 0;}
 
+.bestsell-block01{ border:1px solid #ddd; padding:4px; position:relative; margin:20px 0;}
+.bestsell-block01 span.iconProm{ position:absolute;   display: block; height: 105px; left: -4px; top: -7px; width: 100px;}
+.bestsell-block01 ul{ padding:15px 9px; line-height:24px; margin:0;}
+.bestsell-block01 ul a{ font-weight:bold; color:#343434;font-size:16px;}
+.bestsell-block01 ul a:hover{ color:#00b7ea;}
+.bestsell-block01 ul li.price{}
+.bestsell-block01 ul li.price strong{ color:#d56d21; font-size:15px;}
+
+.beijing-xian-block01{ margin:15px 0;}
+.beijing-xian-block01 img{ float:left; border:1px solid #ddd; padding:4px;}
+.beijing-xian-block01 .text-block{ float:left;width:66%; padding:0 0 0 20px;}
+.beijing-xian-block01 .text-block a{padding:0px 0 3px; display:block; font-size:18px;}
+.beijing-xian-block01 .text-block li{ padding:5px 0;}
