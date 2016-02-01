@@ -94,7 +94,7 @@
         </div>
         <div class="text-block clearfix">
           <p>You can watch this performance in Red Theatre of Beijing. It costs about 70 mins, told a beautiful story about a young boy who dreams of becoming a Kung Fu master and attain enlightenment,. Well choreographed musical with stunt Kung Fu performance make the show world-famous. Your family will enjoy it. </p>
-          <a href="/travel/adoption/activity" class="see-more02 f-right">See more >></a> </div>
+          <a href="/travel/adoption/special-activities.html" class="see-more02 f-right">See more >></a> </div>
       </div>
     </div>
     <div class="col-sm-6 col-md-4">
@@ -106,7 +106,7 @@
         </div>
         <div class="text-block clearfix">
           <p>Sichuan Opera performances are always full of wit, humor, lively dialogues, and pronounced local flavors. To portray special characters, the opera incorporates a series of stunts, including the famous "face-changing." After watching the Sichuan Opera, you will have a chance to be maked up as the performer. It will be a fun way ...</p>
-          <a href="/travel/adoption/activity" class="see-more02 f-right">See more >></a> </div>
+          <a href="/travel/adoption/special-activities.html" class="see-more02 f-right">See more >></a> </div>
       </div>
     </div>
     <div class="col-sm-6 col-md-4">
@@ -118,7 +118,7 @@
         </div>
         <div class="text-block clearfix">
           <p>Visit the home of giant pandas at Panda Breeding and Research Center, in the outskirts of Chengdu. Visit the nursery to see the highly successful breeding program, among the bamboo groves and shady walkways, and to view the pandas at rest or play. There is a panda museum where you can learn some information about giant pandas...</p>
-          <a href="/travel/adoption/activity" class="see-more02 f-right">See more >></a> </div>
+          <a href="/travel/adoption/special-activities.html" class="see-more02 f-right">See more >></a> </div>
       </div>
     </div>
   </div>

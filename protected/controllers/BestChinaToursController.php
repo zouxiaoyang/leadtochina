@@ -15,11 +15,22 @@ class BestChinaToursController extends Controller
 
 		$ress = Yii::app()->db->createCommand($sql)->queryAll(); 
 
+//seo:
+		$sql="select `seo_title`,`seo_key`,`seo_description` from `jos_categories` where `alias`='best-tours'";
+		$res_seo = Yii::app()->db->createCommand($sql)->queryRow();
+		Seo::_seo($this,$res_seo['seo_title'],$res_seo['seo_key'],$res_seo['seo_description']);
+
 		return $ress;
 
 	}
 
 	public function actionChinaTours(){
+		//seo:
+		$t='China Tour, China Tour Packages, China Travel Tours';
+		$k = 'china travel, china tours, travel china, china travel agent';
+		$d = 'China Travel Agent offering China Tours, Yangtze Cruise Travel, China Flights, China Hotels Booking and huge China Travel Guide Info.';
+
+		Seo::_seo($this,$t,$k,$d);
 
 		$this->render('chinaTours');
 

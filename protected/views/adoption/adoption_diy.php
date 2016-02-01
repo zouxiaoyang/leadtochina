@@ -265,7 +265,8 @@
           </div>
           <div class="table-body">
             <select class="form-select02" name="star">
-              <option value="5 star" selected="selected">Top 5 Star (Above USD250 per night per room)</option>
+				<option value="" selected="selected"></option>
+              <option value="5 star" >Top 5 Star (Above USD250 per night per room)</option>
               <option value="5 star">Standard 5 Star (USD150 to USD250 per night per room)</option>
               <option value="4 star">Comfortable Hotel: 4 star (USD 80 to USD 100 per night per room)</option>
               <option value="3 star">Economy Hotel: 3 star (USD 50 to USD 70 per night per room)</option>
@@ -356,7 +357,6 @@
     </form>
   </div>
 </div>
-<script src="http://cdn.bootcss.com/jquery-browser/0.0.8/jquery.browser.min.js"></script>
 <script src="/js/jqueryUi/jquery.ui.core.js" type="text/javascript" language="javascript"></script>
 <script src="/js/jqueryUi/jquery.ui.datepicker.js" type="text/javascript" language="javascript"></script>
 <link href="/js/jqueryUi/jquery.ui.core.css" type="text/css" rel="stylesheet">

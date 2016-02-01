@@ -14,7 +14,13 @@
         <div class="pro-detail-tab"> 
           <ul id="myTab" class="nav nav-tabs">
             <li class="active"> <a href="#itinerary" data-toggle="tab">itinerary</a> </li>
-            <li><a href="#price" data-toggle="tab">price</a></li>
+			<?php 
+				$arr_price = unserialize($ress['price_serialize']);
+				$arr_price = array_filter($arr_price);
+				if(!empty($arr_price)):
+			?>
+				<li><a href="#price" data-toggle="tab">price</a></li>
+			<?php endif;?>
             <?php if($ress['package_type']!=2):?>
 				<li><a href="#map" data-toggle="tab">map</a>
 			<?php endif; ?>
@@ -42,12 +48,14 @@
                 <div class="inner-tab-text01"> 
 					<?php $i=1;foreach($router as $ro){ ?>
 						  <b><?php echo 'Day '.$i.' '.$ro['today_route'];?></b>
-						  <p><?php echo str_replace(array('<b>','</b>','<strong>','</strong>'),array('<em>','</em>','<em>','</em>'),$ro['activities']);?></p>
+						  <p><?php echo strip_tags($ro['activities']);?></p>
 						  <i> Meals: <?php echo $ro['eat_standard'];?> </i><br />
 					 <?php $i++;} ?>
               </section>
             </div>
-			<?php $arr_price = unserialize($ress['price_serialize']);?>
+			<?php 
+				if(!empty($arr_price)):
+			?>
             <div class="tab-pane fade" id="price">
             	<section class="clearfix inner-tab-block01">
                 	<label class="inner-tab-title01">TOUR PRICE</label>
@@ -104,6 +112,7 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
                     </div>
                	</section>        
             </div>
+		<?php endif;?>
 			<?php if($ress['package_type']!=2):?>
 				<div class ="tab-pane fade" id="map" style="width:100%;min-height:450px;display:block;"></div>
 			<?php endif;?>

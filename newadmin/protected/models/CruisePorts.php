@@ -42,10 +42,10 @@ class CruisePorts extends CActiveRecord
 			array('cityName', 'required'),
 			array('cityName', 'length', 'max'=>30),
 			array('tourIds, sceneryIds', 'length', 'max'=>100),
-			array('portIntro, tourIntro, catNameUrl', 'safe'),
+			array('port_title,portIntro, tourIntro, catNameUrl', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, cityName, portIntro,tourIntro, tourIds, sceneryIds,pic', 'safe', 'on'=>'search'),
+			array('id, cityName,port_title, portIntro,tourIntro, tourIds, sceneryIds,pic', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -69,6 +69,7 @@ class CruisePorts extends CActiveRecord
 			'id' => 'ID',
 			'cityName' => '港口城市名称',
 			'portIntro' => '城市港口介绍',
+			'port_title' => '港口标题',
 			'catNameUrl' => '港口城市类别',
 			'tourIntro' => '行程介绍',
 			'tourIds' => '行程Ids',
@@ -89,6 +90,7 @@ class CruisePorts extends CActiveRecord
 			$allPortInfo[$k][cityName]=$v->cityName;
 			$allPortInfo[$k][catNameUrl]=$v->catNameUrl;
 			$allPortInfo[$k][portIntro]=$v->portIntro;
+			$allPortInfo[$k][port_title]=$v->port_title;
 			$allPortInfo[$k][tourIntro]=$v->tourIntro;
 			$allPortInfo[$k][pic]=$v->pic;
 			$allPortInfo[$k][tour]=$tours;
@@ -96,7 +98,7 @@ class CruisePorts extends CActiveRecord
 		}
 		return $allPortInfo;
 	}
-	public function Getportslist(){
+	public static function Getportslist(){
 		$list = self::model()->findAll(array(
 		'select'=>array('id,cityName'),
 		));	
@@ -120,6 +122,7 @@ class CruisePorts extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('cityName',$this->cityName,true);
 		$criteria->compare('portIntro',$this->portIntro,true);
+		$criteria->compare('port_title',$this->port_title,true);
 		$criteria->compare('tourIntro',$this->tourIntro,true);
 		$criteria->compare('catNameUrl',$this->catNameUrl,true);
 		$criteria->compare('tourIds',$this->tourIds,true);

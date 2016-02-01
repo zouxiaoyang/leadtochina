@@ -17,8 +17,6 @@
 		Yii::app()->clientScript->registerCoreScript('jquery');
 		Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/bootstrap/bootstrap.min.js');
 	?>
-
-
 <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">
@@ -32,41 +30,61 @@
     <!-- header -->
     <div class="index-menu">
       <div id="mainmenu" >
+	  <?php 
+			$tianjin_port = Yii::app()->createUrl('port/PortExcursion',array('city_name'=>'tianjin-port','id'=>5));
+			$shanghai = Yii::app()->createUrl('port/PortExcursion',array('city_name'=>'shanghai-port','id'=>6));
+			$dalian = Yii::app()->createUrl('port/PortExcursion',array('city_name'=>'dalian-port','id'=>7));
+			$xiamen = Yii::app()->createUrl('port/PortExcursion',array('city_name'=>'xiamen-port','id'=>11));
+			$hongkong = Yii::app()->createUrl('port/PortExcursion',array('city_name'=>'hong-kong-port','id'=>13));
+	  ?>
         <?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'CHINA TOURS', 'url'=>array('/travel/china-tours'),
+				array('label'=>'CHINA TOURS', 'url'=>array('/travel/china-tours/'),
 					'items'=>array(
 						array('label'=>'Top 10 China Tours', 'url'=>array('/travel/best-china-tours/')),
-						array('label'=>'Short Stays in China', 'url'=>array('/travel/family-tours')),
-						array('label'=>'Yangtze River Cruise', 'url'=>array('/travel/family-tours')),
-						array('label'=>'China Homeland Tours', 'url'=>array('/travel/adoptionhome')),
-						array('label'=>'China Senior Tours', 'url'=>array('/travel/family-tours')),
-						array('label'=>'China Family Tours', 'url'=>array('/travel/family-tours')),
-						array('label'=>'China Educational Trips', 'url'=>array('/travel/family-tours')),
-						array('label'=>'China Train Travel', 'url'=>array('/travel/family-tours')),
-						array('label'=>'China Tours from', 'url'=>array('/travel/family-tours')),
-						array('label'=>'Customize China Tour', 'url'=>array('/travel/family-tours')),
+						array('label'=>'Short Stays in China', 'url'=>array('/travel/family-tours/')),
+						array('label'=>'Yangtze River Cruise', 'url'=>array('/travel/family-tours/')),
+						array('label'=>'China Homeland Tours', 'url'=>array('/travel/adoption/')),
+						array('label'=>'China Senior Tours', 'url'=>array('/travel/family-tours/')),
+						array('label'=>'China Family Tours', 'url'=>array('/travel/family-tours/')),
+						array('label'=>'China Educational Trips', 'url'=>array('/travel/family-tours/')),
+						array('label'=>'China Train Travel', 'url'=>array('/travel/family-tours/')),
+						array('label'=>'China Tours from', 'url'=>array('/travel/family-tours/')),
+						array('label'=>'Customize China Tour', 'url'=>array('/travel/family-tours/')),
 					)
 				),
 
-				array('label'=>' DESTINATIONS', 'url'=>array('/travel/destinations/'),'items'=>array(
-					array('label'=>'DESTINATIONS1', 'url'=>array('/site/index')),
-					array('label'=>'DESTINATIONS2', 'url'=>array('/site/index')),
-				)),
+				array('label'=>' DESTINATIONS', 'url'=>array('/travel/city-tours/')),
 
-				array('label'=>'HERITAGE TOURS', 'url'=>array('/travel/adoptionhome'),
+				array('label'=>'HERITAGE TOURS', 'url'=>array('/travel/adoption/'),
 					'items'=>array(
-						array('label'=>'Provincial Reunion Tour', 'url'=>array('/travel/adoptionhome#provin ce_map')),
-						array('label'=>'2016 Group Tour', 'url'=>array('/travel/adoption/2016-group-tour')),
-						array('label'=>'China Orphanage List', 'url'=>array('/travel/adoption/list')),
-						array('label'=>'Families\' Travel Stories', 'url'=>array('/travel/adoptionarticle')),
-						array('label'=>'Featured Activites', 'url'=>array('/travel/adoption/activity')),
-						array('label'=>'Creat Your Return Trip', 'url'=>array('/travel/adoption/diy')),
+						array('label'=>'Provincial Reunion Tour', 'url'=>array('/travel/adoption#provin ce_map/')),
+						array('label'=>'2016 Group Tour', 'url'=>array('/travel/adoption/2016-group-tour/')),
+						array('label'=>'China Orphanage List', 'url'=>array('/travel/adoption/orphanageList/')),
+						array('label'=>'Families\' Travel Stories', 'url'=>array('/travel/adoption/storyIndex/')),
+						array('label'=>'Featured Activites', 'url'=>array('/travel/adoption/special-activities.html')),
+						array('label'=>'Creat Your Return Trip', 'url'=>array('/travel/adoption/adoption-customize/')),
 					)
 				),
-				array('label'=>' SHORE EXCURSIONS ', 'url'=>array('/travel/port')),
-				
-			),
+				array('label'=>' SHORE EXCURSIONS ', 'url'=>array('/travel/port/'),
+						'items'=>array(
+						array('label'=>'Tianjin Port Excursion', 'url'=>array(
+							$tianjin_port
+						)),
+						array('label'=>'Shanghai Port Excursion', 'url'=>array(
+							$shanghai
+						)),
+						array('label'=>'Dalian Port Excursion', 'url'=>array(
+							$dalian
+						)),
+						array('label'=>'Xiamen Port Excursion', 'url'=>array(
+							$xiamen
+						)),array('label'=>'Hong Kong Port Excursion', 'url'=>array(
+							$hongkong
+						))
+						),
+					),
+				),
 		)); ?>
       </div>
       <div class="inquire-block"> <span> INQUIRE NOW</span> </div>

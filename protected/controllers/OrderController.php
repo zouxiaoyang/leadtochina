@@ -255,28 +255,152 @@ protected function getOtherMessage($post){ // 获取other message;
 		);
 	}
 	*/
-	public function actionOrder(){  // order.
-		$model=new Order;
+public function actionNew_order(){
+    $model=new JosCosToursOrder;
 
-		// uncomment the following code to enable ajax-based validation
-		/*
-		if(isset($_POST['ajax']) && $_POST['ajax']==='order-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
-		*/
+    // uncomment the following code to enable ajax-based validation
+    /*
+    if(isset($_POST['ajax']) && $_POST['ajax']==='jos-cos-tours-order-new_order-form')
+    {
+        echo CActiveForm::validate($model);
+        Yii::app()->end();
+    }
+    */
 
-		if(isset($_POST['Order']))
-		{
-			$model->attributes=$_POST['Order'];
-			if($model->validate())
-			{
-				// form inputs are valid, do something here
-				return;
-			}
-		}
-		$this->render('customerize_order_form',array('model'=>$model));
-	}
+		$package_id = Yii::app()->session['package_id'];
+
+		$sql="select `name`,`categorieid_str`,`package_code`,`route`,`price`,`days` from `jos_cos_tours_package` where `id`=".(int)$package_id."";
+
+		$ress = Yii::app()->db->createCommand($sql)->queryRow();
+
+
+    if(isset($_POST['JosCosToursOrder']))
+    {
+        $model->attributes=$_POST['JosCosToursOrder'];
+        if($model->validate())
+        {
+            // form inputs are valid, do something here
+            return;
+        }
+    }
+    $this->render('new_order',array('model'=>$model,'ress'=>$ress));
+}
+
+
+
+// 定制订单;
+public function actionSaveDiyOrder(){
+   // $model=new Order;
+    if($_POST['fullName']) {
+      $_POST['full_Name'] = htmlspecialchars($_POST['gender'].$_POST['fullName']);
+    }
+    $_POST['url_referer'] = Yii::app()->request->urlReferrer;
+    $destination = (isset($_POST['destination']))?implode(',', (array)$_POST['destination']):'';
+    $_POST['destination'] = htmlspecialchars($destination);
+    $_POST['submit_source'] = $_SERVER['HTTP_HOST'];
+    $_POST['dateline'] = time();
+    $other_message='';
+    if($destination){
+      $other_message.="<b>CHOOSE DESTINATIONS :</b>".$destination."<br />";
+    }
+    if(isset($_POST['services'])){
+      $services=implode(',',(array)$_POST['services']);
+      $other_message.="<b>CHOOSE SERVICES :</b>".htmlspecialchars($services)."</br>";
+    }
+    if(isset($_POST['hotelClass'])){
+      $other_message.="<b>HOTEL CLASS :</b>".$_POST['hotelClass']." ".implode(',', (array)$_POST['smoking'])."<br />";
+    }
+    if(isset($_POST['roomClass'])){
+      $other_message.="<b>ROOM CLASS :</b>".implode(',', (array)$_POST['roomClass'])."<br />";
+    }
+    if(isset($_POST['birthplace'])){
+      $other_message.="<b>Birthplace :</b>".implode(',', (array)$_POST['birthplace'])."<br />";
+    }
+    if(isset($_POST['activities'])){
+      $other_message.="<b>Activities :</b>".implode(',', (array)$_POST['activities'])."<br />";
+    }
+    if(isset($_POST['otherMessage'])){
+      $other_message.="<b>OTHER MESSAGE :</b>".htmlspecialchars($_POST['otherMessage'])."<br />";
+    }
+    if(isset($_POST['city'])){
+      $cities = implode(',', $_POST['city']);
+      $other_message.="<b>Tourism Cities :</b>".htmlspecialchars($cities)."<br />";
+    }
+	if($_POST['per_person_budget']){
+          $other_message .= "<b>Per Person Budget： </b>".$_POST['per_person_budget']." USD</br>";
+        }
+
+      if($_POST['budget_flexible']){
+            $other_message .= "<b>Is Budget Flexible： </b>".$_POST['budget_flexible']."</br>";
+          }
+          if($_POST['want_see_and_do']){
+            $other_message .= "<b>What Would You Like To See And Do： </b>".$_POST['want_see_and_do']."</br>";
+          }
+// new 
+    if(isset($_POST['orphange_nanme'])){
+      $other_message.="<b>Orphanage Name :</b>".htmlspecialchars($_POST['orphange_nanme'])."<br />";
+    }
+	if(isset($_POST['other_city'])){
+      $other_message.="<b>Other City :</b>".htmlspecialchars($_POST['other_city'])."<br />";
+    }
+	if(isset($_POST['other_hotel'])){
+      $other_message.="<b>more idea on hotel :</b>".htmlspecialchars($_POST['other_hotel'])."<br />";
+    }
+	if(isset($_POST['other_meals'])){
+      $other_message.="<b>Meal Plan :</b>".htmlspecialchars($_POST['other_meals'])."<br />";
+    }
+//end;
+    if(isset($_POST['activities_for_families'])){
+      $activities_for_families = implode(',', $_POST['activities_for_families']);
+      $other_message.="<b>Activities for Families :</b>".htmlspecialchars($activities_for_families)."<br />";
+    }
+    if(isset($_POST['other_activities'])){
+      $other_message.="<b>Other Activities:</b>" . htmlspecialchars($_POST['other_activities']) ."<br />";
+    }
+    if(isset($_POST['Duration'])){
+      $other_message.="<b>Duration :</b>".htmlspecialchars($_POST['Duration'])."<br />";
+    }
+    if(isset($_POST['starting_date'])){
+      $other_message.="<b>Starting Date :</b>".htmlspecialchars($_POST['starting_date'])."<br />";
+    }
+    if(isset($_POST['ending_date'])){
+      $other_message.="<b>Ending Date :</b>".htmlspecialchars($_POST['ending_date'])."<br />";
+    }
+    if(isset($_POST['star'])){
+      $other_message.="<b>Hotel Class Star :</b>".htmlspecialchars($_POST['star'])."<br />";
+    }
+    if(isset($_POST['tour_space'])){
+      $other_message.="<b>Tour Space :</b>".htmlspecialchars($_POST['tour_space'])."<br />";
+    }
+    if(isset($_POST['tour_for'])){
+      $other_message.="<b>Tour For :</b>".htmlspecialchars($_POST['tour_for'])."<br />";
+    }
+    if(isset($_POST['guide_language'])){
+      $guide_language = implode(',', $_POST['guide_language']);
+      $other_message.="<b>Guide Language :</b>".htmlspecialchars($guide_language)."<br />";
+    }
+    if(isset($_POST['in_you_team'])){
+      $other_message.="<b>In you team :</b>".htmlspecialchars($_POST['in_you_team'])."<br />";
+    }
+    $_POST['user_ip'] = Yii::app()->request->userHostAddress;
+    $_POST['ordertype']=2;// 自定义下单;
+    $_POST['other_message'] = addslashes($other_message);
+    $_POST['other_travelinfo'] = addslashes($other_message);
+   // $model->attributes = $_POST;
+	//var_dump($_POST);exit;
+	// insert database;
+	 $sql="insert into `joomla`.`jos_total_order` set `full_name`='{$_POST['full_Name']}',`gender`='{$_POST['gender']}',`nationality`='{$_POST['nationality']}',`email`='{$_POST['email']}',`other_email`='{$_POST['other_email']}',`phone`='{$_POST['phone']}',`adults`={$_POST['adults']},`children`={$_POST['children']},`infant`={$_POST['infant']},`entry_date`='{$_POST['starting_date']}',`duration`='{$_POST['Duration']}',`other_travelinfo`='{$_POST['other_travelinfo']}',`url_referer`='{$_POST['url_referer']}',`submit_source`='{$_POST['submit_source']}',`user_ip`='{$_POST['user_ip']}',`dateline`='{$_POST['dateline']}',`ordertype`={$_POST['ordertype']},`other_message`='{$_POST['other_message']}'";
+	$bol = Yii::app()->db->createCommand($sql)->execute();
+    if($bol){
+      $insertId =Yii::app()->db->getLastInsertID();
+      $order_str = 'DIY'.date("ymd").$insertId;
+	  Yii::app()->db->createCommand("update `joomla`.`jos_total_order` set `orderNO`='{$order_str}' where `id`={$insertId}")->execute();
+	  // success page;
+      $this->redirect('/travel/success');
+    }
+    exit;
+  }
+
+
 
 }

@@ -1,5 +1,4 @@
 <?php
-
 return array(
 			'urlFormat'=>'path',
 			'showScriptName'=>false,
@@ -10,37 +9,41 @@ return array(
 			//top10;
 			'travel/best-china-tours/'	=> 'bestChinaTours/index',
 			//family tours;
-			'travel/family-tours' =>'familyTours/index',
+			'travel/family-tours/' =>'familyTours/index',
 			// tours detail page;
 			'travel/<name:.*>-<id:\d+>.html'  =>'toursDetail/index',
 			//order
-			 'travel/order'  =>'order/index',
-			//order
-			 'travel/success'  =>'order/success',
+			 'travel/order/'  =>'order/index',
+			 'travel/success/'  =>'order/success',
+			 'order/china-diy-tours/'  =>'order/new_order',
+			 
 			 //reviews
 			 'travel/review/<tid:\d+>/<packageid:\d+>.html'  =>'reviews/index',
 			// adoption
 			  'travel/adoption/<id:\d+>'  =>'adoption/index',
 			  'travel/showMaps/<city_name:.*>/<id:\d+>'  =>'adoption/showMaps',
 			  '<city_name:.*>/<city_id:\d+>/map.html'  =>'adoption/cityMaps',
-			  '/travel/adoptionarticle'  =>'adoption/adoptionArticle',
-			  '/travel/adoptionarticle/detail/<ar_id:\d+>.html'  =>'adoption/adoptionArticleDetail',
+			  '/travel/adoption/storyIndex/'  =>'adoption/adoptionArticle',
+			  '/travel/adoption-orphanage/<title:.*>-<ar_id:\d+>'  =>'adoption/adoptionArticleDetail',
 			  '/travel/adoptionbyprovince/<province_id:\d+>'  =>'adoption/adoptionArticleByProvince',
-			  '/travel/adoption/diy'  =>'adoption/adoptionDiy',
+			  '/travel/adoption/adoption-customize/'  =>'adoption/adoptionDiy',
 			  '/travle/adoptionarticle/search'  =>'adoption/adoptionSearch',
-			  '/travel/adoptionhome/'  =>'adoption/adoptionHome',
-			  '/travel/adoption/saveorder'=>'adoption/saveOrder',
-			  '/travel/adoption/activity'=>'adoption/familyActivity',
+			  '/travel/adoption/'  =>'adoption/adoptionHome',// 收养团首页面;
+			  '/travel/adoption/saveorder/'=>'adoption/saveOrder',
+			  '/travel/adoption/special-activities.html'=>'adoption/familyActivity',
 			  '/travel/adoption/travelGuide/<id:\d+>'=>'adoption/orphanageTravelGuide',
-			   '/travel/adoption/list'=>'adoption/adoptionList',
-			  '/travel/adoption/noSearchResults'=>'adoption/noSearchResults',
-			  '/travel/adoption/2016-group-tour'=>'adoption/adoptionGroupTour',
+			   '/travel/adoption/orphanageList'=>'adoption/adoptionList',
+			  '/travel/adoption/noSearchResults/'=>'adoption/noSearchResults',
+			  '/travel/adoption/2016-group-tour/'=>'adoption/adoptionGroupTour',
 			  //destinations;
-			  '/travel/destinations/'=>'destions/index',
+			  '/travel/city-tours/'=>'destions/index',
 			  '/travel/city-<city_name:.*>-tours/'=>'destions/cityToursCommon',
+			  '/travel/beijing-xian-tours/'=>'destions/beijingToXian',
 			// port
-				'/travel/port/'=>'port/index',
-				
+			  '/travel/port/'=>'port/index',
+			  '/travel/cruise-port/<city_name:.*>-excursion-<id:\d+>' => 'port/PortExcursion',
+			  '/travel/cruise-port/<name:.*>-port-introduction-<id:\d+>' => 'port/portIntroduction',
+			  '/travel/international-cruise/<name:.*>-<id:\d+>' => 'port/CruiseView',
 			// original;
 			'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 			'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',

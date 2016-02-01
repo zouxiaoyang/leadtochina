@@ -15,7 +15,7 @@
 			<?php foreach($child_info as $info):?>
 			<div id="<?php echo SiteUtils::stringURLSafe($info['title']);?>" class="tab-pane fade<?php echo ($jj==0)?' in active':'';?>">
 				<div class="row top10tours-block01">
-					<?php foreach($package_info as $package):?>
+					<?php foreach($package_info as $package): ?>
 						<?php if($package['categorieid_str']==$info['id']):?>
 						<?php $href  = Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe($package['name']),'id'=>$package['id']));?>
 							<div class="col-sm-6 col-md-4">
@@ -42,27 +42,11 @@
 			<div class="clearfix"></div>
 			<div class="city-tripnote-content clearfix">
 			<?php
-				$this->widget('zii.widgets.CListView', array(
-					'dataProvider'=>$dataProvider,
-					'itemView'=>'_ask',//对应的评论信息的模板
-					'ajaxUpdate'=> true,//AJAX翻页  false为不是ajax翻页
-					'pager' => array(//pager 的配置信息。默认为<code>array('class'=>'CLinkPager')</code>.也可以自己配置
-						'header'=>'',//去除分页前的GO TO ....
-						//'nextPageLabel' => 'Next',
-						//'prevPageLabel' => 'Pre'
-						'firstPageLabel'=>'First',
-						'htmlOptions'=>array(
-							'class'=>'pagination',
-							'id'=>'pagerid',
-						),
-						'selectedPageCssClass'=>'active',
-						'lastPageLabel'=>'Last',
-					),
-				));
+				echo $trip_notes;
 			?>
 			</div>
 		</div>
-		<div class="city-article col-sm-3">
+		<?php /*?><div class="city-article col-sm-3">
 			<span class=" page-title09 title01">Recommended Articles About Huangshan</span>
 			<ul>
 				<li class="clearfix">
@@ -78,7 +62,7 @@
 					<p>the best and fast way is to take the flight</p>
 				</li>
 			</ul>
-		</div>
+		</div><?php */?>
 		
 		
 	</div>

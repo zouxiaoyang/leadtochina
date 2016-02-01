@@ -68,9 +68,15 @@ $this->widget('ext.ueditor.Ueditor',
 		<?php echo $form->textField($model,'sceneryIds',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'sceneryIds'); ?>
 	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'港口标题'); ?>
+		<?php echo $form->textField($model,'port_title',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->error($model,'port_title'); ?>
+	</div>
 	
 	<div class="row">
-		<?php echo $form->labelEx($model,'tourIntro'); ?>
+		<?php echo $form->labelEx($model,'港口介绍'); ?>
 		<?php echo $form->textArea($model,'tourIntro',array('rows'=>6, 'cols'=>50, 'style'=>"width:600px;")); ?>
 		<?php echo $form->error($model,'tourIntro'); ?>
 	</div>

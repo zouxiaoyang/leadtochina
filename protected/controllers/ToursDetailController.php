@@ -18,7 +18,11 @@ class ToursDetailController extends Controller
 		$reviews = $this->getReviews($package_id);
 
 		$ligboxalt = $this->getLightboxImageAlt();
-
+		// seo;
+		$t = $ress['name'];
+		$k = $ress['seo_key'];
+		$d = $ress['seo_description'];
+		Seo::_seo($this,$t,$k,$d);
 		$this->render('index',array('ress'	=>$ress,'router'=>$router,'reviews'=>$reviews,'ligboxalt'=>$ligboxalt));
 	}
 

@@ -81,43 +81,43 @@
 		<span class="page-title03" style="display:block;">More China Single Destination Tours</span>
        	<ul class="clearfix">
         <li>
-        <a href="#">Beijing Tours</a>
-        <a href="#">Chengdu Tours</a>
-        <a href="#">Chengde Tours</a>
-        <a href="#">Chongqing Tours</a>
-        <a href="#">Datong Tours</a>
-        <a href="#">Dalian Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'beijing'));?>">Beijing Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Chengdu'));?>">Chengdu Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Chengde'));?>">Chengde Tours</a>
+       
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Datong'));?>">Datong Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Dalian'));?>">Dalian Tours</a>
         </li>
         <li>
-        <a href="#">Dunhuang Tours</a>
-        <a href="#">Guilin Tours</a>
-        <a href="#">Guangzhou Tours</a>
-        <a href="#">Harbin Tours</a>
-        <a href="#">Hangzhou Tours</a>
-        <a href="#">Huangshan Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Dunhuang'));?>">Dunhuang Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Guilin'));?>">Guilin Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Guangzhou'));?>">Guangzhou Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Harbin'));?>">Harbin Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Hangzhou'));?>">Hangzhou Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Huangshan'));?>">Huangshan Tours</a>
         </li>
         <li>
-        <a href="#">Hong Kong tours</a>
-        <a href="#">Hefei Tours</a>
-        <a href="#">Jiuzhaigou Tours</a>
-        <a href="#">Kunming Tours</a>
-        <a href="#">Lhasa Tours</a>
-        <a href="#">Luoyang Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Hong Kong'));?>">Hong Kong tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Hefei'));?>">Hefei Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Jiuzhaigou'));?>">Jiuzhaigou Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Kunming'));?>">Kunming Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Lhasa'));?>">Lhasa Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Luoyang'));?>">Luoyang Tours</a>
         </li>		
         <li>
-        <a href="#">Lijiang Tours</a>
-        <a href="#">Nanjing Tours</a>
-        <a href="#">Pingyao Tours</a>
-        <a href="#">Qingdao Tours</a>
-        <a href="#">Shanghai Tours</a>
-        <a href="#">Suzhou Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Lijiang'));?>">Lijiang Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Nanjing'));?>">Nanjing Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Pingyao'));?>">Pingyao Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Qingdao'));?>">Qingdao Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Shanghai'));?>">Shanghai Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Suzhou'));?>">Suzhou Tours</a>
         </li>
 		<li>
-        <a href="#">Tianjin Tours</a>
-        <a href="#">Xian Tours</a>
-        <a href="#">Xiamen Tours</a>
-        <a href="#">Zhangjiajie Tours</a>
-        <a href="#">Zhangye Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Tianjin'));?>">Tianjin Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Xian'));?>">Xian Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Xiamen'));?>">Xiamen Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Zhangjiajie'));?>">Zhangjiajie Tours</a>
+        <a href="<?php echo Yii::app()->createUrl('destions/cityToursCommon',array('city_name'=>'Zhangye'));?>">Zhangye Tours</a>
         </li>
         </ul>
 	</div>

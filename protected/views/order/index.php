@@ -30,7 +30,7 @@
                 <tr>
                   <td class="on"> Your Travel Date<span class="must">*</span></td>
                   <td>                
-                          <input id="entry_date" class="Wdate hasDatepicker" type="text" autocomplete="off" name="entry_date"  placeholder=" " />
+                          <input id="entry_date" class="calendarIcon Wdate" type="text" autocomplete="off" name="entry_date"  placeholder="" />
                           
                        </td>
                 </tr>
@@ -190,7 +190,14 @@
 </div>
 </div>
 </div>
+<script src="/js/jqueryUi/jquery.ui.core.js" type="text/javascript" language="javascript"></script>
+<script src="/js/jqueryUi/jquery.ui.datepicker.js" type="text/javascript" language="javascript"></script>
+<link href="/js/jqueryUi/jquery.ui.core.css" type="text/css" rel="stylesheet">
 <script type="text/javascript">
+	$("#entry_date").datepicker({
+	  changeMonth: true,
+	  numberOfMonths: 2,
+	});
 	var bFlag=true;
 	function clearTip(){
 			var oTxt=document.getElementByIdx_x("txt1");

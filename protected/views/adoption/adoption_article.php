@@ -26,7 +26,7 @@
 					<div class="reviews-list01-block clearfix">
 					<div class="group-left"> <img width="200px" height="140px" src="/newadmin/images/uploads/adoption/<?php echo $post['pic'];?>" /> </div>
 					<div class="group-right">
-					  <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleDetail',array('ar_id'=>$post['id']));?>" title="<?php echo $post['title'];?>"><h2><?php echo $post['title'];?></h2></a>
+					  <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleDetail',array('ar_id'=>$post['id'],'title'=>SiteUtils::stringURLSafe($post['title'])));?>" title="<?php echo $post['title'];?>"><h2><?php echo $post['title'];?></h2></a>
 					 <p> <?php echo substr(strip_tags($post['content']),0,245),'...';?><a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleDetail',array('ar_id'=>$post['id']));?>" title="<?php echo $post['title'];?>" class="link01">Read more</a></p>
 					  <i>Travel Date:<?php echo date('M dS, Y',strtotime($post['date']));?></i></div>
 				  </div>
@@ -126,7 +126,7 @@ if($('#edit-skeys').val()=='' && $('#edit-location').val()=='0'){
 	alert('Please Input Title Or Province');
 	return false;
 }else{
-		url = '/travel/adoptionarticle';
+		url = '/travel/adoption/storyIndex/';
 		
 		var filter_order_id = $('#edit-skeys').val();
 		

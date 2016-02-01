@@ -13,6 +13,10 @@
 	<?php echo CHtml::encode($data->cityName); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('port_title')); ?>:</b>
+	<?php echo CHtml::encode($data->port_title); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('portIntro')); ?>:</b>
 	<?php echo CHtml::encode($data->portIntro); ?>
 	<br />

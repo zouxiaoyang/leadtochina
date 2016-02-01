@@ -23,6 +23,7 @@ $this->menu=array(
 	'attributes'=>array(
 		'id',
 		'cityName',
+		'port_title',
 		'portIntro',
 		'tourIds',
 		'sceneryIds',

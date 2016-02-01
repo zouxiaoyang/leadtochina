@@ -4,6 +4,11 @@ class FamilyToursController extends Controller
 {
 	public function actionIndex()
 	{
+		// seo;
+		$k='China Family Tours, china best Family tours';
+		$t = 'China Family Tours, China Best Family Tours, Top China Family Tours';
+		$d='China Travel Company offering China Family tours';
+		Seo::_seo($this,$t,$k,$d);
 		$sql="select * from `jos_cos_tours_package` where `category_parentid`=(select `id` from `jos_categories` where `alias`='china-family-tour') and id in (1083,1084,1085,1086)";
 
 		$ress = Yii::app()->db->createCommand($sql)->queryAll(); 

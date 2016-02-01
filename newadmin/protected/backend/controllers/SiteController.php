@@ -2,7 +2,7 @@
 
 class SiteController extends Controller
 {
-	 public $defaultAction='login';
+	public $defaultAction='login';
 
 	protected function beforeAction($action) {
 		return true;

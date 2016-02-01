@@ -64,6 +64,10 @@ class AdoptionController extends Controller
 	}
 	// 游记列表;
 	public function actionAdoptionArticle(){ 
+		$title ='China Homeland & Heritage Tours Reviews, Reviews on China Adoption Reunion Tours';
+		$k='china homeland tour review，reviews chinese adoptee heritage tours.';
+		$des = 'Read about the verified reviews on China homeland tours from adoptive families here.';
+		Seo::_seo($this,$title,$k,$des);
 		$province_id =isset($_GET['province_id'])?(int)$_GET['province_id']:0;
 		$title = isset($_GET['title'])?addslashes(trim($_GET['title'])):0;
 		$where=array();
@@ -104,6 +108,11 @@ class AdoptionController extends Controller
 		$ar_id = (int)$_GET['ar_id'];
 		$sql="select * from `t_adoption_orphanage_address_article` where `id`={$ar_id}";
 		$res = Yii::app()->db->createCommand($sql)->queryRow();
+		// seo;
+		$title = $res['title'];
+		$k='chinese heritage tour reviews，china homeland tour review，reviews for china homeland tours，china  heritage tour reviews';
+		$des=substr(strip_tags($res['content']),0,128).'...';
+		Seo::_seo($this,$title,$k,$des);
 		$this->render('adoption_article_detail',array('res'=>$res));
 	}
 	// 游记详细;
@@ -137,6 +146,12 @@ class AdoptionController extends Controller
 	}
    // adoption customer size;定制页面;
 	public function actionAdoptionDiy(){
+		//seo;
+		$title ='LeadToChina - CustomizeAdoption Adoption';
+		$k='';
+		$d='';
+		Seo::_seo($this,$title,$k,$d);
+
 		$this->render('adoption_diy');
 	}
 // adoption search;
@@ -174,6 +189,11 @@ class AdoptionController extends Controller
 	}
 // adoption search;
 public function actionAdoptionHome(){
+// seo;
+	$title = 'China Adoption Homeland Tours, China Adoption Travel, China Heritage Tour';
+	$keywords = 'china homeland tours, china adoption travel, china heritage tour';
+	$description = 'Lead to China Company is specialized in operating China homeland tours, China heritage tour, China root-seeking Tour and visit to orphanage etc. Customize China adoption travel now and save more';
+	Seo::_seo($this,$title,$keywords,$description);
 // 最新的3条游记;
 	$sql = "select `id`,`pic`,`content`,`title`,`date` from `t_adoption_orphanage_address_article` order by `date` desc limit 3";
 	$ress  = Yii::app()->db->createCommand($sql)->queryAll();
@@ -301,6 +321,12 @@ public function actionSaveOrder(){
     exit;
   }
   public function actionFamilyActivity(){
+	  //seo;
+	 $title = 'Special Activities for Children and Family Trips to China';
+	 $k='';
+	 $des='We offers a different set of special activities for the adoptive family, such as watching a kungfu performance, flying kites, riding bicycle on the Ancient City Wall, making dumplings with a local family and so on.';
+	Seo::_seo($this,$title,$k,$des);
+
 	$this->render('adoption_family_activity');
   }
     public function actionGetCity($provinceid){
@@ -374,6 +400,12 @@ public function actionSaveOrder(){
     ));
   }
   public function actionAdoptionList(){
+	  //seo;
+	  $title = 'LeadToChina - OrphanageList Adoption';
+		$k = '';
+		$des = '';
+		Seo::_seo($this,$title,$k,$des);
+
 	$sql ="SELECT aoa.orphanage_name,aoa.id as aoa_id,`aoa`.`provinceid`,cp.name as `cp_name` FROM `t_adoption_orphanage_address` as `aoa` left join `jos_cos_province` as `cp` on (cp.id=aoa.provinceid) group by `aoa`.`provinceid`,`aoa`.`id`";
 	$ress  = Yii::app()->db->createCommand($sql)->queryAll();
 	$arr_adoption_info=array();
@@ -402,6 +434,12 @@ public function actionSaveOrder(){
   }
  // adoption grooup tour;
  function actionAdoptionGroupTour(){
+
+	 $title = date('Y').' Summer Promotion: China Heritage & Homeland Tours';
+	 $keywords = '2016 china homeland tours, china heritage tours 2016';
+	 $des ='Based in China, we are offering cheap China heritage tours during 2016 summer vacation. You join groups and customize a private homeland tour to China from our service.';
+
+	 Seo::_seo($this,$title,$keywords,$des);
  
 	$this->render('adoption_group_tour');
  }
