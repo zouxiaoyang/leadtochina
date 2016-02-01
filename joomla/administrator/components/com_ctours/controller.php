@@ -222,7 +222,6 @@ class CtoursController extends JController
 			$row->pic_big=null;
 			$post = array_merge($post,$filenewname);
 		}
-
 		if (!$row->bind( $post ))
 		{
 			JError::raiseError(500, $row->getError() );

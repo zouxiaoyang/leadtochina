@@ -62,7 +62,8 @@ class JTableCategory extends JTable
 	var $seo_description   =null;
 	var $jianjie   =null;
 	var $sce_cat_path   =null;
-  var $tour_ids = null;
+        var $tour_ids = null;
+	var $trip_notes = null;
 
 	//var $ufile            =null;
 	/**

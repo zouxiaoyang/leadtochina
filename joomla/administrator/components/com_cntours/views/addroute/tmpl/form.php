@@ -121,10 +121,6 @@
 				</label>
 			</td>
 			<td>
-			   select name='hotel_standard' id='hotel_standard'>;
-<option value=0>请选择</option>
-<?php echo $this->hotel_str;?>
-
 			<?php 	echo $editor->display( 'hotel_name',  htmlspecialchars($this->options['0']->hotel_name,ENT_QUOTES), '550', '200', '60', '20', array('pagebreak', 'readmore'));?>				
 			</td>
 		</tr>

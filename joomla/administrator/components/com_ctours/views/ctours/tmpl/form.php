@@ -210,7 +210,15 @@
 		</tr>
 -->
 
-
+		<tr><td class="key">
+				<label>
+			图片编号
+				</label>
+			</td>
+			<td>
+			<input type="text" size="69" value="<?php echo $this->options[0]->lightbox; ?>" id="lightbox" name="lightbox">
+			</td>
+		</tr>
 
 		<tr>
 			<td class="key">

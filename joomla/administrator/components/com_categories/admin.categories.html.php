@@ -11,17 +11,14 @@
  * other free or open source software licenses.
  * See COPYRIGHT.php for copyright notices and details.
  */
-
 // no direct access
 defined( '_JEXEC' ) or die( 'Restricted access' );
-
 /**
 * @package		Joomla
 * @subpackage	Categories
 */
 class categories_html
 {
-
 	/**
 	* Writes a list of the categories for a section
 	* @param array An array of category objects
@@ -29,17 +26,13 @@ class categories_html
 	*/
 	function show( &$rows, $section, $section_name, &$page, &$lists, $type )
 	{
-
 		$limitstart = JRequest::getVar('limitstart', '0', '', 'int');
 		$user =& JFactory::getUser();
-
 		//Ordering allowed ?
 		$ordering = ($lists['order'] == 'c.ordering');
-
 		JHTML::_('behavior.tooltip');
 		?>
 		<form action="index.php?option=com_categories&amp;section=<?php echo $section; ?>" method="post" name="adminForm">
-
 		<table>
 			<tr>
 				<td align="left" width="100%">
@@ -60,7 +53,6 @@ class categories_html
 				</td>
 			</tr>
 		</table>
-
 		<table class="adminlist">
 		<thead>
 			<tr>
@@ -122,13 +114,9 @@ class categories_html
 		if( count( $rows ) ) {
 		for ($i=0, $n=count( $rows ); $i < $n; $i++) {
 			$row 	= &$rows[$i];
-
 			JFilterOutput::objectHtmlSafe($row);
-
 			$row->sect_link = JRoute::_( 'index.php?option=com_sections&task=edit&cid[]='. $row->section );
-
 			$link = 'index.php?option=com_categories&section='. $section .'&task=edit&cid[]='. $row->id .'&type='.$type;
-
 			$access 	= JHTML::_('grid.access',   $row, $i );
 			$checked 	= JHTML::_('grid.checkedout',   $row, $i );
 			$published 	= JHTML::_('grid.published', $row, $i );
@@ -208,7 +196,6 @@ class categories_html
 		?>
 		</tbody>
 		</table>
-
 		<input type="hidden" name="option" value="com_categories" />
 		<input type="hidden" name="section" value="<?php echo $section;?>" />
 		<input type="hidden" name="task" value="" />
@@ -222,7 +209,6 @@ class categories_html
 		</form>
 		<?php
 	}
-
 	/**
 	* Writes the edit form for new and existing categories
 	* @param JTableCategory The category object
@@ -232,13 +218,10 @@ class categories_html
 	function edit( &$row, &$lists, $redirect )
 	{
 		JRequest::setVar( 'hidemainmenu', 1 );
-
 		$editor =& JFactory::getEditor();
-
 		if ($row->image == '') {
 			$row->image = 'blank.png';
 		}
-
 		if ( $redirect == 'content' ) {
 			$component = 'Content';
 		} else {
@@ -259,7 +242,6 @@ class categories_html
 				submitform( pressbutton );
 				return;
 			}
-
 			if ( pressbutton == 'menulink' ) {
 				if ( form.menuselect.value == "" ) {
 					alert( "<?php echo JText::_( 'Please select a Menu', true ); ?>" );
@@ -272,7 +254,6 @@ class categories_html
 					return;
 				}
 			}
-
 			if ( form.title.value == "" ) {
 				alert("<?php echo JText::_( 'Category must have a title', true ); ?>");
 			} else {
@@ -282,29 +263,20 @@ class categories_html
 			}
 		}
 		</script>
-
-
-
 		<form action="index.php" method="post" name="adminForm" enctype="multipart/form-data">
-
 		<div class="col width-60">
 			<fieldset class="adminform">
 				<legend><?php echo JText::_( 'Details' ); ?></legend>
-
 					<table class="admintable">
-
 <?php 
-
 	if($row->section=="com_scenery" OR $row->section=="com_chinaculture") {
 		if($row->section=="com_scenery"){
 			$fromsection="&fromsec=com_scenery";
 		}else{
 			$fromsection="&fromsec=com_chinaculture";
 		}
-
 ?>
 <script language="javascript" type="text/javascript">
-  
    var request = false;
    try {
      request = new XMLHttpRequest();
@@ -321,137 +293,78 @@ class categories_html
    }
    if (!request)
      alert("Error initializing XMLHttpRequest!");
-
-
-
-
    function displayCat1(val,selid) {
 	 document.getElementById('spancat2').style.display="none";
 	 document.getElementById('spancat3').style.display="none";
-
 	displayCat(val,selid);
-  
    }
-
    function displayCat2(val,selid) {
  document.getElementById('spancat3').style.display="none";
 	displayCat(val,selid);
- 
    }
-
    function displayCat3(val,selid) {
-   
 	displayCat(val,selid);
-   
    }
-
    function displayCat(val,selid) {
 	   if(val==0){
-	   
 	   return false;
 	   }
 	var selectid="cat"+selid;
 	var next_id=selid+1;
-
 	var spanid="spancat"+next_id;
-
      var catid = String(val);
-
-	
 	 catid=document.getElementById(selectid).options[document.getElementById(selectid).selectedIndex].value;
-
 	if(selectid=='cat1'){
 	<?php
-
 	if(empty($row->sec_parentid)==false){
-
 		$temp="{$fromsection}&from=1&ccatid=".$row->sec_parentid;
-
 		echo "var cidStr='$temp';";
-
 	}else{
 		echo "var cidStr='{$fromsection}&from=1';";
 	}
 	?>
 	}
-
 	if(selectid=='cat2'){
 	<?php
-		
 	if(empty($row->third_parentid)==false){
-
 		$temp="{$fromsection}&from=2&ccatid=".$row->third_parentid;
-
 		echo "var cidStr='$temp';";
-
 	}else{
 		echo "var cidStr='{$fromsection}&from=2';";
 	}
 	?>
 	}
-
 	if(selectid=='cat3'){
 	<?php
-		
 	if(empty($row->four_parentid)==false){
-
 		$temp="{$fromsection}&from=3&ccatid=".$row->four_parentid;
-
 		echo "var cidStr='$temp';";
-
 	}else{
 		echo "var cidStr='{$fromsection}&from=3';";
 	}
 	?>
 	}
-
-
 	var url = "../index.php?option=com_childCat&catid=" + escape(catid)+cidStr;
-
      request.open("GET", url, true);
-
      request.onreadystatechange = updatePage;
      request.send(null);
-
    }
-
-
-
-
    function updatePage() {
      if (request.readyState == 4) {
        if (request.status == 200) {
          var response = request.responseText;
-
 		 if(document.getElementById('spancat2').style.display==""){
-
 			 document.getElementById('spancat3').style.display="";
 			document.getElementById('spancat3').innerHTML =response;
-
 		 }else{
-
 			 document.getElementById('spancat2').style.display="";
 			 document.getElementById('spancat2').innerHTML =response;
-
 		 }
        } else
          alert("status is " + request.status);
      }
    }
-
 </script>			
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
 					<tr>
 						<td class="key">
 							<label for="title" width="100">
@@ -465,13 +378,9 @@ class categories_html
 </select>&nbsp;&nbsp;&nbsp;&nbsp;<span id="spancat2" style="display: none;"></span>
 &nbsp;&nbsp;&nbsp;&nbsp;<span id="spancat3" style="display: none;"></span>						</td>
 					</tr>
-
-
 <?php 
 	} 
 ?>
-
-
 					<tr>
 						<td class="key">
 							<label for="title" width="100">
@@ -483,24 +392,11 @@ class categories_html
 						</td>
 					</tr>
 					<?php if($row->section=="com_cntours"  OR $row->section=="com_ctours") :?>
-
-
-
-
-
 <script language="javascript" type="text/javascript">
-  
-  
-
    function SetDisplay(val) {
      var pid = val;
-
 	 if(isNaN(pid)){
-
-
 	 pid=document.getElementById("parent_id").options[document.getElementById("parent_id").selectedIndex].value;
-
-
 	 }
 	 if(pid>0){
 		 //var routesVal="";
@@ -510,14 +406,8 @@ class categories_html
 		 document.getElementById("display_route").innerHTML="该二级主题对应的套餐路线";
 		 document.getElementById("display_route1").innerHTML="<input type=\"text\" name=\"routes\" id=\"routes\" maxlength=255 size=50 value='"+str+"'>";
 		 }
-
-   
    }
 </script>
-
-
-
-
 					<tr>
 						<td class="key">
 							<label for="title" width="100">
@@ -532,21 +422,7 @@ class categories_html
 					</tr>
 <label id="disLab" style="display:none">
 <tr ><td id="display_route" class=key></td><td id="display_route1"></td></tr></label>
-
-
 					<?php endif ;?>
-
-
-
-
-
-
-
-
-
-
-
-
 					<tr>
 						<td class="key">
 							<label for="alias">
@@ -557,7 +433,6 @@ class categories_html
 							<input class="text_area" type="text" name="alias" id="alias" value="<?php echo $row->alias; ?>" size="50" maxlength="255" title="<?php echo JText::_( 'ALIASTIP' ); ?>" />
 						</td>
 					</tr>
-
 					<tr>
 						<td class="key">
 							<label for="alias">
@@ -568,8 +443,6 @@ class categories_html
 							<input class="text_area" type="text" name="seo_title" id="seo_title" value="<?php echo $row->seo_title; ?>" size="50" maxlength="255" title="<?php echo JText::_( 'ALIASTIP' ); ?>" />
 						</td>
 					</tr>
-
-
 					<tr>
 						<td class="key">
 							<label for="alias">
@@ -580,7 +453,6 @@ class categories_html
 							<input class="text_area" type="text" name="seo_key" id="seo_key" value="<?php echo $row->seo_key; ?>" size="50" maxlength="255" title="<?php echo JText::_( 'ALIASTIP' ); ?>" />
 						</td>
 					</tr>
-
 					<tr>
 						<td class="key">
 							<label for="alias">
@@ -591,7 +463,6 @@ class categories_html
 							<input class="text_area" type="text" name="seo_description" id="seo_description" value="<?php echo $row->seo_description; ?>" size="50" maxlength="255" title="<?php echo JText::_( 'ALIASTIP' ); ?>" />
 						</td>
 					</tr>
-
           <tr>
 						<td width="120" class="key">
 							关联部分中国旅游行程id:
@@ -600,9 +471,6 @@ class categories_html
 							<input type="text" name="tour_ids" value="<?php echo $row->tour_ids; ?>" />
 						</td>
 					</tr>
-
-
-
 					<tr>
 						<td width="120" class="key">
 							图片:
@@ -611,23 +479,17 @@ class categories_html
 							<input type="file" name="ufile" id="ufile" size=50>
 						</td>
 					</tr>
-
-
-
 					<tr>
 						<td width="120" class="key">
 							类别简介:
 						</td>
 						<td>
-														<?php
+						<?php
 							// parameters : areaname, content, width, height, cols, rows, show xtd buttons
 							echo $editor->display( 'jianjie',  htmlspecialchars($row->jianjie, ENT_QUOTES), '200', '100', '60', '20', array('pagebreak', 'readmore') ) ;
 							?>
 						</td>
 					</tr>
-
-
-
 					<tr>
 						<td width="120" class="key">
 							<?php echo JText::_( 'Published' ); ?>:
@@ -699,13 +561,10 @@ class categories_html
 						</script>
 						</td>
 					</tr>
-
 				</table>
 			</fieldset>
-
 			<fieldset class="adminform">
 				<legend><?php echo JText::_( 'Description' ); ?></legend>
-
 				<table class="admintable">
 					<tr>
 						<td valign="top" colspan="3">
@@ -717,9 +576,21 @@ class categories_html
 					</tr>
 					</table>
 			</fieldset>
+			<fieldset class="adminform">
+				<legend><?php echo JText::_( 'Trip Notes' ); ?></legend>
+				<table class="admintable">
+					<tr>
+						<td valign="top" colspan="3">
+							<?php
+							// parameters : areaname, content, width, height, cols, rows, show xtd buttons
+							echo $editor->display( 'trip_notes',  htmlspecialchars($row->trip_notes, ENT_QUOTES), '550', '300', '60', '20', array('pagebreak', 'readmore') ) ;
+							?>
+						</td>
+					</tr>
+					</table>
+			</fieldset>
 		</div>
 		<div class="clr"></div>
-
 		<input type="hidden" name="option" value="com_categories" />
 		<input type="hidden" name="oldtitle" value="<?php echo $row->title ; ?>" />
 		<input type="hidden" name="id" value="<?php echo $row->id; ?>" />
@@ -730,14 +601,11 @@ class categories_html
 		</form>
 		<script> 
 window.onload=displayCat1(document.getElementById("cat1").options[document.getElementById("cat1").selectedIndex].value,1);
-
 </script>
 <?php
 if($row->section=="com_cntours"  OR $row->section=="com_ctours") { echo "<script language=\"javascript\" type=\"text/javascript\"> window.onload=SetDisplay;</script>";  }?>
-
 		<?php
 	}
-
 	/**
 	* Form to select Section to move Category to
 	*/
@@ -750,7 +618,6 @@ if($row->section=="com_cntours"  OR $row->section=="com_ctours") { echo "<script
 				submitform( pressbutton );
 				return;
 			}
-
 			// do field validation
 			if (!getSelectedValue( 'adminForm', 'sectionmove' )) {
 				alert( "<?php echo JText::_( 'Please select a section from the list', true ); ?>" );
@@ -759,9 +626,7 @@ if($row->section=="com_cntours"  OR $row->section=="com_ctours") { echo "<script
 			}
 		}
 		</script>
-
 		<form action="index.php" method="post" name="adminForm">
-
 		<br />
 		<table class="adminform">
 		<tr>
@@ -804,7 +669,6 @@ if($row->section=="com_cntours"  OR $row->section=="com_ctours") { echo "<script
 		</tr>
 		</table>
 		<br /><br />
-
 		<input type="hidden" name="option" value="<?php echo $option;?>" />
 		<input type="hidden" name="section" value="<?php echo $sectionOld;?>" />
 		<input type="hidden" name="boxchecked" value="1" />
@@ -819,7 +683,6 @@ if($row->section=="com_cntours"  OR $row->section=="com_ctours") { echo "<script
 		</form>
 		<?php
 	}
-
 	/**
 	 * Form to select Section to copy Category to
 	 */
@@ -832,7 +695,6 @@ if($row->section=="com_cntours"  OR $row->section=="com_ctours") { echo "<script
 				submitform( pressbutton );
 				return;
 			}
-
 			// do field validation
 			if (!getSelectedValue( 'adminForm', 'sectionmove' )) {
 				alert( "<?php echo JText::_( 'Please select a section from the list', true ); ?>" );
@@ -841,9 +703,7 @@ if($row->section=="com_cntours"  OR $row->section=="com_ctours") { echo "<script
 			}
 		}
 		</script>
-
 		<form action="index.php" method="post" name="adminForm">
-
 		<br />
 		<table class="adminform">
 		<tr>
@@ -889,7 +749,6 @@ if($row->section=="com_cntours"  OR $row->section=="com_ctours") { echo "<script
 		</tr>
 		</table>
 		<br /><br />
-
 		<input type="hidden" name="option" value="<?php echo $option;?>" />
 		<input type="hidden" name="section" value="<?php echo $sectionOld;?>" />
 		<input type="hidden" name="boxchecked" value="1" />

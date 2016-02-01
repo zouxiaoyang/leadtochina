@@ -46,6 +46,7 @@ class TableCtours extends JTable
 	var $package_code ="";
 	var $seo_description  ="";
 	var $attractions ="";
+	var $lightbox="";
 	var $recommand_reason="";
 	var $promotion="";
 	var $departs="";
@@ -89,6 +90,7 @@ class TableCtours extends JTable
 	var $index_recommend_order=0;
   var $start_city = "";
   var $end_city = "";
+
 
 	/**
 	* @param database A database connector object
