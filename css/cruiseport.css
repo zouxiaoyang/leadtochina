@@ -1,0 +1,400 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px}
+.cru_fl{ float:left}
+.cru_mt10{margin-top:10px}
+#CDSWIDSSP .widSSPData {
+    padding: 7px 4px;
+    width: 178px;
+}
+.clear{ clear:both; height:0; padding:0; margin:0; overflow:hidden}
+
+/* cruise index start */
+.cru_content{}
+.cru_menu-tours a {
+    background: url(/templates/jv_news_ii/images/arrow.png) no-repeat scroll right center;
+    color: #2487d2;
+    padding-right: 15px;
+	text-decoration:none;
+}
+.cru_menu-tours{
+	background:#ddd;
+    color: #444;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 10px;
+ 	margin-bottom:10px;
+	
+}
+.cru_banner{ background:url(/images/cruisePorts/cruiseport_banner.jpg) no-repeat;width:920px; height:250px;}
+.cru_intro_txt{width:900px; font:Verdana, Geneva, sans-serif 12px #333; background:#eeeeee;padding:5px 5px 10px 15px; line-height:160%}
+.cru_cruise{}
+.cru_cruise_ind{width:920px;}
+.cru_cruise_title{height:38px;padding:0px; width:920px}
+.cru_cruise_title_txt{ background:#ccc;color:#8C4600;padding:0;font-size:15px;padding:10px 20px 0px 20px;width:auto;height:25px; float:left}
+.cru_cruise_title span{background:url(/images/cruisePorts/cru_ri_bg.jpg) no-repeat; height:35px; width:20px; float:left;}
+.cru_cruise_title_line{width:920px;height:3px; background:#8C4600; clear:both}
+.cru_cruise_content{ width:919px; border-right:1px #ccc solid;border-bottom:1px #ccc solid; overflow:hidden}
+.cru_cruise_content_left{ width:212px; float:left;}
+.cru_cruise_content_left ul li{height:36px;  line-height:36px; display:block; float:left;}
+.cru_cruise_content_left ul li a{color:#333; text-decoration:none;padding-left:5px;background:url(/images/cruisePorts/cru_nav1.jpg) no-repeat; float:left;width:207px;font-size:12px}
+.cru_cruise_content_left .selected{ color:#fff; text-decoration:none;padding-left:5px;background:url(/images/cruisePorts/cru_nav2.jpg) no-repeat; float:left;width:207px;}
+.cru_cruise_content_right{width:680px; float:left; padding:10px 0px 10px 10px; overflow:hidden}
+.cru_right_intro_txt{ color:#333; line-height:170%; float:right;width:525px;height:80px; overflow:hidden}
+.cru_right_intro_img a{ color:#3F49CB; text-decoration:none;}
+.cru_right_intro_img a:hover{ color:#333; text-decoration:none;}
+.cru_cruise_content_right_time{ clear:both;padding-top:10px}
+.cru_cruise_content_right_time table th{color:#333; font-weight:bold}
+.cru_cruise_content_right_time table td a{ color:#3F49CB; text-decoration:underline}
+.cru_cruise_content_right_time table td a:hover{ color:#333; text-decoration:none}
+
+.cru_port_title{height:38px;padding:0px; width:920px}
+.cru_port_title_txt{ background:#FBF5E7;color:#8C4600;padding:0;font-size:15px;padding:10px 20px 0px 20px;width:auto;height:25px; float:left}
+.cru_port_title span{background:url(/images/cruisePorts/por_ri_bg.jpg) no-repeat; height:35px; width:16px; float:left;}
+.cru_port_content_left{ width:212px; float:left;}
+.cru_port_content_left ul{ overflow:hidden;margin:0px; padding:0px;}
+.cru_port_content_left ul li{height:36px;display:block; float:left; line-height:40px}
+.cru_port_content_left ul li a{color:#333; text-decoration:none;padding-left:5px;background:url(/images/cruisePorts/cru_nav3.jpg) no-repeat; float:left;width:207px;font-size:12px;}
+
+.cru_img1{background:url(/images/cruisePorts/city_logo.png) no-repeat; width:40px;height:30px; float:left;margin:5px 7px 0px 5px;}
+.cru_img2{background:url(/images/cruisePorts/city_logo.png) 360px 0; width:40px;height:30px; float:left;margin:5px 7px 0px 5px}
+.cru_img7{background:url(/images/cruisePorts/city_logo.png) 320px 0; width:40px;height:30px; float:left;margin:5px 7px 0px 5px}
+.cru_img3{background:url(/images/cruisePorts/city_logo.png) 280px 0; width:40px;height:30px; float:left;margin:5px 7px 0px 5px}
+.cru_img5{background:url(/images/cruisePorts/city_logo.png) 240px 0; width:40px;height:30px; float:left;margin:5px 7px 0px 5px}
+.cru_img8{background:url(/images/cruisePorts/city_logo.png) 200px 0; width:40px;height:30px; float:left;margin:5px 7px 0px 5px}
+.cru_img6{background:url(/images/cruisePorts/city_logo.png) 160px 0; width:40px;height:30px; float:left;margin:5px 7px 0px 5px}
+.cru_img10{background:url(/images/cruisePorts/city_logo.png) 120px 0; width:40px;height:30px; float:left;margin:5px 7px 0px 5px}
+.cru_img4{background:url(/images/cruisePorts/city_logo.png) 80px 0; width:40px;height:30px; float:left;margin:5px 7px 0px 5px}
+.cru_img9{background:url(/images/cruisePorts/city_logo.png) 40px 0; width:40px;height:30px; float:left;margin:5px 7px 0px 5px}
+.cru_port_content_left .selected1{ color:#fff; text-decoration:none;padding-left:5px;background:url(/images/cruisePorts/cru_nav4.jpg) no-repeat; float:left;width:207px;font-weight:bold}
+
+.cru_port_content_left1{ width:212px; float:left;}
+.cru_port_content_left1 ul{ overflow:hidden;margin:0px; padding:0px;}
+.cru_port_content_left1 ul li{height:35px;display:block; float:left;border-bottom:1px #ccc solid;width:200px}
+.cru_port_content_left1 ul li a{color:#333; text-decoration:none;padding-left:5px;background:#dddddd; float:left;width:195px;font-size:12px; line-height:35px}
+.cru_port_content_left1 .selected1{ color:#fff; text-decoration:none;padding-left:5px;background:#8C4600; float:left;width:195px;font-weight:bold}
+
+.cru_port_right_intro_tit{ font-size:13px; font-weight:bold; color:#333;}
+.cru_port_content_right_pas{clear:both;}
+.cru_port_content_right_pas ul{ margin:0px;padding:0px}
+.cru_port_content_right_pas ul li{ width:150px; float:left;margin-right:20px;padding-top:10px;}
+.cru_port_content_right_pas ul li p{margin-top:5px;}
+.cru_col1 a{color:#3F49CB; text-decoration:none;line-height:140%;}
+.cru_col1 a:hover{text-decoration:underline;}
+.cru_hei{height:50px; overflow:hidden}
+.cru_col2{ color:#8C4600; font-size:13px}
+.cru_cont1_right{ width:708px; float:right}
+.cru_cont1_right1{}
+.cru_booking{padding:10px 10px;line-height:18px;}
+.cru_booking table{ width:100%; height:auto; margin:10px 0px;}
+.cru_booking table tr td.align{ text-align:right; vertical-align:middle}
+.cru_booking table tr td{ padding:6px 4px;}
+.cru_booking table tr td select,.cru_booking table tr td input,.cru_booking table tr td textarea{ border:1px solid #ccc; padding:3px 0px;font-size:12px;}
+.cru_booking table tr td select{ width:208px; padding:2px 0px;}
+.cru_booking table tr td input{ padding:3px 3px; width:200px;}
+.cru_booking table tr td input.small{ width:235px;}
+.cru_booking table tr td textarea{ height:65px; width:88%;}
+.cru_booking table tr td a{ width:77px; height:27px; background:url(/images/button.png) left center no-repeat; display:block; margin-right:12px; float:left; color:#3b3a39; text-align:center; font-weight:bold; line-height:27px;}
+.cru_booking table tr td a:hover{ color:#ff0000;}
+.cru_booking table span{ color:#ff0000;} 
+.cru_cont1_right2{ border:1px #ddd solid;width:721px;margin-top:10px; overflow:hidden; clear:both}
+.cru_cont1_right2_head{ background:#f3f3f3;width:701px;padding:10px}
+.cru_writecont{ width:700px; height:auto;padding:0px;}
+.cru_writecont table{ width:100%; height:auto; color:#333;}
+.cru_writecont table tr td{ padding:4px;}
+.cru_writecont table tr td.tesu{ padding:8px 0px;}
+.cru_writecont table tr td input{ border:1px solid #f5f5f5; background:#fff; width:180px; height:19px; line-height:19px;}
+.cru_writecont table tr td textarea{ width:100%; height:85px; background:#fff; margin-bottom:10px; border:0px;}
+.cru_cont1_right2_foot1{width:700px;padding:10px; color:#666; overflow:hidden}
+.cru_cont1_right2_foot1 p{line-height:140%}
+.cru_ques1{ font-weight:bold}
+.cru_wit_tit1{ font-size:16px; font-weight:bold}
+.cru_ques1 span{ font-style:italic}
+.cru_ques2{padding:5px 0px 0px 15px}
+.cru_ques3{width:600px; float:right;margin-top:5px}
+.cru_ques3a{ background:#f5f5f5;border:1px #d3d3d3 solid;padding:5px 10px;width:518px; float:left}
+.cru_ques3b{ background:url(/images/cruisePorts/cru_ques1.png) no-repeat;width:15px;height:13px; float:left;margin:20px 0 0 -1px}
+.cru_ques3c{background:url(/images/cruisePorts/cru_ques.gif) no-repeat;width:42px;height:30px; float:right;margin:20px 0 0 0px}
+.cru_line{height:1px; border-top:1px #d0d0d0 dashed;margin:0 10px}
+
+.cru_cruise_content_right_intro p img{ margin-right: 10px;}
+.cru_cruise_content_right_intro p{
+  color: #333;
+  line-height: 160%;
+}
+.cru_port_right_intro_txt p{
+  color: #333;
+  line-height: 170%;
+  overflow: hidden;
+  width: auto;
+}
+/* cruise index end */
+/* cruise view start */
+.cru_view_content{}
+.cru_view_content_left{width:212px; float:left;}
+.cru_view_content_right{}
+.cru_view_content_right1{}
+.cru_view_right_intro_txt{ color:#333; line-height:160%;}
+.cru_view_line{width:680px;height:1px; border-top:1px #ccc solid;margin:15px 0px 0px 5px}
+.cru_view_line1{width:680px;height:1px; border-top:1px #ccc dashed;margin:15px 0px 5px 0px}
+.cru_view_content_right1_tit1{ font-size:14px; font-weight:bold; color:#d56d21; text-align:center}
+.cru_view_content_right1_tit2{ font-size:13px; font-weight:bold; color:#333}
+.cru_view_content_right2{ overflow:hidden}
+.cru_view_content_right1_tit3{color:#333; line-height:160%;}
+.cru_view_mt5{margin-top:5px}
+.cru_view_col1 a{color:#8C4600; text-decoration:none}
+.cru_view_col1 a:hover{color:#8C4600; text-decoration:underline}
+.cru_view_cont1_right1{margin-top:10px}
+.cru_view_cont1_right1_tit{ background:#ddd;height:35px; padding-left:10px;}
+.cru_view_cont1_right1_tit span{ font-weight:bold;line-height:35px;padding-left:5px}
+.cru_view_cont1_right1_cont{border:5px #ddd solid; border-top:none}
+.cru_view_cont1_right2{ border:1px #ddd solid; margin:10px 0;}
+.cru_view_cont1_right2_head{ background:#f3f3f3;padding:15px}
+.cru_view_writecont{}
+.cru_view_writecont table{ width:100%; height:auto; color:#333;}
+.cru_view_writecont table tr td{ padding:4px;}
+.cru_view_writecont table tr td.tesu{ padding:8px 0px;}
+.cru_view_writecont table tr td input{ border:1px solid #f5f5f5; background:#fff; width:180px; height:25px; line-height:25px;}
+.cru_view_writecont table tr td textarea{ width:100%; height:85px; background:#fff; margin-bottom:10px; border:0px;}
+.cru_view_cont1_right2_foot1{width:100%;padding:10px 30px;  overflow:hidden}
+.cru_view_cont1_right2_foot1 p{line-height:140%}
+/* cruise view end */
+/* portIntroduction start */
+.cru_portintr_title{height:38px;padding:0px; width:920px}
+.cru_portintr_title_lef{width:200px; float:left;width:38px}
+.cru_portintr_title3{ background:#dddddd;color:#8C4600;font-size:14px;padding:10px 0px 0px 2px;width:198px;height:27px; border-bottom:1px #ccc solid;}
+.cru_portintr_title_rig{width:720px; float:right; border-bottom:3px #8C4600 solid;height:35px}
+.cru_portintr_title1{ float:left;}
+.cru_portintr_title1 a{ background:#8C4600;color:#fff;padding:0;font-size:12px;padding:10px 15px 0px 15px;width:auto;height:25px; float:left; text-decoration:none; font-weight:bold;}
+.cru_portintr_title1 span{background:url(/images/cruisePorts/por_ri_bg.jpg) no-repeat; height:35px; width:20px; float:left;}
+.cru_portintr_title2{ float:left;}
+.cru_portintr_title2 a{ background:#ddd;color:#8C4600;font-size:12px;padding:10px 15px 0px 15px;width:auto;height:25px; float:left; text-decoration:none; font-weight:bold}
+.cru_ml10{margin-left:10px}
+.cru_portintr_title2 a:hover{ background:#8C4600;color:#fff;font-size:12px;padding:10px 15px 0px 15px;width:auto;height:25px;text-decoration:none; font-weight:bold}
+.cru_portintr_cont1_left{width:200px; float:left}
+.cru_portintr_cont1_left1{ border:1px #ccc solid; border-top:none;width:198px;}
+.cru_portintr_cont1_left1 ul li{ border-bottom:1px #ccc dashed ;}
+.cru_portintr_cont1_left1 ul li a{ color:#333; text-decoration:none;background:#fff;width:188px; display:block; padding:7px 0px 8px 10px;}
+.cru_portintr_cont1_left1 ul li a:hover{ background:#eee;width:188px;display:block; padding:7px 0px 8px 10px;}
+.cru_portintr_cont1_left1 .selected1 { background: none repeat scroll 0 0 #eee;display: block; padding: 5px 0 10px 10px;width: 188px;}
+.cru_portintr_cont1_left1_tit{ background:#8C4600;width:198px;height:30px;}
+.cru_portintr_cont1_bg{ background:#999999;width:7px;height:30px;margin-right:5px; float:left}
+.cru_portintr_cont1_tit1{ font-size:13px;color:#fff; font-weight:bold;line-height:30px}
+.cru_portintr_content_right_int p{ color:#333; line-height:170%}
+.cru_portintr_txt1{ font-size:13px; font-weight:bold; color:#333;}
+.cru_portintr_txt2{ line-height:150%;color:#333}
+.cru_portintr_content_right_img ul li{ float:left; margin-right:0px}
+.cru_view_line2{width:680px;height:1px; border-top:1px #ccc dashed;margin-top:10px; clear:both; overflow:hidden}
+
+/* portIntroduction end */
+.cru_portexc_cru{width:680px; clear:both; padding:10px 0px; overflow:hidden}
+.cru_portexc_cru a{color:#3F49CB; text-decoration:none;padding:0px 0px 0px 10px;line-height:180%}
+.cru_portexc_cru a:hover{color:#3F49CB; text-decoration:underline;}
+
+/* cruiseFaq start */
+.cru_faq_content_right{ float:right;width:708px}
+.cru_faq_title{height:38px;padding:0px; width:708px}
+.cru_faq_title_txt{ background:#cccccc;color:#8C4600;padding:0;font-size:14px;padding:10px 15px 0px 15px;width:auto;height:25px; float:left}
+.cru_faq_title span{background:url(/images/cruisePorts/port_newfaqbg.jpg) no-repeat; height:35px; width:10px; float:left;}
+.cru_faq_title_line{width:708px;height:3px; background:#8C4600; clear:both}
+.cru_faq_content_right1_cont{ width:707px; border-right:1px #ccc solid;border-bottom:1px #ccc solid; overflow:hidden; clear:both}
+.cru_portintr_cont1_left1 .selected1{ background:#eee;width:188px;display:block; padding:5px 0px 10px 10px; padding:5px 0px 10px 10px;}
+.cru_faq_content_right1_pad{width:697px; padding:10px 10px 20px 0px; overflow:hidden}
+.faq-list{ width:100%; height:auto; float:left; padding-top:5px;}
+.faq-list a{ text-decoration:none}
+.faqname{ width:100%; height:auto; float:left; margin-top:8px; padding-bottom:5px;}
+.faqname span{width:683px; height:auto; float:left; background:url(/images/cruisePorts/libg2.jpg) left center no-repeat; padding-left:28px; display:block;}
+.faqname a{ background:url(/images/cruisePorts/abg.jpg) right center no-repeat; color:#5b5857; padding-right:14px;}
+.faqname a:hover,.faqname a.dq{ color:#ff3000; background:url(/images/cruisePorts/ahover.jpg) right center no-repeat;}
+.faqdesc{ width:675px; height:auto; float:left; background:#eee; overflow:hidden; border:1px solid #e1e1e1; padding:10px 8px; font-size:11px; line-height:18px;}
+/*.pager1 {text-align:right; width:100%; padding-bottom:15px;}
+.pager1 ul{float:right}
+.pager1 ul li {float: left;height: auto;padding: 0;border: 1px solid #999; color:#999; padding:5px 10px; margin:10px 5px;}
+.pager1 ul li a{ color:#333; text-decoration:none}
+.pager1 .selected{ background:#333;border: 1px solid #333;}
+.pager1 .selected a{ color:#fff;}
+*/
+/* cruiseFaq end */
+
+
+/* tianjin port start new */
+.port_focus{position:relative;width:920px;height:300px;margin:0px auto 0 auto;}  
+.port_focus img{width:920px;height:300px; border-radius:5px;} 
+.port_focus .shadow .title{width:260px;height:25px;padding-left:30px;padding-top:5px;}
+.port_focus .shadow .title a{text-decoration:none;color:#fff;font-size:14px;font-weight:bolder;overflow:hidden;}
+.port_focus .btn{position:absolute;bottom:34px;left:510px;overflow:hidden;zoom:1;} 
+.port_focus .btn a{position:relative;display:inline;width:13px;height:13px;border-radius:7px;margin:0 5px;color:#B0B0B0;font-size:12px;text-decoration:none;text-align:center;outline:0;float:left;background:#D9D9D9;}  
+.port_focus .btn a:hover,.focus .btn a.current{cursor:pointer;background:#fc114a;}  
+.port_focus .fPic{position:absolute;left:0px;top:0px;}  
+.port_focus .D1fBt{overflow:hidden;zoom:1;height:16px;z-index:10;}  
+.port_focus .shadow{width:100%;position:absolute;top:25px;left:15px;z-index:0;text-align:left;}  
+.port_focus .shadow a{text-decoration:none;color:#000;font-size:20px;overflow:hidden;margin-left:10px;}  
+.port_focus .fcon{position:relative;width:100%;float:left;display:none;}  
+.port_focus .fcon img{display:block;}  
+.port_focus .fbg{bottom:20px;right:420px;position:absolute;height:21px;text-align:center;z-index:200;}  
+.port_focus .fbg div{margin:4px auto 0;overflow:hidden;zoom:1;height:14px}    
+.port_focus .D1fBt a{position:relative;display:inline;width:12px;height:12px;border-radius:7px;margin:0 5px;color:#B0B0B0;font-size:12px;text-decoration:none;text-align:center;outline:0;float:left;background:#ccc;}    
+.port_focus .D1fBt .current,.focus .D1fBt a:hover{background:#CC0000;}    
+.port_focus .D1fBt img{display:none}    
+.port_focus .D1fBt i{display:none;font-style:normal;}    
+.port_content{ width:920px; margin:0 auto; padding-top:10px;}
+.port_content_lef{ width:210px; float:left;}
+.port_content_lef1_tit{ width:210px; background:#fff; padding:0px; border:none;border-bottom:3px #8C4600 solid; height:35px; overflow:hidden}
+.port_content_txt1 img{ padding:0 10px 0 15px;}
+.port_content_txt1{ font-size:16px; color:#8C4600; font-weight:bold; line-height:35px;}
+.port_content_namebg{ background:url(/images/cruisePorts/port_namebgr.jpg) no-repeat;width:10px; height:31px; float:right;}
+.port_content_cruisename{ width:210px; height:auto; float:right}
+.port_content_cruisename ul{ width:100%; height:auto; float:left; padding-bottom:10px;}
+.port_content_cruisename ul li{ width:210px;height:36px;float:left; display:block; line-height:35px;padding-left:5px;color:#000;background:url(/images/cruisePorts/cruise_namebg1.jpg) no-repeat; cursor:pointer}
+.port_content_cruisename ul .dq{color:#fff; font-weight:bold; background:url(/images/cruisePorts/cruise_namebg2.jpg) no-repeat; float:left;width:210px;height:36px;}
+.port_content_lef2{ width:188px; border:1px #ddd solid; padding:10px 5px; background:#fff; clear:both}
+.port_content_lef2_name{ font-size:16px; text-align:center; font-weight:bold;color:#8C4600; border:none; border-bottom:1px #eee solid; padding-bottom:5px;}
+.port_content_lef2_cont ul{padding-top:10px; clear:both}
+.port_content_lef2_cont ul img{border-radius:5px;}
+.port_content_lef2_conta{ width:90px; float:left; position:relative;}
+.port_content_lef2_contb{ width:93px; float:right}
+.port_content_lef2_contb p{ padding-bottom:8px;}
+.port_content_lef2_contb p a{ color:#3366cc;}
+.glright {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    border-radius: 4px 4px 0 0;
+    color: #fff;
+    font-size: 12px;
+	font-weight:bold;
+    margin: 0;
+    padding: 2px 0 2px 5px;
+    position: absolute;
+    top: 0;
+	left:0;
+    width:85px;
+    z-index: 10;}
+.port_content_rig{ width:710px; float:right;}
+.port_content_city{ background:#fff; padding:0px; height:35px; width:710px; border:none;border-bottom:3px #8C4600 solid; position:relative;}
+.port_content_city ul{ padding-left:5px}
+.port_content_city ul li{ float:left;line-height:35px; padding:0 9px; color:#333; position:relative; display:block; cursor:pointer;}
+.port_content_city ul li a{ font-size:15px; color:#000; text-decoration:none}
+.port_content_city ul li span{}
+.port_content_city ul li.selected span{ background:url(/images/cruisePorts/port_namebg.jpg) no-repeat; width:15px; height:10px;position: absolute;top:28px; left:50px; margin:0;}
+.port_content_city ul li.selected a{ color:#8C4600}
+.port_content_cont{ width:685px; background:#fff; margin-left:5px; padding:0 10px}
+.port_content_conttit{ padding:15px 0px 0px 0px; width:685px;}
+.cont_tit{ font-size:13px; color:#000;float:left; font-weight:bold;}
+.cont_cal{float:right;}
+.cont_cal a{font-size:12px;color:#000; font-weight:bold; text-decoration:none}
+.cont_cal a:hover{ text-decoration:underline}
+.port_content_contpro{ padding:10px 0; width:685px; border:none; border-bottom:1px #ddd dashed; overflow:hidden}
+.port_img{ float:left; width:150px;}
+.port_protit{ float:left; width:400px; margin-left:10px;}
+.port_protit p{ color:#444; padding-bottom:5px}
+.port_protit_txt1 a{color:#3366cc;}
+.port_prosub{ float:right; width:110px; margin-top:15px;}
+.port_procol{padding:8px 0;}
+.port_procol1{ color:#8E0E0E; font-size:14px; margin-left:5px; font-weight:bold}
+.port_procol2{ color:#666; font-size:12px;}
+
+.questions{ width:705px; height:auto; float:left; margin-top:20px; margin-left:5px}
+.ques-menu{ width:100%; height:42px; float:left; background:#e6e6e6;}
+.ques-menu ul{ width:100%; height:auto; float:left;}
+.ques-menu ul li{ width:190px; line-height:42px; float:left; font-size:16px; display:block; color:#212121; text-align:center; font-weight:bold; cursor:pointer; margin-right:3px;}
+.ques-menu ul li.dqa,.ques-menu ul li:hover{ background:#fff; color:#8c4600;}
+.trip-questuon,.common-questuon{ width:685px; height:auto; float:left; background:#fff; padding:15px 10px 15px 10px; color:#333333; line-height:18px;}
+.common-questuon{padding:5px 10px 15px 10px;}
+.tripleft{ width:420px; height:auto; float:left;}
+.answer{ width:100%; height:auto; float:left;}
+.answer ul{ width:100%; height:auto; float:left; margin-top:10px;}
+.answer ul.ff{ width:420px; height:auto; float:left; margin-top:10px;}
+.common-questuon .answer ul.ff li{ width:357px; height:auto; float:left; display:block; background:url(/images/citytours/hi.jpg) left top no-repeat; padding:0px 0px 5px 54px;}
+.answer ul li{ width:356px; height:auto; float:left; display:block; background:url(/images/citytours/hi.jpg) left top no-repeat; padding:0px 0px 5px 54px; color:#8c4600;}
+.answer ul li.advisor,.answer ul.ff li.advisor{background:url(/images/citytours/advisor.jpg) left top no-repeat; color:#333;}
+/*  .answer ul li span{ color:#8c4600;}  */
+.common-questuon .answer ul li{ width:636px;}
+
+.tripright{ width:270px; height:auto; float:right; background:#ddd; padding:7px 0px 10px 0px; margin-top:8px;}
+.tripright h2{ width:100%; height:34px; background:#095ab7; color:#fff; font-size:16px; font-weight:normal; line-height:34px; text-align:center; display:block; float:left;}
+.tripright table{ width:250px; height:auto; margin:4px auto;}
+.tripright table tr td{ padding:5px 0px; color:#515151;}
+.tripright table tr td input{ border:1px solid #b5b5b5; width:168px; float:right;}
+.tripright table tr td span{ float:left;}
+.tripright table tr td textarea{ width:248px; height:90px; border:1px solid #b5b5b5;}
+/* tianjin port end new */
+
+/* shanghai port excursions celebrity cruise start */
+.shp_content{ width:920px; margin:0 auto;padding:0px; font-family:Verdana, Geneva, sans-serif; font-size:12px;overflow:hidden;}
+.shp_banner{position:relative; margin-top:5px;}
+.shp_banner img{border-radius: 4px;}
+.glright1{background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);border-radius: 4px 4px 0 0;color: #fff;font-size: 24px;margin: 0;padding: 3px 0 3px 0px;position: absolute;top: 0;left:0;width:920px; text-align:center}
+#shp_tab{ margin-top:15px; border-bottom:3px #8C4600 solid; width:920px; height:32px;}
+#shp_tab ul li{ padding:0 20px; background:#8C4600; margin-left:5px; font-size:16px; color:#fff; float:left; height:32px; line-height:35px;border-radius: 4px 4px 0 0; cursor:pointer}
+.shp_tab1 a{font-size:16px; color:#fff; text-decoration:none}
+#shp_tab ul li.shp_dq{ background:#fff; border:2px #8C4600 solid; border-bottom:none; padding-bottom:1px;border-radius: 4px 4px 0 0; color:#8C4600 ;}
+.shp_tab1{ padding:0 20px; background:#8C4600; margin-left:5px; font-size:16px; color:#fff; float:left; height:32px; line-height:35px;border-radius: 4px 4px 0 0; cursor:pointer}
+
+#c01,#c02{ width:900px;height:auto; padding:10px;}
+.shp_txt{ padding:10px 0 0 0;}
+.shp_txt p{ font-size:13px; color:#333; line-height:180%}
+.shp_list{ width:866px; border:1px #ccc solid;border-radius: 4px; background:#fff url(/images/cruisePorts/shanghaiport_bg1.jpg) bottom repeat-x; padding:15px;-webkit-box-shadow: 3px 3px 3px #c9c9c9;-moz-box-shadow: 3px 3px 3px #c9c9c9;box-shadow: 3px 3px 3px #c9c9c9; overflow:hidden; margin-top:30px;}
+.shp_listl{ width:165px; float:left}
+.shp_listl img{ border: 1px #ddd solid; padding:5px}
+.shp_listr{ width:675px; float:right}
+.shp_listr_txt1{ width:675px;line-height:150%;}
+.shp_listr_txt1a{ width:580px; float:left}
+.shp_listr_txt1a a{ font-size:15px; color:#8C4600; text-decoration:none; font-weight:bold}
+.shp_listr_txt1a a:hover{ text-decoration:underline}
+.shp_listr_txt1b{ width:80px; float:right; font-size:11px; color:#666}
+.shp_listr_txt1b a{color:#C00; font-weight:bold; text-decoration:none}
+.shp_listr_txt2{ width:675px; padding-top:5px; line-height:150%; color:#333;}
+.shp_listr_txt2a{ width:80px; float:left; font-weight:bold}
+.shp_listr_txt2b{ width:580px; float:right}
+.shp_ques{ background:#eee; margin:35px 10px 15px 10px; width:880px; padding:10px; position:relative;height:400px;}
+.shp_quesl{ width:232px; float:left; background:url(/images/cruisePorts/shp_img2.png) no-repeat; height:239px; position:absolute; left:20px; top:-15px}
+.shp_quesr{ width:615px; float:right; padding-top:15px;}
+.shp_quesr_txt{ line-height:150%; font-size:13px; color:#333}
+.shp_quesr_name{ padding:10px 0 0 0; overflow:hidden}
+.shp_quesr_name1{ width:125px; float:left}
+.shp_quesr p{ padding:3px 0;}
+.shp_rep{ color:#C00}
+.shp_quesr_name select{ border:1px #ccc solid; padding:3px;font-family:Verdana, Geneva, sans-serif; width:120px;margin-top:2px;}
+.shp_quesr_name input{ border:1px #ccc solid; padding:3px;font-family:Verdana, Geneva, sans-serif; width:210px;margin-top:2px;}
+.shp_quesr_name2{ width:220px; float:left; margin-left:15px;}
+.shp_quesr_plans{ padding:10px 0 0 0;}
+.shp_quesr_plans textarea{ border:1px #ccc solid; padding:3px;font-family:Verdana, Geneva, sans-serif; width:590px; height:120px;margin-top:2px;}
+
+
+/* Tianjin Port Beijing Shuttle Bus */
+.tjbus_conttop{ padding:10px 0 0 0; width:920px;}
+.tjbus_conttopl{ float:left; width:618px;}
+.tjbus_conttopl h2{ font-size:20px; color:#000; font-weight:normal}
+.tjbus_conttopl p{ font-size:12px; color:#333; line-height:150%; padding-top:5px}
+.tjbus_conttopl p a{ color:#36C}
+.tjbus_conttopr{ float:right; width:292px; padding:20px 0 0 0;}
+.tjbus_conttopr img{border-radius:5px;}
+.shadow1{box-shadow:0 6px 8px -6px rgba(0, 0, 0, 0.4);}
+.tjbus_tab{ padding-top:15px;}
+.tjbus_tab table{ margin:0 auto; background:#fff;}
+.tjbus_tab table tbody tr:nth-child(2n+1) {background: none repeat scroll 0 0 #f5f5f5;}
+.tjbus_tab table .date1{ border-right:none; border-bottom:none}
+.tjbus_tab table .date2{ border-right:none;}
+.tjbus_tab table .check1{border-bottom:none}
+.tjbus_tab table .check2{border:1px #ddd solid; text-align:center; font-size:16px; font-weight:bold; color:#8C4600}
+.tjbus_tab table th{ background:#fff;border:none;padding:7px 10px; text-align:left}
+.tjbus_tab table td{ padding:8px 10px; border:1px #ddd solid; color:#333;}
+.tjbus_tab table td a{ color:#3366cc}
+.tjbus_tab table td a:hover{ color:#3366cc; text-decoration:underline}
+.tjbus_map{ padding-top:20px; margin:0 auto; width:772px; text-align:center; font-size:14px;}
+.tjbus_bho{padding-top:10px;}
+.tjbus_bho p{ line-height:145%; color:#333; padding:5px 0 0 15px;}
+.tjbus_bho h3{ font-size:14px; font-weight:bold; color:#333}
+.tjbus_bho_img{padding:10px 0 0 15px;}
+.tjbus_bho_img ul li{ float:left; width:417px;}
+.tjbus_bho_img img{border-radius:5px; border:1px #ddd solid}
+.tjbus_ml{ margin-left:30px;}
+.tjbus_ques{ background:#eee; margin:35px 0px 15px 0px; width:900px; padding:10px 10px 15px 10px; position:relative; float:left; height:auto}
+.tjbus_quesl{ width:232px; float:left; background:url(/images/cruisePorts/shp_img2.png) no-repeat; height:239px; position:absolute; left:30px; top:-15px;}
+.tjbus_quesr{ width:625px; float:right; padding-top:15px;}
+.tjbus_trans{ width:625px; padding:10px 0 0 0; overflow:hidden}
+.tjbus_trans1{ width:250px; float:left}
+.tjbus_trans select{ border:1px #ccc solid; padding:3px;font-family:Verdana, Geneva, sans-serif; width:248px; margin-top:2px;}
+.tjbus_trans input{ border:1px #ccc solid; padding:3px;font-family:Verdana, Geneva, sans-serif; width:150px; margin-top:2px;}
+.tjbus_trans2{ width:160px; float:left; padding-left:15px}
+
+

@@ -3997,7 +3997,7 @@ background-color:transparent
 	padding:5px 14px;
 	background-color:#fff;
 	border:1px solid #ddd;
-	border-radius:15px
+	border-radius:4px
 }
 .pager li>a:focus, .pager li>a:hover{
 	text-decoration:none;
