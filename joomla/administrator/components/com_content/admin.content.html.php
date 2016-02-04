@@ -552,7 +552,7 @@ class ContentView
 		echo "var cidStr='';";
 	}
 	?>
-		var url = "../index.php?option=com_getcity&pid=" + escape(pid)+cidStr;
+		var url = "/ajaxdata/getcity.php?pid=" + escape(pid)+cidStr;
 	 }else{
 	<?php
 		
@@ -566,7 +566,7 @@ class ContentView
 		echo "var cidStr='';";
 	}
 	?>
-		var url = "../index.php?option=com_getcity&pid=" + escape(pid)+cidStr;
+		var url = "/ajaxdata/getcity.php?pid=" + escape(pid)+cidStr;
 		
 	}
 
