@@ -27,6 +27,11 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
+		// seo
+		$k='china travel, china tours, travel china, china travel agent';
+		$t='China Tours, China Travel, China Travel Agent';
+		$d='China Travel Agent offering China Tours, Yangtze Cruise Travel, China Flights, China Hotels Booking and huge China Travel Guide Info.';
+		Seo::_seo($this,$t,$k,$d);
 		$this->render('index');
 	}
 	/**

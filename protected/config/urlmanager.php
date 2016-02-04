@@ -10,6 +10,8 @@ return array(
 			'travel/best-china-tours/'	=> 'bestChinaTours/index',
 			//family tours;
 			'travel/family-tours/' =>'familyTours/index',
+
+			
 			// tours detail page;
 			'travel/<name:.*>-<id:\d+>.html'  =>'toursDetail/index',
 			//order
@@ -38,12 +40,15 @@ return array(
 			  //destinations;
 			  '/travel/city-tours/'=>'destions/index',
 			  '/travel/city-<city_name:.*>-tours/'=>'destions/cityToursCommon',
-			  '/travel/beijing-xian-tours/'=>'destions/beijingToXian',
+			  '/travel/<city_name:.*>-tours/'=>'destions/sideTrips',
 			// port
 			  '/travel/port/'=>'port/index',
 			  '/travel/cruise-port/<city_name:.*>-excursion-<id:\d+>' => 'port/PortExcursion',
 			  '/travel/cruise-port/<name:.*>-port-introduction-<id:\d+>' => 'port/portIntroduction',
 			  '/travel/international-cruise/<name:.*>-<id:\d+>' => 'port/CruiseView',
+			// things
+			'/travel/things/'	=>'content/index',
+
 			// original;
 			'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 			'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',

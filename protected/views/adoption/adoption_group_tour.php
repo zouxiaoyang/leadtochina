@@ -52,6 +52,9 @@
                 The original Summer Palace was built for celebrtaing the birthday of Emperor Qianlongs' in Qing Dynasty (1644-1911) but burnt down by Anglo-French allied forces in 1860. Rebuilt in 1888 by Empress Dowager Cixi but destroyed by the Eight Power Allied Forces in 1900. What you can see was rebuilt since 1903 though some architectures are destroyed forever. It is the largest preserved imperial garden and a former summer retreat for emperors. the 726.5 acres' area and three quarters water, Summer Palace is a perfect example of refined craftwork with finest materials, Longevity Hill, Kunming Lake etc with over 3,000 structures: pavilions, towers, bridges, corridors etc.</p>
               <p class="adoptionIti_cont1_txta"><span class="adoptionIti_cont1_txt1">[ Silk Tourist Shop ]</span><br>
                 Silk refers to the Chinese traditional products first produce in China. Its products open the first trading between East and West in large scale. So people come to Beijing will visit the original silk culture by visit the Silk Tourist Shop. You can buy Chinese Qipao for your child.</p>
+			<p class="adoptionIti_cont1_txta"><span class="adoptionIti_cont1_txt1">[ Peking Roast Duck ]</span><br>
+                With its long history, Peking roast duck is well known among both domestic and overseas customers. The duck is hung in the oven and roasted by flame burning from fruit-wood. It takes about 45 minutes for the duck to be done. The finished duck is characteristic with crispy skin, tender meat and the fragrance from the fruit-wood.
+</p>
               <p class="adoptionIti_cont1_txta"><span class="adoptionIti_cont1_txt1">[ Kungfu Show ]</span><br>
                 Kungfu (Wushu or martial arts) is one of the Chinese ancient traditional sports and valuable Chinese cultural heritage. It is very rich in form and content, encompassing hundreds of styles and thousands of routines. Legend Kungfu Show has many and impressive hard Qigong performance inserted, such as Lie on the nails board, break stone on chest, throat breaks spear. It is very popular for children.</p>
             </div>
@@ -96,7 +99,7 @@
         <div class="clear"></div>
         <div class="adoptionIti_cont1_day">
           <div class="adoptionIti_cont1_map1">
-            <p>Day 5: Xian Day Tours (B,L)</p>
+            <p>Day 5: Xian Day Tours (B,L,D)</p>
           </div>
           <div class="adoptionIti_cont1_daya">
             <div class="adoptionIti_cont1_daya_txt2">
@@ -106,8 +109,8 @@
                 Situated in front of Terracotta Warriors Museum, the Xian Art Ceramics and Lacquer Factory is a factory reproduces Qin Terracotta Warriors and Horses and lacquer ware products. It is one of mustsee and interesting shop, you can DIY their own models of Terracotta Warriors here, the steps usually following the trip of the real Terracotta Warriors. Besides taking delight in the hand-making work, you can also have a tour around the factory and see how terracotta models are made.</p>
               <p style="line-height:160%" class="adoptionIti_cont1_txt"><span class="adoptionIti_cont1_txt1">[ Muslim Quarter ]</span><br>
                 Located to the north of the West Street in the city center, Xian Muslim Quarter is the hub of the Muslim community in Xian City. Here covers several blocks inhabitated over 20,000 Muslims. The world famous Great Mosque locates here. Walking along this twisted, narrow street, you will find numerous artwork stalls and the Muslim men with white hats sit inside it and talk leisurely with each other. Meanwhile, more and more tourists are coming here for the delicious snacks, such as preserved meat, casserole, various noodles, and so on. Besides, if you want to buy souvenirs, no place is better than here. </p>
-              <p style="line-height:160%" class="adoptionIti_cont1_txt"><span class="adoptionIti_cont1_txt1">[ Tang Dynasty Dance Show ]</span><br>
-                As an art form, the show has its roots in folk fetes, praying for a good harvest or a better life, stories about Emperors. By combining poetry with the skilled playing of musical instruments, singing, dancing and also stunning costumes, the modern presentation is certain to give you an impressive view of ancient China including its splendid history, brilliant arts, distinct traditions and customs. Besides, Xian does have many places to enjoy the Tang Dynasty Music and Dance Show, such as Tang Dynasty Palace (Tang Yue Gong), Tang Paradise, Theater in Grand New World Hotel, Shaanxi Song &amp; Dance Theater, Sunshine  Lido grand theater and Live Singing and Dancing Show in Huaqing Hot Spring. </p>
+              <p style="line-height:160%" class="adoptionIti_cont1_txt"><span class="adoptionIti_cont1_txt1">[ Dumpling Banquet and Tang Dynasty Show ]</span><br>
+                Your evening experience in Xi'an begins with a feast of local dumplings, nearly 20 varieties that are steamed and stuffed with a delicious assortment of vegetables, meats and seafood. But the banquet is only the prelude to another feast for the senses. You'll experience the local color and pageantry of the Tang Dynasty Show. The performance showcases the music, dance and colorful costumes that have graced the region for centuries. The dinner and entertainment lasts for two and half hours and will fill a memorable evening in the walled city.</p>
             </div>
             <div class="adoptionIti2_cont1_daya_img4"></div>
           </div>
@@ -140,6 +143,9 @@
             <div class="adoptionIti_cont1_daya_txt2">
               <p class="adoptionIti_cont1_txta"><span class="adoptionIti_cont1_txt1">[ Chengdu Panda Breeding Research Base ]</span><br>
                 Located in northern suburb of Chengdu, 10 km away from the urban area, the Chengdu Panda Breeding Research Base was built for saving giant pandas originally. Here also breeds some red pandas, black-necked cranes, white storks and white swans, black swans, geese, ducks and peacocks and other animals. The Giant Panda Museum inside it is the world's only museum that focuses entirely on the critically endangered giant panda. Inside the museum, on display all kinds of valuable information in Figure 800 pieces of photos, showing the main types of samples collected from Sichuan; the museum also exhibits books and scientific literature that authors around the world have written about giant pandas throughout history.</p>
+				<p class="adoptionIti_cont1_txta"><span class="adoptionIti_cont1_txt1">[ Jinsha Site Museum ]</span><br>
+                Jinsha Site was discovered in 2001, it represents the glorious culture of Ancient Shu Kingdom during Shang and Zhou Dynasty. Jinsha Site Museum located in Jinsha Village, is just 5 km away from the downtown Chengdu, it is the central site in Shang and Zhou Dynasties, including sacrifice places, large constructions, residential area, burial ground, etc.  It is called the most important archeological discovery in the Twenty-First Century and is the National Relic Protection Unit in Chinese.  
+</p>
             </div>
             <div class="adoptionIti2_cont1_daya_img6"></div>
           </div>

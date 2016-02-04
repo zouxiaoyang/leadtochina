@@ -15,9 +15,12 @@
           <ul id="myTab" class="nav nav-tabs">
             <li class="active"> <a href="#itinerary" data-toggle="tab">itinerary</a> </li>
 			<?php 
+			
 				$arr_price = unserialize($ress['price_serialize']);
-				$arr_price = array_filter($arr_price);
-				if(!empty($arr_price)):
+				if($arr_price){
+					$arr_price = array_filter($arr_price);
+				}
+				if(isset($arr_price) && !empty($arr_price)):
 			?>
 				<li><a href="#price" data-toggle="tab">price</a></li>
 			<?php endif;?>

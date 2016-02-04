@@ -36,6 +36,10 @@
 			$dalian = Yii::app()->createUrl('port/PortExcursion',array('city_name'=>'dalian-port','id'=>7));
 			$xiamen = Yii::app()->createUrl('port/PortExcursion',array('city_name'=>'xiamen-port','id'=>11));
 			$hongkong = Yii::app()->createUrl('port/PortExcursion',array('city_name'=>'hong-kong-port','id'=>13));
+			// beijing ->xian 
+			$beijingtoxian = Yii::app()->createUrl('destions/sideTrips',array('city_name'=>'beijing-xian'));
+			// shanghai ->xian 
+			$shanghaitoxian = Yii::app()->createUrl('destions/sideTrips',array('city_name'=>'shanghai-xian'));
 	  ?>
         <?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
@@ -54,7 +58,16 @@
 					)
 				),
 
-				array('label'=>' DESTINATIONS', 'url'=>array('/travel/city-tours/')),
+				array('label'=>' DESTINATIONS', 'url'=>array('/travel/city-tours/'),
+						'items'=>array(
+							array('label'=>'Beijing Xian Tours', 'url'=>array(
+								$beijingtoxian
+						)),
+						array('label'=>'Shanghai Xian Tours', 'url'=>array(
+							$shanghaitoxian
+						)),
+						)
+					),
 
 				array('label'=>'HERITAGE TOURS', 'url'=>array('/travel/adoption/'),
 					'items'=>array(

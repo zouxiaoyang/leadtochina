@@ -12,7 +12,7 @@ class DestionsController extends Controller
 	}
 	public function actionCityToursCommon(){
 		$city_name = addslashes($_GET['city_name']); 
-		$sql="select `id`,`title`,`description`,`trip_notes`,`seo_title`,`seo_key`,`seo_description` from `jos_categories` where `parent_id`=0 and `title` like '".$city_name."%'";
+		$sql="select `id`,`title`,`description`,`trip_notes`,`seo_title`,`seo_key`,`seo_description` from `jos_categories` where `parent_id`=0 and (`title` like '".$city_name."%' or `city` like '".$city_name."%' or `title_slug` like '".$city_name."%')";
 		$res =  Yii::app()->db->createCommand($sql)->queryRow();
 		if(!empty($res)){
 			$parent_id  = $res['id'];
@@ -69,9 +69,39 @@ class DestionsController extends Controller
 
 // beijing to xian ;
 
-	public function actionBeijingToXian(){
+	public function actionSideTrips(){
+		//seo:
+		$city = addslashes(trim($_GET['city_name']));
+		$city = strtolower($city);
+		switch($city){
+			case 'beijing-xian':{
+				$t='Xian Tours from Beijing, Beijing to Xian Tours, Travel Tours from Beijing to  Xian';
+				$k='xian tours from beijing, beijing to xian tours, tours from beijing to xian,  travel from beijing to xian';
+				$d='Here we are offering you 1-8 days Beijing to Xian Tours, Xian tours from Beijing, Xian Terra Cotta Warrior tours, Beijing city &amp; side tour with lowest price.';
+				}
+				Seo::_seo($this,$t,$k,$d);
+				$this->render('beijingtoxian');
+				break;
+			case 'shanghai-xian':{
+				$t='Shanghai Xian Tour, Xian Tours from Shanghai, Shanghai and Xian Tour Packages';
+				$k='shanghai xian tour, xian tours from shanghai, shanghai tour from xian, shanghai and xian tour packages';
+				$d='1-8 days Shanghai &amp; xian tours by Flight, Xian tours from Shanghai by train/ flight, Shanghai city and side tours from Xian and customize service.';
+			}
+			Seo::_seo($this,$t,$k,$d);
+			$this->render('shanghaitoxian');
+			break;
+
+			default:break;	
+		}
+		
+
+		
+
+		
+	}
+	public function actionShanghaiToXian(){
 	
-		$this->render('beijingtoxian');
+		$this->render('shanghaitoxian');
 	}
 	protected function errorPage(){
 		echo '404 not Found!'; 
