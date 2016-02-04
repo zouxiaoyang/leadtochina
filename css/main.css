@@ -1094,23 +1094,22 @@ div.search-form
 
 
 
-.page-title01{border-bottom: 1px solid #eee; margin: 40px 0 20px; padding-bottom: 9px; color:#d56d21; font-size:36px; text-align:center;}
-.page-title02{border-bottom: 2px solid #d56d21; margin: 40px 0 20px; padding-bottom: 9px; color:#d56d21; font-size:36px; text-align:center;}
-.page-title03{border-bottom: 1px solid #eee; margin: 10px 0 20px;padding-bottom: 9px; color:#555; font-size:35px; font-weight:normal; }
-.page-title04{ margin: 30px 0 20px; padding-bottom: 9px; color:#555; font-size:27px; }
-.page-title05{ margin: 40px 0 0px; padding-bottom: 9px; color:#343434; font-size:28px; font-weight:300;}
-.page-title06{ margin: 30px 0 20px;padding-bottom: 9px; color:#555; font-size:14px;}
-.page-title07{padding-bottom: 9px; color:#555; font-size:23px;}
-.page-title08{padding: 10px 0;  font-size:32px; color:#d56d21;}
-.page-title09{ font-size:20px; margin-top:30px;}
-.page-title10{border-bottom: 1px solid #eee; margin: 30px 0 20px;padding-bottom: 9px; color:#d56d21; font-size:35px; font-weight:300; }
-.page-title11{border-bottom: 1px solid #eee; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-size:35px; font-weight:300; }
-.page-title12{border-bottom: 2px solid #d56d21; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-size:35px; font-weight:300; }
-.page-title13{ margin: 60px 0 40px; font-size:36px; font-weight:300; text-align:center; }
-.page-title14{border-bottom: 1px solid #d7d7d7; padding: 40px 0 30px;font-size:36px; text-align:center;font-weight:300;}
-.page-title15{padding: 10px 0;  font-size:32px; color:#343434;}
-.page-title16{border-bottom: 1px solid #eee; margin: 30px 0 20px;padding-bottom: 9px;  font-size:35px; font-weight:300; }
-
+.page-title01{font-size:36px;border-bottom: 1px solid #eee; margin: 40px 0 20px; padding-bottom: 9px; color:#d56d21;  text-align:center;}
+.page-title02{font-size:36px; border-bottom: 2px solid #d56d21; margin: 40px 0 20px; padding-bottom: 9px; color:#d56d21;text-align:center;}
+.page-title03{font-size:35px; border-bottom: 1px solid #eee; margin: 10px 0 20px;padding-bottom: 9px; color:#555;font-weight:normal; }
+.page-title04{font-size:26px;margin: 30px 0 20px; padding-bottom: 9px; color:#555;  }
+.page-title05{font-size:28px; margin: 40px 0 0px; padding-bottom: 9px; color:#343434; font-weight:300;}
+.page-title06{font-size:14px;margin: 30px 0 20px;padding-bottom: 9px; color:#555; }
+.page-title07{font-size:23px;padding-bottom: 9px; color:#555; }
+.page-title08{font-size:32px;padding: 10px 0;   color:#d56d21;}
+.page-title09{font-size:20px; margin-top:30px;}
+.page-title10{font-size:35px;border-bottom: 1px solid #eee; margin: 30px 0 20px;padding-bottom: 9px; color:#d56d21;  font-weight:300; }
+.page-title11{font-size:35px; border-bottom: 1px solid #eee; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-weight:300; }
+.page-title12{font-size:35px;border-bottom: 2px solid #d56d21; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-weight:300; }
+.page-title13{font-size:36px; margin: 60px 0 40px;font-weight:300; text-align:center; }
+.page-title14{font-size:36px;border-bottom: 1px solid #d7d7d7; padding: 40px 0 30px; text-align:center;font-weight:300;}
+.page-title15{padding:10px 0;  font-size:32px; color:#343434;}
+.page-title16{font-size:35px;border-bottom: 1px solid #eee; margin: 30px 0 20px;padding-bottom: 9px;   font-weight:300; }
 .lead02{ font-size: 17px;line-height: 1.4; margin: 15px 0 30px;}
 
 
@@ -2463,16 +2462,16 @@ div.buttons input:hover{background: #898989; color:#fff;border: 1px solid #ccc;}
 }
 .cont_cal_block{ margin:10px 0 0;}
 
-.bestsell-block01{ border:1px solid #ddd; padding:4px; position:relative; margin:20px 0;}
+.bestsell-block01{ border:1px solid #ddd; padding:4px; position:relative; margin:20px 0 10px; height:408px;}
 .bestsell-block01 span.iconProm{ position:absolute;   display: block; height: 105px; left: -4px; top: -7px; width: 100px;}
 .bestsell-block01 ul{ padding:15px 9px; line-height:24px; margin:0;}
-.bestsell-block01 ul a{ font-weight:bold; color:#343434;font-size:16px;}
+.bestsell-block01 ul a{ font-weight:bold; color:#343434;font-size:15px;}
 .bestsell-block01 ul a:hover{ color:#00b7ea;}
 .bestsell-block01 ul li.price{}
 .bestsell-block01 ul li.price strong{ color:#d56d21; font-size:15px;}
 
-.beijing-xian-block01{ margin:15px 0;}
+.beijing-xian-block01{ margin:0 0 20px;}
 .beijing-xian-block01 img{ float:left; border:1px solid #ddd; padding:4px;}
 .beijing-xian-block01 .text-block{ float:left;width:66%; padding:0 0 0 20px;}
-.beijing-xian-block01 .text-block a{padding:0px 0 3px; display:block; font-size:18px;}
-.beijing-xian-block01 .text-block li{ padding:5px 0;}
+.beijing-xian-block01 .text-block a{padding:0px 0 3px; display:block; font-size:17px;}
+.beijing-xian-block01 .text-block li{ padding:6px 0;}
