@@ -20,7 +20,7 @@ return array(
 			 'order/china-diy-tours/'  =>'order/new_order',
 			 
 			 //reviews
-			 'travel/review/<tid:\d+>/<packageid:\d+>.html'  =>'reviews/index',
+			 'travel/pid/<packageid:\d+>/review/<tid:\d+>.html'  =>'reviews/index',
 			// adoption
 			  'travel/adoption/<id:\d+>'  =>'adoption/index',
 			  'travel/showMaps/<city_name:.*>/<id:\d+>'  =>'adoption/showMaps',

@@ -255,7 +255,7 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
 									<img src="/images/view/Reviews.jpg" style="width:106px;height:106px;"/>
 									<img src="/images/view/Reviews.jpg" style="width:106px;height:106px;"/>
 							<?php endif;?>	
-                             <span class="text01"><a href="#">Luxury Italy Vacation Review: Southern Italy, Sicily, Amalfi Coast</a></span>
+                             <!-- <span class="text01"><a href="#">Luxury Italy Vacation Review: Southern Italy, Sicily, Amalfi Coast</a></span>-->
                              <span class="text02">
                              	<a href="<?php echo Yii::app()->createUrl('reviews/index',array('tid'=>$key,'packageid'=>$ress['id']));?>"> "<?php echo (strlen(strip_tags($review['des']))>=150)?substr(strip_tags($review['des']),0,150).'...':strip_tags($review['des']);?></a>
                                  <a class="views-more-link" href="<?php echo Yii::app()->createUrl('reviews/index',array('tid'=>$key,'packageid'=>$ress['id']));?>"><?php echo (strlen(strip_tags($review['des']))>=150)?'read more':''; ?></a>

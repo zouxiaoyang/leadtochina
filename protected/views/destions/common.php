@@ -46,25 +46,5 @@
 			?>
 			</div>
 		</div>
-		<?php /*?><div class="city-article col-sm-3">
-			<span class=" page-title09 title01">Recommended Articles About Huangshan</span>
-			<ul>
-				<li class="clearfix">
-					<img  src="/images/article-img01.gif"  />
-					<p>the best and fast way is to take the flight</p>
-				</li>
-				<li class="clearfix">
-					<img  src="/images/article-img01.gif"  />
-					<p>the best and fast way is to take the flight</p>
-				</li>
-				<li class="clearfix">
-					<img  src="/images/article-img01.gif"  />
-					<p>the best and fast way is to take the flight</p>
-				</li>
-			</ul>
-		</div><?php */?>
-		
-		
-	</div>
-	
+	</div>	
 </div>

@@ -7,13 +7,18 @@
   </div>
   	<div class="col-sm-12 col-md-9">
       <div class="reviews-page-block" >
-      	<img src="/images/review-page-img01.jpg" />
+	  <?php 
+		if(!empty($pics)):
+	  ?>
+			<img width="170" height="187" src="<?php echo ImageUtils::getThumbnail('newadmin/images/reviews/'.$pics[0]['pic'],'170x187');?>" />
+		<?php endif;?>
         <div class="content01">
-        	<h3><?php echo $info['name'];?></h3>
+        	<h3>Reviews from <?php echo $info['review_name'];?></h3>
 			<p><span>TOUR TYPE:</span> <?php echo $info['package_tour_type'];?></p>
 			<p><span>CLIENT NAME:</span> <?php echo $info['review_name'];?></p>
             <p><span>NATIONALITY:</span> <?php echo $info['nationality'];?></p>
             <p><span>TOUR DATE:</span> <?php echo date('M d,Y',strtotime($info['dateline']));?></p>
+			<p>DESTINATIONS: <a href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe($info['name']),'id'=>$info['tour_id']));?>" title="<?php echo $info['name'];?>"><?php echo $info['name'];?></a></p>
         </div>
         <div class="clear"></div>
       </div>
@@ -24,22 +29,11 @@
         </ul>
         <div id="myTabContent" class="tab-content">
         	<div id="traveler-review" class="tab-pane fade active in">
-            	<i>what countries did you visit?</i>
-                <p>Italy</p>
-                <i>You overall comments on the trip and the travel company:</i>
-                <p>Great trip and it was enjoyed by all.</p>
-                <p>Congratulations! You have successfully created your Yii application.Congratulations! You have successfully 
-					created your Yii application.Congratulations! You have successfully created your Yii application.Congratulations!
-					 You have successfully created your Yii application.Congratulations! You have successfully created your 
-					Congratulations! You have successfully created your Yii application.</p>
-									<i>You overall comments on the trip and the travel company:</i>
-									<p>Congratulations! You have successfully created your Yii application.Congratulations! You have successfully 
-					created your Yii application.Congratulations! You have successfully created your Yii application.Congratulations!
-					 You have successfully created your Yii application.Congratulations! You hav</p>
+            	<p><?php echo $info['description'];?></p>
             </div>
             <div id="photos" class="tab-pane fade">
 				<?php foreach($pics as $pic){ ?>
-					<img src="/images/view/<?php echo $pic['pic'];?>" />
+					<img width="350" height="230" src="<?php echo ImageUtils::getThumbnail('newadmin/images/reviews/'.$pic['pic'],'350x230');?>" />
 				<?php } ?>
             </div>
         </div>
