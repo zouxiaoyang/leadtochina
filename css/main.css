@@ -347,13 +347,13 @@ div.search-form
 	float:left;
 	/*white-space:nowrap;*/
 }
-.main-banner .banner01 .font01{	width:60%;float:right;right:16%;top:12%;}
+.main-banner .banner01 .font01{	width:50%;float:right;right:16%;top:12%;}
 .main-banner .banner01 .font01 span{font-size:55px;color:#fff;font-family: "Open Sans",Arial,Helvetica,sans-serif;
     font-weight:300;
     letter-spacing: normal;}
-.main-banner .banner01 .font02{	width:47%;float:right;right:28%;top:29%}
+.main-banner .banner01 .font02{	width:44%;float:right;right:28%;top:29%}
 .main-banner .banner01 .font02 span{font-size:22px;	color:#fff;font-weight:300;}
-.main-banner .banner01 .font03{	width:40%;left:41%;top:45%}
+.main-banner .banner01 .font03{	width:40%;left:42%;top:45%}
 .main-banner .banner01 .font03 span{border: 2px solid #fff;
     border-radius: 6px;
     color: #fff;
@@ -373,11 +373,11 @@ div.search-form
     padding-top: 7px;
 }
 
-.main-banner .banner02 .font01{	width:60%;float:right;right:16%;top:12%;}
+.main-banner .banner02 .font01{	width:48%;float:right;right:16%;top:12%;}
 .main-banner .banner02 .font01 span{font-size:55px;color:#fff;font-family: "Open Sans",Arial,Helvetica,sans-serif;
     font-weight: 300;
     letter-spacing: normal;}
-.main-banner .banner02 .font02{	width:47%;float:right;right:28%;top:29%}
+.main-banner .banner02 .font02{	width:47%;float:right;right:24%;top:29%}
 .main-banner .banner02 .font02 span{font-size:22px;	color:#fff; font-weight:300;}
 .main-banner .banner02 .font03{	width:40%;left:41%;top:45%}
 .main-banner .banner02 .font03 span{border: 2px solid #fff;
@@ -399,13 +399,13 @@ div.search-form
     padding-top: 7px;
 }
 
-.main-banner .banner03 .font01{	width:60%;float:right;right:16%;top:12%;}
+.main-banner .banner03 .font01{	width:49%;float:right;right:18%;top:12%;}
 .main-banner .banner03 .font01 span{font-size:55px;color:#fff;font-family: "Open Sans",Arial,Helvetica,sans-serif;
     font-weight: 300;
     letter-spacing: normal;}
-.main-banner .banner03 .font02{	width:47%;float:right;right:28%;top:29%}
+.main-banner .banner03 .font02{	width:38%;float:right;right:28%;top:29%}
 .main-banner .banner03 .font02 span{font-size:22px;	color:#fff;font-weight:300;}
-.main-banner .banner03 .font03{	width:40%;left:41%;top:45%}
+.main-banner .banner03 .font03{	width:40%;left:42%;top:39%}
 .main-banner .banner03 .font03 span{border: 2px solid #fff;
     border-radius: 6px;
     color: #fff;
@@ -914,22 +914,26 @@ div.search-form
     font-size: 20px;
     margin: 100px auto 0;
     text-shadow: 1px 1px 2px #333;
-    width: 30%;
+    width:44%;
     z-index: 50; 
 	position:absolute;	
-	top:20px;
+	top:20px; color: #fff;
 	left:17%;
 }
 
 .home-para3 .text01 h2{
     color: #fff;
-    font-size: 2.4em;
+    font-size: 2.1em;
     font-weight: 300;
     line-height: 1em;
     margin-bottom: 20px;
 }
 
 .home-para3 .text01 h2 span{
+    font-size:30px;
+    line-height:30px;
+} 
+.home-para3 .text01 span{
     font-size: 1.2em;
     line-height: 1.2em;
 } 
