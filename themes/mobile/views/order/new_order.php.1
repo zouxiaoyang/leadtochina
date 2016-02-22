@@ -1,0 +1,224 @@
+<?php
+/* @var $this JosCosToursOrderController */
+/* @var $model JosCosToursOrder */
+/* @var $form CActiveForm */
+?>
+<div class="page-wrapper02" >
+<div class="container" >
+
+<h1 class="page-title08">Enquire Form</h1>
+<div class="row">
+<div class="col-md-9 col-sm-12 col-xs-12">
+<div class="form">
+
+<?php $form=$this->beginWidget('CActiveForm', array(
+	'id'=>'jos-cos-tours-order-new_order-form',
+	'enableAjaxValidation'=>false,
+)); ?>
+      <div class="content">
+        <div class="contmod orderinfo">
+          <h2 class="title2">Tour Information</h2>
+          <div>
+
+	<p class="note">Fields with <span class="required">*</span> are required.</p>
+
+	<?php echo $form->errorSummary($model); ?>
+	<table class="table table-bordered">
+	<tbody>
+	<div class="row">
+		<?php echo $form->labelEx($model,'contactid'); ?>
+		<?php echo $form->textField($model,'contactid'); ?>
+		<?php echo $form->error($model,'contactid'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'orderNO'); ?>
+		<?php echo $form->textField($model,'orderNO'); ?>
+		<?php echo $form->error($model,'orderNO'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'order_user'); ?>
+		<?php echo $form->textField($model,'order_user'); ?>
+		<?php echo $form->error($model,'order_user'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'tour_code'); ?>
+		<?php echo $form->textField($model,'tour_code'); ?>
+		<?php echo $form->error($model,'tour_code'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'adults'); ?>
+		<?php echo $form->textField($model,'adults'); ?>
+		<?php echo $form->error($model,'adults'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'children'); ?>
+		<?php echo $form->textField($model,'children'); ?>
+		<?php echo $form->error($model,'children'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'infant'); ?>
+		<?php echo $form->textField($model,'infant'); ?>
+		<?php echo $form->error($model,'infant'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'entry_city'); ?>
+		<?php echo $form->textField($model,'entry_city'); ?>
+		<?php echo $form->error($model,'entry_city'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'entry_date'); ?>
+		<?php echo $form->textField($model,'entry_date'); ?>
+		<?php echo $form->error($model,'entry_date'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'duration'); ?>
+		<?php echo $form->textField($model,'duration'); ?>
+		<?php echo $form->error($model,'duration'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'exit_city'); ?>
+		<?php echo $form->textField($model,'exit_city'); ?>
+		<?php echo $form->error($model,'exit_city'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'destinations'); ?>
+		<?php echo $form->textField($model,'destinations'); ?>
+		<?php echo $form->error($model,'destinations'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'traffic'); ?>
+		<?php echo $form->textField($model,'traffic'); ?>
+		<?php echo $form->error($model,'traffic'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'url_referer'); ?>
+		<?php echo $form->textField($model,'url_referer'); ?>
+		<?php echo $form->error($model,'url_referer'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'package_name'); ?>
+		<?php echo $form->textField($model,'package_name'); ?>
+		<?php echo $form->error($model,'package_name'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'package_category'); ?>
+		<?php echo $form->textField($model,'package_category'); ?>
+		<?php echo $form->error($model,'package_category'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'hotel'); ?>
+		<?php echo $form->textField($model,'hotel'); ?>
+		<?php echo $form->error($model,'hotel'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'other_mes'); ?>
+		<?php echo $form->textField($model,'other_mes'); ?>
+		<?php echo $form->error($model,'other_mes'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'dateline'); ?>
+		<?php echo $form->textField($model,'dateline'); ?>
+		<?php echo $form->error($model,'dateline'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'usr_ip'); ?>
+		<?php echo $form->textField($model,'usr_ip'); ?>
+		<?php echo $form->error($model,'usr_ip'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'passenger_info'); ?>
+		<?php echo $form->textField($model,'passenger_info'); ?>
+		<?php echo $form->error($model,'passenger_info'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'customizeid'); ?>
+		<?php echo $form->textField($model,'customizeid'); ?>
+		<?php echo $form->error($model,'customizeid'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'packageid'); ?>
+		<?php echo $form->textField($model,'packageid'); ?>
+		<?php echo $form->error($model,'packageid'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'order_state'); ?>
+		<?php echo $form->textField($model,'order_state'); ?>
+		<?php echo $form->error($model,'order_state'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'payment_method'); ?>
+		<?php echo $form->textField($model,'payment_method'); ?>
+		<?php echo $form->error($model,'payment_method'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'discount_type'); ?>
+		<?php echo $form->textField($model,'discount_type'); ?>
+		<?php echo $form->error($model,'discount_type'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'order_purpose'); ?>
+		<?php echo $form->textField($model,'order_purpose'); ?>
+		<?php echo $form->error($model,'order_purpose'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'end_date'); ?>
+		<?php echo $form->textField($model,'end_date'); ?>
+		<?php echo $form->error($model,'end_date'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'total_price'); ?>
+		<?php echo $form->textField($model,'total_price'); ?>
+		<?php echo $form->error($model,'total_price'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'final_price'); ?>
+		<?php echo $form->textField($model,'final_price'); ?>
+		<?php echo $form->error($model,'final_price'); ?>
+	</div>
+
+
+	<div class="row buttons">
+		<?php echo CHtml::submitButton('Submit'); ?>
+	</div>
+
+<?php $this->endWidget(); ?>
+<tbody>
+</table>
+</div>
+</div>
+</div>
+</div><!-- form -->
+
+</div>
+</div>
+</div>
+</div>
