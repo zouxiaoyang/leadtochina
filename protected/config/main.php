@@ -5,6 +5,7 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+$theme= IS_MOBILE?'mobile':'';
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
@@ -19,7 +20,7 @@ return array(
 		'application.components.*',
 		'application.helpers.*'
 	),
-
+	'theme'=>$theme,
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 		'gii'=>array(
@@ -46,7 +47,7 @@ return array(
             'class'=>'ext.bootstrap.components.Booster', //执行Bootstrap.php文件
 
         ),*/
-		'urlManager'=>require(dirname(__FILE__).'/urlmanager.php'),
+		'urlManager'=>require(dirname(__FILE__).'/urlManager.php'),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(

@@ -85,7 +85,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="support-call"> <span>For Booking:</span>+86-551-63868882 </div>
+            <div class="support-call"> <span>Tour Enquiry:</span>+86-551-63868882 </div>
             <div class="support-call02"> <span>During Travel:</span> +86-551-65355416 </div>
             <div class="support-mail"> <span>Email:</span> <a style="color: #FFF" href="mailto:service@leadtochina.com">service@leadtochina.com</a> </div>
           </div>

@@ -9,7 +9,7 @@
 				<div class="img-block"> <img class="img-responsive" src="/images/pic1.png"  /> </div>
 				<div class="text-block"> <span class="iconProm"><a href="#"><img alt="" src="/images/icon-popular01.png" /></a></span>
 					<ul>
-						<li><a href="#">1-day Terracotta Warriors Tours from Beijing</a></li>
+						<li><a href="/travel/china-1-day-terracotta-warriors-tours-from-beijing-by-air-562.html">1-day Terracotta Warriors Tours from Beijing</a></li>
 						<li>Terra-cotta Warriors</li>
 						<li>Ancient City Wall</li>
 						<li>Private Guide &amp; Vehicle</li>
@@ -23,11 +23,11 @@
 				<div class="img-block"> <img class="img-responsive" src="/images/pic2.png"  /> </div>
 				<div class="text-block"> <span class="iconProm"><a href="#"><img alt="" src="/images/icon-popular01.png" /></a></span>
 					<ul>
-						<li><a href="#">1-day Terracotta Warriors Tours from Beijing</a></li>
-						<li>Terra-cotta Warriors</li>
+						<li><a href="/travel/china-2-days-standard-xian-tours-from-beijing-by-flight-152.html">2-days Xian Tours from Beijing by Round-trip Flight</a></li>
+						<li>City Wall Cycling</li>
 						<li>Ancient City Wall</li>
-						<li>Private Guide &amp; Vehicle</li>
-						<li class="price">From <strong>$420</strong> P/P</li>
+						<li>Big Wild Goose Pagoda</li>
+						<li class="price">From <strong>$569</strong> P/P</li>
 					</ul>
 				</div>
 			</div>
@@ -37,11 +37,11 @@
 				<div class="img-block"> <img class="img-responsive" src="/images/pic3.png"  /> </div>
 				<div class="text-block"> <span class="iconProm"><a href="#"><img alt="" src="/images/icon-popular01.png" /></a></span>
 					<ul>
-						<li><a href="#">1-day Terracotta Warriors Tours from Beijing</a></li>
-						<li>Terra-cotta Warriors</li>
-						<li>Ancient City Wall</li>
-						<li>Private Guide &amp; Vehicle</li>
-						<li class="price">From <strong>$420</strong> P/P</li>
+						<li><a href="/travel/china-1-day-xian-tours-by-overnight-fast-train-trip-410.html">1-day Xi'an Tours from Beijing by Overnight Train Trip</a></li>
+						<li>Great Mosque & City Wall</li>
+						<li> Bell & Drum Tower Square</li>
+						<li>Terra Cotta Warriors</li>
+						<li class="price">From <strong>$410</strong> P/P</li>
 					</ul>
 				</div>
 			</div>
@@ -63,7 +63,7 @@
 		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic4.png"  />
 			<div class="text-block">
 				<ul>
-					<li> <a href="#">2 Days Beijing Xian Round Trip by High-speed Train</a> <span><strong>FEATURES:</strong> Shaanxi Provincial History Museum, Small Wild Goose Pagoda, Bell Tower and Drum Tower Square, Muslim Street, Terra-cotta Warriors, City Wall</span> </li>
+					<li> <a href="/travel/china-2-days-beijing-xian-round-trip-by-high-speed-train-710.html">2 Days Beijing Xian Round Trip by High-speed Train</a> <span><strong>FEATURES:</strong> Shaanxi Provincial History Museum, Small Wild Goose Pagoda, Bell Tower and Drum Tower Square, Muslim Street, Terra-cotta Warriors, City Wall</span> </li>
 					<li><a href="/travel/china-1-day-xian-tours-by-overnight-fast-train-trip-410.html">1 Day Xi'an Tours by Overnight Fast Train Trip</a> <span><strong>FEATURES:</strong> Great Mosque, City Wall, Terracotta Warriors</span> </li>
 					<li><a href="/travel/china-3-days-beijing-xian-round-trip-tour-by-high-speed-train-711.html">3 Days Beijing Xian Round Trip Tour by High-speed Train</a> <span><strong>FEATURES:</strong> City Wall,Great Mosque,Big Goose Pagoda,Forest of Stone Steles Museum, Shaanxi Provincial History Museum,Forest of Stone Steles Museum</span> </li>
 					<li><a href="/travel/china-2-day-xian-tour-from-beijing-by-fast-train-555.html">2 Day Xian Tour From Beijing by Fast Train</a> <span><strong>FEATURES:</strong> Terrecotta Warriors, Muslim Street, Drum Tower Square, Big Wild Googse Pagoda, Ancient City Wall, Great Mosque</span> </li>

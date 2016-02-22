@@ -1,33 +1,22 @@
 <?php
-
 class OrderController extends Controller
 {
 	public function actionIndex()
 	{
 		$package_id = Yii::app()->session['package_id'];
-
 		$sql="select `name`,`categorieid_str`,`package_code`,`route`,`price`,`days` from `jos_cos_tours_package` where `id`=".(int)$package_id."";
-
 		$ress = Yii::app()->db->createCommand($sql)->queryRow();
-
-		
-
 		$this->render('index',array('ress'=>$ress));
 	}
-
 	public function actionSuccess(){ // 提交成功的页面;
 		// 提交成功，删除session;
 		unset(Yii::app()->session['package_id']); 
 	//	unset(Yii::app()->session['url_referer']);
-
 		$this->render('success');
 	}
-
 	public function actionSave(){ // 保存订单;
-
-
 		$post = $_POST;
-
+		$submit_source= $_SERVER['HTTP_HOST'];
 		$packageid  = (int)$post['packageid']; //行程的id;
 		//$orderNO = $post['orderNO'];//订单号;
 		//判断性别
@@ -61,9 +50,7 @@ class OrderController extends Controller
 		}else{
 		  $destinations = addslashes($post['destinations']);
 		}
-		
 		$other_messages = $this->getOtherMessage($post);
-
 		$traffic   =  isset($post['flight'])?addslashes($post['flight']):'';// 交通;
 		$url_referer   =  Yii::app()->request->urlReferrer; // 上个页面的url;
 		$package_name   =  isset($post['package_name'])?addslashes($post['package_name']):''; //套餐名称
@@ -100,7 +87,6 @@ class OrderController extends Controller
 		}else{
 			$order_purpose='';
 		}
-		
 		$total_price = isset($post['total_price'])?$post['total_price']:0; //订单总价;
 		$final_price = isset($post['final_price'])?$post['final_price']:0;// 订单最终价格;
 // contact 表的字段;
@@ -110,33 +96,34 @@ class OrderController extends Controller
 		$email = isset($post['Email'])?addslashes($post['Email']):'';
 		$other_email = isset($post['Cemail'])?addslashes($post['Cemail']):'';
 		$phone = isset($post['PhoneNo'])?addslashes($post['PhoneNo']):'';
-		
-		$sql="insert into `jos_cos_tours_order` set `packageid`=".$packageid.",`order_user`='".$order_user."',`tour_code`='".$tour_code."',`adults`=".$adults.",`children`=".$children.",`infant`=".$infant.",`entry_city`='".$entry_city."',`entry_date`='".$entry_date."',`duration`=".$duration.",`exit_city`='".$exit_city."',`destinations`='".$destinations."',`traffic`='".$traffic."',`url_referer`='".$url_referer."',`package_name`='".$package_name."',`package_category`='".$package_category."',`hotel`='".$hotel."',`other_mes`='".$other_mes."',`dateline`='".$dateline."',`usr_ip`='".$usr_ip."',`order_state`=".$order_state.",`end_date`='".$end_date."',`payment_method`='".$payment_method."',`passenger_info`='".$passenger_info."',`discount_type`='".$discount_type."',`order_purpose`=".$order_purpose.",`total_price`=".$total_price.",`final_price`=".$final_price.""; 
-//插入数据;
-
-		Yii::app()->db->createCommand($sql)->execute(); // insert;
+		$ordertype=(int)$post['ordertype'];
+// 站点数据；		
+		$sql_1="insert into `jos_cos_tours_order` set `packageid`=".$packageid.",`order_user`='".$order_user."',`tour_code`='".$tour_code."',`adults`=".$adults.",`children`=".$children.",`infant`=".$infant.",`entry_city`='".$entry_city."',`entry_date`='".$entry_date."',`duration`=".$duration.",`exit_city`='".$exit_city."',`destinations`='".$destinations."',`traffic`='".$traffic."',`url_referer`='".$url_referer."',`package_name`='".$package_name."',`package_category`='".$package_category."',`hotel`='".$hotel."',`other_mes`='".$other_mes."',`dateline`='".$dateline."',`usr_ip`='".$usr_ip."',`order_state`=".$order_state.",`end_date`='".$end_date."',`payment_method`='".$payment_method."',`passenger_info`='".$passenger_info."',`discount_type`='".$discount_type."',`order_purpose`=".$order_purpose.",`total_price`=".$total_price.",`final_price`=".$final_price.""; 
+	//插入数据;
+		Yii::app()->db->createCommand($sql_1)->execute(); // insert;
 		$insertid = Yii::app()->db->getLastInsertID();
-
     // 更新 contact 表;
-		$sql="insert into `jos_cos_user_contact` set `orderid`='{$insertid}',`full_name`='{$order_user}',`gender`={$gender},`addr`='{$addr}',`nationality`='{$nation}',`email`='{$email}',`other_email`='{$other_email}',`phone`='{$phone}',`subscribe`=0,`is_activity`=0";
-
-		Yii::app()->db->createCommand($sql)->execute();
+		$sql_2="insert into `jos_cos_user_contact` set `orderid`='{$insertid}',`full_name`='{$order_user}',`gender`={$gender},`addr`='{$addr}',`nationality`='{$nation}',`email`='{$email}',`other_email`='{$other_email}',`phone`='{$phone}',`subscribe`=0,`is_activity`=0";
+		Yii::app()->db->createCommand($sql_2)->execute();
 	//生成订单号;
 		$insertid1=Yii::app()->db->getLastInsertID();
 		$id_len=strlen($insertid);
 		$id_str=str_pad($insertid,3,0,STR_PAD_LEFT);
 		$today_date=date("ymd");
     	$order_str = 'LTC'.$today_date.$id_str;
-
-		$is_update = Yii::app()->db->createCommand("UPDATE `jos_cos_tours_order` SET `orderNO`='{$order_str}',`contactid`={$insertid1} WHERE `id`={$insertid}")->execute();
-
-		$is_update?$this->redirect('/travel/success'):exit('Error Submit');
-		
+		$sql_3="UPDATE `jos_cos_tours_order` SET `orderNO`='{$order_str}',`contactid`={$insertid1} WHERE `id`={$insertid}";
+		$is_update = Yii::app()->db->createCommand($sql_3)->execute();
+	// 总订单数据;
+	$sql_4="insert into `joomla`.`jos_total_order` set `full_name`='".$order_user."',`gender`='{$gender}',`nationality`='{$nation}',`email`='{$email}',`other_email`='{$other_email}',`phone`='{$phone}',`adults`={$adults},`children`={$children},`infant`={$infant},`entry_date`='{$entry_date}',`duration`='{$duration}',`other_travelinfo`='',`url_referer`='{$url_referer}',`submit_source`='{$submit_source}',`user_ip`='{$usr_ip}',`dateline`='{$dateline}',`ordertype`={$ordertype},`other_message`='{$other_mes}'";
+	$bol = Yii::app()->db->createCommand($sql_4)->execute();
+	if($bol){
+		$insertId =Yii::app()->db->getLastInsertID();
+		  $sql_5 = "update `joomla`.`jos_total_order` set `orderNO`='{$order_str}' where `id`={$insertId}";
+		  Yii::app()->db->createCommand($sql_5)->execute();
 	}
-
-
+	($bol&&$is_update)?$this->redirect(array('/travel/success','orderNo'=>$order_str)):exit('Error Submit');
+}
 protected function getOtherMessage($post){ // 获取other message;
-
 	$other_messages="";
 		if(isset($_GET['submit_from']) && $_GET['submit_from']=="beijing_diy"){
 			if(isset($post['other_mes']) && $post['other_mes']=="Tell us about your requests,we will plan a pleasant beijing tour for you!"){
@@ -150,7 +137,6 @@ protected function getOtherMessage($post){ // 获取other message;
 			$bed_info='';
 			$meal_info='';
 		}
-	  
 	    if($post['new_com_order']){
 			$king_bed = isset($post['king_bed'])?$post['king_bed']:'';
 			$twin_beds = isset($post['twin_beds'])?$post['twin_beds']:'';
@@ -158,7 +144,6 @@ protected function getOtherMessage($post){ // 获取other message;
 			$tour_space = isset($post['tour_space'])?$post['tour_space']:'';
 			$tour_for = isset($post['tour_for'])?$post['tour_for']:'';
 			$guide_language = isset($post['guide_language'])?$post['guide_language']:'';
-
 	  		$room_type_info="<b>ROOM INFO :</b>".$king_bed." ,".$twin_beds.",".$one_bed."<br/>";
 			$tour_idea_info="<b>TOUR IDEA :</b> Tour Space:".$tour_space." Tour For:".$tour_for."<br/>";
 			if(!empty($guide_language)){
@@ -167,7 +152,6 @@ protected function getOtherMessage($post){ // 获取other message;
 				$guide_language_info="<b>GUIDE LANGUAGE :</b> none<br/>";
 			}
 	    }
-	  
 	 	if(isset($post['choose_city'])){
 	  		$other_messages.="<b>TRAVEL DESTINATIONS :</b> ".$post['choose_city']."<br/>";
 	  	}	  	
@@ -226,39 +210,10 @@ protected function getOtherMessage($post){ // 获取other message;
 		if(isset($post['adoption_tour_title'])){
 			$other_messages .= "<b>Adoption Tour Title:</b>".$post['adoption_tour_title']."<br />"; 
 		}
-
 		return $other_messages;
 }
-	// -----------------------------------------------------------
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	*/
-public function actionNew_order(){
+public function actionNew_order(){ // 自定义订单
     $model=new JosCosToursOrder;
-
     // uncomment the following code to enable ajax-based validation
     /*
     if(isset($_POST['ajax']) && $_POST['ajax']==='jos-cos-tours-order-new_order-form')
@@ -267,14 +222,14 @@ public function actionNew_order(){
         Yii::app()->end();
     }
     */
-
+		//seo
+		$t='Customize China Tours, Free to DIY Your China Trip, Tailor make China Tours';
+		$d='We are specialized in customizing unique China tours for individuals, families and small groups.';
+		$k='customize china tours, diy china tour, tailor make china tours';
+		Seo::_seo($this,$t,$k,$d);
 		$package_id = Yii::app()->session['package_id'];
-
 		$sql="select `name`,`categorieid_str`,`package_code`,`route`,`price`,`days` from `jos_cos_tours_package` where `id`=".(int)$package_id."";
-
 		$ress = Yii::app()->db->createCommand($sql)->queryRow();
-
-
     if(isset($_POST['JosCosToursOrder']))
     {
         $model->attributes=$_POST['JosCosToursOrder'];
@@ -286,9 +241,6 @@ public function actionNew_order(){
     }
     $this->render('new_order',array('model'=>$model,'ress'=>$ress));
 }
-
-
-
 // 定制订单;
 public function actionSaveDiyOrder(){
    // $model=new Order;
@@ -330,7 +282,6 @@ public function actionSaveDiyOrder(){
 	if($_POST['per_person_budget']){
           $other_message .= "<b>Per Person Budget： </b>".$_POST['per_person_budget']." USD</br>";
         }
-
       if($_POST['budget_flexible']){
             $other_message .= "<b>Is Budget Flexible： </b>".$_POST['budget_flexible']."</br>";
           }
@@ -397,11 +348,8 @@ public function actionSaveDiyOrder(){
       $order_str = 'DIY'.date("ymd").$insertId;
 	  Yii::app()->db->createCommand("update `joomla`.`jos_total_order` set `orderNO`='{$order_str}' where `id`={$insertId}")->execute();
 	  // success page;
-      $this->redirect('/travel/success');
+      $this->redirect(array('/travel/success','orderNo'=>$order_str));
     }
     exit;
   }
-
-
-
 }

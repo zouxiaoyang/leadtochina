@@ -5,7 +5,7 @@
       <p>Lead to China will send you an automatic email within 2 minutes. Please check if you have successfully received it. If you haven't, please kindly enter your correct contact email, so that we can contact you properly. <br />
         (Urgent enquiry, please send it directly to <span style="color:#073488">service@leadtochina.com</span> )</p>
       <span class="text01">email</span>
-      <input  type="text" />
+      <input  type="text" value="" name="update_email" id="update_email" />
       <br />
       <button class="large-button">Update Email</button>
       <h3 class="page-title09">One-on-one Service</h3>
@@ -20,3 +20,20 @@
     <div  class="col-md-3"> aaaaaaaaaaaaaaaaaaaaaa</div>
   </div>
 </div>
+<script type="text/javascript">
+	$('.large-button').click(function(){
+		var order_id = '<?php echo isset($_GET["orderNo"])?$_GET["orderNo"]:'';?>';
+		var new_email = $('#update_email').val();
+		$.get('/ajaxdata/updateEmail.php?order_id='+order_id+'&new_email='+new_email,function(html){
+			if(html==1){
+				alert('Update email success!');
+				location.reload();
+			}else if(html==0){
+				alert('Email already exist!');
+			}else{
+				alert(html);
+			}
+		});
+	})
+	
+</script>

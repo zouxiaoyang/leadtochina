@@ -18,12 +18,12 @@ class ReviewsController extends Controller
 			$sql ="select `pic` from `t_reviews_pic` where `tid`=".(int)$_GET['tid']." and `type`=0"; //默认的图片;
 			$pics= Yii::app()->db->createCommand($sql)->queryAll();
 		}
-		// $sql="select `pic` from `t_reviews_pic` where `tid`=".(int)$_GET['tid']." and `type`=1 order by `id` desc limit 1";
-		// $piclist= Yii::app()->db->createCommand($sql)->queryRow();
+		 $sql="select `pic` from `t_reviews_pic` where `tid`=".(int)$_GET['tid']." and `type`=1 order by `id` desc limit 1";
+		$piclist= Yii::app()->db->createCommand($sql)->queryRow();
 		$this->render('index',array(
 				'info'=>$info,
 				'pics'=>$pics,// 详细页面，大图;
-				// 'piclist'=>$piclist,//列表页面图片的第一张;
+				'piclist'=>$piclist,//列表页面图片的第一张;
 			)
 		);
 	}

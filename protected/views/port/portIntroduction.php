@@ -14,18 +14,20 @@
 <div class="container" >
 	<div class="row" style="margin-top:30px;">
 		<div class="col-sm-2">
+		<?php /* ?>
 			<ul class="tianjin-port-leftlink" id="cruise_list">
 				<li class="title">CRUISE NAME</li>
 				<?php foreach($cruise_list as $k=>$v):?>
 				<li style=" display:block;" ><a href="<?php echo Yii::app()->createUrl('port/CruiseView',array('name'=>SiteUtils::stringURLSafe($v->name),'id'=>$v->id));?>"><?php echo $v->name;?></a> <span style="float:right"></span> </li>
 				<?php endforeach;?>
 			</ul>
+		<?php */ ?>
 			<ul class="tianjin-port-leftlink">
 				<li  class="title">CHINA CRUISE PORTS</li>
 				<?php 
 					foreach($CruiseCityName as $key=>$city_name):
 				?>
-				<li><a href="<?php echo Yii::app()->createUrl('port/PortExcursion',array('city_name'=>SiteUtils::stringURLSafe($city_name),'id'=>$key));?>"><?php echo $city_name;?></a></li>
+				<li <?php echo $key==$_GET['id']?'class="dq"':'';?>><a href="<?php echo Yii::app()->createUrl('port/PortExcursion',array('city_name'=>SiteUtils::stringURLSafe($city_name),'id'=>$key));?>"><?php echo $city_name;?></a></li>
 				<?php endforeach;?>
 			</ul>
 		</div>

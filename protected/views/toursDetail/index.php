@@ -1,6 +1,6 @@
-<script type="text/javascript" src="http://maps.google.com/maps?file=api&v=2&hl=en&oe=utf-8&key=AIzaSyDWKEHpILWp1n7UZ5XUymY3rhiwKFGtzA8"></script>
+<!--<script type="text/javascript" src="http://maps.google.com/maps?file=api&v=2&hl=en&oe=utf-8&key=AIzaSyDWKEHpILWp1n7UZ5XUymY3rhiwKFGtzA8"></script>
 <script type="text/javascript" src='/js/map/map.js'></script>
-<script type="text/javascript" src='/js/map/iframeResizer.min.js'></script>
+<script type="text/javascript" src='/js/map/iframeResizer.min.js'></script> -->
 <!-- <script type="text/javascript" src='/js/map/map-1.js'></script> --> 
 <div class="container">
   <div class="row">
@@ -51,7 +51,7 @@
                 <div class="inner-tab-text01"> 
 					<?php $i=1;foreach($router as $ro){ ?>
 						  <b><?php echo 'Day '.$i.' '.$ro['today_route'];?></b>
-						  <p><?php echo strip_tags($ro['activities']);?></p>
+						  <p><?php echo str_replace(array('<b>','</b>','<strong>','</strong>'),'',$ro['activities']); //strip_tags($ro['activities']);?></p>
 						  <i> Meals: <?php echo $ro['eat_standard'];?> </i><br />
 					 <?php $i++;} ?>
               </section>
@@ -74,13 +74,13 @@
                   			<tbody>
                     			<tr>
                       <td>Dec.1- Feb.28</td>
-                      <td><?php echo $arr_price[1];?></td>
-                      <td><?php echo $arr_price[2];?></td>
+                      <td><?php echo isset($arr_price[1])?$arr_price[1]:'';?></td>
+                      <td><?php echo isset($arr_price[2])?$arr_price[2]:'';?></td>
                     </tr>
                      <tr>
                       <td>Mar.1- Nov.30</td>
-                     <td><?php echo $arr_price[6];?></td>
-                      <td><?php echo $arr_price[7];?></td>
+                     <td><?php echo isset($arr_price[6])?$arr_price[6]:'';?></td>
+                      <td><?php echo isset($arr_price[7])?$arr_price[7]:'';?></td>
                     </tr>
                   			</tbody>
                 	</table>
@@ -91,19 +91,19 @@
                 	<div class="inner-tab-text01">
 					<p><?php //echo $ress['price_instruction'];?> 1. The price is based on stay in China four star hotels. If you want to deduct, upgrade or downgrade the hotel, please indicate this while sending the inquiry.<br />
 2. You will enjoy more discounts if there is more people join the tour.<br />
-3. Prices may vary according to your travel time and are higher in the high season, e.g. Labor's Day (Apr 29-May 5, 2014), China National Day Holiday (Sep 29-Oct 8, 2014), and Chinese Spring Festival (Jan 28-Feb 7, 2014).</p>  
+3. Prices may vary according to your travel time and are higher in the high season, e.g. Labor's Day (Apr 30-May 2, 2016)  , China National Day Holiday (Sep 30-Oct 7, 2016), and Chinese Spring Festival (Jan 27-Feb 3, 2017).</p>  
                 </div>
               	</section>
               	<section class="clearfix inner-tab-block01">
               		<label class="inner-tab-title01">PRICE INCLUDES</label>  
                     <div class="inner-tab-text01">
-                     	  <p><?php echo $ress['price_include'];?></p>
+                     	  <p><?php echo str_replace(array('<b>','</b>','<strong>','</strong>'),'',$ress['price_include']);//echo $ress['price_include'];?></p>
                      </div>
               	</section>    
               	<section class="clearfix inner-tab-block01">
               		<label class="inner-tab-title01">PRICE EXCLUDES</label>  
                  	<div class="inner-tab-text01">
-					 <p><?php echo $ress['price_exclude'];?></p>  
+					 <p><?php echo str_replace(array('<b>','</b>','<strong>','</strong>'),'',$ress['price_exclude']);//$ress['price_exclude'];?></p>  
                  </div>
               	</section>    
                	<section class="clearfix inner-tab-block01">
@@ -240,16 +240,16 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
     				</p>
                     </div>
             </section>
-            <section class="clearfix">
-              	<div class="view-block-pro-detail">
+				<?php if(!empty($reviews)):?>
+				 <section class="clearfix">
+              		<div class="view-block-pro-detail">
                 	<h3 class="title01">Reviews of this Travel Agency</h3>
                     <div class="view-content">
-				<?php if(!empty($reviews)):?>
 					<?php foreach($reviews as $key=>$review){ ?>
                     	<div class="views-row">
 							<?php if(!empty($review['pic'])):?>
 								<?php foreach($review['pic'] as $v){?>
-									<img src="/newadmin/images/reviews/<?php echo $v['pic'];?>" />
+									<img width="106" height="106" src="/newadmin/images/reviews/<?php echo $v['pic'];?>" />
 								<?php } ?>
 								<?php else:?>
 									<img src="/images/view/Reviews.jpg" style="width:106px;height:106px;"/>
@@ -263,10 +263,10 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
                              <span class="star clearfix"><img src="/images/5star.png" /> by <?php echo $review['name'];?>. </span>
                         </div>
 						<?php } ?>
-					<?php endif;?>
-                    </div>
-                </div>
-            </section>
+						   </div>
+						</div>
+					</section>
+				<?php endif;?>
          </div>
     </div>
   </div>

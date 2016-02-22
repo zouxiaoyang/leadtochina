@@ -8,9 +8,9 @@
   	<div class="col-sm-12 col-md-9">
       <div class="reviews-page-block" >
 	  <?php 
-		if(!empty($pics)):
+		if(!empty($piclist)):
 	  ?>
-			<img width="170" height="187" src="<?php echo ImageUtils::getThumbnail('newadmin/images/reviews/'.$pics[0]['pic'],'170x187');?>" />
+			<img width="200" height="200" src="<?php echo '/newadmin/images/reviews/'.$piclist['pic'];?>" />
 		<?php endif;?>
         <div class="content01">
         	<h3>Reviews from <?php echo $info['review_name'];?></h3>
@@ -18,7 +18,7 @@
 			<p><span>CLIENT NAME:</span> <?php echo $info['review_name'];?></p>
             <p><span>NATIONALITY:</span> <?php echo $info['nationality'];?></p>
             <p><span>TOUR DATE:</span> <?php echo date('M d,Y',strtotime($info['dateline']));?></p>
-			<p>DESTINATIONS: <a href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe($info['name']),'id'=>$info['tour_id']));?>" title="<?php echo $info['name'];?>"><?php echo $info['name'];?></a></p>
+			<p>ITINERARY: <a href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe($info['name']),'id'=>$info['tour_id']));?>" title="<?php echo $info['name'];?>"><?php echo $info['name'];?></a></p>
         </div>
         <div class="clear"></div>
       </div>
@@ -29,7 +29,10 @@
         </ul>
         <div id="myTabContent" class="tab-content">
         	<div id="traveler-review" class="tab-pane fade active in">
+				<img   src="/images/reviews-ico01.jpg" /> 
             	<p><?php echo $info['description'];?></p>
+				<img  src="/images/reviews-ico02.jpg" class="f-right" /> 
+				<div class="clear"></div>
             </div>
             <div id="photos" class="tab-pane fade">
 				<?php foreach($pics as $pic){ ?>

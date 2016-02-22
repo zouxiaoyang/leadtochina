@@ -219,7 +219,6 @@
 
 <script>
 function uploadImage(id,f_id,img_id,type) {
-	
 	if(type){
 		var img_id_para = img_id;
 	}else{
@@ -229,6 +228,7 @@ function uploadImage(id,f_id,img_id,type) {
 		alert('请选择图片');
 		return false;
 	}
+	
     $.ajaxFileUpload({
     fileElementId:img_id_para,
 	secureuri: false,

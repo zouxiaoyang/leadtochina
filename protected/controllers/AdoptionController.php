@@ -22,9 +22,13 @@ class AdoptionController extends Controller
 	}
 	protected function getAdoption($id){ //获取信息;
 		$id = $id!=1?$_GET['id']:1;
-		$sql ="select aoa.*,aoa.id as apt_id,aoa.description as des,apc.*,apc.name as or_name,c.name as city_name from `t_adoption_orphanage_address` as `aoa`,`jos_cos_city` as `c`,`t_adoption_package_content` as `apc` where `aoa`.`cityid`=`c`.`id` and `aoa`.`id`=`apc`.`pacakage_id` and `aoa`.`id`={$id}";
+		$sql ="select aoa.*,aoa.id as apt_id,aoa.description as des,apc.*,apc.name as or_name,c.name as city_name1 from `t_adoption_orphanage_address` as `aoa`,`jos_cos_city` as `c`,`t_adoption_package_content` as `apc` where `aoa`.`cityid`=`c`.`id` and `aoa`.`id`=`apc`.`pacakage_id` and `aoa`.`id`={$id}";
 		$res =Yii::app()->db->createCommand($sql)->queryRow();
 		// var_dump($res);exit;
+		$t=sprintf('%s Orphanage Trip Guide, %s SWI Visit',$res['city_name1'],$res['city_name1']);
+		$k='';
+		$d=sprintf("We are offering %s orphanage trip guide, private &amp; small group tours to %s SWI.",$res['city_name1'],$res['city_name1']);
+		Seo::_seo($this,$t,$k,$d);
 		return $res;
 	}
 	protected function getAdoptionPic($id){ //获取图片信息;
@@ -443,4 +447,44 @@ public function actionSaveOrder(){
  
 	$this->render('adoption_group_tour');
  }
+ // 资讯列表
+ public function actionResources(){
+	 
+	 $t='Resource for China Homeland & Heritage Tours';
+	 $k='';
+	 $d='What adoptive families need to know before making a return trip to China ? Try to find the answer from the useful and interesting articles.';
+
+	 Seo::_seo($this,$t,$k,$d);
+
+			$sql="select * from `t_adoption_content` where `cat_id`<>0 order by `dateline` desc";
+
+			$criteria=new CDbCriteria();
+			$result = Yii::app()->db->createCommand($sql)->query();
+			$pages=new CPagination($result->rowCount);
+			$pages->pageSize=8; 
+			$pages->applyLimit($criteria);
+			$result=Yii::app()->db->createCommand($sql." LIMIT :offset,:limit"); 
+			$result->bindValue(':offset', $pages->currentPage*$pages->pageSize); 
+			$result->bindValue(':limit', $pages->pageSize); 
+			$posts=$result->query();
+
+	$this->render('resources',array(
+			'posts'=>$posts,
+			'pages'=>$pages
+	));
+ }
+
+// 资讯详细;
+public function actionAdoptionResourcesDetail(){
+		//var_dump($_GET['ar_id']);
+		$ar_id = (int)$_GET['resource_id'];
+		$sql="select * from `t_adoption_content` where `id`={$ar_id}";
+		$res = Yii::app()->db->createCommand($sql)->queryRow();
+		// seo;
+		$title = $res['title'];
+		$k='chinese heritage tour reviews，china homeland tour review，reviews for china homeland tours，china  heritage tour reviews';
+		$des=substr(strip_tags($res['description']),0,128).'...';
+		Seo::_seo($this,$title,$k,$des);
+		$this->render('resources_detail',array('res'=>$res));
+	}
 }

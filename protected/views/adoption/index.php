@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-sm-12 col-md-9">
       <h1 class="page-title05"><?php echo $res['orphanage_name'];?></h1>
-      <a href="<?php echo Yii::app()->createUrl('adoption/showMaps',array('city_name'=>$res['city_name'],'id'=>$res['apt_id']));?>"><img src="/images/map-ico01.gif" /></a> &nbsp;<span>Address: <?php echo $res['address'].','.$res['city_name'].',China&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Postal Code:&nbsp;'.$res['postal_code'].'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telephone No:&nbsp;'.$res['tel'];?></span>
+      <a href="<?php echo Yii::app()->createUrl('adoption/showMaps',array('city_name'=>$res['city_name'],'id'=>$res['apt_id']));?>"><img src="/images/map-ico01.gif" /></a> &nbsp;<span>Address: <?php echo $res['address'].','.$res['city_name'].',China&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;Postal Code:&nbsp;'.$res['postal_code'].'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telephone No:&nbsp;'.$res['tel'];?></span>
       <div class="pro-detail-block"> <img src="/images/adoption-views-banner01.jpg" />
         <div class="pro-text01">
           <p><?php echo $res['public_content'];?></p>

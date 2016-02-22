@@ -54,7 +54,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		//'province_id',		
 		array(
 		'name'=>'province_id',		
-		'value'=>'$data->province_id==0?\'/\':Province::model()->findByPk($data->province_id)->name'
+		 'value'=>'$data->province_id==0?\'/\':Province::model()->findByPk($data->province_id)[\'name\']'
 		),		
 		//'homeland_cat',
 		array('name'=>'homeland_cat','value'=>'$data->homeland_cat==0?\'/\':AdoptionContent::$homeland_category[$data->homeland_cat]'),

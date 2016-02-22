@@ -5,6 +5,11 @@ class PortController extends Controller
 	protected $model;
 	public function actionIndex()
 	{
+		//seo
+		$t='China Cruise Port Transfer & Excursion: Tianjin Port, Shanghai Port, Dalian Port';
+		$k='china cruise port, cruise to china, tianjin port, shanghai port';
+		$d='We offer the best service on transfers, tours and hotels for passengers leaving for or arriving from Tianjin, Shanghai, Dalian, Xiamen and other major cruise ports.';
+		Seo::_seo($this,$t,$k,$d);
 		$this->render('index');
 	}
 	//新港口Excursion页面

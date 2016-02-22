@@ -347,7 +347,7 @@ div.search-form
 	float:left;
 	/*white-space:nowrap;*/
 }
-.main-banner .banner01 .font01{	width:50%;float:right;right:16%;top:12%;}
+.main-banner .banner01 .font01{	width:50%;float:right;right:18%;top:12%;}
 .main-banner .banner01 .font01 span{font-size:55px;color:#fff;font-family: "Open Sans",Arial,Helvetica,sans-serif;
     font-weight:300;
     letter-spacing: normal;}
@@ -377,8 +377,8 @@ div.search-form
 .main-banner .banner02 .font01 span{font-size:55px;color:#fff;font-family: "Open Sans",Arial,Helvetica,sans-serif;
     font-weight: 300;
     letter-spacing: normal;}
-.main-banner .banner02 .font02{	width:47%;float:right;right:24%;top:29%}
-.main-banner .banner02 .font02 span{font-size:22px;	color:#fff; font-weight:300;}
+.main-banner .banner02 .font02{	width:47%;float:right;right:24%;top:29%;}
+.main-banner .banner02 .font02 span{font-size:22px;	color:#fff; font-weight:300; background:rgba(0, 0, 0, 0.6); padding:5px 10px;}
 .main-banner .banner02 .font03{	width:40%;left:41%;top:45%}
 .main-banner .banner02 .font03 span{border: 2px solid #fff;
     border-radius: 6px;
@@ -403,7 +403,7 @@ div.search-form
 .main-banner .banner03 .font01 span{font-size:55px;color:#fff;font-family: "Open Sans",Arial,Helvetica,sans-serif;
     font-weight: 300;
     letter-spacing: normal;}
-.main-banner .banner03 .font02{	width:38%;float:right;right:28%;top:29%}
+.main-banner .banner03 .font02{	width:39%;float:right;right:27%;top:29%}
 .main-banner .banner03 .font02 span{font-size:22px;	color:#fff;font-weight:300;}
 .main-banner .banner03 .font03{	width:40%;left:42%;top:39%}
 .main-banner .banner03 .font03 span{border: 2px solid #fff;
@@ -1114,6 +1114,7 @@ div.search-form
 .page-title14{font-size:36px;border-bottom: 1px solid #d7d7d7; padding: 40px 0 30px; text-align:center;font-weight:300;}
 .page-title15{padding:10px 0;  font-size:32px; color:#343434;}
 .page-title16{font-size:35px;border-bottom: 1px solid #eee; margin: 30px 0 20px;padding-bottom: 9px;   font-weight:300; }
+.page-title17{font-size:22px;border-bottom: 1px solid #ccc; margin:20px 0 10px; padding-bottom:10px; font-weight:500;  }
 .lead02{ font-size: 17px;line-height: 1.4; margin: 15px 0 30px;}
 
 
@@ -2095,7 +2096,7 @@ filter:progid:DXImageTransform.Microsoft.Alpha(enabled=false);
 .order-success .page-title01{ margin:30px 0; font-size:30px; color:#343434;}
 .order-success .page-title02{ margin:30px 0 15px; font-size:20px; color:#343434;}
 
-
+.tour-preview-family{ width:395px; height:330px;}
 .code{
     float: right;  
     height: auto;
@@ -2218,7 +2219,7 @@ filter:progid:DXImageTransform.Microsoft.Alpha(enabled=false);
 .adoptionOrder-block input.large-button:hover{ color:#343434; background: url(/images/yellow-link-arrow.png) 8px center no-repeat  #fff;}
 .must{color: #d56d21;}
 
-.adoption-article-detail img{ width:500px;}
+.adoption-article-detail img{/* width:500px;*/ padding:10px 10px 10px 10px; }
 
 .adoption-search{ width:824px; height:58px;background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0; padding:8px 20px; position: absolute;  top: -73px;left:15%; border:1px solid #bbb;}
 .adoption-search input{ width:205px; height:40px; float:left; border:1px solid #4a4645; padding-left:10px; margin-right:10px;background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;}
@@ -2290,7 +2291,7 @@ ul#orphanage_list li:hover{background:#ccc;}
 .adoptionIti_bannerr_1{
     background: rgba(0, 0, 0, 0) url("/images/adoptionItinerary/banner_2.jpg") no-repeat scroll 0 0; float: left;height: 230px;margin: 10px 10px 10px 0; width: 450px;}
 
-
+.adoptionIti_cont1{ margin-bottom:100px;}
 .adoptionIti_cont1_map{ width:auto; margin-top:15px;}
 .adoptionIti_cont1_map1{ border:1px #ccc solid; background:url(/images/full_bg1.jpg) repeat-x; height:33px}
 .adoptionIti_cont1_map1 p{ padding-left: 15px; font-size:16px;line-height:33px;}
@@ -2422,9 +2423,9 @@ div.buttons input:hover{background: #898989; color:#fff;border: 1px solid #ccc;}
 
 .tianjin-port-leftlink{ text-transform:capitalize; font-size:16px; margin-bottom:15px;}
 .tianjin-port-leftlink .title{ font-size:20px; text-transform:uppercase;}
-.tianjin-port-leftlink li{ line-height:26px;}
+.tianjin-port-leftlink li{ line-height:26px; font-size:14px; color:#555; }
 .tianjin-port-leftlink li a{ color:#555;}
-.tianjin-port-leftlink li.dq{ color:#d56d21;background:url("/images/ico-arrow02.gif") no-repeat right center #fff;}
+.tianjin-port-leftlink li.dq{ background:url("/images/ico-arrow02.gif") no-repeat right center #fff;}
 .tianjin-port-leftlink li:hover{ cursor:pointer;}
 
 .tianjin-port-rightblock01{}
@@ -2479,3 +2480,82 @@ div.buttons input:hover{background: #898989; color:#fff;border: 1px solid #ccc;}
 .beijing-xian-block01 .text-block{ float:left;width:66%; padding:0 0 0 20px;}
 .beijing-xian-block01 .text-block a{padding:0px 0 3px; display:block; font-size:17px;}
 .beijing-xian-block01 .text-block li{ padding:6px 0;}
+
+/*  payment  page style  */
+.payment_txt1{ color:#d56d21;}
+.payment_txt2{padding:0 0 10px 0; margin:0}
+.pt10{ padding-top:10px;}
+.pb10{ padding-bottom:10px;}
+.payment_tit1{ font-size:16px; color:#333; padding:20px 0; margin:0;}
+.payment_input input {padding:5px 10px; color:#666; background:#fff; border-color: #D1D1D1 #999 #999 #D1D1D1; border-radius: 4px; border-style: solid; border-width: 1px;font-size:12px; font-family:Verdana, Geneva, sans-serif; width:100%; border-radius:4px; box-shadow:2px 2px 4px #999; }
+.payment_input select { padding:5px 10px; color:#666; background:#fff; border-color: #D1D1D1 #999 #999 #D1D1D1; border-radius: 4px; border-style: solid; border-width: 1px;font-size:12px;width:100%; border-radius:4px; box-shadow:2px 2px 4px #999; }
+.payment_input input:focus,.payment_input select:focus, .payment_input textarea:focus{ box-shadow:0 4px 5px rgba(0, 0, 0, 0.075) inset, 0 0 8px #F2C093; border-color:#E5842E }
+.transfer_txt1{ border-bottom:1px #ccc dashed;font-size:16px;padding-bottom:2px}
+.payment_textarea{height:130px; margin-bottom:10px;width:93%}
+
+/*  newsletter  page style  */
+.newsletter{ margin-bottom:50px;}
+.letter{ }
+.letterone,.lettertwo{}
+.letterone h3,.lettertwo h3{ color:#333; font-size:20px; display:block; border-bottom:1px solid #e5e5e5; line-height:30px; padding-bottom:4px;}
+.lettertwo h3{ width:100%; height:auto; float:left; color:#333; font-size:20px; line-height:30px; padding-bottom:5px;}
+.letterone table{ width:100%;margin:10px auto;}
+.letterone table tr td{ padding:5px 4px; font-weight:bold; color:#444;}
+.letterone table tr td input{ padding:4px 5px; border:1px solid #ccc; width:280px; font-weight:bold; color:#666; font-size:13px;}
+.letterone table tr td span{ font-weight:normal; background:#fdf4e6; border:1px solid #cbcbcb; display:block; padding:5px 15px; width:355px; line-height:18px; color:#666658;}
+.lettertwo ul{ }
+.lettertwo ul li{ background:url(/images/newsletter/letterli.jpg) left center no-repeat; border-bottom:1px dotted #ccc; width:100%; padding:6px 20px;}
+.lettertwo ul li a{max-width:615px; }
+.lettertwo ul li a:hover{ text-decoration:underline; color:#00b7ea;}
+.lettertwo ul li span{ max-width:100px;  float:right; padding-right:32px;}
+.lettertwo ul li span.newest{background:url(/images/newsletter/newest.gif) right center no-repeat;}
+
+/* terms-and-conditions page */
+#payment01{ line-height:24px; padding-bottom:100px;}
+.payment{}
+.paytitle{ width:100%; height:32px; line-height:32px; background:#8c4600; color:#fff; font-size:18px; text-align:center;}
+.save-money{ width:904px; height:auto; float:left; color:#525050; line-height:20px; padding:4px 10px;}
+.paycontent{}
+.paycontent p{ padding-bottom:0px;}
+.paycontent p strong,.save-money p strong{ display: block; font-size: 20px;font-weight: normal;padding: 10px 0;}
+.paycontent p span{font-weight:bold; display:block; padding:10px 0 5px;}
+.termstable{ }
+.termstable table{ border-top:3px solid #ccc; border-left:1px solid #ccc; margin-bottom:15px;}
+.termstable table tr td{ border:1px solid #ccc; border-top:none; border-left:none; padding:5px 10px;}
+.termstable table tr td span{ display:inline; color:#d56d21;}
+.payleft{ width:305px; height:auto; float:left; background: url(/images/paypal/payleft.jpg) no-repeat right center; padding-right:38px;}
+.payleft table tr td{ padding:4px 5px;}
+.payleft table tr td strong,.payright table tr td strong{ color:#8c4600;}
+.payright{ width:455px; height:auto; float:right;}
+.payright table tr td{ padding:8px 5px;}
+.paybutton{ width:100%; height:auto; background:url(/images/paypal/paybutton.jpg) left bottom no-repeat; padding-bottom:20px; float:left; margin-bottom:25px;}
+.check-online{ background:url(/images/paypal/next.jpg) left center no-repeat; width:125px; height:33px; display:block; margin:0px auto;}
+.transfer{ width:100%; height:auto; float:left; line-height:24px;}
+.transfer h2{ width:805px; height:auto; float:left; border-bottom:1px dashed #bcbcbc;background:url(/images/paypal/h2.jpg) left center no-repeat; padding:0px 0px 0px 15px; font-size:12px; color:#333;}
+.transfer p strong{ display:inline; font-size:12px; color:#525050;}
+
+
+/* privacy-policy */
+.group_main{ line-height:24px; padding-bottom:100px;}
+
+
+.emer_pt5{ padding-top:5px;}
+.emer_pt10{ padding-top:10px;} 
+.paycontent pa{ color:#333; font-weight:bold;}
+.emer_txt1{ font-size:22px; color:#d56d21;text-transform:uppercase;}
+.emer_email{ padding-top:10px;}
+.emer_email_top{ background:#eee; padding:0 0px 0 10px; width:810px; overflow:hidden}
+.emer_email_topl{ float:left; width:550px; padding:10px 0;}
+.emer_txt2{ color:#006091; text-decoration:#006091}
+.emer_email_topr{ float:right; width:235px;}
+.emer_email_mid{ background:#eee;padding:0 10px 5px 10px; width:800px; overflow:hidden; padding-top:5px;}
+.emer_border{border-top:1px #666 dashed; height:1px;width:820px;margin-top:20px;}
+.emer_con1{ overflow:hidden}
+.emer_quesbor{ border:1px #ccc solid; padding:10px; width:798px; margin-top:10px;}
+.emer_mainland span{ padding:10px 20px 10px 0;}
+
+
+
+/* about us page */
+.about-us{ line-height:32px; text-align:center;}
+.about-us li{ background:url(/images/ico-5star01.png) right center no-repeat; text-align:left; line-height:55px;}

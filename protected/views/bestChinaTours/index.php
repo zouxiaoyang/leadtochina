@@ -18,7 +18,7 @@
 		 package from the below lists or ask our specialists to design a special China tours for you. Just tell us your expectation,
 		 and we will do the rest for you. 
     </p>
-   	<p class="center-button"><a href="#" class="large-button">Help Me Plan My Trip</a></p>
+   	<p class="center-button"><a href="/order/china-diy-tours/" class="large-button">Help Me Plan My Trip</a></p>
 <div class="row top10tours-block01">
 <?php foreach($ress as $res){ 
 	$href = Yii::app()->createUrl('toursDetail/index',array('name'=>str_replace(array(' ',' '),array('-','-'),strtolower($res['name'])),'id'=>$res['id']));

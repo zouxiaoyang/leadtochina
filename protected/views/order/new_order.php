@@ -3,7 +3,7 @@
 	<div class="adoption-diy">
 		<div class="adoption-diy-top">
 			<h2  class="page-title13">Tailor-made your tour</h2>
-			<p>Couldn't find your favorite travel routes in our ready-made itineraries? Whether you wish to modify a tour package on our website or have a special holiday built from scratch, the local travel experts at Lead to China can customize the ideal itinerary for you.Let us know what we can do for you in the form below. Please try to give as many details as possible-even estimates are helpful. We do our best to reply to you in a few hours, maximum 24 hours!<br />
+			<p>Couldn't find your favorite travel routes in our ready-made itineraries? Whether you wish to modify a tour package on our website or have a special holiday built from scratch, the local travel experts at Lead to China can customize the ideal itinerary for you. Let us know what we can do for you in the form below. Please try to give as many details as possible-even estimates are helpful. We do our best to reply to you in a few hours, maximum 24 hours!<br />
 				Mandatory fields are marked with an asterisk (*).</p>
 		</div>
 		<form id="adoptionOrder" method="post" name="adoptionOrder" action="<?php echo Yii::app()->createUrl('order/saveDiyOrder');?>" onsubmit="return checksubmit()">

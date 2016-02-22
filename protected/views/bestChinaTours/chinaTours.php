@@ -8,38 +8,36 @@ a unique and exciting opportunity in creating a lasting impression.</p>
 China tours to you. These China tour packages are made according to our field trip and customer's feedback. So, feel free to 
 select and get inspired!</p>
     <div class="product-block01 "> 
-    	<a class="" href="/theme/expeditions">
+    	<a class="" href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-8-days-standard-china-golden-triangle-tour-by-flight'),'id'=>17));?>">
     		<img src="/images/chinatours-img01.jpg" /> </a>
             <div class="content-collection-info  product-info-back">
               <label>China Golden Triangle Tour</label>
               <span class="text01">8 Days Beijing-Xian-Shanghai</span>
               <span>From:</span>
               <span class="price">$699</span>
-              <a href="#" class="tour-read-more01 f-right">See more >> </a>
+              <a href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-8-days-standard-china-golden-triangle-tour-by-flight'),'id'=>17));?>" class="tour-read-more01 f-right">See more >> </a>
             </div>
-       
     </div>
     <div class="product-block01" style="margin:0 30px;">
-    	<a class="" href="/theme/expeditions">
+    	<a class="" href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-10-days-standard-china-essence-tour'),'id'=>22));?>">
     		<img src="/images/chinatours-img02.jpg" /> </a>
             <div class="content-collection-info  product-info-back">
               <label>China Essence Tour</label>
               <span class="text01">10 Days Beijing-Xian-Guilin-Yangshuo-Shanghai</span>
               <span>From:</span>
               <span class="price">$699</span>
-              <a href="#" class="tour-read-more01 f-right">See more >> </a>
+              <a href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-10-days-standard-china-essence-tour'),'id'=>22));?>" class="tour-read-more01 f-right">See more >> </a>
             </div>
-       
     </div>
     <div class="product-block01">
-    	<a class="" href="/theme/expeditions">
+    	<a class="" href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-11-days-china-tour-with-yangtze-river'),'id'=>54));?>">
     		<img src="/images/chinatours-img03.jpg" /> </a>
             <div class="content-collection-info  product-info-back">
               <label>Grand Yangtze River</label>
               <span class="text01">11 Days Beijing-Xian-Yangtze Cruise-Shanghai</span>
               <span>From:</span>
               <span class="price">$699</span>
-              <a href="#" class="tour-read-more01 f-right">See more >> </a>
+              <a href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-11-days-china-tour-with-yangtze-river'),'id'=>54));?>" class="tour-read-more01 f-right">See more >> </a>
             </div>
        
     </div>
@@ -51,7 +49,7 @@ If you want to make some change from an existing itinerary, let us <b>customize 
 requirements. Remember! We’re the local experts and here to help you.</p>
 	<div class="row hidden-xs">
 		<div class="col-sm-4 content-collection product-block02">
-            <a href="#" class="content-collection-inner">
+            <a href="<?php echo Yii::app()->createUrl('bestChinaTours/yangtzeriverTours');?>" class="content-collection-inner">
             <img  src="/images/chinatours-img04.jpg" alt="" title="" />
             <div class="content-collection-info product-info-back">
               <h2>Yangtze River Cruise</h2>
@@ -60,7 +58,7 @@ requirements. Remember! We’re the local experts and here to help you.</p>
           <p>It is the best way to experience China's stunning landscapes, dynamic culture and exceptional architecture. You will not only get a full relaxation on Yangtze cruise ships, but also experience another lifestyle in the shore excursion sites.</p>
       </div>
       	<div class="col-sm-4 content-collection product-block02">
-            <a href="#" class="content-collection-inner">
+            <a href="/travel/adoption/" class="content-collection-inner">
             <img  src="/images/chinatours-img05.jpg" alt="" title="" />
             <div class="content-collection-info product-info-back">
               <h2>China Homeland Tours</h2>
@@ -69,7 +67,7 @@ requirements. Remember! We’re the local experts and here to help you.</p>
           <p>Private & small group China heritage tours are exclusively for families with children adopted from China and their extended family members. Meanwhile, we are glad to customize a orphanage trip separately with first hand price.</p>
       </div>
       	<div class="col-sm-4 content-collection product-block02">
-            <a href="#" class="content-collection-inner">
+            <a href="/travel/china-train-travel/" class="content-collection-inner">
             <img  src="/images/chinatours-img06.jpg" alt="" title="" />
             <div class="content-collection-info product-info-back">
               <h2>China Train Travel</h2>
@@ -78,7 +76,7 @@ requirements. Remember! We’re the local experts and here to help you.</p>
           <p>China has one of world's most extensive railway networks. The high speed trains are cheap, safe, efficient, clean, and comfortable. The China train tours we specially designed are all passing through the most popular destinations and sceneries. </p>
       </div>
       	<div class="col-sm-4 content-collection product-block02">
-            <a href="#" class="content-collection-inner">
+            <a href="<?php echo Yii::app()->createUrl('bestChinaTours/familyTours');?>" class="content-collection-inner">
             <img  src="/images/chinatours-img07.jpg" alt="" title="" />
             <div class="content-collection-info product-info-back">
               <h2>China Family Tours</h2>
@@ -105,7 +103,7 @@ requirements. Remember! We’re the local experts and here to help you.</p>
           <p>Our China Senior Tours are designed with attention to detail, leisurely pace, centrally located hotels, considerate tour guides and carefully selected restaurants. You will be served and escorted by our considerate and helpful guide & driver.</p>
       </div>
       	<div class="col-sm-4 content-collection product-block02">
-            <a href="#" class="content-collection-inner">
+            <a href="<?php echo Yii::app()->createUrl('port/PortExcursion',array('city_name'=>'tianjin-port','id'=>5));?>" class="content-collection-inner">
             <img  src="/images/chinatours-img10.jpg" alt="" title="" />
             <div class="content-collection-info product-info-back">
               <h2>Tianjin Port Excursion</h2>
@@ -114,7 +112,7 @@ requirements. Remember! We’re the local experts and here to help you.</p>
           <p>We are offering Tianjin port-Beijing transfers, tours and hotel booking service for passengers leaving for or arriving from Tianjin port. As a local travel company, we will provide you the lowest price and best service.</p>
       </div>
       	<div class="col-sm-4 content-collection product-block02">
-            <a href="#" class="content-collection-inner">
+            <a href="<?php echo Yii::app()->createUrl('port/PortExcursion',array('city_name'=>'shanghai-port','id'=>6));?>" class="content-collection-inner">
             <img  src="/images/chinatours-img11.jpg" alt="" title="" />
             <div class="content-collection-info product-info-back">
               <h2>Shanghai Port Excursion</h2>
@@ -123,7 +121,7 @@ requirements. Remember! We’re the local experts and here to help you.</p>
           <p>Are you looking for the transfer service from/to the Shanghai cruise terminal? Lead to China is your best choice. We are offering the best service for Shanghai city tours and shanghai side tours before or after your cruise trip. </p>
       </div>
       	<div class="col-sm-4 content-collection product-block02">
-            <a href="#" class="content-collection-inner">
+            <a href="<?php echo Yii::app()->createUrl('bestChinaTours/silkroadAdventure');?>" class="content-collection-inner">
             <img  src="/images/chinatours-img12.jpg" alt="" title="" />
             <div class="content-collection-info product-info-back">
               <h2>Silk Road Adventure</h2>
@@ -193,7 +191,7 @@ China trip by bullet train or flight will be a good choice. </p>
 	<div class="text01">
     	<label>Customize China Tour</label>
     	<span>Get in touch with our specialists to start planning your next trip.</span>
-        <a href="#" class="more-link01">Start Now</a>
+        <a href="/order/china-diy-tours/" class="more-link01">Start Now</a>
         
     </div>
 </div>

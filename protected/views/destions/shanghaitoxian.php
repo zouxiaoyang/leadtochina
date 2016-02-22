@@ -8,7 +8,7 @@
 				<div class="img-block"> <img class="img-responsive" src="/images/pic8.jpg"  /> </div>
 				<div class="text-block"> <span class="iconProm"><a href="#"><img alt="" src="/images/icon-popular01.png" /></a></span>
 					<ul>
-						<li><a href="#">1 Day Shanghai Xian Tour by Round Flight</a></li>
+						<li><a href="/travel/china-1-day-shanghai-xian-tour-by-flight-731.html">1 Day Shanghai Xian Tour by Round Flight</a></li>
 						<li>Terra-cotta Warriors</li>
 						<li>Ancient City Wall</li>
 						<li>Private Guide &amp; Vehicle</li>
@@ -22,7 +22,7 @@
 				<div class="img-block"> <img class="img-responsive" src="/images/pic9.jpg"  /> </div>
 				<div class="text-block"> <span class="iconProm"><a href="#"><img alt="" src="/images/icon-popular01.png" /></a></span>
 					<ul>
-						<li><a href="#">2 Days Shanghai Xian Tour by Round Flight</a></li>
+						<li><a href="/travel/china-2-days-shanghai-xian-tour-733.html">2 Days Shanghai Xian Tour by Round Flight</a></li>
 						<li>Terra-cotta Warriors</li>
 						<li>Ancient City Wall</li>
 						<li>Big Wild Goose Pagoda</li>
@@ -37,7 +37,7 @@
 				<div class="img-block"> <img class="img-responsive" src="/images/pic10.jpg"  /> </div>
 				<div class="text-block"> <span class="iconProm"><a href="#"><img alt="" src="/images/icon-popular01.png" /></a></span>
 					<ul>
-						<li><a href="#">5 Days Shanghai and Xian Tour</a></li>
+						<li><a href="/travel/china-5-days-shanghai-and-xian-relax-tour-838.html">5 Days Shanghai and Xian Tour</a></li>
 						<li>the Bund & Yu Garden</li>
 						<li>Jade Buddha Temple</li>
 						<li>Terracotta Warriors</li>
