@@ -1,5 +1,5 @@
 <div class="page-wrapper">
-	<div class="main-banner" style="display:block;">
+	<div class="main-banner hidden-xs" style="display:block;">
 		<div class="slider single-item"> 
 			<a class="banner01" href="#">
 				<span class="font font01">
@@ -39,7 +39,7 @@
 			</a> 
 			<span style="display: inline;" class="slick-prev button button_disable">Previous</span> <span style="display: inline;" class="slick-next button button_disable">Next</span> </div>
 	</div>
-	<div class="home-welcome">
+	<div class="home-welcome row">
 		<div class="home-copy">
 			<h2>Get in touch with our top travel specialists</h2>
 			<p>Lead to China creates private China tours for leisure travelers, heritage tours for adoptive families, 
@@ -47,13 +47,13 @@
 				We are always confident to offer you a lifetime China travel, exactly around your needs and budgets.</p>
 		</div>
 		<section>
-			<div class="home-step1">
+			<div class="home-step1 col-md-4 col-sm-4 col-xs-12">
 				<p>Send your travel plans to the experienced trip designers who are true insiders.</p>
 			</div>
-			<div class="home-step2">
+			<div class="home-step2 col-md-4 col-sm-4 col-xs-12">
 				<p>Perfect your itinerary until you are completely happy and ready to book.</p>
 			</div>
-			<div class="home-step3">
+			<div class="home-step3 col-md-4 col-sm-4 col-xs-12">
 				<p>Experience the wonder of an exceptional itinerary created just for you.</p>
 			</div>
 		</section>
