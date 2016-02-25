@@ -30,7 +30,7 @@ a:hover{ color:#00b7ea; cursor: pointer;}
 	background: white;
 }
 
-.header-content{ background-color: #444; box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); height: 75px; position: fixed; width: 100%; z-index:100;}
+.header-content{ background-color: #444; box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); height: 75px; width: 100%; z-index:100;}
 
 #sidebar
 {
@@ -583,7 +583,7 @@ div.search-form
     visibility: hidden;
 }
 
-.home-welcome{ background:#fff; font-weight:normal; padding: 50px 0;}
+.home-welcome{ background:#fff; font-weight:normal; padding: 20px 0;}
 .home-welcome h2{  
 	color: #343434;
     font-size:36px;
@@ -674,7 +674,7 @@ div.search-form
 }
 
 .home-para1{
-    height: 575px;
+  /*  height: 575px;*/
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -682,25 +682,24 @@ div.search-form
 }
 .home-para1 .text01{
     font-size: 20px;
-    margin: 100px auto 0;
+    margin:5px auto 0;
     text-shadow: 1px 1px 2px #333;
-    width: 30%;
+    width:70%;
     z-index: 50; 
 	position:absolute;	
-	top:20px;
+	top:0px;
 	left:17%;
 }
 
 .home-para1 .text01 h2{
     color: #fff;
-    font-size:40px;
+    font-size:16px;
     font-weight: 300;
-    line-height:40px;
-    margin-bottom: 20px;
+    margin:10px 0;
 }
 
 .home-para1 .text01 h2 span{
-    font-size: 1.2em;
+    font-size: 1.0em;
     line-height: 1.2em;
 }
 .home-para1 .home-para-img{
@@ -712,17 +711,17 @@ div.search-form
     display: block;
     float: left;
     padding-right: 4px;
-    padding-top: 7px;
+    padding-top:5px;
     text-shadow: 0 0 10px #8a631f, 0 0 3px black;
 }
 .home-para1 .text01 a{
-    border: 2px solid #fff;
-    border-radius: 6px;
+    border: 1px solid #fff;
+    border-radius:5px;
     color: #fff;
     display: inline-block;
-    font-size: 0.9em;
+    font-size: 0.6em;
     font-weight: bold;
-    padding: 8px 26px 8px 15px;
+    padding:4px 10px;
     position: relative;
     text-shadow: 0 0 10px #8a631f, 0 0 3px black;
 }
@@ -762,11 +761,11 @@ div.search-form
     float: left;
     font-size: 18px;
     line-height: 1.2em;
-    width: 365px;
+   /* width: 365px;*/
 }
 
 .home-why section > div img{
-    display: block; margin-top:25px;
+    display: block; margin-top:25px; height:auto; width:90%;
 }
 
 .home-why section ul{
@@ -776,7 +775,7 @@ div.search-form
     list-style: outside none none;
     margin: 0;
     max-width: 660px;
-    padding-left: 50px;
+    padding-left:20px;
     padding-top: 32px;
 }
 .home-why section ul li{
@@ -788,7 +787,7 @@ div.search-form
     padding-left: 76px;
     padding-top: 3px;
 }
-.home-why section ul li h3{font-size: 1.2em;    font-weight: bold; margin:10px 0;}
+.home-why section ul li h3{font-size: 1.0em;    font-weight: bold; margin:10px 0;}
 
 .home-why section ul li.home-why1::before{
     background: url(/images/home_why_ol_best_sprite.png) left 12px no-repeat;
@@ -828,29 +827,29 @@ div.search-form
 }
 
 .home-para2{
-    height: 536px;
+    min-height:100px;
     overflow: hidden;
     position: relative;
     width: 100%;
 	margin:0 auto;
 }
 .home-para2 .text01{
-    font-size: 18px;
-    margin:30px auto 0;
+    font-size: 14px;
+    margin:0px auto 0;
     text-shadow: 1px 1px 2px #333;
-    width: 55%;
+    width:80%;
     z-index: 50; 
 	position:absolute;	
-	top:20px;
+	top:10px;
 	right:8%; text-align:right;
 }
 
 .home-para2 .text01 h2{
     color: #fff;
-    font-size: 2.4em;
+    font-size:1.4em;
     font-weight: 300;
     line-height: 1em;
-    margin-bottom: 20px;
+    margin: 10px 0;
 }
 
 .home-para2 .text01 h2 span{
@@ -871,13 +870,13 @@ div.search-form
 }
 .home-para2 .text01 a{
 	 content: url("/images/white-link-arrow.png");
-    border: 2px solid #fff;
+    border:1px solid #fff;
     border-radius: 6px;
     color: #fff;
     display: inline-block;
     font-size: 0.9em;
     font-weight: bold;
-    padding: 8px 26px 8px 15px;
+    padding:4px 10px;
     position: relative;
     text-shadow: 0 0 10px #8a631f, 0 0 3px black;
 }
@@ -914,35 +913,34 @@ div.search-form
 .home-welcome.home-know-best section p span a:hover{  color: #00b7ea;}
 
 .home-para3{
-    height: 516px;
+    min-height:100px;
     overflow: hidden;
     position: relative;
     width: 100%;
 	margin:0 auto;
 }
 .home-para3 .text01{
-    font-size: 20px;
-    margin: 100px auto 0;
+    font-size: 15px;
+    margin: 0px auto 0;
     text-shadow: 1px 1px 2px #333;
-    width:44%;
+    width:95%;
     z-index: 50; 
 	position:absolute;	
-	top:20px; color: #fff;
-	left:17%;
+	top:10px; color: #fff;
+	left:2%;
 }
 
 .home-para3 .text01 h2{
     color: #fff;
-    font-size: 2.1em;
+    font-size:1.0em;
     font-weight: 300;
     line-height: 1em;
-    margin-bottom: 20px;
+    margin:5px 0;
 }
 
 .home-para3 .text01 h2 span{
-    font-size:30px;
-    line-height:30px;
-} 
+    font-size:0.9em;
+    } 
 .home-para3 .text01 span{
     font-size: 1.2em;
     line-height: 1.2em;
@@ -960,13 +958,13 @@ div.search-form
     text-shadow: 0 0 10px #8a631f, 0 0 3px black;
 }
 .home-para3 .text01 a{
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 6px;
     color: #fff;
     display: inline-block;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: bold;
-    padding: 8px 26px 8px 15px;
+    padding: 4px 15px;
     position: relative;
     text-shadow: 0 0 10px #8a631f, 0 0 3px black;
 }
@@ -974,7 +972,7 @@ div.search-form
 .home-foot-links{ }
 .home-foot-links h3{ text-align:center; color:#343434; font-size:36px; font-weight:300; padding:30px 0;}
 .seo-footer-wrapper-home{ width:1000px; margin:20px auto;}
-.seo-footer-wrapper-home .seo-section{ width: 21%; float: left; margin: 0 2%; padding: 0 0 50px; font-size:15px;}
+.seo-footer-wrapper-home .seo-section{ padding: 0 0 50px 15px; font-size:15px;}
 .seo-title{ font-weight: normal; margin-bottom: 10px;}
 .seo-section a{display: block; font-size:14px; padding: 5px 0 4px; color:#337ab7;}
 .seo-section a:hover{color:#00b7ea;}
@@ -1173,7 +1171,7 @@ text-shadow: 1px 1px 2px #333;width:65%;}
     overflow: hidden;
 }
 #header-clear header{ 
-    height: 75px;
+   /* height: 75px;*/
     max-width: 2048px;
 }
 .lead_foottext2{ background:#333; padding:10px; font-size:9px;}
