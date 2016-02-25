@@ -24,11 +24,11 @@ this is a mobile layouts
 <div id="page">
 	<div class="header-content">
 		<div id="header" class="row" >
-			<div id="logo" class="col-md-2 col-sm-3 hidden-xs " >
+			<div id="logo" class="col-md-6 col-sm-3 hidden-xs " >
 				<?php //echo CHtml::encode(Yii::app()->name); ?>
 				<a href="/"><img src="/images/mobile/logo.png"  /></a>
 			</div>			
-			<div class="col-md-10 col-sm-9 col-xs-12 pull-right">
+			<div class="col-md-6 col-sm-9 col-xs-12 pull-right">
             <nav style="z-index:99999" role="navigation" class="navbar navbar-default navbg">
               <div class="navbar-header">
                 <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
