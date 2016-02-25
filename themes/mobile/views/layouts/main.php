@@ -6,7 +6,7 @@
 <meta name="language" content="en" />
 <!-- blueprint CSS framework -->
 <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,700,700italic,italic,regular&amp;subset=latin" media="all"/>
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/mobile/screen.css" media="screen, projection" />
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
 <!--[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
@@ -95,7 +95,7 @@ this is a mobile layouts
 		<div class="container clearfix">
 			<header role="banner" class="clearfix">
 				<div id="header-clear-wrapper">
-					<div class="container clearfix"> &nbsp; </div>
+					<div class="container clearfix"></div>
 				</div>
 			</header>
 		</div>
@@ -103,7 +103,7 @@ this is a mobile layouts
 	<?php echo $content; ?>
 	<div class="clear"></div>
 	<div id="footer">
-		<div class="foot-block01">
+		<div class="foot-block01 hidden-xs">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -116,7 +116,7 @@ this is a mobile layouts
 		</div>
 		<div class="footer-content02">
 			<div class="container">
-				<div class="row">
+				<div class="row hidden-xs">
 					<div class="col-md-8 company-about"> <b>leadtochina.com</b> <span>Address: RM.504 Spring NO.9 Xinhua Xuefu Shitai Road Hefei City, Anhui, China</span><br />
 						<span>Copyright © 2008. All Rights Reserved to Lead To China</span> </div>
 					<div class="col-md-2 footer-links">
@@ -127,6 +127,9 @@ this is a mobile layouts
 						<a href="#">Payment Guide</a> <a href="#">Terms & Conditions</a> <a href="#">Privacy Policy</a> <a href="#">24/7 Care in China</a> <a href="#">FAQ's</a> </div>
 				</div>
 			</div>
+			<div class="visible-xs">
+     			<p class="zy_foottext2">Copyright@2015 Zhangye Travel. All Rights Reserved.</p>
+     		 </div>
 		</div>
 	</div>
 	<!-- footer -->

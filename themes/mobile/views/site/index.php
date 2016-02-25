@@ -74,7 +74,7 @@
 				the best vacation experiences and service for your travel dollars.</p>
 		</div>
 		<section>
-			<div class="home-frame1"> <img src="/images/home-why.jpg" alt="" /> </div>
+			<div class="home-frame1"> <img src="/images/home-why.jpg" alt="" class="visible-xs" /> </div>
 			<ul class="home-why-reasons">
 				<li class="home-why1">
 					<h3>No one knows China like we do</h3>
@@ -129,10 +129,10 @@
 	<div class="home-foot-links">
 		<h3>China Tours, Destinations & China Travel Guide</h3>
 		<div class="seo-footer-wrapper-home">
-			<div class="seo-section"> <span class="seo-title">China Tours</span> <a href="#"> Top 10 China Tours</a> <a href="#">China Heritage Tours</a> <a href="#">Yangtze River Cruise</a> <a href="#">China Educational Trips</a> <a href="#">China Train Travel</a> <a href="#">China Tours for Seniors</a> <a href="#">China Tours for Family</a> </div>
-			<div class="seo-section"> <span class="seo-title">Hot Destinations</span> <a href="#">Beijing Tours</a> <a href="#">Xi'an Tours</a> <a href="#">Shanghai Tours</a> <a href="#">Guilin Tours</a> <a href="#">Huangshan Tours</a> <a href="#">Zhangjiajie Tours</a> <a href="#">Hangzhou Tours</a> </div>
-			<div class="seo-section"> <span class="seo-title">Short Staty in China</span> <a href="#">Beijing Shanghai Tours</a> <a href="#">Beijing Xian Tours</a> <a href="#">Shanghai Xian Tours</a> <a href="#">Shanghai Huangshan Tours</a> <a href="#">Beijing Datong Tours</a> <a href="#">Beijing Tianjin Tours</a> <a href="#">Chengdu Panda Tours</a> </div>
-			<div class="seo-section"> <span class="seo-title">China Travel Guide</span> <a href="#">City Guide</a> <a href="#">Attraction Guide</a> <a href="#">Travel Tips</a> <a href="#">China Culture</a> <a href="#">China Maps</a> <a href="#">2016 Tour Brochure</a> <a href="#">24/7 Care</a> </div>
+			<div class="seo-section col-md-3 col-sm-3 col-xs-12"> <span class="seo-title">China Tours</span> <a href="#"> Top 10 China Tours</a> <a href="#">China Heritage Tours</a> <a href="#">Yangtze River Cruise</a> <a href="#">China Educational Trips</a> <a href="#">China Train Travel</a> <a href="#">China Tours for Seniors</a> <a href="#">China Tours for Family</a> </div>
+			<div class="seo-section col-md-3 col-sm-3 col-xs-12"> <span class="seo-title">Hot Destinations</span> <a href="#">Beijing Tours</a> <a href="#">Xi'an Tours</a> <a href="#">Shanghai Tours</a> <a href="#">Guilin Tours</a> <a href="#">Huangshan Tours</a> <a href="#">Zhangjiajie Tours</a> <a href="#">Hangzhou Tours</a> </div>
+			<div class="seo-section col-md-3 col-sm-3 col-xs-12"> <span class="seo-title">Short Staty in China</span> <a href="#">Beijing Shanghai Tours</a> <a href="#">Beijing Xian Tours</a> <a href="#">Shanghai Xian Tours</a> <a href="#">Shanghai Huangshan Tours</a> <a href="#">Beijing Datong Tours</a> <a href="#">Beijing Tianjin Tours</a> <a href="#">Chengdu Panda Tours</a> </div>
+			<div class="seo-section col-md-3 col-sm-3 col-xs-12"> <span class="seo-title">China Travel Guide</span> <a href="#">City Guide</a> <a href="#">Attraction Guide</a> <a href="#">Travel Tips</a> <a href="#">China Culture</a> <a href="#">China Maps</a> <a href="#">2016 Tour Brochure</a> <a href="#">24/7 Care</a> </div>
 		</div>
 	</div>
 </div>

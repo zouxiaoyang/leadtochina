@@ -238,7 +238,7 @@ ul.nav-tabs.affix {
         </div>
       </div>
       <div id="section7">
-        <div class="row" style="padding-bottom:80px;">
+        <div class="row" style="padding-bottom:10px;">
           <h2 id="#health"> <span class="page-title07">Health and Safety</span> </h2>
           <div class="col-md-4"> <img  src="/images/family-img03.jpg" alt=""  /><br>
             &nbsp;</div>
@@ -286,7 +286,7 @@ ul.nav-tabs.affix {
         </div>
       </div>
     </div>
-    <div class="col-sm-3" id="myScrollspy">
+    <!--<div class="col-sm-3" id="myScrollspy">
       <ul class="nav nav-tabs nav-stacked" data-offset-top="450" data-spy="affix">
         <li class="active"><a href="#section1">Why do an Intrepid family tour?</a></li>
         <li><a href="#section2">Where can we take a family adventure?</a></li>
@@ -296,7 +296,7 @@ ul.nav-tabs.affix {
         <li><a href="#section6">Accommodation</a></li>
         <li><a href="#section7">Health and Safety</a></li>
       </ul>
-    </div>
+    </div>-->
   </div>
 </div>
 <div class="top10tours-bottom-block">
