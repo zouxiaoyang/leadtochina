@@ -104,14 +104,13 @@ a:hover{ color:#00b7ea; cursor: pointer;}
 {	color:#fff;
 	font-size: 14px;
 	text-align: left; 
-	background: url(/images/bg-footer.png) left bottom  no-repeat #333;	
+/*	background: url(/images/bg-footer.png) left bottom  no-repeat #333;	*/	background:#333;	
 }
 .footer-content{ max-width:1200px; margin:0 auto;}
 .footer-content02{
 	color: #ccc; 
-	max-width:1200px; 
 	margin:0 auto;
-    padding: 40px 10px 30px 20px;
+    padding: 10px 10px 5px;
     width: 100%;
 }
 .company-about{   color: #787878;
@@ -177,8 +176,7 @@ a:hover{ color:#00b7ea; cursor: pointer;}
 #mainmenu ul li ul li a:hover{ background:#333; color:#eee; }
 
 .inquire-block{}
-.inquire-block span{ padding:2px 10px;display:block; 
-  border: 1px solid #faa02f; 
+.inquire-block span{ display:block; 
     border-radius: 4px;
     color: #faa02f;}
 
@@ -240,7 +238,6 @@ div.view
 div.breadcrumbs
 {
 	font-size: 0.9em;
-	padding: 5px 20px;
 }
 
 div.breadcrumbs02
@@ -583,27 +580,21 @@ div.search-form
     visibility: hidden;
 }
 
-.home-welcome{ background:#fff; font-weight:normal; padding: 20px 0;}
+.home-welcome{ background:#fff; font-weight:normal; padding: 20px 0 40px;}
 .home-welcome h2{  
-	color: #343434;
-    font-size:36px;
-    margin-bottom:28px;
-	text-align:center; font-weight:300;
+	 font-size:30px; margin:20px 0; line-height:36px;
 	}
 .home-welcome .home-copy {
     color: #333;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 100%; padding:0 20px 30px;
     position: relative;
     text-align: center;
 }
 
-.home-welcome .home-copy p {
-    line-height:24px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+.home-welcome .home-copy p{
+    width: 100%; line-height:22px;
 }
 .home-welcome section{
     margin: 0 auto;
@@ -624,8 +615,7 @@ div.search-form
     content: "";
     display: block;
     height: 112px;
-    margin-left: 40px;
-    width: 157px;
+    width: 100%;
 }
 .home-welcome section .home-step1{ padding-left: 12px;}
 
@@ -634,16 +624,14 @@ div.search-form
     content: "";
     display: block;
     height: 112px;
-    margin-left: 40px;
-    width: 140px;
+    width: 100%;
 }
 .home-welcome section .home-step3::before{
     background: rgba(0, 0, 0, 0) url("/images/mobile/home_steps_sprite03.png") no-repeat center;
     content: "";
     display: block;
     height: 112px;
-    margin-left: 40px;
-    width: 184px;
+    width: 100%;
 }
 
 .home-know-best section .home-step1::before{
@@ -694,7 +682,7 @@ div.search-form
 .home-para1 .text01 h2{
     color: #fff;
     font-size:16px;
-    font-weight: 300;
+    font-weight:500;
     margin:10px 0;
 }
 
@@ -703,7 +691,7 @@ div.search-form
     line-height: 1.2em;
 }
 .home-para1 .home-para-img{
-    display: inline-block; width:100%;
+    display: inline-block; width:100%; min-height:140px;
 }
 
 .home-para1 .text01 a::before {
@@ -720,31 +708,30 @@ div.search-form
     color: #fff;
     display: inline-block;
     font-size: 0.6em;
-    font-weight: bold;
     padding:4px 10px;
     position: relative;
     text-shadow: 0 0 10px #8a631f, 0 0 3px black;
 }
 .home-para1 .text01 a:hover{ background-color:rgba(229, 199, 86, 0.6); text-decoration:none;}
 
-.home-why{ padding:0 0 50px;}
+.home-why{ padding:0 0 40px;}
 .home-why .home-copy{
     color: #333;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0 auto;
     max-width: 900px;
     text-align: center;
 }
 .home-why .home-copy h2{
     color: #343434;
-    font-size:36px;
+    font-size:30px;
     font-weight: 300;
-    margin-bottom: 18px;
+    margin:40px 20px 20px;
 }
 
 .home-why .home-copy p{
-    line-height: 24px; font-size:18px;
-	padding:18px 50px;
+ font-size:16px;
+	padding:0 20px;
 }
 .home-why section{
     margin: 0 auto;
@@ -780,7 +767,7 @@ div.search-form
 }
 .home-why section ul li{
     background-repeat: no-repeat;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.4em;
     min-height: 64px;
     padding-bottom: 20px;
@@ -847,7 +834,7 @@ div.search-form
 .home-para2 .text01 h2{
     color: #fff;
     font-size:1.4em;
-    font-weight: 300;
+    font-weight:500;
     line-height: 1em;
     margin: 10px 0;
 }
@@ -857,7 +844,7 @@ div.search-form
     line-height: 1.2em;
 }
 .home-para2 .home-para-img{
-    display: inline-block; width:100%;
+    display: inline-block; width:100%; min-height:140px;
 }
 
 .home-para1 .text02 a::before {
@@ -875,7 +862,6 @@ div.search-form
     color: #fff;
     display: inline-block;
     font-size: 0.9em;
-    font-weight: bold;
     padding:4px 10px;
     position: relative;
     text-shadow: 0 0 10px #8a631f, 0 0 3px black;
@@ -897,7 +883,7 @@ div.search-form
 
 .home-welcome section > div p{
     margin-bottom: 9px;
-    padding: 0 20px;
+    padding: 0 20px; text-align:center;
 }
 
 .home-welcome.home-know-best section p {
@@ -926,14 +912,14 @@ div.search-form
     width:95%;
     z-index: 50; 
 	position:absolute;	
-	top:10px; color: #fff;
+	top:30px; color: #fff;
 	left:2%;
 }
 
 .home-para3 .text01 h2{
     color: #fff;
     font-size:1.0em;
-    font-weight: 300;
+    font-weight:500;
     line-height: 1em;
     margin:5px 0;
 }
@@ -946,7 +932,7 @@ div.search-form
     line-height: 1.2em;
 } 
 .home-para3 .home-para-img{
-    display: inline-block; width:100%;
+    display: inline-block; width:100%; min-height:130px;
 }
 
 .home-para3 .text01 a::before {
@@ -954,7 +940,7 @@ div.search-form
     display: block;
     float: left;
     padding-right: 4px;
-    padding-top: 5px;
+    padding-top:3px;
     text-shadow: 0 0 10px #8a631f, 0 0 3px black;
 }
 .home-para3 .text01 a{
@@ -963,16 +949,15 @@ div.search-form
     color: #fff;
     display: inline-block;
     font-size: 0.8em;
-    font-weight: bold;
     padding: 4px 15px;
     position: relative;
     text-shadow: 0 0 10px #8a631f, 0 0 3px black;
 }
 .home-para3 .text01 a:hover{ background-color:rgba(229, 199, 86, 0.6); text-decoration:none;}
 .home-foot-links{ }
-.home-foot-links h3{ text-align:center; color:#343434; font-size:36px; font-weight:300; padding:30px 0;}
+.home-foot-links h3{ text-align:center; color:#343434; font-size:30px; font-weight:300; margin:40px 10px 30px;}
 .seo-footer-wrapper-home{ width:1000px; margin:20px auto;}
-.seo-footer-wrapper-home .seo-section{ padding: 0 0 50px 15px; font-size:15px;}
+.seo-footer-wrapper-home .seo-section{ padding: 0 0 30px 15px; font-size:15px;}
 .seo-title{ font-weight: normal; margin-bottom: 10px;}
 .seo-section a{display: block; font-size:14px; padding: 5px 0 4px; color:#337ab7;}
 .seo-section a:hover{color:#00b7ea;}
@@ -1115,19 +1100,19 @@ div.search-form
 .page-title07{font-size:23px;padding-bottom: 9px; color:#555; }
 .page-title08{font-size:32px;padding: 10px 0;   color:#d56d21;}
 .page-title09{font-size:20px; margin-top:30px;}
-.page-title10{font-size:35px;border-bottom: 1px solid #eee; margin: 30px 0 20px;padding-bottom: 9px; color:#d56d21;  font-weight:300; }
+.page-title10{font-size:30px;border-bottom: 1px solid #eee; margin: 30px 0 20px;padding-bottom: 9px; color:#d56d21;  font-weight:300; }
 .page-title11{font-size:35px; border-bottom: 1px solid #eee; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-weight:300; }
-.page-title12{font-size:35px;border-bottom: 2px solid #d56d21; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-weight:300; }
+.page-title12{font-size:30px;border-bottom: 2px solid #d56d21; margin: 20px 0 20px;padding-bottom: 9px; color:#d56d21; font-weight:300; }
 .page-title13{font-size:36px; margin: 60px 0 40px;font-weight:300; text-align:center; }
 .page-title14{font-size:36px;border-bottom: 1px solid #d7d7d7; padding: 40px 0 30px; text-align:center;font-weight:300;}
 .page-title15{padding:10px 0;  font-size:32px; color:#343434;}
 .page-title16{font-size:35px;border-bottom: 1px solid #eee; margin: 30px 0 20px;padding-bottom: 9px;   font-weight:300; }
 .page-title17{font-size:22px;border-bottom: 1px solid #ccc; margin:20px 0 10px; padding-bottom:10px; font-weight:500;  }
-.lead02{ font-size: 17px;line-height: 1.4; margin: 15px 0 30px;}
+.lead02{ font-size: 16px;margin: 15px 0 10px;}
 
 
  
-.product-block01{ color:#fff; position:relative; float:left;  margin:0;}
+.product-block01{ color:#fff; position:relative; float:left;  margin:15px 0 0; max-width:360px;}
 .content-collection-inner{position:relative; display:block;}
 .product-info-back{ background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%) repeat scroll 0 0;bottom: 0;padding: 0 15px 5px;position: absolute;width: 100%; font-size:13px;}
 .product-block01 .product-info-back label{ display:block; font-size:18px; margin:0;}
@@ -1152,7 +1137,8 @@ text-shadow: 1px 1px 2px #333;width:65%;}
 .chinatour-bottom-banner .text01 label{ display:block; font-size:43px; font-weight:normal;}
 .chinatour-bottom-banner .text01 span{ display:block; font-size:28px; margin:0 0 10px;}
 
-
+.chinatours-img-block01{ margin:30px 0;}
+.chinatours-img-block01 img{ margin:16px 0 0;}
 
 #header-clear{margin: auto; }	
 .clearfix::after{
@@ -2229,18 +2215,18 @@ filter:progid:DXImageTransform.Microsoft.Alpha(enabled=false);
 
 .adoption-article-detail img{/* width:500px;*/ padding:10px 10px 10px 10px; }
 
-.adoption-search{ width:824px; height:58px;background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0; padding:8px 20px; position: absolute;  top: -73px;left:15%; border:1px solid #bbb;}
-.adoption-search input{ width:205px; height:40px; float:left; border:1px solid #4a4645; padding-left:10px; margin-right:10px;background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;}
+.adoption-search{ /*width:824px;*/ width:90%; /*height:58px;*/background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0; padding:8px 10px; position: absolute;  top: -148px;left:5%; border:1px solid #bbb;}
+.adoption-search input{ width:205px;/* height:40px;*/ float:left; border:1px solid #4a4645; padding:3px; margin-left:5px;background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;}
 .adoption-search img{ cursor:pointer;}
 #orphanage_list{ width:280px; height:200px; position:absolute; left:490px; top:48px; border:1px solid #4a4645; padding:4px 0px; display:block; background:#fff; font-size:11px;overflow-x:hidden}
 ul#orphanage_list li{ padding:2px 5px; line-height:14px; display:block; float:left; margin:2px 0px; cursor:pointer; width:270px;}
 ul#orphanage_list li:hover{background:#ccc;}
-.adoption-search select{ width:205px; border:1px solid #4a4645;-moz-border-radius: 8px; -khtml-border-radius: 8px;-webkit-border-radius: 8px;border-radius:8px; height:40px; line-height:40px; float:left; margin-right:25px; padding:10px;background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0; }
+.adoption-search select{ width:205px; border:1px solid #4a4645;-moz-border-radius: 8px; -khtml-border-radius: 8px;-webkit-border-radius: 8px;border-radius:8px;/* height:40px; line-height:40px;*/ float:left; margin:0px 5px 5px; padding:2px;background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0; }
 .adoption-search select option{ padding:3px 10px; font-size:11px; -webkit-text-size-adjust:none;}
 .adoption-search a{  display:block; float:left;}
-.adoption-search a.btn-search{ color:#ed9300; border:1px solid #ed9300; text-align:center; text-transform:uppercase; font-size:16px; height:30px; line-height:30px;   margin: 4px 0 0;padding: 0 19px;}
+.adoption-search a.btn-search{ color:#ed9300; border:1px solid #ed9300; text-align:center; text-transform:uppercase; font-size:16px; height:26px; line-height:26px;   margin: 4px 0 0 5px;padding: 0 19px;}
 .adoptionhome-about{background: #f5f5f5;padding: 5% 0 0;}
-.adoptionhome-about .about-how{list-style-type: none;margin-left: 72px; width:50%; float:left; }
+.adoptionhome-about .about-how{list-style-type: none;margin-left: 72px; width:70%; float:left; }
 .adoptionhome-about .about-how1, .adoptionhome-about .about-how2, .adoptionhome-about .about-how3, .adoptionhome-about .about-how4{margin-bottom: 30px;}
 .adoptionhome-about .about-how1::before, .adoptionhome-about .about-how2::before, .adoptionhome-about .about-how3::before, .adoptionhome-about .about-how4::before{
     background-image: url("/images/number-four.svg");background-repeat: no-repeat;background-size: 40px 164px;box-sizing: border-box;
@@ -2263,7 +2249,7 @@ ul#orphanage_list li:hover{background:#ccc;}
 
 .errorMessage{ color:#f00;}
 
-.adoption-stories{ width:356px; position:relative; background:#f5f5f5;}
+.adoption-stories{/* width:356px;*/ position:relative; background:#f5f5f5;}
 .adoption-stories .bg-back{background: rgba(0, 0, 0, 0.6); position:absolute; top:186px; height:50px; color:#fff; width:100%; padding:5px 10px; }
 .adoption-stories2 .bg-back{background: rgba(0, 0, 0, 0.6); position:absolute; top:202px; height:35px; color:#fff; width:100%; padding:7px 10px; }
 .adoption-stories .text-block{ padding:20px 10px; min-height:220px;}
