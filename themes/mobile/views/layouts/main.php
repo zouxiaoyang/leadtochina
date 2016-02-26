@@ -128,7 +128,7 @@ this is a mobile layouts
 				</div>
 			</div>
 			<div class="visible-xs">
-     			<p class="zy_foottext2">Copyright@2015 Zhangye Travel. All Rights Reserved.</p>
+     			<p class="zy_foottext2">Copyright © 2008. All Rights Reserved to Lead To China</p>
      		 </div>
 		</div>
 	</div>

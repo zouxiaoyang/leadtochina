@@ -1,10 +1,10 @@
-<img class="img-responsive" src="/images/adoptionhome-banner01.jpg" />
+<img class="img-responsive" src="/images/adoptionhome-banner01.jpg" style="min-height:150px; " />
 <div class="container" style="position:relative" >
 <?php 
 	$this->renderPartial('_search');
 ?>
   <h2 class="page-title13">Why Lead to China</h2>
-  <p style="width:600px; text-align:center; margin:30px auto;">Based in China, LTC have managed to help hundreds of families with adopted children find their way back to China. We are experienced, professional, but most of all, we care. </p>
+  <p style="text-align:center; margin:30px auto;">Based in China, LTC have managed to help hundreds of families with adopted children find their way back to China. We are experienced, professional, but most of all, we care. </p>
 </div>
 <div class="adoptionhome-about">
   <div class="container">
@@ -19,13 +19,13 @@
         <h3>What we know is more</h3>
         We know how important this tour means to you, so we think more and focus on every detail to make this tour unique no matter how small it looks like: the hotel you used to stay on your last visit, the orphanage visit, the very spot where your child was found...and various interesting activities we elaborately arranged for our children to experience the beauty, culture and history of china. We all have loved ones, that's why we care.  </li>
     </ul>
-    <img src="/images/adoptionhome-banner02.jpg"  class="about-img" /> </div>
+    <img src="/images/adoptionhome-banner02.jpg"  class="about-img hidden-xs" /> </div>
 </div>
 <div class="container">
   <h2 class="page-title13">Latest Travel Stories</h2>
   <div class="row">
   <?php foreach($ress as $res):?>
-    <div class="col-sm-6 col-md-4">
+    <div class="col-md-4 col-sm-4 col-xs-12">
       <div class="adoption-stories">
         <div class="img-block"> <img width="356" height="236" src="<?php echo ImageUtils::getThumbnail(AdoptionArticle::UPLOAD_PATH.$res['pic'], '356x236');?>"  />
           <div class="bg-back"> <span> <?php echo $res['title'];?> </span>
@@ -86,7 +86,7 @@
 <h2 class="page-title13">Exciting Travel Activities</h2>
 <div class="container">
   <div class="row">
-    <div class="col-sm-6 col-md-4">
+    <div class="col-sm-12 col-md-4">
       <div class="adoption-stories adoption-stories2">
         <div class="img-block"> <img  src="/images/adoption-pro-1.jpg"  />
           <div class="bg-back"> <span> Watch a Kungfu Show</span>
@@ -97,7 +97,7 @@
           <a href="/travel/adoption/special-activities.html" class="see-more02 f-right">See more >></a> </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4">
+    <div class="col-sm-12 col-md-4">
       <div class="adoption-stories adoption-stories2">
         <div class="img-block"> <img  src="/images/adoption-pro-2.jpg"  />
           <div class="bg-back"> <span>Makeup for the Sichuan Opera</span>
@@ -109,7 +109,7 @@
           <a href="/travel/adoption/special-activities.html" class="see-more02 f-right">See more >></a> </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4">
+    <div class="col-sm-12 col-md-4">
       <div class="adoption-stories adoption-stories2">
         <div class="img-block"> <img  src="/images/adoption-pro-3.jpg"  />
           <div class="bg-back"> <span> Visit the Giant Panda</span>

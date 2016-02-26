@@ -1,4 +1,4 @@
-<img class="img-responsive" src="/images/chinatour-banner01.jpg" />
+<img class="img-responsive hidden-xs" src="/images/chinatour-banner01.jpg" />
 <div class="container">
 	<p class="lead02">With the area of 9.6 million square kilometers, 56 ethnic group and over 5000 years history, China present a different culture, 
 attractions and scenery to the world tourists. From the Great wall to Terra-Cotta Warriors and the Yangtze River, China will offer you 
@@ -7,47 +7,58 @@ a unique and exciting opportunity in creating a lasting impression.</p>
     <p class="lead02">Over the last 8 years of carefully planning and operating tours to China, we are proud to present our most popular and best
 China tours to you. These China tour packages are made according to our field trip and customer's feedback. So, feel free to 
 select and get inspired!</p>
-    <div class="product-block01 "> 
-    	<a class="" href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-8-days-standard-china-golden-triangle-tour-by-flight'),'id'=>17));?>">
-    		<img src="/images/chinatours-img01.jpg" /> </a>
-            <div class="content-collection-info  product-info-back">
-              <label>China Golden Triangle Tour</label>
-              <span class="text01">8 Days Beijing-Xian-Shanghai</span>
-              <span>From:</span>
-              <span class="price">$699</span>
-              <a href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-8-days-standard-china-golden-triangle-tour-by-flight'),'id'=>17));?>" class="tour-read-more01 f-right">See more >> </a>
-            </div>
-    </div>
-    <div class="product-block01" style="margin:0 30px;">
-    	<a class="" href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-10-days-standard-china-essence-tour'),'id'=>22));?>">
-    		<img src="/images/chinatours-img02.jpg" /> </a>
-            <div class="content-collection-info  product-info-back">
-              <label>China Essence Tour</label>
-              <span class="text01">10 Days Beijing-Xian-Guilin-Yangshuo-Shanghai</span>
-              <span>From:</span>
-              <span class="price">$699</span>
-              <a href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-10-days-standard-china-essence-tour'),'id'=>22));?>" class="tour-read-more01 f-right">See more >> </a>
-            </div>
-    </div>
-    <div class="product-block01">
-    	<a class="" href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-11-days-china-tour-with-yangtze-river'),'id'=>54));?>">
-    		<img src="/images/chinatours-img03.jpg" /> </a>
-            <div class="content-collection-info  product-info-back">
-              <label>Grand Yangtze River</label>
-              <span class="text01">11 Days Beijing-Xian-Yangtze Cruise-Shanghai</span>
-              <span>From:</span>
-              <span class="price">$699</span>
-              <a href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-11-days-china-tour-with-yangtze-river'),'id'=>54));?>" class="tour-read-more01 f-right">See more >> </a>
-            </div>
-       
-    </div>
-    <p class="clear"></p>
+	<div class="row">
+		<div class="product-block01  col-md-4 col-sm-4 col-xs-12 "> 
+			<a class="" href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-8-days-standard-china-golden-triangle-tour-by-flight'),'id'=>17));?>">
+				<img src="/images/chinatours-img01.jpg" /> </a>
+				<div class="content-collection-info  product-info-back">
+				  <label>China Golden Triangle Tour</label>
+				  <span class="text01">8 Days Beijing-Xian-Shanghai</span>
+				  <span>From:</span>
+				  <span class="price">$699</span>
+				  <a href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-8-days-standard-china-golden-triangle-tour-by-flight'),'id'=>17));?>" class="tour-read-more01 f-right">See more >> </a>
+				</div>
+		</div>
+		<div class="product-block01  col-md-4 col-sm-4 col-xs-12">
+			<a class="" href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-10-days-standard-china-essence-tour'),'id'=>22));?>">
+				<img src="/images/chinatours-img02.jpg" /> </a>
+				<div class="content-collection-info  product-info-back">
+				  <label>China Essence Tour</label>
+				  <span class="text01">10 Days Beijing-Xian-Guilin-Yangshuo-Shanghai</span>
+				  <span>From:</span>
+				  <span class="price">$699</span>
+				  <a href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-10-days-standard-china-essence-tour'),'id'=>22));?>" class="tour-read-more01 f-right">See more >> </a>
+				</div>
+		</div>
+		<div class="product-block01  col-md-4 col-sm-4 col-xs-12">
+			<a class="" href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-11-days-china-tour-with-yangtze-river'),'id'=>54));?>">
+				<img src="/images/chinatours-img03.jpg" /> </a>
+				<div class="content-collection-info  product-info-back">
+				  <label>Grand Yangtze River</label>
+				  <span class="text01">11 Days Beijing-Xian-Yangtze Cruise-Shanghai</span>
+				  <span>From:</span>
+				  <span class="price">$699</span>
+				  <a href="<?php echo Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe('china-11-days-china-tour-with-yangtze-river'),'id'=>54));?>" class="tour-read-more01 f-right">See more >> </a>
+				</div>
+		   
+		</div>
+	</div>
     <h2 class="page-title10">Trip Themes</h2>
     <p class="lead02">We understand every traveler may have different interests for their upcoming China tours. Here is a collection of popular China tour
 categories that <b>carefully designed by our specialists.</b> <br />
 If you want to make some change from an existing itinerary, let us <b>customize a private China tour</b> for you to meet your
 requirements. Remember! We’re the local experts and here to help you.</p>
-	<div class="row hidden-xs">
+	<div class="chinatours-img-block01">
+		<img class="img-responsive " src="/images/mobile/chinatour-m01.png" />
+		<img class="img-responsive " src="/images/mobile/chinatour-m02.png" />
+		<img class="img-responsive " src="/images/mobile/chinatour-m03.png" />
+		<img class="img-responsive " src="/images/mobile/chinatour-m04.png" />
+		<img class="img-responsive " src="/images/mobile/chinatour-m05.png" />
+		<img class="img-responsive " src="/images/mobile/chinatour-m06.png" />
+		<img class="img-responsive " src="/images/mobile/chinatour-m07.png" />
+	</div>
+
+	<?php /*?><div class="row hidden-xs">
 		<div class="col-sm-4 content-collection product-block02">
             <a href="<?php echo Yii::app()->createUrl('bestChinaTours/index',array('name'=>'yangtze-river-tours'));?>" class="content-collection-inner">
             <img  src="/images/chinatours-img04.jpg" alt="" title="" />
@@ -130,8 +141,8 @@ requirements. Remember! We’re the local experts and here to help you.</p>
           <p>Silk Road was the main trade route which connected China with the west. Silk Road travel not only offers distinctive culture and natural spots but also give you a glimpse of the once prosperous civilization.</p>
       </div>      
     </div>
-    	<h2 class="page-title12">More Trip Ideas for China Travel</h2>
-        <p class="lead02">China offers an abundance of breath-taking experiences. If you cannot find the itinerary suit you best, take a look at our different trip themes below. 
+	<h2 class="page-title12">More Trip Ideas for China Travel</h2>
+    <p class="lead02">China offers an abundance of breath-taking experiences. If you cannot find the itinerary suit you best, take a look at our different trip themes below. 
 You can take a short break in Beijing, Xian, and other single city tours. The transport between these major cities is very convenient, that means take a short 
 China trip by bullet train or flight will be a good choice. </p>
     <div class="row">
@@ -183,10 +194,10 @@ China trip by bullet train or flight will be a good choice. </p>
         </div>
         
         
-    </div>
+    </div><?php */?>
 
 </div>
-<div class="chinatour-bottom-banner">
+<div class="chinatour-bottom-banner hidden-xs">
 	<img class="img-responsive" src="/images/chinatour-banner02.jpg" />
 	<div class="text01">
     	<label>Customize China Tour</label>
