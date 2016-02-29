@@ -2183,17 +2183,17 @@ filter:progid:DXImageTransform.Microsoft.Alpha(enabled=false);
 
 .adoption-review-right{ margin:10px 0 0;}
 
-.adoption-diy{ padding:0 93px ;}
+.adoption-diy{/* padding:0 93px ;*/}
 .adoption-diy-top{text-align:center; }
 .adoptionOrder-block h3{ color:#d56d21; font-size:22px; text-transform: uppercase; margin:0; border-bottom:1px solid #ccc; padding:40px 0 10px 0; margin-bottom:20px;}
 
-.adoptionOrder-block .table-header{ font-size:16px; text-transform:uppercase; width:35%; float:left; padding:10px 0 10px 32px;}
+.adoptionOrder-block .table-header{ font-size:16px; text-transform:uppercase;/* width:35%; float:left; padding:10px 0 10px 32px;*/}
 .adoptionOrder-block .table-header label{color:#343434; font-weight:300; margin:0;}
-.adoptionOrder-block .table-body{width:65%; float: left; padding:10px 0 10px; }
-.adoptionOrder-block .table-body input{ width:455px; border:1px solid #ccc; background:#fff; padding:3px;}
+.adoptionOrder-block .table-body{/*width:65%;float: left;*/  padding:10px 0 10px; }
+.adoptionOrder-block .table-body input{ width:100%; border:1px solid #ccc; background:#fff; padding:3px;}
 .adoptionOrder-block input.form-checkbox{ vertical-align:top; padding: 0; width:auto; margin:5px 10px 0 0;}
 .adoptionOrder-block input.Personal_field{ width:370px;}
-.adoptionOrder-block textarea.form-text{ vertical-align:top; padding: 0; width:auto; margin:0px; height:60px; width:455px; background:#fff; border:1px solid #ccc;}
+.adoptionOrder-block textarea.form-text{ vertical-align:top; padding: 0; width:auto; margin:0px; height:60px; width:455px; background:#fff; border:1px solid #ccc; width:100%;}
 .adoptionOrder-block .table-body span{ font-size:15px; padding:0 20px 0 0;}
 .adoptionOrder-block .list01{ list-style:none; margin:0; padding:0;}
 .adoptionOrder-block .list01 li{ padding:0 0 10px 0; float:left; width:50%;}
@@ -2203,9 +2203,9 @@ filter:progid:DXImageTransform.Microsoft.Alpha(enabled=false);
 
 .adoptionOrder-block .list03{ list-style:none; margin:0; padding:0;}
 .adoptionOrder-block .list03 i{ display:block; font-style:normal;}
-.adoptionOrder-block .list03 li{ padding:0; float:left; width:30%;}
+.adoptionOrder-block .list03 li{ padding:0; float:left; width:33%;}
 .adoptionOrder-block .form-select01{ width:80px;}
-.adoptionOrder-block .form-select02{background: #fff none repeat scroll 0 0;border: 1px solid #c4c4c4;color: #797979;padding: 2px;width:455px;}
+.adoptionOrder-block .form-select02{background: #fff none repeat scroll 0 0;border: 1px solid #c4c4c4;color: #797979;padding: 2px;width:100%;}
 
 .adoptionOrder-block input.large-button{background: url(/images/white-link-arrow.png) 8px center no-repeat  #ed9300;border: 2px solid #ed9300;border-radius: 10px;clear: both;color: #fff;display: inline-block;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-size: 18px;font-weight: normal;    margin: 0 0 5px;
     min-height: 20px; padding: 6px 15px 6px 30px;text-align: left;
