@@ -50,7 +50,7 @@
 	</div>
 	<h2 class="page-title04">Xian Tours from Shanghai</h2>
 	<div class="row" style="margin-bottom:40px;">
-		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic5.png"  />
+		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic5.png" class="img-responsive"  />
 			<div class="text-block">
 				<ul>
 					<li><a href="/travel/china-1-day-shanghai-to-xian-tour-by-flight-no-shopping-731.html">1 Day Shanghai to Xian Tour by Flight (No Shopping)</a> <span><strong>FEATURES:</strong>Terra-Cotta Army, City Wall</span> </li>
@@ -61,7 +61,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic4.png"  />
+		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic4.png" class="img-responsive"  />
 			<div class="text-block">
 				<ul>
 					<li><a href="/travel/china-1-day-shanghai-to-xian-tour-by-train-512.html">1 Day Shanghai to Xi'an Tour by Train</a> <span><strong>FEATURES:</strong>Xian City Wall, Terracotta Warriors</span> </li>
@@ -69,7 +69,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic12.jpg"  />
+		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic12.jpg" class="img-responsive"   />
 			<div class="text-block">
 				<ul>
 					<li><a href="/travel/china-1-day-xian-tours-from-shanghai-cruise-port-no-shopping-1037.html">1 Day Xian Tours from Shanghai Cruise Port (No Shopping)</a> <span><strong>FEATURES:</strong>Terracotta Warriors, Ancient City Wall</span> </li>
@@ -79,7 +79,7 @@
 	</div>
 	<h2 class="page-title04">Shanghai Tours from Xian</h2>
 	<div class="row" style="margin-bottom:0px;">
-		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic11.jpg"  />
+		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic11.jpg" class="img-responsive"   />
 			<div class="text-block">
 				<ul>
 					<li><a href="/travel/china-2-days-xian-to-shanghai-and-zhujiajiao-watertown-tour-841.html">2 Days Xian to Shanghai and Zhujiajiao Watertown Tour</a> <span><strong>FEATURES:</strong>Yuyuan Garden, Jade Buddha Temple, Shanghai World Financial Center, Zhujiajiao Ancient Town</span> </li>
@@ -91,7 +91,7 @@
 	</div>
 	<h2 class="page-title04">Shanghai & Xian Tours</h2>
 	<div class="row" style="margin-bottom:0px;">
-		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic13.jpg"  />
+		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic13.jpg" class="img-responsive"   />
 			<div class="text-block">
 				<ul>
 					<li><a href="/travel/china-6-days-shanghai-xitang-water-town-and-xian-tours-513.html">6 Days Shanghai, Xitang Water Town and Xian Tours</a> <span><strong>FEATURES:</strong>The Bund, Yuyuan Garden, Oriental Pearl Tower, City Gods Temple, Acrobatic Show, Xitang, Terracotta Warriors, Big Wild Goose Pagoda, City Wall, Grand Mosque</span> </li>
@@ -104,7 +104,7 @@
 	</div>
 	<h2 class="page-title04">Xian City & Side Tour</h2>
 	<div class="row" style="margin-bottom:0px;">
-		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic14.jpg"  />
+		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic14.jpg" class="img-responsive"   />
 			<div class="text-block">
 				<ul>
 					<li><a href="/travel/china-5-days-xian-side-tour-to-luoyang-154.html">5 Days Xian Side Tour to Luoyang</a> <span><strong>FEATURES:</strong>Terracotta Warriors, Big Wild Goose Pagoda, Provincial History Museum, Ancient City Wall, Forest of Stone Steles Museum, Longmen Caves, White Horse Temple, Chariot and Horse Pits, Shaolin Temple</span> </li>
@@ -117,8 +117,8 @@
 		</div>
 	</div>
 	<h2 class="page-title04">Shanghai City & Side Tours</h2>
-	<div class="row" style="margin-bottom:100px;">
-		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic15.jpg"  />
+	<div class="row" style="margin-bottom:40px;"> 
+		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic15.jpg"  class="img-responsive"  />
 			<div class="text-block">
 				<ul>
 					<li><a href="/travel/china-5-days-shanghai-suzhou-zhouzhuang-tour-124.html">5 Days Shanghai, Suzhou, Zhouzhuang Tour</a> <span><strong>FEATURES:</strong>Yuyuan Garden, Jade Buddha Temple, Nanjing Road, Bund, Shanghai Meseum, Humble Administrator's Garden,Tiger Hill, Grand Canal, Silk Factory, Zhouzhuang, Shen Hall </span> </li>

@@ -49,7 +49,7 @@
 	</div>
 	<h2 class="page-title04">Xian Tours from Beijing</h2>
 	<div class="row" style="margin-bottom:40px;">
-		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic5.png"  />
+		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic5.png" class="img-responsive"  />
 			<div class="text-block">
 				<ul>
 					<li><a href="/travel/china-1-day-terracotta-warriors-tours-from-beijing-by-flight-562.html">1 Day Terracotta Warriors Tours from Beijing by Flight</a> <span><strong>FEATURES:</strong> Terracotta Warriors, Xian City Wall</span> </li>
@@ -60,7 +60,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic4.png"  />
+		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic4.png" class="img-responsive"  />
 			<div class="text-block">
 				<ul>
 					<li> <a href="#">2 Days Beijing Xian Round Trip by High-speed Train</a> <span><strong>FEATURES:</strong> Shaanxi Provincial History Museum, Small Wild Goose Pagoda, Bell Tower and Drum Tower Square, Muslim Street, Terra-cotta Warriors, City Wall</span> </li>
@@ -70,7 +70,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic6.png"  />
+		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic6.png" class="img-responsive"  />
 			<div class="text-block">
 				<ul>
 					<li><a href="/travel/china-2-days-beijing-to-xian-tours--fast-trainflight--409.html">2 Days Beijing to Xian Tours ( Fast Train+Flight )</a> <span><strong>FEATURES:</strong> Great Mosque, City Wall, Terracotta Warriors</span> </li>
@@ -79,8 +79,8 @@
 		</div>
 	</div>
 	<h2 class="page-title04">Beijing Xian Extended Tour</h2>
-	<div class="row" style="margin-bottom:100px;">
-		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic7.png"  />
+	<div class="row" style="margin-bottom:40px;">
+		<div class="beijing-xian-block01 col-sm-12 col-md-12"> <img src="/images/pic7.png" class="img-responsive"  />
 			<div class="text-block">
 				<ul>
 					<li><a href="/travel/china-4-day-beijing-luoyang-xian-tour-833.html">4 Day Beijing Luoyang Xian Tour </a> <span><strong>FEATURES:</strong> Longmen Grottoes, White Horse Temple, Shaolin Temple, Terra-cotta Army, Xian City Wall, Bell Tower, Xian Muslim Quarters</span> </li>
