@@ -377,7 +377,6 @@ class ContentView
 						$author = $row->author;
 					}
 				}
-
 				?>
 				<tr class="<?php echo "row$k"; ?>">
 					<td>

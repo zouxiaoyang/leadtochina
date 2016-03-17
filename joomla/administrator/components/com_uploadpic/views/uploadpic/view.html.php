@@ -39,16 +39,12 @@ class UploadpicViewUploadpic extends JView
 		$c = JRequest::getCmd( 'c');
 		$uid 	= (int) @$cid[0];
 
-
-
-
 		$options = array();
 
 		$db->setQuery("SELECT id,pic_dir ,pic_path FROM jos_cos_contentpic  WHERE contentid=$uid ORDER BY id DESC");
 		//$pro_res=$db->query();
 		$piclist = $db->loadObjectList();
 		
-
 		$pic_count=count($piclist);
 		$pic_str="<tr>";
 		$j=1;
@@ -62,7 +58,7 @@ class UploadpicViewUploadpic extends JView
 			$temp_index=$i-1;
 			$temp_dir="/".$piclist[$temp_index]->pic_dir;
 			$temp_file_path=$temp_dir.$piclist[$temp_index]->pic_path;
-			$pic_str.="<td><img src=\"$temp_file_path\"><br /><a href=\"#\" onclick=\"javascript:del('../index.php?option=com_delpic&from=content&id={$piclist[$temp_index]->id}')\">删除</a></td>";
+			$pic_str.="<td><img src=\"$temp_file_path\"><br /><a href=\"#\" onclick=\"javascript:del('../administrator/index.php?option=com_delpic&from=content&id={$piclist[$temp_index]->id}')\">删除</a></td>";
 		
 			if($i%2==0){
 				$j=1;

@@ -72,7 +72,7 @@ function submitform(pressbutton){
     messageTimeID: '', 
 
     getUnreadNum: function(){
-      jq.post('/administrator/index.php?option=com_magrequestion&task=getUnreadNum', function(ret){
+      jq.post('/joomla/administrator/index.php?option=com_magrequestion&task=getUnreadNum', function(ret){
            if(ret > 0){
               document.title = "有"+ret+"条新问答需要处理！";
               _ajax_message.scrollTitle();
@@ -82,7 +82,7 @@ function submitform(pressbutton){
       })
     },
     updateStatus: function(obj,id){
-        jq.post('/administrator/index.php?option=com_magrequestion&task=updateReadStatus',{id_num:id},function(ret){
+        jq.post('/joomla/administrator/index.php?option=com_magrequestion&task=updateReadStatus',{id_num:id},function(ret){
             if(ret==0){
               jq(obj).html("已读提问");
               clearTimeout(_ajax_message.scrollTimeID);
@@ -229,7 +229,7 @@ function submitform(pressbutton){
 				<?php echo  $row->countreply;?>	
 			</td>
 			<td align="center">
-<a href="#" onclick="javascript:SetHot('../index.php?option=com_setaud&id=<?php echo $row->id;?>&tj=<?php echo $tj;?>')"><?php echo $tj_str;?></a>
+<a href="#" onclick="javascript:SetHot('../administrator/index.php?option=com_setaud&id=<?php echo $row->id;?>&tj=<?php echo $tj;?>')"><?php echo $tj_str;?></a>
 			</td>
       <td align="center" width="8%" onclick="_ajax_message.updateStatus(this, <?php echo $row->id;?>)" style="cursor: pointer;">
 				<?php if($row->is_read == 0){

@@ -63,7 +63,6 @@ JFilterOutput::objectHTMLSafe( $this->poll, ENT_QUOTES );
    function del(url) {
  
      
- 
      var url = url;
 	 
      request.open("GET", url, true);

@@ -8309,3 +8309,39 @@ Stack trace:
 #11 {main}
 REQUEST_URI=/newadmin/admin.php?r=adoptionContent/view&id=122
 ---
+2016/02/25 13:20:05 [error] [php] mkdir(): Permission denied (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/UeditorController.php:24)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): UeditorController->runAction()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): UeditorController->runActionWithFilters()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): UeditorController->run()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=ueditor/uploadPic
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/UeditorController.php (24)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2016/02/25 13:20:45 [error] [php] mkdir(): Permission denied (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/UeditorController.php:24)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): UeditorController->runAction()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): UeditorController->runActionWithFilters()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): UeditorController->run()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=ueditor/uploadPic
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/UeditorController.php (24)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)
+2016/02/25 13:27:08 [error] [php] mkdir(): No such file or directory (/home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/UeditorController.php:24)
+Stack trace:
+#0 /home/wwwroot/default/leadtochina/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /home/wwwroot/default/leadtochina/framework/web/CController.php(287): UeditorController->runAction()
+#2 /home/wwwroot/default/leadtochina/framework/web/CController.php(266): UeditorController->runActionWithFilters()
+#3 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(283): UeditorController->run()
+#4 /home/wwwroot/default/leadtochina/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /home/wwwroot/default/leadtochina/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /home/wwwroot/default/leadtochina/newadmin/admin.php(16): CWebApplication->run()
+REQUEST_URI=/newadmin/admin.php?r=ueditor/uploadPic
+in /home/wwwroot/default/leadtochina/newadmin/protected/backend/controllers/UeditorController.php (24)
+in /home/wwwroot/default/leadtochina/newadmin/admin.php (16)

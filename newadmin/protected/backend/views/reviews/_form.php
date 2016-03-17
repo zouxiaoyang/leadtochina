@@ -15,6 +15,7 @@
                 'UEDITOR_HOME_URL'=>"/",
                 'options'=>'wordCount:false,
                     elementPathEnabled:false,
+					 imagePath:"",
                     ',
             ));
     /*$this->widget('ext.ueditor.Ueditor',
