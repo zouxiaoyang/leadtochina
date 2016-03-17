@@ -14,7 +14,6 @@
                   <td>Tour Code</td>
                   <td><?php echo $ress['package_code'];?></td>
                 </tr>
-                
                 <tr>
                   <td>Route</td>
                   <td><?php echo $ress['route'];?></td>
@@ -172,9 +171,9 @@
   	<div class="order-right-view01">
     	<i class="title01">You are inquiring about this trip</i>
         <div class="content01">
-        <img src="/images/order-1.jpg" width="262" />
-        <span>spirits of japan tour</span>
-        <p>spirits of japan tourspirits of japan tourspirits of japan tourspirits of japan tourspirits of japan tourspirits of japan tourspirits of japan tour</p>
+        <img src="<?php echo '/'.$ress['filedir'].$ress['pic'].'';?>" width="262" />
+        <span><?php echo $ress['name'];?></span>
+        <p><?php echo strip_tags($ress['tour_intro']);?></p>
         </div>
     </div>
   	<div class="menu">
@@ -227,7 +226,7 @@ function checksubmit(){
 		$('#TourClass').css('border','0 none');
 	}
 
-	if(!$('#Adults').val()){
+	if($('#Adults').val()=='0'){
 		status=true;
 		$('#Adults').css('border','1px dotted #F00');
 	}else{

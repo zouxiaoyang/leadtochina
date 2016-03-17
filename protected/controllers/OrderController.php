@@ -3,8 +3,13 @@ class OrderController extends Controller
 {
 	public function actionIndex()
 	{
+		//seo:
+		$t='China Tour Package Reservation Form, Book China Tour';
+		$k='';
+		$d='';
+		Seo::_seo($this,$t,$k,$d);
 		$package_id = Yii::app()->session['package_id'];
-		$sql="select `name`,`categorieid_str`,`package_code`,`route`,`price`,`days` from `jos_cos_tours_package` where `id`=".(int)$package_id."";
+		$sql="select `name`,`categorieid_str`,`package_code`,`route`,`price`,`days`,`tour_intro`,`pic`,`filedir` from `jos_cos_tours_package` where `id`=".(int)$package_id."";
 		$ress = Yii::app()->db->createCommand($sql)->queryRow();
 		$this->render('index',array('ress'=>$ress));
 	}

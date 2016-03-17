@@ -63,7 +63,6 @@
 						array('label'=>'Customize China Tour', 'url'=>array('/order/new_order/')),
 					)
 				),
-
 				array('label'=>' DESTINATIONS', 'url'=>array($citytours),
 					'items'=>array(
 						array('label'=>'Beijing Tours', 'url'=>array('/travel/city-beijing-tours')),
@@ -76,7 +75,6 @@
 						array('label'=>'Zhangye Tours', 'url'=>array('/travel/city-zhangye-tours')),
 					)
 				),
-
 				array('label'=>'HERITAGE TOURS', 'url'=>array('/travel/adoption/'),
 					'items'=>array(
 						array('label'=>'Provincial Reunion Tour', 'url'=>array('/travel/adoption#provin ce_map/')),
@@ -125,7 +123,6 @@
     </div>
   </div>
   <?php echo $content; ?>
-  
   <div class="clear"></div>
   <div id="footer">
     <div class="foot-block01">

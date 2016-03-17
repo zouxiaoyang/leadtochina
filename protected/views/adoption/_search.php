@@ -119,7 +119,7 @@ $(function(){
           },
           search:function(){
             var orphanage_id = $("#orphanage_address_id").val();
-            var url = "<?php echo Yii::app()->createUrl('travel/adoption');?>";
+            var url = "/travel/adoption/OrphanageTravelGuide";
             if(orphanage_id){
               location.href = url+"/"+orphanage_id;
             }else{

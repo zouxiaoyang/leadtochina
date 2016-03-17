@@ -2,6 +2,8 @@
 <script type="text/javascript" src='/js/map/map.js'></script>
 <script type="text/javascript" src='/js/map/iframeResizer.min.js'></script> -->
 <!-- <script type="text/javascript" src='/js/map/map-1.js'></script> --> 
+<link rel="stylesheet" type="text/css" href="/css/colorbox02.css" />
+
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-9">
@@ -51,7 +53,7 @@
                 <div class="inner-tab-text01"> 
 					<?php $i=1;foreach($router as $ro){ ?>
 						  <b><?php echo 'Day '.$i.' '.$ro['today_route'];?></b>
-						  <p><?php echo str_replace(array('<b>','</b>','<strong>','</strong>'),'',$ro['activities']); //strip_tags($ro['activities']);?></p>
+						  <p><?php echo str_replace(array('<b>','<B>','</B>','</b>','<strong>','<STRONG>','</STRONG>','</strong>'),'',$ro['activities']); //strip_tags($ro['activities']);?></p>
 						  <i> Meals: <?php echo $ro['eat_standard'];?> </i><br />
 					 <?php $i++;} ?>
               </section>
@@ -86,6 +88,7 @@
                 	</table>
                   </div>  
               	</section> 
+				<?php if((int)$ress['days']>2):?>
               	<section class="clearfix inner-tab-block01">
                 	<label class="inner-tab-title01">IMPORTANT NOTES</label>
                 	<div class="inner-tab-text01">
@@ -94,6 +97,7 @@
 3. Prices may vary according to your travel time and are higher in the high season, e.g. Labor's Day (Apr 30-May 2, 2016)  , China National Day Holiday (Sep 30-Oct 7, 2016), and Chinese Spring Festival (Jan 27-Feb 3, 2017).</p>  
                 </div>
               	</section>
+			<?php endif;?>
               	<section class="clearfix inner-tab-block01">
               		<label class="inner-tab-title01">PRICE INCLUDES</label>  
                     <div class="inner-tab-text01">
@@ -132,6 +136,7 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
 						foreach($pics as $pic):
 							list($city_name,$jingdian) = explode('_',trim($pic));
 							list($dian,$bs) = explode('-',$jingdian);
+					// var_dump($ligboxalt[$city_name.'_'.$dian]);
 							$alt = isset($ligboxalt[$city_name.'_'.$dian])?$ligboxalt[$city_name.'_'.$dian]:'';
 						?>
 						<a class="example-image-link" href="/uploads/lightbox/<?php echo $city_name;?>/<?php echo $pic;?>.jpg" data-lightbox="example-set" data-title="<?php echo $alt;?>">
@@ -182,29 +187,32 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
               <section class="clearfix inner-tab-block01">
                 <label class="inner-tab-title01">About Payment Guide</label>
                 <div class="inner-tab-text01"> Usually, the deposit of tour package accounts for 30% of the total quotation, and the balance should be paid 30 days before your tour date. Payment methods we accept include Bank Transfer and PayPal, Credit Card and so on. More details you can check the Payment Guide page. Moreover, Children who are less than 12 y/o have their own discounts, please contact with your trip advisor.</div>
-              </section>
-                           
+              </section>     
             </div>
-            
             <div class="tab-pane fade" id="ask-answer">
              <section class="clearfix inner-tab-block01">
               	<div class="question-detail">
-                	<div class="quest-one">
-           				<div class="direction"><img alt="" src="/images/question1.png"  /></div>
+                	<div class="question"> 
+           				<!--<div class="direction"><img alt="" src="/images/question1.png"  /></div>-->
            				<!--  describe start  -->
-           				<div class="describe">
-            				<p>can you include flights from bangkok<br>
-                            Asked by <span>parmanand b kassen</span> (Oct.21, 2015)</p>
-           				</div>
-           				<!--  describe end  -->
-           				<!--  ask start  -->
-             			<div class="ask"><p><span>Trip consultant</span> (Oct.21, 2015) replied: <br>
-                  		That's okay. We have sent you the package including international flights. Please kindly check your email address</p>
-             			</div>
-             			<!--  ask end  -->
+						     <?php if($dataProvider->totalItemCount):?>
+							  <?php $this->widget('zii.widgets.CListView', array(
+								'dataProvider'=>$dataProvider,
+								'itemView'=>'_questionNew',
+								'pager'=>array(
+								  'cssFile'=>False,
+								  'header'=>'',
+								),
+								'template'=>"{items}\n{pager}",
+							  )); ?>
+							 <?php endif;?>
                   </div>
                 </div>
-             </ssection>
+			   <?php $this->renderPartial('/question/_formNew',array(
+				'questionModel'=>$questionModel,
+				'question_type' => 2,
+			  )); ?>  
+             </section>
             </div>
             <div class="tab-pane fade" id="inquire">
               	<section class="clearfix inner-tab-block01">
@@ -212,7 +220,7 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
                 	<div class="inner-tab-text01">
                 		<p>Any part of this itinerary can be altered to fit your need, e.g. accommodation, add/skip city, tour length...
 							Click below to tell us what you're looking for:</p>
-                        <a class="large-button" href="/node/add/triprequest/1966959">Inquire about this trip</a>
+                        <a class="large-button" href="/travel/order/">Inquire about this trip</a>
                 	</div>
                 </section>
             </div>

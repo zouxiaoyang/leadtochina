@@ -120,7 +120,7 @@
                 	<div class="inner-tab-text01">
                 		<p>Any part of this itinerary can be altered to fit your need, e.g. accommodation, add/skip city, tour length...
 							Click below to tell us what you're looking for:</p>
-                        <a class="large-button" href="/node/add/triprequest/1966959">Inquire about this trip</a>
+                        <a class="large-button" href="/travel/adoption/adoption-customize/">Inquire about this trip</a>
                 	</div>
                 </section>
             </div>

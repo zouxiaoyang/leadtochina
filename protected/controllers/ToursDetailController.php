@@ -4,7 +4,7 @@ class ToursDetailController extends Controller
 {
 	public function actionIndex()
 	{
-		$package_id = (int)trim($_GET['id']);
+		$id = $package_id = (int)trim($_GET['id']);
 
 		
 		Yii::app()->session['package_id'] = $package_id;// 将参数的id带到订单页面;
@@ -23,7 +23,20 @@ class ToursDetailController extends Controller
 		$k = $ress['seo_key'];
 		$d = $ress['seo_description'];
 		Seo::_seo($this,$t,$k,$d);
-		$this->render('index',array('ress'	=>$ress,'router'=>$router,'reviews'=>$reviews,'ligboxalt'=>$ligboxalt));
+		
+	   // $toursPackage = $this->loadModel($id);
+	   $model = $question = new Question;
+	   if(isset($_POST['Question'])){
+        $this->newQuestion($id);
+        $question->attributes=$_POST['Question'];
+	   }
+		$this->render('index',array('ress'	=>$ress,
+			'router'=>$router,
+			'reviews'=>$reviews,
+			'ligboxalt'=>$ligboxalt,
+			'dataProvider' => Question::pageCommentsByQuestionId($question_type=2,$id),
+			'questionModel' => $question
+		));
 	}
 
 	public function getPackage($package_id){
@@ -85,32 +98,41 @@ class ToursDetailController extends Controller
 			return $alt;
 		}
 	}
-
-	// -----------------------------------------------------------
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
+// question;
+    protected function newQuestion($id)
+    {
+        $question = new Question;
+        if(isset($_POST['Question'])){
+          if(strpos($_SERVER['REMOTE_ADDR'], "104.194.28")){
+            die("error");
+          }
+          //过滤日文垃圾问答
+          if(!preg_match('/^[A-Za-z0-9\/\-\_\.\s]+$/',$_POST['Question']['username'])){
+             die("error"); 
+          }
+          $question->attributes=$_POST['Question'];
+          
+          if(strpos($_POST['Question']['content'], "http") !== false){
+            echo 'invaid conent';
+            exit;
+          }
+          $valid=$question->validate();
+          if($valid){
+            $question->question_type_id = $id;
+			$question->save();
+            echo CJSON::encode(array(
+              'status'=>'success'
+            ));
+            Yii::app()->end();
+          }else{
+            $error = CActiveForm::validate($question);
+            if($error!='[]')  echo $error;
+            Yii::app()->end();
+          }
+        }
+    }
+//留言弹窗
+	public function actionsendsecced(){
+		$this->renderPartial("success",array());
 	}
-
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	*/
 }

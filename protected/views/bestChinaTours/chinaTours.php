@@ -85,7 +85,7 @@ requirements. Remember! We’re the local experts and here to help you.</p>
           <p>To offer you a memorable adventure together with your children, our carefully crafted itineraries covers ranges of cultural, historical, natural and family active experiences, including the must-sees as well as child-friendly activities & hotels.</p>
       </div>
       	<div class="col-sm-4 content-collection product-block02">
-            <a href="#" class="content-collection-inner">
+            <a href="/travel/china-student-tours/" class="content-collection-inner">
             <img  src="/images/chinatours-img08.jpg" alt="" title="" />
             <div class="content-collection-info product-info-back">
               <h2>China Educational Trips</h2>
@@ -94,7 +94,7 @@ requirements. Remember! We’re the local experts and here to help you.</p>
           <p>Our tours are well-designed for students to learn the China's ancient history, splendid culture and beautiful landscapes. We believe every student deserves the chance to experience educational travel, which is why we always offer the guaranteed lowest price.</p>
       </div>
       	<div class="col-sm-4 content-collection product-block02">
-            <a href="#" class="content-collection-inner">
+            <a href="/travel/china-senior-tours/" class="content-collection-inner">
             <img  src="/images/chinatours-img09.jpg" alt="" title="" />
             <div class="content-collection-info product-info-back">
               <h2>China Senior Tours</h2>
@@ -141,57 +141,47 @@ China trip by bullet train or flight will be a good choice. </p>
         		<span>City Tours</span> <div class="product-block03-text ">   
                <img src="/images/chinatours-img13.jpg" />
                 <p>
-                	<a href="#">Beijing</a>
-                    <a href="#">Xi’an</a>
-                    <a href="#">Shanghai</a>
-                    <a href="#">Guilin</a>
-                    <a href="#"> Huangshan</a>
-                    <a href="#">Zhangjiajie</a>
-                    <a href="#">Chengdu</a>
-                </p>
-                    
+                	<a href="/travel/city-beijing-tours/">Beijing</a>
+                    <a href="/travel/city-xian-tours/">Xi’an</a>
+                    <a href="/travel/city-shanghai-tours/">Shanghai</a>
+                    <a href="/travel/city-guilin-tours/">Guilin</a>
+                    <a href="/travel/city-huangshan-tours/"> Huangshan</a>
+                    <a href="/travel/city-zhangjiajie-tours/">Zhangjiajie</a>
+                    <a href="/travel/city-chengdu-tours/">Chengdu</a>
+                </p>                    
             </div>
         </div>
         <div class="product-block03 col-sm-4">    
-        	 
-        		<span> Short Trips</span> <div class="product-block03-text ">     	
+        	<span> Short Trips</span> <div class="product-block03-text ">     	
                <img src="/images/chinatours-img14.jpg" />
                 <p>
-                	<a href="#">Beijing Shanghai</a>
-                    <a href="#">Beijing Xian</a>
-                    <a href="#">Shanghai Xian</a>
-                    <a href="#">Shanghai Huangshan</a>
-                    <a href="#">Beijing Datong</a>
-                    <a href="#">Beijing Tianjin</a>
-                </p> 
-                    
+                	<a href="/travel/beijing-shanghai-tours/">Beijing Shanghai</a>
+                    <a href="/travel/beijing-xian-tours/">Beijing Xian</a>
+                    <a href="/travel/shanghai-xian-tours/">Shanghai Xian</a>
+					<a href="/travel/shanghai-to-huangshan-tours/">Shanghai HuangShan</a>
+                    <a href="/travel/beijing-datong-tours/">Beijing Datong</a>
+                </p>   
             </div>
         </div>
         <div class="product-block03 col-sm-4">    
-        	    	
         		<span>China Tours from</span> <div class="product-block03-text "> 
                	<img src="/images/chinatours-img15.jpg" />
                 <p>
-                	<a href="#">Beijing</a>
-                    <a href="#">Shanghai</a>
-                    <a href="#">Hong Kong</a>
+                	<a href="/travel/city-beijing-tours/">Beijing</a>
+                    <a href="/travel/city-shanghai-tours/">Shanghai</a>
+                    <a href="/travel/city-Hong+Kong-tours/">Hong Kong</a>
                     <a href="#">Austrilia</a>
                     <a href="#">South Africa </a>
                 </p>
-                    
             </div>
         </div>
-        
-        
     </div>
-
 </div>
 <div class="chinatour-bottom-banner">
 	<img class="img-responsive" src="/images/chinatour-banner02.jpg" />
 	<div class="text01">
     	<label>Customize China Tour</label>
     	<span>Get in touch with our specialists to start planning your next trip.</span>
-        <a href="/order/china-diy-tours/" class="more-link01">Start Now</a>
-        
+        <a href="/travel/china-diy-tours/" class="more-link01">Start Now</a>
     </div>
 </div>

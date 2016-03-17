@@ -32,7 +32,7 @@
             <label>We work closely with Chinese government and orphanages throughout China. </label>
             <br />
             <br />
-            <p class="center-button"> <a class="large-button" href="/travel/order">Plan Your Trip Today</a><br>
+            <p class="center-button"> <a class="large-button" href="/travel/china-diy-tours/">Plan Your Trip Today</a><br>
             </p>
           </div>
         </section>

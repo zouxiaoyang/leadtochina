@@ -90,14 +90,33 @@ class DestionsController extends Controller
 			Seo::_seo($this,$t,$k,$d);
 			$this->render('shanghaitoxian');
 			break;
+			case 'beijing-shanghai':{
+				$t='Tours from Shanghai to Beijing Great Wall, Travel Beijing to Shanghai by Train/ Flight';
+				$k='tours shanghai to beijing, tours from shanghai to beijing, beijing shanghai package, travel beijing to shanghai, tours beijing shanghai';
+				$d='Leadtochina offers you 1-9 days Beijing tours from shanghai, Shanghai tours from Beijing, Beijing &amp; Shanghai tours, and more China tours with/ from Shang Beijing.';
+			}
+			Seo::_seo($this,$t,$k,$d);
+			$this->render('beijingtoshanghai');
+			break;
+			case 'shanghai-to-huangshan':{
+				$t='Shanghai to Huangshan Tours by Flight, Train, Bus, Private Van with Best Price.';
+				$k='shanghai to huangshan, huangshan tours from shanghai, shanghai huangshan tour package';
+				$d='We are offering 1-5 days Huangshan Yellow mountain tours from Shanghai. You may take train, flight, bus or private van from our service. Inquiry Now.';
+			}
+			Seo::_seo($this,$t,$k,$d);
+			$this->render('shanghaitohuangshan');
+			break;
 
+			case 'beijing-datong':{
+				$t='Beijing Tours, Beijing Travel, Beijing Tour Packages';
+				$k='beijing tours, beijing travel, beijing tour packages, china beijing travel, beijing travel agency';
+				$d='Beijing Travel Agency offering Beijing tours, Beijing private tour, Beijing coach tour, and China Beiijng travel with honest price. You may also tailor-made beijing tours freely.';
+			}
+			Seo::_seo($this,$t,$k,$d);
+			$this->render('beijingtodatong');
+			break;
 			default:break;	
 		}
-		
-
-		
-
-		
 	}
 	public function actionShanghaiToXian(){
 	
@@ -106,30 +125,5 @@ class DestionsController extends Controller
 	protected function errorPage(){
 		echo '404 not Found!'; 
 	}
-	// -----------------------------------------------------------
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	*/
+
 }

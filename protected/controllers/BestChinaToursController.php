@@ -75,6 +75,31 @@ class BestChinaToursController extends Controller
 
 		$this->render('china-train-travel',array('ress'=>$ress));
 	}
+
+	public function actionChinaStudentTours(){
+	
+		$sql="select * from `jos_cos_tours_package` where `category_parentid`=(select `id` from `jos_categories` where `alias`='china-student-tour')";
+		$ress = Yii::app()->db->createCommand($sql)->queryAll(); 
+		// seo;
+		$k='China Student Tours, Educational Tours to China, School Trips to China.';
+		$t='China Student Tours, China Educational Tours';
+		$d='Lead to China offers best China Student Tours experiences and reliable reviews of educational tours to China.';
+		Seo::_seo($this,$t,$k,$d);
+
+		$this->render('china-student-tours',array('ress'=>$ress));
+	}
+	public function actionChinaSeniorTours(){
+	
+		$sql="select * from `jos_cos_tours_package` where `category_parentid`=(select `id` from `jos_categories` where `alias`='classic-china-tour')";
+		$ress = Yii::app()->db->createCommand($sql)->queryAll(); 
+		//seo:
+		$t='China Tours for Seniors, China Senior Tours for The Elderly';
+		$k='china senior tours, china tours for senior, senior tours to china, tour operator for elderly, china tours for the elderly';
+		$d='';
+		Seo::_seo($this,$t,$k,$d);
+		$this->render('china-senior-tours',array('ress'=>$ress));
+	}
+
 	// -----------------------------------------------------------
 	// Uncomment the following methods and override them if needed
 	/*

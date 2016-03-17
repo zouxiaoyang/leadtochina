@@ -62,9 +62,9 @@
 		<div class="text01">
 			<h2>Get inspirations <span><br>
 				from our China Theme Tours</span></h2>
-			<div><a href="/node/add/triprequest">Choose your style now </a></div>
+			<div><a href="/travel/china-tours/">Choose your style now </a></div>
 		</div>
-		<img src="/images/home-panda.jpg" alt=""  class="home-para-img" /> </div>
+		<img src="/images/home-panda.jpg" alt="china tours"  class="home-para-img" /> </div>
 	<div class="home-why">
 		<div class="home-copy">
 			<h2>Why Lead To China</h2>
@@ -94,7 +94,7 @@
 	<div class="home-para2">
 		<div class="text01">
 			<h2>Popular destinations to visit in China</h2>
-			<div class="text02"> <a href="/node/add/triprequest">Choose your style now </a></div>
+			<div class="text02"> <a href="/travel/city-tours/">Choose your style now </a></div>
 		</div>
 		<img src="/images/home-waitan.jpg" alt=""  class="home-para-img" /> </div>
 	<div class="home-welcome home-know-best">
@@ -124,7 +124,7 @@
 	<div class="home-para3">
 		<div class="text01">
 			<h2>Zhangye Danxia Landform</h2>
-			<h2><span> "The Most Beautiful Natural Place in China"</span></h2><a href="#">Read More </a> </div>
+			<h2><span> "The Most Beautiful Natural Place in China"</span></h2><a href="<?php echo Yii::app()->createUrl('content/index',array('artile'=>'china-rainbow-mountainszhangye-danxia-landform-geological-park','at_id'=>1641));?>">Read More </a> </div>
 		<img src="/images/home-zhangye.jpg" alt=""  class="home-para-img" /> </div>
 	<div class="home-foot-links">
 		<h3>China Tours, Destinations & China Travel Guide</h3>

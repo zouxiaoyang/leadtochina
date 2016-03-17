@@ -10,12 +10,14 @@ return array(
 			'/travel/yangtze-river-tours/'	=> 'bestChinaTours/yangtzeriverTours',
 			'/travel/silk-road-tours/'	=> 'bestChinaTours/silkroadAdventure',
 			'/travel/china-train-travel/'	=> 'bestChinaTours/chinaTrainTravel',
+			'/travel/china-student-tours/'	=> 'bestChinaTours/chinaStudentTours',
+			'/travel/china-senior-tours/'	=> 'bestChinaTours/chinaSeniorTours',
 			// tours detail page;
-			'travel/<name:.*>-<id:\d+>.html'  =>'toursDetail/index',
+			'travel/china-<name:.*>-<id:\d+>.html'  =>'toursDetail/index',
 			//order
 			 'travel/order/'  =>'order/index',
 			 'travel/success/'  =>'order/success',
-			 'order/china-diy-tours/'  =>'order/new_order',
+			 'travel/china-diy-tours/'  =>'order/new_order',
 			 //reviews
 			 'travel/pid/<packageid:\d+>/review/<tid:\d+>.html'  =>'reviews/index',
 			// adoption
@@ -46,7 +48,8 @@ return array(
 			  '/travel/cruise-port/<name:.*>-port-introduction-<id:\d+>' => 'port/portIntroduction',
 			  '/travel/international-cruise/<name:.*>-<id:\d+>' => 'port/CruiseView',
 			// things
-			'/travel/things/'	=>'content/index',
+			'/travel/things/<artile:.*>-<at_id:\d+>.html'	=>'content/index',
+			'/travel/things/'	=>'content/things',
 			// payment;
 			'paymentguide.htm'	=>'payment/payment',
 			// static page

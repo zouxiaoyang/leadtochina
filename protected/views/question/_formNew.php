@@ -1,10 +1,12 @@
+<script src="/js/jquery.colorbox.js"></script>
 <?php $form=$this->beginWidget('CActiveForm', array(
   'id'=>'question-form',
     'enableClientValidation'=>true,
 )); ?>
+<div class="clear"></div>
 <!--  write start  -->
 <div class="write">
- <h2><img src="/images/view/write.png" alt="" /></h2>
+ <h2>write your question</h2>
    <div class="writecont" id="writecont">
     <table border="0" cellspacing="0" cellpadding="0">
        <tbody>
@@ -27,7 +29,6 @@
                   <?php echo $form->error($questionModel,'email'); ?>
                </td>
                <td class="tesu">
-
                 <?php 
                             echo CHtml::ajaxSubmitButton('','',
                                array(
@@ -36,8 +37,8 @@
                                    'success'=>'function(data) {
                                        $("#AjaxLoader").hide();  
                                       if(data.status=="success"){
-                                       $.colorbox({href:"/travel/toursPackage/sendsecced",iframe:true, innerWidth:700, innerHeight:220,})
-	//location.href="/succeed.html";
+                                       $.colorbox({href:"/toursDetail/sendsecced",iframe:true, innerWidth:700, innerHeight:220,})
+									   //location.href="/succeed.html";
                                        //alert("form submitted successfully.");
                                        $("#Question_content").val("");
                                        $("#Question_username").val("");
@@ -52,7 +53,7 @@
                                    'beforeSend'=>'function(){                        
                                          $("#AjaxLoader").show();
                                     }'
-                                   ),array('id'=>'button','class'=>'form_button','style'=>'height:29px; width:221px;border:0px;cursor:pointer;background:url(/images/view/submit.png) left center no-repeat; dispaly:block;'));
+                                   ),array('id'=>'button','class'=>'form_button','style'=>'height:29px; width:228px;border:0px;cursor:pointer;background:url(/images/view/submit.png) left center no-repeat; dispaly:block;'));
                                     ?>
                                     <?php echo $form->hiddenField($questionModel,'question_type', array('value'=>$question_type)); ?>
                                    <div id="AjaxLoader" style="display: none">submiting...</div>
