@@ -1396,8 +1396,8 @@ pre code{
 	overflow-y:scroll
 }
 .container{
-	padding-right:15px;
-	padding-left:15px;
+	padding-right:10px;
+	padding-left:10px;
 	margin-right:auto;
 	margin-left:auto
 }
@@ -3288,14 +3288,14 @@ border-bottom-left-radius:0
 
 }
 .nav-tabs>li{
-	float:left;
+/*	float:left;*/
 	margin-bottom:-1px; 
 }
 .nav-tabs>li>a{
-	margin-right:2px;
+	/*margin-right:2px;*/
 	line-height:1.42857143;
 	border:1px solid transparent; text-transform:uppercase;
-	border-radius:0; border:1px  solid #ccc; background:#dcdcdc; color:#797979; font-weight:bold; font-size:13px;
+	border-radius:0; border:1px  solid #ccc; background:#dcdcdc; color:#797979; font-weight:bold; font-size:15px;
 }
 .nav-tabs>li>a:hover{ background:#898989; color:#fff;
 }
@@ -3423,7 +3423,7 @@ border-bottom-color:#fff
 .navbar{
 /*	position:relative;
 	min-height:50px;
-	border:none; float:right; */background:#444;
+	border:none; float:right; */background:#444; border:none;
     height: auto;
    
     position: relative;
@@ -3922,7 +3922,7 @@ background-color:transparent
 .pagination{
 	display:inline-block;
 	padding-left:0;
-	margin:20px 0;
+	margin:10px 0;
 	border-radius:4px
 }
 .pagination>li{
@@ -3933,7 +3933,7 @@ background-color:transparent
 	position:relative;
 	float:left;
 	padding:6px 12px;
-	margin-left:8px;
+	margin:4px;
 	line-height:1.42857143;
 	color:#333;
 	text-decoration:none;
@@ -4549,7 +4549,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:focus, a.list-g
 .panel-title{
 	margin-top:0;
 	margin-bottom:0;
-	font-size:16px;
+	font-size:15px;
 	color:inherit
 }
 .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a{

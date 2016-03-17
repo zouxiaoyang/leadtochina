@@ -4007,7 +4007,7 @@ background-color:transparent
 	float:right
 }
 .pager .previous>a, .pager .previous>span{
-	float:left
+	float:none
 }
 .pager .disabled>a, .pager .disabled>a:focus, .pager .disabled>a:hover, .pager .disabled>span{
 	color:#777;
