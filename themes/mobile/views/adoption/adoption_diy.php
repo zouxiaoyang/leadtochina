@@ -349,7 +349,7 @@
             <div class="link">
               <input type="submit" class="large-button" id="BookNowBtn" value="Get My Trip Planned">
               <p class="description">We will reply in 12 working hours!</p>
-              <br /><br /><br /><br /><br /><br />
+              <br />
             </div>
            </div>
         </section>

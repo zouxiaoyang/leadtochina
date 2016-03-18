@@ -39,29 +39,7 @@
 				<p>Qingdao is a famous garden city in China and its coast has many lovely inlets. The scenery of the Zhanqiao Pier, Luxun Park, Little Qingdao Isle, Xiaoyu Hill, Badaguan, the seashore and the May Fourth Square are all beside the sea and constitute the famous scenic sights of Qingdao.</p>
 			</div>		
 		</div>
-		<?php /*?><div class="col-sm-6 col-md-4">
-			<div class="port-block01">
-				<img class="img-responsive" src="/images/port-yantai.jpg"  />
-				<span>Yantai Port</span>
-				<p>Yantai is a famous summer resort. It has rich tourist resources. Scattered along its 909 kilometers meandering coastline are many beautiful islands, as well as harbors and fine golden sand beaches. Places of interests in the area include Penglai Pavilion, Penglai Water City, and the cliff stone carvings.</p>
-			</div>		
-		</div>
-		<div class="col-sm-6 col-md-4">
-			<div class="port-block01">
-				<img class="img-responsive" src="/images/port-sanya.jpg"  />
-				<span>Sanya Port</span>
-				<p>Sanya is a transport and communication center and one of the most important foreign trade ports in the extreme south of the golden coastline. Backed by its famous mountains and facing the ocean, Sanya is a garden town jam-packed with coconut palms and different verdant splendors. </p>
-			</div>		
-		</div>
-		<div class="col-sm-6 col-md-4">
-			<div class="port-block01">
-				<img class="img-responsive" src="/images/port-haikou.jpg"  />
-				<span>Haikou Port</span>
-				<p>Haikou, known as the Coconut City, is the capital of China's second largest island-Hainan Island. It is a simple sightseeing city to an attractive seaside resort and business center. The services for visitors to the city are being extended with the goal of establishing the city as southern China's key center for tourism.</p>
-			</div>		
-		</div><?php */?>
 	</div>
-	
 	<h2 class="page-title08">Cruise Ships</h2>
 	<p>With the dramatically developing China cruise market, more and more international Cruise liners select Chinese harbors to their homeports and some of the cruises have already been to China in plenty of times, such as Crystal, Princess, Royal Caribbean, and Celebrity etc. As aChina based travel agency, we have managed to help thousands of visitors arrange their perfect vacations and transfer service in China. </p>
 	<div class="row" style="margin-bottom:80px;">

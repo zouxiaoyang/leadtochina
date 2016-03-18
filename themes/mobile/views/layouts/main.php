@@ -5,7 +5,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="language" content="en" />
 <!-- blueprint CSS framework -->
-<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,700,700italic,italic,regular&amp;subset=latin" media="all"/>
+
+<link rel="stylesheet" type="text/css"  href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css" />
+
+ <!-- <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,700,700italic,italic,regular&amp;subset=latin" media="all"/> -->
+ <link type="text/css" rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:300,700,700italic,italic,regular&amp;subset=latin" media="all"/>
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/mobile/screen.css" media="screen, projection" />
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
 <!--[if lt IE 8]>
@@ -20,7 +24,6 @@
 <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">
-this is a mobile layouts
 <div id="page">
 	<div class="header-content">
 		<div id="header" class="row" >
@@ -47,7 +50,7 @@ this is a mobile layouts
 							<li><a href="/travel/adoption">China Homeland Tours</a></li>
 							<li><a href="/travel/beijing-xian-tours">Beijing Xian Tours</a></li>
 							<li><a href="/travel/shanghai-xian-tours">Shanghai Xian Tours</a></li>
-							<li><a href="/order/china-diy-tours">Customize China Tour</a></li>
+							<li><a href="/travel/china-diy-tours">Customize China Tour</a></li>
 						</ul>
 					</li>
 					<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="/travel/city-tours"> DESTINATIONS</a>
@@ -63,7 +66,6 @@ this is a mobile layouts
 					</li>
 					<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="/travel/adoption">HERITAGE TOURS</a>
 						<ul class="dropdown-menu">
-							<li><a href="/travel/adoption#provin ce_map">Provincial Reunion Tour</a></li>
 							<li><a href="/travel/adoption/beijingXianChengduItinerary">2016 Group Tour</a></li>
 							<li><a href="/travel/adoption/orphanageList">China Orphanage List</a></li>
 							<li><a href="/travel/adoption/storyIndex">Families' Travel Stories</a></li>
@@ -83,7 +85,6 @@ this is a mobile layouts
 					</li>
 					<li class="dropdown last"><a class="dropdown-toggle inquire-block " href="#"> <span> INQUIRE NOW</span> </a>
 				</li></ul>
-			
 			</div>
             </nav>
           </div>			
@@ -121,13 +122,14 @@ this is a mobile layouts
 						<span>Copyright © 2008. All Rights Reserved to Lead To China</span> </div>
 					<div class="col-md-2 footer-links">
 						<h4>COMPANY INFO</h4>
-						<a href="#">About Us</a> <a href="/site/contact">Contact Us </a> <a href="#">Feedback</a> <a href="#">Newsletter</a> <a href="#">Promotion</a> <a href="#">Tours Brochure</a> </div>
+						<a href="/about-us/">About Us</a> <a href="/site/contact">Contact Us </a> <a href="#">Feedback</a> <a href="/newsletter/">Newsletter</a> <a href="#">Promotion</a> <a href="/Emergency-Response.html">Tours Brochure</a> </div>
 					<div class="col-md-2 footer-links">
 						<h4>CUSTOMER CENTER</h4>
-						<a href="#">Payment Guide</a> <a href="#">Terms & Conditions</a> <a href="#">Privacy Policy</a> <a href="#">24/7 Care in China</a> <a href="#">FAQ's</a> </div>
+						<a href="/paymentguide.htm">Payment Guide</a> <a href="#">Terms & Conditions</a> <a href="/privacy-policy.html">Privacy Policy</a> <a href="/Emergency-Response.html">24/7 Care in China</a> <a href="#">FAQ's</a> </div>
 				</div>
 			</div>
 			<div class="visible-xs">
+			this is a mobile layouts
      			<p class="zy_foottext2">Copyright © 2008. All Rights Reserved to Lead To China</p>
      		 </div>
 		</div>

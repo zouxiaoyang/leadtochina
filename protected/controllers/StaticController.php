@@ -26,7 +26,11 @@ class StaticController extends Controller
 // about us 
 
 public function actionAboutUs(){
-
+	// seo 
+	$k='china travel agency, china tour company, china travel service';
+	$t='About Us--Lead To China';
+	$d='Lead To China: Hefei Full-View Travel Company offering China tour packages tailor-made, hotels, flight,  train tickets booking, as well as a huge reservoir of China travel information.';
+	Seo::_seo($this,$t,$k,$d);
 	$this->render('about-us');
 }
 

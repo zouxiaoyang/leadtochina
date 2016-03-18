@@ -6,25 +6,25 @@
       <p class="adoptionIti_txt2">This is one of the customized, culturally-based China heritage tours for group of families interested in visiting their child's birth city, SWI and foster family. You are going to feel China's ancient history through Great Wall, Forbidden City, Summer Palace, Terracotta Warriors, enjoy China's lovely flocky giant panda in Chengdu and experience China's Harmonious multi-ethnic society  through Muslim Quarter.<br>
         <span style="font-size:14px;color:#F00; font-weight:bold; display:block; margin-top:8px;">! Good News: Only 200 USD to reserve the quota for a family, and a 100% refund to cancel the tour for you. (before Dec.31st of 2015)</span> </p>
     </div>
-    <div class="adoptionIti_bannerr_1"> <img   src="/images/banner-2016-group-tour.jpg"  /></div>
+    <div class="adoptionIti_bannerr_1"> <img   src="/images/banner-2016-group-tour.jpg" class="img-responsive"  /></div>
   </div>
   <div class="clearfix"></div>
   <div class="adoptionIti_cont1">
     <ul id="myTab" class="nav nav-tabs">
       <li class="active"> <a data-toggle="tab" href="#full-itinerary">Full Itinerary</a> </li>
       <li> <a data-toggle="tab" href="#date-prices">Date & Prices</a> </li>
-      <li> <a data-toggle="tab" href="#special-activities">Special Activities</a> </li>
+     <!-- <li> <a data-toggle="tab" href="#special-activities">Special Activities</a> </li>
       <li> <a data-toggle="tab" href="#reviews">Reviews</a> </li>
       <li> <a data-toggle="tab" href="#know-before-you-go">Know Before You Go</a> </li>
-      <li class="last"><a data-toggle="tab" href="#adoption_enquiry">Free Quote</a> </li>
+      <li class="last"><a data-toggle="tab" href="#adoption_enquiry">Free Quote</a> </li>-->
     </ul>
     <div id="myTabContent" class="tab-content">
       <div id="full-itinerary" class="tab-pane fade in active">
         <div class="adoptionIti_cont1_map">
           <div class="adoptionIti_cont1_map1">
-            <p>Tour Map &amp; Summary</p>
+          <!--  <p>Tour Map &amp; Summary</p>-->
           </div>
-          <div class="adoptionIti_cont1_map3"></div>
+          <div class="adoptionIti_cont1_map3 "><!-- <img   src="/images/group2_map.jpg" class="img-responsive"  />--></div>
         </div>
         <div class="adoptionIti_cont1_day">
           <div class="adoptionIti_cont1_map1">
@@ -34,7 +34,7 @@
             <p class="adoptionIti_cont1_daya_txt"><span class="adoptionIti_cont1_txt1">[ Pick-up Service ]</span><br>
               Arrive at the Beijing International Airport. Your private English-speaking guide will hold a sign "Lead to China" to meet you warmly. A comfortable private car (non-smoking) with experienced driver will transfer you directly to the hotel. You 
               guide will help you check-in. </p>
-            <p class="adoptionIti2_cont1_daya_img"></p>
+            <p class="adoptionIti2_cont1_daya_img hidden-xs"></p>
           </div>
         </div>
         <div class="clear"></div>
@@ -191,12 +191,12 @@
         <div class="DatePri_cont">
           <div class="DatePri_cont1">
             <p>DATE &amp; PRICE</p>
-            <ul style="width:540px; float:left;">
+            <ul >
               <li style="font-size:14px;">July 04th, 2016</li>
               <li style="font-size:14px"><strong>Adult price</strong> (ages 12 &amp; over): $2000, <strong>Adoptee price</strong>: <span style="color:#C00; font-weight:bold">FREE*</span> - no age limit</li>
               <li style="font-size:14px"><strong>Each additional child</strong> (ages 0-11): $1600</li>
             </ul>
-            <div style="width:520px; float:left; font-size:16px;color:#d56d21; padding-top:20px">If there are more than 1 adoptee in a family, tour price is free for 1st adoptee,  $1000 for the 2nd adoptee , $400 for the 3rd adoptee. </div>
+            <div style="font-size:16px;color:#d56d21; padding-top:20px">If there are more than 1 adoptee in a family, tour price is free for 1st adoptee,  $1000 for the 2nd adoptee , $400 for the 3rd adoptee. </div>
           </div>
           <div class="clear"></div>
           <div class="DatePri_cont1">

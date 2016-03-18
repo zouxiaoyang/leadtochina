@@ -1,8 +1,8 @@
 <style type="text/css">
 .body{ font-size:12px; font-family:Verdana, Geneva, sans-serif; color:#333;}
 .datebox_cont1_off{ float:right; padding:0px 0px 5px 0;}
-.datebox_new{ background:#FFC;font-size:12px; margin:0px 0 0 8px; color:#000;font-family:Verdana, Geneva, sans-serif;}
-.datebox_new1{ background:#FCC;font-size:12px; margin:15px 0 15px 8px;color:#000;font-family:Verdana, Geneva, sans-serif}
+.datebox_new{ background:#FFC;font-size:12px; margin:0px 0 0 0; color:#000;font-family:Verdana, Geneva, sans-serif;}
+.datebox_new1{ background:#FCC;font-size:12px; margin:0 0 15px 8px;color:#000;font-family:Verdana, Geneva, sans-serif}
 .datebox_new td{}
 .datebox_new_txt1{ font-size:16px;font-style:italic; color:#000; font-family:"Times New Roman", Times, serif}
 </style>
@@ -16,11 +16,11 @@ $(function(){
 })
 </script>
 <div class="datebox_cont1_off" style="position:fixed;top:0;right:0;z-index: 999;"><a id="cboxclose" href=""><img src="/images/cruisePorts/date_off1.jpg"/></a></div> 
-<div style="clear:both; margin-top:30px;"></div>
+<div style="clear:both; margin-top:20px;"></div>
 <?php $array_status=array(1=>'Start',2=>'Passby',3=>'Terminal');$i=1;?>
 <?php if(is_array($schedule_arr)):?>
 <?php if(count($schedule_arr[$data_name])>0):?>
-<table width="98%" border="0" cellpadding="5" cellspacing="1" class="datebox_new">
+<table width="100%" border="0" cellpadding="5" cellspacing="1" class="datebox_new">
 		<tr>
 			<td colspan="4" class="datebox_new_txt1">2015-2016 <?=$cruise_name?> Timetable (<?=$data_name?>, China)</td>
 		</tr>

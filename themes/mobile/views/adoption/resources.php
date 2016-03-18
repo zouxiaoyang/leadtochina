@@ -1,57 +1,39 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-9">
-      <h1 class="page-title05">Real Travelers' Stories You Can Trust</h1>
-      <span>We invite you to read their stories and share in the experiences of the families we have been so fortunate to serve. </span>
-      <div class="pro-detail-block"> <img src="/images/travel-review01.jpg" class="img-responsive" />
-        <div class="search-travel-reviews">
-          <input id="edit-skeys" class="form-text01" type="text" maxlength="128" size="60" value="" name="title" placeholder="Search for Orphanage Name" />
-          <label>IN</label>
-          <select class="form-select01" name="province_id" id="edit-location">
-			<option value="0">- Choose Province -</option>
-			<?php 
-				foreach($provinces as $key=>$province):
-					if($key!=0):
-			 ?>
-					<option value='<?php echo $key;?>'><?php echo $province;?></option>
-				 <?php endif;?>
-		    <?php endforeach;?>
-          </select>
-          <input id="edit-submit" class="form-submit02" onclick="_Search()" type="submit" value="Go" name="op" />
-        </div>
-		<?php echo $cnt.' Search Results';?>
+      <h1 class="page-title05">Useful Ariticles for Your China Return Trip </h1>
+      <span>You may be interested in reading the following before you go to China. We aim to provide important, up-to-date information for adoptive families to help you get the most out of your China experience.
+</span>
+      <div class="pro-detail-block"> <img src="/images/travel-review02.jpg" class="img-responsive" />
+		<?php // echo $cnt.' Search Results';?>
         <div class="travel-reviews-list01">
-			<?php if($cnt):?>
 				<?php foreach($posts as $post): ?>
 					<div class="reviews-list01-block clearfix">
-					<div class="group-left"> <img width="200px" height="140px" src="/newadmin/images/uploads/adoption/<?php echo $post['pic'];?>" /> </div>
+					<div class="group-left"> <img width="200px" height="140px" src="/newadmin/images/uploads/content/<?php echo $post['image'];?>" /> </div>
 					<div class="group-right">
-					  <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleDetail',array('ar_id'=>$post['id'],'title'=>SiteUtils::stringURLSafe($post['title'])));?>" title="<?php echo $post['title'];?>"><h2><?php echo $post['title'];?></h2></a>
-					 <p> <?php echo substr(strip_tags($post['content']),0,245),'...';?><a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleDetail',array('ar_id'=>$post['id']));?>" title="<?php echo $post['title'];?>" class="link01">Read more</a></p>
-					  <i>Travel Date:<?php echo date('M dS, Y',strtotime($post['date']));?></i></div>
+					  <a href="<?php echo Yii::app()->createUrl('adoption/adoptionResourcesDetail',array('resource_id'=>$post['id'],'title'=>SiteUtils::stringURLSafe($post['title'])));?>" title="<?php echo $post['title'];?>"><h2><?php echo $post['title'];?></h2></a>
+					 <p> <?php echo substr(strip_tags($post['description']),0,245),'...';?><a href="<?php echo Yii::app()->createUrl('adoption/adoptionResourcesDetail',array('resource_id'=>$post['id']));?>" title="<?php echo $post['title'];?>" class="link01">Read more</a></p>
+					 </div>
 				  </div>
 				<?php endforeach;?>
-			<?php else:?>
-				no result!
-			<?php endif;?>
           <div class="reviews-pagenation">
-		<?php 
-				$this->widget('CLinkPager',array(
-					'firstPageLabel'=>'First',
-					'lastPageLabel'=>'Last',
-					'prevPageLabel'=>'<<',
-					'nextPageLabel' =>'>>',
-					'header'=>'',
-					'maxButtonCount'=>1,
-					'htmlOptions'=>array(
-						'class'=>'pagination',
-						'id'=>'pagerid',
-					),
-					'selectedPageCssClass'=>'active',
-					'pages'=>$pages,
-				)
-			);
-		?>
+			<?php 
+					$this->widget('CLinkPager',array(
+						'firstPageLabel'=>'First',
+						'lastPageLabel'=>'Last',
+						'prevPageLabel'=>'<<',
+						'nextPageLabel' =>'>>',
+						'header'=>'',
+						'maxButtonCount'=>1,
+						'htmlOptions'=>array(
+							'class'=>'pagination',
+							'id'=>'pagerid',
+						),
+						'selectedPageCssClass'=>'active',
+						'pages'=>$pages,
+					)
+				);
+			?>
           </div>
         </div>
       </div>

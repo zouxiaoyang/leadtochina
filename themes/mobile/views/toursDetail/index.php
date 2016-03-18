@@ -1,21 +1,17 @@
-<script type="text/javascript" src="http://maps.google.com/maps?file=api&v=2&hl=en&oe=utf-8&key=AIzaSyDWKEHpILWp1n7UZ5XUymY3rhiwKFGtzA8"></script>
-<script type="text/javascript" src='/js/map/map.js'></script>
-<script type="text/javascript" src='/js/map/iframeResizer.min.js'></script>
-<!-- <script type="text/javascript" src='/js/map/map-1.js'></script> --> 
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-9">
       <h1 class="page-title05"><?php echo $ress['name'];?></h1>
       <span>Tour Route: <?php echo $ress['route'];?> Tour</span>
-      <div class="pro-detail-block"> <img src="<?php echo '/'.$ress['filedir'].$ress['ufile'];?>" />
+      <div class="pro-detail-block"> <img src="<?php echo '/'.$ress['filedir'].$ress['ufile'];?>" class="img-responsive"   />
         <div class="pro-text01">
           <p><?php echo $ress['recommand_reason'];?></p>
         </div>
         <div class="pro-detail-tab"> 
           <ul id="myTab" class="nav nav-tabs">
-            <li class="active"> <a href="#itinerary" data-toggle="tab">itinerary</a> </li>
+			<li class="active"><a href="#photos" data-toggle="tab">photos</a></li>
+            <li> <a href="#itinerary" data-toggle="tab">itinerary</a> </li>
 			<?php 
-			
 				$arr_price = unserialize($ress['price_serialize']);
 				if($arr_price){
 					$arr_price = array_filter($arr_price);
@@ -24,16 +20,34 @@
 			?>
 				<li><a href="#price" data-toggle="tab">price</a></li>
 			<?php endif;?>
-            <?php if($ress['package_type']!=2):?>
-				<li><a href="#map" data-toggle="tab">map</a>
-			<?php endif; ?>
-            <li><a href="#photos" data-toggle="tab">photos</a></li>
             <li><a href="#trip-notes" data-toggle="tab">trip notes</a></li>
-            <li><a href="#ask-answer" data-toggle="tab">ask & answer</a></li>
-             <li class="last"><a href="#inquire" data-toggle="tab">inquire</a></li>
           </ul>
           <div id="myTabContent" class="tab-content">
-            <div class="tab-pane fade in active" id="itinerary">
+		     <div class="tab-pane fade in active" id="photos">
+              	<section class="clearfix inner-tab-block01">
+				<div class="photo-block">
+					<?php 
+						//foreach($ress as $res):
+						$ress['lightbox'] = str_replace('，',',',$ress['lightbox']);
+						$pics = explode(',',$ress['lightbox']);
+						$pics = array_filter($pics);
+					//	var_dump($pics[1]);exit;
+						foreach($pics as $pic):
+							list($city_name,$jingdian) = explode('_',trim($pic));
+							list($dian,$bs) = explode('-',$jingdian);
+							$alt = isset($ligboxalt[$city_name.'_'.$dian])?$ligboxalt[$city_name.'_'.$dian]:'';
+						?>
+						<a class="example-image-link" href="/uploads/lightbox/<?php echo $city_name;?>/<?php echo $pic;?>.jpg" data-lightbox="example-set" data-title="<?php echo $alt;?>">
+								<img class="example-image" src="<?php echo '/uploads/lightbox/'.$city_name.'/'. $city_name.'_'.$dian.'-'.str_replace('B','S',$bs).'.jpg';?>" alt="<?php echo $alt;?>" title="<?php echo $alt;?>" width="240" height="150" />
+							 </a>
+					<?php endforeach;?>
+			</div>
+     				<link rel="stylesheet" href="/css/lightbox.css" />
+			 		<script src="/js/lightbox.min.js"></script>
+              	</section>
+            </div>
+
+            <div class="tab-pane fade" id="itinerary">
               <section class="clearfix inner-tab-block01">
                 <label class="inner-tab-title01">TOUR CODE</label>
                 <div class="inner-tab-text01"><?php echo $ress['package_code'];?></div>
@@ -116,33 +130,6 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
                	</section>        
             </div>
 		<?php endif;?>
-			<?php if($ress['package_type']!=2):?>
-				<div class ="tab-pane fade" id="map" style="width:100%;min-height:450px;display:block;"></div>
-			<?php endif;?>
-
-            <div class="tab-pane fade" id="photos">
-              	<section class="clearfix inner-tab-block01">
-				<div class="photo-block">
-					<?php 
-						//foreach($ress as $res):
-						$ress['lightbox'] = str_replace('，',',',$ress['lightbox']);
-						$pics = explode(',',$ress['lightbox']);
-						$pics = array_filter($pics);
-					//	var_dump($pics[1]);exit;
-						foreach($pics as $pic):
-							list($city_name,$jingdian) = explode('_',trim($pic));
-							list($dian,$bs) = explode('-',$jingdian);
-							$alt = isset($ligboxalt[$city_name.'_'.$dian])?$ligboxalt[$city_name.'_'.$dian]:'';
-						?>
-						<a class="example-image-link" href="/uploads/lightbox/<?php echo $city_name;?>/<?php echo $pic;?>.jpg" data-lightbox="example-set" data-title="<?php echo $alt;?>">
-								<img class="example-image" src="<?php echo '/uploads/lightbox/'.$city_name.'/'. $city_name.'_'.$dian.'-'.str_replace('B','S',$bs).'.jpg';?>" alt="<?php echo $alt;?>" title="<?php echo $alt;?>" width="240" height="150" />
-							 </a>
-					<?php endforeach;?>
-			</div>
-     				<link rel="stylesheet" href="/css/lightbox.css" />
-			 		<script src="/js/lightbox.min.js"></script>
-              	</section>
-            </div>
             <div class="tab-pane fade " id="trip-notes">
               	<section class="clearfix inner-tab-block01">
                 	<label class="inner-tab-title01">About the Itinerary</label>
@@ -182,29 +169,7 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
               <section class="clearfix inner-tab-block01">
                 <label class="inner-tab-title01">About Payment Guide</label>
                 <div class="inner-tab-text01"> Usually, the deposit of tour package accounts for 30% of the total quotation, and the balance should be paid 30 days before your tour date. Payment methods we accept include Bank Transfer and PayPal, Credit Card and so on. More details you can check the Payment Guide page. Moreover, Children who are less than 12 y/o have their own discounts, please contact with your trip advisor.</div>
-              </section>
-                           
-            </div>
-            
-            <div class="tab-pane fade" id="ask-answer">
-             <section class="clearfix inner-tab-block01">
-              	<div class="question-detail">
-                	<div class="quest-one">
-           				<div class="direction"><img alt="" src="/images/question1.png"  /></div>
-           				<!--  describe start  -->
-           				<div class="describe">
-            				<p>can you include flights from bangkok<br>
-                            Asked by <span>parmanand b kassen</span> (Oct.21, 2015)</p>
-           				</div>
-           				<!--  describe end  -->
-           				<!--  ask start  -->
-             			<div class="ask"><p><span>Trip consultant</span> (Oct.21, 2015) replied: <br>
-                  		That's okay. We have sent you the package including international flights. Please kindly check your email address</p>
-             			</div>
-             			<!--  ask end  -->
-                  </div>
-                </div>
-             </ssection>
+              </section>          
             </div>
             <div class="tab-pane fade" id="inquire">
               	<section class="clearfix inner-tab-block01">
@@ -218,11 +183,12 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
             </div>
           </div>
         </div>
+		
       </div>
     </div>
     <div class="col-sm-3">
     	 <div class="pro-detail-block-right">
-         	<section class="clearfix ">
+         	<!--<section class="clearfix ">
             	<div class="top-block01">
             	<p>If you want to make some change about this itinerary, let us customize a private China tour for you to meet your requirements. You will get:</p>
             	<ul>
@@ -239,7 +205,7 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
         				<span class="tour-sidebar-inquire-aftertext">Free travel guide & quotation within 24 hrs!</span>
     				</p>
                     </div>
-            </section>
+            </section>-->
 				<?php if(!empty($reviews)):?>
 				 <section class="clearfix">
               		<div class="view-block-pro-detail">
@@ -249,13 +215,12 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
                     	<div class="views-row">
 							<?php if(!empty($review['pic'])):?>
 								<?php foreach($review['pic'] as $v){?>
-									<img src="/newadmin/images/reviews/<?php echo $v['pic'];?>" />
+									<img src="/newadmin/images/reviews/<?php echo $v['pic'];?>" class="img-responsive"  style="width:106px;height:106px;" />
 								<?php } ?>
 								<?php else:?>
-									<img src="/images/view/Reviews.jpg" style="width:106px;height:106px;"/>
-									<img src="/images/view/Reviews.jpg" style="width:106px;height:106px;"/>
+									<img src="/images/view/Reviews.jpg" style="width:106px;height:106px;" class="img-responsive"   />
 							<?php endif;?>	
-                             <!-- <span class="text01"><a href="#">Luxury Italy Vacation Review: Southern Italy, Sicily, Amalfi Coast</a></span>-->
+                             <!-- <span class="text01"><a href="#">Luxury Italy Vacation Review: Southern Italy, Sicily, Amalfi Coast</a></span>--><div class="clear"></div>
                              <span class="text02">
                              	<a href="<?php echo Yii::app()->createUrl('reviews/index',array('tid'=>$key,'packageid'=>$ress['id']));?>"> "<?php echo (strlen(strip_tags($review['des']))>=150)?substr(strip_tags($review['des']),0,150).'...':strip_tags($review['des']);?></a>
                                  <a class="views-more-link" href="<?php echo Yii::app()->createUrl('reviews/index',array('tid'=>$key,'packageid'=>$ress['id']));?>"><?php echo (strlen(strip_tags($review['des']))>=150)?'read more':''; ?></a>
@@ -271,100 +236,4 @@ hotels, destinations, sites, or anything else? Contact us here to customize this
     </div>
   </div>
 </div>
-<?php 
-if($ress['package_type']!=2 && !empty($ress['map_city'])){
-	$arr_route = explode(',',$ress['map_city']);
-	$arr_la_ln=array();
-	
-	if(Yii::app()->cache->get('ss_'.$ress['id'])){
-	  $arr_la_ln = Yii::app()->cache->get('ss_'.$ress['id']);
-	}else{
-		foreach($arr_route as $city){
-			$ch = curl_init();
-			$city1 = str_replace(' ','',$city);
-			$city1 = trim(ucwords($city));
-			curl_setopt($ch, CURLOPT_URL, 'http://maps.google.com/maps/api/geocode/json?address='.$city1.'&sensor=false&language=en&bounds=false'); 
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-			$ss = curl_exec($ch);
-			$ss = json_decode($ss,true);
-			$ss = $ss['results'][0];
-			$lat = $ss['geometry']['location']['lat'];
-			$lng = $ss['geometry']['location']['lng'];
-			$arr_la_ln[$city]=array(
-				'lat'=>$lat,
-				'lng'=>$lng
-			);
-		}
-		// add to cache;
-		Yii::app()->cache->set('ss_'.$ress['id'],$arr_la_ln); 
-	}
-}
-?>
-<?php if($ress['package_type']!=2 && !empty($ress['map_city'])){ ?>
-<script>
-        doControls = function () {
-            map.enableDoubleClickZoom();
-            map.enableContinuousZoom();
-            map.addControl(new GLargeMapControl());
-        };
-        doPre = function () {
-			// start;icon;
-			<?php 
-				$arr_route = array_filter($arr_route);
-				$cnt = count($arr_route);
-				if($cnt>1){
-
-				for($j=0;$j<($cnt-1);$j++){ 
-					$city_start = $arr_route[$j];	
-					$city_end = $arr_route[$j+1];	
-					
-				?>
-				<?php 
-					if($j==0){	
-				?>
-					map.addOverlay(makeFullMapIcon(new GLatLng(<?php echo $arr_la_ln[$city_start]['lat'];?>,<?php echo $arr_la_ln[$city_start]['lng'];?>), 414, 1,588847));
-					bounds.extend(new GLatLng(31.217499,121.462097));
-				<?php } ?>
-					bounds.extend(new GLatLng(<?php echo $arr_la_ln[$city_start]['lat'];?>,<?php echo $arr_la_ln[$city_start]['lng'];?>));
-
-					map.addOverlay(makeFullMapIcon(new GLatLng(<?php echo $arr_la_ln[$city_end]['lat'];?>,<?php echo $arr_la_ln[$city_end]['lng'];?>), 424, <?php echo $j+2;?>,588847));
-
-			<?php	}	?>
-				bounds.extend(new GLatLng(<?php echo $arr_la_ln[$city_end]['lat'];?>,<?php echo $arr_la_ln[$city_end]['lng'];?>));
-			<?php } ?>
-        };
-        doPost = function () {		
-		<?php 
-				$arr_route = array_filter($arr_route);
-				$cnt = count($arr_route);
-				if($cnt>1){
-				for($i=0;$i<($cnt-1);$i++){ 
-					$city_start = $arr_route[$i];	
-					$city_end = $arr_route[$i+1];
-				?>
-					map.addOverlay(new GPolyline([new GLatLng(<?php echo $arr_la_ln[$city_start]['lat'];?>,<?php echo $arr_la_ln[$city_start]['lng'];?>), new GLatLng(<?php echo $arr_la_ln[$city_end]['lat'];?>,<?php echo $arr_la_ln[$city_end]['lng'];?>)],'#000000', 5, 1, null));
-
-					map.addOverlay(plane([new GLatLng(<?php echo $arr_la_ln[$city_start]['lat'];?>,<?php echo $arr_la_ln[$city_start]['lng'];?>), new GLatLng(<?php echo $arr_la_ln[$city_end]['lat'];?>,<?php echo $arr_la_ln[$city_end]['lng'];?>)], 379, 28871266));
-				<?php } ?>
-		<?php } ?>
-        };
-        var progZoom = 10;
-        //var webPath = "http://www.kensingtontours.com/Content/assets/maps/";
-		 var webPath = "http://zouyiquan.test.cc/assets/maps/";
-		initializeMap();
-        loaded();
-    </script>
-<?php } ?>
-<script>
-	$(function(){
-		$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-		// 获取已激活的标签页的名称
-		var activeTab = $(e.target).text(); 
-				if(activeTab=='map'){
-					$('#map').show();
-				}else{
-					$('#map').hide();
-				}
-			});
-		});
-</script>
+<a href="/travel/order/"  class="bt-inquire01">inquire  about this trip</a>

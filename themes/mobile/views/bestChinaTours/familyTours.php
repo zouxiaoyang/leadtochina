@@ -58,22 +58,7 @@ ul.nav-tabs.affix {
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <img class="img-responsive" src="/images/familytours-banner01.jpg"  />
-<div class="container">
-  <div class="crumbs">
-    <h5>
-      <?php 
-	$this->widget('zii.widgets.CBreadcrumbs',
-		array('links'=>array(
-			//'Sample post'=>array('post/view', 'id'=>12),
-			'Family Tours'=>array('travel/family-tours/'),
-			//'Edit'
-				),
-			
-			)); ?>
-    </h5>
-  </div>
-  <div class="row">
-    <div class="col-sm-9">
+<div class="container">   
       <h3 class="page-title03">China Family Tour with Kids</h3>
       <div id="section1">
         <p>Travelling is the perfect way to open up a child’s world to possibility and wonder. China is that rare place that looks to the future while embracing its past which means it is a perfect destination for a family vacation. </p>
@@ -83,35 +68,35 @@ ul.nav-tabs.affix {
       <div id="section2">
         
           <h4 id="a" class="page-title04">Why do a family tour with Lead to China?</h4>
-          <div class="col-md-2 family-why01"> <img  src="/images/family-ico01.jpg" alt=""  /></div>
-          <div class="col-md-10">
-            <p><strong>Just for families: </strong>The clue’s in the title. These trips are for families only (including any aunts, uncles or cousins who’d like to come along, of course). As long as you’re travelling with a child under the age of 18, you’re a family in our eyes. </p>
+          <div class=" family-why01"> <img  src="/images/family-ico01.jpg" alt=""  /></div>
+          <div class="">
+            <p><strong>Just for families:</strong> The clue’s in the title. These trips are for families only (including any aunts, uncles or cousins who’d like to come along, of course). As long as you’re travelling with a child under the age of 18, you’re a family in our eyes. </p>
             <p>&nbsp;</p>
           </div>
-          <div class="col-md-2 family-why01"> <img  src="/images/family-ico02.jpg" alt=""  /></div>
-          <div class="col-md-10"> <strong>Flexible private tour:</strong> Our family tours are all specially designed by parents with both fun and safety in mind. Time isn't wasted waiting for a big group, hopping on and off buses or negotiating unfamiliar cities. Leave all the hassles up to us and spend your time relaxing and enjoying all the amazing places and activities with the kids.
+          <div class=" family-why01"> <img  src="/images/family-ico02.jpg" alt=""  /></div>
+          <div class=""> <strong>Flexible private tour:</strong> Our family tours are all specially designed by parents with both fun and safety in mind. Time isn't wasted waiting for a big group, hopping on and off buses or negotiating unfamiliar cities. Leave all the hassles up to us and spend your time relaxing and enjoying all the amazing places and activities with the kids.
             <p>&nbsp;</p>
           </div>
-          <div class="col-md-2 family-why01"> <img  src="/images/family-ico03.jpg" alt=""  /></div>
-          <div class="col-md-10"> <strong>Family-friendly Activities:</strong>Kids often have wildly different needs than adults, which is why we don’t just adapt our grown-up itineraries for smaller travellers. Our family tour provides you many age-appropriate activities. You will have a change to watch a Kungfu performance, make dumpling with a local family, cycling along the countryside, get up close to pandas, paint Panda t-shirts or even learn how to apply facial makeup for the Beijing Opera.
+          <div class=" family-why01"> <img  src="/images/family-ico03.jpg" alt=""  /></div>
+          <div> <strong>Family-friendly Activities:</strong> Kids often have wildly different needs than adults, which is why we don’t just adapt our grown-up itineraries for smaller travellers. Our family tour provides you many age-appropriate activities. You will have a change to watch a Kungfu performance, make dumpling with a local family, cycling along the countryside, get up close to pandas, paint Panda t-shirts or even learn how to apply facial makeup for the Beijing Opera.
             <p>&nbsp;</p>
           </div>
-          <div class="col-md-2 family-why01"> <img  src="/images/family-ico04.jpg" alt=""  /></div>
-          <div class="col-md-10">
-            <p><strong>Hotels that keep kids in mind:</strong>The hotels on your family journey have been especially selected for their family-friendly amenities. Wherever possible, your accommodations offer swimming pools and free Internet access, and many feature in-room game systems or game rooms, where kids can hang out after the day's activities. </p>
+          <div class=" family-why01"> <img  src="/images/family-ico04.jpg" alt=""  /></div>
+          <div class="">
+            <p><strong>Hotels that keep kids in mind:</strong> The hotels on your family journey have been especially selected for their family-friendly amenities. Wherever possible, your accommodations offer swimming pools and free Internet access, and many feature in-room game systems or game rooms, where kids can hang out after the day's activities. </p>
             <p>&nbsp;</p>
           </div>
       
       </div>
       <div id="section3">
-        <div class="row">
+        <div >
           <h4 id="b" class="page-title04">Where can we take a family adventure?</h4>
 		<?php foreach($ress as $res):?>
 		<?php 
 			$href = Yii::app()->createUrl('toursDetail/index',array('name'=>str_replace(array(' ',' '),array('-','-'),strtolower($res['name'])),'id'=>$res['id']));
 		?>
           <div class="views-row views-row-1 views-row-odd views-row-first tour-preview">
-            <div class="field-content tour-photo"><a href="<?php echo $href;?>"><img width="350" height="240"  src="<?php echo '/'.$res['filedir'].$res['pic']?>" ></a></div>
+            <div class="field-content tour-photo"><a href="<?php echo $href;?>"><img  class="img-responsive"  src="<?php echo '/'.$res['filedir'].$res['pic']?>" ></a></div>
             <h2 class="field-content tour-title"><a href="<?php echo $href;?>"><?php echo $res['name'];?></a></h2>
             <div class="views-field views-field-title-2 tour-title-2"> <a href="<?php echo $href;?>"><?php echo $res['name'];?></a> </div>
             <p class="field-content tour-meta"></p>
@@ -123,12 +108,11 @@ ul.nav-tabs.affix {
         </div>
       </div>
       <div id="section4">
-        <div class="row">
+        <div >
           <h2 id="c" class="page-title04">FAQs</h2>
           <h3> <span class="page-title07">Top Tips</span> </h3>
-          <div class="col-md-4"> <img  src="/images/family-img01.jpg" alt=""  /><br>
-            &nbsp;</div>
-          <div class="col-md-8">
+          <div class=""> <img  src="/images/mobile/family-img01.jpg" alt="" class="img-responsive" /> &nbsp;</div>
+          <div class="">
             <div class="panel-group" id="accordion">
               <div class="panel panel-default">
                 <div class="panel-heading">
@@ -162,11 +146,10 @@ ul.nav-tabs.affix {
         </div>
       </div>
       <div id="section5">
-        <div class="row">
+        <div >
           <h2 id="food"> <span class="page-title07">Food</span> </h2>
-          <div class="col-md-4"> <img  src="/images/family-img02.jpg" alt=""  /><br>
-            &nbsp;</div>
-          <div class="col-md-8">
+          <div class=""> <img  src="/images/mobile/family-img02.jpg" alt=""   class="img-responsive" /> &nbsp;</div>
+          <div class="">
             <div class="panel-group" id="accordion">
               <div class="panel panel-default">
                 <div class="panel-heading">
@@ -209,11 +192,10 @@ ul.nav-tabs.affix {
         </div>
       </div>
       <div id="section6">
-        <div class="row">
+        <div>
           <h2 id="accomm"> <span class="page-title07">Accommodation</span> </h2>
-          <div class="col-md-4"> <img  src="/images/family-img04.jpg" alt=""  /><br>
-            &nbsp;</div>
-          <div class="col-md-8">
+          <div class=""> <img  src="/images/mobile/family-img04.jpg" alt=""  class="img-responsive"  />&nbsp;</div>
+          <div class="">
             <div class="panel-group" id="accordion">
               <div class="panel panel-default">
                 <div class="panel-heading">
@@ -238,11 +220,10 @@ ul.nav-tabs.affix {
         </div>
       </div>
       <div id="section7">
-        <div class="row" style="padding-bottom:10px;">
+        <div  style="padding-bottom:10px;">
           <h2 id="#health"> <span class="page-title07">Health and Safety</span> </h2>
-          <div class="col-md-4"> <img  src="/images/family-img03.jpg" alt=""  /><br>
-            &nbsp;</div>
-          <div class="col-md-8">
+          <div class=""> <img  src="/images/mobile/family-img03.jpg" alt=""  class="img-responsive" />&nbsp;</div>
+          <div class="">
             <div class="panel-group" id="accordion">
               <div class="panel panel-default">
                 <div class="panel-heading">
@@ -285,48 +266,8 @@ ul.nav-tabs.affix {
           </div>
         </div>
       </div>
-    </div>
-    <!--<div class="col-sm-3" id="myScrollspy">
-      <ul class="nav nav-tabs nav-stacked" data-offset-top="450" data-spy="affix">
-        <li class="active"><a href="#section1">Why do an Intrepid family tour?</a></li>
-        <li><a href="#section2">Where can we take a family adventure?</a></li>
-        <li><a href="#section3">A taste of whats in store...</a></li>
-        <li><a href="#section4">FAQs</a></li>
-        <li><a href="#section5">Food</a></li>
-        <li><a href="#section6">Accommodation</a></li>
-        <li><a href="#section7">Health and Safety</a></li>
-      </ul>
-    </div>-->
-  </div>
 </div>
-<div class="top10tours-bottom-block">
-  <div class="container">
-    <div class="link-block01  col-md-4"> <span class="title">Flexible</span>
-      <ul>
-        <li>All tours can be customized</li>
-        <li>Easy to make last minute changes</li>
-        <li>No risk of forced shopping</li>
-        <li>Expert destination advice </li>
-      </ul>
-    </div>
-    <div class="link-block01  col-md-4"> <span class="title">Authentic</span>
-      <ul>
-        <li>Excellent from planning to executing</li>
-        <li>EHand-Picked hotels & restaurants </li>
-        <li>Quality service at best value</li>
-        <li>24/7 care while you are in China</li>
-      </ul>
-    </div>
-    <div class="link-block01  col-md-4"> <span class="title">Professional</span>
-      <ul>
-        <li>We understand China well</li>
-        <li>Experienced English speaking tour guides</li>
-        <li>We treat others the way we want to be treated</li>
-        <li>Keep our services at world-leading levels</li>
-      </ul>
-    </div>
-  </div>
-</div>
+
 <script type="text/javascript">
 		function showH(o){
 				$('#'+o).on('shown.bs.collapse', function () {

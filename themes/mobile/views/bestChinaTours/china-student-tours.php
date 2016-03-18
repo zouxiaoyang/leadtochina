@@ -11,7 +11,7 @@
 			)); ?>
 </h5>
 	</div>
-	<h1 class="page-title01">Top 10 China Tours</h1>
+	<h1 class="page-title01">China Educational Trips</h1>
     <p class="lead">
     	China is unbelievably large! For saving your time picking up best China tours with different highlights, we are proud to 
 		present our most popular and best China tours to you as selected by our customers. You can choose your favorite tour

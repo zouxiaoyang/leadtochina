@@ -1,7 +1,7 @@
-<img class="img-responsive" src="/images/adoptionhome-banner01.jpg" style="min-height:150px; " />
+<img class="img-responsive" src="/images/adoptionhome-banner01.jpg" />
 <div class="container" style="position:relative" >
 <?php 
-	$this->renderPartial('_search');
+	//$this->renderPartial('_search');
 ?>
   <h2 class="page-title13">Why Lead to China</h2>
   <p style="text-align:center; margin:30px auto;">Based in China, LTC have managed to help hundreds of families with adopted children find their way back to China. We are experienced, professional, but most of all, we care. </p>
@@ -27,7 +27,7 @@
   <?php foreach($ress as $res):?>
     <div class="col-md-4 col-sm-4 col-xs-12">
       <div class="adoption-stories">
-        <div class="img-block"> <img width="356" height="236" src="<?php echo ImageUtils::getThumbnail(AdoptionArticle::UPLOAD_PATH.$res['pic'], '356x236');?>"  />
+        <div class="img-block"> <img class="img-responsive" src="<?php echo ImageUtils::getThumbnail(AdoptionArticle::UPLOAD_PATH.$res['pic'], '356x236');?>"  />
           <div class="bg-back"> <span> <?php echo $res['title'];?> </span>
             <label>Date:&nbsp;<?php echo date('m dS, Y',strtotime($res['date']));?></label>
           </div>
@@ -43,7 +43,7 @@
 </div>
 <div class="adoption-map-block">
   <div class="container">
-    <div class="row">
+    <div>
     	<ul class="province-list01">
         	<li class="li01">
             	<a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>16))?>">Xinjiang Reunion</a>
@@ -52,7 +52,6 @@
                 <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>25))?>">Ningxia Reunion</a>
                 <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>11))?>">Qinghai Reunion</a>
                 <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>30))?>">Shaanxi Reunion</a>
-                <a href="#"> &nbsp;</a>
                 <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>10))?>">Sichuan Reunion</a>
                 <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>13))?>">Chongqing Reunion</a>
                 <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>7))?>">Hubei Reunion</a>
@@ -60,8 +59,9 @@
                 <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>9))?>">Guizhou Reunion</a>
                 <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>14))?>">Yunnan Reunion</a>
                 <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>6))?>">Guangxi Reunion</a>
+				 <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>17))?>">Guangdong Reunion</a>
             </li>
-            <li class="li02"><img  src="/images/adoptionhome-map.jpg"  /></li>
+            <li class="li02"><img  src="/images/adoptionhome-map.jpg" class="hidden-xs"   /></li>
             <li class="li03">
             	<a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>22))?>">Heilongjiang Reunion</a>
                 <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>23))?>">Jilin Reunion</a>
@@ -77,7 +77,7 @@
                 <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>19))?>"> Zhejiang Reunion</a>
                 <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>35))?>">Jiangxi Reunion</a>
                 <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>18))?>">Fujian Reunion</a>
-                <a href="<?php echo Yii::app()->createUrl('adoption/adoptionArticleByProvince',array('province_id'=>17))?>">Guangdong Reunion</a>
+               
             </li>
         </ul>
     </div>
@@ -88,7 +88,7 @@
   <div class="row">
     <div class="col-sm-12 col-md-4">
       <div class="adoption-stories adoption-stories2">
-        <div class="img-block"> <img  src="/images/adoption-pro-1.jpg"  />
+        <div class="img-block"> <img  src="/images/adoption-pro-1.jpg"  class="img-responsive"   />
           <div class="bg-back"> <span> Watch a Kungfu Show</span>
           </div>
         </div>
@@ -99,7 +99,7 @@
     </div>
     <div class="col-sm-12 col-md-4">
       <div class="adoption-stories adoption-stories2">
-        <div class="img-block"> <img  src="/images/adoption-pro-2.jpg"  />
+        <div class="img-block"> <img  src="/images/adoption-pro-2.jpg"  class="img-responsive"  />
           <div class="bg-back"> <span>Makeup for the Sichuan Opera</span>
             
           </div>
@@ -111,7 +111,7 @@
     </div>
     <div class="col-sm-12 col-md-4">
       <div class="adoption-stories adoption-stories2">
-        <div class="img-block"> <img  src="/images/adoption-pro-3.jpg"  />
+        <div class="img-block"> <img  src="/images/adoption-pro-3.jpg"  class="img-responsive"   />
           <div class="bg-back"> <span> Visit the Giant Panda</span>
            
           </div>
@@ -130,7 +130,7 @@
             'model'=>$message,
 		)); ?>	
 	  </div>
-    <div class="f-right block02">
+    <div class="f-right block02 hidden-xs">
       <p>When I was a kid
         I knew that if I had the ability, I would 
         go get on the trip right away.

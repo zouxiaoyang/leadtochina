@@ -85,21 +85,20 @@ ul.nav-tabs.affix {
           <h4 id="a" class="page-title04">Why do a family tour with Lead to China?</h4>
           <div class="col-md-2 family-why01"> <img  src="/images/family-ico01.jpg" alt=""  /></div>
           <div class="col-md-10">
-            <p><strong>Just for families: </strong>The clue’s in the title. These trips are for families only (including any aunts, uncles or cousins who’d like to come along, of course). As long as you’re travelling with a child under the age of 18, you’re a family in our eyes. </p>
-            <p>&nbsp;</p>
+            <p><strong>Just for families: </strong>The clue’s in the title. These trips are for families only (including any aunts, uncles or cousins who’d like to come along, of course). As long as you’re travelling with a child under the age of 18, you’re a family in our eyes. </p>           
           </div>
           <div class="col-md-2 family-why01"> <img  src="/images/family-ico02.jpg" alt=""  /></div>
           <div class="col-md-10"> <strong>Flexible private tour:</strong> Our family tours are all specially designed by parents with both fun and safety in mind. Time isn't wasted waiting for a big group, hopping on and off buses or negotiating unfamiliar cities. Leave all the hassles up to us and spend your time relaxing and enjoying all the amazing places and activities with the kids.
-            <p>&nbsp;</p>
+           
           </div>
           <div class="col-md-2 family-why01"> <img  src="/images/family-ico03.jpg" alt=""  /></div>
           <div class="col-md-10"> <strong>Family-friendly Activities:</strong>Kids often have wildly different needs than adults, which is why we don’t just adapt our grown-up itineraries for smaller travellers. Our family tour provides you many age-appropriate activities. You will have a change to watch a Kungfu performance, make dumpling with a local family, cycling along the countryside, get up close to pandas, paint Panda t-shirts or even learn how to apply facial makeup for the Beijing Opera.
-            <p>&nbsp;</p>
+           
           </div>
           <div class="col-md-2 family-why01"> <img  src="/images/family-ico04.jpg" alt=""  /></div>
           <div class="col-md-10">
             <p><strong>Hotels that keep kids in mind:</strong>The hotels on your family journey have been especially selected for their family-friendly amenities. Wherever possible, your accommodations offer swimming pools and free Internet access, and many feature in-room game systems or game rooms, where kids can hang out after the day's activities. </p>
-            <p>&nbsp;</p>
+            
           </div>
       
       </div>

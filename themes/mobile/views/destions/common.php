@@ -20,7 +20,7 @@
 						<?php $href  = Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe($package['name']),'id'=>$package['id']));?>
 							<div class="col-sm-6 col-md-4">
 								<div class="views-row views-row-1 views-row-odd views-row-first tour-preview">
-									<div class="field-content tour-photo"><a href="<?php echo $href;?>"><img width="350" height="240" src="<?php echo '/'.$package['filedir'].$package['pic'];?>"></a></div>
+									<div class="field-content tour-photo"><a href="<?php echo $href;?>"><img  class="img-responsive" src="<?php echo '/'.$package['filedir'].$package['pic'];?>"></a></div>
 									<h2 class="field-content tour-title"><a href="<?php echo $href;?>"><?php echo $package['name'];?></a></h2>
 									<div class="views-field views-field-title-2 tour-title-2"> <a href="<?php echo $href;?>"><?php echo $package['name'];?></a> </div>
 									<p class="field-content tour-meta"></p>

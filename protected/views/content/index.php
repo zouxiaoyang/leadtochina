@@ -13,7 +13,7 @@
 					<?php /*?> <div class="group-left"> <img width="250px" height="170px" src="/newadmin/images/uploads/adoption/<?php echo $res['pic'];?>" /></div><?php */?>
 					<div class="group-right">
 						<h1><?php echo $res['title'];?></h1>
-						<i>Travel Date:<?php echo date('M dS, Y',strtotime($res['created']));?></i> </div>
+						<i>Post Date:&nbsp;<?php echo date('M dS, Y',strtotime($res['created']));?></i> </div>
 				</div>
 				<div class="pro-detail-tab adoption-article-detail">
 					<?php /*?><ul id="myTab" class="nav nav-tabs">

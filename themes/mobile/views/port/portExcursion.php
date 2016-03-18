@@ -1,14 +1,14 @@
-<link href="/css/colorbox.css" type="text/css" rel="stylesheet" />
+<link href="/css/mobile/colorbox.css" type="text/css" rel="stylesheet" />
 <img class="img-responsive" src="/images/cruisePorts/<?php echo $_GET['city_name'];?>-banner01.jpg"  />
 <div class="container" >
 	<h2 class="page-title05"><?php echo $cur_port->port_title;?></h2>
-	<p  style="border-bottom:1px solid #ccc; padding:20px 0;"><?php		$this->renderPartial('_description',array('id'=>$_GET['id'],'name'=>SiteUtils::stringURLSafe($_GET['city_name'])));?></p>
+	<p  style="border-bottom:1px solid #ccc; padding:10px 0;"><?php		$this->renderPartial('_description',array('id'=>$_GET['id'],'name'=>SiteUtils::stringURLSafe($_GET['city_name'])));?></p>
 	<div class="row" style="margin-top:30px;">
 		<div class="col-sm-2">
 			<ul class="tianjin-port-leftlink" id="cruise_list">
 				<li class="title">CRUISE NAME</li>
 					<?php foreach($cruise_list as $k=>$v):?>
-						<li onclick="edit_cruise(this)" <?php if($k==0):?> class="dq" <?php endif;?> style=" display:block;" ><?php echo $v->name;?>
+						<li rel="<?php echo $v->name;?>" onclick="edit_cruise(this)" <?php if($k==0):?> class="dq" <?php endif;?> style=" display:block;" ><?php echo $v->name;?>
 						<span style="float:right"></span>
 						</li>
 					<?php endforeach;?>
@@ -23,8 +23,10 @@
 			</ul>
 		</div>
 	<?php $n=0;?>
+	<h3 id="_cruise_name" style="background:#ed9300; padding:5px 15px; display:block; color:#fff; font-size:18px; text-transform:uppercase;">Sapphire Princess</h3>
+	<div class="row">
 	<?php foreach($cruise_list as $k=>$v):?>
-		<div class="port_content_rig1 col-sm-12 col-md-10 tianjin-port-rightblock01 tabflag cruise_<?=$k?>_port" <?php if($k!=0):?> style="display:none" <?php endif;?>>
+		<div id="cruise_<?=$k?>_port" class=" col-sm-12 col-md-10  tabflag cruise_<?=$k?>_port" <?php if($k!=0):?> style="display:none" <?php endif;?>>
 
 		<?php foreach($cruise_port_list[$v->id] as $ks=>$vs):?>
 			<?php if($vs->pid == $_GET['id']):// 只显示天津港的信息;?>
@@ -54,9 +56,9 @@
 				?> 
 		<?php foreach($tours as $v2):?>
 			<?php $href =		Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe($v2->name),'id'=>$v2->id));?>
-				<div class="col-sm-6 col-md-4">
+				<div class="col-sm-6 col-md-4 col-xs-12">
 					<div class="views-row views-row-1 views-row-odd views-row-first tour-preview">
-						<div class="field-content tour-photo"><a href="<?php echo $href;?>"><img width=" 300" height="205" src="/<?php echo $v2->filedir;?>/<?php echo $v2->cruise_recommend_pic;?>"/></a></div>
+						<div class="field-content tour-photo"><a href="<?php echo $href;?>"><img class="img-responsive" src="/<?php echo $v2->filedir;?>/<?php echo $v2->cruise_recommend_pic;?>"/></a></div>
 						<h2 class="field-content tour-title"><a href="<?php echo $href;?>"><?php echo $v2->name;?></a></h2>
 						<div class="views-field views-field-title-2 tour-title-2"> <a href="<?php echo $href;?>"><?php echo $v2->name;?></a> </div>
 						<p class="field-content tour-meta"></p>
@@ -77,12 +79,11 @@
 	<?php endforeach;?>
 </div>
 <?php endforeach;?>
-
-		
+</div>
 </div>
 <div class="row">
-	<div class="col-sm-2"></div>
-	<div class="city-tripnote col-sm-10 tianjin-port-rightblock02" style="padding:30px 12px 0 30px;">
+	<div class="col-sm-2 col-xs-12"></div>
+	<div class="city-tripnote col-sm-10 tianjin-port-rightblock02" style="padding:30px 10px 0 10px;">
 			<span class="title01 ">Questions & Answers</span>
 			<div class="clearfix"></div>
 			<div class="city-tripnote-content clearfix">
@@ -122,6 +123,8 @@
 						get_display_none();
 					}
 				<?php }?>
+				$('#_cruise_name').html($(i).attr('rel'));
+				window.location.hash="#_cruise_name";
 			}
 			function edit_port(id,ids,i){
 				$("#"+id+" li").removeClass("selected");
@@ -137,12 +140,13 @@
 			}
 
 			function get_newwindow(id){
-				$("#"+id).colorbox({iframe:true, innerWidth:700, innerHeight:520});
+				$("#"+id).colorbox({iframe:true, innerWidth:300, innerHeight:520});
 			}
 			$(function(){
 			  $("#cboxTopRight").click(function(){
 				parent.jQuery.colorbox.close();
 			  })
-
 			})
-		</script>
+		// first load;
+		$('#_cruise_name').html($('.dq').attr('rel'));
+</script>

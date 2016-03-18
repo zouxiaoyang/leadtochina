@@ -10,7 +10,7 @@
            <?php /*?> <div class="group-left"> <img width="250px" height="170px" src="/newadmin/images/uploads/adoption/<?php echo $res['pic'];?>" /></div><?php */?>
             <div class="group-right">
                 <h1><?php echo $res['title'];?></h1>
-                <i>Travel Date:<?php echo date('M dS, Y',strtotime($res['date']));?></i>
+                <i>Travel Date:&nbsp;<?php echo date('M dS, Y',strtotime($res['date']));?></i>
             </div>
           </div>
             <div class="pro-detail-tab adoption-article-detail"> 

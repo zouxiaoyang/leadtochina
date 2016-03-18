@@ -34,9 +34,6 @@
 								<input type="checkbox" value="Yangshuo" name="city[]" class="form-checkbox" />
 								<span>Yangshuo</span>  </li>
 							<li>
-								<input type="checkbox" value="Yangtze Cruise" name="city[]" class="form-checkbox" />
-								<span>Yangtze Cruise</span>  </li>
-							<li>
 								<input type="checkbox" value="Hangzhou" name="city[]" class="form-checkbox" />
 								<span>Hangzhou</span>  </li>
 							<li>
@@ -48,6 +45,9 @@
 							<li>
 								<input type="checkbox" value="Hong Kong" name="city[]" class="form-checkbox" />
 								<span>Hong Kong</span>  </li>
+							<li style="width:100%;">
+								<input type="checkbox" value="Yangtze Cruise" name="city[]" class="form-checkbox" />
+								<span>Yangtze Cruise</span>  </li>
 						</ul>
 					</div>
 				</section>
@@ -276,18 +276,11 @@
 				</section>
 				<br />
 				<section class="clearfix">
-					<div class="table-header">
-						<label></label>
-					</div>
+					
 					<div class="table-body">
 						<div class="link">
 							<input type="submit" class="large-button" id="BookNowBtn" value="Get My Trip Planned">
 							<p class="description">We will reply in 12 working hours!</p>
-							<br />
-							<br />
-							<br />
-							<br />
-							<br />
 							<br />
 						</div>
 					</div>
@@ -302,7 +295,7 @@
 <script>
 	$("#Order_travel_date").datepicker({
 	  changeMonth: true,
-	  numberOfMonths: 2,
+	  numberOfMonths: 1,
 	});
 function checksubmit(){
 	var reg = /^[^\@]+@.*\.[a-z]{2,6}$/i;
@@ -331,12 +324,10 @@ function checksubmit(){
 	}else{
 		$('#email').css('border','0 none');
 	}
-	
 	if(status){
 		return false;
 	}else{
 	  return true;
 	}
 }
-</script>
 </script>

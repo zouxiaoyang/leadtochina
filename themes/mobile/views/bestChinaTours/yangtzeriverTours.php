@@ -21,12 +21,12 @@
    	<p class="center-button"><a href="#" class="large-button">Help Me Plan My Trip</a></p>
 <div class="row top10tours-block01">
 <?php foreach($ress as $res){ 
-	$href = Yii::app()->createUrl('toursDetail/index',array('name'=>str_replace(array(' ',' '),array('-','-'),strtolower($res['name'])),'id'=>$res['id']));
+	$href = Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe($res['name']),'id'=>$res['id']));
 ?>
 	
      <div class="col-sm-6 col-md-4">
     	<div class="views-row views-row-1 views-row-odd views-row-first tour-preview">
-				<div class="field-content tour-photo"><a href="<?php echo $href;?>"><img width="350" height="240"  src="<?php echo '/'.$res['filedir'].$res['pic']?>" ></a></div>
+				<div class="field-content tour-photo"><a href="<?php echo $href;?>"><img  class="img-responsive"   src="<?php echo '/'.$res['filedir'].$res['pic']?>" ></a></div>
 		<h2 class="field-content tour-title"><a href="<?php echo $href;?>"><?php echo $res['name'];?></a></h2>
 		<div class="views-field views-field-title-2 tour-title-2"> <a href="<?php echo $href;?>"><?php echo $res['name'];?></a> </div>
 		<p class="field-content tour-meta"></p>

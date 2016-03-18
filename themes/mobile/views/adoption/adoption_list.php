@@ -1,12 +1,12 @@
 <?php /*?><img class="img-responsive" src="/images/noresult-adoption-banner01.png" /><?php */?>
 
-<img class="img-responsive" src="/images/adoptionhome-banner01.jpg" />
+<img class="img-responsive" src="/images/adoptionhome-banner01.jpg"  style="min-height:150px; " />
 <div class="container"  style="position:relative" >
   <?php 
 	$this->renderPartial('_search');
 ?>
 
-  <div class="row">
+  <div >
   	<h2 class="page-title13">List of Chinese Orphanages </h2>
     <div class="orphanagelist clearfix">
       <div class="orphanagelist">

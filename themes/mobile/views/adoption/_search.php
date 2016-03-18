@@ -11,13 +11,13 @@
          <option selected="selected">-- SWI City --</option>
          
       </select>
-      <input name="orphanage_address" id="orphanage_address" type="text" value="SWI Name" />
+      <input name="orphanage_address" id="orphanage_address" type="text" value="-- SWI Name --" />
       <div>
-        <ul id="orphanage_list" style="display:none">
-          
+        <ul id="orphanage_list" style="display:none">          
         </ul>
       </div>
       <input type="hidden" name="orphanage_address_id" id="orphanage_address_id" />
+	  
       <a  href="#" onclick="_adoption.search()" class="btn-search" >search</a>
    </div>
 </div>
@@ -119,14 +119,13 @@ $(function(){
           },
           search:function(){
             var orphanage_id = $("#orphanage_address_id").val();
-            var url = "<?php echo Yii::app()->createUrl('travel/adoption');?>";
+            var url = "/travel/adoption/OrphanageTravelGuide";
             if(orphanage_id){
-              location.href = url+"/"+orphanage_id;
+               location.href = url+"/"+orphanage_id;
             }else{
 				location.href = '/travel/adoption/noSearchResults';
 			}
           }
-
       }   
   }());
 </script>

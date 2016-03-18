@@ -6,7 +6,8 @@
 <meta name="language" content="en" />
 <link rel="stylesheet" type="text/css"  href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css" />
 <!-- blueprint CSS framework -->
- <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,700,700italic,italic,regular&amp;subset=latin" media="all"/>
+ <!-- <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,700,700italic,italic,regular&amp;subset=latin" media="all"/> -->
+ <link type="text/css" rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:300,700,700italic,italic,regular&amp;subset=latin" media="all"/>
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
 <!--[if lt IE 8]>
