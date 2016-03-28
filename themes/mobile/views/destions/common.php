@@ -16,7 +16,7 @@
 			<div id="<?php echo SiteUtils::stringURLSafe($info['title']);?>" class="tab-pane fade<?php echo ($jj==0)?' in active':'';?>">
 				<div class="row top10tours-block01">
 					<?php foreach($package_info as $package): ?>
-						<?php if($package['categorieid_str']==$info['id']):?>
+						<?php if(($package['categorieid_str']==$info['id']) ||($package['category_parentid']==$info['id']) ):?>
 						<?php $href  = Yii::app()->createUrl('toursDetail/index',array('name'=>SiteUtils::stringURLSafe($package['name']),'id'=>$package['id']));?>
 							<div class="col-sm-6 col-md-4">
 								<div class="views-row views-row-1 views-row-odd views-row-first tour-preview">
@@ -36,6 +36,7 @@
 			<?php endforeach;?>
 		</div>
 	</div>
+	<?php if(!empty($trip_notes)):?>
 	<div class="row">
 		<div class="city-tripnote col-sm-9">
 			<span class="title01 ">Trip Notes</span>
@@ -47,4 +48,5 @@
 			</div>
 		</div>
 	</div>	
+<?php endif;?>
 </div>
