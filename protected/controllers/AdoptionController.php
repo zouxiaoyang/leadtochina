@@ -24,6 +24,7 @@ class AdoptionController extends Controller
 		$id = $id!=1?$_GET['id']:1;
 		$sql ="select aoa.*,aoa.id as apt_id,aoa.description as des,apc.*,apc.name as or_name,c.name as city_name1 from `t_adoption_orphanage_address` as `aoa`,`jos_cos_city` as `c`,`t_adoption_package_content` as `apc` where `aoa`.`cityid`=`c`.`id` and `aoa`.`id`=`apc`.`pacakage_id` and `aoa`.`id`={$id}";
 		$res =Yii::app()->db->createCommand($sql)->queryRow();
+		$res['city_name'] = $res['city_name1'];
 		// var_dump($res);exit;
 		$t=sprintf('%s Orphanage Trip Guide, %s SWI Visit',$res['city_name1'],$res['city_name1']);
 		$k='';
@@ -121,12 +122,15 @@ class AdoptionController extends Controller
 	}
 	// 游记详细;
 	public function actionAdoptionArticleByProvince(){
-
+		
 		$provinceId=$_GET['province_id'];
 
 		//Recommended tour of this province
 		$packageProvince=AdoptionPackage::getRecommendpackage($provinceId);
-
+		// seo:
+		$sql="select `seo_title_adoption`,`seo_description_adoption`,`seo_keyword_adoption` from `t_adoption_package` where `province_id`=".(int)$provinceId."";
+		$res = Yii::app()->db->createCommand($sql)->queryRow();
+		Seo::_seo($this,$res['seo_title_adoption'],$res['seo_keyword_adoption'],$res['seo_description_adoption']);
 
 		$province_id = (int)$_GET['province_id'];
 		$sql="select * from `jos_cos_province` where `id`=".$province_id."";

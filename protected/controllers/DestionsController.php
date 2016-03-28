@@ -14,7 +14,8 @@ class DestionsController extends Controller
 		$city_name = addslashes($_GET['city_name']); 
 		$sql="select `id`,`title`,`description`,`trip_notes`,`seo_title`,`seo_key`,`seo_description` from `jos_categories` where `parent_id`=0 and (`title` like '".$city_name."%' or `city` like '".$city_name."%' or `title_slug` like '".$city_name."%')";
 		$res =  Yii::app()->db->createCommand($sql)->queryRow();
-		if(!empty($res)){
+		$res_parent = Yii::app()->db->createCommand($sql)->queryAll();
+		if(!empty($res)){// 查看该分类是否存在;
 			$parent_id  = $res['id'];
 			$parent_name = $res['title'];
 			$description = $res['description'];
@@ -24,44 +25,32 @@ class DestionsController extends Controller
 				$k = $res['seo_key'];
 				$d = $res['seo_description'];
 				Seo::_seo($this,$t,$k,$d);
-
 			// 获取子分类;
 			$sql="select `c`.`id`,`c`.`title` from `jos_categories` as c ,`jos_cos_tours_package` as p where c.id=p.categorieid_str and `c`.`parent_id`=".$parent_id." group by `c`.`id`";
 			$res =  Yii::app()->db->createCommand($sql)->queryAll();
-			if(!empty($res)){
+			if(!empty($res)){ // 有子分类的城市;
 				$child_info = $res;
 				$package_category_id = array();
 				foreach($res as $v){
 					$package_category_id[] = $v['id'];
 				}
 				$str_package_category_id = '('.implode(',',$package_category_id).')';
-				// 获取分的套餐;
+				// 获取分子分类的套餐;
 				$sql = "SELECT * FROM `jos_cos_tours_package` WHERE `categorieid_str` in ".$str_package_category_id." order by `days` asc";
 				$package_info =  Yii::app()->db->createCommand($sql)->queryAll();
-				//获取问答:
-				$criteria=new CDbCriteria();
-					//$criteria->condition=('product_id=1 and status=1');//查询的条件
-					//$criteria->order='comment_date DESC';//排序
-					$dataProvider=new CActiveDataProvider('FrequentlyAskContent',array( //ProductComment 商品评论模型
-						'pagination'=>array(
-						'pageSize'=>5, //每页显示多少条数据
-						),
-						'criteria'=>$criteria,
-					));
-					//$this->render('default',array('dataProvider'=>$dataProvider));
-				
+			}else{ // 没有子分类的城市;
+				// 直接获取父分类的套擦;
+				$sql = "SELECT * FROM `jos_cos_tours_package` WHERE `category_parentid` = ".$parent_id." order by `days` asc";
+				$package_info =  Yii::app()->db->createCommand($sql)->queryAll();
+			}
 				$this->render('common',array(
 					'parent_name'=>	$parent_name,
 					'parent_id'	=>$parent_id,
 					'description'=>$description,
 					'trip_notes'	=>$trip_notes,
-					'child_info'=>$child_info,
+					'child_info'=>isset($child_info)?$child_info:$res_parent,
 					'package_info'=>$package_info,
-					'dataProvider'=>$dataProvider
 				));
-			}else{
-				$this->errorPage();
-			}
 		}else{
 			$this->errorPage();
 		}
@@ -106,7 +95,6 @@ class DestionsController extends Controller
 			Seo::_seo($this,$t,$k,$d);
 			$this->render('shanghaitohuangshan');
 			break;
-
 			case 'beijing-datong':{
 				$t='Beijing Tours, Beijing Travel, Beijing Tour Packages';
 				$k='beijing tours, beijing travel, beijing tour packages, china beijing travel, beijing travel agency';

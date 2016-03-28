@@ -54,11 +54,10 @@ or join the group tour with other families, even let us to customize a trip for 
 						<img src="<?php echo ImageUtils::getThumbnail($pic_dir.$packageProvince['pic'], '360x263');?>">
 					</a>
                 </div>
-				<h2 class="field-content tour-title"><a href="<?php echo Yii::app()->createUrl('toursDetail/index', array('id'=>$packageProvince['id'], 'name'=>SiteUtils::stringURLSafe($packageProvince['name'])));?>"><?php echo $packageProvince['name'];?></a><span><?php echo $packageProvince['route'];?></span></h2>
+				<h2 class="field-content tour-title"><a href="<?php echo Yii::app()->createUrl('toursDetail/index', array('id'=>$packageProvince['id'], 'name'=>SiteUtils::stringURLSafe($packageProvince['name'])));?>"><?php echo $packageProvince['name'];?></a></h2>
 				<div class="views-field views-field-title-2 tour-title-2"> <a href="<?php echo $packageProvince['url'];?>"><?php echo $packageProvince['name'];?></a> </div>
 				<p class="field-content tour-meta"></p>
 				<div class="field-content tour-summary">
-					<span>Recommended Reason:</span>
                     <?php $recommand_reason=explode(',', $packageProvince['recommand_reason']); ?>
                     <ul>
 						<li title="<?php echo $recommand_reason[0];?>"><?php echo SiteUtils::mb_truncate_text($recommand_reason[0],80);?></li> 
@@ -93,11 +92,11 @@ $2000 for Adult, Kid Travel Free!<a href="/travel/adoption/2016-group-tour" clas
                 		<img width="350" height="240" src="/images/adoption-Inspirations02.png" />
                     </a>
                 </div>
-				<h2 class="field-content tour-title"><a href="/travel/adoption/diy">Customize Your Own Return Trip</a></h2>
+				<h2 class="field-content tour-title"><a href="/travel/adoption/adoption-customize/">Customize Your Own Return Trip</a></h2>
 				<div class="views-field views-field-title-2 tour-title-2"> <a href="/travel/8-days-standard-china-golden-triangle-tour-%28by-flight%29-17.html">Customize Service: Just Need the Orphanage Visit?</a> </div>
 				<p class="field-content tour-meta"></p>
 				<div class="field-content tour-summary">It is another option for those who want a more flexible time frame to work with as well as independence in where you want to go. We'd be happy to guide you regarding any of our programs. <a href="/travel/adoption/diy" class="views-more-link"> Read more...</a></div>
-				<p class="field-content tour-read-more"><a href="/travel/adoption/diy">Read More</a></p> 
+				<p class="field-content tour-read-more"><a href="/travel/adoption/adoption-customize/">Read More</a></p> 
         </div>
 	</div>
     <p class="clearfix" ></p>
